@@ -1,0 +1,151 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: DocPrincipal.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: Pretextuais/capa.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
+A level-1 auxiliary file: Pretextuais/folha_rosto1.aux
+Reallocating 'name_of_file' (item size: 1) to 32 items.
+A level-1 auxiliary file: Pretextuais/folha_aprovacao.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+A level-1 auxiliary file: Pretextuais/dedicatoria.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
+A level-1 auxiliary file: Pretextuais/agradecimentos.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: Pretextuais/epigrafe.aux
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+A level-1 auxiliary file: Resumos/resumo.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: Resumos/abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: Introducao/sec-introducao.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: Revisao/sec-revisao.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: Modelos/sec-modelos.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: Resultados/sec-resultados.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: Conclusoes/sec-conclusoes.aux
+Reallocating 'name_of_file' (item size: 1) to 34 items.
+A level-1 auxiliary file: Bibliografia/sec-bibliografia.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+A level-1 auxiliary file: Apendices/sec-apendices.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+The style file: abntex2-alf.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Database file #1: abntex2-options.bib
+Database file #2: Bibliografia/Dissert2.bib
+I was expecting an "="---line 99 of file Bibliografia/Dissert2.bib
+ :  funding_text 
+ :               1={This work is funded by the French spatial agency ( CNES ) and the French mapping agency ( IGN ), and it has been carried out at CESBIO laboratory – supported by the University Paul Sabatier, CNRS (Centre National de la Recherche Scientifique), CNES, IRD (Institut de Recherche pour le Développement) – and MATIS laboratory supported by IGN.},
+I'm skipping whatever remains of this entry
+Repeated entry---line 4893 of file Bibliografia/Dissert2.bib
+ : @article{Li2020
+ :                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4904 of file Bibliografia/Dissert2.bib
+ : @article{Du2020
+ :                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4915 of file Bibliografia/Dissert2.bib
+ : @article{Kulshreshtha2020
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4927 of file Bibliografia/Dissert2.bib
+ : @article{Samanta2020
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4938 of file Bibliografia/Dissert2.bib
+ : @article{Xu2019
+ :                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4950 of file Bibliografia/Dissert2.bib
+ : @article{Graff2017
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5177 of file Bibliografia/Dissert2.bib
+ : @article{Salgotra2020
+ :                      ,
+I'm skipping whatever remains of this entry
+"}" immediately follows an entry type---line 5192 of file Bibliografia/Dissert2.bib
+ :  correspondence_address1={Salgotra, R.; Dept. of ECE, India; email: r.03dec@gmail.com
+ :                                                                                      },
+I'm skipping whatever remains of this entry
+Repeated entry---line 5251 of file Bibliografia/Dissert2.bib
+ : @article{Shen2020
+ :                  ,
+I'm skipping whatever remains of this entry
+")" immediately follows an entry type---line 5259 of file Bibliografia/Dissert2.bib
+ :  affiliation={School of Artificial Intelligence, Xidian University, 47905 Xi'an, Shaanxi China (e-mail: f.shen@qq.com
+ :                                                                                                                      ); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: neouma@163.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: kaiwu@stu.xidian.edu.cn)},
+I'm skipping whatever remains of this entry
+You're missing an entry type---line 5259 of file Bibliografia/Dissert2.bib
+ :  affiliation={School of Artificial Intelligence, Xidian University, 47905 Xi'an, Shaanxi China (e-mail: f.shen@qq.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: neouma@
+ :                                                                                                                                                                                                                         163.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: kaiwu@stu.xidian.edu.cn)},
+I'm skipping whatever remains of this entry
+")" immediately follows an entry type---line 5259 of file Bibliografia/Dissert2.bib
+ :  affiliation={School of Artificial Intelligence, Xidian University, 47905 Xi'an, Shaanxi China (e-mail: f.shen@qq.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: neouma@163.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: kaiwu@stu.xidian.edu.cn
+ :                                                                                                                                                                                                                                                                                                                                                   )},
+I'm skipping whatever remains of this entry
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 55 entries,
+            6714 wiz_defined-function locations,
+            1580 strings with 21525 characters,
+and the built_in function-call counts, 70935 in all, are:
+= -- 7234
+> -- 1939
+< -- 1353
++ -- 1978
+- -- 570
+* -- 4919
+:= -- 8805
+add.period$ -- 192
+call.type$ -- 55
+change.case$ -- 646
+chr.to.int$ -- 183
+cite$ -- 53
+duplicate$ -- 5884
+empty$ -- 3196
+format.name$ -- 2761
+if$ -- 14891
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 967
+newline$ -- 297
+num.names$ -- 265
+pop$ -- 1240
+preamble$ -- 1
+purify$ -- 238
+quote$ -- 0
+skip$ -- 6104
+stack$ -- 1
+substring$ -- 3347
+swap$ -- 2399
+text.length$ -- 105
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 3
+warning$ -- 0
+while$ -- 427
+width$ -- 0
+write$ -- 881
+(There were 13 error messages)
