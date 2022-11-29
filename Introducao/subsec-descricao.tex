@@ -1,0 +1,48 @@
+\subsection{Descrição do problema} \label{subsec:descricao}
+
+Nessa subseção vai ser abordado as variáveis do conjunto de dados e como vai ser previsto.
+
+\begin{enumerate}[label={$\blacktriangleright$ }]
+\item Bombas de sucção (B1, B2 e B3) – valor máximo da frequência 60 Hz
+
+\item[] Variáveis importantes: Vazão, pressão e nível
+
+\item Nível do Reservatório (Câmara 1) LT01 $ (m^3) $ - \textbf{PREVER}
+
+\item Vazão de entrada (FT01) $ (m^3/h) $
+
+\item Vazão de gravidade (FT02) $ (m^3/h) $
+
+\item Vazão de recalque (FT03) $ (m^3/h) $
+
+\item Pressão de Sucção (PT01SU) (mca)
+
+\item Pressão de Recalque (PT02RBAL) (mca)
+\end{enumerate}
+
+
+Na pesquisa vai ser usado a variável LT01 que é o nível do reservatório, esse nível é de grande importância, como visto nas Figuras \ref{fig:dados-todos} e \ref{fig:2020-a-frente} 
+
+\begin{figure}[H]
+	\centering
+	\caption{Gráfico dos dados completo em frequência de 24h em media}
+	\label{fig:dados-todos}
+	\includegraphics[width=1\linewidth]{"Introducao/Figuras/dados todos"}
+	
+	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\caption{Ampliando o gráfico no ano de 2020}
+	\label{fig:2020-a-frente}
+	\includegraphics[width=1\linewidth]{"Introducao/Figuras/2020 a frente"}
+	
+	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
+\end{figure}
+
+Os dados coleatos tem o tamanho de 26306 linhas × 9 colunas, para tanta relação que vai ser usado nos modelos da subseção \ref{subsec:metod} para prever e analisar as anomalias, como apresentado nas Figuras \ref{fig:dados-todos} e \ref{fig:2020-a-frente}.
+
+
+
+
