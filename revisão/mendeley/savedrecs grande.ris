@@ -1,0 +1,589 @@
+﻿TY  - JOUR
+AU  - Lara-Benitez, P
+AU  - Carranza-Garcia, M
+AU  - Riquelme, JC
+TI  - An Experimental Review on Deep Learning Architectures for Time Series Forecasting
+T2  - INTERNATIONAL JOURNAL OF NEURAL SYSTEMS
+AB  - In recent years, deep learning techniques have outperformed traditional models in many machine learning tasks. Deep neural networks have successfully been applied to address time series forecasting problems, which is a very important topic in data mining. They have proved to be an effective solution given their capacity to automatically learn the temporal dependencies present in time series. However, selecting the most convenient type of deep neural network and its parametrization is a complex task that requires considerable expertise. Therefore, there is a need for deeper studies on the suitability of all existing architectures for different forecasting tasks. In this work, we face two main challenges: a comprehensive review of the latest works using deep learning for time series forecasting and an experimental study comparing the performance of the most popular architectures. The comparison involves a thorough analysis of seven types of deep learning models in terms of accuracy and efficiency. We evaluate the rankings and distribution of results obtained with the proposed models under many different architecture configurations and training hyperparameters. The datasets used comprise more than 50,000 time series divided into 12 different forecasting problems. By training more than 38,000 models on these data, we provide the most extensive deep learning study for time series forecasting. Among all studied models, the results show that long short-term memory (LSTM) and convolutional networks (CNN) are the best alternatives, with LSTMs obtaining the most accurate forecasts. CNNs achieve comparable performance with less variability of results under different parameter configurations, while also being more efficient.
+SN  - 0129-0657
+SN  - 1793-6462
+DA  - MAR
+PY  - 2021
+VL  - 31
+IS  - 3
+DO  - 10.1142/S0129065721300011
+AN  - WOS:000627406100002
+ER  -
+
+TY  - JOUR
+AU  - Shen, ZP
+AU  - Zhang, YM
+AU  - Lu, JW
+AU  - Xu, J
+AU  - Xiao, G
+TI  - A novel time series forecasting model with deep learning
+T2  - NEUROCOMPUTING
+AB  - Time series forecasting is emerging as one of the most important branches of big data analysis. However, traditional time series forecasting models can not effectively extract good enough sequence data features and often result in poor forecasting accuracy. In this paper, a novel time series forecasting model, named SeriesNet, which can fully learn features of time series data in different interval lengths. The SeriesNet consists of two networks. The LSTM network aims to learn holistic features and to reduce dimensionality of multi-conditional data, and the dilated causal convolution network aims to learn different time interval. This model can learn multi-range and multi-level features from time series data, and has higher predictive accuracy compared those models using fixed time intervals. Moreover, this model adopts residual learning and batch normalization to improve generalization. Experimental results show our model has higher forecasting accuracy and has greater stableness on several typical time series datasets. (C) 2019 Elsevier B.V. All rights reserved.
+SN  - 0925-2312
+SN  - 1872-8286
+DA  - JUL 5
+PY  - 2020
+VL  - 396
+SP  - 302
+EP  - 313
+DO  - 10.1016/j.neucom.2018.12.084
+AN  - WOS:000536806600009
+ER  -
+
+TY  - JOUR
+AU  - Tan, YF
+AU  - Ong, LY
+AU  - Leow, MC
+AU  - Goh, YX
+TI  - Exploring Time-Series Forecasting Models for Dynamic Pricing in Digital Signage Advertising
+T2  - FUTURE INTERNET
+AB  - Audience attention is vital in Digital Signage Advertising (DSA), as it has a significant impact on the pricing decision to advertise on those media. Various environmental factors affect the audience attention level toward advertising signage. Fixed-price strategies, which have been applied in DSA for pricing decisions, are generally inefficient at maximizing the potential profit of the service provider, as the environmental factors that could affect the audience attention are changing fast and are generally not considered in the current pricing solutions in a timely manner. Therefore, the time-series forecasting method is a suitable pricing solution for DSA, as it improves the pricing decision by modeling the changes in the environmental factors and audience attention level toward signage for optimal pricing. However, it is difficult to determine an optimal price forecasting model for DSA with the increasing number of available time-series forecasting models in recent years. Based on the 84 research articles reviewed, the data characteristics analysis in terms of linearity, stationarity, volatility, and dataset size is helpful in determining the optimal model for time-series price forecasting. This paper has reviewed the widely used time-series forecasting models and identified the related data characteristics of each model. A framework is proposed to demonstrate the model selection process for dynamic pricing in DSA based on its data characteristics analysis, paving the way for future research of pricing solutions for DSA.</p>
+SN  - 1999-5903
+DA  - OCT
+PY  - 2021
+VL  - 13
+IS  - 10
+DO  - 10.3390/fi13100241
+AN  - WOS:000711517600001
+ER  -
+
+TY  - JOUR
+AU  - Sezer, OB
+AU  - Gudelek, MU
+AU  - Ozbayoglu, AM
+TI  - Financial time series forecasting with deep learning : A systematic literature review: 2005-2019
+T2  - APPLIED SOFT COMPUTING
+AB  - Financial time series forecasting is undoubtedly the top choice of computational intelligence for finance researchers in both academia and the finance industry due to its broad implementation areas and substantial impact. Machine Learning (ML) researchers have created various models, and a vast number of studies have been published accordingly. As such, a significant number of surveys exist covering ML studies on financial time series forecasting. Lately, Deep Learning (DL) models have appeared within the field, with results that significantly outperform their traditional ML counterparts. Even though there is a growing interest in developing models for financial time series forecasting, there is a lack of review papers that solely focus on DL for finance. Hence, the motivation of this paper is to provide a comprehensive literature review of DL studies on financial time series forecasting implementation. We not only categorized the studies according to their intended forecasting implementation areas, such as index, forex, and commodity forecasting, but we also grouped them based on their DL model choices, such as Convolutional Neural Networks (CNNs), Deep Belief Networks (DBNs), and Long-Short Term Memory (LSTM). We also tried to envision the future of the field by highlighting its possible setbacks and opportunities for the benefit of interested researchers. (C) 2020 Elsevier B.V. All rights reserved.
+SN  - 1568-4946
+SN  - 1872-9681
+DA  - MAY
+PY  - 2020
+VL  - 90
+DO  - 10.1016/j.asoc.2020.106181
+AN  - WOS:000529902300014
+ER  -
+
+TY  - JOUR
+AU  - Rossi, RA
+TI  - Relational time series forecasting
+T2  - KNOWLEDGE ENGINEERING REVIEW
+AB  - Networks encode dependencies between entities (people, computers, proteins) and allow us to study phenomena across social, technological, and biological domains. These networks naturally evolve over time by the addition, deletion, and changing of links, nodes, and attributes. Despite the importance of modeling these dynamics, existing work in relational machine learning has ignored relational time series data. Relational time series learning lies at the intersection of traditional time series analysis and statistical relational learning, and bridges the gap between these two fundamentally important problems. This paper formulates the relational time series learning problem, and a general framework and taxonomy for representation discovery tasks of both nodes and links including predicting their existence, label, and weight (importance), as well as systematically constructing features. We also reinterpret the prediction task leading to the proposal of two important relational time series forecasting tasks consisting of (i) relational time series classification (predicts a future class or label of an entity), and (ii) relational time series regression (predicts a future real-valued attribute or weight). Relational time series models are designed to leverage both relational and temporal dependencies to minimize forecasting error for both relational time series classification and regression. Finally, we discuss challenges and open problems that remain to be addressed.
+SN  - 0269-8889
+SN  - 1469-8005
+DA  - APR 18
+PY  - 2018
+VL  - 33
+DO  - 10.1017/S0269888918000024
+AN  - WOS:000450970700001
+ER  -
+
+TY  - JOUR
+AU  - Golyandina, N
+TI  - Particularities and commonalities of singular spectrum analysis as a method of time series analysis and signal processing
+T2  - WILEY INTERDISCIPLINARY REVIEWS-COMPUTATIONAL STATISTICS
+AB  - Singular spectrum analysis (SSA), starting from the second half of the 20th century, has been a rapidly developing method of time series analysis. Since it can be called principal component analysis (PCA) for time series, SSA will definitely be a standard method in time series analysis and signal processing in the future. Moreover, the problems solved by SSA are considerably wider than that for PCA. In particular, the problems of frequency estimation, forecasting and missing values imputation can be solved within the framework of SSA. The idea of SSA came from different scientific communities, such as that of researchers in time series analysis (Karhunen-Loeve decomposition), signal processing (low-rank approximation and frequency estimation) and multivariate data analysis (PCA). Also, depending on the area of applications, different viewpoints on the same algorithms, choice of parameters, and methodology as a whole are considered. Thus, the aim of the paper is to describe and compare different viewpoints on SSA and its modifications and extensions to give people from different scientific communities the possibility to be aware of potentially new aspects of the method. This article is categorized under: Data: Types and Structure > Time Series, Stochastic Processes, and Functional Data Statistical Learning and Exploratory Methods of the Data Sciences > Exploratory Data Analysis Statistical Learning and Exploratory Methods of the Data Sciences > Modeling Methods
+SN  - 1939-0068
+DA  - JUL
+PY  - 2020
+VL  - 12
+IS  - 4
+DO  - 10.1002/wics.1487
+AN  - WOS:000506372000001
+ER  -
+
+TY  - JOUR
+AU  - Das, R
+AU  - Middya, AI
+AU  - Roy, S
+TI  - High granular and short term time series forecasting of PM2.5 air pollutant - a comparative review
+T2  - ARTIFICIAL INTELLIGENCE REVIEW
+AB  - Forecasting time series has acquired immense research importance and has vast applications in the area of air pollution monitoring. This work attempts to investigate the abilities of various existing techniques when applied for short term, high granular time series forecasting of PM2.5. More specifically, a comparative study has been provided, taking into account both popularly used models and lesser-used models in this area. The study has been carried out considering ten well defined models that are ARIMA (auto-regressive integrated moving average), SARIMA (seasonal ARIMA), SES (single exponential smoothing), DES (double exponential smoothing), TES (triple exponential smoothing), ANN (artificial neural network), DT (decision tree), kNN (k-nearest neighbor), LSTM (long short-term memory) and MCFO (markov chain first order). A framework has been built that categories the models, implements them under identical execution environment and forecasts succeeding values. Implementation has been carried out over five data sets of real-world air pollution time series, that are collected from five differently located government setup monitoring stations over a period of 1 year (July 2018-June 2019). Rigorous statistical analysis has been performed that yields an insight to the nature and variability of these time series data. Forecasting has been carried out on short term basis, focusing on high granularity whereas, three different lengths of forecast horizon (1 day, 1 week, and 1 month) have been tested. Eventually, the models have been compared in terms of their associated performance measuring units namely, RMSE (root mean of squared error), MAE (mean absolute error) and MAPE (mean absolute percentage error). The comparative results verified with multiple datasets show that all the models posses less error for a shorter forecast horizon, where LSTM providing the best performance. Superiority of machine learning and deep learning models are found in case of longer length of forecast horizon with kNN achieving best accuracy whereas, significant performance degradation of ARIMA is found for longer forecast horizon. Moreover, TES, DT, kNN, LSTM, MCFO are found to be well adopted in relation with shape and variability of the data. Note that the performance on various length of high granular forecast horizon have been studied over multiple datasets that give an added value to this work.
+SN  - 0269-2821
+SN  - 1573-7462
+DA  - FEB
+PY  - 2022
+VL  - 55
+IS  - 2
+SP  - 1253
+EP  - 1287
+DO  - 10.1007/s10462-021-09991-1
+AN  - WOS:000634623900001
+ER  -
+
+TY  - JOUR
+AU  - Martinovic, M
+AU  - Hunjet, A
+AU  - Turcin, I
+TI  - Time Series Forecasting of the Austrian Traded Index (ATX) Using Artificial Neural Network Model
+T2  - TEHNICKI VJESNIK-TECHNICAL GAZETTE
+AB  - This paper analyses the Austrian Traded Index (ATX) of the Vienna Stock Exchange (Wiener Borse) in the period from 2009 to 2017, using the method of the artificial neural network (ANN). Sampling data are taken from the web page of the Wiener Borse and filtered on weekly basis to comply with weekly seasonality in eight years range. The aim is to construct several AAN models that meet certain criteria and evaluate them on the holdout subsample. Furthermore, the goal is to find the best model that can predict new upcoming yet unseen data with high accuracy. A data frame for testing forecasting performance is one month, a quartile, a half year, and one year period for which last year of the data sample is retained (August, 2016- August 2017). Using various criteria and different parameters, the total of thirty networks were built and tested and top five networks were analysed in more details. Results confirm high accuracy of using method of artificial neural networks, which is consistent to studies conducted on similar cases. Correlation of top three selected networks by validation subsample is over 0,9. The mean absolute percentage errors (MAPE) for the best selected network are 1,76% (month); 2,11% (quartile); 2,21% (half-year); 2,13% (year). Once again, ANN method has proven to be a powerful forecasting tool.
+SN  - 1330-3651
+SN  - 1848-6339
+DA  - DEC
+PY  - 2020
+VL  - 27
+IS  - 6
+SP  - 2053
+EP  - 2061
+DO  - 10.17559/TV-20190503164349
+AN  - WOS:000600425200042
+ER  -
+
+TY  - JOUR
+AU  - Macaira, PM
+AU  - Thome, AMT
+AU  - Oliveira, FLC
+AU  - Ferrer, ALC
+TI  - Time series analysis with explanatory variables: A systematic literature review
+T2  - ENVIRONMENTAL MODELLING & SOFTWARE
+AB  - Time series analysis with explanatory variables encompasses methods to model and predict correlated data taking into account additional information, known as exogenous variables. A thorough search in literature returned a dearth of systematic literature reviews (SLR) on time series models with explanatory variables. The main objective is to fill this gap by applying a rigorous and reproducible SLR and a bibliometric analysis to study the evolution of this area over time. The study resulted in the identification of the main methods of time series that incorporate input variables per knowledge area and methodology. The largest number of papers belongs to environmental sciences, followed by economics and health. Regression model is the method with the highest number of applications, followed by Artificial Neural Networks and Support Vector Machines, which experienced rapid and recent growth. A research agenda in time series analysis with exogenous variables closes the paper.
+SN  - 1364-8152
+SN  - 1873-6726
+DA  - SEP
+PY  - 2018
+VL  - 107
+SP  - 199
+EP  - 209
+DO  - 10.1016/j.envsoft.2018.06.004
+AN  - WOS:000439567900017
+ER  -
+
+TY  - JOUR
+AU  - Rahardja, D
+TI  - Statistical methodological review for time-series data
+T2  - JOURNAL OF STATISTICS & MANAGEMENT SYSTEMS
+AB  - Numerous literatures on statistical methods for Time-Series (TS) data have been published. In this paper, a literature of the TS data analysis methods is reviewed. We organize the review based on the basic three-family category of TS models: The Exponential Smoothing Model (ESM) family, the Auto-Regressive Integrated Moving Average (ARIMA) model family, and the Unobserved Component Model (UCM) family. A roadmap is provided in a diagram format to these TS methods which are translatable into nowadays computing statements. Further, the execution of these methods in SAS commands (as one of the most popular nowadays statistical software packages) is also presented. This paper will be very beneficial for practitioners, forecasters, and researchers in diverse fields of study (such as business, management, finance, economics, etc.) to determine which TS data analysis method (along with the corresponding SAS command) are ready to use.
+SN  - 0972-0510
+SN  - 2169-0014
+DA  - NOV 16
+PY  - 2020
+VL  - 23
+IS  - 8
+SP  - 1445
+EP  - 1461
+DO  - 10.1080/09720510.2020.1727618
+AN  - WOS:000540363800001
+ER  -
+
+TY  - JOUR
+AU  - Liu, H
+AU  - Yan, GX
+AU  - Duan, Z
+AU  - Chen, C
+TI  - Intelligent modeling strategies for forecasting air quality time series: A review
+T2  - APPLIED SOFT COMPUTING
+AB  - In recent years, the deterioration of air quality, the frequent events of the air contaminants, and the health impacts from that have caused continuous attention by the government and the public. Based on that, suitable and effective forecasting tools are urgently needed in scientific research. In this study, the basic forecasting algorithms are introduced as the simple forecasting models with their background, applications, advantages, and limitations, which include shallow predictors and deep learning predictors. Then, to enhance the forecasting ability, the data processing methods and two commonly used auxiliary methods (the ensemble learning and the metaheuristic optimization) in the hybrid models have been reviewed. The recent articles of the spatiotemporal aspects have also brought changes in both the analysis and the modeling methods. Furthermore, the representative models are summarized to present the structures of efficient predictive models. Some possible research directions of the air pollution forecasting are given at the end. This review aims to provide a comprehensive literature summary of the intelligent modeling strategies in the air quality forecasting, which may be helpful for subsequent study.
+SN  - 1568-4946
+SN  - 1872-9681
+DA  - APR
+PY  - 2021
+VL  - 102
+DO  - 10.1016/j.asoc.2020.106957
+AN  - WOS:000632599300014
+ER  -
+
+TY  - JOUR
+AU  - Wang, Y
+AU  - Shao, YX
+AU  - Matovic, MD
+AU  - Whalen, JK
+TI  - Recycling combustion ash for sustainable cement production: A critical review with data-mining and time-series predictive models
+T2  - CONSTRUCTION AND BUILDING MATERIALS
+AB  - Combustion is a complex process that produces energy as the goal and ashes as by-products. The ash of coal, biomass. and solid waste combustion can be used as pozzolans in blended cement due to the similarity of their physiochemical properties to conventional pozzolans (e.g. silica fume). This strategy effectively recycles pozzolanic-active combustion ash and replaces a significant proportion of Portland cement, which potentially reduces the greenhouse gas (GHG) emissions from cement production.. However, cement producers wishing to substitute pozzolanic-active ash for conventional pozzolans lack information on the pozzolanic activity (PA) of ash from diverse combustible materials. A data-mining model that can extract key information for predicting the PA of combustion ash is envisioned as a screening tool to assess the pozzolanic potential of candidate combustible materials prior to experimental work. Hence, the objectives of this chapter are, 1) to critically review the recent research progress in using various combustion ashes as pozzolans, including the mechanism of the pozzolanic reaction, sources of eligible materials, and methods of PA improvement, 2) to create a data-mining artificial neural network (ANN) model for PA prediction built upon data reported in the scientific literature from 1998 to 2015, and 3) to describe the effect of cement curing period on PA, based on a time series model. The ANN and time-series models developed in this study can accurately forecast the PA of combustion ashes during 3-90 d curing (R-2 = 0.8479-0.9914). We recommend these screening tools as rapid indicators of the pozzolanic potential of combustion ash prior to undertaking strength tests and other experimental testing. (C) 2016 Elsevier Ltd. All rights reserved.
+SN  - 0950-0618
+SN  - 1879-0526
+DA  - OCT 1
+PY  - 2016
+VL  - 123
+SP  - 673
+EP  - 689
+DO  - 10.1016/j.conbuildmat.2016.07.031
+AN  - WOS:000383813000073
+ER  -
+
+TY  - JOUR
+AU  - Soyer, R
+AU  - Zhang, D
+TI  - Bayesian modeling of multivariate time series of counts
+T2  - WILEY INTERDISCIPLINARY REVIEWS-COMPUTATIONAL STATISTICS
+AB  - In this article, we present an overview of recent advances in Bayesian modeling and analysis of multivariate time series of counts. We discuss basic modeling strategies including integer valued autoregressive processes, multivariate Poisson time series and dynamic latent factor models. In so doing, we make a connection with univariate modeling frameworks such as dynamic generalized models, Poisson state space models with gamma evolution and present Bayesian approaches that extend these frameworks to multivariate setting. During our development, recent Bayesian approaches to the analysis of integer valued autoregressive processes and multivariate Poisson models are highlighted and concepts such as "decouple/recouple" and "common random environment" are presented. The role that these concepts play in Bayesian modeling and analysis of multivariate time series are discussed. Computational issues associated with Bayesian inference and forecasting from these models are also considered.
+   This article is categorized under:
+   Statistical and Graphical Methods of Data Analysis > Bayesian Methods and Theory
+   Statistical Models > Time Series Models
+SN  - 1939-0068
+DO  - 10.1002/wics.1559
+AN  - WOS:000650606700001
+ER  -
+
+TY  - JOUR
+AU  - Bondarenko, V
+AU  - Bondarenko, V
+AU  - Truskovskyi, K
+TI  - Forecasting of time data with using fractional Brownian motion
+T2  - CHAOS SOLITONS & FRACTALS
+AB  - We investigated the quality of forecasting of fractional Brownian motion, and new method for estimating of Hurst exponent is validated. Stochastic model of the time series in the form of converted fractional Brownian motion is proposed. The method of checking the adequacy of the proposed model is developed and short-term forecasting for temporary data is constructed. The research results are implemented in software tools for analysis and modeling of time series. (C) 2017 Elsevier Ltd. All rights reserved.
+SN  - 0960-0779
+SN  - 1873-2887
+DA  - APR
+PY  - 2017
+VL  - 97
+SP  - 44
+EP  - 50
+DO  - 10.1016/j.chaos.2017.01.013
+AN  - WOS:000399845600007
+ER  -
+
+TY  - JOUR
+AU  - Rahimi, I
+AU  - Chen, F
+AU  - Gandomi, AH
+TI  - A review on COVID-19 forecasting models
+T2  - NEURAL COMPUTING & APPLICATIONS
+AB  - The novel coronavirus (COVID-19) has spread to more than 200 countries worldwide, leading to more than 36 million confirmed cases as of October 10, 2020. As such, several machine learning models that can forecast the outbreak globally have been released. This work presents a review and brief analysis of the most important machine learning forecasting models against COVID-19. The work presented in this study possesses two parts. In the first section, a detailed scientometric analysis presents an influential tool for bibliometric analyses, which were performed on COVID-19 data from the Scopus and Web of Science databases. For the above-mentioned analysis, keywords and subject areas are addressed, while the classification of machine learning forecasting models, criteria evaluation, and comparison of solution approaches are discussed in the second section of the work. The conclusion and discussion are provided as the final sections of this study.
+SN  - 0941-0643
+SN  - 1433-3058
+DO  - 10.1007/s00521-020-05626-8
+AN  - WOS:000614666600002
+ER  -
+
+TY  - JOUR
+AU  - Li, AW
+AU  - Bastos, GS
+TI  - Stock Market Forecasting Using Deep Learning and Technical Analysis: A Systematic Review
+T2  - IEEE ACCESS
+AB  - Stock market forecasting is one of the biggest challenges in the financial market since its time series has a complex, noisy, chaotic, dynamic, volatile, and non-parametric nature. However, due to computing development, an intelligent model can help investors and professional analysts reduce the risk of their investments. As Deep Learning models have been extensively studied in recent years, several studies have explored these techniques to predict stock prices using historical data and technical indicators. However, as the objective is to generate forecasts for the financial market, it is essential to validate the model through profitability metrics and model performance. Therefore, this systematic review focuses on Deep Learning models implemented for stock market forecasting using technical analysis. Discussions were made based on four main points of view: predictor techniques, trading strategies, profitability metrics, and risk management. This study showed that the LSTM technique is widely applied in this scenario (73.5%). This work significant contribution is to highlight some limitations found in the literature, such as only 35.3% of the studies analysed profitability, and only two articles implemented risk management. Therefore, despite the widely explored theme, there are still interesting open areas for research and development.
+SN  - 2169-3536
+PY  - 2020
+VL  - 8
+SP  - 185232
+EP  - 185242
+DO  - 10.1109/ACCESS.2020.3030226
+AN  - WOS:000583559900001
+ER  -
+
+TY  - JOUR
+AU  - Ranjan, KG
+AU  - Prusty, BR
+AU  - Jena, D
+TI  - Review of preprocessing methods for univariate volatile time-series in power system applications
+T2  - ELECTRIC POWER SYSTEMS RESEARCH
+AB  - Outlier detection and correction of time-series referred to as preprocessing, play a vital role in forecasting in power systems. Rigorous research on this topic has been made in the past few decades and is still ongoing. In this paper, a detailed survey of different preprocessing methods is made, and the existing preprocessing methods are categorized. Also, the preprocessing capability of each method is highlighted. The well-established methods of each category applicable to univariate data are critically analyzed and compared based on their preprocessing ability. The result analysis includes applying the well-established methods to volatile time-series frequently used in power system applications. PV generation, load power, and ambient temperature time-series (clean and raw) of different time-step collected from various places/weather zones are considered for index-based and graphical-based comparison among the well-established methods. The impact of change in the crucial parameter(s) values and time-resolution of the data on the methods' performance is also elucidated in this paper. The pros and cons of methods are discussed along with the scope for improvisation.
+SN  - 0378-7796
+SN  - 1873-2046
+DA  - FEB
+PY  - 2021
+VL  - 191
+DO  - 10.1016/j.epsr.2020.106885
+AN  - WOS:000598058000011
+ER  -
+
+TY  - JOUR
+AU  - Moskovitch, R
+TI  - Multivariate temporal data analysis - a review
+T2  - WILEY INTERDISCIPLINARY REVIEWS-DATA MINING AND KNOWLEDGE DISCOVERY
+AB  - The information technology revolution, especially with the adoption of the Internet of Things, longitudinal data in many domains become more available and accessible for secondary analysis. Such data provide meaningful opportunities to understand process in many domains along time, but also challenges. A main challenge is the heterogeneity of the temporal variables due to the different types of data, whether a measurement or an event, and type of samplings: fixed or irregular. Other variables can be also events that may or not have duration. In this review, we discuss the various types of temporal data, and the various relevant analysis methods. Starting with fixed frequency variables, with forecasting and time series methods, and proceeding with sequential data, and sequential patterns mining, and time intervals mining for events having various time duration. Also the use of various deep learning based architectures for temporal data is discussed. The challenge of heterogeneous multivariate temporal data analysis and discuss various options to deal with it, focusing on an increasingly used option of transforming the data into symbolic time intervals through temporal abstraction and the use of time intervals related patterns discovery for temporal knowledge discovery, clustering, classification prediction, and more. Finally, we discuss the overview of the field, and areas in which more studies and contributions are needed. This article is categorized under: Algorithmic Development > Spatial and Temporal Data Mining
+SN  - 1942-4787
+SN  - 1942-4795
+DA  - JAN
+PY  - 2022
+VL  - 12
+IS  - 1
+DO  - 10.1002/widm.1430
+AN  - WOS:000705864100001
+ER  -
+
+TY  - JOUR
+AU  - Xie, T
+AU  - Zhang, G
+AU  - Hou, JW
+AU  - Xie, JC
+AU  - Lv, M
+AU  - Liu, FC
+TI  - Hybrid forecasting model for non-stationary daily runoff series: A case study in the Han River Basin, China
+T2  - JOURNAL OF HYDROLOGY
+AB  - Accurate and reliable short-term runoff prediction is of great significance to the management of water resources optimization and reservoir flood operation. In order to improve the accuracy of short-term runoff forecasting, a hybrid model-based "feature decomposition-learning reconstruction" named VMD-DBN-IPSO was proposed. In this paper, variational mode decomposition (VMD) is first used to decompose the original daily runoff series into a set of sub-sequence for improving the frequency resolution. Partial autocorrelation function (PACF) is then applied to determine the input variables of each sub-sequence. The improved particle swarm optimization (IPSO) algorithm is combined with the deep belief network (DBN) model to predict each sub-sequences and finally reconstruct the ensemble forecasting result. Three quantitative evaluation indicators, mean absolute error (MAE), root mean square error (RMSE) and Nash-Sutcliffe efficiency coefficient (NSE), were used to evaluate and compare the established models using the historical daily runoff data (1/1/1988-31/12/2017) at Yangxian and Ankang hydrological station in the Han River Basin of China. Meanwhile, a comparative analysis of the performance of VMD-DBN-IPSO model under different forecast periods (1-, 3-, 5- and 7-day lead time) was performed. In addition, the prediction ability of peak runoff of the VMD-DBN-IPSO model is further verified by analyzing the 10 peak flows during the testing data-series. The results indicate that the VMD-DBN-IPSO model can always achieve the best performance in the training and testing stage, and has good stability and representativeness, the NSE coefficient remains above 0.8, and the prediction error of peak flow is within 20%. It is a preferred data-driven tool for forecasting daily runoff.
+SN  - 0022-1694
+SN  - 1879-2707
+DA  - OCT
+PY  - 2019
+VL  - 577
+DO  - 10.1016/j.jhydrol.2019.123915
+AN  - WOS:000488304300016
+ER  -
+
+TY  - JOUR
+AU  - Liu, JY
+AU  - Wang, SX
+AU  - Wei, N
+AU  - Chen, X
+AU  - Xie, HY
+AU  - Wang, J
+TI  - Natural gas consumption forecasting: A discussion on forecasting history and future challenges
+T2  - JOURNAL OF NATURAL GAS SCIENCE AND ENGINEERING
+AB  - Natural gas consumption forecasting technology has been researched for 70 years. This paper reviews the history of natural gas consumption forecasting, and discusses the changes in forecasting horizons, influencing factors, and forecasting performance. According to the characteristics of forecasting models used in different periods, the history of natural gas consumption forecasting can be categorized into initial stage, conventional stage, AI stage, and all-round stage. The stage characteristics, typical models, advantages and disadvantages at different stages have been summarized. The review results show that, affected by the development of computer science and AI technology, short-term forecasting is the fastest-growing forecasting horizon, followed by long-term and medium-term. Additionally, long-term forecasting is mainly affected by production, population, and economic variables. Medium-term forecasting is mainly affected by economic and temperature variables. Influencing factors of short-term forecasting mainly depend on temperature variables, weather condition and date type. Furthermore, the statistical analysis of data characteristics, model characteristics and forecasting results presents that time series models are the best models for long-term forecasting. It has the lowest average mean absolute percentage error (1.90%) in long-term forecasting. To the medium-term and short-term forecasting, AI-based models present the best performance. Among them, artificial neural network models (2.21%) are preferred for medium-term forecasting, and support vector regression models (4.98%) are more suitable for short-term forecasting. Besides, this paper proposes a framework for model selection, and provides specific suggestions for future research directions.
+SN  - 1875-5100
+SN  - 2212-3865
+DA  - JUN
+PY  - 2021
+VL  - 90
+DO  - 10.1016/j.jngse.2021.103930
+AN  - WOS:000647486900002
+ER  -
+
+TY  - JOUR
+AU  - Chen, YY
+AU  - Cheng, QQ
+AU  - Cheng, YJ
+AU  - Yang, H
+AU  - Yu, HH
+TI  - Applications of Recurrent Neural Networks in Environmental Factor Forecasting: A Review
+T2  - NEURAL COMPUTATION
+AB  - Analysis and forecasting of sequential data, key problems in various domains of engineering and science, have attracted the attention of many researchers from different communities. When predicting the future probability of events using time series, recurrent neural networks (RNNs) are an effective tool that have the learning ability of feedforward neural networks and expand their expression ability using dynamic equations. Moreover, RNNs are able to model several computational structures. Researchers have developed various RNNs with different architectures and topologies. To summarize the work of RNNs in forecasting and provide guidelines for modeling and novel applications in future studies, this review focuses on applications of RNNs for time series forecasting in environmental factor forecasting. We present the structure, processing flow, and advantages of RNNs and analyze the applications of various RNNs in time series forecasting. In addition, we discuss limitations and challenges of applications based on RNNs and future research directions. Finally, we summarize applications of RNNs in forecasting.
+SN  - 0899-7667
+SN  - 1530-888X
+DA  - NOV
+PY  - 2018
+VL  - 30
+IS  - 11
+SP  - 2855
+EP  - 2881
+DO  - 10.1162/neco_a_01134
+AN  - WOS:000448500900001
+ER  -
+
+TY  - JOUR
+AU  - Carneiro, TC
+AU  - de Carvalho, PCM
+AU  - dos Santos, HA
+AU  - Lima, MAFB
+AU  - Braga, APD
+TI  - Review on Photovoltaic Power and Solar Resource Forecasting: Current Status and Trends
+T2  - JOURNAL OF SOLAR ENERGY ENGINEERING-TRANSACTIONS OF THE ASME
+AB  - Photovoltaic (PV) power intermittence impacts electrical grid security and operation. Precise PV power and solar irradiation forecasts have been investigated as significant reducers of such impacts. Predicting solar irradiation involves uncertainties related to the characteristics of time series and their high volatility due to the dependence on many weather conditions. We propose a systematic review of PV power and solar resource forecasting, considering technical aspects related to each applied methodology. Our review covers the performance analysis of various physical, statistical, and machine learning models. These methodologies should contribute to decision-making, being applicable to different sites and climatic conditions. About 42% of the analyzed articles developed hybrid approaches, 83% performed short-term prediction, and more than 78% had, as forecast goal, PV power, solar irradiance, and solar irradiation. Considering spatial forecast scale, 66% predicted in a single field. As a trend for the coming years, we highlight the use of hybridized methodologies, especially those that optimize input and method parameters without loss of precision and postprocessing methodologies aiming at improvements in individualized applications.
+SN  - 0199-6231
+SN  - 1528-8986
+DA  - FEB 1
+PY  - 2022
+VL  - 144
+IS  - 1
+DO  - 10.1115/1.4051652
+AN  - WOS:000731575400007
+ER  -
+
+TY  - JOUR
+AU  - Qian, Z
+AU  - Pei, Y
+AU  - Zareipour, H
+AU  - Chen, NY
+TI  - A review and discussion of decomposition-based hybrid models for wind energy forecasting applications
+T2  - APPLIED ENERGY
+AB  - With the continuous growth of wind power integration into the electrical grid, accurate wind power forecasting is an important component in management and operation of power systems. Given the challenging nature of wind power forecasting, various methods are presented in the literature to improve wind power forecasting accuracy. Among them, combining different techniques to construct hybrid models has been frequently reported in the literature. Decomposition-based models are a family of hybrid models that firstly decompose the wind speed/power time series into relatively more stationary subseries, and then build forecasting models for each subseries. In this paper, we present a comprehensive review of decomposition-based wind forecasting methods in order to explore their effectiveness. Decomposition-based hybrid forecasting models are classified into different groups based on the decomposition methods, such as, wavelet, empirical mode decomposition, seasonal adjust methods, variational mode decomposition, intrinsic time-scale decomposition, and bemaola galvan algorithm. We discuss decomposition methods in the context of alternative forecasting algorithms, and explore the challenges of each method. Comparative analysis of various decomposition-based models is also provided. We also explore current research activities and challenges, and identify potential directions for future research on this subject.
+SN  - 0306-2619
+SN  - 1872-9118
+DA  - FEB 1
+PY  - 2019
+VL  - 235
+SP  - 939
+EP  - 953
+DO  - 10.1016/j.apenergy.2018.10.080
+AN  - WOS:000458942800076
+ER  -
+
+TY  - JOUR
+AU  - Martin, ML
+AU  - Sanchez-Esguevillas, A
+AU  - Carro, B
+TI  - Review of Methods to Predict Connectivity of IoT Wireless Devices
+T2  - AD HOC & SENSOR WIRELESS NETWORKS
+AB  - Services related to Internet of Things (IoT) demand agile anticipation and response to eventual lack of service continuity. Machine learning methods may obtain predictions of IoT wireless sensors and devices connectivity patterns, enabling telcos to adjust maintenance periods, plan network upgrades, estimate outages risk and best allocate customer value to connection resources.
+   This article analyses how different algorithms forecast near/medium term connectivity of IoT wireless devices, based on their historical activity. The study considers time-series algorithms (Hidden Markov Model, exponential smoothing, AutoRegressive Integrated Moving-Average (ARIMA)), non-time-series algorithms (logistic regression, bayesian logistic regression, random forest, Gradient Boosting Method), mixed approaches (ARIMA with eXogenous covariates (ARIMAX)) and combinations of classifiers. Real obfuscated data obtained from a telecommunications operator is employed. Results present very advantageous prediction performance of IoT connectivity wireless devices, with an accuracy of over 90 percent most of the time, and even higher for the best performing algorithms.
+SN  - 1551-9899
+SN  - 1552-0633
+PY  - 2017
+VL  - 38
+IS  - 1-4
+SP  - 125
+EP  - 141
+AN  - WOS:000410885000006
+ER  -
+
+TY  - JOUR
+AU  - Liu, H
+AU  - Chen, C
+TI  - Data processing strategies in wind energy forecasting models and applications: A comprehensive review
+T2  - APPLIED ENERGY
+AB  - Given the intermittent nature of the wind, accurate wind energy forecasting is significant to the proper utilization of renewable energy sources. In recent years, data-driven models based on past observations have been widely employed in the literature. Various types of data processing methods are successfully applied to assist these models and further improve forecasting performance. Comprehensive research of their methodologies is called on for a thorough understanding of current challenges that affect model accuracy and efficiency. To address the knowledge gap, this paper presents an exhaustive review and categorization of data processing in wind energy forecasting. The utilized techniques are classified into seven categories according to the applications: decomposition, feature selection, feature extraction, denoising, residual error modeling, outlier detection, and filter-based correction. An overall analysis of their intentions, positions, characteristics, and implementation details is provided. A general evaluation is carried out from different perspectives including accuracy improvement, usage frequency, consuming time, robustness to parameters, maturity, and implementation difficulty. Among the existing data processing methods, outlier detection and filter-based correction are relatively less used. Their potential can be better explored in the future. Furthermore, some possible research directions and challenges of data processing in wind energy forecasting are provided, in order to encourage subsequent research.
+SN  - 0306-2619
+SN  - 1872-9118
+DA  - SEP 1
+PY  - 2019
+VL  - 249
+SP  - 392
+EP  - 408
+DO  - 10.1016/j.apenergy.2019.04.188
+AN  - WOS:000472692200032
+ER  -
+
+TY  - JOUR
+AU  - Kumar, G
+AU  - Jain, S
+AU  - Singh, UP
+TI  - Stock Market Forecasting Using Computational Intelligence: A Survey
+T2  - ARCHIVES OF COMPUTATIONAL METHODS IN ENGINEERING
+AB  - Stock market plays a key role in economical and social organization of a country. Stock market forecasting is highly demanding and most challenging task for investors, professional analyst and researchers in the financial market due to highly noisy, nonparametric, volatile, complex, non-linear, dynamic and chaotic nature of stock price time series. Prediction of stock market is a crucial task and prominent research area in financial domain as investing in stock market involves higher risk. However with the development of computational intelligent methods it is possible to reduce most of the risk. In this survey paper, our focus is on application of computational intelligent approaches such as artificial neural network, fuzzy logic, genetic algorithms and other evolutionary techniques for stock market forecasting. This paper presents an up-to-date survey of existing literature on stock market forecasting based on computational intelligent methods. In this article, the selected papers are organized and discussed according to six main point of view: (1) the stock market analyzed and the related dataset, (2) the type of input variables investigated, (3) the pre-processing techniques used, (4) the feature selection techniques to choose effective variables, (5) the forecasting models to deal with the stock price forecasting problem and (6) performance metrics utilized to evaluate the models. The major contribution of this work is to provide the researcher and financial analyst a systematic approach for development of intelligent methodology to forecast stock market. This paper also presents the outlines of proposed work with the aim to enhance the performance of existing techniques.
+SN  - 1134-3060
+SN  - 1886-1784
+DA  - MAY
+PY  - 2021
+VL  - 28
+IS  - 3
+SP  - 1069
+EP  - 1101
+DO  - 10.1007/s11831-020-09413-5
+AN  - WOS:000516316500002
+ER  -
+
+TY  - JOUR
+AU  - Wang, Y
+AU  - Zou, RM
+AU  - Liu, F
+AU  - Zhang, LJ
+AU  - Liu, QY
+TI  - A review of wind speed and wind power forecasting with deep neural networks
+T2  - APPLIED ENERGY
+AB  - The use of wind power, a pollution-free and renewable form of energy, to generate electricity has attracted increasing attention. However, intermittent electricity generation resulting from the random nature of wind speed poses challenges to the safety and stability of electric power grids when wind power is integrated into grids on large scales. Therefore, accurate forecasting of wind speed and wind power (WS/WP) has gradually taken on a key role in reducing wind power fluctuations in system dispatch planning. With the development of artificial intelligence technologies, especially deep learning, increasing numbers of deep learning-based models are being considered for WS/WP forecasting due to their superior ability to deal with complex nonlinear problems. This paper comprehensively reviews the various deep learning technologies being used in WS/WP forecasting, including the stages of data processing, feature extraction, and relationship learning. The forecasting performance of some popular models is tested and compared using two real-world wind datasets. In this review, three challenges to accurate WS/WP forecasting under complex conditions are identified, namely, data uncertainties, incomplete features, and intricate nonlinear relationships. Moreover, future research directions are summarized as a guide to improve the accuracy of WS/WP forecasts.
+SN  - 0306-2619
+SN  - 1872-9118
+DA  - DEC 15
+PY  - 2021
+VL  - 304
+DO  - 10.1016/j.apenergy.2021.117766
+AN  - WOS:000701874500003
+ER  -
+
+TY  - JOUR
+AU  - Wu, Z
+AU  - Luo, G
+AU  - Yang, ZL
+AU  - Guo, YJ
+AU  - Li, K
+AU  - Xue, YS
+TI  - A comprehensive review on deep learning approaches in wind forecasting applications
+T2  - CAAI TRANSACTIONS ON INTELLIGENCE TECHNOLOGY
+AB  - The effective use of wind energy is an essential part of the sustainable development of human society, in particular, at the recent unprecedented pressure in shaping a low carbon energy environment. Accurate wind resource and power forecasting play a key role in improving the wind penetration. However, it has not been well adopted in the real-world applications due to the strong stochastic characteristics of wind energy. In recent years, the application boost of deep learning methods provides new effective tools in wind forecasting. This paper provides a comprehensive overview of the forecasting models based on deep learning in the field of wind energy. Featured approaches include time-series-based recurrent neural networks, restricted Boltzmann machines, convolutional neural networks as well as auto-encoder-based approaches. In addition, future development directions of deep-learning-based wind energy forecasting have also been discussed.
+SN  - 2468-6557
+SN  - 2468-2322
+DO  - 10.1049/cit2.12076
+AN  - WOS:000744432000001
+ER  -
+
+TY  - JOUR
+AU  - Lu, P
+AU  - Ye, L
+AU  - Zhao, YN
+AU  - Dai, BH
+AU  - Pei, M
+AU  - Tang, Y
+TI  - Review of meta-heuristic algorithms for wind power prediction: Methodologies, applications and challenges
+T2  - APPLIED ENERGY
+AB  - The integration of large-scale wind power introduces issues in modern power systems operations due to its strong randomness and volatility. These issues can be resolved via wind power forecasting that can provide comprehensive future information about wind power uncertainties. This paper presents a timely and comprehensive review of meta-heuristic algorithms in the framework of wind power forecasting. The framework is based on the auxiliary layer, forecasting base layer, and core layer. The auxiliary layer, such as the data-decomposition layer, decomposes the wind power time series into many relatively stationary subseries, and uses prediction models, including artificial neural networks (ANNs) and machine learning (ML). The core layer is based on meta-heuristic algorithms, which include evolutionary-based algorithms, physics-based algorithms, human-based algorithms, swarm-based algorithms, hybrid algorithms, and multi-objective optimization algorithms. These algorithms aim to search for the optimal solutions under constraints, which is highly significant for optimizing the key parameters of the prediction models. Besides, multiple error evaluation metrics, e.g., deterministic, uncertainty, and testing methods used in the field of wind power prediction are described. A quantitative analysis focusing on their advantages, disadvantages, forecasting accuracy, and computational costs are also provided. Finally, a few open research issues and trends related to the topic are discussed, which can contribute to improving the understanding of each wind power forecasting method. In general, this review paper provides valuable insights to wind power engineers.
+SN  - 0306-2619
+SN  - 1872-9118
+DA  - NOV 1
+PY  - 2021
+VL  - 301
+DO  - 10.1016/j.apenergy.2021.117446
+AN  - WOS:000692518300005
+ER  -
+
+TY  - JOUR
+AU  - Ursu, E
+AU  - Pereau, JC
+TI  - Application of periodic autoregressive process to the modeling of the Garonne river flows
+T2  - STOCHASTIC ENVIRONMENTAL RESEARCH AND RISK ASSESSMENT
+AB  - Accurate forecasting of river flows is one of the most important applications in hydrology, especially for the management of reservoir systems. To capture the seasonal variations in river flow statistics, this paper develops a robust modeling approach to identify and to estimate periodic autoregressive (PAR) model in the presence of additive outliers. Since the least squares estimators are not robust in the presence of outliers, we suggest a robust estimation based on residual autocovariances. A genetic algorithm with Bayes information criterion is used to identify the optimal PAR model. The method is applied to average monthly and quarter-monthly flow data (1959-2010) for the Garonne river in the southwest of France. Results show that the accuracy of forecasts is improved in the robust model with respect to the unrobust model for the quarter-monthly flows. By reducing the number of parameters to be estimated, the principle of parsimony favors the choice of the robust approach.
+SN  - 1436-3240
+SN  - 1436-3259
+DA  - OCT
+PY  - 2016
+VL  - 30
+IS  - 7
+SP  - 1785
+EP  - 1795
+DO  - 10.1007/s00477-015-1193-3
+AN  - WOS:000384453100001
+ER  -
+
+TY  - JOUR
+AU  - Marquez-Cabrera, A
+AU  - Sanchez-Lopez, C
+TI  - A nonlinear macromodel for current backward transconductance amplifier
+T2  - AEU-INTERNATIONAL JOURNAL OF ELECTRONICS AND COMMUNICATIONS
+AB  - A SPICE-compatible macromodel for emulating the nonlinear behavior of the current backward transconductance amplifier (CBTA) at low-frequency is developed. The novelty of the proposed macromodel is that real physical active device performance parameters together with parasitic elements of the input-output terminals of the CBTA are taken into account. In a first step, the CBTA is designed with +/- 2.5 V by using standard CMOS technology of 0.35 mu m AMS and the main performance parameters, such as: DC gain, bandwidth, slew-rate, dynamic range, along with parasitic elements are obtained. In a second step, the behavioral model of the CBTA is deduced and the SPICE-compatible macromodel is built. In a third step and to validate the deduced behavioral model, two topologies of saturated nonlinear function series (SNFS) based on CBTA are designed. At this point, a generated experimentally chaotic signal was applied as excitation signal to each SNFS built with the CBTA at the transistor level and to the proposed SPICE-compatible macromodel. As a consequence, the derived macromodel can effectively be used for forecasting the behavior of nonlinear circuits in the time-domain with good accuracy, decreasing the CPU-time compared with the model at the transistor level of abstraction. (C) 2020 Elsevier GmbH. All rights reserved.
+SN  - 1434-8411
+SN  - 1618-0399
+DA  - AUG
+PY  - 2020
+VL  - 123
+DO  - 10.1016/j.aeue.2020.153286
+AN  - WOS:000561344400034
+ER  -
+
+TY  - JOUR
+AU  - Ahmad, T
+AU  - Chen, HX
+AU  - Guo, YB
+AU  - Wang, JY
+TI  - A comprehensive overview on the data driven and large scale based approaches for forecasting of building energy demand: A review
+T2  - ENERGY AND BUILDINGS
+AB  - Energy consumption models play an integral part in energy management and conservation, as it pertains to buildings. It can assist in evaluating building energy efficiency, in carrying out building commissioning, and in identifying and diagnosing building system faults. This review takes an in-depth look at energy demand prediction models for buildings in that it delves into recent developments in building energy approaches used to predict energy usage. By enlisting current approaches to the modelling of buildings, methods for building energy simulations can be categorized into four level classes as follows: (i) data driven approaches; (ii) physics-based approaches; (iii) large scale building energy forecasting approaches; and (iv) hybrid approaches. The focus of this review is to target the data-driven approach and large-scale building energy predicting-based approaches. Here the data driven approaches can be categorized by (1) artificial neural network based approaches; (2) clustering based approaches; (3) statistical and machine learning-based approaches; and (4) support vector machine based approaches. From there, the type of data-driven based approach is further grouped by (a) benchmarking models; (b) energy-mapping models; (c) energy forecasting models; and (d) energy profiling models. Large-scale building-energy prediction techniques is then categorized as follows: (1) white-box based approaches; (2) black-box based approaches, and (3) grey-box based approaches. The current study explores first-rate data-driven based approaches about building energy analysis for industrial, commercial, domestic, etc., within a rural and urban setting. This review paper is based on the necessity of identifying points of departure and research opportunities for urban and rural-level analyses of building level energy performance. A variety of issues are explored which include: energy performance metrics; end-use of different building types; multiple levels of granularity; and urban and rural scales. Each technique encompasses a variety of input information as well as varying calculations or simulation models along with furnishing contrasting outcomes that suggest a variety of usages. A thorough review of each technique is presented in this study. This review highlights strengths, shortcomings, and purpose of the methods of numerous data-mining based approaches. A comprehensive review of energy forecasting models that are specified in the literature part is also provided. (C) 2018 Elsevier B.V. All rights reserved.
+SN  - 0378-7788
+SN  - 1872-6178
+DA  - APR 15
+PY  - 2018
+VL  - 165
+SP  - 301
+EP  - 320
+DO  - 10.1016/j.enbuild.2018.01.017
+AN  - WOS:000428491200028
+ER  -
+
+TY  - JOUR
+AU  - Alimohammadi, H
+AU  - Chen, SN
+TI  - Performance evaluation of outlier detection techniques in production timeseries: A systematic review and meta-analysis
+T2  - EXPERT SYSTEMS WITH APPLICATIONS
+AB  - Time-series data have been extensively collected and analyzed in many disciplines, such as stock market, medical diagnosis, meteorology, and oil and gas industry. Numerous data in these disciplines are sequence of observations measured as functions of time, which can be further used for different applications via analytical or data analytics techniques (e.g., to forecast future price, climate change, etc.). However, presence of outliers can cause significant uncertainties to interpretation results; hence, it is essential to remove the outliers accurately and efficiently before conducting any further analysis. A total of 17 techniques that belong to statistical, regressionbased, and machine learning (ML) based categories for outlier detection in timeseries are applied to the oil and gas production data analysis. 15 of these methods are utilized for production data analysis for the first time. Two state-of-the-art and high-performance techniques are then selected for data cleaning which require minimum control and time complexity. Moreover, performances of these techniques are evaluated based on several metrics including the accuracy, precision, recall, F1 score, and Cohen's Kappa to rank the techniques. Results show that eight unsupervised algorithms outperform the rest of the methods based on the synthetic case study with known outliers. For example, accuracies of the eight shortlisted methods are in the range of 0.83-0.99 with a precision between 0.83 and 0.98, compared to 0.65-0.82 and 0.07-0.77 for the others. In addition, ML-based techniques perform better than statistical techniques. Our experimental results on real field data further indicate that the knearest neighbor (KNN) and Fulford-Blasingame methods are superior to other outlier detection frameworks for outlier detection in production data, followed by four others including density-based spatial clustering of applications with noise (DBSCAN), and angle-based outlier detection (ABOD). Even though the techniques are examined with oil and gas production data, but the same data cleaning workflow can be used to detect timeseries' outliers in other disciplines.
+SN  - 0957-4174
+SN  - 1873-6793
+DA  - APR 1
+PY  - 2022
+VL  - 191
+DO  - 10.1016/j.eswa.2021.116371
+AN  - WOS:000736167200007
+ER  -
+
+TY  - JOUR
+AU  - Groppo, GD
+AU  - Costa, MA
+AU  - Libanio, M
+TI  - Predicting water demand: a review of the methods employed and future possibilities
+T2  - WATER SUPPLY
+AB  - The balance between water supply and demand requires efficient water supply system management techniques. This balance is achieved through operational actions, many of which require the application of forecasting concepts and tools. In this article, recent research on urban water demand forecasting employing artificial intelligence is reviewed, aiming to present the 'state of the art' on the subject and provide some guidance regarding methods and models to research and professional sanitation companies. The review covers the models developed using standard statistical techniques, such as linear regression or time-series analysis, or techniques based on Soft Computing. This review shows that the studies are, mostly, focused on the management of the operating systems. There is, therefore, room for long-term forecasts. It is worth noting that there is no global model that surpasses all the methods for all cases, it being necessary to study each region separately, evaluating the strengths of each model or the combination of methods. The use of statistical applications of Machine Learning and Artificial Intelligence methodologies has grown considerably in recent years. However, there is still room for improvement with regard to water demand forecasting.
+SN  - 1606-9749
+SN  - 1607-0798
+DA  - DEC
+PY  - 2019
+VL  - 19
+IS  - 8
+SP  - 2179
+EP  - 2198
+DO  - 10.2166/ws.2019.122
+AN  - WOS:000522824300002
+ER  -
+

@@ -1,0 +1,719 @@
+TY  - JOUR
+TI  - A novel model based on DA-RNN network and skip gated recurrent neural network for periodic time series forecasting
+T2  - Sustainability (Switzerland)
+J2  - Sustainability
+VL  - 14
+IS  - 1
+PY  - 2022
+DO  - 10.3390/su14010326
+SN  - 20711050 (ISSN) 
+AU  - Huang, B.
+AU  - Zheng, H.
+AU  - Guo, X.
+AU  - Yang, Y.
+AU  - Liu, X.
+AD  - School of Science, Rensselaer Polytechnic Institute, New York, NY  12180, United States
+AD  - School of Information Science & Engineering, Lanzhou University, Lanzhou, 730000, China
+AD  - School of Management, Hefei University of Technology, Hefei, 230002, China
+AB  - Deep learning models are playing an increasingly important role in time series forecasting with their excellent predictive ability and the convenience of not requiring complex feature engineer-ing. However, the existing deep learning models still have shortcomings in dealing with periodic and long-distance dependent sequences, which lead to unsatisfactory forecasting performance on this type of dataset. To handle these two issues better, this paper proposes a novel periodic time series forecasting model based on DA-RNN, called DA-SKIP. Using the idea of task decomposition, the novel model, based on DA-RNN, GRU-SKIP and autoregressive component, breaks down the prediction of periodic time series into three parts: linear forecasting, nonlinear forecasting and periodic forecasting. The results of the experiments on Solar Energy, Electricity Consumption and Air Quality datasets show that the proposed model outperforms the three comparison models in capturing periodicity and long-distance dependence features of sequences. © 2021 by the authors. Licensee MDPI, Basel, Switzerland.
+KW  - Attention
+KW  - Deep learning
+KW  - Prediction
+KW  - Recurrent neural network
+KW  - Time series
+KW  - data set
+KW  - learning
+KW  - model
+KW  - periodicity
+KW  - time series
+KW  - Air
+KW  - Niger [West Africa]
+PB  - MDPI
+N1  - Cited By :1
+N1  - Export Date: 25 April 2022
+M3  - Article
+DB  - Scopus
+C7  - 326
+LA  - English
+N1  - Correspondence Address: Zheng, H.; School of Information Science & Engineering, China; email: zhenghn20@lzu.edu.cn
+N1  - References: Hua, Y., Zhao, Z., Li, R., Chen, X., Liu, Z., Zhang, H., Deep learning with long short-term memory for time series prediction (2019) IEEE Commun. Mag, 57, pp. 114-119. , [CrossRef]; 
+Yadav, A., Jha, C.K., Sharan, A., Optimizing LSTM for time series prediction in Indian stock market (2020) Procedia Comput. Sci, 167, pp. 2091-2100. , [CrossRef]; 
+Li, Y., Huang, J., Chen, H., Time series prediction of wireless network traffic flow based on wavelet analysis and BP neural network (2020) J. Phys. Conf. Ser. IOP Publ, 1533, p. 032098. , [CrossRef]; 
+Sharadga, H., Hajimirza, S., Balog, R.S., Time series forecasting of solar power generation for large-scale photovoltaic plants (2020) Renew. Energy, 150, pp. 797-807. , [CrossRef]; 
+Jallal, M.A., Gonzalez-Vidal, A., Skarmeta, A.F., Chabaa, S., Zeroual, A., A hybrid neuro-fuzzy inference system-based algorithm for time series forecasting applied to energy consumption prediction (2020) Appl. Energy, 268, p. 114977. , [CrossRef]; 
+Kaytez, F., Taplamacioglu, M.C., Cam, E., Hardalac, F., Forecasting electricity consumption: A comparison of regression analysis, neural networks and least squares support vector machines (2015) Int. J. Electr. Power Energy Syst, 67, pp. 431-438. , [CrossRef]; 
+Chakraborty, P., Marwah, M., Arlitt, M., Ramakrishnan, N., Fine-grained photovoltaic output prediction using a bayesian ensemble (2012) Proceedings of the AAAI Conference on Artificial Intelligence, p. 26. , Palo Alto, CA, USA, 2–9 February; 
+Akaike, H., Fitting autoregressive models for prediction (1969) Ann. Inst. Stat. Math, 21, pp. 243-247. , [CrossRef]; 
+Connor, J.T., Martin, R.D., Atlas, L.E., Recurrent neural networks and robust time series prediction (1994) IEEE Trans. Neural Netw, 5, pp. 240-254. , [CrossRef]; 
+Rasheed, F., Alhajj, R., A framework for periodic outlier pattern detection in time-series sequences (2013) IEEE Trans. Cybern, 44, pp. 569-582. , [CrossRef]; 
+Zhang, M., Jiang, X., Fang, Z., Zeng, Y., Xu, K., High-order Hidden Markov Model for trend prediction in financial time series (2019) Phys. A Stat. Mech. Its Appl, 517, pp. 1-12. , [CrossRef]; 
+Box, G.E.P., Pierce, D.A., Distribution of residual autocorrelations in autoregressive-integrated moving average time series models (1970) J. Am. Stat. Assoc, 65, pp. 1509-1526. , [CrossRef]; 
+Kim, K., Financial time series forecasting using support vector machines (2003) Neurocomputing, 55, pp. 307-319. , [CrossRef]; 
+Van Gestel, T., Suykens, J.A.K., Baestaens, D.E., Lambrechts, A., Lanckriet, G., Vandaele, B., De Moor, B., Vandewalle, J., Financial time series prediction using least squares support vector machines within the evidence framework (2001) IEEE Trans. Neural Netw, 12, pp. 809-821. , [CrossRef] [PubMed]; 
+Xu, K., Xie, M., Tang, L.C., Ho, S.L., Application of neural networks in forecasting engine systems reliability (2003) Appl. Soft Comput, 2, pp. 255-268. , [CrossRef]; 
+Hochreiter, S., Schmidhuber, J., Long short-term memory (1997) Neural Comput, 9, pp. 1735-1780. , [CrossRef] [PubMed]; 
+Chung, J., Gulcehre, C., Cho, K.H., Bengio, Y., Empirical evaluation of gated recurrent neural networks on sequence modeling (2014) arXiv Prepr, , arXiv:1412.3555; 
+Sagheer, A., Kotb, M., Time series forecasting of petroleum production using deep LSTM recurrent networks (2019) Neurocomputing, 323, pp. 203-213. , [CrossRef]; 
+Karim, F., Majumdar, S., Darabi, H., Harford, S., Multivariate LSTM-FCNs for time series classification (2019) Neural Netw, 116, pp. 237-245. , [CrossRef]; 
+Kumar, A., Irsoy, O., Ondruska, P., Iyyer, M., Bradbury, J., Gulrajani, I., Zhong, V., Socher, R., Ask me anything: Dynamic memory networks for natural language processing (2016) Proceedings of the 33rd International Conference on Machine Learning, 48, pp. 1378-1387. , PMLR, New York, NY, USA, 20–22 June; 
+Merity, S., Keskar, N.S., Socher, R., Regularizing and optimizing LSTM language models (2017), arXiv Prepr. arXiv:1708.02182; Graves, A., Jaitly, N., Mohamed, A., Hybrid speech recognition with deep bidirectional LSTM (2013) Proceedings of the 2013 IEEE workshop on automatic speech recognition and understanding, pp. 273-278. , Olomouc, Czech Republic, 8–12 December IEEE: Piscataway, NJ, USA, 2013; 
+Cho, K., Van Merriënboer, B., Bahdanau, D., Bengio, Y., On the properties of neural machine translation: Encoder-decoder approaches (2014) arXiv Prepr, , arXiv:1409.1259; 
+Bahdanau, D., Cho, K., Bengio, Y., Neural machine translation by jointly learning to align and translate (2014) arXiv Prepr, , arXiv:1409.0473; 
+Goel, H., Melnyk, I., Banerjee, A., R2N2, residual recurrent neural networks for multivariate time series forecasting (2017) arXiv Prepr, , arXiv:1709.03159; 
+Lai, G., Chang, W.C., Yang, Y., Liu, H., Modeling long-and short-term temporal patterns with deep neural networks (2018) Proceedings of the 41st International ACM SIGIR Conference on Research & Development in Information Retrieval, pp. 95-104. , New York, NY, USA, 8–12 July; 
+Shih, S.Y., Sun, F.K., Lee, H., Temporal pattern attention for multivariate time series forecasting (2019) Mach. Learn, 108, pp. 1421-1441. , [CrossRef]; 
+Qin, Y., Song, D., Chen, H., Cheng, W., Jiang, G., Cottrell, G., A dual-stage attention-based recurrent neural network for time series prediction (2017) arXiv Prepr, , arXiv:1704.02971; 
+Lin, T., Horne, B.G., Tino, P., Giles, C.L., Learning long-term dependencies in NARX recurrent neural networks (1996) IEEE Trans. Neural Netw, 7, pp. 1329-1338; 
+Gao, Y., Er, M.J., NARMAX time series model prediction: Feedforward and recurrent fuzzy neural network approaches (2005) Fuzzy Sets Syst, 150, pp. 331-350. , [CrossRef]; 
+Menezes, J.M.P., Barreto, G.A., Long-term time series prediction with the NARX network: An empirical evaluation (2008) Neurocom-puting, 71, pp. 3335-3343. , [CrossRef]; 
+Zhang, Y., (2015) Solar Power Data for Integration Studies, NREL, , http://www.nrel.gov/grid/solar-power-data.html, (accessed on 1 June 2021); 
+Trindade, A., (2006) ElectricityLoadDiagrams20112014 Dataset, UCI, , https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014, (accessed on 1 June 2021); 
+Chen, S.X., (2019) Beijing Multi-Site Air-Quality Data Dataset, UCI, , https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data, (accessed on 1 June 2021)
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85121973122&doi=10.3390%2fsu14010326&partnerID=40&md5=613a0825041849331085b5fd3640824a
+ER  - 
+
+TY  - JOUR
+TI  - A Novel ARMA Type Possibilistic Fuzzy Forecasting Functions Based on Grey-Wolf Optimizer (ARMA-PFFs)
+T2  - Computational Economics
+J2  - Comput. Econ.
+PY  - 2021
+DO  - 10.1007/s10614-021-10132-7
+SN  - 09277099 (ISSN) 
+AU  - Tak, N.
+AD  - Kirklareli University, Kirklareli, Turkey
+AB  - This study proposes a new time series forecasting method that employs possibilistic fuzzy c-means, an autoregressive moving average model (ARMA), and a grey wolf optimizer (GWO) in type-1 fuzzy functions. Type-1 fuzzy functions (T1FFs) were used to forecast functions using an autoregressive model. However, rather than relying solely on past values of the forecast variable in a regression, the inclusion of past forecast errors improves forecasting ability. In this sense, the moving average model also employed in the proposed method. The inputs therefore are a combination of the past values of the time series and the past errors. The main idea of T1FFs is to include a new variable (or variables) that provides more information about the time series. The fuzzy c-means clustering (FCM) algorithm was used to quantify the values of this new variable. The degrees of memberships were obtained for each observation in each cluster and these membership grades were used as a new variable in the input matrix. Studies in the literature, however, have shown certain restrictions for FCM, such as sensitive noise and coincidence cluster centers. Consequently, possibilistic FCM is employed in T1FFs to overcome the aforementioned limitations. Because of the non-derivative objective function of ARMA type possibilistic fuzzy forecasting functions, the GWO was adapted in order to obtain coefficients for the model. The performance of the proposed ARMA type-1 fuzzy possibilistic functions was validated using 16 practical time-series. © 2021, The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature.
+KW  - ARMA model
+KW  - Grey wolf optimizer
+KW  - Nonlinear forecasting
+KW  - Possibilistic FCM
+KW  - Type-1 fuzzy functions
+PB  - Springer
+N1  - Export Date: 25 April 2022
+M3  - Article
+DB  - Scopus
+LA  - English
+N1  - Correspondence Address: Tak, N.; Kirklareli UniversityTurkey; email: nihattak@gmail.com
+N1  - References: Aladag, C.H., Turksen, I.B., Dalar, A.Z., Egrioglu, E., Yolcu, U., Application of type-1 fuzzy functions approach for time series forecasting (2014) Turkish Journal of Fuzzy Systems, 5 (1), pp. 1-9; 
+Azad, A., Manoochehri, M., Kashi, H., Farzin, S., Karami, H., Nourani, V., Shiri, J., Comparative evaluation of intelligent algorithms to improve adaptive neuro-fuzzy inference system performance in precipitation modelling (2019) Journal of Hydrology, 571, pp. 214-224; 
+Bas, E., Egrioglu, E., Yolcu, U., Grosan, C., Type 1 fuzzy function approach based on ridge regression for forecasting (2019) Granular Computing, 4 (4), pp. 629-637; 
+Bas, E., Yolcu, U., Egrioglu, E., Intuitionistic fuzzy time series functions approach for time series forecasting (2020) Granular Computing, pp. 1-11; 
+Baykasoğlu, A., Maral, S., Fuzzy functions via genetic programming (2014) Journal of Intelligent & Fuzzy Systems, 27 (5), pp. 2355-2364; 
+Beyhan, S., Alci, M., Fuzzy functions based ARX model and new fuzzy basis function models for nonlinear system identification (2010) Applied Soft Computing, 10 (2), pp. 439-444; 
+(2015) Istanbul Stock Exchange Index Dataset; 
+Box, G.E., Jenkins, G.M., Reinsel, G.C., Ljung, G.M., (2015) Time Series Analysis: Forecasting and Control, , John Wiley & Sons; 
+Çelikyılmaz, A., Türkşen, I.B., Fuzzy functions with support vector machines (2007) Information Sciences, 177 (23), pp. 5163-5177; 
+Chen, S.M., Chang, Y.C., Multi-variable fuzzy forecasting based on fuzzy clustering and fuzzy rule interpolation techniques (2010) Information Sciences, 180 (24), pp. 4772-4783; 
+Chen, S.M., Chen, C.D., Taiex forecasting based on fuzzy time series and fuzzy variation groups (2010) IEEE Transactions on Fuzzy Systems, 19 (1), pp. 1-12; 
+Chen, S.M., Jian, W.S., Fuzzy forecasting based on two-factors second-order fuzzy-trend logical relationship groups, similarity measures and PSO techniques (2017) Information Sciences, 391, pp. 65-79; 
+Chen, S.M., Phuong, B.D.H., Fuzzy time series forecasting based on optimal partitions of intervals and optimal weighting vectors (2017) Knowledge-Based Systems, 118, pp. 204-216; 
+Chen, S.M., Chu, H.P., Sheu, T.W., Taiex forecasting using fuzzy time series and automatically generated weights of multiple factors (2012) IEEE Transactions on Systems, Man, and Cybernetics-Part A: Systems and Humans, 42 (6), pp. 1485-1495; 
+Chen, S.M., Zou, X.Y., Gunawan, G.C., Fuzzy time series forecasting based on proportions of intervals and particle swarm optimization techniques (2019) Information Sciences, 500, pp. 127-139; 
+Chen, S.M., Forecasting enrollments based on fuzzy time series (1996) Fuzzy Sets and Systems, 81 (3), pp. 311-319; 
+Cheng, S.H., Chen, S.M., Jian, W.S., Fuzzy time series forecasting based on fuzzy logical relationships and similarity measures (2016) Information Sciences, 327, pp. 272-287; 
+Dehghani, M., Seifi, A., Riahi-Madvar, H., Novel forecasting models for immediate-short-term to long-term influent flow prediction by combining ANFIS and grey wolf optimization (2019) Journal of Hydrology, 576, pp. 698-725; 
+Deo, R.C., Downs, N.J., Adamowski, J.F., Parisi, A.V., Adaptive neuro-fuzzy inference system integrated with solar zenith angle for forecasting sub-tropical photosynthetically active radiation (2019) Food and Energy Security, 8 (1); 
+Egrioglu, E., Aladag, C., Yolcu, U., Bas, E., A new adaptive network based fuzzy inference system for time series forecasting (2014) Aloy Journal of Soft Computing and Applications, 2 (1), pp. 25-32; 
+Gao, R., Duru, O., Parsimonious fuzzy time series modelling (2020) Expert Systems with Applications, 156, p. 113447; 
+Gardner, E.S., Jr., Exponential smoothing: The state of the art (1985) Journal of Forecasting, 4 (1), pp. 1-28; 
+Goudarzi, S., Khodabakhshi, M.B., Moradi, M.H., Interactively recurrent fuzzy functions with multi objective learning and its application to chaotic time series prediction (2016) Journal of Intelligent & Fuzzy Systems, 30 (2), pp. 1157-1168; 
+Huarng, K., Heuristic models of fuzzy time series for forecasting (2001) Fuzzy Sets and Systems, 123 (3), pp. 369-386; 
+Jang, J.S., Anfis: Adaptive-network-based fuzzy inference system (1993) IEEE Transactions on Systems, Man, and Cybernetics, 23 (3), pp. 665-685; 
+Kizilaslan, B., Egrioglu, E., Evren, A.A., Intuitionistic fuzzy ridge regression functions (2020) Communications in Statistics-Simulation and Computation, 49 (3), pp. 699-708; 
+Koc, I., Kivrak, H., Babaoglu, I., The estimation of the energy demand in turkey using grey wolf optimizer algorithm (2019) Annals of the Faculty of Engineering Hunedoara, 17 (1), pp. 113-117; 
+Ma, X., Mei, X., Wu, W., Wu, X., Zeng, B., A novel fractional time delayed grey model with grey wolf optimizer and its applications in forecasting the natural gas and coal consumption in chongqing china (2019) Energy, 178, pp. 487-507; 
+Mamdani, E.H., Assilian, S., An experiment in linguistic synthesis with a fuzzy logic controller (1975) International Journal of Man-Machine Studies, 7 (1), pp. 1-13; 
+Mirjalili, S., Mirjalili, S.M., Lewis, A., Grey wolf optimizer (2014) Advances in Engineering Software, 69, pp. 46-61; 
+Pal, N.R., Pal, K., Keller, J.M., Bezdek, J.C., A possibilistic fuzzy c-means clustering algorithm (2005) IEEE Transactions on Fuzzy Systems, 13 (4), pp. 517-530; 
+Samanta, S., Suresh, S., Senthilnath, J., Sundararajan, N., A new neuro-fuzzy inference system with dynamic neurons (NFIS-DN) for system identification and time series forecasting (2019) Applied Soft Computing, 82, p. 105567; 
+Sarıca, B., Eğrioğlu, E., Aşıkgil, B., A new hybrid method for time series forecasting: AR-ANFIS (2018) Neural Computing and Applications, 29 (3), pp. 749-760; 
+Song, Q., Chissom, B.S., Forecasting enrollments with fuzzy time series-part I (1993) Fuzzy Sets and Systems, 54 (1), pp. 1-9; 
+Song, Q., Chissom, B.S., Fuzzy time series and its models (1993) Fuzzy Sets and Systems, 54 (3), pp. 269-277; 
+Song, Q., Chissom, B.S., Forecasting enrollments with fuzzy time series-part II (1994) Fuzzy Sets and Systems, 62 (1), pp. 1-8; 
+(2015) Taiwan Stock Exchange Index Dataset; 
+Tak, N., Grey wolf optimizer based recurrent fuzzy regression functions for financial datasets (2020) Öneri Dergisi, 15 (54), pp. 350-366; 
+Tak, N., Type-1 possibilistic fuzzy forecasting functions (2020) Journal of Computational and Applied Mathematics, 370, p. 112653; 
+Tak, N., Type-1 recurrent intuitionistic fuzzy functions for forecasting (2020) Expert Systems with Applications, 140, p. 112913; 
+Tak, N., Evren, A.A., Tez, M., Egrioglu, E., Recurrent type-1 fuzzy functions approach for time series forecasting (2018) Applied Intelligence, 48 (1), pp. 68-77; 
+Takagi, T., Sugeno, M., Fuzzy identification of systems and its applications to modeling and control (1985) IEEE Transactions on Systems, Man, and Cybernetics, 1, pp. 116-132; 
+Tseng, F.M., Yu, H.C., Tzeng, G.H., Combining neural network model with seasonal time series ARIMA model (2002) Technological Forecasting and Social Change, 69 (1), pp. 71-87; 
+Türkşen, I.B., Fuzzy functions with LSE (2008) Applied Soft Computing, 8 (3), pp. 1178-1188; 
+Türkşen, I.B., Review of fuzzy system models with an emphasis on fuzzy functions (2009) Transactions of the Institute of Measurement and Control, 31 (1), pp. 7-31; 
+Vovan, T., Lethithu, T., A fuzzy time series model based on improved fuzzy function and cluster analysis problem (2020) Communications in Mathematics and Statistics, pp. 1-16; 
+Yolcu, O.C., Bas, E., Egrioglu, E., Yolcu, U., A new intuitionistic fuzzy functions approach based on hesitation margin for time-series prediction (2020) Soft Computing, 24 (11), pp. 8211-8222; 
+Yu, F., Zhang, L., Zhang, D., Fujita, H., Gong, Z., A novel forecasting method based on multi-order fuzzy time series and technical analysis (2016) Information Sciences, 367-368, pp. 41-57; 
+Zadeh, L.A., Outline of a new approach to the analysis of complex systems and decision processes (1973) IEEE Transactions on Systems, Man, and Cybernetics, 1, pp. 28-44
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85107180983&doi=10.1007%2fs10614-021-10132-7&partnerID=40&md5=90442ec68fcb9118ac4447de20deeb74
+ER  - 
+
+TY  - JOUR
+TI  - Insights into coral reef benthic dynamics from nonlinear spatial forecasting
+T2  - Journal of the Royal Society Interface
+J2  - J. R. Soc. Interface
+VL  - 16
+IS  - 153
+PY  - 2019
+DO  - 10.1098/rsif.2019.0047
+SN  - 17425689 (ISSN) 
+AU  - McNamara, D.E.
+AU  - Cortale, N.
+AU  - Edwards, C.
+AU  - Eynaud, Y.
+AU  - Sandin, S.A.
+AD  - Department of Physics and Physical Oceanography, Center for Marine Science, University of North Carolina, 601 South College Road, Wilmington, NC  28403, United States
+AD  - Center for Marine Biodiversity and Conservation, Scripps Institution of Oceanography, University of California - San Diego, 9500 Gilman Drive, San Diego, CA  92093-0202, United States
+AB  - Nonlinear time-series forecasting, or empirical dynamic modelling, has been used extensively in the past two decades as a tool for distinguishing between random temporal behaviour and nonlinear deterministic dynamics. Previous authors have extended nonlinear time-series forecasting to continuous spatial data. Here, we adjust spatial forecasting to handle discrete data and apply the technique to explore the ubiquity of nonlinear determinism in irregular spatial configurations of coral and algal taxa from Palmyra Atoll, a relatively pristine reef in the central Pacific Ocean. We find that the spatial distributions of coral and algal taxa show signs of nonlinear determinism in some locations and that these signals can change through time. We introduce the hypothesis that nonlinear spatial determinism may be a signal of systems in intermediate developmental (i.e. successional) stages, with spatial randomness characterizing early (i.e. recruitment dominated) and late-successional (i.e. 'climax' or attractor) phases. Common state-based metrics that sum community response to environmental forcing lack resolution to detect dynamics of (potential) recovery phases; incorporating signal of spatial patterning among sessile taxa holds unique promise to elucidate dynamical characters of complex ecological systems, thereby enhancing study and response efforts. © 2019 The Authors. Published by the Royal Society under the terms of the Creative Commons Attribution License http://creativecommons.org/licenses/by/4.0/, which permits unrestricted use, provided the original author and source are credited.
+KW  - Coral-algae
+KW  - Determinism
+KW  - Nonlinear forecasting
+KW  - Dynamics
+KW  - Reefs
+KW  - Time series
+KW  - Community response
+KW  - Determinism
+KW  - Dynamical character
+KW  - Environmental forcing
+KW  - Nonlinear forecasting
+KW  - Nonlinear time series
+KW  - Spatial configuration
+KW  - Spatial patterning
+KW  - Forecasting
+KW  - alga
+KW  - article
+KW  - coral reef
+KW  - forecasting
+KW  - nonhuman
+KW  - Pacific Ocean
+KW  - animal
+KW  - Anthozoa
+KW  - physiology
+KW  - time factor
+KW  - Animals
+KW  - Anthozoa
+KW  - Coral Reefs
+KW  - Forecasting
+KW  - Pacific Ocean
+KW  - Time Factors
+PB  - Royal Society Publishing
+N1  - Cited By :1
+N1  - Export Date: 25 April 2022
+M3  - Article
+DB  - Scopus
+C7  - 20190047
+C2  - 30966951
+LA  - English
+N1  - Correspondence Address: McNamara, D.E.; Department of Physics and Physical Oceanography, 601 South College Road, United States; email: mcnamarad@uncw.edu
+N1  - References: Kantz, H., Schreiber, T., (2004) Nonlinear Time Series Analysis, , Cambridge, UK: Cambridge University Press; 
+Sugihara, G., May, R.M., Nonlinear forecasting as a way of distinguishing chaos from measurement error in time series (1990) Nature, 344, p. 734; 
+Hsieh, C.H., Glaser, S.M., Lucas, A.J., Sugihara, G., Distinguishing random environmental fluctuations from ecological catastrophes for the North Pacific Ocean (2005) Nature, 435, p. 336; 
+Perretti, C.T., Munch, S.B., Sugihara, G., Model-free forecasting outperforms the correct mechanistic model for simulated and experimental data (2013) Proc. Natl Acad. Sci. USA, 110, pp. 5253-5257; 
+Rubin, D.M., Use of forecasting signatures to help distinguish periodicity, randomness, and chaos in ripples and other spatial patterns (1992) Chaos, 2, pp. 525-535; 
+Mumby, P.J., Hastings, A., Edwards, H.J., Thresholds and the resilience of Caribbean coral reefs (2007) Nature, 450, p. 98; 
+Bellwood, D.R., Hughes, T.P., Folke, C., Nyström, M., Confronting the coral reef crisis (2004) Nature, 429, p. 827; 
+Hughes, T.P., Catastrophes, phase shifts, and large-scale degradation of a Caribbean coral reef (1994) Science, 265, pp. 1547-1551; 
+Edwards, C.B., Eynaud, Y., Williams, G.J., Pedersen, N.E., Zgliczynski, B.J., Gleason, A.C., Smith, J.E., Sandin, S.A., Large-area imaging reveals biologically driven non-random spatial patterns of corals at a remote reef (2017) Coral Reefs, 36, pp. 1291-1305; 
+Takens, F., Detecting strange attractors in turbulence (1981) Dynamical Systems and Turbulence, Warwick 1980, pp. 366-381. , eds A Dold, B Eckman),. Berlin, Germany: Springer; 
+Abarbanel, H.D., Brown, R., Sidorowich, J.J., Tsimring, L.S., The analysis of observed chaotic data in physical systems (1993) Rev. Mod. Phys., 65, p. 1331; 
+Cortale, N., McNamara, D., SKEDM: Empirical dynamic modeling (2017) J. Open Source Softw., 2, p. 207; 
+Sandin, S.A., Baselines and degradation of coral reefs in the northern Line Islands (2008) PLoS ONE, 3; 
+Sweatman, H., Delean, S., Syms, C., Assessing loss of coral cover on Australia's Great Barrier Reef over two decades, with implications for longer-term trends (2011) Coral Reefs, 30, pp. 521-531; 
+Smith, J.E., Re-evaluating the health of coral reef communities: Baselines and evidence for human impacts across the central Pacific (2016) Proc. R. Soc. B, 283, p. 20151985; 
+Jackson, J.B., Coates, A.G., Life cycles and evolution of clonal (modular) animals (1986) Phil. Trans. R. Soc. Lond. B, 313, pp. 7-22; 
+Highsmith, R.C., Reproduction by fragmentation in corals (1982) Mar. Ecol. Progr. Ser., 15, pp. 207-226; 
+Hughes, T.P., Ayre, D., Connell, J.H., The evolutionary ecology of corals (1992) Trends Ecol. Evol., 7, pp. 292-295; 
+Mackie, G.O., From aggregates to integrates: Physiological aspects of modularity in colonial animals (1986) Phil. Trans. R. Soc. Lond. B, 313, pp. 175-196; 
+Diaz-Pulido, G., Doom and boom on a resilient reef: Climate change, algal overgrowth and coral recovery (2009) PLoS ONE, 4; 
+Gilmour, J.P., Smith, L.D., Heyward, A.J., Baird, A.H., Pratchett, M.S., Recovery of an isolated coral reef system following severe disturbance (2013) Science, 340, pp. 69-71; 
+Brito-Millán, M., Werner, B.T., Sandin, S.A., McNamara, D.E., Influence of aggregation on benthic coral reef spatio-temporal dynamics (2019) R. Soc. Open Sci., 6, p. 181703; 
+Williams, G.J., Smith, J.E., Conklin, E.J., Gove, J.M., Sala, E., Sandin, S.A., Benthic communities at two remote Pacific coral reefs: Effects of reef habitat, depth, and wave energy gradients on spatial patterns (2013) PeerJ, 1; 
+Williams, G.J., Gove, J.M., Eynaud, Y., Zgliczynski, B.J., Sandin, S.A., Local human impacts decouple natural biophysical relationships on Pacific coral reefs (2015) Ecography, 38, pp. 751-761; 
+Rogers, J.S., Monismith, S.G., Koweek, D.A., Dunbar, R.B., Wave dynamics of a Pacific Atoll with high frictional effects (2016) J. Geophys. Res. Oceans, 121, pp. 350-367; 
+Furby, K.A., Smith, J.E., Sandin, S.A., Porites superfusa mortality and recovery from a bleaching event at Palmyra Atoll, USA (2017) PeerJ, 5; 
+Odum, E.P., The strategy of ecosystem development (1966) Science, 164, pp. 262-270; 
+Dakos, V., Glaser, S.M., Hsieh, C.H., Sugihara, G., Elevated nonlinearity as an indicator of shifts in the dynamics of populations under stress (2017) J. R. Soc. Interface, 14, p. 20160845
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85064722010&doi=10.1098%2frsif.2019.0047&partnerID=40&md5=f8a33c1c96beb31cd4e9274aa58433fe
+ER  - 
+
+TY  - JOUR
+TI  - A new hybrid method for time series forecasting: AR–ANFIS
+T2  - Neural Computing and Applications
+J2  - Neural Comput. Appl.
+VL  - 29
+IS  - 3
+SP  - 749
+EP  - 760
+PY  - 2018
+DO  - 10.1007/s00521-016-2475-5
+SN  - 09410643 (ISSN) 
+AU  - Sarıca, B.
+AU  - Eğrioğlu, E.
+AU  - Aşıkgil, B.
+AD  - Department of Statistics, Faculty of Arts and Science, Marmara University, Istanbul, 34722, Turkey
+AD  - Department of Statistics, Faculty of Arts and Science, Giresun University, Giresun, 28100, Turkey
+AD  - Department of Statistics, Faculty of Science and Letters, Mimar Sinan Fine Arts University, Istanbul, 34380, Turkey
+AB  - In this study, a new hybrid forecasting method is proposed. The proposed method is called autoregressive adaptive network fuzzy inference system (AR–ANFIS). AR–ANFIS can be shown in a network structure. The architecture of the network has two parts. The first part is an ANFIS structure and the second part is a linear AR model structure. In the literature, AR models and ANFIS are widely used in time series forecasting. Linear AR models are used according to model-based strategy. A nonlinear model is employed by using ANFIS. Moreover, ANFIS is a kind of data-based modeling system like artificial neural network. In this study, a linear and nonlinear forecasting model is proposed by creating a hybrid method of AR and ANFIS. The new method has advantages of data-based and model-based approaches. AR–ANFIS is trained by using particle swarm optimization, and fuzzification is done by using fuzzy C-Means method. AR–ANFIS method is examined on some real-life time series data, and it is compared with the other time series forecasting methods. As a consequence of applications, it is shown that the proposed method can produce accurate forecasts. © 2016, The Natural Computing Applications Forum.
+KW  - Adaptive network fuzzy inference system
+KW  - Autoregressive model
+KW  - Fuzzy C-Means
+KW  - Fuzzy inference system
+KW  - Particle swarm optimization
+KW  - Time series
+KW  - Forecasting
+KW  - Fuzzy logic
+KW  - Fuzzy systems
+KW  - Network architecture
+KW  - Neural networks
+KW  - Particle swarm optimization (PSO)
+KW  - Time series
+KW  - Adaptive network fuzzy inference systems
+KW  - Auto regressive models
+KW  - Fuzzy C mean
+KW  - Fuzzy C means method
+KW  - Fuzzy inference systems
+KW  - Model-based strategy
+KW  - Nonlinear forecasting
+KW  - Time series forecasting
+KW  - Fuzzy inference
+PB  - Springer London
+N1  - Cited By :44
+N1  - Export Date: 25 April 2022
+M3  - Article
+DB  - Scopus
+LA  - English
+N1  - Correspondence Address: Sarıca, B.; Department of Statistics, Turkey; email: busenur.sarica@marmara.edu.tr
+N1  - References: Baş, E., Eğrioğlu, E., Fuzzy-time-series network used to forecast linear and nonlinear time series (2015) Appl Intell, 43, pp. 343-355; 
+Bezdek, J., Ehrlich, R., FCM: the Fuzzy C-Means clustering algorithm (1984) Comput Geosci, 10 (2-3), pp. 191-203; 
+Catalao, J., Pousinho, H., Hybrid wavelet-PSO–ANFIS approach for short-term wind power forecasting in Portugal (2011) IEEE Trans Sustain Energy, 2 (1), pp. 50-59; 
+Catalao, J., Pousinho, H., Hybrid wavelet–PSO–ANFIS approach for short-term electricity prices forecasting (2011) Power Syst, 26 (1), pp. 137-144; 
+Catalao, J., Osorio, G., (2011) Application of an intelligent system based on EPSO and ANFIS to price forecasting, , In, IEEE ISAP; 
+Chabaa, S., Zeroual, A., ANFIS method for forecasting internet traffic time series (2009) 2009 mediterrannean microwave symposium (MMS). IEEE, Tangiers, pp. 1-4; 
+Chang, B., Resolving the forecasting problems of overshoot and volatility clustering using ANFIS coupling nonlinear heteroscedasticity with quantum tuning (2008) Fuzzy Set Syst, 159 (23), pp. 3183-3200; 
+Chen, S., Forecasting enrollments based on fuzzy time series (1996) Fuzzy Sets Syst, 81 (3), pp. 311-319; 
+Chen, S., Chang, Y., Multi-variable fuzzy forecasting based on fuzzy clustering and fuzzy rule interpolation techniques (2010) Inform Sci, 180 (24), pp. 4772-4783; 
+Chen, S., Chen, C., TAIEX forecasting based on fuzzy time series and fuzzy variation groups (2011) IEEE Trans Fuzzy Syst, 19 (1), pp. 1-12; 
+Chen, S., Chu, H., TAIEX forecasting using fuzzy time series and automatically generated weights of multiple factors (2012) IEEE Trans Syst Man Cybern Part A Syst Hum, 42 (6), pp. 1485-1495; 
+Chen, B., Ma, Z., Short-term traffic flow prediction based on ANFIS (2009) IEEE international conference on communication software and networks (ICCSN '09). IEEE, Macau, pp. 791-793; 
+Chen, D., Zhang, J., Time series prediction based on ensemble ANFIS (2005) 2005 IEEE international conference on machine learning and cybernetics, vol 6. IEEE, Guangzhou, pp. 3552-3556; 
+Cheng, C., Wei, L., Fusion ANFIS models based on multi-stock volatility causality for TAIEX forecasting (2009) Neurocomputing, 72 (16-18), pp. 3462-3468; 
+Cheng, C., Wei, L., Owa based ANFIS model for TAIEX forecasting (2013) Econ Model, 30, pp. 442-448; 
+Cheng, C., Hsu, J., Forecasting electronic industry EPS using an integrated ANFIS model (2009) IEEE systems, man and cybernetics, pp. 3467-3472; 
+Chou, P., Tsai, J., (2015) Adaptive Neuro-fuzzy inference system with evolutionary algorithm for designing process parameters of color filter. In: 2015 IEEE international conference on automation science and engineering (CASE); 
+Cordeschi, N., Shojafar, M., Energy-efficient adaptive networked datacenters for the QoS support of real-time applications (2015) J Supercomput, 71, pp. 448-478; 
+Eberhart, R., Kennedy, J., A new optimizer using particle swarm theory (1995) IEEE MHS, 95, pp. 39-43; 
+Escobar, A., Perez, L., (2008) Application of support vector machines and ANFIS to the short-term load forecasting, , In, IEEE transmission and distribution conference and exposition; 
+Eğrioğlu, E., Aladağ, H., A new adaptive network based fuzzy inference system for time series forecasting (2014) Aloy J Soft Comput Appl, 2, pp. 25-32; 
+Gocic, M., Motamedi, S., Soft computing approaches for forecasting reference evapotranspiration (2015) Comput Elect Agric, 113, pp. 164-173; 
+Ho, Y., Tsai, C., Comparing ANFIS and SEM in linear and nonlinear forecasting of new product development performance (2011) Expert Syst Appl, 38 (6), pp. 6498-6507; 
+Jang, J.S., ANFIS: adaptive network based fuzzy inference systems (1993) IEEE Trans Syst Man Cybern, 23 (3), pp. 665-685; 
+Khadangi, E., Madvar, H., Comparison of ANFIS and RBF models in daily stream flow forecasting (2009) 2nd international conference on computer, control and communication, IC4 2009. IEEE, Karachi, pp. 1-6; 
+Li, K., Su, H., Forecasting building energy consumption using neural networks and hybrid neuro-fuzzy system: a comparative study (2011) Energy Build, 43 (10), pp. 2893-2899; 
+Li, H., Guo, C., Yang, S., Jin, H., Hybrid model of WT and ANFIS and its application on time series prediction of ship roll motion (2006) IEEE IMACS multiconference on computational engineering in systems applications, vol 1. IEEE, pp. 333-337. , In:, Beijing; 
+Lohani, A., Kumar, R., Hydrological time series modeling: a comparison between adaptive neuro-fuzzy, neural network and autoregressive techniques (2012) J Hydrol, 442-443, pp. 23-35; 
+Mellit, A., Arab, H., (2007) An ANFIS-based forecasting for solar radiation data from sunshine duration and ambient temperature, , In, IEEE power engineering society general meeting; 
+Mohammadi, S., Keivani, H., Demand forecasting using time series modelling and ANFIS Estimator (2006) IEEE Proceedings of the 41st international universities power engineering conference, 1, pp. 333-337. , In: IEEE, Newcastle-upon-Tyne; 
+Moreno, J., Hydraulic plant generation forecasting in Colombian power market using ANFIS (2009) Energy Econ, 31 (3), pp. 450-455; 
+Patel, P., Sharma, V., Guaranteed convergence particle swarm optimization using personal best (2013) Int J Comput Appl, 73 (7), pp. 6-10; 
+Peer, E., van den Bergh, F., Using neighbourhoods with the guaranteed convergence PSO (2003) IEEE SIS, 3, pp. 235-242; 
+Pousinho, H., Catalao, J., Wind power short-term prediction by a hybrid PSO–ANFIS approach (2010) IEEE MELECON, 2010, pp. 955-960; 
+Pousinho, H., Mendes, V., Short-term electricity prices forecasting in a competitive market by a hybrid PSO–ANFIS approach (2012) Int J Elect Power Energy Syst, 39 (1), pp. 29-35; 
+Protic, M., Shamshirband, S., Forecasting of consumers heat load in district heating systems using the support vector machine with a discrete wavelet transform algorithm (2015) Energy, 87, pp. 343-351; 
+Shi, Y., Eberhart, R., Empirical study of particle swarm optimization (2005) Proceedings of the 1999 congress on evolutionary computation, CEC 99, 3, pp. 1945-1950. , In: IEEE, Washington; 
+Shojafar, M., Javanmardi, S., FUGE: a joint meta-heuristic approach to cloud job scheduling algorithm using fuzzy theory and a genetic method (2015) Cluster Comput, 18, pp. 829-844; 
+Shoorehdeli, M., Teshnehlab, M., Identification using ANFIS with intelligent hybrid stable learning algorithm approaches and stability analysis of training methods (2009) Appl Soft Comput, 9 (2), pp. 833-850; 
+Suhartono, I., Faulina, R., Ensemble method based on ANFIS–ARIMA for rainfall prediction (2012) 2012 international conference on statistics in science, business, and engineering (ICSSBE). IEEE, Langkawi, pp. 1-4; 
+Suhartono, I., Puspitasari, M., Two-level Seasonal model based on hybrid ARIMA–ANFIS for forecasting short-term electricity load in Indonesia (2012) 2012 international conference on statistics in science, business, and engineering (ICSSBE). IEEE, Langkawi, pp. 1-5; 
+Takagi, T., Sugeno, M., Fuzzy identification of systems and its applications to modeling and control (1985) Man Cybern, 15 (1), pp. 116-132; 
+Tamura, H., Tanno, K., Recurrent type ANFIS using local search technique for time series prediction (2008) IEEE Asia pacific conference on circuits and systems, APCCAS 2008. IEEE, Macao, pp. 380-383. , In:, pp; 
+Wei, L., A hybrid ANFIS model based on empirical mode decomposition for stock time series forecasting (2016) Appl Soft Comput, 42, pp. 368-376; 
+Yun, Z., Quan, Z., RBF neural network and ANFIS- based short-term load forecasting approach in real-time price environment (2008) Power Syst, 23 (3), pp. 853-858; 
+Yunos, Z., Shamsuddin, S., Data modeling for kuala lumpur composite index with ANFIS (2008) IEEE second Asia international conference on modeling and simulation, pp. 609-614; 
+Zhang, G., Time series forecasting using a hybrid ARIMA and neural network model (2003) Neurocomputing, 50, pp. 159-175
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-84979295867&doi=10.1007%2fs00521-016-2475-5&partnerID=40&md5=dd5767d80e6472e833887c60445fdfb2
+ER  - 
+
+TY  - JOUR
+TI  - Time series analytics using sliding window metaheuristic optimization-based machine learning system for identifying building energy consumption patterns
+T2  - Applied Energy
+J2  - Appl. Energy
+VL  - 177
+SP  - 751
+EP  - 770
+PY  - 2016
+DO  - 10.1016/j.apenergy.2016.05.074
+SN  - 03062619 (ISSN) 
+AU  - Chou, J.-S.
+AU  - Ngo, N.-T.
+AD  - Department of Civil and Construction Engineering, National Taiwan University of Science and Technology, Taipei, Taiwan
+AB  - Smart grids are a promising solution to the rapidly growing power demand because they can considerably increase building energy efficiency. This study developed a novel time-series sliding window metaheuristic optimization-based machine learning system for predicting real-time building energy consumption data collected by a smart grid. The proposed system integrates a seasonal autoregressive integrated moving average (SARIMA) model and metaheuristic firefly algorithm-based least squares support vector regression (MetaFA-LSSVR) model. Specifically, the proposed system fits the SARIMA model to linear data components in the first stage, and the MetaFA-LSSVR model captures nonlinear data components in the second stage. Real-time data retrieved from an experimental smart grid installed in a building were used to evaluate the efficacy and effectiveness of the proposed system. A k-week sliding window approach is proposed for employing historical data as input for the novel time-series forecasting system. The prediction system yielded high and reliable accuracy rates in 1-day-ahead predictions of building energy consumption, with a total error rate of 1.181% and mean absolute error of 0.026 kW h. Notably, the system demonstrates an improved accuracy rate in the range of 36.8-113.2% relative to those of the linear forecasting model (i.e., SARIMA) and nonlinear forecasting models (i.e., LSSVR and MetaFA-LSSVR). Therefore, end users can further apply the forecasted information to enhance efficiency of energy usage in their buildings, especially during peak times. In particular, the system can potentially be scaled up for using big data framework to predict building energy consumption. © 2016 Elsevier Ltd.
+KW  - Building energy management
+KW  - Energy consumption
+KW  - Machine learning
+KW  - Metaheuristic optimization
+KW  - Pattern prediction
+KW  - Smart grid data
+KW  - Time-series technique
+KW  - Artificial intelligence
+KW  - Big data
+KW  - Buildings
+KW  - Electric power transmission networks
+KW  - Energy conservation
+KW  - Energy efficiency
+KW  - Energy utilization
+KW  - Forecasting
+KW  - Learning systems
+KW  - Optimization
+KW  - Time series
+KW  - Building energy consumption
+KW  - Building energy efficiency
+KW  - Building energy managements
+KW  - Least squares support vector regression
+KW  - Meta-heuristic optimizations
+KW  - Seasonal autoregressive integrated moving averages
+KW  - Smart grid
+KW  - Time series techniques
+KW  - Smart power grids
+KW  - algorithm
+KW  - energy efficiency
+KW  - energy use
+KW  - error analysis
+KW  - forecasting method
+KW  - machine learning
+KW  - optimization
+KW  - prediction
+KW  - time series analysis
+PB  - Elsevier Ltd
+N1  - Cited By :84
+N1  - Export Date: 25 April 2022
+M3  - Article
+DB  - Scopus
+N1  - CODEN: APEND
+LA  - English
+N1  - Correspondence Address: Chou, J.-S.; Department of Civil and Construction Engineering, Taiwan; email: jschou@mail.ntust.edu.tw
+N1  - References: Yuan, J., Hu, Z., Low carbon electricity development in China - an IRSP perspective based on super smart grid (2011) Renew Sustain Energy Rev, 15, pp. 2707-2713; 
+(2003) United States Department of Energy; 
+Crisostomi, E., Gallicchio, C., Micheli, A., Raugi, M., Tucci, M., Prediction of the Italian electricity price for smart grid applications (2015) Neurocomputing, 170, pp. 286-295; 
+Di Santo, K.G., Kanashiro, E., Di Santo, S.G., Saidel, M.A., A review on smart grids and experiences in Brazil (2015) Renew Sustain Energy Rev, 52, pp. 1072-1082; 
+Soares, J., Fotouhi Ghazvini, M.A., Vale, Z., de Moura Oliveira, P.B., A multi-objective model for the day-ahead energy resource scheduling of a smart grid with high penetration of sensitive loads (2016) Appl Energy, 162, pp. 1074-1088; 
+Colak, I., Fulli, G., Sagiroglu, S., Yesilbudak, M., Covrig, C.-F., Smart grid projects in Europe: current status, maturity and future scenarios (2015) Appl Energy, 152, pp. 58-70; 
+(2010) IEC Smart Rrid Standardization Roadmap Edition 1.0. SMB Smart Grid Strategic Group; 
+Kolokotsa, D., The role of smart grids in the building sector (2016) Energy Build, 116, pp. 703-708; 
+Cui, B., Gao, D.-C., Wang, S., Xue, X., Effectiveness and life-cycle cost-benefit analysis of active cold storages for building demand management for smart grid applications (2015) Appl Energy, 147, pp. 523-535; 
+Xue, X., Wang, S., Sun, Y., Xiao, F., An interactive building power demand management strategy for facilitating smart grid optimization (2014) Appl Energy, 116, pp. 297-310; 
+Ahmad, A.S., Hassan, M.Y., Abdullah, M.P., Rahman, H.A., Hussin, F., Abdullah, H., A review on applications of ANN and SVM for building electrical energy consumption forecasting (2014) Renew Sustain Energy Rev, 33, pp. 102-109; 
+Zhang, W., Liu, S., Li, N., Xie, H., Li, X., Development forecast and technology roadmap analysis of renewable energy in buildings in China (2015) Renew Sustain Energy Rev, 49, pp. 395-402; 
+Hsu, D., Comparison of integrated clustering methods for accurate and stable prediction of building energy consumption data (2015) Appl Energy, 160, pp. 153-163; 
+Lü, X., Lu, T., Kibert, C.J., Viljanen, M., Modeling and forecasting energy consumption for heterogeneous buildings using a physical-statistical approach (2015) Appl Energy, 144, pp. 261-275; 
+Fumo, N., Rafe Biswas, M.A., Regression analysis for prediction of residential energy consumption (2015) Renew Sustain Energy Rev, 47, pp. 332-343; 
+Ekici, B.B., Aksoy, U.T., Prediction of building energy consumption by using artificial neural networks (2009) Adv Eng Softw, 40, pp. 356-362; 
+D'Andrea, E., Lazzerini, B., del Rosario, S.L., Neural network-based forecasting of energy consumption due to electric lighting in office buildings (2012) Sustain Internet ICT Sustain, 10, pp. 1-5; 
+Li, Q., Meng, Q., Cai, J., Yoshino, H., Mochida, A., Applying support vector machine to predict hourly cooling load in the building (2009) Appl Energy, 86, pp. 2249-2256; 
+Haydari, Z., Kavehnia, F., Askari, M., Ganbariyan, M., Time-series load modelling and load forecasting using neuro-fuzzy techniques (2007) 9th International conference on electrical power quality and utilisation, pp. 1-6; 
+Naji, S., Shamshirband, S., Basser, H., Keivani, A., Alengaram, U.J., Jumaat, M.Z., Application of adaptive neuro-fuzzy methodology for estimating building energy consumption (2016) Renew Sustain Energy Rev, 53, pp. 1520-1528; 
+Guo, J.J., Wu, J.Y., Wang, R.Z., A new approach to energy consumption prediction of domestic heat pump water heater based on grey system theory (2011) Energy Build, 43, pp. 1273-1279; 
+Hamzacebi, C., Es, H.A., Forecasting the annual electricity consumption of Turkey using an optimized grey model (2014) Energy, 70, pp. 165-171; 
+Box, G.E.P., Jenkins, G.M., (1970) Time series analysis: forecasting and control, , Holden-day, California, United States; 
+Tan, Z., Zhang, J., Wang, J., Xu, J., Day-ahead electricity price forecasting using wavelet transform combined with ARIMA and GARCH models (2010) Appl Energy, 87, pp. 3606-3610; 
+Box, G.E.P., Jenkins, G., (1990) Time series analysis, forecasting and control, , Holden-Day, Incorporated, California, United States; 
+Khashei, M., Bijari, M., A novel hybridization of artificial neural networks and ARIMA models for time series forecasting (2011) Appl Soft Comput, 11, pp. 2664-2675; 
+Wang, Y., Wang, J., Zhao, G., Dong, Y., Application of residual modification approach in seasonal ARIMA for electricity demand forecasting: a case study of China (2012) Energy Policy, 48, pp. 284-294; 
+Pal, M., Deswal, S., Support vector regression based shear strength modelling of deep beams (2011) Comput Struct, 89, pp. 1430-1439; 
+Martins, F.F., Begonha, A., Amália Sequeira Braga, M., Prediction of the mechanical behavior of the Oporto granite using Data Mining techniques (2012) Expert Syst Appl, 39, pp. 8778-8783; 
+De Boeck, L., Verbeke, S., Audenaert, A., De Mesmaeker, L., Improving the energy performance of residential buildings: a literature review (2015) Renew Sustain Energy Rev, 52, pp. 960-975; 
+Foucquier, A., Robert, S., Suard, F., Stéphan, L., Jay, A., State of the art in building modelling and energy performances prediction: a review (2013) Renew Sustain Energy Rev, 23, pp. 272-288; 
+Fumo, N., A review on the basics of building energy estimation (2014) Renew Sustain Energy Rev, 31, pp. 53-60; 
+Li, K., Hu, C., Liu, G., Xue, W., Building's electricity consumption prediction using optimized artificial neural networks and principal component analysis (2015) Energy Build, 108, pp. 106-113; 
+Mena, R., Rodríguez, F., Castilla, M., Arahal, M.R., A prediction model based on neural networks for the energy consumption of a bioclimatic building (2014) Energy Build, 82, pp. 142-155; 
+Chen, H., Huang, Y., Shen, H., Chen, Y., Ru, M., Chen, Y., Modeling temporal variations in global residential energy consumption and pollutant emissions (2015) Appl Energy; 
+Fan, C., Xiao, F., Wang, S., Development of prediction models for next-day building energy consumption and peak power demand using data mining techniques (2014) Appl Energy, 127, pp. 1-10; 
+Zhao, H.-X., Magoulès, F., A review on the prediction of building energy consumption (2012) Renew Sustain Energy Rev, 16, pp. 3586-3592; 
+Sandels, C., Widén, J., Nordström, L., Andersson, E., Day-ahead predictions of electricity consumption in a Swedish office building from weather, occupancy, and temporal data (2015) Energy Build, 108, pp. 279-290; 
+Zhang, P.G., Time series forecasting using a hybrid ARIMA and neural network model (2003) Neurocomputing, 50, pp. 159-175; 
+Hyndman, R.J., Athanasopoulos, G., Forecasting: principles and practice (2013), https://www.otexts.org/fpp:Otexts; Chen, K.-Y., Wang, C.-H., A hybrid SARIMA and support vector machines in forecasting the production values of the machinery industry in Taiwan (2007) Expert Syst Appl, 32, pp. 254-264; 
+Choi, T.-M., Yu, Y., Au, K.-F., A hybrid SARIMA wavelet transform method for sales forecasting (2011) Decis Support Syst, 51, pp. 130-140; 
+Jung, H.C., Kim, J.S., Heo, H., Prediction of building energy consumption using an improved real coded genetic algorithm based least squares support vector machine approach (2015) Energy Build, 90, pp. 76-84; 
+Lee, Y.-S., Tong, L.-I., Forecasting nonlinear time series of energy consumption using a hybrid dynamic model (2012) Appl Energy, 94, pp. 251-256; 
+Sánchez Lasheras, F., de Cos Juez, F.J., Suárez Sánchez, A., Krzemień, A., Riesgo Fernández, P., Forecasting the COMEX copper spot price by means of neural networks and ARIMA models (2015) Resour Policy, 45, pp. 37-43; 
+Khandelwal, I., Adhikari, R., Verma, G., Time series forecasting using hybrid ARIMA and ANN models based on DWT decomposition (2015) Procedia Comput Sci, 48, pp. 173-179; 
+Zhang, G.P., Time series forecasting using a hybrid ARIMA and neural network model (2003) Neurocomputing, 50, pp. 159-175; 
+Hansen, J.V., Nelson, R.D., Time-series analysis with neural networks and ARIMA-neural network hybrids (2003) J Exp Theor Artif Intell, 15, pp. 315-330; 
+Sallehuddin, R., Hj Shamsuddin, S.M., Hybrid grey relational artificial neural network and auto regressive integrated moving average model for forecasting time-series data (2009) Appl Artif Intell, 23, pp. 443-486; 
+Pai, P.-F., Lin, C.-S., A hybrid ARIMA and support vector machines model in stock price forecasting (2005) Omega, 33, pp. 497-505; 
+Da-yong, Z., Hong-wei, S., Pu, C., Stock market forecasting model based on a hybrid ARMA and support vector machines (2008) 15th Annual conference proceedings, pp. 1312-1317. , international conference on management science and engineering; 
+Che, J., Wang, J., Short-term electricity prices forecasting based on support vector regression and Auto-regressive integrated moving average modeling (2010) Energy Convers Manage, 51, pp. 1911-1917; 
+Su, S., Zhang, W., Zhao, S., Fault prediction for nonlinear system using sliding ARMA combined with online LS-SVR (2014) Math Probl Eng, 2014, p. 9; 
+Haifeng, W., Dejin, H., Comparison of SVM and LS-SVM for regression (2005) International conference on neural networks and brain, pp. 279-283; 
+Suykens, J.A.K., Gestel, T.V., Brabanter, J.D., Moor, B.D., Vandewalle, J., (2002) Least squares support vector machines, , World Scientific, Singapore; 
+Chou, J.-S., Ngo, N.-T., Pham, A.-D., Shear strength prediction in reinforced concrete deep beams using nature-inspired metaheuristic support vector regression (2016) J Comput Civil Eng, 30; 
+Yang, X.-S., (2014) Chapter 2 - Analysis of algorithms. Nature-inspired optimization algorithms, pp. 23-44. , Elsevier, Oxford, United Kingdom; 
+Roque, C.M.C., Martins, P.A.L.S., Differential evolution for optimization of functionally graded beams (2015) Compos Struct, 133, pp. 1191-1197; 
+Fister, I., Fister, I., Yang, X.-S., Brest, J., A comprehensive review of firefly algorithms (2013) Swarm Evolut Comput, 13, pp. 34-46; 
+Talatahari, S., Gandomi, A.H., Yun, G.J., Optimum design of tower structures using firefly algorithm (2014) Struct Des Tall Spec Build, 23, pp. 350-361; 
+Tseng, F.-M., Tzeng, G.-H., A fuzzy seasonal ARIMA model for forecasting (2002) Fuzzy Sets Syst, 126, pp. 367-376; 
+Alwee, R., Hj Shamsuddin, S.M., Sallehuddin, R., Hybrid support vector regression and autoregressive integrated moving average models improved by particle swarm optimization for property crime rates forecasting with economic indicators (2013) Sci World J, 2013, p. 11; 
+Shamshirband, S., Mohammadi, K., Yee, P.L., Petković, D., Mostafaeipour, A., A comparative evaluation for identifying the suitability of extreme learning machine to predict horizontal global solar radiation (2015) Renew Sustain Energy Rev, 52, pp. 1031-1042; 
+Raza, M.Q., Khosravi, A., A review on artificial intelligence based load demand forecasting techniques for smart grid and buildings (2015) Renew Sustain Energy Rev, 50, pp. 1352-1372; 
+Vapnik, V.N., (1995) The nature of statistical learning theory, , Springer-Verlag, New York, New York, United States; 
+Yang, X.-S., (2008) Firefly algorithm, , Luniver Press, Bristol, UK; 
+Coelho, L.D.S., Mariani, V.C., Improved firefly algorithm approach applied to chiller loading for energy conservation (2013) Energy Build, 59, pp. 273-278; 
+He, D., He, C., Jiang, L.G., Zhu, H.W., Hu, G.R., Chaotic characteristics of a one-dimensional iterative map with infinite collapses (2001) IEEE Transact Circ Syst I: Fundam Theory Appl, 48, pp. 900-906; 
+Chou, J.-S., Ngo, N.-T., Smart grid data analytics framework for increasing energy savings in residential buildings (2016) Autom Constr; 
+Chou, J.-S., Telaga, A.S., Real-time detection of anomalous power consumption (2014) Renew Sustain Energy Rev, 33, pp. 400-411
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-84973111565&doi=10.1016%2fj.apenergy.2016.05.074&partnerID=40&md5=a60d538abc597359f074667edb4c6667
+ER  - 
+
+TY  - JOUR
+TI  - Grey system based novel forecasting and portfolio mechanism on CSE
+T2  - Grey Systems
+J2  - Grey. Syst.
+VL  - 6
+IS  - 2
+SP  - 126
+EP  - 142
+PY  - 2016
+DO  - 10.1108/GS-02-2016-0004
+SN  - 20439377 (ISSN) 
+AU  - Rathnayaka, R.M.K.T.
+AU  - Seneviratna, D.M.K.N.
+AU  - Jianguo, W.
+AD  - School of Economics, Wuhan University of Technology, Wuhan, China
+AD  - Faculty of Applied Sciences, Sabaragamuwa University of Sri Lanka, Belihuloya, Sri Lanka
+AD  - Faculty of Engineering, University of Ruhuna, Galle, Sri Lanka
+AD  - School of Economics, Wuhan University of Technology, Wuhan, China
+AB  - Purpose: – Because of the high volatility with unstable data patterns in the real world, the ability of forecasting price indices is notoriously embarrassing and represents a major challenge with traditional time series mechanisms; especially, most of the traditional approaches are weak to forecast future predictions in the high volatile and unbalanced frameworks under the global and local financial depressions. The purpose of this paper is to propose a new statistical approach for portfolio selection and stock market forecasting to assist investors as well as stock brokers to predict the future behaviors. Design/methodology/approach: – This study mainly takes an attempt to understand the trends, behavioral patterns and predict the future estimations under the new proposed frame for the Colombo Stock Exchange (CSE), Sri Lanka. The methodology of this study is carried out under the two main phases. In the first phase, constructed a new portfolio mechanism based on k-means clustering. In the second stage, proposed a nonlinear forecasting methodology based on grey mechanism for forecasting stock market indices under the high-volatile fluctuations. The autoregressive integrated moving average (ARIMA) predictions are used as comparison mode. Findings: – Initially, the k-mean clustering was applied to pick out the profitable sectors running under the CSE and results indicated that BFI is more significant than other 20 sectors. Second, the MAE, MAPE and MAD model comparison results clearly suggested that, the newly proposed nonlinear grey Bernoulli model (NGBM) is more appropriate than traditional ARIMA methods to forecast stock price indices under the non-stationary market conditions. Practical implications: – Because of the flexible nonlinear modeling capability, proposed novel concepts are more suitable for applying in various areas in the field of financial, economic, military, geological and agricultural systems for pattern recognition, classification, time series forecasting, etc. Originality/value: – For the large sample of data forecasting under the normality assumptions, the traditional time series methodologies are more suitable than grey methodologies. However, the NGBM is better both in model building and ex post testing stagers under the s-distributed data patterns with limited data forecastings. © 2016, Emerald Group Publishing Limited.
+KW  - ARIMA
+KW  - GM (1,1)
+KW  - GM(2,1)
+KW  - NGBM
+KW  - Portfolio selection
+PB  - Emerald Group Holdings Ltd.
+N1  - Cited By :4
+N1  - Export Date: 25 April 2022
+M3  - Article
+DB  - Scopus
+LA  - English
+N1  - Correspondence Address: Rathnayaka, R.M.K.T.; School of Economics, China; email: 2609814759@qq.com
+N1  - References: Arumawadu, H.I., Rathnayaka, R., Illangarathne, S., Mining profitability of telecommunication customers using k-means clustering (2015) Journal of Data Analysis and Information Processing, 3 (3), pp. 63-72; 
+Asadi, S., Shahrabi, J., Abbaszadeh, P., Tabanmehr, S., A new hybrid artificial neural networks for rainfall-runoff process modeling (2013) Neurocomputing, 121 (1), pp. 470-480; 
+Balbás, A., Balbás, B., Balbás, R., Good deals and benchmarks in robust portfolio selection (2016) European Journal of Operational Research, 250 (1), pp. 666-678; 
+Bin, L., Qing-sheng, B., The Verhulst model with remedy and its application in forecasting quantity of student taking entrance examination to college (2010) US-China Education Review, 7 (4), pp. 65-75; 
+Castellano, R., Cerqueti, R., Mean-variance portfolio selection in presence of infrequently traded stocks (2014) European Journal of Operational Research, 234 (2), pp. 442-449; 
+Chang, B., Hybrid BPNN-weighted grey -CLSP forecasting (2005) Journal of Information Science and Engineering, 21 (1), pp. 209-221; 
+Chang, C.-J., Li, D.-C., Huang, Y.-H., Chen, C.-C., A novel gray forecasting model based on the boxplot for small manufacturing data sets (2015) Applied Mathematics and Computation, 265 (1), pp. 400-408; 
+Chen, C.I., Application of the novel nonlinear grey Bernoulli model for forecasting unemployment rate (2008) Chaos, Solitons & Fractals, 37 (1), pp. 278-287; 
+Chen, C.-I., Huang, S.-J., The necessary and sufficient condition for GM(1, 1) grey prediction model (2013) Applied Mathematics and Computation, 219 (11), pp. 6152-6162; 
+Chen, C.-I., Chen, H.L., Chen, S.-P., Forecasting of foreign exchange rates of Taiwan’s major trading partners by novel nonlinear grey Bernoulli Model NGBM (1, 1) (2008) Communications in Nonlinear Science and Numerical Simulation, 13 (6), pp. 1194-1204; 
+Chen, C.-I., Hsin, P.-H., Wu, C.-S., Forecasting Taiwan’s major stock indices by the Nash nonlinear grey Bernoulli model (2010) Expert Systems with Applications, 37 (12), pp. 7557-7562; 
+Chourmouziadis, K., Chatzoglou, P.D., An intelligent short term stock trading fuzzy system for assisting investors in portfolio management (2016) Expert Systems with Applications, 43 (1), pp. 298-311; 
+Cui, J., Liu, S.-F., Bo, Z., Xie, N.-M., A novel grey forecasting model and its optimization (2013) Applied Mathematical Modelling, 37 (2), pp. 4399-4406; 
+Darbellay, G.A., Slama, M., Forecasting the short-term demand for electricity do neural networks stand a better chance? (2002) International Journal of Forecasting, 16 (1), pp. 71-83; 
+Deng, J., Introduction to grey system theory (1989) The Journal of Grey System, 1 (1), pp. 1-24; 
+Hsu, L., A genetic algorithm based nonlinear grey Bernoulli model for output forecasting in integrated circuit industry (2010) Expert Systems with Applications, 37 (1), pp. 4318-4322; 
+Hsu, L.C., Applying the grey prediction model to the global integrated circuit industry (2003) Technological Forecasting and Social Change, 70 (6), pp. 563-574; 
+Hsu, Y.-T., Liu, M.-C., Yeh, J., Hung, H.-F., Forecasting the turning time of stock market based on Markov-Fourier grey model (2009) Expert Systems with Applications, 36 (4), pp. 8597-8603; 
+Jegadeesh, N., Titman, S., Profitability of momentum strategies: an evaluation of alternative explanations (2001) Journal of Finance, 56 (1), pp. 699-720; 
+Jayathileke, P.M.B., Ratnayake, R.M.K.T., Testing the link between inflation and economic growth: evidence from Asia (2013) Modern Economy, 4, pp. 88-92; 
+Kaastra, I., Boyd, M., Designing a neural network for forecasting financial and economic time series (1996) Neurocomputing, 10 (1), pp. 215-236; 
+Kayacan, E., Ulutas, B., Kaynak, O., Grey system theory-based models in time series predictions (2010) Expert Systems with Applications, 37 (1), pp. 1784-1789; 
+Kocadağlıa, O., Keskin, R., A novel portfolio selection model based on fuzzy goal programming with different importance and priorities (2015) Expert Systems with Applications, 42, pp. 6898-6912; 
+Kohzadi, N., Boyd, M.S., Kermanshahi, B., Kaastra, I., A comparison of artificial neural network and time series models for forecasting commodity prices (1996) Neurocomputing, 10 (2), pp. 169-181; 
+Leung, P.-L., Ng, H.-Y., Wong, W.-K., An improved estimation to make Markowitz’s portfolio optimization theory users friendly and estimation accurate with application on the US stock market investment (2012) European Journal of Operational Research, 222 (1), pp. 85-95; 
+Li, Y., Ang, K.H., Chong, G.C., Feng, C.W., Tan, K.C., Evolutionary search and optimisation enabled computer automated control system design (2004) International Journal of Automation and Computing, 1 (1), pp. 76-88; 
+Lim, S., Oh, K.W., Zhu, J., Use of DEA cross-efficiency evaluation in portfolio selection: an application to Korean stock market (2014) European Journal of Operational Research, 236 (1), pp. 361-368; 
+Liu, S., Dang, Y., Fang, Z., (2004) The Theory of Grey System and its Applications, , 3rd ed., Science Publishing, Peking; 
+Maimon, O., Braha, D., A genetic algorithm approach to scheduling PCBs on a single machine (1998) International Journal of Production Research, 36 (3), pp. 18-27; 
+Mossin, J., Optimal multiperiod portfolio policies (1968) Journal of Business, 41 (2), pp. 215-229; 
+Rathnayaka, R.K.T., Seneviratne, D., GM (1, 1) analysis and forecasting for efficient energy production and consumption (2014) International Journal of Business, Economics and Management Works, 1 (1), pp. 25-34; 
+Rathnayaka, R.K.T., Wang, Z.-J., Enhanced greedy optimization algorithm with data warehousing for automated nurse scheduling system (2012) E-Health Telecommunication Systems and Networks, 1 (4), pp. 43-48; 
+Rathnayaka, R.K.T., Jianguo, W., Seneviratne, D., (2014) Geometric Brownian motion with Ito lemma approach to evaluate market fluctuations: a case study on Colombo Stock Exchange; 
+Rathnayaka, R.K.T., Seneviratna, D., Jianguo, W., Grey system based novel approach for stock market forecasting (2015) Grey Systems: Theory and Application, 5 (2), pp. 178-193; 
+Rathnayaka, R.K.T., Seneviratne, D., Jianguo, W., Indika, H., (2015) A Hybrid Statistical Approach for Stock Market Forecasting based on Artificial Neural Network and ARIMA Time Series Models, , b), IEEE, Nanjing; 
+Shih, C.-S., Hsu, Y.-T., Yeh, J., Lee, P.-C., Grey number prediction using the grey modification model with progression technique (2011) Applied Mathematical Modelling, 35 (3), pp. 1314-1321; 
+Steinbach, M., Markowitz revisited: mean-variance models in financial portfolio analysis (2001) SIAM Review, 43 (3), pp. 31-85; 
+Tapan, B., (1999) Multiobjective Scheduling by Genetic Algorithms, , Kluwer Academic, Publishers, Norwell, MA; 
+Tseng, F.-M., Yu, H.-C., Tzeng, G.-H., Applied hybrid grey model to forecast seasonal time series (2001) Technological Forecasting and Social Change, 67 (1), pp. 291-302; 
+Tseng, F.-M., Yu, H.-C., Tzeng, G.-H., Combining neural network model with seasonal time series ARIMA model (2002) Technological Forecasting & Social Change, 69 (1), pp. 71-87; 
+Valipour, M., Banihabib, M.E., Behbahani, S.M.R., Comparison of the ARMA, ARIMA, and the autoregressive artificial neural network models in forecasting the monthly inflow of Dez Dam reservoir (2013) Journal of Hydrology, 476 (1), pp. 433-441; 
+Wang, F.-J., Li, T.-Q., Yu, C.-Z., Grey Verhulst predictive model of road traffic accident (2006) Journal of Traffic and Transportation Engineering, 6 (1), pp. 122-126; 
+Wang, Y.F., Predicting stock price using fuzzy Grey prediction system (2002) Expert Systems with Applications, 22 (1), pp. 33-39; 
+Wen, K.L., (2004) Grey Systems: Modeling and Prediction, 22 (1), p. 2012. , Yang’s Scientific Research Institute, Tucson, AZ: 2016, 978-0972121279; 
+Willett, P., Genetic algorithms in molecular recognition and design (1995) Trends in Biotechnology, 13 (12), pp. 516-521; 
+Xia, M., Wong, W., A seasonal discrete grey forecasting model for fashion retailing (2014) Knowledge-Based Systems, 57 (6), pp. 119-126; 
+Xu, J., Tan, T., Tu, M., Qi, L., Improvement of grey models by least squares (2011) Expert Systems with Applications, 38 (11), pp. 13961-13966; 
+Xu, W., Gu, R., Liu, Y., Dai, Y., Forecasting energy consumption using a new GM – ARMA model based on HP filter: the case of Guangdong Province of China (2015) Economic Modelling, 31 (2), pp. 127-135; 
+Yao, A.W.L., Chi, S.C., Analysis and design of a Taguchi-Grey based electricity demand predictor for energy management systems (2004) Energy Conversion and Management, 45 (7), pp. 1205-1217; 
+Zeng, X.Y., Shu, L., Huang, G.-M., Jiang, J., Triangular fuzzy series forecasting based on grey model and neural network (2016) Applied Mathematical Modelling, 40, pp. 717-1727; 
+Zhang, J., Lo, W.L., Chung, H., Pseudocoevolutionary genetic algorithms for power electronic circuits optimization (2006) IEEE Transactions on Systems, Man, and Cybernetics, 36 (4), pp. 590-598; 
+Zhang, S., Babovic, V., An evolutionary real options framework for the design and management of projects and systems with complex real options and exercising conditions (2011) Decision Support Systems, 51 (1), pp. 119-129; 
+Zhang, S., Babovic, V., A real options approach to the design and architecture of water supply systems using innovative water technologies under uncertainty (2012) Journal of Hydroinformatics, 14 (1), pp. 13-29; 
+Zhang, Y., Li, F., Yang, Y., Different Zhang functions leading to different Zhang-dynamics models illustrated via time-varying reciprocal solving (2012) Applied Mathematical Modelling, 36 (4), pp. 4502-4511; 
+Zhao, Z., Wang, J., Zhao, J., Su, Z., Using a grey model optimized by differential evolution algorithm to forecast the per capita annual net income of rural households in China (2012) Omega, 40 (1), pp. 525-532; 
+Zhou, W., He, J.-M., Generalized GM (1, 1) model and its application in forecasting of fuel production (2013) Applied Mathematical Modelling, 37 (4), pp. 6234-6243; 
+Hsu, C.C., Chen, C.-Y., Applications of improved grey prediction model for power demand forecasting (2003) Energy Conversion & Management, 44 (14), pp. 2241-2249
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85101789389&doi=10.1108%2fGS-02-2016-0004&partnerID=40&md5=b005592e0a6d61205aadd35b1b34858b
+ER  - 
+
+TY  - JOUR
+TI  - Nonlinear forecasting with many predictors using kernel ridge regression
+T2  - International Journal of Forecasting
+J2  - Int. J. Forecast.
+VL  - 32
+IS  - 3
+SP  - 736
+EP  - 753
+PY  - 2016
+DO  - 10.1016/j.ijforecast.2015.11.017
+SN  - 01692070 (ISSN) 
+AU  - Exterkate, P.
+AU  - Groenen, P.J.F.
+AU  - Heij, C.
+AU  - van Dijk, D.
+AD  - School of Economics, University of Sydney, Australia
+AD  - CREATES, Aarhus University, Denmark
+AD  - Econometric Institute, Erasmus University Rotterdam, Netherlands
+AD  - Erasmus Research Institute of Management, Erasmus University Rotterdam, Netherlands
+AD  - Tinbergen Institute, Erasmus University Rotterdam, Netherlands
+AB  - This paper puts forward kernel ridge regression as an approach for forecasting with many predictors that are related to the target variable nonlinearly. In kernel ridge regression, the observed predictor variables are mapped nonlinearly into a high-dimensional space, where estimation of the predictive regression model is based on a shrinkage estimator in order to avoid overfitting. We extend the kernel ridge regression methodology to enable its use for economic time series forecasting, by including lags of the dependent variable or other individual variables as predictors, as is typically desired in macroeconomic and financial applications. Both Monte Carlo simulations and an empirical application to various key measures of real economic activity confirm that kernel ridge regression can produce more accurate forecasts than traditional linear and nonlinear methods for dealing with many predictors based on principal components. © 2016 International Institute of Forecasters.
+KW  - High dimensionality
+KW  - Kernel methods
+KW  - Nonlinear forecasting
+KW  - Ridge regression
+PB  - Elsevier B.V.
+N1  - Cited By :39
+N1  - Export Date: 25 April 2022
+M3  - Article
+DB  - Scopus
+N1  - CODEN: IJFOE
+LA  - English
+N1  - Correspondence Address: Exterkate, P.; School of Economics, Merewether Building H04, Australia; email: peter.exterkate@sydney.edu.au
+N1  - References: Aiolfi, M., Favero, C.A., Model uncertainty, thick modelling and the predictability of stock returns (2005) Journal of Forecasting, 24, pp. 233-254; 
+Bai, J., Ng, S., Forecasting economic time series using targeted predictors (2008) Journal of Econometrics, 146, pp. 304-317; 
+Bańbura, M., Giannone, D., Reichlin, L., Large Bayesian vector autoregressions (2010) Journal of Applied Econometrics, 25, pp. 71-92; 
+Boser, B.E., Guyon, I.M., Vapnik, V.N., A training algorithm for optimal margin classifiers (1992) Proceedings of the annual conference on computational learning theory, pp. 144-152. , ACM Press, Pittsburgh, Pennsylvania, D. Haussler (Ed.); 
+Broomhead, D.S., Lowe, D., Multivariable functional interpolation and adaptive networks (1988) Complex Systems, 2, pp. 321-355; 
+Çakmakli, C., van Dijk, D., Getting the most out of macroeconomic information for predicting stock returns and volatility (2010), Tinbergen Institute Discussion Paper 2010-115/4; Carriero, A., Kapetanios, G., Marcellino, M., Forecasting large datasets with Bayesian reduced rank multivariate models (2011) Journal of Applied Econometrics, 26, pp. 735-761; 
+Cawley, G.C., Talbot, N.L.C., Efficient approximate leave-one-out cross-validation for kernel logistic regression (2008) Machine Learning, 71, pp. 243-264; 
+Chen, X., Large-sample sieve estimation of semi-nonparametric models (2007) Handbook of econometrics, pp. 5549-5632. , Elsevier, Amsterdam, J.J. Heckman, E.E. Leamer (Eds.); 
+De Mol, C., Giannone, D., Reichlin, L., Forecasting using a large number of predictors: Is Bayesian shrinkage a valid alternative to principal components? (2008) Journal of Econometrics, 146, pp. 318-328; 
+Diebold, F.X., Mariano, R.S., Comparing predictive accuracy (1995) Journal of Business and Economic Statistics, 13, pp. 134-144; 
+Elliott, G., Gargano, A., Timmermann, A., Complete subset regressions (2013) Journal of Econometrics, 177, pp. 357-373; 
+Exterkate, P., Model selection in kernel ridge regression (2013) Computational Statistics and Data Analysis, 68, pp. 1-16; 
+Faust, J., Wright, J.H., Comparing Greenbook and reduced form forecasts using a large realtime dataset (2009) Journal of Business and Economic Statistics, 27, pp. 468-479; 
+Frank, I.E., Friedman, J.H., A statistical view of some chemometrics regression tools (1993) Technometrics, 35, pp. 109-148; 
+Giovannetti, B.C., Nonlinear forecasting using factor-augmented models (2013) Journal of Forecasting, 32, pp. 32-40; 
+Groen, J.J.J., Kapetanios, G., Revisiting useful approaches to data-rich macroeconomic forecasting (2008) Federal Reserve Bank of New York Staff Report 327; 
+Hansen, B.E., Least squares model averaging (2007) Econometrica, 75, pp. 1175-1189; 
+Hansen, B.E., Racine, J.S., Jackknife model averaging (2012) Journal of Econometrics, 167, pp. 38-46; 
+Huang, H., Lee, T.-H., To combine forecasts or to combine information? (2010) Econometric Reviews, 29, pp. 534-570; 
+Kim, H.H., Swanson, N.R., Forecasting financial and macroeconomic variables using data reduction methods: New empirical evidence (2014) Journal of Econometrics, 178, pp. 352-367; 
+Kock, A.B., Teräsvirta, T., Forecasting with non-linear models (2011) Oxford handbook of economic forecasting, pp. 61-87. , Oxford University Press, M.P. Clements, D.F. Hendry (Eds.); 
+Ludvigson, S.C., Ng, S., The empirical risk-return relation: A factor analysis approach (2007) Journal of Financial Economics, 83, pp. 171-222; 
+Ludvigson, S.C., Ng, S., Macro factors in bond risk premia (2009) Review of Financial Studies, 22, pp. 5027-5067; 
+Medeiros, M.C., Teräsvirta, T., Rech, G., Building neural network models for time series: A statistical approach (2006) Journal of Forecasting, 25, pp. 49-75; 
+Müller, K.-R., Smola, A., Rätsch, G., Schölkopf, B., Kohlmorgen, J., Vapnik, V., Predicting time series with support vector machines (1997) ICANN'97, pp. 999-1004. , Springer, Berlin, W. Gerstner, A. Germond, M. Hasler, J.-D. Nicoud (Eds.) Artificial neural networks; 
+Pagan, A.R., Ullah, A., (1999) Nonparametric econometrics, , Cambridge University Press; 
+Poggio, T., On optimal nonlinear associative recall (1975) Biological Cybernetics, 19, pp. 201-209; 
+Racine, J., Consistent cross-validatory model-selection for dependent data: hv-block cross-validation (2000) Journal of Econometrics, 99, pp. 39-61; 
+Rapach, D.E., Strauss, J.K., Zhou, G., Out-of-sample equity premium prediction: Combination forecasts and links to the real economy (2010) Review of Financial Studies, 23, pp. 821-862; 
+Schölkopf, B., Smola, A., Müller, K.-R., Nonlinear component analysis as a kernel eigenvalue problem (1998) Neural Computation, 10, pp. 1299-1319; 
+Smola, A.J., Schölkopf, B., A tutorial on support vector regression (2004) Statistics and Computing, 14, pp. 199-222; 
+Stock, J.H., Watson, M.W., A comparison of linear and nonlinear univariate models for forecasting macroeconomic time series (1999) Cointegration, causality and forecasting. A festschrift in honour of Clive W.J. Granger, pp. 1-44. , Oxford University Press, R.F. Engle, H. White (Eds.); 
+Stock, J.H., Watson, M.W., Macroeconomic forecasting using diffusion indexes (2002) Journal of Business and Economic Statistics, 20, pp. 147-162; 
+Stock, J.H., Watson, M.W., Implications of dynamic factor models for VAR analysis (2005), NBER Working Paper No. 11467; Stock, J.H., Watson, M.W., Forecasting with many predictors (2006) Handbook of economic forecasting, pp. 515-554. , Elsevier, Amsterdam, G. Elliot, C.W.J. Granger, A. Timmermann (Eds.); 
+Stock, J.H., Watson, M.W., Why has US inflation become harder to forecast? (2007) Journal of Money, Credit and Banking, 39, pp. 3-33; 
+Stock, J.H., Watson, M.W., Generalized shrinkage methods for forecasting using many predictors (2012) Journal of Business and Economic Statistics, 30, pp. 481-493; 
+Swanson, N.R., White, H., A model-selection approach to assessing the information in the term structure using linear models and artificial neural networks (1995) Journal of Business and Economic Statistics, 13, pp. 265-275; 
+Teräsvirta, T., Forecasting economic variables with nonlinear models (2006) Handbook of economic forecasting, pp. 413-458. , Elsevier, Amsterdam, G. Elliot, C.W.J. Granger, A. Timmermann (Eds.); 
+Teräsvirta, T., van Dijk, D., Medeiros, M.C., Linear models, smooth transition autoregressions, and neural networks for forecasting macroeconomic time series: A re-examination (2005) International Journal of Forecasting, 21, pp. 755-774; 
+Tibshirani, R., Regression shrinkage and selection via the Lasso (1996) Journal of the Royal Statistical Society. Series B., 58, pp. 267-288; 
+Vapnik, V.N., (1995) The nature of statistical learning theory, , Springer, New York; 
+White, H., Approximate nonlinear forecasting methods (2006) Handbook of economic forecasting, pp. 459-514. , Elsevier, Amsterdam, G. Elliot, C.W.J. Granger, A. Timmermann (Eds.); 
+Wright, J.H., Forecasting US inflation by Bayesian model averaging (2009) Journal of Forecasting, 28, pp. 131-144
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-84962138877&doi=10.1016%2fj.ijforecast.2015.11.017&partnerID=40&md5=310c7ef1cac33d8dd97165670a968e32
+ER  - 
+
+TY  - JOUR
+TI  - Investigating Chaos and Nonlinear Forecasting in Short Term and Mid-term River Discharge
+T2  - Water Resources Management
+J2  - Water Resour. Manage.
+VL  - 30
+IS  - 5
+SP  - 1851
+EP  - 1865
+PY  - 2016
+DO  - 10.1007/s11269-016-1258-1
+SN  - 09204741 (ISSN) 
+AU  - Zounemat-Kermani, M.
+AD  - Water Engineering Department, Shahid Bahonar University of Kerman, Kerman, Iran
+AB  - In the present study, an attempt is made to investigate and identify chaos using various techniques as well as river flow forecasting in short-term (daily) and mid-term (monthly) scales using nonlinear local approximation method (NLA) and ARIMA method. Daily and monthly flow data of Daintree River in Australia from 1969 to 2011 are used. In this respect, seven nonlinear dynamic methods including (1) average mutual information function; (2) phase space reconstruction; (3) false nearest neighbour algorithm; (4) method of surrogate data; (5) correlation dimension method; (6) Lyapunov exponent method; and (7) nonlinear local approximation are employed. The Takens’ theorem, mutual information and false nearest neighbour are used to determine the delay time and embedding dimension for the phase space reconstruction. The correlation dimensions obtained for the short term and mid-term river flow are 6.7 and 3.3, respectively. The finite dimensions obtained for the short term and mid-term river flow time series indicate the possible existence of chaos. The comparative analyses show that the NLA method is superior to ARIMA in mid-term scale while both models are acceptable for short term scale forecasting. © 2016, Springer Science+Business Media Dordrecht.
+KW  - ARIMA
+KW  - Chaos theory
+KW  - Correlation dimension
+KW  - Mutual information
+KW  - River flow
+KW  - Time series forecasting
+KW  - Approximation algorithms
+KW  - Chaos theory
+KW  - Flow of water
+KW  - Forecasting
+KW  - Phase space methods
+KW  - Rivers
+KW  - Stream flow
+KW  - Time series
+KW  - ARIMA
+KW  - Correlation dimensions
+KW  - Mutual informations
+KW  - River flow
+KW  - Time series forecasting
+KW  - Lyapunov methods
+KW  - correlation
+KW  - forecasting method
+KW  - nonlinearity
+KW  - river discharge
+KW  - river flow
+KW  - time series
+PB  - Springer Netherlands
+N1  - Cited By :10
+N1  - Export Date: 25 April 2022
+M3  - Article
+DB  - Scopus
+LA  - English
+N1  - Correspondence Address: Zounemat-Kermani, M.; Water Engineering Department, Iran; email: zounemat@uk.ac.ir
+N1  - References: Abrahart, R.J., See, L., Comparing neural network and autoregressive moving average Techniques for the provision of continuous river flow forecasts in two contrasting catchments (2000) Hydrol Process, 14, pp. 2157-2172; 
+Albostan, A., Önöz, B., Implementation of chaotic analysis on river discharge time series (2015) Energy Power Eng, 7, pp. 81-92; 
+Arunkumar, R., Jothiprakash, V., Chaotic evolutionary algorithms for multi-reservoir optimization (2013) Water Resour Manage, 27, pp. 5207-5222; 
+Box, G.E.P., Jenkins, G.M., Reinsel, G.C., (1994) Time series analysis forecasting and control, , Prentice- Hall, Englewood Cliffs; 
+Casdagli, M., Chaos and deterministic versus stochastic non-linear modelling (1992) J R Stat Soc Ser B Stat Methodol, 54 (2), pp. 303-328; 
+Dhanya, C.T., Kumar, D.N., Nonlinear ensemble prediction of chaotic daily rainfall (2010) Adv Water Resour, 33, pp. 327-347; 
+Domenicoa, M.D., Ghorbani, M.A., Makarynskyy, O., Makarynska, D., Asadi, H., Chaos and reproduction in sea level (2013) Appl Math Model, 37, pp. 3687-3697; 
+Elshorbagy, E., Simonovic, S.P., Panu, U.S., Estimation of missing streamflow data using principles of chaos theory (2002) J Hydrol, 255, pp. 123-133; 
+Grassberger, P., Procaccia, I., Characterization of strange attractors (1983) Phys Rev Lett, 50 (5), pp. 346-349; 
+Hu, Z., Zhang, C., Luo, G., Teng, Z., Jia, C., Characterizing cross-scale chaotic behaviors of the runoff time series in an inland river of Central Asia (2013) Quat Int, 311 (17), pp. 132-139; 
+Jayawardena, A.W., Lai, F., Analysis and prediction of chaos in rainfall and streamflow time series (1994) J Hydrol, 153, pp. 23-52; 
+Kantz, H., Schreiber, T., (2004) Nonlinear time series analysis, , Cambridge University Press, Cambridge; 
+Kennel, M.B., Brown, R., Abarbanel, H.D.I., Determining embedding dimension for phase space reconstruction using a geometric method (1992) Phys Rev A, 45, pp. 3403-3411; 
+Khan, S., Ganguly, A.R., Saigal, S., Detection and predictive modeling of chaos in finite hydrological time series (2005) Nonlinear Process Geophys, 12, pp. 41-53; 
+Khatibi, R., Sivakumar, B., Ghorbani, M.A., Kisi, O., Kocak, K., Farsadi Zadeh, D., Investigating chaos in river stage and discharge time series (2012) J Hydrol, 414-415, pp. 108-117; 
+Kisi, O., Moghaddam Nia, A., Ghafari Gosheh, M., Jamalizadeh Tajabadi, M.R., Ahmadi, A., Intermittent streamflow forecasting by using several data driven techniques (2012) Water Resour Manag, 26 (2), pp. 457-474; 
+Martins, O.Y., Sadeeq, M.A., Ahaneku, I.E., Nonlinear deterministic chaos in Benue River flow daily time sequence (2011) J Water Resour Prot, 3, pp. 747-757; 
+Montanari, A., Rosso, R., Taqqu, M.S., A seasonal fractional ARIMA model applied to the Nile River monthly flows at Aswan (2000) Water Resour Res, 36 (5), pp. 1249-1259; 
+Ng, W.W., Panu, U.S., Lennox, W.C., Chaos based analytical techniques for daily extreme hydrological observations (2007) J Hydrol, 342, pp. 17-41; 
+Pasternack, G.B., Does the river run wild? Assessing chaos in hydrological system (1999) Adv Water Resour, 23, pp. 253-260; 
+Pramanik, N., Panda, R.K., Sen, D., One dimensional hydrodynamic modeling of river flow using DEM extracted river cross-sections (2010) Water Resour Manag, 24 (5), pp. 835-852; 
+Rosenstein, M.T., Collins, J.J., Deluca, C.J., A practical method for the calculating largest Lyapunov exponents from small datasets (1993) Physica D, 65, pp. 117-134; 
+Savard, C.S., Looking for chaos in streamflow with discharge derivative data (1992) Eos Trans AGU (Spring Meeting Suppl), 73 (14), p. 50; 
+Sivakumar, B., Berndtsson, R., Olsson, J., Jinno, K., Kavvamura, A., Dynamics of monthly rainfall-runoff process at the Gota basin: a search for chaos (2000) Hydrol Earth Syst Sci, 4 (3), pp. 407-417; 
+Sivakumar, B., Berndtsson, R., Persson, M., Monthly runoff prediction using phase space reconstruction (2001) Hydrol Sci J, 46 (3), pp. 377-387; 
+Sivakumar, B., Jayawardena, A.W., Fernando, T.M.K.G., River flow forecasting: use of phase-space reconstruction and artificial neural networks approaches (2002) J Hydrol (1–4), pp. 225-245; 
+Soofi, A., Cao, L., (2002) Modelling and forecasting financial data techniques of nonlinear dynamics, , Kluwer academic publisher, Norwell; 
+Sukhodolov, A., Jaroslaw, J., Napiorkowski, J.J., Rowinski, P.M., Applicability of flow prediction based on attractors (1996) Acta Geophys Pol, 45 (3), pp. 277-286; 
+Takens, F., Detecting strange attractors in turbulence (1980) Lect Notes Math, 898, pp. 366-381; 
+Theiler, J., Eubank, S., Longtin, A., Galdikian, B., Farmer, J.D., Testing for nonlinearity in time series: the method of surrogate data (1992) Physica D, 58, pp. 77-94; 
+Wang, W.-C., Chau, K.-W., Xu, D.-M., Chen, X.-Y., Improving forecasting accuracy of annual runoff time series using ARIMA based on EEMD decomposition (2015) Water Resour Manage, 29, pp. 2655-2675; 
+Wilcox, B.P., Seyfried, M.S., Matison, T.H., Searching for chaotic dynamics in snowmelt runoff (1991) Water Resour Res, 27 (6), pp. 1005-1010; 
+Zhang, Q., Wang, B.-D., He, B., Peng, Y., Ren, M.-L., Singular spectrum analysis and ARIMA hybrid model for annual runoff forecasting (2011) Water Resour Manag, 25 (11), pp. 2683-2703; 
+Zhou, Y., Ma, Z., Wang, L., chaotic dynamics of the flood series in the Huaihe River Basin for the last 500 years (2002) J Hydrol, 258, pp. 100-110; 
+Zounemat-Kermani, M., Kisi, O., Time series analysis on marine wind-wave characteristics using chaos theory (2015) Ocean Eng, 100 (15), pp. 46-53; 
+Zounemat-Kermani, M., Teshnehlab, M., Using adaptive neuro-fuzzy inference system for hydrological time series prediction (2008) Appl Soft Comput, 8 (2), pp. 928-936; 
+Zounemat-kermani, M., Kisi, O., Rajaee, T., Performance of radial basis and LM-feed forward artificial neural networks for predicting daily watershed runoff (2013) Appl Soft Comput, 13 (12), pp. 4633-4644
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-84959475404&doi=10.1007%2fs11269-016-1258-1&partnerID=40&md5=27dc6868d3357d252298a837f406bf96
+ER  - 
+

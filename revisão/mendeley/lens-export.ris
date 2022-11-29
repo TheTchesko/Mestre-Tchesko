@@ -1,0 +1,474 @@
+﻿TY  - JOUR
+AB  - In research of time series forecasting, a lot of uncertainty is still related to the task of selecting an appropriate forecasting method for a problem. It is not only the individual algorithms that are available in great quantities; combination approaches have been equally popular in the last decades. Alone the question of whether to choose the most promising individual method or a combination is not straightforward to answer. Usually, expert knowledge is needed to make an informed decision, however, in many cases this is not feasible due to lack of resources like time, money and manpower. This work identifies an extensive feature set describing both the time series and the pool of individual forecasting methods. The applicability of different meta-learning approaches are investigated, first to gain knowledge on which model works best in which situation, later to improve forecasting performance. Results show the superiority of a ranking-based combination of methods over simple model selection approaches.
+AU  - Lemke, Christiane
+AU  - Gabrys, Bogdan
+CY  - Netherlands
+DA  - 2010/03/07
+EP  - 2016
+ID  - 012-440-722-263-107
+IS  - 10
+JF  - Neurocomputing
+L2  - https://dx.doi.org/10.1016/j.neucom.2009.09.020
+L2  - https://dblp.uni-trier.de/db/journals/ijon/ijon73.html#LemkeG10
+L2  - http://eprints.bournemouth.ac.uk/11186/
+L2  - https://www.sciencedirect.com/science/article/pii/S0925231210001074
+L2  - https://dl.acm.org/doi/10.1016/j.neucom.2009.09.020
+L2  - https://doi.org/10.1016/j.neucom.2009.09.020
+L2  - http://www.sciencedirect.com/science/article/pii/S0925231210001074
+L2  - https://core.ac.uk/display/75174
+L2  - http://dx.doi.org/10.1016/j.neucom.2009.09.020
+L2  - https://core.ac.uk/download/75174.pdf
+PB  - Elsevier
+PY  - 2010
+SN  - 09252312
+SP  - 2006
+TI  - Meta-learning for time series forecasting and forecast combination
+UR  - https://lens.org/012-440-722-263-107
+VL  - 73
+ER  - 
+TY  - JOUR
+AB  - Demand prediction is one of most sophisticated steps in planning and investments. Although many studies are conducted to find the appropriate forecasting models, dynamic nature of forecasted parameters and their effecting factors are apparent evidences for continuous researches. ARIMA, Artificial Neural Network (ANN), and ARIMA-ANN hybrid model are well-known forecasting models. Many researchers concluded that the Hybrid model is the predominant forecasting model in comparison with ARIMA and ANN individual models. Most of these researches are based on non-stationary or seasonal timeseries, whereas in this article, hybrid models forecast ability by stationary time series is studied. Some following demand time steps from a paint manufacturing company are forecasted by all previously mentioned models and ARIMA-ANN hybrid model fails to present the best forecasts.
+AU  - Seyedi, Seyed Navid
+AU  - Rezvan, Pouyan
+AU  - Akbarnatajbisheh, Saeed
+AU  - Helmi, Syed Ahmad
+DO  - 10.4028/www.scientific.net/amr.845.510
+EP  - 515
+ID  - 014-555-516-388-155
+JF  - Advanced Materials Research
+L2  - http://eprints.utm.my/id/eprint/52746/
+L2  - https://www.scientific.net/AMR.845.510
+L2  - https://core.ac.uk/download/42920138.pdf
+PB  - Trans Tech Publications, Ltd.
+PY  - 2013
+SN  - 16628985
+SP  - 510
+TI  - Evaluating ARIMA-Neural Network Hybrid Model Performance in Forecasting Stationary Timeseries
+UR  - https://lens.org/014-555-516-388-155
+VL  - 845
+ER  - 
+TY  - JOUR
+AB  - Abstract Kernel analog forecasting (KAF), alternatively known as kernel principal component regression, is a kernel method used for nonparametric statistical forecasting of dynamically generated time series data. This paper synthesizes descriptions of kernel methods and Koopman operator theory in order to provide a single consistent account of KAF. The framework presented here illuminates the property of the KAF method that, under measure-preserving and ergodic dynamics, it consistently approximates the conditional expectation of observables that are acted upon by the Koopman operator of the dynamical system and are conditioned on the observed data at forecast initialization. More precisely, KAF yields optimal predictions, in the sense of minimal root mean square error with respect to the invariant measure, in the asymptotic limit of large data. The presented framework facilitates, moreover, the analysis of generalization error and quantification of uncertainty. Extensions of KAF to the construction of conditional variance and conditional probability functions, as well as to non-symmetric kernels, are also shown. Illustrations of various aspects of KAF are provided with applications to simple examples, namely a periodic flow on the circle and the chaotic Lorenz 63 system.
+AU  - Alexander, Romeo
+AU  - Giannakis, Dimitrios
+CY  - Netherlands
+DO  - 10.1016/j.physd.2020.132520
+ID  - 015-844-290-770-382
+JF  - Physica D: Nonlinear Phenomena
+L2  - https://www.sciencedirect.com/science/article/pii/S016727891930377X
+L2  - https://nyuscholars.nyu.edu/en/publications/operator-theoretic-framework-for-forecasting-nonlinear-time-serie
+L1  - https://arxiv.org/pdf/1906.00464.pdf
+L1  - http://export.arxiv.org/pdf/1906.00464
+L2  - https://www.arxiv-vanity.com/papers/1906.00464/
+L2  - https://ui.adsabs.harvard.edu/abs/2020PhyD..40932520A/abstract
+L2  - https://arxiv.org/pdf/1906.00464
+L2  - http://arxiv.org/abs/1906.00464
+PB  - Elsevier BV
+PY  - 2020
+SN  - 01672789
+SP  - 132520
+TI  - Operator-theoretic framework for forecasting nonlinear time series with kernel analog techniques
+UR  - https://lens.org/015-844-290-770-382
+VL  - 409
+ER  - 
+TY  - JOUR
+AB  - Short-term forecasts based on time series of counts or survey data are widely used in population biology to provide advice concerning the management, harvest and conservation of natural populations. A common approach to produce these forecasts uses time-series models, of different types, fit to time series of counts. Similar time-series models are used in many other disciplines, however relative to the data available in these other disciplines, population data are often unusually short and noisy and models that perform well for data from other disciplines may not be appropriate for population data. In order to study the performance of time-series forecasting models for natural animal population data, we assembled 2379 time series of vertebrate population indices from actual surveys. Our data were comprised of three vastly different types: highly variable (marine fish productivity), strongly cyclic (adult salmon counts), and small variance but long-memory (bird and mammal counts). We tested the predictive performance of 49 different forecasting models grouped into three broad classes: autoregressive time-series models, non-linear regression-type models and non-parametric time-series models. Low-dimensional parametric autoregressive models gave the most accurate forecasts across a wide range of taxa; the most accurate model was one that simply treated the most recent observation as the forecast. More complex parametric and non-parametric models performed worse, except when applied to highly cyclic species. Across taxa, certain life history characteristics were correlated with lower forecast error; specifically, we found that better forecasts were correlated with attributes of slow growing species: large maximum age and size for fishes and high trophic level for birds. © 2014 Nordic Society Oikos.
+AU  - Ward, Eric J.
+AU  - Holmes, E. Eli
+AU  - Thorson, James T.
+AU  - Collen, Ben
+CY  - United Kingdom
+DA  - 2014/02/25
+DO  - 10.1111/j.1600-0706.2014.00916.x
+EP  - 661
+ID  - 025-098-988-463-801
+IS  - 6
+JF  - Oikos
+L2  - https://discovery.ucl.ac.uk/id/eprint/1431801
+L2  - https://core.ac.uk/display/20483708
+L2  - https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1600-0706.2014.00916.x
+L2  - https://core.ac.uk/download/pdf/20483708.pdf
+PB  - Wiley
+PY  - 2014
+SN  - 00301299
+SN  - 16000706
+SP  - 652
+TI  - Complexity is costly: a meta‐analysis of parametric and non‐parametric methods for short‐term population forecasting
+UR  - https://lens.org/025-098-988-463-801
+VL  - 123
+ER  - 
+TY  - JOUR
+AB  - Monthly data about oil production at several drilling wells is an example of spatio-temporal data. The aim of this research is to propose nonlinear spatio-temporal model, i.e. Feedforward Neural Network - Vector Autoregressive (FFNN-VAR) and FFNN - Generalized Space-Time Autoregressive (FFNN-GSTAR), and compare their forecast accuracy to linear spatio-temporal model, i.e. VAR and GSTAR. These spatio-temporal models are proposed and applied for forecasting monthly oil production data at three drilling wells in East Java, Indonesia. There are 60 observations that be divided to two parts, i.e. the first 50 observations for training data and the last 10 observations for testing data. The results show that FFNN-GSTAR(1 1 ) and FFNN-VAR(1) as nonlinear spatio-temporal models tend to give more accurate forecast than VAR(1) and GSTAR(1 1 ) as linear spatio-temporal models. Moreover, further research about nonlinear spatio-temporal models based on neural networks and GSTAR is needed for developing new hybrid models that could improve the forecast accuracy.
+AU  - Suhartono, Suhartono
+AU  - Prastyo, Dedy Dwi
+AU  - Kuswanto, Heri
+AU  - Lee, Muhammad Hisyam
+DA  - 2018/05/28
+DO  - 10.11113/matematika.v34.n1.1040
+EP  - 111
+ID  - 038-056-555-608-24X
+IS  - 1
+JF  - MATEMATIKA
+L1  - https://matematika.utm.my/index.php/matematika/article/download/1040/749
+L2  - https://matematika.utm.my/index.php/matematika/article/view/1040
+L2  - https://core.ac.uk/download/287744082.pdf
+PB  - Penerbit UTM Press
+PY  - 2018
+SN  - 01279602
+SN  - 01278274
+SP  - 103
+TI  - Comparison between VAR, GSTAR, FFNN-VAR and FFNN-GSTAR Models for Forecasting Oil Production
+UR  - https://lens.org/038-056-555-608-24X
+VL  - 34
+ER  - 
+TY  - JOUR
+AB  - Many statistical applications require the forecast of a random variable of interest over several periods into the future. The sequence of individual forecasts, one period at a time, is called a path forecast, where the term path refers to the sequence of individual future realizations of the random variable. The problem of constructing a corresponding joint prediction region has been rather neglected in the literature so far: such a region is supposed to contain the entire future path with a prespecified probability. We develop bootstrap methods to construct joint prediction regions. The resulting regions are proven to be asymptotically consistent under a mild high-level assumption. We compare the finitesample performance of our joint prediction regions to some previous proposals via Monte Carlo simulations. An empirical application to a real data set is also provided.
+AU  - Wolf, Michael
+AU  - Wunderli, Dan
+CY  - United States
+DA  - 2014/10/14
+DO  - 10.1111/jtsa.12099
+EP  - 376
+ID  - 040-230-484-451-638
+IS  - 3
+JF  - Journal of Time Series Analysis
+L1  - https://www.ifs.org.uk/conferences/cemmap_seminars/paper_wolf.pdf
+L2  - http://www.econ.uzh.ch/static/wp/econwp064.pdf
+L2  - http://www.2013.isiproceedings.org/Files/CPS022-P2-S.pdf
+L1  - https://www.2013.isiproceedings.org/Files/CPS022-P2-S.pdf
+L2  - http://www.statistics.gov.hk/wsc/CPS022-P2-S.pdf
+L1  - https://www.zora.uzh.ch/id/eprint/113354/1/Bootstrap%20joint.pdf
+L2  - https://www.econstor.eu/handle/10419/77512
+L2  - http://www.cireqmontreal.com/wp-content/uploads/2012/03/11-12wolf.pdf
+L1  - https://www.cireqmontreal.com/wp-content/uploads/2012/03/11-12wolf.pdf
+L1  - https://www.econ.uzh.ch/dam/jcr:ffffffff-935a-b0d6-0000-00004279c92d/jtsa_2015.pdf
+L1  - https://www.econstor.eu/bitstream/10419/77512/1/747564566.pdf
+L1  - https://www.statistics.gov.hk/wsc/CPS022-P2-S.pdf
+L2  - https://www.onlinelibrary.wiley.com/doi/abs/10.1111/jtsa.12099
+L2  - https://www.zora.uzh.ch/id/eprint/60385/
+L2  - http://www.zora.uzh.ch/113354/1/Bootstrap%20joint.pdf
+PB  - Wiley
+PY  - 2014
+SN  - 01439782
+SP  - 352
+TI  - Bootstrap Joint Prediction Regions
+UR  - https://lens.org/040-230-484-451-638
+VL  - 36
+ER  - 
+TY  - JOUR
+AB  - The Gross Domestic Product (GDP) is the market value of all goods and services produced within the boundary of a nation in a year. This paper aims to apply time series tools and forecast GDP growth in the Bangladesh economy. Forecasting of time series is an important topic in macroeconomics. We collected the data from World Development Indicators (WDI) and it has been collected over a period of 37 years by WDI, World Bank. Augmented Dickey–Fuller (ADF) and Phillips–Perron (PP) tests were applied to investigate the stationary character of the data. Stata and R statistical software was used to build a class of Autoregressive Integrated Moving Average (ARIMA) and exponential smoothing methods to model the GDP growth. We applied several ARIMA (P, I, Q) models and employed the ARIMA (1,1,1) model as best for forecasting. This ARIMA (1,1,1) model was chosen based on the minimum values of the Akaike information criterion (AIC) and the Bayesian information criterion (BIC). Also, we applied the Exponential Smoothing to forecast the GDP growth rate. In addition, among the Exponential Smoothing models, the triple exponential model better analyzed the data based on lowest Sum of Square Error (SSE) and Root Mean Square Error (RMSE). Using these models, the values of future GDP growth rates are forecasted. Statistical results show that Bangladesh’s GDP growth rate is an increasing trend that will continue rising in the future. This finding will help policymakers and academicians to formulate economic and business strategies more precisely. Keywords: Stationary time series, ARIMA, Time Series Forecasting, Exponential Smoothing, GDP growth rate, GDP growth in Bangladesh DOI: 10.7176/JESD/10-23-02 Publication date: December 31st 201
+DO  - 10.7176/jesd/10-23-02
+ID  - 041-247-212-221-860
+JF  - Journal of Economics and Sustainable Development
+L2  - https://core.ac.uk/download/pdf/276531422.pdf
+PB  - International Institute for Science, Technology and Education
+PY  - 2019
+TI  - Forecasting GDP Growth Rates of Bangladesh: An Empirical Study
+UR  - https://lens.org/041-247-212-221-860
+ER  - 
+TY  - JOUR
+AB  - Abstract This study compares parametric and non-parametric techniques in terms of their forecasting power on implied volatility indices. We extend our comparisons using combined and model-averaging models. The forecasting models are applied on eight implied volatility indices of the most important stock market indices. We provide evidence that the non-parametric models of Singular Spectrum Analysis combined with Holt-Winters (SSA-HW) exhibit statistically superior predictive ability for the one and ten trading days ahead forecasting horizon. By contrast, the model-averaged forecasts based on both parametric (Autoregressive Integrated model) and non-parametric models (SSA-HW) are able to provide improved forecasts, particularly for the ten trading days ahead forecasting horizon. For robustness purposes, we build two trading strategies based on the aforementioned forecasts, which further confirm that the SSA-HW and the ARI-SSA-HW are able to generate significantly higher net daily returns in the out-of-sample period.
+AU  - Degiannakis, Stavros
+AU  - Filis, George
+AU  - Hassani, Hossein
+CY  - Netherlands
+DO  - 10.1016/j.jempfin.2017.12.008
+EP  - 129
+ID  - 064-408-500-291-803
+JF  - Journal of Empirical Finance
+L2  - https://mpra.ub.uni-muenchen.de/96452/
+L2  - http://eprints.bournemouth.ac.uk/30159/
+L2  - https://www.sciencedirect.com/science/article/pii/S0927539817301263
+L2  - https://ideas.repec.org/a/eee/empfin/v46y2018icp111-129.html
+L2  - https://econpapers.repec.org/RePEc:eee:empfin:v:46:y:2018:i:c:p:111-129
+L2  - https://core.ac.uk/display/145642264
+L2  - https://core.ac.uk/download/145642264.pdf
+PB  - Elsevier BV
+PY  - 2018
+SN  - 09275398
+SP  - 111
+TI  - Forecasting global stock market implied volatility indices
+UR  - https://lens.org/064-408-500-291-803
+VL  - 46
+ER  - 
+TY  - JOUR
+AB  - Energy planning models (EPMs) play an indispensable role in policy formulation and energy sector development. The forecasting of energy demand and supply is at the heart of an EPM. Different forecasting methods, from statistical to machine learning have been applied in the past. The selection of a forecasting method is mostly based on data availability and the objectives of the tool and planning exercise. We present a systematic and critical review of forecasting methods used in 483 EPMs. The methods were analyzed for forecasting accuracy; applicability for temporal and spatial predictions; and relevance to planning and policy objectives. Fifty different forecasting methods have been identified. Artificial neural network (ANN) is the most widely used method, which is applied in 40% of the reviewed EPMs. The other popular methods, in descending order, are: support vector machine (SVM), autoregressive integrated moving average (ARIMA), fuzzy logic (FL), linear regression (LR), genetic algorithm (GA), particle swarm optimization (PSO), grey prediction (GM) and autoregressive moving average (ARMA). In terms of accuracy, computational intelligence (CI) methods demonstrate better performance than that of the statistical ones, in particular for parameters with greater variability in the source data. However, hybrid methods yield better accuracy than that of the stand-alone ones. Statistical methods are useful for only short and medium range, while CI methods are preferable for all temporal forecasting ranges (short, medium and long). Based on objective, most EPMs focused on energy demand and load forecasting. In terms geographical coverage, the highest number of EPMs were developed on China. However, collectively, more models were established for the developed countries than the developing ones. Findings would benefit researchers and professionals in gaining an appreciation of the forecasting methods, and enable them to select appropriate method(s) to meet their needs.
+AU  - Debnath, Kumar Biswajit
+AU  - Mourshed, Monjur
+CY  - Netherlands
+DO  - 10.1016/j.rser.2018.02.002
+EP  - 325
+ID  - 068-971-094-791-033
+JF  - Renewable and Sustainable Energy Reviews
+L2  - https://ideas.repec.org/a/eee/rensus/v88y2018icp297-325.html
+L2  - https://econpapers.repec.org/RePEc:eee:rensus:v:88:y:2018:i:c:p:297-325
+L2  - https://www.sciencedirect.com/science/article/abs/pii/S1364032118300200
+L2  - http://orca.cf.ac.uk/109350/
+L2  - https://orca.cardiff.ac.uk/109350/
+L2  - https://core.ac.uk/display/151176579
+L2  - https://core.ac.uk/download/151176579.pdf
+PB  - Elsevier BV
+PY  - 2018
+SN  - 13640321
+SP  - 297
+TI  - Forecasting methods in energy planning models
+UR  - https://lens.org/068-971-094-791-033
+VL  - 88
+ER  - 
+TY  - JOUR
+AB  - With the globally increasing electricity demand, its related uncertainties are on the rise as well. Therefore, a deeper insight of load forecasting techniques for projecting future electricity demands becomes imperative for business entities and policy makers. The electricity demand is governed by a set of different variables or “electricity demand determinants”. These demand determinants depend on forecasting horizons (long term, medium term, and short term), the load aggregation level, climate, and socio-economic activities. In this paper, a review of different electricity demand forecasting methodologies is provided in the context of a group of low and middle income countries. The article presents a comprehensive literature review by tabulating the different demand determinants used in different countries and forecasting the trends and techniques used in these countries. A comparative review of these forecasting methodologies over different time horizons reveals that the time series modeling approach has been extensively used while forecasting for long and medium terms. For short term forecasts, artificial intelligence-based techniques remain prevalent in the literature. Furthermore, a comparative analysis of the demand determinants in these countries indicates a frequent use of determinants like the population, GDP, weather, and load data over different time horizons. Following the analysis, potential research gaps are identified, and recommendations are provided, accordingly.
+AU  - Mir, Aneeque A.
+AU  - Alghassab, Mohammed
+AU  - Ullah, Kafait
+AU  - Khan, Zafar A.
+AU  - Lu, Yuehong
+AU  - Imran, Muhammad
+CY  - Switzerland
+DA  - 2020/07/23
+DO  - 10.3390/su12155931
+ID  - 080-709-759-763-688
+IS  - 15
+JF  - Sustainability
+L2  - https://ideas.repec.org/a/gam/jsusta/v12y2020i15p5931-d388506.html
+L2  - https://www.mdpi.com/2071-1050/12/15/5931
+L2  - https://research.aston.ac.uk/en/publications/a-review-of-electricity-demand-forecasting-in-low-and-middle-inco
+L1  - https://www.mdpi.com/2071-1050/12/15/5931/pdf
+L2  - https://core.ac.uk/download/327947411.pdf
+PB  - MDPI AG
+PY  - 2020
+SN  - 20711050
+SP  - 5931
+TI  - A Review of Electricity Demand Forecasting in Low and Middle Income Countries: The Demand Determinants and Horizons
+UR  - https://lens.org/080-709-759-763-688
+VL  - 12
+ER  - 
+TY  - JOUR
+AB  - Forecast accuracy of economic and financial processes is a popular measure for quantifying the risk in decision making. In this paper, we develop forecasting models based on statistical (stochastic) methods, sometimes called hard computing, and on a soft method using granular computing. We consider the accuracy of forecasting models as a measure for risk evaluation. It is found that the risk estimation process based on soft methods is simplified and less critical to the question whether the data is true crisp or white noise.
+AU  - Marček, Milan
+DA  - 2009/12/31
+DO  - 10.7327/cerei.2009.12.02
+EP  - 182
+ID  - 082-797-515-404-65X
+IS  - 4
+JF  - Ekonomická revue - Central European Review of Economic Issues
+L2  - https://www.ekf.vsb.cz/export/sites/ekf/cerei/cs/Papers/VOL12NUM04PAP02.pdf
+L2  - https://dspace.vsb.cz/handle/10084/90102
+L2  - https://core.ac.uk/display/8992701
+L2  - https://core.ac.uk/download/8992701.pdf
+PB  - VSB - Technical University of Ostrava
+PY  - 2009
+SN  - 12123951
+SP  - 175
+TI  - Statistical and RBF NN models : providing forecasts and risk assessment
+UR  - https://lens.org/082-797-515-404-65X
+VL  - 12
+ER  - 
+TY  - JOUR
+AB  - Most of the real world systems are nonlinear and complex and it is challenging to model these types of systems for analyzing and forecasting the hidden behaviour of the systems. In the paradigm of vague complex systems, data-based time series modeling approaches of intelligent systems showed its applicability for coping with the problems of hidden noise and dynamicity which are encapsulated in the data. Getting from nature is one of the humans’ features and they are striving to produce the intellectual schemes by coping rare features of cognitions and intellect of the brain. In this paper, nonlinear autoregressive structure based modeling of the brain (i.e. Artificial Neural Network) is the aim of this study that suggest various Dynamic Neural Network (DNN) models by using time deferred autoregressive configurations, for the stream-flow of Sukkur barrage on lower Indus river basin. The suitability of the models for training, validation and testing stages, are evinced on assessment metrics which demonstrate the accuracy and sufficiency of the models which may be beneficial for water-resource management.
+AU  - Siddiqi, Tanveer Ahmed
+AU  - Inayatullah, Syed
+AU  - Hassan, Syed Ahmad
+AU  - Naz, Saba
+AU  - Iqbal, Syed Tanweer
+AU  - Ahsanuddin, Muhammad
+DA  - 2019/05/31
+DO  - 10.19044/esj.2019.v15n15p1
+EP  - 1
+ID  - 098-716-861-673-282
+IS  - 15
+JF  - European Scientific Journal ESJ
+L1  - http://eujournal.org/index.php/esj/article/view/12062/11496
+L2  - https://www.academia.edu/62891010/Nonlinear_Structure_based_Artificial_Neural_Computing_for_Upstream_Flow_Functional_Models
+L2  - https://eujournal.org/index.php/esj/article/view/12062
+L2  - https://core.ac.uk/download/328026613.pdf
+PB  - European Scientific Institute, ESI
+PY  - 2019
+SN  - 18577881
+SN  - 18577431
+SP  - 1
+TI  - Nonlinear Structure based Artificial Neural Computing for Upstream Flow Functional Models
+UR  - https://lens.org/098-716-861-673-282
+VL  - 15
+ER  - 
+TY  - JOUR
+AB  - Linear models reach their limitations in applications with nonlinearities in the data. In this paper new empirical evidence is provided on the relative Euro inflation forecasting performance of linear and non-linear models. The well established and widely used univariate ARIMA and multivariate VAR models are used as linear forecasting models whereas neural networks (NN) are used as non-linear forecasting models. It is endeavoured to keep the level of subjectivity in the NN building process to a minimum in an attempt to exploit the full potentials of the NN. It is also investigated whether the historically poor performance of the theoretically superior measure of the monetary services flow, Divisia, relative to the traditional Simple Sum measure could be attributed to a certain extent to the evaluation of these indices within a linear framework. Results obtained suggest that non-linear models provide better within-sample and out-of-sample forecasts and linear models are simply a subset of them. The Divisia index also outperforms the Simple Sum index when evaluated in a non-linear framework. © 2005 Taylor & Francis Group Ltd.
+AU  - Binner, Jane M.
+AU  - Bissoondeeal, Rakesh K.
+AU  - Elger, Thomas
+AU  - Gazely, Alicia M.
+AU  - Mullineux, Andy
+CY  - United Kingdom
+DA  - 2005/04/10
+DO  - 10.1080/0003684052000343679
+EP  - 680
+ID  - 100-838-616-245-749
+IS  - 6
+JF  - Applied Economics
+L2  - https://core.ac.uk/display/78878270
+L2  - https://ideas.repec.org/a/taf/applec/v37y2005i6p665-680.html
+L2  - https://portal.research.lu.se/en/publications/a-comparison-of-linear-forecasting-models-and-neural-networks-an-
+L2  - https://research.birmingham.ac.uk/portal/en/publications/a-comparison-of-linear-forecasting-models-and-neural-networks-an-application-to-euro-inflation-and-divisia(c1115770-2c1a-4e4b-a3ed-9d3ada981663).html
+L2  - http://irep.ntu.ac.uk/id/eprint/16353/
+L2  - https://research.aston.ac.uk/en/publications/a-comparison-of-linear-forecasting-models-and-neural-networks-an-
+L2  - https://econpapers.repec.org/RePEc:taf:applec:v:37:y:2005:i:6:p:665-680
+L2  - https://research.aston.ac.uk/portal/en/researchoutput/a-comparison-of-linear-forecasting-models-and-neural-networks(7fd430c2-fff4-4de5-969e-8f4e409fcb2b).html
+L2  - https://lup.lub.lu.se/search/publication/0f43e243-5e15-48f0-a353-f1d23bb81b40
+L2  - https://www.tandfonline.com/doi/full/10.1080/0003684052000343679
+L2  - https://core.ac.uk/download/78878270.pdf
+PB  - Informa UK Limited
+PY  - 2005
+SN  - 00036846
+SP  - 665
+TI  - A comparison of linear forecasting models and neural networks: an application to Euro inflation and Euro Divisia
+UR  - https://lens.org/100-838-616-245-749
+VL  - 37
+ER  - 
+TY  - JOUR
+AB  - This paper derives optimal forecast combinations based on stochastic dominance efficiency (SDE) analysis with differential forecast weights for different quantiles of forecast error distribution. For the optimal forecast combination, SDE will minimize the cumulative density functions of the levels of loss at different quantiles of the forecast error distribution by combining different time-series model-based forecasts. Using two exchange rate series on weekly data for the Japanese yen/US dollar and US dollar/Great Britain pound, we find that the optimal forecast combinations with SDE weights perform better than different forecast selection and combination methods for the majority of the cases at different quantiles of the error distribution. However, there are also some very few cases where some other forecast selection and combination model performs equally well at some quantiles of the forecast error distribution. Different forecasting period and quadratic loss function are used to obtain optimal forecast combinations, and results are robust to these choices. The out-of-sample performance of the SDE forecast combinations is also better than that of the other forecast selection and combination models we considered.
+AU  - Pinar, Mehmet
+AU  - Stengos, Thanasis
+AU  - Yazgan, M. Ege
+CY  - Germany
+DA  - 2017/10/14
+DO  - 10.1007/s00181-017-1343-1
+EP  - 1755
+ID  - 100-946-106-279-04X
+IS  - 4
+JF  - Empirical economics
+KW  - Forecast combinations
+KW  - Mixed integer programming
+KW  - Nonparametric stochastic dominance
+L2  - https://link.springer.com/article/10.1007/s00181-017-1343-1
+L1  - https://link.springer.com/content/pdf/10.1007%2Fs00181-017-1343-1.pdf
+L2  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6405180
+L2  - https://ideas.repec.org/a/spr/empeco/v55y2018i4d10.1007_s00181-017-1343-1.html
+L2  - https://paperity.org/p/85053711/quantile-forecast-combination-using-stochastic-dominance
+L2  - https://pubmed.ncbi.nlm.nih.gov/30930528/
+L2  - https://core.ac.uk/download/227103318.pdf
+PB  - Physica-Verlag
+PY  - 2017
+SN  - 03777332
+SN  - 14358921
+SP  - 1717
+TI  - Quantile forecast combination using stochastic dominance
+UR  - https://lens.org/100-946-106-279-04X
+VL  - 55
+ER  - 
+TY  - JOUR
+AB  - A key challenge for call centres remains the forecasting of high frequency call arrivals collected in hourly or shorter time buckets. In addition to the complex intraday, intraweek and intrayear seasonal cycles, call arrival data typically contain a large number of anomalous days, driven by the occurrence of holidays, special events, promotional activities and system failures. This study evaluates the use of a variety of univariate time series forecasting methods for forecasting intraday call arrivals in the presence of such outliers. Apart from established, statistical methods, we consider artificial neural networks (ANNs). Based on the modelling flexibility of the latter, we introduce and evaluate different methods to encode the outlying periods. Using intraday arrival series from a call centre operated by one of Europe’s leading entertainment companies, we provide new insights on the impact of outliers on the performance of established forecasting methods. Results show that ANNs forecast call centre data accurately, and are capable of modelling complex outliers using relatively simple outlier modelling approaches. We argue that the relative complexity of ANNs over standard statistical models is offset by the simplicity of coding multiple and unknown effects during outlying periods.
+AU  - Barrow, Devon K.
+AU  - Kourentzes, Nikolaos
+CY  - Netherlands
+DO  - 10.1016/j.ejor.2016.07.015
+EP  - 977
+ID  - 111-503-835-042-268
+IS  - 3
+JF  - European Journal of Operational Research
+L2  - https://research.birmingham.ac.uk/en/publications/the-impact-of-special-days-in-call-arrivals-forecasting-a-neural-
+L2  - https://www.sciencedirect.com/science/article/pii/S0377221716305525
+L2  - https://pureportal.coventry.ac.uk/en/publications/the-impact-of-special-days-in-call-arrivals-forecasting-a-neural-
+L2  - https://ideas.repec.org/a/eee/ejores/v264y2018i3p967-977.html
+L2  - https://core.ac.uk/display/76959282
+L2  - https://doi.org/10.1016/j.ejor.2016.07.015
+L2  - http://www.sciencedirect.com/science/article/pii/S0377221716305525
+L2  - https://eprints.lancs.ac.uk/80367/
+L2  - http://www.diva-portal.org/smash/record.jsf?pid=diva2:1399247
+L2  - https://core.ac.uk/download/228148816.pdf
+PB  - Elsevier BV
+PY  - 2018
+SN  - 03772217
+SP  - 967
+TI  - The impact of special days in call arrivals forecasting: A neural network approach to modelling special days
+UR  - https://lens.org/111-503-835-042-268
+VL  - 264
+ER  - 
+TY  - JOUR
+AB  - In research of time series forecasting, a lot of uncertainty is still related to the task of selecting an appropriate forecasting method for a problem. It is not only the individual algorithms that are available in great quantities; combination approaches have been equally popular in the last decades. Alone the question of whether to choose the most promising individual method or a combination is not straightforward to answer.
+
+Usually, expert knowledge is needed to make an informed decision, however, in many cases this is not feasible due to lack of resources like time, money and manpower. This
+
+work identifies an extensive feature pool describing both the time series and the ensemble of individual forecasting methods. The applicability of different meta-learning approaches are investigated, first to gain knowledge on which model works best in which situation, later to improve forecasting performance. Results show the superiority of a ranking-based combination of methods over simple model selection approaches
+AU  - Lemke, Christiane
+AU  - Gabrys, Bogdan
+CY  - Netherlands
+DO  - 10.1016/j.neucom.2009.09.020
+EP  - 2016
+ID  - 113-431-260-608-912
+IS  - 10-12
+JF  - Neurocomputing
+L2  - https://core.ac.uk/download/75174.pdf
+PB  - Elsevier BV
+PY  - 2010
+SN  - 09252312
+SP  - 2006
+TI  - Meta-learning for time series forecasting and forecast combination
+UR  - https://lens.org/113-431-260-608-912
+VL  - 73
+ER  - 
+TY  - JOUR
+AB  - Abstract Complex systems are extremely hard to predict due to its highly nonlinear interactions and rich emergent properties. Thanks to the rapid development of network science, our understanding of the structure of real complex systems and the dynamics on them has been remarkably deepened, which meanwhile largely stimulates the growth of effective prediction approaches on these systems. In this article, we aim to review different network-related prediction problems, summarize and classify relevant prediction methods, analyze their advantages and disadvantages, and point out the forefront as well as critical challenges of the field.
+AU  - Ren, Zhuo-Ming
+AU  - Zeng, An
+AU  - Zhang, Yi-Cheng
+CY  - Netherlands
+DO  - 10.1016/j.physrep.2018.05.002
+EP  - 51
+ID  - 125-415-748-084-126
+JF  - Physics Reports
+L2  - https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201802250899607447
+L2  - http://ui.adsabs.harvard.edu/abs/2018PhR...750....1R/abstract
+L2  - https://www.sciencedirect.com/science/article/abs/pii/S0370157318301339
+L2  - https://core.ac.uk/download/162134221.pdf
+PB  - Elsevier BV
+PY  - 2018
+SN  - 03701573
+SP  - 1
+TI  - Structure-oriented prediction in complex networks
+UR  - https://lens.org/125-415-748-084-126
+VL  - 750
+ER  - 
+TY  - JOUR
+AB  - Prediction models that capture and use the structure of state-space dynamics can be very effective. In practice, however, one rarely has access to full information about that structure, and accurate reconstruction of the dynamics from scalar time-series data---e.g., via delay-coordinate embedding---can be a real challenge. In this paper, we show that forecast models that employ incomplete embeddings of the dynamics can produce surprisingly accurate predictions of the state of a dynamical system. In particular, we demonstrate the effectiveness of a simple near-neighbor forecast technique that works with a two-dimensional embedding. Even though correctness of the topology is not guaranteed for incomplete reconstructions like this, the dynamical structure that they capture allows for accurate predictions---in many cases, even more accurate than predictions generated using a full embedding. This could be very useful in the context of real-time forecasting, where the human effort required to produce a correct delay-coordinate embedding is prohibitive.
+AU  - Garland, Joshua
+AU  - Bradley, Elizabeth
+CY  - United States
+DO  - 10.1063/1.4936242
+ID  - 125-717-877-971-69X
+IS  - 12
+JF  - Chaos (Woodbury, N.Y.)
+L1  - https://arxiv.org/pdf/1503.01678.pdf
+L1  - http://export.arxiv.org/pdf/1503.01678
+L2  - https://arxiv.org/abs/1503.01678
+L2  - http://arxiv.org/abs/1503.01678
+PB  - American Institute of Physics
+PY  - 2015
+SN  - 10897682
+SN  - 10541500
+SP  - 123108
+TI  - Prediction in Projection
+UR  - https://lens.org/125-717-877-971-69X
+VL  - 25
+ER  - 
+TY  - JOUR
+AB  - Abstract Finding suitable forecasting methods for an effective management of energy resources is of paramount importance for improving the efficiency in energy consumption and decreasing its impact on the environment. Natural gas is one of the main sources of electrical energy in Algeria and worldwide. To address this demand, this paper introduces a novel hybrid forecasting approach that resolves the two-stage method's deficiency, by designing a Multi Layered Perceptron (MLP) neural network as a nonlinear forecasting monitor. This model estimates the next day gas consumption profile and selects one of several local models to perform the forecast. The study focuses firstly on an analysis and clustering of natural gas daily consumption profiles, and secondly on building a comprehensive Long Short Term Memory (LSTM) recurrent models according to load behavior. The results are compared with four benchmark approaches: the MLP neural network approach, LSTM, seasonal time series with exogenous variables models and multiple linear regression models. Compared with these alternative approaches and their high dependence on historical loads, the proposed approach presents a new efficient functionality. It estimates the next day consumption profile, which leads to a significant improvement of the forecasting accuracy, especially for days with exceptional customers consumption behavior change.
+AU  - Laib, Oussama
+AU  - Khadir, Mohamed Tarek
+AU  - Mihaylova, Lyudmila
+CY  - United Kingdom
+DO  - 10.1016/j.energy.2019.04.075
+EP  - 542
+ID  - 147-666-295-574-345
+JF  - Energy
+L2  - https://ideas.repec.org/a/eee/energy/v177y2019icp530-542.html
+L2  - https://www.sciencedirect.com/science/article/pii/S0360544219307054
+L2  - https://eprints.whiterose.ac.uk/145128/
+L2  - https://core.ac.uk/download/199225737.pdf
+PB  - Elsevier BV
+PY  - 2019
+SN  - 03605442
+SN  - 18736785
+SP  - 530
+TI  - Toward efficient energy systems based on natural gas consumption prediction with LSTM Recurrent Neural Networks
+UR  - https://lens.org/147-666-295-574-345
+VL  - 177
+ER  - 
