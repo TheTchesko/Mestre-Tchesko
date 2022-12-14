@@ -50,9 +50,4 @@
 \BOOKMARK [1][-]{appendix.B}{Apêndice - Comparação dos modelos de previsão 18h a 21h}{}% 50
 \BOOKMARK [1][-]{appendix.C}{Apêndice - Modelos AR\(6\), ARX \(6\) e MA \(6\) 18h a 21h}{}% 51
 \BOOKMARK [1][-]{appendix.D}{Apêndice - Modelos ARMA\(6,6\) e ARIMA \(6,1,6\) 18h a 21h}{}% 52
-\BOOKMARK [1][-]{appendix.E}{Apêndice - Modelos ARIMAX \(6,1,6\), SARIMA \(6,1,6\) \(2,1,1,7\) e SARIMAX \(6,1,6\) \(2,1,1,7\) 18h a 21h}{}% 53
-\BOOKMARK [1][-]{appendix.F}{Apêndice - Modelos Regressão linear, XGB Regressão, Ligth GBM Regressão e Regressão de Floresta Aleatória 18h a 21h}{}% 54
-\BOOKMARK [1][-]{appendix.G}{Apêndice - Modelos AR\(7\), ARX \(7\) e MA \(7\) 24h }{}% 55
-\BOOKMARK [1][-]{appendix.H}{Apêndice - Modelos ARMA\(7,7\) e ARIMA \(7,1,7\) 24h}{}% 56
-\BOOKMARK [1][-]{appendix.I}{Apêndice - Modelos ARIMAX \(7,1,7\), SARIMA \(7,1,7\) \(2,1,1,12\) e SARIMAX \(7,1,7\) \(2,1,1,12\) 24h}{}% 57
-\BOOKMARK [1][-]{appendix.J}{Apêndice - Modelos Regressão linear, XGB Regressão, Ligth GBM Regressão e Regressão de Floresta Aleatória 24h}{}% 58
+\BOOKMARK [1][-]{appendix.E}{Apêndice - Modelos ARIMAX
