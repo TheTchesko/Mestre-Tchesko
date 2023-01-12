@@ -100,11 +100,6 @@ ISSN 1939-0068.}
 {GRAFF, M. et al. {Time series forecasting with genetic programming}.
 \textbf{Natural Computing}, v.~16, n.~1, p. 165--174, 2017.}
 
-\bibitem[Hyndman e Athanasopoulos 2018]{pratica}
-\abntrefinfo{Hyndman e Athanasopoulos}{HYNDMAN; ATHANASOPOULOS}{2018}
-{HYNDMAN, R.~J.; ATHANASOPOULOS, G. \textbf{Forecasting: principles and
-  practice}. [S.l.]: OTexts, 2018.}
-
 \bibitem[Ignatov, Mosin e Bauer 2016]{walter}
 \abntrefinfo{Ignatov, Mosin e Bauer}{IGNATOV; MOSIN; BAUER}{2016}
 {IGNATOV, I.; MOSIN, O.; BAUER, E. Effects of calcium, magnesium, zinc and
@@ -237,20 +232,6 @@ Dispon{\'\i}vel em:
 {SAMANTA, S. et al. {Learning elastic memory online for fast time series
   forecasting}.
 \textbf{Neurocomputing}, v.~390, p. 315--326, 2020.}
-
-\bibitem[Santos, Peres e Puziol 2022]{captchesko}
-\abntrefinfo{Santos, Peres e Puziol}{SANTOS; PERES; PUZIOL}{2022}
-{SANTOS, F.~S. dos; PERES, M.~V. de O.; PUZIOL, R.
-\textbf{Effect of the Covid-19 pandemic in the total monthly death counts in
-  the year 2020 for all brazilian states}.
-Tese (Doutorado) --- Universidade Estadual de S{\~a}o Paulo, 2022.}
-
-\bibitem[Santos et al. 2022]{artchesko}
-\abntrefinfo{Santos et al.}{SANTOS et al.}{2022}
-{SANTOS, F.~S. dos et al. Distribui{\c{c}}{\~a}o chen aplicada em dados de
-  c{\^a}ncer de mama com fra{\c{c}}{\^a}o de cura e covari{\'a}vel.
-\textbf{Revista Mundi Engenharia, Tecnologia e Gest{\~a}o (ISSN: 2525-4782)},
-  v.~6, n.~3, 2022.}
 
 \bibitem[Sezer, Gudelek e Ozbayoglu 2020]{Sezer2020}
 \abntrefinfo{Sezer, Gudelek e Ozbayoglu}{SEZER; GUDELEK; OZBAYOGLU}{2020}
