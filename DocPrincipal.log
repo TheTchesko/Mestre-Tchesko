@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  14 JAN 2023 11:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  14 JAN 2023 12:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2467,7 +2467,7 @@ m-24h/60-LR-XGB-LGBM-RF.png>] (DocPrincipal.aux
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `DocPrincipal.out' has not changed.
-(rerunfilecheck)             Checksum: 2B727E5B9D20B233DB511EB9502D25E7;4857.
+(rerunfilecheck)             Checksum: D421120B028D094C2DEA7471590B9D9E;4864.
  ) 
 Here is how much of TeX's memory you used:
  28549 strings out of 476406
@@ -2499,7 +2499,7 @@ KTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/msndo/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/msndo/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/msndo/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on DocPrincipal.pdf (107 pages, 41929471 bytes).
+Output written on DocPrincipal.pdf (107 pages, 41929478 bytes).
 PDF statistics:
  2100 PDF objects out of 2487 (max. 8388607)
  353 named destinations out of 1000 (max. 500000)

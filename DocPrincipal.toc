@@ -12,7 +12,7 @@
 \contentsline {subsubsection}{\numberline {1.4.1}Contribui\c c\~oes}{4}{subsubsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.5}Estrutura do trabalho}{4}{subsection.1.5}%
 \contentsline {section}{\numberline {2}Referencial}{6}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Descri\c c \~ao do problema}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.1}Descri\c c\~ao do problema}{6}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Revis\~ao sistem\'atica da literatura}{7}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Problematiza\c c\~ao da Revis\~ao}{9}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Metodologia}{10}{subsection.2.4}%
@@ -21,8 +21,8 @@
 \contentsline {section}{\numberline {3}Base Te\'orica}{23}{section.3}%
 \contentsline {subsection}{\numberline {3.1}M\'etricas de Erros}{23}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}ARIMA, SARIMA e SARIMAX}{24}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Componente auto-regressivo — AR(p)}{24}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Média Móvel — MA(q)}{26}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Componente auto-regressivo -- AR(p)}{24}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}M\'edia M\'ovel -- MA(q)}{26}{subsubsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.3}Modelos ARMA e ARIMA}{27}{subsubsection.3.2.3}%
 \contentsline {subsubsection}{\numberline {3.2.4}MODELOS SARIMA, ARIMAX, SARIMAX}{29}{subsubsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.3}Modelos Regressivo}{31}{subsection.3.3}%
@@ -44,7 +44,7 @@
 \contentsline {subsubsection}{\numberline {4.1.8}Teste de Signific\^ancia}{50}{subsubsection.4.1.8}%
 \contentsline {section}{\numberline {5}Conclus\~oes}{52}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Limita\c c\~oes da pesquisa e propostas futuras}{52}{subsection.5.1}%
-\contentsline {section}{Referências}{54}{subsection.5.1}%
+\contentsline {section}{Refer\^encias}{54}{subsection.5.1}%
 \contentsline {section}{\numberline {A}Ap\^endice - Compara\c c\~ao dos modelos de previs\~ao de series temporais media de 24h}{58}{appendix.A}%
 \contentsline {section}{\numberline {B}Ap\^endice - Compara\c c\~ao dos modelos de previs\~ao 18h a 21h}{66}{appendix.B}%
 \contentsline {section}{\numberline {C}Ap\^endice - Modelos AR(6), ARX (6) e MA (6) 18h a 21h}{75}{appendix.C}%

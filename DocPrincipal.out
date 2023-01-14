@@ -12,7 +12,7 @@
 \BOOKMARK [3][-]{subsubsection.1.4.1}{Contribui\347\365es}{subsection.1.4}% 12
 \BOOKMARK [2][-]{subsection.1.5}{Estrutura do trabalho}{section.1}% 13
 \BOOKMARK [1][-]{section.2}{Referencial}{}% 14
-\BOOKMARK [2][-]{subsection.2.1}{Descri\347 \343o do problema}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.1}{Descri\347\343o do problema}{section.2}% 15
 \BOOKMARK [2][-]{subsection.2.2}{Revis\343o sistem\341tica da literatura}{section.2}% 16
 \BOOKMARK [2][-]{subsection.2.3}{Problematiza\347\343o da Revis\343o}{section.2}% 17
 \BOOKMARK [2][-]{subsection.2.4}{Metodologia}{section.2}% 18
@@ -21,8 +21,8 @@
 \BOOKMARK [1][-]{section.3}{Base Te\363rica}{}% 21
 \BOOKMARK [2][-]{subsection.3.1}{M\351tricas de Erros}{section.3}% 22
 \BOOKMARK [2][-]{subsection.3.2}{ARIMA, SARIMA e SARIMAX}{section.3}% 23
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Componente auto-regressivo — AR\(p\)}{subsection.3.2}% 24
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Média Móvel — MA\(q\)}{subsection.3.2}% 25
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Componente auto-regressivo \205 AR\(p\)}{subsection.3.2}% 24
+\BOOKMARK [3][-]{subsubsection.3.2.2}{M\351dia M\363vel \205 MA\(q\)}{subsection.3.2}% 25
 \BOOKMARK [3][-]{subsubsection.3.2.3}{Modelos ARMA e ARIMA}{subsection.3.2}% 26
 \BOOKMARK [3][-]{subsubsection.3.2.4}{MODELOS SARIMA, ARIMAX, SARIMAX}{subsection.3.2}% 27
 \BOOKMARK [2][-]{subsection.3.3}{Modelos Regressivo}{section.3}% 28
@@ -44,7 +44,7 @@
 \BOOKMARK [3][-]{subsubsection.4.1.8}{Teste de Signific\342ncia}{subsection.4.1}% 44
 \BOOKMARK [1][-]{section.5}{Conclus\365es}{}% 45
 \BOOKMARK [2][-]{subsection.5.1}{Limita\347\365es da pesquisa e propostas futuras}{section.5}% 46
-\BOOKMARK [1][-]{subsection.5.1}{Referências}{}% 47
+\BOOKMARK [1][-]{subsection.5.1}{Refer\352ncias}{}% 47
 \BOOKMARK [1][-]{appendix.A}{Ap\352ndice - Compara\347\343o dos modelos de previs\343o de series temporais media de 24h}{}% 48
 \BOOKMARK [1][-]{appendix.B}{Ap\352ndice - Compara\347\343o dos modelos de previs\343o 18h a 21h}{}% 49
 \BOOKMARK [1][-]{appendix.C}{Ap\352ndice - Modelos AR\(6\), ARX \(6\) e MA \(6\) 18h a 21h}{}% 50
