@@ -1,0 +1,57 @@
+\BOOKMARK [1][-]{lot.1}{Lista de Tabelas}{}% 1
+\BOOKMARK [1][-]{lof.1}{Lista de Figuras}{}% 2
+\BOOKMARK [1][-]{toc.1}{Sum\341rio}{}% 3
+\BOOKMARK [1][-]{section.1}{Introdução}{}% 4
+\BOOKMARK [2][-]{subsection.1.1}{Contexto da pesquisa}{section.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.1.1}{Motivação da pesquisa}{subsection.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.2}{Objetivo geral}{section.1}% 7
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Objetivos específicos e questão de pesquisa}{subsection.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.3}{Procedimentos metodológicos}{section.1}% 9
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Etapas da pesquisa}{subsection.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.4}{Justificativa da pesquisa}{section.1}% 11
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Contribuições}{subsection.1.4}% 12
+\BOOKMARK [2][-]{subsection.1.5}{Estrutura do trabalho}{section.1}% 13
+\BOOKMARK [1][-]{section.2}{Referencial}{}% 14
+\BOOKMARK [2][-]{subsection.2.1}{Descrição do problema}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.2}{Revisão sistemática da literatura}{section.2}% 16
+\BOOKMARK [2][-]{subsection.2.3}{Problematização da Revisão}{section.2}% 17
+\BOOKMARK [2][-]{subsection.2.4}{Metodologia}{section.2}% 18
+\BOOKMARK [2][-]{subsection.2.5}{Resultados da busca da revisão}{section.2}% 19
+\BOOKMARK [2][-]{subsection.2.6}{Conclusão da revisão}{section.2}% 20
+\BOOKMARK [1][-]{section.3}{Base Teórica}{}% 21
+\BOOKMARK [2][-]{subsection.3.1}{Métricas de Erros}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.2}{ARIMA, SARIMA e SARIMAX}{section.3}% 23
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Componente auto regressivo — AR\(p\)}{subsection.3.2}% 24
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Média Móvel — MA\(q\)}{subsection.3.2}% 25
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Modelos ARMA e ARIMA}{subsection.3.2}% 26
+\BOOKMARK [3][-]{subsubsection.3.2.4}{MODELOS SARIMA, ARIMAX, SARIMAX}{subsection.3.2}% 27
+\BOOKMARK [2][-]{subsection.3.3}{Modelos Regressivo}{section.3}% 28
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Regressão Linear \(LR\)}{subsection.3.3}% 29
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Floresta Aleatória}{subsection.3.3}% 30
+\BOOKMARK [3][-]{subsubsection.3.3.3}{LightGBM e XGboost}{subsection.3.3}% 31
+\BOOKMARK [3][-]{subsubsection.3.3.4}{O Gradiente em Gradiente de Boosting \(Reforço\)}{subsection.3.3}% 32
+\BOOKMARK [3][-]{subsubsection.3.3.5}{Algoritmos de boosting de gradiente}{subsection.3.3}% 33
+\BOOKMARK [3][-]{subsubsection.3.3.6}{A diferença entre XGBoost e LightGBM}{subsection.3.3}% 34
+\BOOKMARK [1][-]{section.4}{Resultados}{}% 35
+\BOOKMARK [2][-]{subsection.4.1}{Planejamento do Problema}{section.4}% 36
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Análise Exploratória dos dados \(EDA\)}{subsection.4.1}% 37
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Múltiplas entradas e saída única \(MISO\)}{subsection.4.1}% 38
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Decomposição STL}{subsection.4.1}% 39
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Separação dos Dados}{subsection.4.1}% 40
+\BOOKMARK [3][-]{subsubsection.4.1.5}{Estrategia de Previsão}{subsection.4.1}% 41
+\BOOKMARK [3][-]{subsubsection.4.1.6}{Horizonte}{subsection.4.1}% 42
+\BOOKMARK [3][-]{subsubsection.4.1.7}{Modelos de previsão e métricas de desempenho}{subsection.4.1}% 43
+\BOOKMARK [3][-]{subsubsection.4.1.8}{Teste de Significância}{subsection.4.1}% 44
+\BOOKMARK [1][-]{section.5}{Conclusões}{}% 45
+\BOOKMARK [2][-]{subsection.5.1}{Limitações da pesquisa e propostas futuras}{section.5}% 46
+\BOOKMARK [1][-]{subsection.5.1}{Referências}{}% 47
+\BOOKMARK [1][-]{appendix.A}{Apêndice - Comparação dos modelos de previsão de series temporais media de 24h}{}% 48
+\BOOKMARK [1][-]{appendix.B}{Apêndice - Comparação dos modelos de previsão 18h a 21h}{}% 49
+\BOOKMARK [1][-]{appendix.C}{Apêndice - Modelos AR\(6\), ARX \(6\) e MA \(6\) 18h a 21h}{}% 50
+\BOOKMARK [1][-]{appendix.D}{Apêndice - Modelos ARMA\(6,6\) e ARIMA \(6,1,6\) 18h a 21h}{}% 51
+\BOOKMARK [1][-]{appendix.E}{Apêndice - Modelos ARIMAX \(6,1,6\), SARIMA \(6,1,6\) \(2,1,1,7\) e SARIMAX \(6,1,6\) \(2,1,1,7\) 18h a 21h}{}% 52
+\BOOKMARK [1][-]{appendix.F}{Apêndice - Modelos Regressão linear, XGB Regressão, Ligth GBM Regressão e Regressão de Floresta Aleatória 18h a 21h}{}% 53
+\BOOKMARK [1][-]{appendix.G}{Apêndice - Modelos AR\(7\), ARX \(7\) e MA \(7\) 24h }{}% 54
+\BOOKMARK [1][-]{appendix.H}{Apêndice - Modelos ARMA\(7,7\) e ARIMA \(7,1,7\) 24h}{}% 55
+\BOOKMARK [1][-]{appendix.I}{Apêndice - Modelos ARIMAX \(7,1,7\), SARIMA \(7,1,7\) \(2,1,1,12\) e SARIMAX \(7,1,7\) \(2,1,1,12\) 24h}{}% 56
+\BOOKMARK [1][-]{appendix.J}{Apêndice - Modelos Regressão linear, XGB Regressão, Ligth GBM Regressão e Regressão de Floresta Aleatória 24h}{}% 57
