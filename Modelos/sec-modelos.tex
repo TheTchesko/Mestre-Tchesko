@@ -1,6 +1,6 @@
-\section{Base Teórica}\label{sec:base}
+\section{Base Te\'orica}\label{sec:base}
 
-\subsection{Métricas de Erros}\label{subsec:metrica}
+\subsection{M\'etricas de Erros}\label{subsec:metrica}
 
 A métrica MSE é uma das mais utilizadas em aprendizado de máquina. Seu cálculo é feito da seguinte forma:
 
@@ -51,7 +51,7 @@ Dito isto, modelos baseados em ARMA são muitas vezes um bom modelo para começa
 
 O modelo ARIMA, vamos dividi-lo em AR, I e MA.
 
-\subsubsection{Componente auto regressivo — AR(p)}
+\subsubsection{Componente auto-regressivo — AR(p)}
 
 O componente auto regressivo do modelo ARIMA é representado por AR(p), com o parâmetro $ p $ determinando o número de séries defasadas que é utilizado.
 
@@ -89,11 +89,11 @@ O modelo ARX é um modelo similar ao AR só coloca as variáveis exógenas do co
 
 O modelo AR pode ser visivelmente um modelo adequado para a previsão que está sendo feito, mas como é um modelo auto regressivo ainda assim com o passar do tempo e da previsão ele vai prever de uma forma linear e não convencional, para um analise mais rápido da série pode se considerar um modelo adequado. Logo mais adiante tem exemplos de casos gerais que pode ocorrer nesse método.
 
-\textbf{AR(0): Ruído branco}
+\textbf{AR(0): Ru\'ido branco}
 
 Se definir o parâmetro $p$ como zero (AR($0$)), sem termos autorregressivos. Esta série de tempo é apenas um ruído branco. Cada ponto de dados é amostrado a partir de uma distribuição com uma média de $0$ e uma variância de sigma-quadrado. Isso resulta em uma sequência de números aleatórios que não podem ser previstos. Isso é realmente útil, pois pode servir como uma hipótese nula, e proteger nossas análises de aceitar padrões falso-positivos.
 
-\textbf{AR(1): Caminhadas aleatórias e Oscilações}
+\textbf{AR(1): Caminhadas aleat\'orias e Oscila\c c\~oes}
 
 
 
@@ -222,7 +222,7 @@ Entre os modelos com variáveis exógenas os modelos da Figura \ref{fig:1-arimax
 
 \subsection{Modelos Regressivo}\label{subsec:reg}
 
-\subsubsection{Regressão Linear (LR)}
+\subsubsection{Regress\~ao Linear (LR)}
 
 Segundo \citeonline{korstanje2021} nos modelos de aprendizado de máquina supervisionados, você tenta identificar relações entre diferentes variáveis:
 
@@ -298,7 +298,7 @@ Para poder utilizar a regressão linear, é necessário estimar os coeficientes 
 \end{figure}
 
 
-\subsubsection{Floresta Aleatória} \label{subsubsec:rf}
+\subsubsection{Floresta Aleat\'oria} \label{subsubsec:rf}
 
 Pode entender que ter exatamente a mesma árvore de decisão 1000 vezes não tem valor agregado do que usar essa árvore de decisão apenas uma vez.  Em um modelo de conjunto, cada modelo individual deve ser ligeiramente diferente do outro. Existem dois métodos bem conhecidos de criação de coleções: ensacamento e reforço.  Random Forest usa ensacamento para criar um conjunto de árvores de decisão
 
@@ -344,7 +344,7 @@ não são compreendidas. Ao fazer isso, você mantém todos os modelos fracos in
 
 
 
-\subsubsection{O Gradiente em Gradiente de Boosting (Reforço)} \label{subsubsec:boosting}
+\subsubsection{O Gradiente em Gradiente de Boosting (Refor\c co)} \label{subsubsec:boosting}
 
 \citeonline{korstanje2021} esse processo iterativo é chamado de aumento de gradiente por um motivo. Um gradiente é um termo matemático que se refere ao campo vetorial de derivadas parciais que apontam na direção da inclinação mais acentuada. Em termos simples, muitas vezes comparamos gradientes com declives de estradas em aclive: quanto maior a inclinação, mais íngreme a colina. Os gradientes são calculados tomando derivadas, ou derivadas parciais, de uma função.
 
@@ -374,7 +374,7 @@ O \textbf{XGBoost} é um dos algoritmos de aprendizado de máquina mais usados. 
 A vantagem esperada do LightGBM sobre o XGBoost é um ganho de velocidade e uso de memória.
 Nesta subseção, você descobrirá as implementações de ambos os algoritmos de aumento de gradiente.
 
-\subsubsection{A diferença entre XGBoost e LightGBM}
+\subsubsection{A diferen\c ca entre XGBoost e LightGBM}
 
 Se você for usar esses dois algoritmos de aumento de gradiente, é importante entender de
 que maneira eles diferem. Isso também pode fornecer uma visão dos tipos de diferença que fazem um número tão grande de modelos no mercado.

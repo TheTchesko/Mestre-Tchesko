@@ -5,7 +5,7 @@ Neste capítulo é mostrado um breve resultado do que foi realizado até o prese
 
 Assim como foi mostrado na seção \ref{subsubsec:etp} as etapas da dissertação, com isso cada modelo e os métodos que pode ser utilizado para responder as Questões de pesquisas abordado na seção \ref{subsubsec:obespec}. Com as etapas podemos dar uma cronologia logica do que foi adquirido ao longo do tempo com os dados da SANEPAR.
 
-\subsubsection{Análise Exploratória dos dados (EDA)}
+\subsubsection{An\'alise Explorat\'oria dos dados (EDA)}
 
 Da \ref{etp:1} é realizado o EDA para os processamento de dados que obteve até aqui, com o EDA vai ser respondido. Segundo \citeonline{Yu2016} Na era do big data, coletamos volumes de dados de massa caóticos, não estruturados e multimídia por meio de vários canais. Como descobrir as regras, os modelos analíticos e as hipóteses nesses dados tornou-se o novo desafio. A análise exploratória de dados foi promovida por John Tukey para incentivar os estatísticos a explorar os dados e, possivelmente, formular hipóteses que poderiam levar a uma nova coleta de dados e experimentos. Diferente da análise inicial de dados, a análise exploratória de dados (EDA) é uma abordagem para analisar conjuntos de dados para resumir suas principais características, muitas vezes com métodos visuais. Muitas técnicas de EDA foram adotadas na análise de big data.
 
@@ -51,13 +51,13 @@ Na \ref{q4} o ponto de equilibro para não ser acionado as bomba seria de as vaz
 
 Na \ref{q5:a} o tanque deve estar com o nível de $4,00 m^3$ para que não precise acionar bombas no horário de pico. 
 
-\subsubsection{Múltiplas entradas e saída única (MISO)}
+\subsubsection{M\'ultiplas entradas e sa\'ida \'unica (MISO)}
 
 Nessa \ref{etp:2} o modelos que mais foi abordado no decorrer da dissertação é os modelos ARIMA, ou os que derivam desse modelo, e os modelos regressivo fora o LR  tem múltiplas entra e uma saída da variável que é prevista o LT01, as outras variáveis serve de apoio para melhorar os modelos do tipo ARX ou modelos com variáveis exógenas. Os modelos ARIMA sem a variável exógena é apenas um entrada, semelhante com o LR.
 
 
 
-\subsubsection{Decomposição STL}
+\subsubsection{Decomposi\c c\~ao STL}
 
  \citeonline{Theodosiou20111178} A decomposição sazonal e tendencial utilizando o procedimento de Loess (STL) é utilizada para a decomposição aditiva da série temporal global. O STL realiza a decomposição aditiva dos dados por meio de uma sequência de aplicações do Loess mais suave, que aplica regressões polinomiais ponderadas localmente em cada ponto do conjunto de dados, sendo as variáveis explicativas os valores mais próximos do ponto cuja resposta está sendo estimada. 
  
@@ -198,7 +198,7 @@ Uma série temporal é ruído branco se as variáveis são independentes e distr
 Isso significa que todas as variáveis têm a mesma variância ($\sigma^2$) e cada valor tem uma correlação zero com todos os outros valores da série.
 Mais para frente vamos mostrar o comprimento de zeros na variável prevista. Com isso encerra a \ref{etp:3}.
 
-\subsubsection{Separação dos Dados}
+\subsubsection{Separa\c c\~ao dos Dados}
 
 Na \ref{etp:4} tem um esquema de como foi dividido os dados em treino, teste e validação, essa pratica é comum para os profissionais de aprendizado de máquina, pois assim como não é passível processar os dados todos de uma vez, se você manosear dados em uma escala menor até pode ser realizado, mas tudo depende da máquina que esta sendo realizado o processamento dos dados, cada modelo em particular utiliza um certo acervo do seu computador para processar, se por exemplo você tiver trabalhando com um modelo de aprendizado profundo que é mais comum em processamento de imagem, a Nvidia tem sempre inovado com as suas GPUs e trazendo mais poder para processamento, com o recente lançamento da placa de vídeo $3090$ um sonho de consumo para games e os profissionais de aprendizado de maquina e profundo.
 
@@ -206,7 +206,7 @@ Em fim se o computador que foi realizado os processamento fosse um computador n�
 
 A divisão mais básica que tem na literatura foi realizada aqui na separação dos dados, $70\%$ para treino e os $30\%$ restante para teste, dos $70\%$ tem mais uma divisão pegando $80\%$ dos $70\%$ para treino novamente e os $20\%$ para validação dos dados, tendo essa fórmula aplica na linguagem de programação para que não precisa ser contado todas as vezes que for mudado o modelo.
 
-\subsubsection{Estrategia de Previsão}\label{subsubsec:est}
+\subsubsection{Estrategia de Previs\~ao}\label{subsubsec:est}
 
 Na \ref{etp:5} é abordado a forma que foi previsto os dados, em uma janela de horizonte de previsão bem maior do que o normal na literatura da estrategia de recursiva, sendo 1, 10, 30 e 60 dias previsto, essa estrategia para comparação dos modelos regressivo e modelos ARIMA, é bem vantajoso, pois cada modelo tem suas especificidade para prever em momentos com janela de tempo menor e com uma janela de muitos dias. Assim como explicado na seção \ref{subsubsec:modelos} se for previsão curta, alguns vai se sobre por em meio à outros modelos que foi feito aqui.
 
@@ -214,7 +214,7 @@ Na \ref{etp:5} é abordado a forma que foi previsto os dados, em uma janela de h
 
 Na \ref{etp:6} é feito o horizonte de previsão, como dito na seção \ref{subsubsec:est} esse horizonte foi customizado baseado do método recursivo de prever as series temporais e a previsão do nível do tanque LT01. Os passos para prever a frente foi de 1, 10, 30 e 60 dias, já foi realizado uma estrategia com uma janela menor, mas para comparação dos modelos essa janela foi mais adequada.
 
-\subsubsection{Modelos de previsão e métricas de desempenho}\label{subsubsec:modelos}
+\subsubsection{Modelos de previs\~ao e m\'etricas de desempenho}\label{subsubsec:modelos}
 
 Da \ref{etp:7} as métricas utilizada aqui foi vista na seção \ref{subsec:metrica} foi utilizado aqui três das métricas mais usada na literaturar para previsão de tempo e comparação de modelos ARIMA e os modelos regressores.
 
@@ -222,7 +222,7 @@ Da \ref{etp:7} as métricas utilizada aqui foi vista na seção \ref{subsec:metr
     
     Já em grande espaço de tempo como foi feito de 60 dias os modelos ARMA, AR, MA, ARIMA, ARIMAX, ARX, SARIMAX, SARIMA, XGBRegressor, Random Forest Regressor, LGBMRregressor e LR, seguindo a mesma lógica do melhor para o pior. Mas se olhar graficamente nos modelos que foi feito, os modelos com variáveis exógenas aparenta prever melhor do que os outros modelos, só analisando os dados nos apêndice tanto quando as Figuras de \ref{fig:1-AR-ARX-MA} a \ref{fig:60-LR-XGB-LGBM-RF24} quanto as Tabalas \ref{tb:1-24trn} a \ref{tb:60-18cm}   
     
-    \subsubsection{Teste de Significância}
+    \subsubsection{Teste de Signific\^ancia}
     
     Na \ref{etp:9} os teste escolhido foi de \textit{Friedman e Nemenjy} no teste de Nemenyi, precisamos obter a diferença entre os rankings médios (linha média da tabela de classificação) entre todos os classificadores (comparando pares de classificadores). Se essa diferença for maior ou igual a um CD (distância crítica), podemos dizer que esses dois classificadores são significativamente diferentes um do outro. O CD é calculado como:
     
