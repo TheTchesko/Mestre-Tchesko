@@ -46,55 +46,55 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Database file #1: abntex2-options.bib
 Database file #2: Bibliografia/Dissert2.bib
-I was expecting an "="---line 99 of file Bibliografia/Dissert2.bib
+I was expecting an "="---line 106 of file Bibliografia/Dissert2.bib
  :  funding_text 
  :               1={This work is funded by the French spatial agency ( CNES ) and the French mapping agency ( IGN ), and it has been carried out at CESBIO laboratory – supported by the University Paul Sabatier, CNRS (Centre National de la Recherche Scientifique), CNES, IRD (Institut de Recherche pour le Développement) – and MATIS laboratory supported by IGN.},
 I'm skipping whatever remains of this entry
-Repeated entry---line 4893 of file Bibliografia/Dissert2.bib
+Repeated entry---line 4900 of file Bibliografia/Dissert2.bib
  : @article{Li2020
  :                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4904 of file Bibliografia/Dissert2.bib
+Repeated entry---line 4911 of file Bibliografia/Dissert2.bib
  : @article{Du2020
  :                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4915 of file Bibliografia/Dissert2.bib
+Repeated entry---line 4922 of file Bibliografia/Dissert2.bib
  : @article{Kulshreshtha2020
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4927 of file Bibliografia/Dissert2.bib
+Repeated entry---line 4934 of file Bibliografia/Dissert2.bib
  : @article{Samanta2020
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4938 of file Bibliografia/Dissert2.bib
+Repeated entry---line 4945 of file Bibliografia/Dissert2.bib
  : @article{Xu2019
  :                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4950 of file Bibliografia/Dissert2.bib
+Repeated entry---line 4957 of file Bibliografia/Dissert2.bib
  : @article{Graff2017
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5177 of file Bibliografia/Dissert2.bib
+Repeated entry---line 5184 of file Bibliografia/Dissert2.bib
  : @article{Salgotra2020
  :                      ,
 I'm skipping whatever remains of this entry
-"}" immediately follows an entry type---line 5192 of file Bibliografia/Dissert2.bib
+"}" immediately follows an entry type---line 5199 of file Bibliografia/Dissert2.bib
  :  correspondence_address1={Salgotra, R.; Dept. of ECE, India; email: r.03dec@gmail.com
  :                                                                                      },
 I'm skipping whatever remains of this entry
-Repeated entry---line 5251 of file Bibliografia/Dissert2.bib
+Repeated entry---line 5258 of file Bibliografia/Dissert2.bib
  : @article{Shen2020
  :                  ,
 I'm skipping whatever remains of this entry
-")" immediately follows an entry type---line 5259 of file Bibliografia/Dissert2.bib
+")" immediately follows an entry type---line 5266 of file Bibliografia/Dissert2.bib
  :  affiliation={School of Artificial Intelligence, Xidian University, 47905 Xi'an, Shaanxi China (e-mail: f.shen@qq.com
  :                                                                                                                      ); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: neouma@163.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: kaiwu@stu.xidian.edu.cn)},
 I'm skipping whatever remains of this entry
-You're missing an entry type---line 5259 of file Bibliografia/Dissert2.bib
+You're missing an entry type---line 5266 of file Bibliografia/Dissert2.bib
  :  affiliation={School of Artificial Intelligence, Xidian University, 47905 Xi'an, Shaanxi China (e-mail: f.shen@qq.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: neouma@
  :                                                                                                                                                                                                                         163.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: kaiwu@stu.xidian.edu.cn)},
 I'm skipping whatever remains of this entry
-")" immediately follows an entry type---line 5259 of file Bibliografia/Dissert2.bib
+")" immediately follows an entry type---line 5266 of file Bibliografia/Dissert2.bib
  :  affiliation={School of Artificial Intelligence, Xidian University, 47905 Xi'an, Shaanxi China (e-mail: f.shen@qq.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: neouma@163.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: kaiwu@stu.xidian.edu.cn
  :                                                                                                                                                                                                                                                                                                                                                   )},
 I'm skipping whatever remains of this entry
@@ -107,45 +107,45 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 52 entries,
+You've used 53 entries,
             6714 wiz_defined-function locations,
-            1568 strings with 20870 characters,
-and the built_in function-call counts, 68502 in all, are:
-= -- 7065
-> -- 1814
+            1572 strings with 21110 characters,
+and the built_in function-call counts, 69178 in all, are:
+= -- 7106
+> -- 1846
 < -- 1350
-+ -- 1931
-- -- 533
-* -- 4719
-:= -- 8471
-add.period$ -- 183
-call.type$ -- 52
-change.case$ -- 608
-chr.to.int$ -- 177
-cite$ -- 50
-duplicate$ -- 5778
-empty$ -- 3042
-format.name$ -- 2583
-if$ -- 14327
++ -- 1943
+- -- 543
+* -- 4769
+:= -- 8568
+add.period$ -- 186
+call.type$ -- 53
+change.case$ -- 619
+chr.to.int$ -- 178
+cite$ -- 51
+duplicate$ -- 5811
+empty$ -- 3089
+format.name$ -- 2630
+if$ -- 14481
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 912
-newline$ -- 282
-num.names$ -- 250
-pop$ -- 1165
+missing$ -- 929
+newline$ -- 287
+num.names$ -- 255
+pop$ -- 1189
 preamble$ -- 1
-purify$ -- 224
+purify$ -- 228
 quote$ -- 0
-skip$ -- 5985
+skip$ -- 6019
 stack$ -- 1
-substring$ -- 3295
-swap$ -- 2354
+substring$ -- 3312
+swap$ -- 2364
 text.length$ -- 103
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 1
 warning$ -- 0
-while$ -- 409
+while$ -- 415
 width$ -- 0
-write$ -- 836
+write$ -- 850
 (There were 13 error messages)
