@@ -1725,4 +1725,199 @@ een already used, duplicate ignored
 l.68 ...ARIMAX, 60 dias a frente }}{90}{figure.65}
                                                   % [13])
 \tf@lof=\write6
-\openout6 = `DocPr
+\openout6 = `DocPrincipal.lof'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.118 \newpage
+               [14] (DocPrincipal.toc
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.38 ...a \'unica (MISO)}{42}{subsubsection.4.1.2}
+                                                  % [15])
+\tf@toc=\write7
+\openout7 = `DocPrincipal.toc'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.126 \include{Introducao/sec-introducao}
+                                          [16]
+\openout2 = `Introducao/sec-introducao.aux'.
+
+ (Introducao/sec-introducao.tex
+(Packages/espacamento_paginacao2.tex) (Introducao/subsec-contexto.tex [1
+
+])
+(Introducao/subsec-objetivos.tex [2]) (Introducao/subsec-metodologia.tex
+[3]
+<Introducao/Figuras/Etapas.png, id=623, 2581.645pt x 994.71625pt>
+File: Introducao/Figuras/Etapas.png Graphic file (type png)
+<use Introducao/Figuras/Etapas.png>
+Package pdftex.def Info: Introducao/Figuras/Etapas.png  used on input line 24.
+(pdftex.def)             Requested size: 455.24411pt x 175.39844pt.
+) (Introducao/subsec-justif.tex) (Introducao/subsec-estrutura.tex
+<Introducao/Figuras/Estrutura.png, id=629, 1874.00125pt x 2081.7775pt>
+File: Introducao/Figuras/Estrutura.png Graphic file (type png)
+<use Introducao/Figuras/Estrutura.png>
+Package pdftex.def Info: Introducao/Figuras/Estrutura.png  used on input line 8
+.
+(pdftex.def)             Requested size: 318.66948pt x 353.9928pt.
+ [4 <./Introducao/Figuras/Etapas.png>])) [5 <./Introducao/Figuras/Estrutura.png
+>]
+\openout2 = `Revisao/sec-revisao.aux'.
+
+
+(Revisao/sec-revisao.tex (Revisao/subsec-descricao.tex
+<Introducao/Figuras/dados todos.png, id=649, 154.86859pt x 79.13565pt>
+File: Introducao/Figuras/dados todos.png Graphic file (type png)
+<use Introducao/Figuras/dados todos.png>
+Package pdftex.def Info: Introducao/Figuras/dados todos.png  used on input line
+ 30.
+(pdftex.def)             Requested size: 455.24411pt x 232.65958pt.
+<Introducao/Figuras/2020 a frente.png, id=650, 1290.5013pt x 654.5253pt>
+File: Introducao/Figuras/2020 a frente.png Graphic file (type png)
+<use Introducao/Figuras/2020 a frente.png>
+Package pdftex.def Info: Introducao/Figuras/2020 a frente.png  used on input li
+ne 39.
+(pdftex.def)             Requested size: 455.24411pt x 230.89497pt.
+ [6
+
+
+
+ <./Introducao/Figuras/dados todos.png>]) (Revisao/exemplo serie.tex
+<Revisao/Figuras/séries.png, id=661, 3533.2pt x 1023.825pt>
+File: Revisao/Figuras/séries.png Graphic file (type png)
+<use Revisao/Figuras/séries.png>
+Package pdftex.def Info: Revisao/Figuras/séries.png  used on input line 5.
+(pdftex.def)             Requested size: 455.24411pt x 131.91463pt.
+) [7 <./Introducao/Figuras/2020 a frente.png>] (Revisao/estocatico.tex
+<Revisao/Figuras/serie.png, id=671, 709.90219pt x 350.81062pt>
+File: Revisao/Figuras/serie.png Graphic file (type png)
+<use Revisao/Figuras/serie.png>
+Package pdftex.def Info: Revisao/Figuras/serie.png  used on input line 5.
+(pdftex.def)             Requested size: 455.24411pt x 224.97302pt.
+) [8 <./Revisao/Figuras/séries.png> <./Revisao/Figuras/serie.png>]
+<Revisao/Figuras/Série temporal.png, id=684, 879.285pt x 540.68666pt>
+File: Revisao/Figuras/Série temporal.png Graphic file (type png)
+<use Revisao/Figuras/Série temporal.png>
+Package pdftex.def Info: Revisao/Figuras/Série temporal.png  used on input lin
+e 38.
+(pdftex.def)             Requested size: 455.24411pt x 279.9294pt.
+ [9]
+<Revisao/Figuras/RSL.png, id=691, 449.68pt x 556.0775pt>
+File: Revisao/Figuras/RSL.png Graphic file (type png)
+<use Revisao/Figuras/RSL.png>
+Package pdftex.def Info: Revisao/Figuras/RSL.png  used on input line 60.
+(pdftex.def)             Requested size: 227.62206pt x 281.48299pt.
+ [10 <./Revisao/Figuras/Série temporal.png>]
+(Revisao/base.tex
+Overfull \hbox (3.45044pt too wide) in paragraph at lines 4--5
+\T1/cmr/bx/it/12 LIMIT-TO ( LAN-GUAGE , ``En-glish") ) AND ( LIMIT-TO ( PUBYEAR
+
+ []
+
+
+Overfull \hbox (11.64415pt too wide) in paragraph at lines 4--5
+\T1/cmr/bx/it/12 , 2022 ) OR LIMIT-TO ( PUBYEAR , 2021 ) OR LIMIT-TO ( PUBYEAR
+ []
+
+
+Overfull \hbox (11.64415pt too wide) in paragraph at lines 4--5
+\T1/cmr/bx/it/12 , 2020 ) OR LIMIT-TO ( PUBYEAR , 2019 ) OR LIMIT-TO ( PUBYEAR
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 12--68
+
+ []
+
+[11 <./Revisao/Figuras/RSL.png>] [12] (Revisao/base-dados.tex
+<Revisao/Figuras/scopus 09-08.png, id=725, 1903.11pt x 1206.5075pt>
+File: Revisao/Figuras/scopus 09-08.png Graphic file (type png)
+<use Revisao/Figuras/scopus 09-08.png>
+Package pdftex.def Info: Revisao/Figuras/scopus 09-08.png  used on input line 5
+.
+(pdftex.def)             Requested size: 455.24411pt x 288.61041pt.
+) (Revisao/web.tex
+<Revisao/Figuras/web 09-08.png, id=727, 1903.11pt x 1206.5075pt>
+File: Revisao/Figuras/web 09-08.png Graphic file (type png)
+<use Revisao/Figuras/web 09-08.png>
+Package pdftex.def Info: Revisao/Figuras/web 09-08.png  used on input line 5.
+(pdftex.def)             Requested size: 455.24411pt x 288.61041pt.
+) [13 <./Revisao/Figuras/scopus 09-08.png>] (Revisao/cruzamento.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]|\T1/cmr/m/n/12 nonlinear
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]|\T1/cmr/m/n/12 nonlinear
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]|\T1/cmr/m/n/12 nonlinear
+ []
+
+) (Revisao/reta.tex
+<Revisao/Figuras/regressão linear dos artigos baseados nos anos.png, id=736, 1
+084.05pt x 433.62pt>
+File: Revisao/Figuras/regressão linear dos artigos baseados nos anos.png Graph
+ic file (type png)
+<use Revisao/Figuras/regressão linear dos artigos baseados nos anos.png>
+Package pdftex.def Info: Revisao/Figuras/regressão linear dos artigos baseados
+ nos anos.png  used on input line 5.
+(pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
+) [14 <./Revisao/Figuras/web 09-08.png>] [15 <./Revisao/Figuras/regressão line
+ar dos artigos baseados nos anos.png>]
+(Revisao/tabela-factor.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
+[]|\T1/cmr/m/n/12 Quantidade de
+ []
+
+) [16] (Revisao/autores-publicação.tex
+<Revisao/Figuras/Autores Relação entre artigos publicados.png, id=769, 429.67
+8pt x 178.485pt>
+File: Revisao/Figuras/Autores Relação entre artigos publicados.png Graphic fi
+le (type png)
+<use Revisao/Figuras/Autores Relação entre artigos publicados.png>
+Package pdftex.def Info: Revisao/Figuras/Autores Relação entre artigos public
+ados.png  used on input line 5.
+(pdftex.def)             Requested size: 455.24411pt x 189.11148pt.
+) (Revisao/autores.tex
+<Revisao/Figuras/Autores.png, id=770, 1903.11pt x 1206.5075pt>
+File: Revisao/Figuras/Autores.png Graphic file (type png)
+<use Revisao/Figuras/Autores.png>
+Package pdftex.def Info: Revisao/Figuras/Autores.png  used on input line 5.
+(pdftex.def)             Requested size: 455.24411pt x 288.61041pt.
+) [17 <./Revisao/Figuras/Autores Relação entre artigos publicados.png>] (Revi
+sao/mapa.tex
+<Revisao/Figuras/mapa mundi artigos.png, id=778, 481.362pt x 293.679pt>
+File: Revisao/Figuras/mapa mundi artigos.png Graphic file (type png)
+<use Revisao/Figuras/mapa mundi artigos.png>
+Package pdftex.def Info: Revisao/Figuras/mapa mundi artigos.png  used on input 
+line 5.
+(pdftex.def)             Requested size: 455.24411pt x 277.75217pt.
+)
+[18 <./Revisao/Figuras/Autores.png>] (Revisao/areas.tex
+<Revisao/Figuras/areas.png, id=786, 505.89pt x 295.65pt>
+File: Revisao/Figuras/areas.png Graphic file (type png)
+<use Revisao/Figuras/areas.png>
+Package pdftex.def Info: Revisao/Figuras/areas.png  used on input line 5.
+(pdftex.def)             Requested size: 455.24411pt x 266.05545pt.
+) [19 <./Revisao/Figuras/mapa mundi artigos.png>] (Revisao/areas-tabela.tex)
+
+Package hyperref Warning: Suppressing empty link on input line 168.
+
+[20 <./Revisao/Figuras/areas.png>] [21]) [22]
+\openout2 = `Modelos/sec-modelos.aux'.
+
+ (Modelos/se
