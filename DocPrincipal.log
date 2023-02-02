@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  1 FEB 2023 21:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  1 FEB 2023 21:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1548,17 +1548,17 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \openout2 = `Pretextuais/capa.aux'.
 
  (Pretextuais/capa.tex (Packages/espacamento_paginacao1.tex)
-<Pretextuais/pucpr.png, id=233, 737.75626pt x 340.27126pt>
-File: Pretextuais/pucpr.png Graphic file (type png)
-<use Pretextuais/pucpr.png>
-Package pdftex.def Info: Pretextuais/pucpr.png  used on input line 4.
+<Pretextuais/pucpr.jpg, id=233, 737.75626pt x 340.27126pt>
+File: Pretextuais/pucpr.jpg Graphic file (type jpg)
+<use Pretextuais/pucpr.jpg>
+Package pdftex.def Info: Pretextuais/pucpr.jpg  used on input line 4.
 (pdftex.def)             Requested size: 136.57462pt x 62.99072pt.
 )
 [1
 
 
 {C:/Users/msndo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Pretextuai
-s/pucpr.png>]
+s/pucpr.jpg>]
 \openout2 = `Pretextuais/folha_rosto1.aux'.
 
  (Pretextuais/folha_rosto1.tex
@@ -1758,14 +1758,14 @@ l.126 \include{Introducao/sec-introducao}
 ])
 (Introducao/subsec-objetivos.tex [2]) (Introducao/subsec-metodologia.tex
 [3]
-<Introducao/Figuras/Etapas.jpg, id=623, 2581.645pt x 994.71625pt>
+<Introducao/Figuras/Etapas.jpg, id=621, 2581.645pt x 994.71625pt>
 File: Introducao/Figuras/Etapas.jpg Graphic file (type jpg)
 <use Introducao/Figuras/Etapas.jpg>
 Package pdftex.def Info: Introducao/Figuras/Etapas.jpg  used on input line 24.
 (pdftex.def)             Requested size: 455.24411pt x 175.39844pt.
 ) (Introducao/subsec-justif.tex [4 <./Introducao/Figuras/Etapas.jpg>])
 (Introducao/subsec-estrutura.tex
-<Introducao/Figuras/Estrutura.jpg, id=639, 1874.00125pt x 2081.7775pt>
+<Introducao/Figuras/Estrutura.jpg, id=637, 1874.00125pt x 2081.7775pt>
 File: Introducao/Figuras/Estrutura.jpg Graphic file (type jpg)
 <use Introducao/Figuras/Estrutura.jpg>
 Package pdftex.def Info: Introducao/Figuras/Estrutura.jpg  used on input line 8
@@ -1776,7 +1776,7 @@ Package pdftex.def Info: Introducao/Figuras/Estrutura.jpg  used on input line 8
 \openout2 = `Revisao/sec-revisao.aux'.
 
  (Revisao/sec-revisao.tex (Revisao/subsec-descricao.tex
-<Introducao/Figuras/dados todos.jpg, id=655, 154.86859pt x 79.13565pt>
+<Introducao/Figuras/dados todos.jpg, id=653, 154.86859pt x 79.13565pt>
 File: Introducao/Figuras/dados todos.jpg Graphic file (type jpg)
 <use Introducao/Figuras/dados todos.jpg>
 Package pdftex.def Info: Introducao/Figuras/dados todos.jpg  used on input line
@@ -1787,7 +1787,7 @@ Package pdftex.def Info: Introducao/Figuras/dados todos.jpg  used on input line
 
 
 ]
-<Introducao/Figuras/2020 a frente.jpg, id=661, 1290.5013pt x 654.5253pt>
+<Introducao/Figuras/2020 a frente.jpg, id=659, 1290.5013pt x 654.5253pt>
 File: Introducao/Figuras/2020 a frente.jpg Graphic file (type jpg)
 <use Introducao/Figuras/2020 a frente.jpg>
 Package pdftex.def Info: Introducao/Figuras/2020 a frente.jpg  used on input li
@@ -1796,25 +1796,25 @@ ne 39.
 ) [8 <./Introducao/Figuras/dados todos.jpg> <./Introducao/Figuras/2020 a frente
 .jpg>]
 (Revisao/exemplo serie.tex
-<Revisao/Figuras/séries.jpg, id=670, 3533.2pt x 1023.825pt>
+<Revisao/Figuras/séries.jpg, id=668, 3533.2pt x 1023.825pt>
 File: Revisao/Figuras/séries.jpg Graphic file (type jpg)
 <use Revisao/Figuras/séries.jpg>
 Package pdftex.def Info: Revisao/Figuras/séries.jpg  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 131.91463pt.
 ) (Revisao/estocatico.tex
-<Revisao/Figuras/serie.jpg, id=675, 709.90219pt x 350.81062pt>
+<Revisao/Figuras/serie.jpg, id=673, 709.90219pt x 350.81062pt>
 File: Revisao/Figuras/serie.jpg Graphic file (type jpg)
 <use Revisao/Figuras/serie.jpg>
 Package pdftex.def Info: Revisao/Figuras/serie.jpg  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 224.97302pt.
 ) [9 <./Revisao/Figuras/séries.jpg>] [10 <./Revisao/Figuras/serie.jpg>]
-<Revisao/Figuras/Série temporal.jpg, id=692, 879.285pt x 540.68666pt>
+<Revisao/Figuras/Série temporal.jpg, id=690, 879.285pt x 540.68666pt>
 File: Revisao/Figuras/Série temporal.jpg Graphic file (type jpg)
 <use Revisao/Figuras/Série temporal.jpg>
 Package pdftex.def Info: Revisao/Figuras/Série temporal.jpg  used on input lin
 e 41.
 (pdftex.def)             Requested size: 455.24411pt x 279.9294pt.
-<Revisao/Figuras/RSL.jpg, id=694, 449.68pt x 556.0775pt>
+<Revisao/Figuras/RSL.jpg, id=692, 449.68pt x 556.0775pt>
 File: Revisao/Figuras/RSL.jpg Graphic file (type jpg)
 <use Revisao/Figuras/RSL.jpg>
 Package pdftex.def Info: Revisao/Figuras/RSL.jpg  used on input line 63.
@@ -1841,14 +1841,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--71
  []
 
 [13] (Revisao/base-dados.tex
-<Revisao/Figuras/scopus 09-08.jpg, id=726, 1903.11pt x 1206.5075pt>
+<Revisao/Figuras/scopus 09-08.jpg, id=724, 1903.11pt x 1206.5075pt>
 File: Revisao/Figuras/scopus 09-08.jpg Graphic file (type jpg)
 <use Revisao/Figuras/scopus 09-08.jpg>
 Package pdftex.def Info: Revisao/Figuras/scopus 09-08.jpg  used on input line 5
 .
 (pdftex.def)             Requested size: 455.24411pt x 288.61041pt.
 ) (Revisao/web.tex
-<Revisao/Figuras/web 09-08.jpg, id=728, 1903.11pt x 1206.5075pt>
+<Revisao/Figuras/web 09-08.jpg, id=726, 1903.11pt x 1206.5075pt>
 File: Revisao/Figuras/web 09-08.jpg Graphic file (type jpg)
 <use Revisao/Figuras/web 09-08.jpg>
 Package pdftex.def Info: Revisao/Figuras/web 09-08.jpg  used on input line 5.
@@ -1869,7 +1869,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--11
  []
 
 ) (Revisao/reta.tex
-<Revisao/Figuras/regressão linear dos artigos baseados nos anos.jpg, id=736, 1
+<Revisao/Figuras/regressão linear dos artigos baseados nos anos.jpg, id=734, 1
 084.05pt x 433.62pt>
 File: Revisao/Figuras/regressão linear dos artigos baseados nos anos.jpg Graph
 ic file (type jpg)
@@ -1885,7 +1885,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--6
  []
 
 ) [17] (Revisao/autores-publicação.tex
-<Revisao/Figuras/Autores Relação entre artigos publicados.jpg, id=767, 429.67
+<Revisao/Figuras/Autores Relação entre artigos publicados.jpg, id=765, 429.67
 8pt x 178.485pt>
 File: Revisao/Figuras/Autores Relação entre artigos publicados.jpg Graphic fi
 le (type jpg)
@@ -1894,14 +1894,14 @@ Package pdftex.def Info: Revisao/Figuras/Autores Relação entre artigos public
 ados.jpg  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 189.11148pt.
 ) (Revisao/autores.tex
-<Revisao/Figuras/Autores.jpg, id=768, 1903.11pt x 1206.5075pt>
+<Revisao/Figuras/Autores.jpg, id=766, 1903.11pt x 1206.5075pt>
 File: Revisao/Figuras/Autores.jpg Graphic file (type jpg)
 <use Revisao/Figuras/Autores.jpg>
 Package pdftex.def Info: Revisao/Figuras/Autores.jpg  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 288.61041pt.
 ) [18 <./Revisao/Figuras/Autores Relação entre artigos publicados.jpg>] (Revi
 sao/mapa.tex
-<Revisao/Figuras/mapa mundi artigos.jpg, id=775, 481.362pt x 293.679pt>
+<Revisao/Figuras/mapa mundi artigos.jpg, id=773, 481.362pt x 293.679pt>
 File: Revisao/Figuras/mapa mundi artigos.jpg Graphic file (type jpg)
 <use Revisao/Figuras/mapa mundi artigos.jpg>
 Package pdftex.def Info: Revisao/Figuras/mapa mundi artigos.jpg  used on input 
@@ -1909,7 +1909,7 @@ line 5.
 (pdftex.def)             Requested size: 455.24411pt x 277.75217pt.
 )
 [19 <./Revisao/Figuras/Autores.jpg>] (Revisao/areas.tex
-<Revisao/Figuras/areas.jpg, id=782, 505.89pt x 295.65pt>
+<Revisao/Figuras/areas.jpg, id=780, 505.89pt x 295.65pt>
 File: Revisao/Figuras/areas.jpg Graphic file (type jpg)
 <use Revisao/Figuras/areas.jpg>
 Package pdftex.def Info: Revisao/Figuras/areas.jpg  used on input line 5.
@@ -1932,50 +1932,50 @@ d� no mesma es-cala/ordem
 
 
 ]
-<Modelos/Figuras/1-AR.jpg, id=930, 1084.05pt x 433.62pt>
+<Modelos/Figuras/1-AR.jpg, id=928, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-AR.jpg Graphic file (type jpg)
 <use Modelos/Figuras/1-AR.jpg>
 Package pdftex.def Info: Modelos/Figuras/1-AR.jpg  used on input line 70.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
  [25]
-<Modelos/Figuras/1-ARX.jpg, id=937, 1084.05pt x 433.62pt>
+<Modelos/Figuras/1-ARX.jpg, id=935, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-ARX.jpg Graphic file (type jpg)
 <use Modelos/Figuras/1-ARX.jpg>
 Package pdftex.def Info: Modelos/Figuras/1-ARX.jpg  used on input line 79.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
  [26 <./Modelos/Figuras/1-AR.jpg> <./Modelos/Figuras/1-ARX.jpg>]
 [27]
-<Modelos/Figuras/1-MA.jpg, id=956, 1084.05pt x 433.62pt>
+<Modelos/Figuras/1-MA.jpg, id=954, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-MA.jpg Graphic file (type jpg)
 <use Modelos/Figuras/1-MA.jpg>
 Package pdftex.def Info: Modelos/Figuras/1-MA.jpg  used on input line 124.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Modelos/Figuras/1-ARMA.jpg, id=960, 1084.05pt x 433.62pt>
+<Modelos/Figuras/1-ARMA.jpg, id=958, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-ARMA.jpg Graphic file (type jpg)
 <use Modelos/Figuras/1-ARMA.jpg>
 Package pdftex.def Info: Modelos/Figuras/1-ARMA.jpg  used on input line 142.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
  [28 <./Modelos/Figuras/1-MA.jpg>]
-<Modelos/Figuras/1-ARIMA.jpg, id=969, 1084.05pt x 433.62pt>
+<Modelos/Figuras/1-ARIMA.jpg, id=967, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-ARIMA.jpg Graphic file (type jpg)
 <use Modelos/Figuras/1-ARIMA.jpg>
 Package pdftex.def Info: Modelos/Figuras/1-ARIMA.jpg  used on input line 164.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
  [29 <./Modelos/Figuras/1-ARMA.jpg>]
-<Modelos/Figuras/1-SARIMA.jpg, id=976, 1084.05pt x 433.62pt>
+<Modelos/Figuras/1-SARIMA.jpg, id=974, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-SARIMA.jpg Graphic file (type jpg)
 <use Modelos/Figuras/1-SARIMA.jpg>
 Package pdftex.def Info: Modelos/Figuras/1-SARIMA.jpg  used on input line 187.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
 
 [30 <./Modelos/Figuras/1-ARIMA.jpg>]
-<Modelos/Figuras/1-ARIMAX.jpg, id=984, 1084.05pt x 433.62pt>
+<Modelos/Figuras/1-ARIMAX.jpg, id=982, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-ARIMAX.jpg Graphic file (type jpg)
 <use Modelos/Figuras/1-ARIMAX.jpg>
 Package pdftex.def Info: Modelos/Figuras/1-ARIMAX.jpg  used on input line 208.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
  [31 <./Modelos/Figuras/1-SARIMA.jpg>]
-<Modelos/Figuras/1-SARIMAX.jpg, id=991, 1084.05pt x 433.62pt>
+<Modelos/Figuras/1-SARIMAX.jpg, id=989, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-SARIMAX.jpg Graphic file (type jpg)
 <use Modelos/Figuras/1-SARIMAX.jpg>
 Package pdftex.def Info: Modelos/Figuras/1-SARIMAX.jpg  used on input line 217.
@@ -1983,7 +1983,7 @@ Package pdftex.def Info: Modelos/Figuras/1-SARIMAX.jpg  used on input line 217.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
 
 [32 <./Modelos/Figuras/1-ARIMAX.jpg> <./Modelos/Figuras/1-SARIMAX.jpg>]
-<Apendices/Figuras/modelagem-24h/person.jpg, id=1003, 722.7pt x 578.16pt>
+<Apendices/Figuras/modelagem-24h/person.jpg, id=1001, 722.7pt x 578.16pt>
 File: Apendices/Figuras/modelagem-24h/person.jpg Graphic file (type jpg)
 <use Apendices/Figuras/modelagem-24h/person.jpg>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/person.jpg  used on in
@@ -1991,39 +1991,39 @@ put line 251.
 (pdftex.def)             Requested size: 455.24411pt x 364.19861pt.
 
 [33 <./Apendices/Figuras/modelagem-24h/person.jpg>]
-<Modelos/Figuras/LR LT01 (m³).jpg, id=1013, 973.9587pt x 392.4261pt>
+<Modelos/Figuras/LR LT01 (m³).jpg, id=1011, 973.9587pt x 392.4261pt>
 File: Modelos/Figuras/LR LT01 (m³).jpg Graphic file (type jpg)
 <use Modelos/Figuras/LR LT01 (m³).jpg>
 Package pdftex.def Info: Modelos/Figuras/LR LT01 (m³).jpg  used on input line 
 276.
 (pdftex.def)             Requested size: 455.24411pt x 183.42833pt.
  [34 <./Modelos/Figuras/LR LT01 (m³).jpg>]
-<Modelos/Figuras/1-regressão-linear.jpg, id=1022, 1156.32pt x 578.16pt>
+<Modelos/Figuras/1-regressão-linear.jpg, id=1020, 1156.32pt x 578.16pt>
 File: Modelos/Figuras/1-regressão-linear.jpg Graphic file (type jpg)
 <use Modelos/Figuras/1-regressão-linear.jpg>
 Package pdftex.def Info: Modelos/Figuras/1-regressão-linear.jpg  used on input
  line 297.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
-<Modelos/Figuras/1-regressão-rfa.jpg, id=1023, 1156.32pt x 578.16pt>
+<Modelos/Figuras/1-regressão-rfa.jpg, id=1021, 1156.32pt x 578.16pt>
 File: Modelos/Figuras/1-regressão-rfa.jpg Graphic file (type jpg)
 <use Modelos/Figuras/1-regressão-rfa.jpg>
 Package pdftex.def Info: Modelos/Figuras/1-regressão-rfa.jpg  used on input li
 ne 311.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
  [35 <./Modelos/Figuras/1-regressão-linear.jpg>]
-<Modelos/Figuras/RF.jpg, id=1031, 1859.94875pt x 709.65125pt>
+<Modelos/Figuras/RF.jpg, id=1029, 1859.94875pt x 709.65125pt>
 File: Modelos/Figuras/RF.jpg Graphic file (type jpg)
 <use Modelos/Figuras/RF.jpg>
 Package pdftex.def Info: Modelos/Figuras/RF.jpg  used on input line 322.
 (pdftex.def)             Requested size: 455.24411pt x 173.68741pt.
  [36 <./Modelos/Figuras/1-regressão-rfa.jpg> <./Modelos/Figuras/RF.jpg>]
-<Modelos/Figuras/xgboos.jpg, id=1038, 974.64125pt x 474.77374pt>
+<Modelos/Figuras/xgboos.jpg, id=1036, 974.64125pt x 474.77374pt>
 File: Modelos/Figuras/xgboos.jpg Graphic file (type jpg)
 <use Modelos/Figuras/xgboos.jpg>
 Package pdftex.def Info: Modelos/Figuras/xgboos.jpg  used on input line 342.
 (pdftex.def)             Requested size: 455.24411pt x 221.76pt.
  [37 <./Modelos/Figuras/xgboos.jpg>] [38] [39]
-<Modelos/Figuras/xgboost.jpg, id=1060, 1168.365pt x 899.36pt>
+<Modelos/Figuras/xgboost.jpg, id=1058, 1168.365pt x 899.36pt>
 File: Modelos/Figuras/xgboost.jpg Graphic file (type jpg)
 <use Modelos/Figuras/xgboost.jpg>
 Package pdftex.def Info: Modelos/Figuras/xgboost.jpg  used on input line 403.
@@ -2042,20 +2042,20 @@ Overfull \hbox (20.34651pt too wide) in paragraph at lines 20--32
 
 
 ]
-<Resultados/Figuras/esquema.jpg, id=1084, 963.6pt x 542.025pt>
+<Resultados/Figuras/esquema.jpg, id=1082, 963.6pt x 542.025pt>
 File: Resultados/Figuras/esquema.jpg Graphic file (type jpg)
 <use Resultados/Figuras/esquema.jpg>
 Package pdftex.def Info: Resultados/Figuras/esquema.jpg  used on input line 42.
 
 (pdftex.def)             Requested size: 455.24411pt x 256.07507pt.
  [42] [43 <./Resultados/Figuras/esquema.jpg>]
-<Resultados/Figuras/STL aditiva.jpg, id=1100, 1156.32pt x 578.16pt>
+<Resultados/Figuras/STL aditiva.jpg, id=1098, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/STL aditiva.jpg Graphic file (type jpg)
 <use Resultados/Figuras/STL aditiva.jpg>
 Package pdftex.def Info: Resultados/Figuras/STL aditiva.jpg  used on input line
  68.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
-<Resultados/Figuras/STL.jpg, id=1101, 1156.32pt x 578.16pt>
+<Resultados/Figuras/STL.jpg, id=1099, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/STL.jpg Graphic file (type jpg)
 <use Resultados/Figuras/STL.jpg>
 Package pdftex.def Info: Resultados/Figuras/STL.jpg  used on input line 78.
@@ -2065,24 +2065,24 @@ Package pdftex.def Info: Resultados/Figuras/STL.jpg  used on input line 78.
 LaTeX Warning: Reference `stl' on page 45 undefined on input line 83.
 
 [45 <./Resultados/Figuras/STL.jpg>]
-<Resultados/Figuras/hist.jpg, id=1120, 951.0732pt x 492.1587pt>
+<Resultados/Figuras/hist.jpg, id=1118, 951.0732pt x 492.1587pt>
 File: Resultados/Figuras/hist.jpg Graphic file (type jpg)
 <use Resultados/Figuras/hist.jpg>
 Package pdftex.def Info: Resultados/Figuras/hist.jpg  used on input line 108.
 (pdftex.def)             Requested size: 455.24411pt x 235.58014pt.
-<Resultados/Figuras/ft03.jpg, id=1127, 956.1321pt x 492.1587pt>
+<Resultados/Figuras/ft03.jpg, id=1125, 956.1321pt x 492.1587pt>
 File: Resultados/Figuras/ft03.jpg Graphic file (type jpg)
 <use Resultados/Figuras/ft03.jpg>
 Package pdftex.def Info: Resultados/Figuras/ft03.jpg  used on input line 123.
 (pdftex.def)             Requested size: 455.24411pt x 234.32602pt.
  [46 <./Resultados/Figuras/hist.jpg>]
 [47 <./Resultados/Figuras/ft03.jpg>]
-<Resultados/Figuras/acf.jpg, id=1146, 953.964pt x 495.7722pt>
+<Resultados/Figuras/acf.jpg, id=1144, 953.964pt x 495.7722pt>
 File: Resultados/Figuras/acf.jpg Graphic file (type jpg)
 <use Resultados/Figuras/acf.jpg>
 Package pdftex.def Info: Resultados/Figuras/acf.jpg  used on input line 175.
 (pdftex.def)             Requested size: 227.62206pt x 118.29178pt.
-<Resultados/Figuras/pacf.jpg, id=1147, 953.964pt x 495.7722pt>
+<Resultados/Figuras/pacf.jpg, id=1145, 953.964pt x 495.7722pt>
 File: Resultados/Figuras/pacf.jpg Graphic file (type jpg)
 <use Resultados/Figuras/pacf.jpg>
 Package pdftex.def Info: Resultados/Figuras/pacf.jpg  used on input line 176.
@@ -2092,7 +2092,7 @@ Overfull \hbox (26.10475pt too wide) in paragraph at lines 175--177
 [][]  [] 
  []
 
-<Resultados/Figuras/ruido-branco.jpg, id=1150, 906.9885pt x 383.7537pt>
+<Resultados/Figuras/ruido-branco.jpg, id=1148, 906.9885pt x 383.7537pt>
 File: Resultados/Figuras/ruido-branco.jpg Graphic file (type jpg)
 <use Resultados/Figuras/ruido-branco.jpg>
 Package pdftex.def Info: Resultados/Figuras/ruido-branco.jpg  used on input lin
@@ -2126,7 +2126,7 @@ ltados/Figuras/ruido-branco.jpg>] [50] [51]) [52]
 ] [61] [62] [63] [64] [65] [66]) [67]
 (Apendices/tabelas-2.tex [68] [69] [70] [71] [72] [73] [74] [75])
 (Apendices/18-a-21/modelos.tex (Apendices/18-a-21/AR-ARX-MA.tex
-<Apendices/Figuras/modelagem-18-a-21h/1-AR-ARX-MA.png, id=1322, 1084.05pt x 433
+<Apendices/Figuras/modelagem-18-a-21h/1-AR-ARX-MA.png, id=1320, 1084.05pt x 433
 .62pt>
 File: Apendices/Figuras/modelagem-18-a-21h/1-AR-ARX-MA.png Graphic file (type p
 ng)
@@ -2135,7 +2135,7 @@ Package pdftex.def Info: Apendices/Figuras/modelagem-18-a-21h/1-AR-ARX-MA.png
 used on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
  [76]
-<Apendices/Figuras/modelagem-18-a-21h/10-AR-ARX-MA.png, id=1327, 1084.05pt x 43
+<Apendices/Figuras/modelagem-18-a-21h/10-AR-ARX-MA.png, id=1326, 1084.05pt x 43
 3.62pt>
 File: Apendices/Figuras/modelagem-18-a-21h/10-AR-ARX-MA.png Graphic file (type 
 png)
@@ -2143,7 +2143,7 @@ png)
 Package pdftex.def Info: Apendices/Figuras/modelagem-18-a-21h/10-AR-ARX-MA.png 
  used on input line 17.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-18-a-21h/30-AR-ARX-MA.png, id=1328, 1084.05pt x 43
+<Apendices/Figuras/modelagem-18-a-21h/30-AR-ARX-MA.png, id=1327, 1084.05pt x 43
 3.62pt>
 File: Apendices/Figuras/modelagem-18-a-21h/30-AR-ARX-MA.png Graphic file (type 
 png)
@@ -2153,7 +2153,7 @@ Package pdftex.def Info: Apendices/Figuras/modelagem-18-a-21h/30-AR-ARX-MA.png
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
  [77 <./Apendices/Figuras/modelagem-18-a-21h/1-AR-ARX-MA.png> <./Apendices/Figu
 ras/modelagem-18-a-21h/10-AR-ARX-MA.png>]
-<Apendices/Figuras/modelagem-18-a-21h/60-AR-ARX-MA.png, id=1335, 1084.05pt x 43
+<Apendices/Figuras/modelagem-18-a-21h/60-AR-ARX-MA.png, id=1334, 1084.05pt x 43
 3.62pt>
 File: Apendices/Figuras/modelagem-18-a-21h/60-AR-ARX-MA.png Graphic file (type 
 png)
@@ -2162,7 +2162,7 @@ Package pdftex.def Info: Apendices/Figuras/modelagem-18-a-21h/60-AR-ARX-MA.png
  used on input line 36.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
 ) (Apendices/18-a-21/ARMA-ARIMA.tex
-<Apendices/Figuras/modelagem-18-a-21h/1-ARMA-ARIMA.png, id=1336, 1084.05pt x 43
+<Apendices/Figuras/modelagem-18-a-21h/1-ARMA-ARIMA.png, id=1335, 1084.05pt x 43
 3.62pt>
 File: Apendices/Figuras/modelagem-18-a-21h/1-ARMA-ARIMA.png Graphic file (type 
 png)
@@ -2172,7 +2172,7 @@ Package pdftex.def Info: Apendices/Figuras/modelagem-18-a-21h/1-ARMA-ARIMA.png
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
  [78 <./Apendices/Figuras/modelagem-18-a-21h/30-AR-ARX-MA.png> <./Apendices/Fig
 uras/modelagem-18-a-21h/60-AR-ARX-MA.png>]
-<Apendices/Figuras/modelagem-18-a-21h/10-ARMA-ARIMA.png, id=1343, 1084.05pt x 4
+<Apendices/Figuras/modelagem-18-a-21h/10-ARMA-ARIMA.png, id=1342, 1084.05pt x 4
 33.62pt>
 File: Apendices/Figuras/modelagem-18-a-21h/10-ARMA-ARIMA.png Graphic file (type
  png)
@@ -2180,7 +2180,7 @@ File: Apendices/Figuras/modelagem-18-a-21h/10-ARMA-ARIMA.png Graphic file (type
 Package pdftex.def Info: Apendices/Figuras/modelagem-18-a-21h/10-ARMA-ARIMA.png
   used on input line 17.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-18-a-21h/30-ARMA-ARIMA.png, id=1344, 1084.05pt x 4
+<Apendices/Figuras/modelagem-18-a-21h/30-ARMA-ARIMA.png, id=1343, 1084.05pt x 4
 33.62pt>
 File: Apendices/Figuras/modelagem-18-a-21h/30-ARMA-ARIMA.png Graphic file (type
  png)
@@ -2190,7 +2190,7 @@ Package pdftex.def Info: Apendices/Figuras/modelagem-18-a-21h/30-ARMA-ARIMA.png
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
  [79 <./Apendices/Figuras/modelagem-18-a-21h/1-ARMA-ARIMA.png> <./Apendices/Fig
 uras/modelagem-18-a-21h/10-ARMA-ARIMA.png>]
-<Apendices/Figuras/modelagem-18-a-21h/60-ARMA-ARIMA.png, id=1351, 1084.05pt x 4
+<Apendices/Figuras/modelagem-18-a-21h/60-ARMA-ARIMA.png, id=1350, 1084.05pt x 4
 33.62pt>
 File: Apendices/Figuras/modelagem-18-a-21h/60-ARMA-ARIMA.png Graphic file (type
  png)
@@ -2200,7 +2200,7 @@ Package pdftex.def Info: Apendices/Figuras/modelagem-18-a-21h/60-ARMA-ARIMA.png
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
 )
 (Apendices/18-a-21/ARIMAX-SARIMA-SARIMAX.tex
-<Apendices/Figuras/modelagem-18-a-21h/1-ARIMAX-SARIMA-SARIMAX.png, id=1352, 108
+<Apendices/Figuras/modelagem-18-a-21h/1-ARIMAX-SARIMA-SARIMAX.png, id=1351, 108
 4.05pt x 433.62pt>
 File: Apendices/Figuras/modelagem-18-a-21h/1-ARIMAX-SARIMA-SARIMAX.png Graphic 
 file (type png)
@@ -2210,7 +2210,7 @@ ARIMAX.png  used on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
  [80 <./Apendices/Figuras/modelagem-18-a-21h/30-ARMA-ARIMA.png> <./Apendices/Fi
 guras/modelagem-18-a-21h/60-ARMA-ARIMA.png>]
-<Apendices/Figuras/modelagem-18-a-21h/10-ARIMAX-SARIMA-SARIMAX.png, id=1359, 10
+<Apendices/Figuras/modelagem-18-a-21h/10-ARIMAX-SARIMA-SARIMAX.png, id=1358, 10
 84.05pt x 433.62pt>
 File: Apendices/Figuras/modelagem-18-a-21h/10-ARIMAX-SARIMA-SARIMAX.png Graphic
  file (type png)
@@ -2218,7 +2218,7 @@ File: Apendices/Figuras/modelagem-18-a-21h/10-ARIMAX-SARIMA-SARIMAX.png Graphic
 Package pdftex.def Info: Apendices/Figuras/modelagem-18-a-21h/10-ARIMAX-SARIMA-
 SARIMAX.png  used on input line 17.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-18-a-21h/30-ARIMAX-SARIMA-SARIMAX.png, id=1360, 10
+<Apendices/Figuras/modelagem-18-a-21h/30-ARIMAX-SARIMA-SARIMAX.png, id=1359, 10
 84.05pt x 433.62pt>
 File: Apendices/Figuras/modelagem-18-a-21h/30-ARIMAX-SARIMA-SARIMAX.png Graphic
  file (type png)
@@ -2228,7 +2228,7 @@ SARIMAX.png  used on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
  [81 <./Apendices/Figuras/modelagem-18-a-21h/1-ARIMAX-SARIMA-SARIMAX.png> <./Ap
 endices/Figuras/modelagem-18-a-21h/10-ARIMAX-SARIMA-SARIMAX.png>]
-<Apendices/Figuras/modelagem-18-a-21h/60-ARIMAX-SARIMA-SARIMAX.png, id=1368, 10
+<Apendices/Figuras/modelagem-18-a-21h/60-ARIMAX-SARIMA-SARIMAX.png, id=1367, 10
 84.05pt x 433.62pt>
 File: Apendices/Figuras/modelagem-18-a-21h/60-ARIMAX-SARIMA-SARIMAX.png Graphic
  file (type png)
@@ -2238,7 +2238,7 @@ SARIMAX.png  used on input line 36.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
 )
 (Apendices/18-a-21/LR-XGB-LGBM-RF.tex
-<Apendices/Figuras/modelagem-18-a-21h/1-LR-XGB-LGBM-RF.png, id=1369, 1156.32pt 
+<Apendices/Figuras/modelagem-18-a-21h/1-LR-XGB-LGBM-RF.png, id=1368, 1156.32pt 
 x 578.16pt>
 File: Apendices/Figuras/modelagem-18-a-21h/1-LR-XGB-LGBM-RF.png Graphic file (t
 ype png)
@@ -2248,7 +2248,7 @@ png  used on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
  [82 <./Apendices/Figuras/modelagem-18-a-21h/30-ARIMAX-SARIMA-SARIMAX.png> <./A
 pendices/Figuras/modelagem-18-a-21h/60-ARIMAX-SARIMA-SARIMAX.png>]
-<Apendices/Figuras/modelagem-18-a-21h/10-LR-XGB-LGBM-RF.png, id=1376, 1156.32pt
+<Apendices/Figuras/modelagem-18-a-21h/10-LR-XGB-LGBM-RF.png, id=1375, 1156.32pt
  x 578.16pt>
 File: Apendices/Figuras/modelagem-18-a-21h/10-LR-XGB-LGBM-RF.png Graphic file (
 type png)
@@ -2257,7 +2257,7 @@ Package pdftex.def Info: Apendices/Figuras/modelagem-18-a-21h/10-LR-XGB-LGBM-RF
 .png  used on input line 17.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
  [83 <./Apendices/Figuras/modelagem-18-a-21h/1-LR-XGB-LGBM-RF.png>]
-<Apendices/Figuras/modelagem-18-a-21h/30-LR-XGB-LGBM-RF.png, id=1382, 1156.32pt
+<Apendices/Figuras/modelagem-18-a-21h/30-LR-XGB-LGBM-RF.png, id=1381, 1156.32pt
  x 578.16pt>
 File: Apendices/Figuras/modelagem-18-a-21h/30-LR-XGB-LGBM-RF.png Graphic file (
 type png)
@@ -2265,7 +2265,7 @@ type png)
 Package pdftex.def Info: Apendices/Figuras/modelagem-18-a-21h/30-LR-XGB-LGBM-RF
 .png  used on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
-<Apendices/Figuras/modelagem-18-a-21h/60-LR-XGB-LGBM-RF.png, id=1383, 1156.32pt
+<Apendices/Figuras/modelagem-18-a-21h/60-LR-XGB-LGBM-RF.png, id=1382, 1156.32pt
  x 578.16pt>
 File: Apendices/Figuras/modelagem-18-a-21h/60-LR-XGB-LGBM-RF.png Graphic file (
 type png)
@@ -2276,14 +2276,14 @@ Package pdftex.def Info: Apendices/Figuras/modelagem-18-a-21h/60-LR-XGB-LGBM-RF
 )) [84 <./Apendices/Figuras/modelagem-18-a-21h/10-LR-XGB-LGBM-RF.png> <./Apendi
 ces/Figuras/modelagem-18-a-21h/30-LR-XGB-LGBM-RF.png>]
 (Apendices/24h/modelos-24h.tex (Apendices/24h/AR-ARX-MA.tex
-<Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.jpg, id=1390, 1084.05pt x 433.62pt
+<Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.jpg, id=1389, 1084.05pt x 433.62pt
 >
 File: Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.jpg Graphic file (type jpg)
 <use Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.jpg>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.jpg  used 
 on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-24h/10-AR-ARX-MA.jpg, id=1391, 1084.05pt x 433.62p
+<Apendices/Figuras/modelagem-24h/10-AR-ARX-MA.jpg, id=1390, 1084.05pt x 433.62p
 t>
 File: Apendices/Figuras/modelagem-24h/10-AR-ARX-MA.jpg Graphic file (type jpg)
 <use Apendices/Figuras/modelagem-24h/10-AR-ARX-MA.jpg>
@@ -2292,14 +2292,14 @@ Package pdftex.def Info: Apendices/Figuras/modelagem-24h/10-AR-ARX-MA.jpg  used
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
  [85 <./Apendices/Figuras/modelagem-18-a-21h/60-LR-XGB-LGBM-RF.png> <./Apendice
 s/Figuras/modelagem-24h/1-AR-ARX-MA.jpg>]
-<Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.jpg, id=1397, 1084.05pt x 433.62p
+<Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.jpg, id=1396, 1084.05pt x 433.62p
 t>
 File: Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.jpg Graphic file (type jpg)
 <use Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.jpg>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.jpg  used
  on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-24h/60-AR-ARX-MA.jpg, id=1398, 1084.05pt x 433.62p
+<Apendices/Figuras/modelagem-24h/60-AR-ARX-MA.jpg, id=1397, 1084.05pt x 433.62p
 t>
 File: Apendices/Figuras/modelagem-24h/60-AR-ARX-MA.jpg Graphic file (type jpg)
 <use Apendices/Figuras/modelagem-24h/60-AR-ARX-MA.jpg>
@@ -2309,14 +2309,14 @@ Package pdftex.def Info: Apendices/Figuras/modelagem-24h/60-AR-ARX-MA.jpg  used
  [86 <./Apendices/Figuras/modelagem-24h/10-AR-ARX-MA.jpg> <./Apendices/Figuras/
 modelagem-24h/30-AR-ARX-MA.jpg>])
 (Apendices/24h/ARMA-ARIMA.tex
-<Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.jpg, id=1403, 1084.05pt x 433.62p
+<Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.jpg, id=1402, 1084.05pt x 433.62p
 t>
 File: Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.jpg Graphic file (type jpg)
 <use Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.jpg>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.jpg  used
  on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-24h/10-ARMA-ARIMA.jpg, id=1404, 1084.05pt x 433.62
+<Apendices/Figuras/modelagem-24h/10-ARMA-ARIMA.jpg, id=1403, 1084.05pt x 433.62
 pt>
 File: Apendices/Figuras/modelagem-24h/10-ARMA-ARIMA.jpg Graphic file (type jpg)
 
@@ -2326,7 +2326,7 @@ d on input line 17.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
  [87 <./Apendices/Figuras/modelagem-24h/60-AR-ARX-MA.jpg> <./Apendices/Figuras/
 modelagem-24h/1-ARMA-ARIMA.jpg>]
-<Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.jpg, id=1410, 1084.05pt x 433.62
+<Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.jpg, id=1409, 1084.05pt x 433.62
 pt>
 File: Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.jpg Graphic file (type jpg)
 
@@ -2334,7 +2334,7 @@ File: Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.jpg Graphic file (type jpg)
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.jpg  use
 d on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-24h/60-ARMA-ARIMA.jpg, id=1411, 1084.05pt x 433.62
+<Apendices/Figuras/modelagem-24h/60-ARMA-ARIMA.jpg, id=1410, 1084.05pt x 433.62
 pt>
 File: Apendices/Figuras/modelagem-24h/60-ARMA-ARIMA.jpg Graphic file (type jpg)
 
@@ -2348,7 +2348,7 @@ Overfull \hbox (1.37181pt too wide) in paragraph at lines 2--2
 \T1/cmr/bx/n/17.28 (7,1,7) (2,1,1,12) e SA-RI-MAX (7,1,7) (2,1,1,12) 24h| 
  []
 
-<Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.jpg, id=1416, 1084.05p
+<Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.jpg, id=1415, 1084.05p
 t x 433.62pt>
 File: Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.jpg Graphic file 
 (type jpg)
@@ -2356,7 +2356,7 @@ File: Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.jpg Graphic file
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMA
 X.jpg  used on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-24h/10-ARIMAX-SARIMA-SARIMAX.jpg, id=1417, 1084.05
+<Apendices/Figuras/modelagem-24h/10-ARIMAX-SARIMA-SARIMAX.jpg, id=1416, 1084.05
 pt x 433.62pt>
 File: Apendices/Figuras/modelagem-24h/10-ARIMAX-SARIMA-SARIMAX.jpg Graphic file
  (type jpg)
@@ -2366,7 +2366,7 @@ AX.jpg  used on input line 17.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
 [89 <./Apendices/Figuras/modelagem-24h/60-ARMA-ARIMA.jpg> <./Apendices/Figuras/
 modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.jpg>]
-<Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.jpg, id=1422, 1084.05
+<Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.jpg, id=1421, 1084.05
 pt x 433.62pt>
 File: Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.jpg Graphic file
  (type jpg)
@@ -2374,7 +2374,7 @@ File: Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.jpg Graphic file
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIM
 AX.jpg  used on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-24h/60-ARIMAX-SARIMA-SARIMAX.jpg, id=1423, 1084.05
+<Apendices/Figuras/modelagem-24h/60-ARIMAX-SARIMA-SARIMAX.jpg, id=1422, 1084.05
 pt x 433.62pt>
 File: Apendices/Figuras/modelagem-24h/60-ARIMAX-SARIMA-SARIMAX.jpg Graphic file
  (type jpg)
@@ -2385,7 +2385,7 @@ AX.jpg  used on input line 36.
 ) [90 <./Apendices/Figuras/modelagem-24h/10-ARIMAX-SARIMA-SARIMAX.jpg> <./Apend
 ices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.jpg>] (Apendices/24h/LR-XGB
 -LGBM-RF.tex
-<Apendices/Figuras/modelagem-24h/1-LR-XGB-LGBM-RF.jpg, id=1428, 1156.32pt x 578
+<Apendices/Figuras/modelagem-24h/1-LR-XGB-LGBM-RF.jpg, id=1427, 1156.32pt x 578
 .16pt>
 File: Apendices/Figuras/modelagem-24h/1-LR-XGB-LGBM-RF.jpg Graphic file (type j
 pg)
@@ -2393,7 +2393,7 @@ pg)
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/1-LR-XGB-LGBM-RF.jpg  
 used on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
-<Apendices/Figuras/modelagem-24h/10-LR-XGB-LGBM-RF.jpg, id=1429, 1156.32pt x 57
+<Apendices/Figuras/modelagem-24h/10-LR-XGB-LGBM-RF.jpg, id=1428, 1156.32pt x 57
 8.16pt>
 File: Apendices/Figuras/modelagem-24h/10-LR-XGB-LGBM-RF.jpg Graphic file (type 
 jpg)
@@ -2403,7 +2403,7 @@ Package pdftex.def Info: Apendices/Figuras/modelagem-24h/10-LR-XGB-LGBM-RF.jpg
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
  [91 <./Apendices/Figuras/modelagem-24h/60-ARIMAX-SARIMA-SARIMAX.jpg> <./Apendi
 ces/Figuras/modelagem-24h/1-LR-XGB-LGBM-RF.jpg>]
-<Apendices/Figuras/modelagem-24h/30-LR-XGB-LGBM-RF.jpg, id=1434, 1156.32pt x 57
+<Apendices/Figuras/modelagem-24h/30-LR-XGB-LGBM-RF.jpg, id=1433, 1156.32pt x 57
 8.16pt>
 File: Apendices/Figuras/modelagem-24h/30-LR-XGB-LGBM-RF.jpg Graphic file (type 
 jpg)
@@ -2411,7 +2411,7 @@ jpg)
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/30-LR-XGB-LGBM-RF.jpg 
  used on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
-<Apendices/Figuras/modelagem-24h/60-LR-XGB-LGBM-RF.jpg, id=1435, 1156.32pt x 57
+<Apendices/Figuras/modelagem-24h/60-LR-XGB-LGBM-RF.jpg, id=1434, 1156.32pt x 57
 8.16pt>
 File: Apendices/Figuras/modelagem-24h/60-LR-XGB-LGBM-RF.jpg Graphic file (type 
 jpg)
@@ -2436,10 +2436,10 @@ Package rerunfilecheck Info: File `DocPrincipal.out' has not changed.
 (rerunfilecheck)             Checksum: E10A10F388D07F4EF966654C8323E241;4875.
  ) 
 Here is how much of TeX's memory you used:
- 28669 strings out of 476406
- 580686 string characters out of 2789567
+ 28671 strings out of 476406
+ 580740 string characters out of 2789567
  1871787 words of memory out of 3000000
- 47829 multiletter control sequences out of 15000+600000
+ 47831 multiletter control sequences out of 15000+600000
  528820 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,12n,85p,1278b,621s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -2467,9 +2467,9 @@ Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/msndo/AppData
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
 rs/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 >
-Output written on DocPrincipal.pdf (109 pages, 41304584 bytes).
+Output written on DocPrincipal.pdf (109 pages, 41176391 bytes).
 PDF statistics:
- 2081 PDF objects out of 2487 (max. 8388607)
+ 2080 PDF objects out of 2487 (max. 8388607)
  356 named destinations out of 1000 (max. 500000)
  824 words of extra memory for PDF output out of 10000 (max. 10000000)
 
