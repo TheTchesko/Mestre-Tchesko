@@ -103,9 +103,9 @@ Os dados não têm raiz unitária e são estacionários, Na \ref{q5}\ref{q5:c} c
 
 \begin{figure}[H]
 	\centering
-	\caption{Histograma do nível do reservatório}
+	\caption{Violino do nível do reservatório}
 	\label{fig:hist}
-	\includegraphics[width=1\linewidth]{Resultados/Figuras/hist}
+	\includegraphics[width=1\linewidth]{Resultados/Figuras/viol}
 	
 	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
 \end{figure}
@@ -118,7 +118,7 @@ Para \ref{q5}\ref{q5:e} é mostrado na Figura \ref{fig:ft03} como pode ser afeta
 
 \begin{figure}[H]
 	\centering
-	\caption{Histograma da vazão de recalque}
+	\caption{Violino da vazão de recalque}
 	\label{fig:ft03}
 	\includegraphics[width=1\linewidth]{Resultados/Figuras/ft03}
 	
@@ -264,6 +264,32 @@ Para calcular a estatística de teste $F_r$ de Friedman cria-se inicialmente uma
  Seguindo a equação \eqref{eq:fr} têm o seguinte resultado nos dados da pesquisa.
  
  $statistic=8015.611,\ \ pvalue=0.0$ com o números de 26306 linhas x 9 colunas.
+ 
+ \subsubsection{Compara\c c\~ao dos modelos}
+ Nos modelos coletados com várias métodos de prever, com isso para ver melhor como cada modelo se comporta foi realizado a comparação dos modelos em base com o gráfico violino, assim observa quais os melhores entre os modelos coltado.
+ 
+ \begin{figure}[H]
+ 	\centering
+ 	\caption{Modelos ARIMAS comparação}
+ 	\includegraphics[width=1\linewidth]{Resultados/Figuras/modelos-arima}
+ 	
+ 	\label{fig:modelos-arima}
+ 	
+ 	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
+ \end{figure}
+ 
+ 
+ \begin{figure}[H]
+ 	\centering
+ 	\caption{Modelos de Regressão comparação}
+ 	\includegraphics[width=1\linewidth]{Resultados/Figuras/violin-LR-XGB-LGBM-RF}
+ 	
+ 	\label{fig:violin-lr-xgb-lgbm-rf}
+ 	
+ 	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
+ \end{figure}
+ 
+  
     
 
     
