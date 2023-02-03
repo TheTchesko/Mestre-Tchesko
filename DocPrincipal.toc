@@ -50,5 +50,5 @@
 \contentsline {section}{\numberline {B}Ap\^endice - Compara\c c\~ao dos modelos de previs\~ao com o m\'eto do Ljung Box}{68}{appendix.B}%
 \contentsline {section}{\numberline {C}Ap\^endice - Modelos AR(7), ARX (7) e MA (7) 24h }{70}{appendix.C}%
 \contentsline {section}{\numberline {D}Ap\^endice - Modelos ARMA(7,7) e ARIMA (7,1,7) 24h}{72}{appendix.D}%
-\contentsline {section}{\numberline {E}Ap\^endice - Modelos ARIMAX (7,1,7), SARIMA (7,1,7) (2,1,1,12) e SARIMAX (7,1,7) (2,1,1,12) 24h}{74}{appendix.E}%
+\contentsline {section}{\numberline {E}Ap\^endice - Modelos ARIMAX (7,1,7), SARIMA (7,1,7) (2,1,0,12) e SARIMAX (7,1,7) (2,1,0,12) 24h}{74}{appendix.E}%
 \contentsline {section}{\numberline {F}Ap\^endice - Modelos Regress\~ao linear, XGB Regress\~ao, Ligth GBM Regress\~ao e Regress\~ao de Floresta Aleat\'oria 24h}{76}{appendix.F}%
