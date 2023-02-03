@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  3 FEB 2023 16:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  3 FEB 2023 16:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1438,8 +1438,14 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 LaTeX Warning: \include should only be used after \begin{document} on input lin
 e 8.
 
-(Packages/info.tex)
-No file DocPrincipal.aux.
+(Packages/info.tex) (DocPrincipal.aux (Pretextuais/capa.aux)
+(Pretextuais/folha_rosto1.aux) (Pretextuais/folha_aprovacao.aux)
+(Pretextuais/dedicatoria.aux) (Pretextuais/agradecimentos.aux)
+(Pretextuais/epigrafe.aux) (Resumos/resumo.aux) (Resumos/abstract.aux)
+(Introducao/sec-introducao.aux) (Revisao/sec-revisao.aux)
+(Modelos/sec-modelos.aux) (Resultados/sec-resultados.aux)
+(Conclusoes/sec-conclusoes.aux) (Bibliografia/sec-bibliografia.aux)
+(Apendices/sec-apendices.aux))
 \openout1 = `DocPrincipal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -1460,6 +1466,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
+
 (C:\Users\msndo\AppData\Local\Programs\MiKTeX\tex/latex/ucs\ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -1524,6 +1531,7 @@ fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 12.
+ (DocPrincipal.out) (DocPrincipal.out)
 \@outlinefile=\write4
 \openout4 = `DocPrincipal.out'.
 
@@ -1540,7 +1548,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \openout2 = `Pretextuais/capa.aux'.
 
  (Pretextuais/capa.tex (Packages/espacamento_paginacao1.tex)
-<Pretextuais/pucpr.png, id=6, 737.75626pt x 340.27126pt>
+<Pretextuais/pucpr.png, id=213, 737.75626pt x 340.27126pt>
 File: Pretextuais/pucpr.png Graphic file (type png)
 <use Pretextuais/pucpr.png>
 Package pdftex.def Info: Pretextuais/pucpr.png  used on input line 4.
@@ -1682,8 +1690,7 @@ l.88 \include{Resumos/abstract}
 
 
 
-]
-No file DocPrincipal.lot.
+] (DocPrincipal.lot)
 \tf@lot=\write5
 \openout5 = `DocPrincipal.lot'.
 
@@ -1696,8 +1703,15 @@ l.94 \cleardoublepage
                       [10
 
 
-]
-No file DocPrincipal.lof.
+] (DocPrincipal.lof
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 ...gnorespaces Ruído branco}}{49}{figure.37}
+                                                  % [11
+
+])
 \tf@lof=\write6
 \openout6 = `DocPrincipal.lof'.
 
@@ -1707,10 +1721,13 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.118 \newpage
-               [11
-
-]
-No file DocPrincipal.toc.
+               [12] (DocPrincipal.toc
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.38 ...a \'unica (MISO)}{43}{subsubsection.4.1.2}
+                                                  % [13])
 \tf@toc=\write7
 \openout7 = `DocPrincipal.toc'.
 
@@ -1720,195 +1737,77 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.126 \include{Introducao/sec-introducao}
-                                          [12]
+                                          [14]
 \openout2 = `Introducao/sec-introducao.aux'.
 
  (Introducao/sec-introducao.tex
-(Packages/espacamento_paginacao2.tex) (Introducao/subsec-contexto.tex
+(Packages/espacamento_paginacao2.tex) (Introducao/subsec-contexto.tex [1
 
-LaTeX Warning: Citation `mateus' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Citation `vasconcelos_2020' on page 1 undefined on input line 15
-.
-
-
-LaTeX Warning: Citation `vasconcelos_2020' on page 1 undefined on input line 15
-.
-
-[1
-
-]) (Introducao/subsec-objetivos.tex [2]) (Introducao/subsec-metodologia.tex
+])
+(Introducao/subsec-objetivos.tex [2]) (Introducao/subsec-metodologia.tex
 [3]
-<Introducao/Figuras/Etapas.png, id=100, 2581.645pt x 994.71625pt>
+<Introducao/Figuras/Etapas.png, id=517, 2581.645pt x 994.71625pt>
 File: Introducao/Figuras/Etapas.png Graphic file (type png)
 <use Introducao/Figuras/Etapas.png>
 Package pdftex.def Info: Introducao/Figuras/Etapas.png  used on input line 24.
 (pdftex.def)             Requested size: 455.24411pt x 175.39844pt.
-) (Introducao/subsec-justif.tex
-
-LaTeX Warning: Reference `subsubsec:obespec' on page 4 undefined on input line 
-7.
-
-
-LaTeX Warning: Reference `q1' on page 4 undefined on input line 7.
-
-
-LaTeX Warning: Reference `q4' on page 4 undefined on input line 7.
-
-
-LaTeX Warning: Reference `q5' on page 4 undefined on input line 7.
-
-
-LaTeX Warning: Reference `q5:a' on page 4 undefined on input line 7.
-
-
-LaTeX Warning: Reference `q5' on page 4 undefined on input line 7.
-
-
-LaTeX Warning: Reference `q5:e' on page 4 undefined on input line 7.
-
-
-LaTeX Warning: Reference `q5' on page 4 undefined on input line 9.
-
-[4 <./Introducao/Figuras/Etapas.png>]) (Introducao/subsec-estrutura.tex
-
-LaTeX Warning: Reference `sec:conclusoes' on page 5 undefined on input line 2.
-
-<Introducao/Figuras/Estrutura.png, id=110, 1874.00125pt x 2081.7775pt>
+) (Introducao/subsec-justif.tex [4 <./Introducao/Figuras/Etapas.png>])
+(Introducao/subsec-estrutura.tex
+<Introducao/Figuras/Estrutura.png, id=534, 1874.00125pt x 2081.7775pt>
 File: Introducao/Figuras/Estrutura.png Graphic file (type png)
 <use Introducao/Figuras/Estrutura.png>
 Package pdftex.def Info: Introducao/Figuras/Estrutura.png  used on input line 8
 .
 (pdftex.def)             Requested size: 318.66948pt x 353.9928pt.
-
-LaTeX Warning: Reference `sec:int' on page 5 undefined on input line 12.
-
-
-LaTeX Warning: Reference `sec:refteo' on page 5 undefined on input line 13.
-
-
-LaTeX Warning: Reference `sec:base' on page 5 undefined on input line 14.
-
-
-LaTeX Warning: Reference `sec:result' on page 5 undefined on input line 15.
-
-
-LaTeX Warning: Reference `sec:conclusoes' on page 5 undefined on input line 16.
-
-
-) [5 <./Introducao/Figuras/Estrutura.png>]) [6]
+) [5 <./Introducao/Figuras/Estrutura.png>])
+[6]
 \openout2 = `Revisao/sec-revisao.aux'.
 
- (Revisao/sec-revisao.tex
-(Revisao/subsec-descricao.tex
-
-LaTeX Warning: Reference `fig:dados-todos' on page 7 undefined on input line 24
-.
-
-
-LaTeX Warning: Reference `fig:2020-a-frente' on page 7 undefined on input line 
-24.
-
-<Introducao/Figuras/dados todos.png, id=122, 154.86859pt x 79.13565pt>
+ (Revisao/sec-revisao.tex (Revisao/subsec-descricao.tex
+<Introducao/Figuras/dados todos.png, id=552, 154.86859pt x 79.13565pt>
 File: Introducao/Figuras/dados todos.png Graphic file (type png)
 <use Introducao/Figuras/dados todos.png>
 Package pdftex.def Info: Introducao/Figuras/dados todos.png  used on input line
  30.
 (pdftex.def)             Requested size: 455.24411pt x 232.65958pt.
-[7
+ [7
 
 
 
 ]
-<Introducao/Figuras/2020 a frente.png, id=131, 1290.5013pt x 654.5253pt>
+<Introducao/Figuras/2020 a frente.png, id=558, 1290.5013pt x 654.5253pt>
 File: Introducao/Figuras/2020 a frente.png Graphic file (type png)
 <use Introducao/Figuras/2020 a frente.png>
 Package pdftex.def Info: Introducao/Figuras/2020 a frente.png  used on input li
 ne 39.
 (pdftex.def)             Requested size: 455.24411pt x 230.89497pt.
-
-
-LaTeX Warning: Reference `subsec:metod' on page 8 undefined on input line 44.
-
-
-LaTeX Warning: Reference `fig:dados-todos' on page 8 undefined on input line 44
-.
-
-
-LaTeX Warning: Reference `fig:2020-a-frente' on page 8 undefined on input line 
-44.
-
 ) [8 <./Introducao/Figuras/dados todos.png> <./Introducao/Figuras/2020 a frente
 .png>]
-
-LaTeX Warning: Reference `fig:series' on page 9 undefined on input line 12.
-
 (Revisao/exemplo serie.tex
-<Revisao/Figuras/séries.png, id=141, 3533.2pt x 1023.825pt>
+<Revisao/Figuras/séries.png, id=569, 3533.2pt x 1023.825pt>
 File: Revisao/Figuras/séries.png Graphic file (type png)
 <use Revisao/Figuras/séries.png>
 Package pdftex.def Info: Revisao/Figuras/séries.png  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 131.91463pt.
-
-
-LaTeX Warning: Citation `brandão_2020' on page 9 undefined on input line 7.
-
-)
-
-LaTeX Warning: Reference `fig:series' on page 9 undefined on input line 16.
-
-
-LaTeX Warning: Reference `fig:serie' on page 9 undefined on input line 17.
-
-(Revisao/estocatico.tex
-<Revisao/Figuras/serie.png, id=142, 709.90219pt x 350.81062pt>
+) (Revisao/estocatico.tex
+<Revisao/Figuras/serie.png, id=574, 709.90219pt x 350.81062pt>
 File: Revisao/Figuras/serie.png Graphic file (type png)
 <use Revisao/Figuras/serie.png>
 Package pdftex.def Info: Revisao/Figuras/serie.png  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 224.97302pt.
-
-
-LaTeX Warning: Citation `pinheiro_2022' on page 9 undefined on input line 7.
-
-) [9 <./Revisao/Figuras/séries.png>]
-
-LaTeX Warning: Reference `fig:serie' on page 10 undefined on input line 21.
-
-
-LaTeX Warning: Reference `fig:areas' on page 10 undefined on input line 26.
-
-[10 <./Revisao/Figuras/serie.png>]
-
-LaTeX Warning: Reference `fig:serie-temporal' on page 11 undefined on input lin
-e 35.
-
-<Revisao/Figuras/Série temporal.png, id=154, 879.285pt x 540.68666pt>
+) [9 <./Revisao/Figuras/séries.png>] [10 <./Revisao/Figuras/serie.png>]
+<Revisao/Figuras/Série temporal.png, id=591, 879.285pt x 540.68666pt>
 File: Revisao/Figuras/Série temporal.png Graphic file (type png)
 <use Revisao/Figuras/Série temporal.png>
 Package pdftex.def Info: Revisao/Figuras/Série temporal.png  used on input lin
 e 41.
 (pdftex.def)             Requested size: 455.24411pt x 279.9294pt.
-
-LaTeX Warning: Reference `fig:serie-temporal' on page 11 undefined on input lin
-e 46.
-
-<Revisao/Figuras/RSL.png, id=155, 449.68pt x 556.0775pt>
+<Revisao/Figuras/RSL.png, id=593, 449.68pt x 556.0775pt>
 File: Revisao/Figuras/RSL.png Graphic file (type png)
 <use Revisao/Figuras/RSL.png>
 Package pdftex.def Info: Revisao/Figuras/RSL.png  used on input line 63.
 (pdftex.def)             Requested size: 227.62206pt x 281.48299pt.
-
-LaTeX Warning: Citation `MARTINS201671' on page 11 undefined on input line 65.
-
-[11 <./Revisao/Figuras/Série temporal.png>]
-
-LaTeX Warning: Reference `fig:rsl' on page 12 undefined on input line 68.
-
-
-LaTeX Warning: Citation `MARTINS201671' on page 12 undefined on input line 68.
-
-(Revisao/base.tex
+ [11 <./Revisao/Figuras/Série temporal.png>] (Revisao/base.tex
 Overfull \hbox (3.45044pt too wide) in paragraph at lines 4--5
 \T1/cmr/bx/it/12 LIMIT-TO ( LAN-GUAGE , ``En-glish") ) AND ( LIMIT-TO ( PUBYEAR
 
@@ -1929,46 +1828,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--71
 
  []
 
-
-LaTeX Warning: Reference `tb1' on page 13 undefined on input line 75.
-
-
-LaTeX Warning: Reference `subesec:resul da revisão' on page 13 undefined on in
-put line 75.
-
-
-LaTeX Warning: Reference `tb1' on page 13 undefined on input line 77.
-
-
-LaTeX Warning: Reference `fig:areas' on page 13 undefined on input line 79.
-
 [13] (Revisao/base-dados.tex
-<Revisao/Figuras/scopus 09-08.png, id=184, 1903.11pt x 1206.5075pt>
+<Revisao/Figuras/scopus 09-08.png, id=628, 1903.11pt x 1206.5075pt>
 File: Revisao/Figuras/scopus 09-08.png Graphic file (type png)
 <use Revisao/Figuras/scopus 09-08.png>
 Package pdftex.def Info: Revisao/Figuras/scopus 09-08.png  used on input line 5
 .
 (pdftex.def)             Requested size: 455.24411pt x 288.61041pt.
-)
-
-LaTeX Warning: Reference `fig:scopus-09-08' on page 14 undefined on input line 
-88.
-
-[14 <./Revisao/Figuras/scopus 09-08.png>] (Revisao/web.tex
-<Revisao/Figuras/web 09-08.png, id=192, 1903.11pt x 1206.5075pt>
+) (Revisao/web.tex
+<Revisao/Figuras/web 09-08.png, id=630, 1903.11pt x 1206.5075pt>
 File: Revisao/Figuras/web 09-08.png Graphic file (type png)
 <use Revisao/Figuras/web 09-08.png>
 Package pdftex.def Info: Revisao/Figuras/web 09-08.png  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 288.61041pt.
-)
-
-LaTeX Warning: Reference `fig:web-09-08' on page 15 undefined on input line 96.
-
-
-
-LaTeX Warning: Reference `etp:rev-1' on page 15 undefined on input line 101.
-
-(Revisao/cruzamento.tex
+ [14 <./Revisao/Figuras/scopus 09-08.png>]) (Revisao/cruzamento.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--8
 []|\T1/cmr/m/n/12 nonlinear
  []
@@ -1983,12 +1856,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--11
 []|\T1/cmr/m/n/12 nonlinear
  []
 
-)
-
-LaTeX Warning: Reference `tb1' on page 15 undefined on input line 107.
-
-(Revisao/reta.tex
-<Revisao/Figuras/regressão linear dos artigos baseados nos anos.png, id=193, 1
+) (Revisao/reta.tex
+<Revisao/Figuras/regressão linear dos artigos baseados nos anos.png, id=639, 1
 084.05pt x 433.62pt>
 File: Revisao/Figuras/regressão linear dos artigos baseados nos anos.png Graph
 ic file (type png)
@@ -1996,39 +1865,15 @@ ic file (type png)
 Package pdftex.def Info: Revisao/Figuras/regressão linear dos artigos baseados
  nos anos.png  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-) [15 <./Revisao/Figuras/web 09-08.png>]
-
-LaTeX Warning: Reference `fig:regressao-linear-dos-artigos-baseados-nos-anos' o
-n page 16 undefined on input line 114.
-
-
-LaTeX Warning: Reference `fig:regressao-linear-dos-artigos-baseados-nos-anos' o
-n page 16 undefined on input line 116.
-
-
-LaTeX Warning: Reference `eq1' on page 16 undefined on input line 122.
-
-[16 <./Revisao/Figuras/regressão linear dos artigos baseados nos anos.png>]
-
-LaTeX Warning: Citation `coeficiente' on page 17 undefined on input line 124.
-
-
-LaTeX Warning: Reference `eq2' on page 17 undefined on input line 136.
-
-
-LaTeX Warning: Reference `eq1' on page 17 undefined on input line 137.
-
+) [15 <./Revisao/Figuras/web 09-08.png>] [16 <./Revisao/Figuras/regressão line
+ar dos artigos baseados nos anos.png>]
 (Revisao/tabela-factor.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--6
 []|\T1/cmr/m/n/12 Quantidade de
  []
 
-) [17]
-
-LaTeX Warning: Reference `tb2' on page 18 undefined on input line 146.
-
-(Revisao/autores-publicação.tex
-<Revisao/Figuras/Autores Relação entre artigos publicados.png, id=219, 429.67
+) [17] (Revisao/autores-publicação.tex
+<Revisao/Figuras/Autores Relação entre artigos publicados.png, id=672, 429.67
 8pt x 178.485pt>
 File: Revisao/Figuras/Autores Relação entre artigos publicados.png Graphic fi
 le (type png)
@@ -2037,193 +1882,31 @@ Package pdftex.def Info: Revisao/Figuras/Autores Relação entre artigos public
 ados.png  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 189.11148pt.
 ) (Revisao/autores.tex
-<Revisao/Figuras/Autores.png, id=220, 1903.11pt x 1206.5075pt>
+<Revisao/Figuras/Autores.png, id=673, 1903.11pt x 1206.5075pt>
 File: Revisao/Figuras/Autores.png Graphic file (type png)
 <use Revisao/Figuras/Autores.png>
 Package pdftex.def Info: Revisao/Figuras/Autores.png  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 288.61041pt.
-) [18 <./Revisao/Figuras/Autores Relação entre artigos publicados.png>]
-
-LaTeX Warning: Reference `questão:rev1' on page 19 undefined on input line 153
-.
-
-
-LaTeX Warning: Reference `fig:autores-relacao-entre-artigos-publicados' on page
- 19 undefined on input line 153.
-
-(Revisao/mapa.tex
-<Revisao/Figuras/mapa mundi artigos.png, id=228, 481.362pt x 293.679pt>
+) [18 <./Revisao/Figuras/Autores Relação entre artigos publicados.png>] (Revi
+sao/mapa.tex
+<Revisao/Figuras/mapa mundi artigos.png, id=681, 481.362pt x 293.679pt>
 File: Revisao/Figuras/mapa mundi artigos.png Graphic file (type png)
 <use Revisao/Figuras/mapa mundi artigos.png>
 Package pdftex.def Info: Revisao/Figuras/mapa mundi artigos.png  used on input 
 line 5.
 (pdftex.def)             Requested size: 455.24411pt x 277.75217pt.
-) [19 <./Revisao/Figuras/Autores.png>]
-
-LaTeX Warning: Reference `questão:rev2' on page 20 undefined on input line 159
-.
-
-
-LaTeX Warning: Reference `fig:mapa-mundi-artigos' on page 20 undefined on input
- line 159.
-
-(Revisao/areas.tex
-<Revisao/Figuras/areas.png, id=236, 505.89pt x 295.65pt>
+)
+[19 <./Revisao/Figuras/Autores.png>] (Revisao/areas.tex
+<Revisao/Figuras/areas.png, id=689, 505.89pt x 295.65pt>
 File: Revisao/Figuras/areas.png Graphic file (type png)
 <use Revisao/Figuras/areas.png>
 Package pdftex.def Info: Revisao/Figuras/areas.png  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 266.05545pt.
-) [20 <./Revisao/Figuras/mapa mundi artigos.png>]
+) [20 <./Revisao/Figuras/mapa mundi artigos.png>] (Revisao/areas-tabela.tex)
 
-LaTeX Warning: Reference `questão:rev3' on page 21 undefined on input line 164
-.
+Package hyperref Warning: Suppressing empty link on input line 171.
 
-
-LaTeX Warning: Reference `tb3' on page 21 undefined on input line 164.
-
-(Revisao/areas-tabela.tex)
-
-LaTeX Warning: Reference `questão:rev4' on page 21 undefined on input line 171
-.
-
-
-LaTeX Warning: Citation `Golyandina2020' on page 21 undefined on input line 171
-.
-
-
-LaTeX Warning: Citation `Kumar2021' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Xie2019' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Lara-Benitez2021' on page 21 undefined on input line 1
-71.
-
-
-LaTeX Warning: Citation `Ahmad2018' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `CarvalhoJr.2019' on page 21 undefined on input line 17
-1.
-
-
-LaTeX Warning: Citation `Tan2021' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Liu2019' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Liu2021' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Rossi2018' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Soyer' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Martinovic2020a' on page 21 undefined on input line 17
-1.
-
-
-LaTeX Warning: Citation `Ursu2016' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Wang2016' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Shih2019a' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Moon2019' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Chou2018' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Bergmeir2018' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Boroojeni2017' on page 21 undefined on input line 171.
-
-
-
-LaTeX Warning: Citation `Chou2018a' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Coelho2017' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Du2020' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Sadaei2019' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Salgotra2020' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Tyralis2017' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Vlachas2020' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Yang2019a' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Shen2020' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Sezer2020' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Chen2018' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Buyuksahin2019' on page 21 undefined on input line 171
-.
-
-
-LaTeX Warning: Citation `Li2020' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Kulshreshtha2020' on page 21 undefined on input line 1
-71.
-
-
-LaTeX Warning: Citation `Samanta2020' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Xu2019' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Graff2017' on page 21 undefined on input line 171.
-
-
-LaTeX Warning: Citation `Taieb2016' on page 21 undefined on input line 171.
-
-
-Overfull \hbox (117.74236pt too wide) in paragraph at lines 171--173
-\T1/cmr/m/n/12 ar-ti-gos dos au-to-res \T1/cmr/bx/n/12 ????????????????????????
-??????????????????????????????????????????????????\T1/cmr/m/n/12 )
- []
-
-[21 <./Revisao/Figuras/areas.png>]
-
-LaTeX Warning: Citation `Xu2019' on page 22 undefined on input line 174.
-
-
-LaTeX Warning: Citation `Li2020' on page 22 undefined on input line 174.
-
-
-LaTeX Warning: Reference `sec:base' on page 22 undefined on input line 178.
-
-
-LaTeX Warning: Reference `eq2' on page 22 undefined on input line 178.
-
-[22]) [23]
+[21 <./Revisao/Figuras/areas.png>] [22]) [23]
 \openout2 = `Modelos/sec-modelos.aux'.
 
  (Modelos/sec-modelos.tex
@@ -2237,249 +1920,111 @@ d� no mesma es-cala/ordem
 
 
 ]
-<Modelos/Figuras/1-AR.png, id=268, 1084.05pt x 433.62pt>
+<Modelos/Figuras/1-AR.png, id=839, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-AR.png Graphic file (type png)
 <use Modelos/Figuras/1-AR.png>
 Package pdftex.def Info: Modelos/Figuras/1-AR.png  used on input line 70.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
  [25]
-<Modelos/Figuras/1-ARX.png, id=278, 1084.05pt x 433.62pt>
+<Modelos/Figuras/1-ARX.png, id=846, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-ARX.png Graphic file (type png)
 <use Modelos/Figuras/1-ARX.png>
 Package pdftex.def Info: Modelos/Figuras/1-ARX.png  used on input line 79.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
 
 
-LaTeX Warning: Reference `AR' on page 26 undefined on input line 86.
-
-
-LaTeX Warning: Reference `fig:1-ar' on page 26 undefined on input line 88.
-
-
 LaTeX Warning: Reference `sec:ararxma18' on page 26 undefined on input line 88.
 
 
-
-LaTeX Warning: Reference `sec:ararxma24' on page 26 undefined on input line 88.
-
-
-[26 <./Modelos/Figuras/1-AR.png> <./Modelos/Figuras/1-ARX.png>]
-
-LaTeX Warning: Citation `signal' on page 27 undefined on input line 109.
-
-
-LaTeX Warning: Reference `eq:ma' on page 27 undefined on input line 118.
-
-[27]
-<Modelos/Figuras/1-MA.png, id=292, 1084.05pt x 433.62pt>
+[26 <./Modelos/Figuras/1-AR.png> <./Modelos/Figuras/1-ARX.png>] [27]
+<Modelos/Figuras/1-MA.png, id=864, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-MA.png Graphic file (type png)
 <use Modelos/Figuras/1-MA.png>
 Package pdftex.def Info: Modelos/Figuras/1-MA.png  used on input line 124.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-
-
-LaTeX Warning: Reference `fig:1-ma' on page 28 undefined on input line 129.
-
-
-LaTeX Warning: Reference `fig:1-ar' on page 28 undefined on input line 129.
-
-
-LaTeX Warning: Reference `fig:1-arx' on page 28 undefined on input line 129.
-
-<Modelos/Figuras/1-ARMA.png, id=293, 1084.05pt x 433.62pt>
+<Modelos/Figuras/1-ARMA.png, id=868, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-ARMA.png Graphic file (type png)
 <use Modelos/Figuras/1-ARMA.png>
 Package pdftex.def Info: Modelos/Figuras/1-ARMA.png  used on input line 142.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-[28 <./Modelos/Figuras/1-MA.png>]
-
-LaTeX Warning: Reference `fig:1-arma' on page 29 undefined on input line 147.
-
-
-LaTeX Warning: Reference `sec:comtb24' on page 29 undefined on input line 147.
-
+ [28 <./Modelos/Figuras/1-MA.png>]
 
 LaTeX Warning: Reference `sec:comtb18' on page 29 undefined on input line 147.
 
-
-LaTeX Warning: Reference `arima' on page 29 undefined on input line 156.
-
-<Modelos/Figuras/1-ARIMA.png, id=301, 1084.05pt x 433.62pt>
+<Modelos/Figuras/1-ARIMA.png, id=877, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-ARIMA.png Graphic file (type png)
 <use Modelos/Figuras/1-ARIMA.png>
 Package pdftex.def Info: Modelos/Figuras/1-ARIMA.png  used on input line 164.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
 [29 <./Modelos/Figuras/1-ARMA.png>]
-
-LaTeX Warning: Reference `fig:1-arima' on page 30 undefined on input line 169.
-
-<Modelos/Figuras/1-SARIMA.png, id=309, 1084.05pt x 433.62pt>
+<Modelos/Figuras/1-SARIMA.png, id=886, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-SARIMA.png Graphic file (type png)
 <use Modelos/Figuras/1-SARIMA.png>
 Package pdftex.def Info: Modelos/Figuras/1-SARIMA.png  used on input line 187.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-[30 <./Modelos/Figuras/1-ARIMA.png>]
-
-LaTeX Warning: Reference `fig:1-sarima' on page 31 undefined on input line 192.
-
-
-
-LaTeX Warning: Reference `eq:sarmax' on page 31 undefined on input line 202.
-
-<Modelos/Figuras/1-ARIMAX.png, id=318, 1084.05pt x 433.62pt>
+ [30 <./Modelos/Figuras/1-ARIMA.png>]
+<Modelos/Figuras/1-ARIMAX.png, id=895, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-ARIMAX.png Graphic file (type png)
 <use Modelos/Figuras/1-ARIMAX.png>
 Package pdftex.def Info: Modelos/Figuras/1-ARIMAX.png  used on input line 208.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
+
 [31 <./Modelos/Figuras/1-SARIMA.png>]
-<Modelos/Figuras/1-SARIMAX.png, id=328, 1084.05pt x 433.62pt>
+<Modelos/Figuras/1-SARIMAX.png, id=903, 1084.05pt x 433.62pt>
 File: Modelos/Figuras/1-SARIMAX.png Graphic file (type png)
 <use Modelos/Figuras/1-SARIMAX.png>
 Package pdftex.def Info: Modelos/Figuras/1-SARIMAX.png  used on input line 217.
 
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-
-
-LaTeX Warning: Reference `fig:1-arimax' on page 32 undefined on input line 223.
-
-
-
-LaTeX Warning: Reference `fig:1-sarimax' on page 32 undefined on input line 223
-.
-
-
-LaTeX Warning: Citation `korstanje2021' on page 32 undefined on input line 229.
-
-
-[32 <./Modelos/Figuras/1-ARIMAX.png> <./Modelos/Figuras/1-SARIMAX.png>]
-
-LaTeX Warning: Reference `fig:person' on page 33 undefined on input line 236.
-
-
-LaTeX Warning: Reference `eq:pearson' on page 33 undefined on input line 243.
-
-<Apendices/Figuras/modelagem-24h/person.png, id=339, 722.7pt x 578.16pt>
+ [32 <./Modelos/Figuras/1-ARIMAX.png> <./Modelos/Figuras/1-SARIMAX.png>]
+<Apendices/Figuras/modelagem-24h/person.png, id=917, 722.7pt x 578.16pt>
 File: Apendices/Figuras/modelagem-24h/person.png Graphic file (type png)
 <use Apendices/Figuras/modelagem-24h/person.png>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/person.png  used on in
 put line 251.
 (pdftex.def)             Requested size: 455.24411pt x 364.19861pt.
-
-LaTeX Warning: Reference `fig:person' on page 33 undefined on input line 256.
-
-
-LaTeX Warning: Reference `q1' on page 33 undefined on input line 256.
-
-[33 <./Apendices/Figuras/modelagem-24h/person.png>]
-
-LaTeX Warning: Reference `eq:lr' on page 34 undefined on input line 264.
-
-<Modelos/Figuras/LR LT01 (m³).png, id=347, 973.9587pt x 392.4261pt>
+ [33 <./Apendices/Figuras/modelagem-24h/person.png>]
+<Modelos/Figuras/LR LT01 (m³).png, id=927, 973.9587pt x 392.4261pt>
 File: Modelos/Figuras/LR LT01 (m³).png Graphic file (type png)
 <use Modelos/Figuras/LR LT01 (m³).png>
 Package pdftex.def Info: Modelos/Figuras/LR LT01 (m³).png  used on input line 
 276.
 (pdftex.def)             Requested size: 455.24411pt x 183.42833pt.
-
-LaTeX Warning: Reference `fig:lr-lt01-m3' on page 34 undefined on input line 28
-3.
-
-[34 <./Modelos/Figuras/LR LT01 (m³).png>]
-
-LaTeX Warning: Citation `korstanje2021' on page 35 undefined on input line 291.
-
-
-<Modelos/Figuras/1-regressão-linear.png, id=355, 1156.32pt x 578.16pt>
+ [34 <./Modelos/Figuras/LR LT01 (m³).png>]
+<Modelos/Figuras/1-regressão-linear.png, id=937, 1156.32pt x 578.16pt>
 File: Modelos/Figuras/1-regressão-linear.png Graphic file (type png)
 <use Modelos/Figuras/1-regressão-linear.png>
 Package pdftex.def Info: Modelos/Figuras/1-regressão-linear.png  used on input
  line 297.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
-<Modelos/Figuras/1-regressão-rfa.png, id=356, 1156.32pt x 578.16pt>
+<Modelos/Figuras/1-regressão-rfa.png, id=938, 1156.32pt x 578.16pt>
 File: Modelos/Figuras/1-regressão-rfa.png Graphic file (type png)
 <use Modelos/Figuras/1-regressão-rfa.png>
 Package pdftex.def Info: Modelos/Figuras/1-regressão-rfa.png  used on input li
 ne 311.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
-[35 <./Modelos/Figuras/1-regressão-linear.png>]
-
-LaTeX Warning: Citation `Pelletier2016156' on page 36 undefined on input line 3
-16.
-
-<Modelos/Figuras/RF.png, id=365, 1859.94875pt x 709.65125pt>
+ [35 <./Modelos/Figuras/1-regressão-linear.png>]
+<Modelos/Figuras/RF.png, id=948, 1859.94875pt x 709.65125pt>
 File: Modelos/Figuras/RF.png Graphic file (type png)
 <use Modelos/Figuras/RF.png>
 Package pdftex.def Info: Modelos/Figuras/RF.png  used on input line 322.
 (pdftex.def)             Requested size: 455.24411pt x 173.68741pt.
-[36 <./Modelos/Figuras/1-regressão-rfa.png> <./Modelos/Figuras/RF.png>]
-
-LaTeX Warning: Reference `fig:xgboos' on page 37 undefined on input line 334.
-
-<Modelos/Figuras/xgboos.png, id=375, 974.64125pt x 474.77374pt>
+ [36 <./Modelos/Figuras/1-regressão-rfa.png> <./Modelos/Figuras/RF.png>]
+<Modelos/Figuras/xgboos.png, id=957, 974.64125pt x 474.77374pt>
 File: Modelos/Figuras/xgboos.png Graphic file (type png)
 <use Modelos/Figuras/xgboos.png>
 Package pdftex.def Info: Modelos/Figuras/xgboos.png  used on input line 342.
 (pdftex.def)             Requested size: 455.24411pt x 221.76pt.
-
-LaTeX Warning: Citation `korstanje2021' on page 37 undefined on input line 344.
-
-
-
-LaTeX Warning: Citation `korstanje2021' on page 37 undefined on input line 351.
-
-
-[37 <./Modelos/Figuras/xgboos.png>]
-
-LaTeX Warning: Reference `eq:xb' on page 38 undefined on input line 359.
-
-[38]
-
-LaTeX Warning: Reference `fig:xgboost' on page 39 undefined on input line 395.
-
-[39]
-<Modelos/Figuras/xgboost.png, id=396, 1168.365pt x 899.36pt>
+ [37 <./Modelos/Figuras/xgboos.png>] [38] [39]
+<Modelos/Figuras/xgboost.png, id=979, 1168.365pt x 899.36pt>
 File: Modelos/Figuras/xgboost.png Graphic file (type png)
 <use Modelos/Figuras/xgboost.png>
 Package pdftex.def Info: Modelos/Figuras/xgboost.png  used on input line 403.
 (pdftex.def)             Requested size: 455.24411pt x 350.43335pt.
-
-
-LaTeX Warning: Citation `korstanje2021' on page 40 undefined on input line 405.
-
-
-
-LaTeX Warning: Reference `fig:xgboost' on page 40 undefined on input line 409.
-
 ) [40 <./Modelos/Figuras/xgboost.png>]
 \openout2 = `Resultados/sec-resultados.aux'.
 
  (Resultados/sec-resultados.tex
-
-LaTeX Warning: Reference `subsubsec:etp' on page 41 undefined on input line 6.
-
-
-LaTeX Warning: Reference `subsubsec:obespec' on page 41 undefined on input line
- 6.
-
-
-LaTeX Warning: Reference `etp:1' on page 41 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Yu2016' on page 41 undefined on input line 10.
-
-
-LaTeX Warning: Reference `q1' on page 41 undefined on input line 13.
-
-
-LaTeX Warning: Reference `fig:person' on page 41 undefined on input line 13.
-
-
-LaTeX Warning: Reference `fig:person' on page 41 undefined on input line 13.
-
-
-LaTeX Warning: Reference `q2' on page 41 undefined on input line 15.
-
-
 Overfull \hbox (20.34651pt too wide) in paragraph at lines 20--32
  [][] 
  []
@@ -2489,135 +2034,47 @@ Overfull \hbox (20.34651pt too wide) in paragraph at lines 20--32
 
 
 ]
-
-LaTeX Warning: Reference `tb:est' on page 42 undefined on input line 36.
-
-
-LaTeX Warning: Reference `q2' on page 42 undefined on input line 36.
-
-<Resultados/Figuras/esquema.png, id=410, 963.6pt x 542.025pt>
+<Resultados/Figuras/esquema.png, id=1005, 963.6pt x 542.025pt>
 File: Resultados/Figuras/esquema.png Graphic file (type png)
 <use Resultados/Figuras/esquema.png>
 Package pdftex.def Info: Resultados/Figuras/esquema.png  used on input line 42.
 
 (pdftex.def)             Requested size: 455.24411pt x 256.07507pt.
-[42]
-
-LaTeX Warning: Reference `fig:esquema' on page 43 undefined on input line 46.
-
-
-LaTeX Warning: Reference `q3' on page 43 undefined on input line 48.
-
-
-LaTeX Warning: Reference `q4' on page 43 undefined on input line 50.
-
-
-LaTeX Warning: Reference `q5:a' on page 43 undefined on input line 52.
-
-
-LaTeX Warning: Reference `etp:2' on page 43 undefined on input line 56.
-
-[43 <./Resultados/Figuras/esquema.png>]
-
-LaTeX Warning: Citation `Theodosiou20111178' on page 44 undefined on input line
- 62.
-
-<Resultados/Figuras/STL aditiva.png, id=424, 1156.32pt x 578.16pt>
+ [42] [43 <./Resultados/Figuras/esquema.png>]
+<Resultados/Figuras/STL aditiva.png, id=1022, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/STL aditiva.png Graphic file (type png)
 <use Resultados/Figuras/STL aditiva.png>
 Package pdftex.def Info: Resultados/Figuras/STL aditiva.png  used on input line
  68.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
-<Resultados/Figuras/STL.png, id=425, 1156.32pt x 578.16pt>
+<Resultados/Figuras/STL.png, id=1023, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/STL.png Graphic file (type png)
 <use Resultados/Figuras/STL.png>
 Package pdftex.def Info: Resultados/Figuras/STL.png  used on input line 78.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
-[44 <./Resultados/Figuras/STL aditiva.png>]
-
-LaTeX Warning: Reference `q5' on page 45 undefined on input line 83.
-
-
-LaTeX Warning: Reference `q5:b' on page 45 undefined on input line 83.
-
-
-LaTeX Warning: Reference `fig:stl-aditiva' on page 45 undefined on input line 8
-3.
-
+ [44 <./Resultados/Figuras/STL aditiva.png>]
 
 LaTeX Warning: Reference `stl' on page 45 undefined on input line 83.
 
-
-LaTeX Warning: Reference `fig:stl' on page 45 undefined on input line 85.
-
-
-LaTeX Warning: Reference `fig:stl-aditiva' on page 45 undefined on input line 8
-5.
-
-
-LaTeX Warning: Reference `q5' on page 45 undefined on input line 102.
-
-
-LaTeX Warning: Reference `q5:c' on page 45 undefined on input line 102.
-
-
-LaTeX Warning: Reference `fig:hist' on page 45 undefined on input line 102.
-
 [45 <./Resultados/Figuras/STL.png>]
-<Resultados/Figuras/hist.png, id=439, 951.0732pt x 492.1587pt>
+<Resultados/Figuras/hist.png, id=1043, 951.0732pt x 492.1587pt>
 File: Resultados/Figuras/hist.png Graphic file (type png)
 <use Resultados/Figuras/hist.png>
 Package pdftex.def Info: Resultados/Figuras/hist.png  used on input line 108.
 (pdftex.def)             Requested size: 455.24411pt x 235.58014pt.
-
-
-LaTeX Warning: Reference `subsubsec:motivacao' on page 46 undefined on input li
-ne 113.
-
-
-LaTeX Warning: Reference `q5' on page 46 undefined on input line 115.
-
-
-LaTeX Warning: Reference `q5:d' on page 46 undefined on input line 115.
-
-
-LaTeX Warning: Reference `q5' on page 46 undefined on input line 117.
-
-
-LaTeX Warning: Reference `q5:e' on page 46 undefined on input line 117.
-
-
-LaTeX Warning: Reference `fig:ft03' on page 46 undefined on input line 117.
-
-<Resultados/Figuras/ft03.png, id=440, 956.1321pt x 492.1587pt>
+<Resultados/Figuras/ft03.png, id=1050, 956.1321pt x 492.1587pt>
 File: Resultados/Figuras/ft03.png Graphic file (type png)
 <use Resultados/Figuras/ft03.png>
 Package pdftex.def Info: Resultados/Figuras/ft03.png  used on input line 123.
 (pdftex.def)             Requested size: 455.24411pt x 234.32602pt.
-[46 <./Resultados/Figuras/hist.png>]
-
-LaTeX Warning: Citation `Reisen2017115' on page 47 undefined on input line 131.
-
-
-
-LaTeX Warning: Reference `eq:regdf' on page 47 undefined on input line 138.
-
-
-LaTeX Warning: Reference `eq:df' on page 47 undefined on input line 151.
-
-
-LaTeX Warning: Reference `eq:df3' on page 47 undefined on input line 155.
-
+ [46 <./Resultados/Figuras/hist.png>]
 [47 <./Resultados/Figuras/ft03.png>]
-
-LaTeX Warning: Reference `eq:df2' on page 48 undefined on input line 165.
-
-<Resultados/Figuras/acf.png, id=456, 953.964pt x 495.7722pt>
+<Resultados/Figuras/acf.png, id=1072, 953.964pt x 495.7722pt>
 File: Resultados/Figuras/acf.png Graphic file (type png)
 <use Resultados/Figuras/acf.png>
 Package pdftex.def Info: Resultados/Figuras/acf.png  used on input line 175.
 (pdftex.def)             Requested size: 227.62206pt x 118.29178pt.
-<Resultados/Figuras/pacf.png, id=457, 953.964pt x 495.7722pt>
+<Resultados/Figuras/pacf.png, id=1073, 953.964pt x 495.7722pt>
 File: Resultados/Figuras/pacf.png Graphic file (type png)
 <use Resultados/Figuras/pacf.png>
 Package pdftex.def Info: Resultados/Figuras/pacf.png  used on input line 176.
@@ -2627,233 +2084,235 @@ Overfull \hbox (26.10475pt too wide) in paragraph at lines 175--177
 [][]  [] 
  []
 
-
-LaTeX Warning: Reference `fig:acf' on page 48 undefined on input line 181.
-
-
-LaTeX Warning: Reference `fig:acf' on page 48 undefined on input line 185.
-
-<Resultados/Figuras/ruido-branco.png, id=458, 906.9885pt x 383.7537pt>
+<Resultados/Figuras/ruido-branco.png, id=1076, 906.9885pt x 383.7537pt>
 File: Resultados/Figuras/ruido-branco.png Graphic file (type png)
 <use Resultados/Figuras/ruido-branco.png>
 Package pdftex.def Info: Resultados/Figuras/ruido-branco.png  used on input lin
 e 191.
 (pdftex.def)             Requested size: 455.24411pt x 192.62003pt.
-[48 <./Resultados/Figuras/acf.png> <./Resultados/Figuras/pacf.png>]
-
-LaTeX Warning: Reference `fig:ruido-branco' on page 49 undefined on input line 
-196.
-
-
-LaTeX Warning: Reference `etp:3' on page 49 undefined on input line 199.
-
-
-LaTeX Warning: Reference `etp:4' on page 49 undefined on input line 203.
-
-[49 <./Resultados/Figuras/ruido-branco.png>]
-
-LaTeX Warning: Reference `etp:5' on page 50 undefined on input line 211.
-
-
-LaTeX Warning: Reference `subsubsec:modelos' on page 50 undefined on input line
- 211.
-
-
-LaTeX Warning: Reference `etp:6' on page 50 undefined on input line 215.
-
-
-LaTeX Warning: Reference `subsubsec:est' on page 50 undefined on input line 215
-.
-
-
-LaTeX Warning: Reference `etp:7' on page 50 undefined on input line 219.
-
-
-LaTeX Warning: Reference `subsec:metrica' on page 50 undefined on input line 21
-9.
-
-[50]
+[48 <./Resultados/Figuras/acf.png> <./Resultados/Figuras/pacf.png>] [49 <./Resu
+ltados/Figuras/ruido-branco.png>] [50]
 
 LaTeX Warning: Reference `fig:1-AR-ARX-MA' on page 51 undefined on input line 2
 23.
 
 
-LaTeX Warning: Reference `fig:60-LR-XGB-LGBM-RF24' on page 51 undefined on inpu
-t line 223.
-
-
-LaTeX Warning: Reference `tb:1-24trn' on page 51 undefined on input line 223.
-
-
 LaTeX Warning: Reference `tb:60-18cm' on page 51 undefined on input line 223.
 
-
-LaTeX Warning: Reference `etp:9' on page 51 undefined on input line 227.
-
-
-LaTeX Warning: Reference `eq:neme' on page 51 undefined on input line 233.
-
-[51]
-
-LaTeX Warning: Reference `eq:fr' on page 52 undefined on input line 257.
-
-
-LaTeX Warning: Reference `eq:fr' on page 52 undefined on input line 263.
-
-
-LaTeX Warning: Reference `eq:fr' on page 52 undefined on input line 264.
-
-) [52]
+[51]) [52]
 \openout2 = `Conclusoes/sec-conclusoes.aux'.
 
- (Conclusoes/sec-conclusoes.tex
-
-LaTeX Warning: Citation `de2013processo' on page 53 undefined on input line 3.
-
-
-LaTeX Warning: Reference `sec:result' on page 53 undefined on input line 3.
-
-
-LaTeX Warning: Reference `subsec:metrica' on page 53 undefined on input line 14
-.
-
-
-LaTeX Warning: Reference `sec:ararxma24' on page 53 undefined on input line 14.
-
-
-[53
+ (Conclusoes/sec-conclusoes.tex [53
 
 
 
 ]) [54]
 \openout2 = `Bibliografia/sec-bibliografia.aux'.
 
- (Bibliografia/sec-bibliografia.tex
-No file DocPrincipal.bbl.
-)
+
+(Bibliografia/sec-bibliografia.tex (DocPrincipal.bbl [55
+
+
+
+] [56] [57])) [58]
 \openout2 = `Apendices/sec-apendices.aux'.
 
- (Apendices/sec-apendices.tex (Apendices/tabelas-1.tex [55
+
+(Apendices/sec-apendices.tex (Apendices/tabelas-1.tex [59
 
 
 
-
-
-
-] [56] [57] [58]
-[59] [60] [61]) [62] (Apendices/24h/modelos-24h.tex
+] [60] [61] [62]
+[63] [64] [65]) [66] (Apendices/24h/modelos-24h.tex
 (Apendices/24h/AR-ARX-MA.tex
-<Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.png, id=554, 1084.05pt x 433.62pt>
-
+<Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.png, id=1206, 1084.05pt x 433.62pt
+>
 File: Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.png Graphic file (type png)
 <use Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.png>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.png  used 
 on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-24h/7-AR-ARX-MA.png, id=555, 1084.05pt x 433.62pt>
-
+<Apendices/Figuras/modelagem-24h/7-AR-ARX-MA.png, id=1207, 1084.05pt x 433.62pt
+>
 File: Apendices/Figuras/modelagem-24h/7-AR-ARX-MA.png Graphic file (type png)
 <use Apendices/Figuras/modelagem-24h/7-AR-ARX-MA.png>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/7-AR-ARX-MA.png  used 
 on input line 17.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
- [63 <./Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.png>]
-<Apendices/Figuras/modelagem-24h/14-AR-ARX-MA.png, id=564, 1084.05pt x 433.62pt
->
+ [67 <./Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.png>]
+<Apendices/Figuras/modelagem-24h/14-AR-ARX-MA.png, id=1213, 1084.05pt x 433.62p
+t>
 File: Apendices/Figuras/modelagem-24h/14-AR-ARX-MA.png Graphic file (type png)
 <use Apendices/Figuras/modelagem-24h/14-AR-ARX-MA.png>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/14-AR-ARX-MA.png  used
  on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.png, id=565, 1084.05pt x 433.62pt
->
+<Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.png, id=1214, 1084.05pt x 433.62p
+t>
 File: Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.png Graphic file (type png)
 <use Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.png>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.png  used
  on input line 36.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
- [64 <./Apendices/Figuras/modelagem-24h/7-AR-ARX-MA.png> <./Apendices/Figuras/m
+ [68 <./Apendices/Figuras/modelagem-24h/7-AR-ARX-MA.png> <./Apendices/Figuras/m
 odelagem-24h/14-AR-ARX-MA.png>]) (Apendices/24h/ARMA-ARIMA.tex
-<Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.png, id=574, 1084.05pt x 433.62pt
->
+<Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.png, id=1221, 1084.05pt x 433.62p
+t>
 File: Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.png Graphic file (type png)
 <use Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.png>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.png  used
  on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-24h/7-ARMA-ARIMA.png, id=575, 1084.05pt x 433.62pt
->
+<Apendices/Figuras/modelagem-24h/7-ARMA-ARIMA.png, id=1222, 1084.05pt x 433.62p
+t>
 File: Apendices/Figuras/modelagem-24h/7-ARMA-ARIMA.png Graphic file (type png)
 <use Apendices/Figuras/modelagem-24h/7-ARMA-ARIMA.png>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/7-ARMA-ARIMA.png  used
  on input line 17.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
- [65 <./Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.png> <./Apendices/Figuras/
+ [69 <./Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.png> <./Apendices/Figuras/
 modelagem-24h/1-ARMA-ARIMA.png>]
-<Apendices/Figuras/modelagem-24h/14-ARMA-ARIMA.png, id=585, 1084.05pt x 433.62p
-t>
+<Apendices/Figuras/modelagem-24h/14-ARMA-ARIMA.png, id=1229, 1084.05pt x 433.62
+pt>
 File: Apendices/Figuras/modelagem-24h/14-ARMA-ARIMA.png Graphic file (type png)
 
 <use Apendices/Figuras/modelagem-24h/14-ARMA-ARIMA.png>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/14-ARMA-ARIMA.png  use
 d on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.png, id=586, 1084.05pt x 433.62p
-t>
+<Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.png, id=1230, 1084.05pt x 433.62
+pt>
 File: Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.png Graphic file (type png)
 
 <use Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.png>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.png  use
-d on input line 36.
+d on input line 35.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-) [66 <./Apendices/Figuras/modelagem-24h/7-ARMA-ARIMA.png> <./Apendices/Figuras
+) [70 <./Apendices/Figuras/modelagem-24h/7-ARMA-ARIMA.png> <./Apendices/Figuras
 /modelagem-24h/14-ARMA-ARIMA.png>]
 (Apendices/24h/ARIMAX-SARIMA-SARIMAX.tex
-<Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.png, id=595, 1084.05pt
- x 433.62pt>
+<Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.png, id=1237, 1084.05p
+t x 433.62pt>
 File: Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.png Graphic file 
 (type png)
 <use Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.png>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMA
 X.png  used on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-24h/7-ARIMAX-SARIMA-SARIMAX.png, id=596, 1084.05pt
- x 433.62pt>
+<Apendices/Figuras/modelagem-24h/7-ARIMAX-SARIMA-SARIMAX.png, id=1238, 1084.05p
+t x 433.62pt>
 File: Apendices/Figuras/modelagem-24h/7-ARIMAX-SARIMA-SARIMAX.png Graphic file 
 (type png)
 <use Apendices/Figuras/modelagem-24h/7-ARIMAX-SARIMA-SARIMAX.png>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/7-ARIMAX-SARIMA-SARIMA
 X.png  used on input line 17.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
- [67 <./Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.png> <./Apendices/Figuras
+ [71 <./Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.png> <./Apendices/Figuras
 /modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.png>]
-<Apendices/Figuras/modelagem-24h/14-ARIMAX-SARIMA-SARIMAX.png, id=607, 1084.05p
-t x 433.62pt>
+<Apendices/Figuras/modelagem-24h/14-ARIMAX-SARIMA-SARIMAX.png, id=1246, 1084.05
+pt x 433.62pt>
 File: Apendices/Figuras/modelagem-24h/14-ARIMAX-SARIMA-SARIMAX.png Graphic file
  (type png)
 <use Apendices/Figuras/modelagem-24h/14-ARIMAX-SARIMA-SARIMAX.png>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/14-ARIMAX-SARIMA-SARIM
 AX.png  used on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.png, id=608, 1084.05p
-t x 433.62pt>
+<Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.png, id=1247, 1084.05
+pt x 433.62pt>
 File: Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.png Graphic file
  (type png)
 <use Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.png>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIM
 AX.png  used on input line 36.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-) [68 <./Apendices/Figuras/modelagem-24h/7-ARIMAX-SARIMA-SARIMAX.png> <./Apendi
+) [72 <./Apendices/Figuras/modelagem-24h/7-ARIMAX-SARIMA-SARIMAX.png> <./Apendi
 ces/Figuras/modelagem-24h/14-ARIMAX-SARIMA-SARIMAX.png>]
 (Apendices/24h/LR-XGB-LGBM-RF.tex
-<Apendices/Figuras/modelagem-24h/1-LR-XGB-LGBM-RF.png, id=617, 1084.05pt x 433.
-62pt>
+<Apendices/Figuras/modelagem-24h/1-LR-XGB-LGBM-RF.png, id=1254, 1084.05pt x 433
+.62pt>
 File: Apendices/Figuras/modelagem-24h/1-LR-XGB-LGBM-RF.png Graphic file (type p
 ng)
 <use Apendices/Figuras/modelagem-24h/1-LR-XGB-LGBM-RF.png>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/1-LR-XGB-LGBM-RF.png  
 used on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-<Apendices/Figuras/modelagem-24h/7-LR-XGB-LGBM-RF.png, id=618, 1084.05pt x 433.
-62pt>
-File: Apendices/Figuras/modelagem-24h/7-LR-XG
+<Apendices/Figuras/modelagem-24h/7-LR-XGB-LGBM-RF.png, id=1255, 1084.05pt x 433
+.62pt>
+File: Apendices/Figuras/modelagem-24h/7-LR-XGB-LGBM-RF.png Graphic file (type p
+ng)
+<use Apendices/Figuras/modelagem-24h/7-LR-XGB-LGBM-RF.png>
+Package pdftex.def Info: Apendices/Figuras/modelagem-24h/7-LR-XGB-LGBM-RF.png  
+used on input line 17.
+(pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
+ [73 <./Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.png> <./Apendi
+ces/Figuras/modelagem-24h/1-LR-XGB-LGBM-RF.png>]
+<Apendices/Figuras/modelagem-24h/14-LR-XGB-LGBM-RF.png, id=1262, 1084.05pt x 43
+3.62pt>
+File: Apendices/Figuras/modelagem-24h/14-LR-XGB-LGBM-RF.png Graphic file (type 
+png)
+<use Apendices/Figuras/modelagem-24h/14-LR-XGB-LGBM-RF.png>
+Package pdftex.def Info: Apendices/Figuras/modelagem-24h/14-LR-XGB-LGBM-RF.png 
+ used on input line 27.
+(pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
+<Apendices/Figuras/modelagem-24h/30-LR-XGB-LGBM-RF.png, id=1263, 1084.05pt x 43
+3.62pt>
+File: Apendices/Figuras/modelagem-24h/30-LR-XGB-LGBM-RF.png Graphic file (type 
+png)
+<use Apendices/Figuras/modelagem-24h/30-LR-XGB-LGBM-RF.png>
+Package pdftex.def Info: Apendices/Figuras/modelagem-24h/30-LR-XGB-LGBM-RF.png 
+ used on input line 36.
+(pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
+))) [74 <./Apendices/Figuras/modelagem-24h/7-LR-XGB-LGBM-RF.png> <./Apendices/F
+iguras/modelagem-24h/14-LR-XGB-LGBM-RF.png>] [75 <./Apendices/Figuras/modelagem
+-24h/30-LR-XGB-LGBM-RF.png>] (DocPrincipal.aux (Pretextuais/capa.aux)
+(Pretextuais/folha_rosto1.aux) (Pretextuais/folha_aprovacao.aux)
+(Pretextuais/dedicatoria.aux) (Pretextuais/agradecimentos.aux)
+(Pretextuais/epigrafe.aux) (Resumos/resumo.aux) (Resumos/abstract.aux)
+(Introducao/sec-introducao.aux) (Revisao/sec-revisao.aux)
+(Modelos/sec-modelos.aux) (Resultados/sec-resultados.aux)
+(Conclusoes/sec-conclusoes.aux) (Bibliografia/sec-bibliografia.aux)
+(Apendices/sec-apendices.aux))
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `DocPrincipal.out' has not changed.
+(rerunfilecheck)             Checksum: 76EA471275CA0AF3410EC48FC30B59D3;4258.
+ ) 
+Here is how much of TeX's memory you used:
+ 28267 strings out of 476406
+ 563120 string characters out of 2789567
+ 1870787 words of memory out of 3000000
+ 47501 multiletter control sequences out of 15000+600000
+ 528820 words of font info for 71 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 91i,12n,85p,1278b,621s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi
+1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcrm1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi720\ecbx1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi657\ecrm1000.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi657\ecbx1000.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi864\ecbx1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\msndo\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\msndo\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk><C:/Users/msndo/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/msnd
+o/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><
+C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/msndo/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/msndo/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/msndo/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/msndo/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
+rs/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+>
+Output written on DocPrincipal.pdf (89 pages, 24490963 bytes).
+PDF statistics:
+ 1895 PDF objects out of 2073 (max. 8388607)
+ 300 named destinations out of 1000 (max. 500000)
+ 704 words of extra memory for PDF output out of 10000 (max. 10000000)
+
