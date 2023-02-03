@@ -20,15 +20,15 @@ Para \ref{q2} vai ser feito uma tabela para que seja respondido melhor essa ques
 	\begin{tabular}{@{}cccccccccc@{}}
 		\toprule
 		\textbf{18 a 21h}  & \textbf{B1} & \textbf{B2} & \textbf{B3} & \textbf{LT01} & \textbf{FT01} & \textbf{FT02} & \textbf{FT03} & \textbf{PT01} & \textbf{PT02} \\ \midrule
-		\textbf{Contagem} & 1096        & 1096        & 1096        & 1096          & 1096          & 1096          & 1096          & 1096          & 1096          \\
-		\textbf{Média}    & 48,830      & 17,538      & 4,299       & 3,545         & 211,771       & 113,805       & 100,139       & 4,485         & 19,424        \\
-		\textbf{STD}      & 12,354      & 9,282       & 8,976       & 0,438         & 44,496        & 21,486        & 19,822        & 0,487         & 4,323         \\
-		\textbf{Min}      & 0,000       & 0,000       & 0,000       & 1,459         & 22,854        & 3,584         & 10,383        & 1,925         & 0,831         \\
-		\textbf{25\%}     & 50,491      & 13,289      & 0,000       & 3,345         & 195,944       & 105,096       & 99,239        & 4,245         & 19,805        \\
-		\textbf{50\%}     & 54,204      & 19,965      & 0,000       & 3,644         & 215,791       & 115,733       & 104,846       & 4,571         & 21,015        \\
-		\textbf{75\%}     & 54,818      & 22,792      & 2,376       & 3,843         & 238,325       & 126,246       & 110,006       & 4,813         & 21,140        \\
-		\textbf{Max}      & 57,885      & 53,488      & 46,841      & 4,256         & 301,863       & 181,565       & 143,988       & 5,475         & 23,679        \\ \bottomrule
-	\end{tabular}
+		\textbf{Contagem} & 366         & 366         & 366         & 366           & 366           & 366           & 366           & 366           & 366           \\
+		\textbf{Média}    & 43,87       & 22,26       & 8,70        & 3,34          & 164,83        & 133,08        & 102,01        & 4,23          & 17,29         \\
+		\textbf{STD}      & 23,22       & 18,47       & 17,81       & 0,69          & 114,60        & 67,99         & 47,55         & 0,81          & 8,59          \\
+		\textbf{Min}      & 0           & 0           & 0           & 0,99          & 0,07          & 0             & 0             & 1,88          & 0             \\
+		\textbf{25\%}     & 37,93       & 0           & 0           & 2,87          & 64,31         & 131,06        & 107,92        & 3,69          & 16,77         \\
+		\textbf{50\%}     & 57,99       & 30,92       & 0           & 3,41          & 201,37        & 146,17        & 121,40        & 4,22          & 22,46         \\
+		\textbf{75\%}     & 57,99       & 37,25       & 0           & 3,86          & 268,61        & 158,71        & 127,07        & 4,85          & 22,52         \\
+		\textbf{Max}      & 59,99       & 57,33       & 53,74       & 4,40          & 379,20        & 285,56        & 170,56        & 5,66          & 24,23         \\ \bottomrule
+\end{tabular}
 
 	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
 \end{table}
@@ -208,11 +208,11 @@ A divisão mais básica que tem na literatura foi realizada aqui na separação 
 
 \subsubsection{Estrategia de Previs\~ao}\label{subsubsec:est}
 
-Na \ref{etp:5} é abordado a forma que foi previsto os dados, em uma janela de horizonte de previsão bem maior do que o normal na literatura da estrategia de recursiva, sendo 1, 10, 30 e 60 dias previsto, essa estrategia para comparação dos modelos regressivo e modelos ARIMA, é bem vantajoso, pois cada modelo tem suas especificidade para prever em momentos com janela de tempo menor e com uma janela de muitos dias. Assim como explicado na seção \ref{subsubsec:modelos} se for previsão curta, alguns vai se sobre por em meio à outros modelos que foi feito aqui.
+Na \ref{etp:5} é abordado a forma que foi previsto os dados, em uma janela de horizonte de previsão bem maior do que o normal na literatura da estrategia de recursiva, sendo 1, 7, 14 e 30 dias previsto, essa estrategia para comparação dos modelos regressivo e modelos ARIMA, é bem vantajoso, pois cada modelo tem suas especificidade para prever em momentos com janela de tempo menor e com uma janela de muitos dias. Assim como explicado na seção \ref{subsubsec:modelos} se for previsão curta, alguns vai se sobre por em meio à outros modelos que foi feito aqui.
 
 \subsubsection{Horizonte}
 
-Na \ref{etp:6} é feito o horizonte de previsão, como dito na seção \ref{subsubsec:est} esse horizonte foi customizado baseado do método recursivo de prever as series temporais e a previsão do nível do tanque LT01. Os passos para prever a frente foi de 1, 10, 30 e 60 dias, já foi realizado uma estrategia com uma janela menor, mas para comparação dos modelos essa janela foi mais adequada.
+Na \ref{etp:6} é feito o horizonte de previsão, como dito na seção \ref{subsubsec:est} esse horizonte foi customizado baseado do método recursivo de prever as series temporais e a previsão do nível do tanque LT01. Os passos para prever a frente foi de 1, 7, 14 e 30 dias, já foi realizado uma estrategia com uma janela menor, mas para comparação dos modelos essa janela foi mais adequada.
 
 \subsubsection{Modelos de previs\~ao e m\'etricas de desempenho}\label{subsubsec:modelos}
 
@@ -220,7 +220,7 @@ Da \ref{etp:7} as métricas utilizada aqui foi vista na seção \ref{subsec:metr
 
     Em comparação com os modelos feito, pode ser visto que o modelo LR em um passo a frente tem tanto na modelagem de 24 horas quanto no pico de horas entre as 18 e 21 horas, foi o modelo que mais se saiu bem na previsão, logo em sequência os modelos MA, AR, SARIMA, ARIMA, SARIMAX, ARIMAX, ARX, LGBMRegressor, XGBRegressor e Random Forest Regressor, para curto prazo esses modelos estão em ordem de melhor para pior.
     
-    Já em grande espaço de tempo como foi feito de 60 dias os modelos ARMA, AR, MA, ARIMA, ARIMAX, ARX, SARIMAX, SARIMA, XGBRegressor, Random Forest Regressor, LGBMRregressor e LR, seguindo a mesma lógica do melhor para o pior. Mas se olhar graficamente nos modelos que foi feito, os modelos com variáveis exógenas aparenta prever melhor do que os outros modelos, só analisando os dados nos apêndice tanto quando as Figuras de \ref{fig:1-AR-ARX-MA} a \ref{fig:60-LR-XGB-LGBM-RF24} quanto as Tabalas \ref{tb:1-24trn} a \ref{tb:60-18cm}   
+    Já em grande espaço de tempo como foi feito de 30 dias os modelos ARMA, AR, MA, ARIMA, ARIMAX, ARX, SARIMAX, SARIMA, XGBRegressor, Random Forest Regressor, LGBMRregressor e LR, seguindo a mesma lógica do melhor para o pior. Mas se olhar graficamente nos modelos que foi feito, os modelos com variáveis exógenas aparenta prever melhor do que os outros modelos, só analisando os dados nos apêndice tanto quando as Figuras de \ref{fig:1-AR-ARX-MA24} a \ref{fig:60-LR-XGB-LGBM-RF24} quanto as Tabalas \ref{tb:1-24trn} a \ref{tb:60-24cm}   
     
     \subsubsection{Teste de Signific\^ancia}
     
@@ -270,7 +270,7 @@ Para calcular a estatística de teste $F_r$ de Friedman cria-se inicialmente uma
  
  \begin{figure}[H]
  	\centering
- 	\caption{Modelos ARIMAS comparação}
+ 	\caption{Comparação de modelos ARIMAS}
  	\includegraphics[width=1\linewidth]{Resultados/Figuras/modelos-arima}
  	
  	\label{fig:modelos-arima}
@@ -281,13 +281,18 @@ Para calcular a estatística de teste $F_r$ de Friedman cria-se inicialmente uma
  
  \begin{figure}[H]
  	\centering
- 	\caption{Modelos de Regressão comparação}
+ 	\caption{Comparação de modelos de regressão }
  	\includegraphics[width=1\linewidth]{Resultados/Figuras/violin-LR-XGB-LGBM-RF}
  	
  	\label{fig:violin-lr-xgb-lgbm-rf}
  	
  	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
  \end{figure}
+
+
+Em comparação com os modelos apresentado nas Figuras \ref{fig:modelos-arima} e \ref{fig:violin-lr-xgb-lgbm-rf} os modelos que pode ser observado que são os melhores levando em conta a modelagem dos dados, nos modelos ARIMA os melhores são AR, ARX, MA, ARMA, ARIMAX e SARIMAX, devido ao \textit{outliers} e ao limite inferior de alguns modelos, olhando para os modelos de gradiente e regressão, pode se notar que eles ficaram similar, devido a técnicas de otimização matemática Grid Search (do inglês pesquisa grande) e Randomized Search (do inglês pesquisa aleatória), que possibilitou a melhora do método utilizado. Em um horizonte de previsão pequeno o LR prevê melhor que os outros modelos, mas em um horizonte de previsão maior os modelos XGBoost e Light GBM estão prevendo com melhor rigor. O floresta aleatória está prevê com rigor também só vindo atrás do XGBoost em previsão de longo prazo.
+
+O método de Ljung box é um método que pode ser estimados a longo prazo os modelos ARIMAS se a longo prazo eles ainda vão prever com eficiência nos dados, a longo prazo os modelos que melhor prevê são os modelos ARX, ARIMAX e SARIMAX com as variáveis exógena para modelos não linear ele consegue se manter por mais tempo prevendo do que os outros modelos ARIMA.  
  
   
     
