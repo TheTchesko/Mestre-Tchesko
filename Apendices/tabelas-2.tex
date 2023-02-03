@@ -1,52 +1,43 @@
 
-\section{Ap\^endice - Compara\c c\~ao dos modelos de previs\~ao 18h a 21h}\label{sec:comtb18}
+\section{Ap\^endice - Compara\c c\~ao dos modelos de previs\~ao com o m\'eto do Ljung Box}\label{sec:comtb18}
 
-Nas tabelas do apêndice todos os valores estão multiplicado por 100 com isso sendo os valores uma porcentagem de erro.
 
-	$(p = 7,d = 1,q = 7) (P = 2,D = 0,Q = 1)_{M = 12}$ média 18h a 21h
+
+Modelos ARIMAS para previsão de longo tempo 
+
 	\begin{table}[H]
 		\centering
-		\caption{Comparação dos modelos 1 dia a frente 18h a 21h \textbf{Treino} }\label{tb:1-18trn}
-\begin{tabular}{@{}clll@{}}
-	\toprule
-	\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-	& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-	\textbf{AR}                       & 19,060                            & 53,647                           & 63,279                            \\
-	\textbf{ARX}                      & 22,253                            & 62,411                           & 73,925                            \\
-	\textbf{MA}                       & 18,719                            & 51,575                           & 64,805                            \\
-	\textbf{ARMA}                     & 20,870                            & 59,069                           & 66,690                            \\
-	\textbf{ARIMA}                    & 20,502                            & 57,958                           & 65,892                            \\
-	\textbf{SARIMA}                   & 20,496                            & 58,114                           & 66,756                            \\
-	\textbf{ARIMAX}                   & 22,686                            & 63,623                           & 75,385                            \\
-	\textbf{SARIMAX}                  & 22,734                            & 63,750                           & 75,582                            \\
-	\textbf{Linear Regression}        & 2,035                             & 6,787                            & 8,645                             \\
-	\textbf{Random Forest Regressor}  & 29,007                            & 81,123                           & 85,795                            \\
-	\textbf{XGBRegressor}             & 28,976                            & 81,216                           & 85,961                            \\
-	\textbf{LGBMRegressor}            & 28,575                            & 79,695                           & 84,034                            \\ \bottomrule
-\end{tabular}
+		\caption{Comparação dos modelos Ljung Box \textbf{Treino} }\label{tb:lbtrn}
+	\begin{tabular}{@{}ccc@{}}
+		\toprule
+		\textbf{Ljung Box} & \textbf{Estatística de Teste} & \textbf{Valor De p} \\ \midrule
+		\textbf{ARX}       & 0,328                         & 1                   \\
+		\textbf{AR}        & 3,419                         & 0,97                \\
+		\textbf{MA}        & 8,706                         & 0,56                \\
+		\textbf{ARMA}      & 1,463                         & 0,999               \\
+		\textbf{ARIMA}     & 0,681                         & 1                   \\
+		\textbf{SARIMA}    & 2,019                         & 0,996               \\
+		\textbf{ARIMAX}    & 0,254                         & 1                   \\
+		\textbf{SARIMAX}   & 1,169                         & 1                   \\ \bottomrule
+	\end{tabular}
 
 Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
 	\end{table}
 
 \begin{table}[H]
 	\centering
-	\caption{Comparação dos modelos 1 dia a frente 18h a 21h \textbf{Validação} }\label{tb:1-18vld}
-	\begin{tabular}{@{}clll@{}}
+	\caption{Comparação dos modelos Ljung Box \textbf{Validação} }\label{tb:lbvld}
+	\begin{tabular}{@{}ccc@{}}
 		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-		\textbf{AR}                       & 19,238                            & 56,374                           & 65,565                            \\
-		\textbf{ARX}                      & 23,043                            & 67,180                           & 78,523                            \\
-		\textbf{MA}                       & 17,688                            & 51,011                           & 63,969                            \\
-		\textbf{ARMA}                     & 21,121                            & 62,255                           & 70,220                            \\
-		\textbf{ARIMA}                    & 20,902                            & 61,513                           & 69,945                            \\
-		\textbf{SARIMA}                   & 20,936                            & 61,809                           & 70,611                            \\
-		\textbf{ARIMAX}                   & 23,189                            & 67,575                           & 78,996                            \\
-		\textbf{SARIMAX}                  & 23,116                            & 67,400                           & 78,771                            \\
-		\textbf{Linear Regression}        & 1,757                             & 6,483                            & 7,860                             \\
-		\textbf{Random Forest Regressor}  & 26,788                            & 78,072                           & 82,748                            \\
-		\textbf{XGBRegressor}             & 26,595                            & 77,258                           & 82,341                            \\
-		\textbf{LGBMRegressor}            & 26,526                            & 77,054                           & 81,565                            \\ \hline
+		\textbf{Ljung Box} & \textbf{Estatística de Teste} & \textbf{Valor De p} \\ \midrule
+		\textbf{ARX}       & 3,205                         & 0,976               \\
+		\textbf{AR}        & 4,58                          & 0,917               \\
+		\textbf{MA}        & 2,658                         & 0,988               \\
+		\textbf{ARMA}      & 6,237                         & 0,795               \\
+		\textbf{ARIMA}     & 5,543                         & 0,852               \\
+		\textbf{SARIMA}    & 14,345                        & 0,158               \\
+		\textbf{ARIMAX}    & 0,194                         & 1                   \\
+		\textbf{SARIMAX}   & 0,465                         & 1                   \\ \bottomrule
 	\end{tabular}
 
 Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
@@ -54,339 +45,40 @@ Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
 
 \begin{table}[H]
 	\centering
-	\caption{Comparação dos modelos 1 dia a frente 18h a 21h \textbf{Teste} }\label{tb:1-18tst}
-	\begin{tabular}{@{}clll@{}}
+	\caption{Comparação dos modelos Ljung Box \textbf{Teste} }\label{tb:lbtst}
+	\begin{tabular}{@{}ccc@{}}
 		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-		\textbf{AR}                       & 11,195                            & 32,212                           & 48,102                            \\
-		\textbf{ARX}                      & 15,296                            & 45,707                           & 63,436                            \\
-		\textbf{MA}                       & 12,033                            & 34,540                           & 50,587                            \\
-		\textbf{ARMA}                     & 12,628                            & 36,781                           & 50,880                            \\
-		\textbf{ARIMA}                    & 12,926                            & 37,882                           & 52,050                            \\
-		\textbf{SARIMA}                   & 13,373                            & 39,083                           & 53,795                            \\
-		\textbf{ARIMAX}                   & 15,160                            & 45,312                           & 62,800                            \\
-		\textbf{SARIMAX}                  & 15,400                            & 46,090                           & 63,482                            \\
-		\textbf{Linear Regression}        & 2,154                             & 8,357                            & 10,150                            \\
-		\textbf{Random Forest Regressor}  & 23,965                            & 68,758                           & 77,284                            \\
-		\textbf{XGBRegressor}             & 23,879                            & 68,492                           & 76,883                            \\
-		\textbf{LGBMRegressor}            & 23,792                            & 68,188                           & 76,658                            \\ \hline
-		\end{tabular}
+		\textbf{Ljung Box} & \textbf{Estatística de Teste} & \textbf{Valor De p} \\ \midrule
+		\textbf{ARX}       & 1,826                         & 0,998               \\
+		\textbf{AR}        & 0,075                         & 0,434               \\
+		\textbf{MA}        & 22,404                        & 0,013               \\
+		\textbf{ARMA}      & 2,089                         & 0,996               \\
+		\textbf{ARIMA}     & 7,647                         & 0,663               \\
+		\textbf{SARIMA}    & 6,531                         & 0,769               \\
+		\textbf{ARIMAX}    & 0,568                         & 1                   \\
+		\textbf{SARIMAX}   & 0,8                           & 1                   \\ \bottomrule
+	\end{tabular}
 	
 	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
 \end{table}
 
 \begin{table}[H]
 	\centering
-	\caption{Comparação dos modelos 1 dia a frente 18h a 21h \textbf{Completo} }\label{tb:1-18cm}
-	\begin{tabular}{@{}clll@{}}
+	\caption{Comparação dos modelos Ljung Box \textbf{Completo} }\label{tb:lbcm}
+	\begin{tabular}{@{}ccc@{}}
 		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-		\textbf{AR}                       & 16,658                            & 47,309                           & 34,164                            \\
-		\textbf{ARX}                      & 20,338                            & 58,123                           & 51,521                            \\
-		\textbf{MA}                       & 19,107                            & 51,808                           & 64,992                            \\
-		\textbf{ARMA}                     & 18,038                            & 51,639                           & 61,784                            \\
-		\textbf{ARIMA}                    & 18,309                            & 52,384                           & 62,632                            \\
-		\textbf{SARIMA}                   & 18,275                            & 52,600                           & 62,961                            \\
-		\textbf{ARIMAX}                   & 20,676                            & 59,167                           & 73,091                            \\
-		\textbf{SARIMAX}                  & 20,838                            & 59,659                           & 73,661                            \\
-		\textbf{Linear Regression}        & 2,032                             & 7,216                            & 9,024                             \\
-		\textbf{Random Forest Regressor}  & 27,176                            & 76,950                           & 82,855                            \\
-		\textbf{XGBRegressor}             & 27,112                            & 76,841                           & 82,826                            \\
-		\textbf{LGBMRegressor}            & 26,852                            & 75,869                           & 81,539                            \\ \hline
-		\end{tabular}
+		\textbf{Ljung Box} & \textbf{Estatística de Teste} & \textbf{Valor De p} \\ \midrule
+		\textbf{ARX}       & 0,744                         & 1                   \\
+		\textbf{AR}        & 6,607                         & 0,762               \\
+		\textbf{MA}        & 71,338                        & 0                   \\
+		\textbf{ARMA}      & 24,353                        & 0,007               \\
+		\textbf{ARIMA}     & 24,353                        & 0,007               \\
+		\textbf{SARIMA}    & 24,353                        & 0,007               \\
+		\textbf{ARIMAX}    & 0,253                         & 1                   \\
+		\textbf{SARIMAX}   & 1,595                         & 0,999               \\ \bottomrule
+	\end{tabular}
+
 	
 	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
 \end{table}
 
-
-\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos 10 dia a frente 18h a 21h \textbf{Treino} }\label{tb:10-18trn}
-	\begin{tabular}{@{}clll@{}}
-		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-\textbf{AR}                       & 25,376                            & 68,590                           & 85,710                            \\
-\textbf{ARX}                      & 26,669                            & 72,758                           & 91,481                            \\
-\textbf{MA}                       & 25,963                            & 70,529                           & 86,693                            \\
-\textbf{ARMA}                     & 24,874                            & 67,787                           & 85,316                            \\
-\textbf{ARIMA}                    & 24,599                            & 67,134                           & 84,232                            \\
-\textbf{SARIMA}                   & 25,234                            & 68,929                           & 86,108                            \\
-\textbf{ARIMAX}                   & 26,832                            & 73,382                           & 92,444                            \\
-\textbf{SARIMAX}                  & 26,791                            & 73,283                           & 92,488                            \\
-\textbf{Linear Regression}        & 206,908                           & 796,115                          & 796,159                           \\
-\textbf{Random Forest Regressor}  & 47,612                            & 119,912                          & 137,968                           \\
-\textbf{XGBRegressor}             & 48,818                            & 123,724                          & 141,021                           \\
-\textbf{LGBMRegressor}            & 48,770                            & 123,395                          & 141,130                           \\ \bottomrule
-	\end{tabular}
-
-Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos 10 dia a frente 18h a 21h \textbf{Validação} }\label{tb:10-18vld}
-	\begin{tabular}{@{}clll@{}}
-		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-\textbf{AR}                       & 23,707                            & 70,498                           & 84,745                            \\
-\textbf{ARX}                      & 24,750                            & 74,451                           & 92,622                            \\
-\textbf{MA}                       & 24,122                            & 71,620                           & 85,420                            \\
-\textbf{ARMA}                     & 23,575                            & 70,691                           & 85,740                            \\
-\textbf{ARIMA}                    & 23,297                            & 69,709                           & 84,532                            \\
-\textbf{SARIMA}                   & 24,530                            & 73,142                           & 88,461                            \\
-\textbf{ARIMAX}                   & 24,768                            & 74,531                           & 92,683                            \\
-\textbf{SARIMAX}                  & 24,819                            & 74,665                           & 92,868                            \\
-\textbf{Linear Regression}        & 201,032                           & 795,493                          & 795,530                           \\
-\textbf{Random Forest Regressor}  & 42,014                            & 114,293                          & 131,036                           \\
-\textbf{XGBRegressor}             & 43,233                            & 117,975                          & 134,429                           \\
-\textbf{LGBMRegressor}            & 42,951                            & 117,018                          & 133,782                           \\ \bottomrule
-	\end{tabular}
-
-Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos 10 dia a frente 18h a 21h \textbf{Teste} }\label{tb:10-18tst}
-	\begin{tabular}{@{}clll@{}}
-		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-\textbf{AR}                       & 22,765                            & 66,728                           & 84,709                            \\
-\textbf{ARX}                      & 23,418                            & 68,643                           & 89,428                            \\
-\textbf{MA}                       & 22,857                            & 66,777                           & 84,970                            \\
-\textbf{ARMA}                     & 22,080                            & 65,164                           & 83,184                            \\
-\textbf{ARIMA}                    & 22,512                            & 66,553                           & 84,868                            \\
-\textbf{SARIMA}                   & 22,205                            & 65,470                           & 83,935                            \\
-\textbf{ARIMAX}                   & 23,474                            & 68,903                           & 89,621                            \\
-\textbf{SARIMAX}                  & 23,482                            & 69,011                           & 89,631                            \\
-\textbf{Linear Regression}        & 195,896                           & 793,383                          & 793,447                           \\
-\textbf{Random Forest Regressor}  & 38,396                            & 100,328                          & 123,933                           \\
-\textbf{XGBRegressor}             & 38,952                            & 102,044                          & 125,539                           \\
-\textbf{LGBMRegressor}            & 39,815                            & 104,496                          & 128,454                           \\ \bottomrule
-	\end{tabular}
-
-Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos 10 dia a frente 18h a 21h \textbf{Completo} }\label{tb:10-18cm}
-	\begin{tabular}{@{}clll@{}}
-		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-\textbf{AR}                       & 24,415                            & 68,438                           & 72,599                            \\
-\textbf{ARX}                      & 25,563                            & 72,087                           & 83,338                            \\
-\textbf{MA}                       & 21,942                            & 59,894                           & 73,313                            \\
-\textbf{ARMA}                     & 23,861                            & 67,321                           & 84,532                            \\
-\textbf{ARIMA}                    & 23,881                            & 67,524                           & 84,803                            \\
-\textbf{SARIMA}                   & 24,148                            & 68,491                           & 85,570                            \\
-\textbf{ARIMAX}                   & 25,689                            & 72,612                           & 92,039                            \\
-\textbf{SARIMAX}                  & 25,712                            & 72,729                           & 92,220                            \\
-\textbf{Linear Regression}        & 202,779                           & 795,207                          & 795,258                           \\
-\textbf{Random Forest Regressor}  & 44,062                            & 113,245                          & 132,930                           \\
-\textbf{XGBRegressor}             & 45,074                            & 116,409                          & 135,623                           \\
-\textbf{LGBMRegressor}            & 45,267                            & 116,827                          & 136,414                           \\ \bottomrule
-	\end{tabular}
-
-Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
-\end{table}
-
-
-	\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos 30 dia a frente 18h a 21h \textbf{Treino} }\label{tb:30-18trn}
-	\begin{tabular}{@{}clll@{}}
-		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-\textbf{AR}                       & 24,304                            & 66,355                           & 81,966                            \\
-\textbf{ARX}                      & 25,827                            & 70,680                           & 90,156                            \\
-\textbf{MA}                       & 25,659                            & 70,160                           & 85,349                            \\
-\textbf{ARMA}                     & 24,457                            & 67,112                           & 83,519                            \\
-\textbf{ARIMA}                    & 24,139                            & 66,367                           & 82,278                            \\
-\textbf{SARIMA}                   & 24,390                            & 67,238                           & 83,801                            \\
-\textbf{ARIMAX}                   & 25,932                            & 71,138                           & 91,003                            \\
-\textbf{SARIMAX}                  & 26,004                            & 71,372                           & 91,081                            \\
-\textbf{Linear Regression}        & 664,423                           & 2560,985                         & 2560,999                          \\
-\textbf{Random Forest Regressor}  & 47,630                            & 119,974                          & 138,000                           \\
-\textbf{XGBRegressor}             & 48,649                            & 123,241                          & 140,437                           \\
-\textbf{LGBMRegressor}            & 51,139                            & 130,359                          & 147,511                           \\ \bottomrule
-	\end{tabular}
-
-Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos 30 dia a frente 18h a 21h \textbf{Validação} }\label{tb:30-18vld}
-	\begin{tabular}{@{}clll@{}}
-		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-\textbf{AR}                       & 21,858                            & 64,533                           & 78,877                            \\
-\textbf{ARX}                      & 22,964                            & 68,903                           & 88,476                            \\
-\textbf{MA}                       & 22,777                            & 66,977                           & 80,969                            \\
-\textbf{ARMA}                     & 22,679                            & 67,400                           & 83,033                            \\
-\textbf{ARIMA}                    & 22,363                            & 66,384                           & 81,705                            \\
-\textbf{SARIMA}                   & 22,444                            & 66,710                           & 82,778                            \\
-\textbf{ARIMAX}                   & 22,950                            & 68,868                           & 88,481                            \\
-\textbf{SARIMAX}                  & 23,003                            & 69,056                           & 88,615                            \\
-\textbf{Linear Regression}        & 646,252                           & 2560,363                         & 2560,374                          \\
-\textbf{Random Forest Regressor}  & 42,024                            & 114,328                          & 131,050                           \\
-\textbf{XGBRegressor}             & 42,849                            & 116,924                          & 133,143                           \\
-\textbf{LGBMRegressor}            & 45,021                            & 123,327                          & 139,511                           \\ \bottomrule
-	\end{tabular}
-
-Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos 30 dia a frente 18h a 21h \textbf{Teste} }\label{tb:30-18tst}
-	\begin{tabular}{@{}clll@{}}
-		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-\textbf{AR}                       & 25,530                            & 74,528                           & 91,326                            \\
-\textbf{ARX}                      & 26,737                            & 78,549                           & 97,073                            \\
-\textbf{MA}                       & 25,662                            & 74,939                           & 92,055                            \\
-\textbf{ARMA}                     & 25,256                            & 74,048                           & 90,948                            \\
-\textbf{ARIMA}                    & 25,211                            & 74,378                           & 91,045                            \\
-\textbf{SARIMA}                   & 25,247                            & 74,166                           & 91,191                            \\
-\textbf{ARIMAX}                   & 26,878                            & 79,041                           & 97,484                            \\
-\textbf{SARIMAX}                  & 26,913                            & 79,209                           & 97,792                            \\
-\textbf{Linear Regression}        & 630,372                           & 2558,253                         & 2558,273                          \\
-\textbf{Random Forest Regressor}  & 38,445                            & 100,514                          & 124,019                           \\
-\textbf{XGBRegressor}             & 38,767                            & 101,593                          & 124,827                           \\
-\textbf{LGBMRegressor}            & 41,730                            & 110,022                          & 134,170                           \\ \bottomrule
-	\end{tabular}
-
-Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos 30 dia a frente 18h a 21h \textbf{Completo} }\label{tb:30-18tcm}
-	\begin{tabular}{@{}clll@{}}
-		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-\textbf{AR}                       & 24,361                            & 68,561                           & 71,350                            \\
-\textbf{ARX}                      & 26,038                            & 73,748                           & 86,035                            \\
-\textbf{MA}                       & 22,146                            & 60,650                           & 73,511                            \\
-\textbf{ARMA}                     & 24,572                            & 69,539                           & 86,127                            \\
-\textbf{ARIMA}                    & 24,278                            & 68,950                           & 85,297                            \\
-\textbf{SARIMA}                   & 24,441                            & 69,612                           & 86,381                            \\
-\textbf{ARIMAX}                   & 26,129                            & 74,187                           & 93,460                            \\
-\textbf{SARIMAX}                  & 26,229                            & 74,567                           & 93,823                            \\
-\textbf{Linear Regression}        & 651,656                           & 2560,077                         & 2560,093                          \\
-\textbf{Random Forest Regressor}  & 44,088                            & 113,340                          & 132,975                           \\
-\textbf{XGBRegressor}             & 44,870                            & 115,856                          & 134,907                           \\
-\textbf{LGBMRegressor}            & 47,458                            & 123,268                          & 142,512                           \\ \bottomrule
-	\end{tabular}
-
-Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
-\end{table}
-
-
-\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos 60 dia a frente 18h a 21h \textbf{Treino} }\label{tb:60-18trn}
-	\begin{tabular}{@{}clll@{}}
-		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-\textbf{AR}                       & 24,670                            & 64,926                           & 82,111                            \\
-\textbf{ARX}                      & 27,794                            & 73,793                           & 93,236                            \\
-\textbf{MA}                       & 23,005                            & 60,303                           & 77,314                            \\
-\textbf{ARMA}                     & 26,018                            & 68,763                           & 87,075                            \\
-\textbf{ARIMA}                    & 25,296                            & 66,856                           & 84,810                            \\
-\textbf{SARIMA}                   & 25,911                            & 68,767                           & 86,815                            \\
-\textbf{ARIMAX}                   & 28,146                            & 74,844                           & 94,453                            \\
-\textbf{SARIMAX}                  & 28,198                            & 75,034                           & 94,382                            \\
-\textbf{Linear Regression}        & 1350,696                          & 5208,290                         & 5208,297                          \\
-\textbf{Random Forest Regressor}  & 47,620                            & 119,947                          & 137,982                           \\
-\textbf{XGBRegressor}             & 48,637                            & 123,038                          & 140,601                           \\
-\textbf{LGBMRegressor}            & 53,938                            & 138,918                          & 154,695                           \\ \bottomrule
-	\end{tabular}
-
-Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos 60 dia a frente 18h a 21h \textbf{Validação} }\label{tb:60-18vld}
-	\begin{tabular}{@{}clll@{}}
-		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-\textbf{AR}                       & 21,619                            & 62,007                           & 77,049                            \\
-\textbf{ARX}                      & 22,934                            & 67,459                           & 86,905                            \\
-\textbf{MA}                       & 19,784                            & 56,745                           & 71,603                            \\
-\textbf{ARMA}                     & 23,028                            & 66,345                           & 83,094                            \\
-\textbf{ARIMA}                    & 22,687                            & 65,163                           & 81,769                            \\
-\textbf{SARIMA}                   & 23,108                            & 66,456                           & 83,752                            \\
-\textbf{ARIMAX}                   & 23,002                            & 67,557                           & 86,960                            \\
-\textbf{SARIMAX}                  & 22,946                            & 67,472                           & 86,912                            \\
-\textbf{Linear Regression}        & 1314,083                          & 5207,668                         & 5207,674                          \\
-\textbf{Random Forest Regressor}  & 41,997                            & 114,243                          & 130,981                           \\
-\textbf{XGBRegressor}             & 42,729                            & 116,452                          & 133,000                           \\
-\textbf{LGBMRegressor}            & 48,272                            & 133,481                          & 148,202                           \\ \bottomrule
-	\end{tabular}
-
-Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos 60 dia a frente 18h a 21h \textbf{Teste} }\label{tb:60-18tst}
-	\begin{tabular}{@{}clll@{}}
-		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-\textbf{AR}                       & 21,619                            & 62,007                           & 77,049                            \\
-\textbf{ARX}                      & 22,934                            & 67,459                           & 86,905                            \\
-\textbf{MA}                       & 19,784                            & 56,745                           & 71,603                            \\
-\textbf{ARMA}                     & 23,028                            & 66,345                           & 83,094                            \\
-\textbf{ARIMA}                    & 22,687                            & 65,163                           & 81,769                            \\
-\textbf{SARIMA}                   & 23,108                            & 66,456                           & 83,752                            \\
-\textbf{ARIMAX}                   & 23,002                            & 67,557                           & 86,960                            \\
-\textbf{SARIMAX}                  & 22,946                            & 67,472                           & 86,912                            \\
-\textbf{Linear Regression}        & 1314,083                          & 5207,668                         & 5207,674                          \\
-\textbf{Random Forest Regressor}  & 41,997                            & 114,243                          & 130,981                           \\
-\textbf{XGBRegressor}             & 42,729                            & 116,452                          & 133,000                           \\
-\textbf{LGBMRegressor}            & 48,272                            & 133,481                          & 148,202                           \\ \bottomrule
-	\end{tabular}
-
-Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos 60 dia a frente 18h a 21h \textbf{Completo} }\label{tb:60-18cm}
-	\begin{tabular}{@{}clll@{}}
-		\toprule
-		\multirow{2}{*}{\textbf{Modelos}} & \multicolumn{3}{c}{\textbf{Erros}}                                                                       \\ \cmidrule(l){2-4} 
-		& \multicolumn{1}{c}{\textbf{MAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RMSE}} \\ \hline
-\textbf{AR}                       & 22,624                            & 61,382                           & 61,540                            \\
-\textbf{ARX}                      & 26,052                            & 71,229                           & 82,238                            \\
-\textbf{MA}                       & 19,543                            & 52,370                           & 65,661                            \\
-\textbf{ARMA}                     & 23,935                            & 65,140                           & 83,751                            \\
-\textbf{ARIMA}                    & 23,682                            & 64,463                           & 83,052                            \\
-\textbf{SARIMA}                   & 24,222                            & 66,069                           & 84,823                            \\
-\textbf{ARIMAX}                   & 26,362                            & 72,210                           & 91,803                            \\
-\textbf{SARIMAX}                  & 26,476                            & 72,588                           & 92,089                            \\
-\textbf{Linear Regression}        & 1324,971                          & 5207,382                         & 5207,390                          \\
-\textbf{Random Forest Regressor}  & 44,076                            & 113,303                          & 132,957                           \\
-\textbf{XGBRegressor}             & 44,948                            & 115,926                          & 135,316                           \\
-\textbf{LGBMRegressor}            & 50,015                            & 131,172                          & 149,229                           \\ \bottomrule
-	\end{tabular}
-
-Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
-\end{table}
