@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  3 FEB 2023 19:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  6 FEB 2023 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1746,19 +1746,19 @@ l.126 \include{Introducao/sec-introducao}
 ])
 (Introducao/subsec-objetivos.tex [2]) (Introducao/subsec-metodologia.tex
 [3]
-<Introducao/Figuras/Etapas.png, id=540, 2581.645pt x 994.71625pt>
+<Introducao/Figuras/Etapas.png, id=540, 939.51pt x 406.51875pt>
 File: Introducao/Figuras/Etapas.png Graphic file (type png)
 <use Introducao/Figuras/Etapas.png>
 Package pdftex.def Info: Introducao/Figuras/Etapas.png  used on input line 24.
-(pdftex.def)             Requested size: 455.24411pt x 175.39844pt.
+(pdftex.def)             Requested size: 455.24411pt x 196.98146pt.
 ) (Introducao/subsec-justif.tex [4 <./Introducao/Figuras/Etapas.png>])
 (Introducao/subsec-estrutura.tex
-<Introducao/Figuras/Estrutura.png, id=557, 1874.00125pt x 2081.7775pt>
+<Introducao/Figuras/Estrutura.png, id=557, 791.95876pt x 781.92125pt>
 File: Introducao/Figuras/Estrutura.png Graphic file (type png)
 <use Introducao/Figuras/Estrutura.png>
 Package pdftex.def Info: Introducao/Figuras/Estrutura.png  used on input line 8
 .
-(pdftex.def)             Requested size: 318.66948pt x 353.9928pt.
+(pdftex.def)             Requested size: 318.66948pt x 314.63614pt.
 ) [5 <./Introducao/Figuras/Estrutura.png>])
 [6]
 \openout2 = `Revisao/sec-revisao.aux'.
@@ -1796,17 +1796,17 @@ File: Revisao/Figuras/serie.png Graphic file (type png)
 Package pdftex.def Info: Revisao/Figuras/serie.png  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 224.97302pt.
 ) [9 <./Revisao/Figuras/séries.png>] [10 <./Revisao/Figuras/serie.png>]
-<Revisao/Figuras/Série temporal.png, id=614, 879.285pt x 540.68666pt>
+<Revisao/Figuras/Série temporal.png, id=614, 1276.77pt x 555.07375pt>
 File: Revisao/Figuras/Série temporal.png Graphic file (type png)
 <use Revisao/Figuras/Série temporal.png>
 Package pdftex.def Info: Revisao/Figuras/Série temporal.png  used on input lin
 e 41.
-(pdftex.def)             Requested size: 455.24411pt x 279.9294pt.
-<Revisao/Figuras/RSL.png, id=616, 449.68pt x 556.0775pt>
+(pdftex.def)             Requested size: 455.24411pt x 197.91223pt.
+<Revisao/Figuras/RSL.png, id=616, 675.52374pt x 441.65pt>
 File: Revisao/Figuras/RSL.png Graphic file (type png)
 <use Revisao/Figuras/RSL.png>
 Package pdftex.def Info: Revisao/Figuras/RSL.png  used on input line 63.
-(pdftex.def)             Requested size: 227.62206pt x 281.48299pt.
+(pdftex.def)             Requested size: 227.62206pt x 148.81793pt.
  [11 <./Revisao/Figuras/Série temporal.png>] (Revisao/base.tex
 Overfull \hbox (3.45044pt too wide) in paragraph at lines 4--5
 \T1/cmr/bx/it/12 LIMIT-TO ( LAN-GUAGE , ``En-glish") ) AND ( LIMIT-TO ( PUBYEAR
@@ -1823,25 +1823,25 @@ Overfull \hbox (11.64415pt too wide) in paragraph at lines 4--5
 \T1/cmr/bx/it/12 , 2020 ) OR LIMIT-TO ( PUBYEAR , 2019 ) OR LIMIT-TO ( PUBYEAR
  []
 
-[12 <./Revisao/Figuras/RSL.png>])
+)
 Underfull \hbox (badness 10000) in paragraph at lines 12--71
 
  []
 
-[13] (Revisao/base-dados.tex
-<Revisao/Figuras/scopus 09-08.png, id=651, 1903.11pt x 1206.5075pt>
+[12 <./Revisao/Figuras/RSL.png>] (Revisao/base-dados.tex
+<Revisao/Figuras/scopus 09-08.png, id=644, 1903.11pt x 1206.5075pt>
 File: Revisao/Figuras/scopus 09-08.png Graphic file (type png)
 <use Revisao/Figuras/scopus 09-08.png>
 Package pdftex.def Info: Revisao/Figuras/scopus 09-08.png  used on input line 5
 .
 (pdftex.def)             Requested size: 455.24411pt x 288.61041pt.
-) (Revisao/web.tex
+) [13] (Revisao/web.tex
 <Revisao/Figuras/web 09-08.png, id=653, 1903.11pt x 1206.5075pt>
 File: Revisao/Figuras/web 09-08.png Graphic file (type png)
 <use Revisao/Figuras/web 09-08.png>
 Package pdftex.def Info: Revisao/Figuras/web 09-08.png  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 288.61041pt.
- [14 <./Revisao/Figuras/scopus 09-08.png>]) (Revisao/cruzamento.tex
+) [14 <./Revisao/Figuras/scopus 09-08.png>] (Revisao/cruzamento.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--8
 []|\T1/cmr/m/n/12 nonlinear
  []
@@ -2000,23 +2000,23 @@ Package pdftex.def Info: Modelos/Figuras/1-regressão-rfa.png  used on input li
 ne 311.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
  [35 <./Modelos/Figuras/1-regressão-linear.png>]
-<Modelos/Figuras/RF.png, id=973, 1859.94875pt x 709.65125pt>
+<Modelos/Figuras/RF.png, id=973, 1859.94875pt x 706.64pt>
 File: Modelos/Figuras/RF.png Graphic file (type png)
 <use Modelos/Figuras/RF.png>
 Package pdftex.def Info: Modelos/Figuras/RF.png  used on input line 322.
-(pdftex.def)             Requested size: 455.24411pt x 173.68741pt.
+(pdftex.def)             Requested size: 455.24411pt x 172.9504pt.
  [36 <./Modelos/Figuras/1-regressão-rfa.png> <./Modelos/Figuras/RF.png>]
-<Modelos/Figuras/xgboos.png, id=982, 974.64125pt x 474.77374pt>
+<Modelos/Figuras/xgboos.png, id=982, 960.58875pt x 464.73625pt>
 File: Modelos/Figuras/xgboos.png Graphic file (type png)
 <use Modelos/Figuras/xgboos.png>
 Package pdftex.def Info: Modelos/Figuras/xgboos.png  used on input line 342.
-(pdftex.def)             Requested size: 455.24411pt x 221.76pt.
+(pdftex.def)             Requested size: 455.24411pt x 220.24852pt.
  [37 <./Modelos/Figuras/xgboos.png>] [38] [39]
-<Modelos/Figuras/xgboost.png, id=1004, 1168.365pt x 899.36pt>
+<Modelos/Figuras/xgboost.png, id=1004, 1281.78876pt x 894.34125pt>
 File: Modelos/Figuras/xgboost.png Graphic file (type png)
 <use Modelos/Figuras/xgboost.png>
 Package pdftex.def Info: Modelos/Figuras/xgboost.png  used on input line 403.
-(pdftex.def)             Requested size: 455.24411pt x 350.43335pt.
+(pdftex.def)             Requested size: 455.24411pt x 317.63666pt.
 )
 [40 <./Modelos/Figuras/xgboost.png>]
 \openout2 = `Resultados/sec-resultados.aux'.
@@ -2315,7 +2315,7 @@ Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/msndo/AppData
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
 rs/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 >
-Output written on DocPrincipal.pdf (91 pages, 23288386 bytes).
+Output written on DocPrincipal.pdf (91 pages, 23032419 bytes).
 PDF statistics:
  1943 PDF objects out of 2073 (max. 8388607)
  310 named destinations out of 1000 (max. 500000)
