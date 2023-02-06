@@ -80,7 +80,7 @@ Nessa \ref{etp:2} o modelos que mais foi abordado no decorrer da dissertação �
  	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
  \end{figure}
  
- Na  \ref{q5}\ref{q5:b} pode ser respondida pela Figuras \ref{fig:stl-aditiva} e \ref{stl} como é observado tem tenência, sazonalidade e resido.
+ Na  \ref{q5}\ref{q5:b} pode ser respondida pela Figuras \ref{fig:stl-aditiva} e \ref{fig:stl} como é observado tem tenência, sazonalidade e resido.
  
 Na decomposição o objetivo dela é analisar se há tenência, sazonalidade e resido, olhando nas Figuras \ref{fig:stl} e \ref{fig:stl-aditiva}, isso mostra que os dados tem ambas das analise. E com isso perceber que a série é estacionaria, pelo teste a seguir.
 
@@ -114,7 +114,7 @@ Então como dito na seção \ref{subsubsec:motivacao} as anomalias de tempo mais
 
 Na \ref{q5}\ref{q5:d} nos horários de picos deve conter no tanque por volta de $[3.545,4.256] m^3$ para que não acione as bombas.
 
-Para \ref{q5}\ref{q5:e} é mostrado na Figura \ref{fig:ft03} como pode ser afetado a vazão com o nível do tanque. A vazão de recalque influência mais no nível do tanque que as outras vazão pois injeta água no tanque por meio da bomba de recalque, que fica mais próximo da base do tanque, e as outras vazão por ter alguns valores ausente, não interfere tanto na amostra.
+
 
 \begin{figure}[H]
 	\centering
@@ -125,6 +125,7 @@ Para \ref{q5}\ref{q5:e} é mostrado na Figura \ref{fig:ft03} como pode ser afeta
 	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
 \end{figure}
 
+Para \ref{q5}\ref{q5:e} é mostrado na Figura \ref{fig:ft03} como pode ser afetado a vazão com o nível do tanque. A vazão de recalque influência mais no nível do tanque que as outras vazão pois injeta água no tanque por meio da bomba de recalque, que fica mais próximo da base do tanque, e as outras vazão por ter alguns valores ausente, não interfere tanto na amostra.
 
 \end{itemize}
 
@@ -135,7 +136,7 @@ Segundo  \citeonline{Reisen2017115} o teste de DF tem como formula a seguinte eq
 \hat{\rho}_{\mathrm{DF}}-1&=&\frac{\sum_{t=1}^T z_{t-1} \Delta z_t}{\sum_{t=1}^T z_{t-1}^2} \label{eq:regdf}
 \end{eqnarray}
 
-De \eqref{eq:regdf} onde $\Delta z_t=z_t-z_{t-1}$. Sob a hipótese nula $\left(H_0\right)$ : `` $\rho=1$ ", as estatísticas do teste DF e suas distribuições limitantes são dadas da seguinte forma:
+De \eqref{eq:regdf} onde $\Delta z_t=z_t-z_{t-1}$. Sob a hipótese nula $\left(H_0\right)$ : `` $\rho=1$'', as estatísticas do teste DF e suas distribuições limitantes são dadas da seguinte forma:
 
 
 \begin{eqnarray}
@@ -171,12 +172,12 @@ Esse teste na literatura é chamado de teste ACF para testar se a série é o n�
 	\centering
 		\caption{Autocorrelação e Autocorrelação parcial}
 	\label{fig:acf}
-	\includegraphics[width=0.8\linewidth]{Resultados/Figuras/acf} 
+	\includegraphics[width=1.1\linewidth]{Resultados/Figuras/acf} 
 	
 \end{figure}	
 \begin{figure}[H]
 	\centering
-		\includegraphics[width=0.8\linewidth]{Resultados/Figuras/pacf}
+		\includegraphics[width=1.1\linewidth]{Resultados/Figuras/pacf}
 
 	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
 \end{figure}
@@ -275,7 +276,7 @@ Para calcular a estatística de teste $F_r$ de Friedman cria-se inicialmente uma
  \begin{figure}[H]
  	\centering
  	\caption{Comparação de modelos ARIMAS}
- 	\includegraphics[width=1\linewidth]{Resultados/Figuras/modelos-arima}
+ 	\includegraphics[width=0.9\linewidth]{Resultados/Figuras/modelos-arima}
  	
  	\label{fig:modelos-arima}
  	
@@ -286,7 +287,7 @@ Para calcular a estatística de teste $F_r$ de Friedman cria-se inicialmente uma
  \begin{figure}[H]
  	\centering
  	\caption{Comparação de modelos de regressão }
- 	\includegraphics[width=1\linewidth]{Resultados/Figuras/violin-LR-XGB-LGBM-RF}
+ 	\includegraphics[width=0.9\linewidth]{Resultados/Figuras/violin-LR-XGB-LGBM-RF}
  	
  	\label{fig:violin-lr-xgb-lgbm-rf}
  	
