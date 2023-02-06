@@ -19,40 +19,40 @@
 \contentsline {figure}{\numberline {16}{\ignorespaces Modelo AR(7) }}{26}{figure.16}%
 \contentsline {figure}{\numberline {17}{\ignorespaces ARX (7) }}{26}{figure.17}%
 \contentsline {figure}{\numberline {18}{\ignorespaces Modelo MA(7) }}{28}{figure.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces ARMA (7,7) }}{29}{figure.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces ARIMA (7,1,7) }}{30}{figure.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces SARIMA $(7,1,7) (2,1,1)_{12}$}}{31}{figure.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces ARIMAX $(7,1,7)$ }}{32}{figure.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces SARIMAX $(7,1,7) (2,1,1)_{12}$ }}{32}{figure.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Corelação de Pearson }}{33}{figure.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Regressão linear LT01 vs PT01 correlação 98\%}}{34}{figure.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Regressão linear (LR) um passo a frente}}{35}{figure.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Regressão da Floresta Aleatória (RFA) um passo a frente}}{36}{figure.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Esquema da Floresta Aleatória}}{36}{figure.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Impulsionando gradiente com XGBoost e LightGBM}}{37}{figure.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Crescimento em folha versus crescimento em nível}}{40}{figure.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Solução para acionamento das bombas}}{43}{figure.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Decomposição STL aditiva dos dados coletados}}{44}{figure.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Decomposição STL multiplicativa dos dados coletados}}{45}{figure.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Violino do nível do reservatório}}{46}{figure.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Violino da vazão de recalque}}{47}{figure.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Autocorrelação e Autocorrelação parcial}}{48}{figure.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Ruído branco}}{49}{figure.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Comparação de modelos ARIMAS}}{52}{figure.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Comparação de modelos de regressão }}{53}{figure.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Comparação dos modelos AR, ARX e MA, 1 dia a frente }}{70}{figure.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Comparação dos modelos AR, ARX e MA, 7 dias a frente }}{70}{figure.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Comparação dos modelos AR, ARX e MA, 14 dias a frente }}{71}{figure.42}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Comparação dos modelos AR, ARX e MA, 30 dias a frente }}{71}{figure.43}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 1 dia a frente }}{72}{figure.44}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 7 dias a frente }}{72}{figure.45}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 14 dias a frente }}{73}{figure.46}%
-\contentsline {figure}{\numberline {47}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 30 dias a frente }}{73}{figure.47}%
-\contentsline {figure}{\numberline {48}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 1 dia a frente }}{74}{figure.48}%
-\contentsline {figure}{\numberline {49}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 7 dias a frente }}{74}{figure.49}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 14 dias a frente }}{75}{figure.50}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 30 dias a frente }}{75}{figure.51}%
-\contentsline {figure}{\numberline {52}{\ignorespaces Comparação dos modelos Regressão linear, XGB Regressão, Ligth GBM Regressão e Regressão de Floresta Aleatória, 1 dia a frente }}{76}{figure.52}%
-\contentsline {figure}{\numberline {53}{\ignorespaces Comparação dos modelos Regressão linear, XGB Regressão, Ligth GBM Regressão e Regressão de Floresta Aleatória, 7 dias a frente }}{76}{figure.53}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Comparação dos modelos Regressão linear, XGB Regressão, Ligth GBM Regressão e Regressão de Floresta Aleatória, 14 dias a frente }}{77}{figure.54}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Comparação dos modelos Regressão linear, XGB Regressão, Ligth GBM Regressão e Regressão de Floresta Aleatória, 30 dias a frente }}{77}{figure.55}%
+\contentsline {figure}{\numberline {19}{\ignorespaces ARMA (7,7) }}{28}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces ARIMA (7,1,7) }}{29}{figure.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces SARIMA $(7,1,7) (2,1,1)_{12}$}}{30}{figure.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces ARIMAX $(7,1,7)$ }}{30}{figure.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces SARIMAX $(7,1,7) (2,1,1)_{12}$ }}{31}{figure.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Corelação de Pearson }}{32}{figure.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Regressão linear LT01 vs PT01 correlação 98\%}}{33}{figure.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Regressão linear (LR) um passo a frente}}{33}{figure.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Regressão da Floresta Aleatória (RFA) um passo a frente}}{34}{figure.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Esquema da Floresta Aleatória}}{34}{figure.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Impulsionando gradiente com XGBoost e LightGBM}}{35}{figure.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Crescimento em folha versus crescimento em nível}}{38}{figure.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Solução para acionamento das bombas}}{41}{figure.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Decomposição STL aditiva dos dados coletados}}{42}{figure.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Decomposição STL multiplicativa dos dados coletados}}{43}{figure.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Violino do nível do reservatório}}{44}{figure.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Violino da vazão de recalque}}{45}{figure.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Autocorrelação e Autocorrelação parcial}}{46}{figure.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Ruído branco}}{47}{figure.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Comparação de modelos ARIMAS}}{50}{figure.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Comparação de modelos de regressão }}{51}{figure.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Comparação dos modelos AR, ARX e MA, 1 dia a frente }}{68}{figure.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Comparação dos modelos AR, ARX e MA, 7 dias a frente }}{68}{figure.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Comparação dos modelos AR, ARX e MA, 14 dias a frente }}{69}{figure.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Comparação dos modelos AR, ARX e MA, 30 dias a frente }}{69}{figure.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 1 dia a frente }}{70}{figure.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 7 dias a frente }}{70}{figure.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 14 dias a frente }}{71}{figure.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 30 dias a frente }}{71}{figure.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 1 dia a frente }}{72}{figure.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 7 dias a frente }}{72}{figure.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 14 dias a frente }}{73}{figure.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 30 dias a frente }}{73}{figure.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Comparação dos modelos Regressão linear, XGB Regressão, Ligth GBM Regressão e Regressão de Floresta Aleatória, 1 dia a frente }}{74}{figure.52}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Comparação dos modelos Regressão linear, XGB Regressão, Ligth GBM Regressão e Regressão de Floresta Aleatória, 7 dias a frente }}{74}{figure.53}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Comparação dos modelos Regressão linear, XGB Regressão, Ligth GBM Regressão e Regressão de Floresta Aleatória, 14 dias a frente }}{75}{figure.54}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Comparação dos modelos Regressão linear, XGB Regressão, Ligth GBM Regressão e Regressão de Floresta Aleatória, 30 dias a frente }}{75}{figure.55}%
