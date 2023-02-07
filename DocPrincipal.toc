@@ -27,10 +27,10 @@
 \contentsline {subsubsection}{\numberline {3.2.4}MODELOS SARIMA, ARIMAX, SARIMAX}{29}{subsubsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.3}Modelos Regressivo}{31}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Regress\~ao Linear (LR)}{31}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Floresta Aleat\'oria}{35}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}LightGBM e XGboost}{36}{subsubsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.4}O Gradiente em Gradiente de Boosting (Refor\c co)}{37}{subsubsection.3.3.4}%
-\contentsline {subsubsection}{\numberline {3.3.5}Algoritmos de boosting de gradiente}{38}{subsubsection.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.2}Floresta Aleat\'oria}{34}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}LightGBM e XGboost}{35}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}O Gradiente em Gradiente de Boosting (Refor\c co)}{36}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.5}Algoritmos de boosting de gradiente}{37}{subsubsection.3.3.5}%
 \contentsline {subsubsection}{\numberline {3.3.6}A diferen\c ca entre XGBoost e LightGBM}{38}{subsubsection.3.3.6}%
 \contentsline {section}{\numberline {4}Resultados}{41}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Planejamento do Problema}{41}{subsection.4.1}%
@@ -51,4 +51,4 @@
 \contentsline {section}{\numberline {C}Ap\^endice - Modelos AR(7), ARX (7) e MA (7) 24h }{71}{appendix.C}%
 \contentsline {section}{\numberline {D}Ap\^endice - Modelos ARMA(7,7) e ARIMA (7,1,7) 24h}{73}{appendix.D}%
 \contentsline {section}{\numberline {E}Ap\^endice - Modelos ARIMAX (7,1,7), SARIMA (7,1,7) (2,1,0,12) e SARIMAX (7,1,7) (2,1,0,12) 24h}{75}{appendix.E}%
-\contentsline {section}{\numberline {F}Ap\^endice - Modelos Regress\~ao linear, XGB Regress\~ao, Ligth GBM Regress\~ao e Regress\~ao de Floresta Aleat\'oria 24h}{77}{appendix.F}%
+\contentsline {section}{\numberline {F}Ap\^endice - Modelos LR, XGBRegressor, LGBMRegressor e RFR 24h}{77}{appendix.F}%
