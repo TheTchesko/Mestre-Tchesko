@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  27 FEB 2023 10:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  8 MAR 2023 12:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2346,20 +2346,14 @@ pa.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-Package rerunfilecheck Warning: File `DocPrincipal.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `DocPrincipal.out':
-(rerunfilecheck)             Before: DBBC41AC17C815188C7068218A39104A;4457
-(rerunfilecheck)             After:  6997E782C8A51898B2465C081312A42C;4403.
+Package rerunfilecheck Info: File `DocPrincipal.out' has not changed.
+(rerunfilecheck)             Checksum: 6997E782C8A51898B2465C081312A42C;4403.
  ) 
 Here is how much of TeX's memory you used:
- 28235 strings out of 476406
- 562140 string characters out of 2789567
+ 28234 strings out of 476406
+ 562125 string characters out of 2789567
  1870787 words of memory out of 3000000
- 47450 multiletter control sequences out of 15000+600000
+ 47449 multiletter control sequences out of 15000+600000
  528820 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,12n,85p,1278b,621s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -2387,7 +2381,7 @@ Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/msndo/AppData
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
 rs/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 >
-Output written on DocPrincipal.pdf (94 pages, 7727004 bytes).
+Output written on DocPrincipal.pdf (94 pages, 7726995 bytes).
 PDF statistics:
  3670 PDF objects out of 4296 (max. 8388607)
  312 named destinations out of 1000 (max. 500000)
