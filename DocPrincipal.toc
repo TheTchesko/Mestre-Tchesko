@@ -24,7 +24,7 @@
 \contentsline {subsubsection}{\numberline {3.2.1}Componente auto-regressivo -- AR(p)}{24}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}M\'edia M\'ovel -- MA(q)}{26}{subsubsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.3}Modelos ARMA e ARIMA}{27}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}MODELOS SARIMA, ARIMAX, SARIMAX}{29}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.4}Modelos SARIMA, ARIMAX e SARIMAX}{29}{subsubsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.3}Modelos Regressivo}{31}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Regress\~ao Linear (LR)}{31}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Floresta Aleat\'oria}{34}{subsubsection.3.3.2}%
@@ -51,4 +51,3 @@
 \contentsline {section}{\numberline {C}Ap\^endice - Modelos AR(7), ARX (7) e MA (7) 24h }{71}{appendix.C}%
 \contentsline {section}{\numberline {D}Ap\^endice - Modelos ARMA(7,7) e ARIMA (7,1,7) 24h}{73}{appendix.D}%
 \contentsline {section}{\numberline {E}Ap\^endice - Modelos ARIMAX (7,1,7), SARIMA (7,1,7) (2,1,0,12) e SARIMAX (7,1,7) (2,1,0,12) 24h}{75}{appendix.E}%
-\contentsline {section}{\numberline {F}Ap\^endice - Modelos LR, XGBRegressor, LGBMRegressor e RFR 24h}{77}{appendix.F}%

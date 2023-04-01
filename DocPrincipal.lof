@@ -53,7 +53,3 @@
 \contentsline {figure}{\numberline {50}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 7 dias a frente }}{75}{figure.50}%
 \contentsline {figure}{\numberline {51}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 14 dias a frente }}{76}{figure.51}%
 \contentsline {figure}{\numberline {52}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 30 dias a frente }}{76}{figure.52}%
-\contentsline {figure}{\numberline {53}{\ignorespaces Comparação dos modelos LR, XGBRegressor, LGBMRegressor e RFR, 1 dia a frente }}{77}{figure.53}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Comparação dos modelos LR, XGBRegressor, LGBMRegressor e RFR, 7 dias a frente }}{77}{figure.54}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Comparação dos modelos LR, XGBRegressor, LGBMRegressor e RFR, 14 dias a frente }}{78}{figure.55}%
-\contentsline {figure}{\numberline {56}{\ignorespaces Comparação dos modelos LR, XGBRegressor, LGBMRegressor e RFR, 30 dias a frente }}{78}{figure.56}%

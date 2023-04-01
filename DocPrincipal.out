@@ -24,7 +24,7 @@
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Componente auto-regressivo \205 AR\(p\)}{subsection.3.2}% 24
 \BOOKMARK [3][-]{subsubsection.3.2.2}{M\351dia M\363vel \205 MA\(q\)}{subsection.3.2}% 25
 \BOOKMARK [3][-]{subsubsection.3.2.3}{Modelos ARMA e ARIMA}{subsection.3.2}% 26
-\BOOKMARK [3][-]{subsubsection.3.2.4}{MODELOS SARIMA, ARIMAX, SARIMAX}{subsection.3.2}% 27
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Modelos SARIMA, ARIMAX e SARIMAX}{subsection.3.2}% 27
 \BOOKMARK [2][-]{subsection.3.3}{Modelos Regressivo}{section.3}% 28
 \BOOKMARK [3][-]{subsubsection.3.3.1}{Regress\343o Linear \(LR\)}{subsection.3.3}% 29
 \BOOKMARK [3][-]{subsubsection.3.3.2}{Floresta Aleat\363ria}{subsection.3.3}% 30
@@ -51,4 +51,3 @@
 \BOOKMARK [1][-]{appendix.C}{Ap\352ndice - Modelos AR\(7\), ARX \(7\) e MA \(7\) 24h }{}% 51
 \BOOKMARK [1][-]{appendix.D}{Ap\352ndice - Modelos ARMA\(7,7\) e ARIMA \(7,1,7\) 24h}{}% 52
 \BOOKMARK [1][-]{appendix.E}{Ap\352ndice - Modelos ARIMAX \(7,1,7\), SARIMA \(7,1,7\) \(2,1,0,12\) e SARIMAX \(7,1,7\) \(2,1,0,12\) 24h}{}% 53
-\BOOKMARK [1][-]{appendix.F}{Ap\352ndice - Modelos LR, XGBRegressor, LGBMRegressor e RFR 24h}{}% 54
