@@ -15,8 +15,8 @@
 \contentsline {subsection}{\numberline {2.1}Descri\c c\~ao do problema}{7}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Revis\~ao sistem\'atica da literatura}{9}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Problematiza\c c\~ao da Revis\~ao}{11}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Metodologia}{11}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Resultados da busca da revis\~ao}{13}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.4}Metodologia}{12}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Resultados da busca de revis\~ao}{14}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Conclus\~ao da revis\~ao}{23}{subsection.2.6}%
 \contentsline {section}{\numberline {3}Base Te\'orica}{24}{section.3}%
 \contentsline {subsection}{\numberline {3.1}M\'etricas de Erros}{24}{subsection.3.1}%
