@@ -1,15 +1,22 @@
 \subsection{Procedimentos metodol{\'o}gicos} \label{subsec:metod}
 
-Nessa parte vai ser abordado como será conduzido a dissertação, cada etapa que foi realizado no decorrer das analises feitas.
+Esta parte trata de como a dissertação será realizada em cada etapa da análise.
    
     \subsubsection{Etapas da pesquisa}\label{subsubsec:etp}
-    A pesquisa se deu seguindo as seguintes etapas:
-    
+    A pesquisa seguiu as seguintes etapas:
+    \begin{figure}[H]
+    	\centering
+    	\caption{Mapa das Etapas}
+    	\label{fig:etapas}
+    	\includegraphics[width=0.7\linewidth]{Introducao/Figuras/Etapas}
+    	
+    	Fonte: Elaboração própria
+    \end{figure}
     \begin{enumerate}[start=1, label = {\textbf{Etapa} \arabic* } ]
     	\item Análise exploratória dos dados – EDA ( do inglês \textit{Exploratory Data Analysis}) \label{etp:1}
     	\item O que vai ser usado como variáveis previsoras e qual será a variável a ser predita (MISO) \label{etp:2}
     	\item Fazer a decomposição STL (do inglês \textit{Seasonal-Trend Decomposition}) Sazonalidade, Tendência e Resíduo \label{etp:3}
-    	\item Divisão do conjunto de dados em treinamento, validação e teste 70\% para treinamento e validação e 30\% para teste, disso tirando dos 70\% e dividindo em 80\% para treinamento e 20\% para validação. Verificar a média e desvio padrão de cada um destes conjuntos de forma que obtenha a divisão mais adequada dos dados. \label{etp:4}
+    	\item Verifique a média e o desvio padrão de cada um desses conjuntos para obter a divisão mais apropriada dos dados. Dividir o conjunto de dados em treinamento, validação e teste. 70\% para treinamento e validação e 30\% para testes a partir daí, dos 70\% divididos em 80\% para treinamento e 20\% para validação.\label{etp:4}
     	\item Estratégia de previsão (recursiva e iterada-método direto) \label{etp:5}
     	\item Horizonte de previsão (1 passo ou n passos a frente) \label{etp:6}
     	\item Modelos de previsão e métricas de desempenho \label{etp:7}
@@ -17,14 +24,7 @@ Nessa parte vai ser abordado como será conduzido a dissertação, cada etapa qu
     	\item Aplicar os modelos de previsão e fazer comparativo baseado em testes de significância estatística (\textit{Friedman e Nemenjy}) \label{etp:9}
     \end{enumerate}
 
-\begin{figure}[H]
-	\centering
-	\caption{Mapa das Etapas}
-	\label{fig:etapas}
-	\includegraphics[width=0.7\linewidth]{Introducao/Figuras/Etapas}
-	
-	Fonte: Elaboração própria
-\end{figure}
+
 
 
 
