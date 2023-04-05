@@ -1,22 +1,25 @@
 \section{Resultados} \label{sec:result}
-Neste capítulo é mostrado um breve resultado do que foi realizado até o presente momento.
+
+Neste capítulo é mostrado um breve resultado do que foi realizado até agora.
+
 
 \subsection{Planejamento do Problema} \label{subsec:planexp}
 
-Assim como foi mostrado na seção \ref{subsubsec:etp} as etapas da dissertação, com isso cada modelo e os métodos que pode ser utilizado para responder as Questões de pesquisas abordado na seção \ref{subsubsec:obespec}. Com as etapas podemos dar uma cronologia logica do que foi adquirido ao longo do tempo com os dados da SANEPAR.
+Assim como foi mostrado na seção \ref{subsubsec:etp} os passos da dissertação com que cada modelo e os métodos que podem ser usados para responder às perguntas de pesquisa abordadas na seção \ref{subsubsec:obespec}. Com os passos podem dar uma cronologia lógica do que foi adquirido ao longo do tempo com os dados SANEPAR.
+
 
 \subsubsection{An\'alise Explorat\'oria dos dados (EDA)}
 
-Da \ref{etp:1} é realizado o EDA para os processamento de dados que obteve até aqui, com o EDA vai ser respondido. Segundo \citeonline{Yu2016} Na era do big data, coletamos volumes de dados de massa caóticos, não estruturados e multimídia por meio de vários canais. Como descobrir as regras, os modelos analíticos e as hipóteses nesses dados tornou-se o novo desafio. A análise exploratória de dados foi promovida por John Tukey para incentivar os estatísticos a explorar os dados e, possivelmente, formular hipóteses que poderiam levar a uma nova coleta de dados e experimentos. Diferente da análise inicial de dados, a análise exploratória de dados (EDA) é uma abordagem para analisar conjuntos de dados para resumir suas principais características, muitas vezes com métodos visuais. Muitas técnicas de EDA foram adotadas na análise de big data.
+A partir de \ref{etp:1} é realizado o EDA para o processamento de dados obtidos até agora, com EDA será respondido. De acordo com a \citeonline{Yu2016} Na era dos grandes dados, coletamos volumes de dados em massa caóticos, não estruturados e multimídia através de vários canais. Como descobrir as regras, modelos analíticos e hipóteses destes dados se tornou o novo desafio. A análise exploratória de dados foi promovida por John Tukey para encorajar os estatísticos a explorar os dados e possivelmente formular hipóteses que poderiam levar a uma maior coleta de dados e experimentos. Em contraste com a análise inicial de dados, a análise exploratória de dados (EDA) é uma abordagem para analisar conjuntos de dados para resumir suas principais características, muitas vezes com métodos visuais. Muitas técnicas de EDA têm sido adotadas em grandes análises de dados.
 
+Olhando o \ref{q1} relacionando a demanda com a variável prevista e a pressão para a variável PT01 na Figura \ref{fig:person} pode-se ver que ambas estão trabalhando igualmente, quase uma correlação perfeita de $r=1$, então para esta pergunta basta olhar para a correlação Pearson na Figura \ref{fig:person}. 
 
-Olhando para \ref{q1} relacionando a demanda com a variável que esta sendo prevista, e a pressão com a variável PT01 da Figura \ref{fig:person} pode se notar que ambas estão trabalhando por igual, quase uma correlação perfeita de $r=1$ então para essa questão basta olhar a correlação de Pearson na Figura \ref{fig:person}. 
+Para \ref{q2} uma tabela é feita para responder melhor a esta pergunta
 
-Para \ref{q2} vai ser feito uma tabela para que seja respondido melhor essa questão
 
 \begin{table}[H]
 	\centering
-	\caption{Descrição Estatística dos dados com filtro aplicado de 18 a 21h}\label{tb:est}
+	\caption{Descrição estatística dos dados com o filtro aplicado das 18h às 21h}\label{tb:est}
 	\begin{tabular}{@{}cccccccccc@{}}
 		\toprule
 		\textbf{18 a 21h}  & \textbf{B1} & \textbf{B2} & \textbf{B3} & \textbf{LT01} & \textbf{FT01} & \textbf{FT02} & \textbf{FT03} & \textbf{PT01} & \textbf{PT02} \\ \midrule
@@ -33,29 +36,29 @@ Para \ref{q2} vai ser feito uma tabela para que seja respondido melhor essa ques
 	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
 \end{table}
 
-Na Tabela \ref{tb:est} o desvio padrão é dado pela sigla de STD que vem do inglês \textit{standard deviation}, observando também para responder a \ref{q2}, assim como toda companhia de tratamento de água é feito um acionamento automático, chamando de trava de segurança, para que o tanque não chegue a zerar e faltar água em todos os lugares adjacente que é abastecido por essa água, esse mínimo que o tanque pode chegar é de $1,459 m^3\Longleftrightarrow 1459 $ litros e as bombas serão acionadas em sua potencia máxima, para evitar o acionamento das bombas o nível do reservatório tem que estar no intervalo de $[3.843,4.256]\ m^3$ ainda sim, a bomba 1 estaria em funcionamento para completar o nível. Em casos de horários de picos o mais ideal, mas não o mais lucrativo é outro tanque de reserva nesses horários, e instalar uma tubulação para ligar um ao outro. Durante o dia estaria abastecendo os dois e a noite pela gravidade eles ficariam com o mesmo nível até o consumo chegar em um nível de acionamento das bombas.  
+Na tabela \ref{tb:est} o desvio padrão é dado pela sigla STD que vem do inglês \textit{standard deviation} também observando para responder ao \ref{q2} assim como toda empresa de tratamento de água é feito um acionamento automático chamado trava de segurança para que o tanque não chegue a zero e falte água em todos os lugares adjacentes que é abastecida por esta água, este mínimo que o tanque pode alcançar é $1.459 m^3\Longleftrightarrow 1459 $ litros e as bombas serão ativadas em sua potência máxima para evitar a ativação das bombas o nível do tanque tem que estar na faixa de $[3.843,4.256]\ m^3$ bomba 1 ainda estaria funcionando para completar o nível. Em casos de pico, o mais ideal, mas não o mais rentável, é outro tanque de reserva nesses momentos e instalar uma tubulação para conectar uma à outra. Durante o dia, ambos estariam abastecendo e à noite, por gravidade, ficariam com o mesmo nível até que o consumo atingisse um nível para acionar as bombas.  
+
+
 
 \begin{figure}[H]
 	\centering
-	\caption{Solução para acionamento das bombas}
+	\caption{Solução para o acionamento das bombas}
 	\label{fig:esquema}
 	\includegraphics[width=1\linewidth]{Resultados/Figuras/esquema}
 	Fonte: Elaboração própria 
 \end{figure}
 
-Na Figura \ref{fig:esquema} um esquema pratico para evitar a falta de água e o consumo em horários de pico. Esse esquema é bem simples de como pode ser melhorado o aproveitado de tempo no período do dia para armazenamento de água.
+Na Figura \ref{fig:esquema} um esquema prático para evitar a escassez de água e o consumo em horários de pico. Este é um esquema muito simples de como a hora do dia pode ser melhorada para o armazenamento de água.
 
-Na \ref{q3} o tanque tem como máximo nos dados $4,256 m^3$ dano em litros $4256$L para atender essa demanda e manter o tanque quase cheio ou sempre cheio, a Vasão de entrada tem que estar em $[238,302] \ m^3/h$, vasão de gravidade tem que ficar entre $[126,182] m^3/h$, vasão de recalque entre $[110,144] m^3/h$, pressão de sucção entre $[1.92,4.24] mca$ pressão de recalque entre $[21,24] mca$.
+Na \ref{q3} o tanque tem como máximo nos dados $4,256 m^3$ de dano em litros $4256$L para atender esta demanda e manter o tanque quase cheio ou sempre cheio o fluxo de entrada tem que estar entre $[238,302] \ m^3/h$ fluxo de gravidade tem que estar entre $[126,182] \ m^3/h$ fluxo de retorno entre $[110,144] \ m^3/h$ pressão de sucção entre $[1.92,4.24] mca$, pressão de retorno entre $[21,24] \ mca$.
 
-Na \ref{q4} o ponto de equilibro para não ser acionado as bomba seria de as vazão FT01 $211 m^3/h$  FT02 $114 m^3/h$ FT03 $100m^3/h$ e o nível do tanque com $3,545 m^3$.
+Para \ref{q4}, o ponto de equilíbrio para não iniciar as bombas seria o fluxo FT01 $211 m^3/h$ FT02 $114 m^3/h$ FT03 $100m^3/h$ e o nível do tanque a $3,545 m^3$.
 
-Na \ref{q5:a} o tanque deve estar com o nível de $4,00 m^3$ para que não precise acionar bombas no horário de pico. 
+Ao \ref{q5}\ref{q5:a} o tanque deve estar a um nível de $4,00 m^3$ para que não precise funcionar com bombas nas horas de pico. 
 
 \subsubsection{M\'ultiplas entradas e sa\'ida \'unica (MISO)}
 
-Nessa \ref{etp:2} o modelos que mais foi abordado no decorrer da dissertação é os modelos ARIMA, ou os que derivam desse modelo, e os modelos regressivo fora o LR  tem múltiplas entra e uma saída da variável que é prevista o LT01, as outras variáveis serve de apoio para melhorar os modelos do tipo ARX ou modelos com variáveis exógenas. Os modelos ARIMA sem a variável exógena é apenas um entrada, semelhante com o LR.
-
-
+Nesta \ref{etp:2} os modelos que foram mais cobertos no decorrer da dissertação são os modelos ARIMA ou aqueles derivados deste modelo e os modelos regressivos fora do LR têm múltiplas entradas e uma saída da variável que se prevê a LT01, as outras variáveis servem como suporte para melhorar os modelos do tipo ARX ou modelos com variáveis exógenas. Os modelos ARIMA sem a variável exógena são apenas uma entrada semelhante com LR.
 
 \subsubsection{Decomposi\c c\~ao STL}
 
@@ -79,10 +82,10 @@ Nessa \ref{etp:2} o modelos que mais foi abordado no decorrer da dissertação �
  	
  	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
  \end{figure}
+
+Na \ref{q5}\ref{q5:b} resposta pode ser dada pelas Figuras \ref{fig:stl-aditiva} e \ref{fig:stl} como é observado tem tenacidade, sazonalidade e resido. 
  
- Na  \ref{q5}\ref{q5:b} pode ser respondida pela Figuras \ref{fig:stl-aditiva} e \ref{fig:stl} como é observado tem tenência, sazonalidade e resido.
- 
-Na decomposição o objetivo dela é analisar se há tenência, sazonalidade e resido, olhando nas Figuras \ref{fig:stl-aditiva} e \ref{fig:stl}, isso mostra que os dados tem ambas das analise. E com isso perceber que a série é estacionaria, pelo teste a seguir.
+Na decomposição, o objetivo é analisar se há tenacidade, sazonalidade e residência, olhando as Figuras \ref{fig:stl-aditiva} e \ref{fig:stl}, mostra que os dados têm ambas as análises. E com isso percebe-se que a série é estacionária, através do seguinte teste.
 
 Teste de Dickey-Fuller (DF) Aumentado: 
 \begin{itemize}
@@ -95,25 +98,25 @@ Teste de Dickey-Fuller (DF) Aumentado:
 \item valor crítico $(10\%)          -2.568$
 
 
-Fortes provas contra a hipótese nula
+Forte evidência contra a hipótese nula
 
 Rejeitar a hipótese nula
 
-Os dados não têm raiz unitária e são estacionários, Na \ref{q5}\ref{q5:c} como a serie é estacionaria, para identificar quais os horários de pico entre as 18 até as 21h não é um trabalho fácil, pois se pegar na Figura \ref{fig:hist} pode perceber que no ano de 2020 teve um aumento da demanda nessas horas.
+Os dados não têm raiz unitária e estão estacionários em \ref{q5}\ref{q5:c}, pois a série está estacionária para identificar quais são as horas de pico entre 18h e 21h não é um trabalho fácil, como se você levasse a Figura \ref{fig:hist} para ver que no ano de 2020 houve um aumento na demanda naquelas horas.
+
 
 \begin{figure}[H]
 	\centering
-	\caption{Violino do nível do reservatório}
+	\caption{Violino no nível do reservatório}
 	\label{fig:hist}
 	\includegraphics[width=1\linewidth]{Resultados/Figuras/viol}
 	
 	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
 \end{figure}
 
-Então como dito na seção \ref{subsubsec:motivacao} as anomalias de tempo mais ocasionada no ano de 2020 e foi devido a falta de chuva nesse período.
+Assim, como dito na seção \ref{subsubsec:motivacao} as anomalias climáticas mais ocasionadas no ano 2020 e foi devido à falta de chuva naquele período.
 
-Na \ref{q5}\ref{q5:d} nos horários de picos deve conter no tanque por volta de $[3.545,4.256] m^3$ para que não acione as bombas.
-
+Em \ref{q5}\ref{q5:d} nas horas de pico deve conter no tanque cerca de $[3.545,4.256] m^3$ para que não ligue as bombas.
 
 
 \begin{figure}[H]
@@ -125,11 +128,12 @@ Na \ref{q5}\ref{q5:d} nos horários de picos deve conter no tanque por volta de 
 	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
 \end{figure}
 
-Para \ref{q5}\ref{q5:e} é mostrado na Figura \ref{fig:ft03} como pode ser afetado a vazão com o nível do tanque. A vazão de recalque influência mais no nível do tanque que as outras vazão pois injeta água no tanque por meio da bomba de recalque, que fica mais próximo da base do tanque, e as outras vazão por ter alguns valores ausente, não interfere tanto na amostra.
+Para \ref{q5}\ref{q5:e} é mostrado na Figura \ref{fig:ft03} como a vazão pode ser afetada com o nível do tanque. A vazão de recalque influencia mais o nível do tanque do que as outras vazões porque injeta água no tanque através da bomba que está mais próxima da base do tanque e as outras vazões por ter alguns valores ausentes não interferem tanto na amostra.
+
 
 \end{itemize}
 
-Segundo  \citeonline{Reisen2017115} o teste de DF tem como formula a seguinte equações
+De acordo com o \citeonline{Reisen2017115}, o teste DF tem as seguintes equações
 
 \begin{eqnarray}
 	z_t&=& y_t+\theta \beta_t, \qquad t=1,\ldots, T, \label{eq:df3}\\	
