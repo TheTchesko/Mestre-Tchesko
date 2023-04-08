@@ -166,11 +166,9 @@ Suponha que $\left(z_t\right)_{1 \leq t \leq T}$ são dadas por \eqref{eq:df3}, 
 	\quad \operatorname{como} T \rightarrow \infty\label{eq:df2}
 \end{eqnarray}
 
+A partir de \eqref{eq:df2}, onde$\stackrel{d}{\longrightarrow}$ denota convergência na distribuição e onde $\{W(r), r \in[0,1]\}$ denota o movimento Browniano padrão.
 
-De \eqref{eq:df2} onde $\stackrel{d}{\longrightarrow}$ denota a convergência na distribuição e onde $\{W(r), r \in[0,1]\}$ denota o movimento browniano padrão.
-
-Esse teste na literatura é chamado de teste ACF para testar se a série é o não estacionária, basicamente se a série tiver um valor de raiz unitária é uma série não estacionária, do contrario como acontece com os dados coletados se torna uma série estacionária.
-
+Este teste na literatura é chamado de teste ACF para testar se a série é estacionária ou não.
 
 \begin{figure}[H]
 	\centering
@@ -186,12 +184,13 @@ Esse teste na literatura é chamado de teste ACF para testar se a série é o n�
 	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
 \end{figure}
 
+Na figura \ref{fig:acf} temos a diferença entre autocorrelação e autocorrelação parcial (PACF) é quase um detalhe em um ACF temos a correlação direta e indireta e em um PACF somente a correlação direta.  
 
 Na Figura \ref{fig:acf} tem a diferença entre a autocorrelação e a autocorrelação parcial (PACF) é quase um detalhe em uma ACF temos a correlação direta e indireta e em uma PACF apenas a correlação direta. 
 
-O intervalo de confiança por padrão é 95\%, mostrado como essa marca azul. Observações que estão para fora da marca são consideradas estatisticamente correlacionadas.
+O intervalo de confiança padrão é 95\% mostrado como esta marca azul. As observações que estão fora da marca são consideradas estatisticamente correlacionadas.
 
-As correlação da Figura \ref{fig:acf} é a explicação do teste de DF, entendo isso pode ser visto o próximo passo que é  a análise do ruído branco em meados a gráfico, Uma série ruído branco é uma série na qual a média 0, a variância é constante ao longo da série toda e não há correlação entre os períodos de tempo. O valores de uma série ruídos brancos são totalmente aleatórios, ou seja, essa é um tipo de série que não é previsível.
+A correlação na Figura \ref{fig:acf} é a explicação do teste DF. Os valores de uma série de ruído branco são totalmente aleatórios, ou seja, este é um tipo de série que não é previsível.
 
 \begin{figure}[H]
 	\centering
@@ -203,37 +202,41 @@ As correlação da Figura \ref{fig:acf} é a explicação do teste de DF, entend
 \end{figure}
 
 Da Figura \ref{fig:ruido-branco} uma série temporal pode ser ruído branco.
-Uma série temporal é ruído branco se as variáveis são independentes e distribuídas de forma idêntica com uma média de zero.
-Isso significa que todas as variáveis têm a mesma variância ($\sigma^2$) e cada valor tem uma correlação zero com todos os outros valores da série.
-Mais para frente vamos mostrar o comprimento de zeros na variável prevista. Com isso encerra a \ref{etp:3}.
+Uma série temporal a é ruído branco se as variáveis forem independentes e distribuídas de forma idêntica com uma média de zero.
+Isto significa que todas as variáveis têm a mesma variância ($\sigma^2$) e cada valor tem correlação zero com todos os outros valores da série.
+Mais adiante, é mostrado o comprimento de zeros na variável prevista. Isto conclui o \ref{etp:3}.
 
-\subsubsection{Separa\c c\~ao dos Dados}
+\subsubsection{Separa\c c\~ao dos dados}
 
-Na \ref{etp:4} tem um esquema de como foi dividido os dados em treino, teste e validação, essa pratica é comum para os profissionais de aprendizado de máquina, pois assim como não é passível processar os dados todos de uma vez, se você manosear dados em uma escala menor até pode ser realizado, mas tudo depende da máquina que esta sendo realizado o processamento dos dados, cada modelo em particular utiliza um certo acervo do seu computador para processar, se por exemplo você tiver trabalhando com um modelo de aprendizado profundo que é mais comum em processamento de imagem, a Nvidia tem sempre inovado com as suas GPUs e trazendo mais poder para processamento, com o recente lançamento da placa de vídeo $3090$ um sonho de consumo para games e os profissionais de aprendizado de maquina e profundo.
+Na \ref{etp:4} tem um esquema de como os dados foram divididos em treinamento, teste e validação, esta prática é comum para profissionais de aprendizagem de máquinas porque além de não poder processar os dados de uma só vez se lidar com dados em uma escala menor eles podem até rodar, mas tudo depende da máquina que está rodando o processamento de dados cada modelo particular usa uma certa coleção do seu computador para processar se, Por exemplo, você está trabalhando com um modelo de aprendizado profundo que é mais comum no processamento de imagens Nvidia sempre inovou com suas GPUs e trazendo mais poder ao processamento, com o recente lançamento da placa de vídeo de $4090$ um sonho do consumidor de jogos e de profissionais de aprendizado profundo e de máquinas.
 
-Em fim se o computador que foi realizado os processamento fosse um computador não tão bom, ainda poderia está sendo pensando que estaria em processamento, sem as inovação que foi estabelecida aos anos, o computador que foi realizado os cálculos dos modelos foi em partes um computador de processador $i5-3330$ e um notebook com $i7-5500$ ambos com 4 threads e o notebook com apenas 2 núcleos o $i5$ contem 4 núcleos. Cada um tem suas especificações de ser o melhor em algum certo ponto, mas sabendo que não é preciso de um de ultima geração para fazer tais processamento. E sim força de vontade para entende e aplicar em cada um.
+Em resumo, se o computador que foi realizado o processamento era um computador não tão bom, você ainda pode estar pensando que ele estaria processando sem a inovação que foi estabelecida ao longo dos anos, o computador que foi realizado os cálculos dos modelos era em partes um processador de computador $i5-3330 $ e um notebook com $i7-5500 $ ambos com 4 fios (em português: fio de execução ou encadeamento de execução) e o notebook com apenas 2 núcleos o $i5 $ contém 4 núcleos. Cada um deles tem suas especificações para ser o melhor em algum momento, mas sabendo que não é preciso a última geração para fazer tal processamento. É a vontade de compreender e aplicar cada um deles.
 
-A divisão mais básica que tem na literatura foi realizada aqui na separação dos dados, $70\%$ para treino e os $30\%$ restante para teste, dos $70\%$ tem mais uma divisão pegando $80\%$ dos $70\%$ para treino novamente e os $20\%$ para validação dos dados, tendo essa fórmula aplica na linguagem de programação para que não precisa ser contado todas as vezes que for mudado o modelo.
+A divisão mais básica que você tem na literatura foi realizada aqui separando os dados de $70\%$ para treinamento e os dados restantes de $30\%$ para testes os dados de $70\%$ têm uma divisão adicional que leva $80\%$ dos dados de $70\%$ para treinamento novamente e os dados de $20\%$ para validação tendo esta fórmula aplicada em linguagem de programação para que não precise ser contada toda vez que o modelo for alterado.
+
 
 \subsubsection{Estrategia de Previs\~ao}\label{subsubsec:est}
 
-Na \ref{etp:5} é abordado a forma que foi previsto os dados, em uma janela de horizonte de previsão bem maior do que o normal na literatura da estrategia de recursiva, sendo 1, 7, 14 e 30 dias previsto, essa estrategia para comparação dos modelos regressivo e modelos ARIMA, é bem vantajoso, pois cada modelo tem suas especificidade para prever em momentos com janela de tempo menor e com uma janela de muitos dias. Assim como explicado na seção \ref{subsubsec:modelos} se for previsão curta, alguns vai se sobre por em meio à outros modelos que foi feito aqui.
+Na \ref{etp:5}, discute-se como os dados foram previstos em uma janela de horizonte de previsão muito maior do que o habitual na literatura para a estratégia recursiva de 1, 7, 14 e 30 dias previstos nesta estratégia para comparação de modelos de regressão e modelos ARIMA é muito vantajosa porque cada modelo tem sua especificidade para prever em momentos com janela de tempo menor e com uma janela de muitos dias. Como explicado na seção \ref{subsubsec:modelos}, se for curta a previsão, alguns irão prever em excesso no meio dos outros modelos que foram feitos aqui.
 
 \subsubsection{Horizonte}
 
-Na \ref{etp:6} é feito o horizonte de previsão, como dito na seção \ref{subsubsec:est} esse horizonte foi customizado baseado do método recursivo de prever as series temporais e a previsão do nível do tanque LT01. Os passos para prever a frente foi de 1, 7, 14 e 30 dias, já foi realizado uma estrategia com uma janela menor, mas para comparação dos modelos essa janela foi mais adequada.
+Na \ref{etp:6}, o horizonte de previsão foi personalizado com base no método recursivo de previsão de série temporal e na previsão do nível do tanque LT01. Os passos para a previsão à frente foram 1, 7, 14 e 30 dias. Uma estratégia com uma janela menor já foi executada, mas para a comparação dos modelos, esta janela foi mais adequada.
+
 
 \subsubsection{Modelos de previs\~ao e m\'etricas de desempenho}\label{subsubsec:modelos}
 
-Da \ref{etp:7} as métricas utilizada aqui foi vista na seção \ref{subsec:metrica} foi utilizado aqui três das métricas mais usada na literaturar para previsão de tempo e comparação de modelos ARIMA e os modelos regressores.
+A partir da \ref{etp:7}, as métricas utilizadas aqui foram vistas na seção \ref{subsec:metrica} e três das métricas mais utilizadas na literatura para previsão e comparação dos modelos ARIMA e modelos de regressores foram utilizadas aqui.
 
-    Em comparação com os modelos feito, pode ser visto que o modelo LR em um passo a frente tem tanto na modelagem de 24 horas quanto no pico de horas entre as 18 e 21 horas, foi o modelo que mais se saiu bem na previsão, logo em sequência os modelos MA, AR, SARIMA, ARIMA, SARIMAX, ARIMAX, ARX, LGBMRegressor, XGBRegressor e Random Forest Regressor, para curto prazo esses modelos estão em ordem de melhor para pior.
+ Em comparação com os modelos feitos, pode-se ver que o modelo LR em um passo à frente tem tanto na modelagem de 24 horas como nas horas de pico entre 18 e 21 horas foi o modelo que melhor se saiu na previsão logo após os modelos MA, AR, SARIMA, ARIMA, SARIMAX, ARIMAX, ARX, LGBMRegressor, XGBRegressor e Random Forest Regressor para o curto prazo estes modelos estão em ordem do melhor para o pior.
+
+   Já em períodos mais longos, como foi feito em 30 dias os modelos ARMA, AR, MA, ARIMA, ARIMAX, ARX, SARIMA, SARIMA, XGBRegressor, Random Forest Regressor, LGBMRregressor e LR, seguindo a mesma lógica do melhor ao pior. Mas também olhando graficamente os modelos que foram feitos os modelos com variáveis exógenas parecem prever melhor do que os outros modelos apenas olhando os dados nos apêndices tanto quando os Figuras de\ref{fig:1-AR-ARX-MA24} a \ref{fig:60-ARIMAX-SARIMA-SARIMAX24} como as Tabelas \ref{tb:1-24trn} a \ref{tb:60-24cm}.   
     
-    Já em grande espaço de tempo como foi feito de 30 dias os modelos ARMA, AR, MA, ARIMA, ARIMAX, ARX, SARIMAX, SARIMA, XGBRegressor, Random Forest Regressor, LGBMRregressor e LR, seguindo a mesma lógica do melhor para o pior. Mas se olhar graficamente nos modelos que foi feito, os modelos com variáveis exógenas aparenta prever melhor do que os outros modelos, só analisando os dados nos apêndice tanto quando as Figuras de \ref{fig:1-AR-ARX-MA24} a \ref{fig:60-ARIMAX-SARIMA-SARIMAX24} quanto as Tabalas \ref{tb:1-24trn} a \ref{tb:60-24cm}   
-    
+  
     \subsubsection{Teste de Signific\^ancia}
     
-    Na \ref{etp:9} os teste escolhido foi de \textit{Friedman e Nemenjy} no teste de Nemenyi, precisamos obter a diferença entre os rankings médios (linha média da tabela de classificação) entre todos os classificadores (comparando pares de classificadores). Se essa diferença for maior ou igual a um CD (distância crítica), podemos dizer que esses dois classificadores são significativamente diferentes um do outro. O CD é calculado como:
+ Na \ref{etp:9}, o teste escolhido foi de \textit{Friedman e Nemenjy} no teste de Nemenyi precisa ser para obter a diferença entre as classificações médias (linha do meio da tabela de classificação) entre todos os classificadores (comparando pares de classificadores). Se esta diferença for maior ou igual a um CD (distância crítica), pode-se dizer que estes dois classificadores são significativamente diferentes um do outro. O CD é calculado como:
+    
     
     \begin{eqnarray}
     	C D&=&q_\alpha \sqrt{\frac{k(k+1)}{6 N}}\label{eq:neme}
