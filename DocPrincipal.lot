@@ -6,22 +6,22 @@
 \contentsline {table}{\numberline {3}{\ignorespaces Áreas e seus valores respetivos de artigos em cada área.}}{21}{table.3}%
 \contentsline {table}{\numberline {4}{\ignorespaces Descrição estatística dos dados com o filtro aplicado das 18h às 21h}}{43}{table.4}%
 \contentsline {table}{\numberline {5}{\ignorespaces Teste Nemenyi}}{53}{table.5}%
-\contentsline {table}{\numberline {6}{\ignorespaces Comparação dos modelos 1 dia a frente 24h \textbf {Treino} }}{62}{table.6}%
-\contentsline {table}{\numberline {7}{\ignorespaces Comparação dos modelos 1 dia a frente 24h \textbf {Validação} }}{63}{table.7}%
-\contentsline {table}{\numberline {8}{\ignorespaces Comparação dos modelos 1 dia a frente 24h \textbf {Teste} }}{63}{table.8}%
-\contentsline {table}{\numberline {9}{\ignorespaces Comparação dos modelos 1 dia a frente 24h \textbf {Completo} }}{64}{table.9}%
-\contentsline {table}{\numberline {10}{\ignorespaces Comparação dos modelos 7 dias a frente 24h \textbf {Treino} }}{64}{table.10}%
-\contentsline {table}{\numberline {11}{\ignorespaces Comparação dos modelos 7 dias a frente 24h \textbf {Validação} }}{65}{table.11}%
-\contentsline {table}{\numberline {12}{\ignorespaces Comparação dos modelos 7 dias a frente 24h \textbf {Teste} }}{65}{table.12}%
-\contentsline {table}{\numberline {13}{\ignorespaces Comparação dos modelos 7 dias a frente 24h \textbf {Completo} }}{66}{table.13}%
-\contentsline {table}{\numberline {14}{\ignorespaces Comparação dos modelos 14 dias a frente 24h \textbf {Treino} }}{66}{table.14}%
-\contentsline {table}{\numberline {15}{\ignorespaces Comparação dos modelos 14 dias a frente 24h \textbf {Validação} }}{67}{table.15}%
-\contentsline {table}{\numberline {16}{\ignorespaces Comparação dos modelos 14 dias a frente 24h \textbf {Teste} }}{67}{table.16}%
-\contentsline {table}{\numberline {17}{\ignorespaces Comparação dos modelos 14 dias a frente 24h \textbf {Completo} }}{68}{table.17}%
-\contentsline {table}{\numberline {18}{\ignorespaces Comparação dos modelos 30 dias a frente 24h \textbf {Treino} }}{68}{table.18}%
-\contentsline {table}{\numberline {19}{\ignorespaces Comparação dos modelos 30 dias a frente 24h \textbf {Validação} }}{69}{table.19}%
-\contentsline {table}{\numberline {20}{\ignorespaces Comparação dos modelos 30 dias a frente 24h \textbf {Teste} }}{69}{table.20}%
-\contentsline {table}{\numberline {21}{\ignorespaces Comparação dos modelos 30 dias a frente 24h \textbf {Completo} }}{70}{table.21}%
+\contentsline {table}{\numberline {6}{\ignorespaces Comparação dos modelos com 1 dia de antecedência 24h \textbf {Treinamento} }}{62}{table.6}%
+\contentsline {table}{\numberline {7}{\ignorespaces Comparação dos modelos com 1 dia de antecedência 24h \textbf {Validação} }}{63}{table.7}%
+\contentsline {table}{\numberline {8}{\ignorespaces Comparação dos modelos com 1 dia de antecedência 24h \textbf {Teste} }}{63}{table.8}%
+\contentsline {table}{\numberline {9}{\ignorespaces Comparação dos modelos com 1 dia de antecedência 24h \textbf {Completo} }}{64}{table.9}%
+\contentsline {table}{\numberline {10}{\ignorespaces Comparação dos modelos com 7 dias de antecedência 24h \textbf {Treinamento} }}{64}{table.10}%
+\contentsline {table}{\numberline {11}{\ignorespaces Comparação dos modelos com 7 dias de antecedência 24h \textbf {Validação} }}{65}{table.11}%
+\contentsline {table}{\numberline {12}{\ignorespaces Comparação dos modelos com 7 dias de antecedência 24h \textbf {Teste} }}{65}{table.12}%
+\contentsline {table}{\numberline {13}{\ignorespaces Comparação dos modelos com 7 dias de antecedência 24h \textbf {Completo} }}{66}{table.13}%
+\contentsline {table}{\numberline {14}{\ignorespaces Comparação dos modelos com 14 dias de antecedência 24h \textbf {Treinamento} }}{66}{table.14}%
+\contentsline {table}{\numberline {15}{\ignorespaces Comparação dos modelos com 14 dias de antecedência 24h \textbf {Validação} }}{67}{table.15}%
+\contentsline {table}{\numberline {16}{\ignorespaces Comparação dos modelos com 14 dias de antecedência 24h \textbf {Teste} }}{67}{table.16}%
+\contentsline {table}{\numberline {17}{\ignorespaces Comparação dos modelos com 14 dias de antecedência 24h \textbf {Completo} }}{68}{table.17}%
+\contentsline {table}{\numberline {18}{\ignorespaces Comparação dos modelos com 30 dias de antecedência 24h \textbf {Treinamento} }}{68}{table.18}%
+\contentsline {table}{\numberline {19}{\ignorespaces Comparação dos modelos com 30 dias de antecedência 24h \textbf {Validação} }}{69}{table.19}%
+\contentsline {table}{\numberline {20}{\ignorespaces Comparação dos modelos com 30 dias de antecedência 24h \textbf {Teste} }}{69}{table.20}%
+\contentsline {table}{\numberline {21}{\ignorespaces Comparação dos modelos com 30 dias de antecedência 24h \textbf {Completo} }}{70}{table.21}%
 \contentsline {table}{\numberline {22}{\ignorespaces Comparação dos modelos Ljung Box \textbf {Treino} }}{70}{table.22}%
 \contentsline {table}{\numberline {23}{\ignorespaces Comparação dos modelos Ljung Box \textbf {Validação} }}{71}{table.23}%
 \contentsline {table}{\numberline {24}{\ignorespaces Comparação dos modelos Ljung Box \textbf {Teste} }}{71}{table.24}%

@@ -272,17 +272,21 @@ Para calcular a estatística de teste $F_r$ de Friedman cria-se inicialmente uma
 	F_r&=&\left[\frac{12}{n k(k+1)} \sum_{i=1}^k R_i{ }^2\right]-3 n(k+1)\label{eq:fr}
 \end{eqnarray}
   
-  Na equação \eqref{eq:fr} $n$ é o número de linhas (ou amostras), $k$ é o número de colunas (ou condições) e $R_i$ é a soma dos postos da coluna (ou condição) $i$.   
- Seguindo a equação \eqref{eq:fr} têm o seguinte resultado nos dados da pesquisa.
+  Na equação \eqref{eq:fr} $n$ é o número de linhas (ou amostras) $k$ é o número de colunas (ou condições) e $R_i$ é a soma das fileiras da coluna (ou condição) $i$.   
+Seguindo a equação \eqref{eq:fr} tem o seguinte resultado nos dados da pesquisa.
+  
+
  
  $statistic=8015.611,\ \ pvalue=0.0$ com o números de 26306 linhas x 9 colunas.
  
  \subsubsection{Compara\c c\~ao dos modelos}
- Nos modelos coletados com várias métodos de prever, com isso para ver melhor como cada modelo se comporta foi realizado a comparação dos modelos em base com o gráfico violino, assim observa quais os melhores entre os modelos coltado.
+ 
+  A fim de ver melhor como cada modelo se comporta, os modelos foram comparados com base em um gráfico de violino, e assim observar qual dos modelos era o melhor.
+ 
  
  \begin{figure}[H]
  	\centering
- 	\caption{Comparação de modelos ARIMAS}
+ 	\caption{Comparação dos modelos ARIMAS}
  	\includegraphics[width=0.9\linewidth]{Resultados/Figuras/modelos-arima}
  	
  	\label{fig:modelos-arima}
@@ -301,10 +305,11 @@ Para calcular a estatística de teste $F_r$ de Friedman cria-se inicialmente uma
  	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
  \end{figure}
 
+Em comparação com os modelos apresentadosnas Figuras \ref{fig:modelos-arima} e \ref{fig:violin-lr-xgb-lgbm-rf} os modelos que podem ser observados que são os melhores levando em conta a modelagem dos dados nos modelos ARIMA os melhores são AR, ARX, MA, ARMA, ARIMAX e SARIMAX devido aos \textit{outliers} e ao limite inferior de alguns modelos que olham para os modelos de gradiente e regressão pode-se notar que eles eram semelhantes devido às técnicas de otimização matemática Grid Search (do inglês pesquisa grande) e Randomized Search (do inglês pesquisa aleatória) que permitiram o aperfeiçoamento do método utilizado. Em um horizonte de previsão pequeno, LR prevê melhor que os outros modelos, mas em um horizonte de previsão maior, XGBoost e Light GBM estão prevendo com melhor precisão. A floresta aleatória também está prevendo com precisão apenas atrás do XGBoost em previsões de longo prazo.
 
-Em comparação com os modelos apresentado nas Figuras \ref{fig:modelos-arima} e \ref{fig:violin-lr-xgb-lgbm-rf} os modelos que pode ser observado que são os melhores levando em conta a modelagem dos dados, nos modelos ARIMA os melhores são AR, ARX, MA, ARMA, ARIMAX e SARIMAX, devido ao \textit{outliers} e ao limite inferior de alguns modelos, olhando para os modelos de gradiente e regressão, pode se notar que eles ficaram similar, devido a técnicas de otimização matemática Grid Search (do inglês pesquisa grande) e Randomized Search (do inglês pesquisa aleatória), que possibilitou a melhora do método utilizado. Em um horizonte de previsão pequeno o LR prevê melhor que os outros modelos, mas em um horizonte de previsão maior os modelos XGBoost e Light GBM estão prevendo com melhor rigor. O floresta aleatória está prevê com rigor também só vindo atrás do XGBoost em previsão de longo prazo.
+O método Ljung box é um método que pode ser estimado nos modelos ARIMAS de longo prazo se, a longo prazo, eles ainda irão prever eficientemente nos dados de longo prazo os modelos que melhor prevêem são os modelos ARX, ARIMAX e SARIMAX com as variáveis exógenas para modelos não lineares que podem aguentar mais tempo de previsão do que os outros modelos ARIMA.  
 
-O método de Ljung box é um método que pode ser estimados a longo prazo os modelos ARIMAS se a longo prazo eles ainda vão prever com eficiência nos dados, a longo prazo os modelos que melhor prevê são os modelos ARX, ARIMAX e SARIMAX com as variáveis exógena para modelos não linear ele consegue se manter por mais tempo prevendo do que os outros modelos ARIMA.  
+
  
   
     
