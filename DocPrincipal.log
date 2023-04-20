@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  17 APR 2023 13:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  20 APR 2023 11:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1976,12 +1976,8 @@ File: Modelos/Figuras/1-ARX.pdf Graphic file (type pdf)
 <use Modelos/Figuras/1-ARX.pdf>
 Package pdftex.def Info: Modelos/Figuras/1-ARX.pdf  used on input line 80.
 (pdftex.def)             Requested size: 455.24411pt x 189.68402pt.
-
-
-LaTeX Warning: Reference `sec:ararxma18' on page 26 undefined on input line 89.
-
-
-[26 <./Modelos/Figuras/1-AR.pdf> <./Modelos/Figuras/1-ARX.pdf>] [27]
+ [26 <./Modelos/Figuras/1-AR.pdf> <./Modelos/Figuras/1-ARX.pdf>]
+[27]
 <Modelos/Figuras/1-MA.pdf, id=1134, 867.24pt x 361.35pt>
 File: Modelos/Figuras/1-MA.pdf Graphic file (type pdf)
 <use Modelos/Figuras/1-MA.pdf>
@@ -2004,7 +2000,8 @@ File: Modelos/Figuras/1-SARIMA.pdf Graphic file (type pdf)
 <use Modelos/Figuras/1-SARIMA.pdf>
 Package pdftex.def Info: Modelos/Figuras/1-SARIMA.pdf  used on input line 188.
 (pdftex.def)             Requested size: 455.24411pt x 189.68402pt.
- [30 <./Modelos/Figuras/1-ARIMA.pdf>]
+
+[30 <./Modelos/Figuras/1-ARIMA.pdf>]
 <Modelos/Figuras/1-ARIMAX.pdf, id=1266, 867.24pt x 361.35pt>
 File: Modelos/Figuras/1-ARIMAX.pdf Graphic file (type pdf)
 <use Modelos/Figuras/1-ARIMAX.pdf>
@@ -2017,14 +2014,16 @@ File: Modelos/Figuras/1-SARIMAX.pdf Graphic file (type pdf)
 Package pdftex.def Info: Modelos/Figuras/1-SARIMAX.pdf  used on input line 218.
 
 (pdftex.def)             Requested size: 455.24411pt x 189.68402pt.
- [32 <./Modelos/Figuras/1-ARIMAX.pdf> <./Modelos/Figuras/1-SARIMAX.pdf>]
+
+[32 <./Modelos/Figuras/1-ARIMAX.pdf> <./Modelos/Figuras/1-SARIMAX.pdf>]
 <Apendices/Figuras/modelagem-24h/person.pdf, id=1395, 722.7pt x 578.16pt>
 File: Apendices/Figuras/modelagem-24h/person.pdf Graphic file (type pdf)
 <use Apendices/Figuras/modelagem-24h/person.pdf>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/person.pdf  used on in
 put line 252.
 (pdftex.def)             Requested size: 409.71692pt x 327.77258pt.
- [33 <./Apendices/Figuras/modelagem-24h/person.pdf>]
+
+[33 <./Apendices/Figuras/modelagem-24h/person.pdf>]
 <Modelos/Figuras/LR LT01 (m³).png, id=1430, 722.7pt x 301.125pt>
 File: Modelos/Figuras/LR LT01 (m³).png Graphic file (type png)
 <use Modelos/Figuras/LR LT01 (m³).png>
@@ -2337,10 +2336,10 @@ Package rerunfilecheck Info: File `DocPrincipal.out' has not changed.
 (rerunfilecheck)             Checksum: 6EA11FB4AD73D4298B8C7DF9D6507B84;4303.
  ) 
 Here is how much of TeX's memory you used:
- 28182 strings out of 476406
- 559706 string characters out of 2789567
+ 28181 strings out of 476406
+ 559691 string characters out of 2789567
  1870787 words of memory out of 3000000
- 47410 multiletter control sequences out of 15000+600000
+ 47409 multiletter control sequences out of 15000+600000
  528820 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,12n,85p,1278b,542s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -2368,7 +2367,7 @@ Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/msndo/AppData
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
 rs/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 >
-Output written on DocPrincipal.pdf (93 pages, 7638967 bytes).
+Output written on DocPrincipal.pdf (93 pages, 7638925 bytes).
 PDF statistics:
  3462 PDF objects out of 3580 (max. 8388607)
  306 named destinations out of 1000 (max. 500000)
