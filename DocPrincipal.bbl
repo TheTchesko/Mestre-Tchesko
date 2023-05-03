@@ -36,6 +36,12 @@ ISSN 0378-7788.}
 Dispon{\'\i}vel em:
   \url{https://dev.to/giselyalves13/series-temporais-parte-1-13l8}.}
 
+\bibitem[Brownlee 2016]{machinemaster}
+\abntrefinfo{Brownlee}{BROWNLEE}{2016}
+{BROWNLEE, J. \textbf{Machine learning mastery with Python: understand your
+  data, create accurate models, and work projects end-to-end}. [S.l.]: Machine
+  Learning Mastery, 2016.}
+
 \bibitem[Buyuksahin e Ertekin 2019]{Buyuksahin2019}
 \abntrefinfo{Buyuksahin e Ertekin}{BUYUKSAHIN; ERTEKIN}{2019}
 {BUYUKSAHIN, U.; ERTEKIN. {Improving forecasting accuracy of time series data
