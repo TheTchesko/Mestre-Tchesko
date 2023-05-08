@@ -11,7 +11,7 @@
 \contentsline {subsubsection}{\numberline {1.4.1}Etapas da pesquisa}{4}{subsubsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.5}Justificativa da pesquisa}{7}{subsection.1.5}%
 \contentsline {subsubsection}{\numberline {1.5.1}Contribui\c c\~oes}{7}{subsubsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.6}Estrutura do trabalho}{7}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.6}Estrutura do trabalho}{8}{subsection.1.6}%
 \contentsline {section}{\numberline {2}Referencial}{9}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Detec\c cão de anomalias}{9}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Revis\~ao sistem\'atica da literatura}{10}{subsection.2.2}%
