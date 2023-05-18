@@ -1,0 +1,42 @@
+\subsection{M\'etricas de Erros}\label{subsec:metrica}
+
+
+A métrica MSE é uma das mais utilizadas em aprendizado de máquina. Seu cálculo é feito da seguinte forma:
+
+\begin{eqnarray}
+	M S E=\dfrac{1}{n} \sum\left(y_i-\hat{y}_i\right)^2\label{eq:mse}
+\end{eqnarray}
+
+MSE é a média da somatória do erro ao quadrado. Subtraímos o que aconteceu, $y_i$, do valor que foi projetado, $\hat{y}_i$. O resultado é o cálculo do erro. Ao elevarmos o erro ao quadrado, estamos evitando que os erros fiquem negativos e, portanto, se subtraiam na somatória.
+
+\textbf{RMSE}
+
+\begin{eqnarray}
+	R M S E=\sqrt{\dfrac{1}{n} \sum\left(y_i-\hat{y}_i\right)^2}\label{eq:rmse}
+\end{eqnarray}
+
+A vantagem de utilizarmos o RMSE é que, ao computar a raiz quadrada, o erro passa a ter a mesma escala do indicador que estamos trabalhando. Um RMSE baixo, significa que a performance do modelo foi boa, pois o erro se aproxima de zero.
+
+\textbf{MAE}
+
+O MAE é calculado usando o módulo da subtração, obtida entre o valor do que realmente aconteceu e o valor projetado (previsto) e dividi tudo pelo número $n$ de amostras. Com isso, obtêm o erro médio absoluto. Equação do MAE:
+
+\begin{eqnarray}
+	M A E=\dfrac{1}{n} \sum\left|y_i-\hat{y}_i\right|\label{eq:mae}
+\end{eqnarray}
+
+Sua interpretação é comparável ao RMSE, onde o erro se dá no mesma escala/ordem de grandeza da variável estudada.
+
+Não é possível dizer se o MAE é um indicador melhor ou pior que os dois anteriores.
+
+\textbf{MAPE}
+
+Conhecido como MAPE, é a porcentagem relativa ao valor observado. O cálculo é feito obtendo a somatória da diferença entre o valor que realmente ocorreu com o valor previsto (resultado do erro), dividido pelo valor observado.
+
+\begin{eqnarray}
+	M A P E=\dfrac{1}{n} \Sigma\left|\frac{y_i-\hat{y}_i}{y_i}\right|\label{eq:mape}
+\end{eqnarray}
+
+O problema é quando o valor observado $y_i$ é igual a $0$, pois é matematicamente impossível dividir por $0$. Sendo uma medição de erro, porcentagens menores são melhores.
+
+Se fizer $1 -$ \textbf{MAPE}, tem a porcentagem de acerto.
