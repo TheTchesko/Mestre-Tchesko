@@ -60,6 +60,12 @@ ISSN 15684946 (ISSN).
 Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85064441622&doi=10.1016\%2Fj.asoc.2019.03.059&partnerID=40&md5=84d0bd291cc451de280dc9ed77524736}.}
 
+\bibitem[Chen e Guestrin 2016]{chen2016xgboost}
+\abntrefinfo{Chen e Guestrin}{CHEN; GUESTRIN}{2016}
+{CHEN, T.; GUESTRIN, C. Xgboost: A scalable tree boosting system. In:
+  \textbf{Proceedings of the 22nd acm sigkdd international conference on
+  knowledge discovery and data mining}. [S.l.: s.n.], 2016. p. 785--794.}
+
 \bibitem[Chen et al. 2018]{Chen2018}
 \abntrefinfo{Chen et al.}{CHEN et al.}{2018}
 {CHEN, Y.~Y. et al. {Applications of Recurrent Neural Networks in Environmental
@@ -237,6 +243,14 @@ Pontif{\'\i}cia Universidade Cat{\'o}lica do Paran{\'a}, 2021.}
 {SAMANTA, S. et al. {Learning elastic memory online for fast time series
   forecasting}.
 \textbf{Neurocomputing}, v.~390, p. 315--326, 2020.}
+
+\bibitem[S{\'a}nchez, D{\'i}az e L{\'o}pez 2020]{sanchez2020comparative}
+\abntrefinfo{S{\'a}nchez, D{\'i}az e L{\'o}pez}{S{\'A}NCHEZ; D{\'I}AZ;
+  L{\'O}PEZ}{2020}
+{S{\'A}NCHEZ, A.~M.; D{\'I}AZ, A.~A.; L{\'O}PEZ, A.~O. A comparative study of
+  xgboost, adaboost, and catboost in machine learning algorithms. In:
+  SPRINGER. \textbf{International Conference on Learning and Optimization
+  Algorithms: Theory and Applications (LOPAL)}. [S.l.], 2020. p. 292--303.}
 
 \bibitem[Sezer, Gudelek e Ozbayoglu 2020]{Sezer2020}
 \abntrefinfo{Sezer, Gudelek e Ozbayoglu}{SEZER; GUDELEK; OZBAYOGLU}{2020}

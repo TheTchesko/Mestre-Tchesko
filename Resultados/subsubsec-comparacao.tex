@@ -1,6 +1,6 @@
 \subsubsection{Compara\c c\~ao dos modelos}
 
-A fim de ver melhor como cada modelo se comporta, os modelos foram comparados com base em um gráfico de violino, e assim observar qual dos modelos era o melhor.
+Com o objetivo de obter uma análise mais aprofundada do desempenho de cada modelo, foi realizada uma comparação por meio de um gráfico de violino. Dessa forma, pôde-se observar qual dos modelos apresentava o melhor desempenho.
 
 
 \begin{figure}[H]
@@ -24,6 +24,8 @@ A fim de ver melhor como cada modelo se comporta, os modelos foram comparados co
 	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
 \end{figure}
 
-Em comparação com os modelos apresentadosnas Figuras \ref{fig:modelos-arima} e \ref{fig:violin-lr-xgb-lgbm-rf} os modelos que podem ser observados que são os melhores levando em conta a modelagem dos dados nos modelos ARIMA os melhores são AR, ARX, MA, ARMA, ARIMAX e SARIMAX devido aos \textit{outliers} e ao limite inferior de alguns modelos que olham para os modelos de gradiente e regressão pode-se notar que eles eram semelhantes devido às técnicas de otimização matemática Grid Search (do inglês pesquisa grande) e Randomized Search (do inglês pesquisa aleatória) que permitiram o aperfeiçoamento do método utilizado. Em um horizonte de previsão pequeno, LR prevê melhor que os outros modelos, mas em um horizonte de previsão maior, XGBoost e Light GBM estão prevendo com melhor precisão. A floresta aleatória também está prevendo com precisão apenas atrás do XGBoost em previsões de longo prazo.
+Ao comparar os modelos apresentados nas Figuras \ref{fig:modelos-arima} e \ref{fig:violin-lr-xgb-lgbm-rf}, é possível observar quais são os modelos que se destacam, levando em consideração a modelagem dos dados. Os modelos ARIMA que mostram melhor desempenho são o AR, ARX, MA, ARMA, ARIMAX e SARIMAX, devido à sua capacidade de lidar com \textit{outliers} e limites inferiores em alguns modelos. No caso dos modelos baseados em gradientes e regressão, é perceptível que eles exibem resultados semelhantes, graças às técnicas de otimização matemática conhecidas como Grid Search e Randomized Search, que permitem aprimorar os métodos utilizados.
 
-O método Ljung box é um método que pode ser estimado nos modelos ARIMAS de longo prazo se, a longo prazo, eles ainda irão prever eficientemente nos dados de longo prazo os modelos que melhor prevêem são os modelos ARX, ARIMAX e SARIMAX com as variáveis exógenas para modelos não lineares que podem aguentar mais tempo de previsão do que os outros modelos ARIMA.  
+Quando se trata de um horizonte de previsão curto, o modelo de LR apresenta melhor desempenho em comparação com os demais. No entanto, em horizontes de previsão mais longos, os modelos XGBoost e Light GBM demonstram maior precisão. A Random Forest também é capaz de realizar previsões precisas, ficando ligeiramente atrás do XGBoost em previsões de longo prazo.
+
+Para avaliar a eficiência dos modelos ARIMA em previsões de longo prazo, utiliza-se o método conhecido como Ljung-Box. Os modelos que mostram melhor desempenho nesse contexto são o ARX, ARIMAX e SARIMAX, os quais incorporam variáveis exógenas. Esses modelos não lineares têm capacidade de previsão mais robusta em horizontes de tempo mais distantes, em comparação com os outros modelos ARIMA.

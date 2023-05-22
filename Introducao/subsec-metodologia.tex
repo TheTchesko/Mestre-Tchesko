@@ -1,7 +1,6 @@
 \subsection{Descri\c c\~ao do problema} \label{subsec:descricao}
 
-Para saber melhor o que está sendo trabalhado, a descrição do problema é um meio pelo qual as variáveis podem ser expostas e o que prever com o foco que está sendo abordado.
-Se você não tiver um plano de previsão do que deve ser previsto, não faz muito sentido prever os dados usando modelos apenas para usá-los.
+A descrição do problema é fundamental para obter uma compreensão mais precisa do que está sendo abordado neste trabalho. É por meio dessa descrição que as variáveis-chave são expostas e o objetivo da previsão é estabelecido de forma clara. Sem um plano estruturado para determinar o que deve ser previsto, torna-se difícil justificar o uso de modelos de previsão de dados. Portanto, é essencial estabelecer um propósito claro e definir as metas da previsão antes de aplicar os modelos adequados.
 
 \begin{itemize}
 	\item Bombas de sucção (B1, B2 e B3) – valor máximo da frequência 60 Hz
@@ -21,11 +20,11 @@ Se você não tiver um plano de previsão do que deve ser previsto, não faz mui
 	\item Pressão de Recalque (PT02RBAL) (mca)
 \end{itemize}
 
-Na pesquisa, será usada a variável LT01, que é o nível do reservatório, nível esse de grande importância, conforme mostrado nas Figuras \ref{fig:dados-todos} e \ref{fig:2020-a-frente}. As Figuras retratam as anomalias ocorridas durante o período em que a capital paranaense sofreu com a falta de chuvas e o abastecimento dos reservatórios começou a reduzir o nível e enfrentar rodízios periódicos, conforme já comentado na subseção \ref{subsubsec:motivacao}. Com isso, pode-se entender melhor o que se espera daqui para frente.
+A pesquisa fará uso da variável LT01, que representa o nível do reservatório e desempenha um papel de extrema importância, como evidenciado pelas Figuras \ref{fig:dados-todos} e \ref{fig:2020-a-frente}. Essas figuras retratam as anomalias ocorridas durante o período em que a capital paranaense foi afetada pela escassez de chuvas, resultando na redução do nível dos reservatórios e na implementação de rodízios periódicos, conforme discutido na subseção \ref{subsubsec:motivacao}. Assim, tais observações permitem uma compreensão mais aprofundada das perspectivas futuras.
 
 \subsection{Procedimentos metodol{\'o}gicos} \label{subsec:metod}
 
-Para prever e comparar cada modelo obtido na revisão sintemática para cada coisa, é definido um processo metodológico que será seguido, conforme mostrado abaixo na subseção \ref{subsubsec:etp} desta parte, pois o procedimento foi realizado desde o início, escolhendo o que prever, quais métodos usar para realizar a EDA devido à sequência que foi seguida.
+Com o intuito de realizar previsões e fazer comparações entre os modelos obtidos na revisão sistemática, será adotado um processo metodológico bem definido. Tal processo está detalhado na subseção \ref{subsubsec:etp} desta seção, onde foram estabelecidas as etapas a serem seguidas desde o início. Isso inclui a definição do que será previsto, bem como a seleção dos métodos a serem utilizados na Análise Exploratória de Dados (EDA), seguindo uma sequência lógica e coerente.
    
     \subsubsection{Etapas da pesquisa}\label{subsubsec:etp}
     A pesquisa seguiu as seguintes etapas:
@@ -37,7 +36,7 @@ Para prever e comparar cada modelo obtido na revisão sintemática para cada coi
     	
     	Fonte: Elaboração própria
     \end{figure}
-    \begin{enumerate}[start=1, label = {\textbf{Etapa} \arabic* } ]
+    \begin{enumerate}[start=1, label = {\textbf{Etapa} \arabic*} ]
     	\item Análise exploratória dos dados – EDA ( do inglês \textit{Exploratory Data Analysis}). \label{etp:1}
     	
     	A exploração de dados na EDA é fundamental para entender melhor os dados que estão sendo trabalhados, como, por exemplo, excluir valores ausentes, saber como os dados estão separados em horas ou dias e, assim, tomar a melhor decisão a ser trabalhada com os dados, usar gráficos de linha na análise para observar a convergência dos dados e as anomalias que podem ocorrer.
@@ -68,13 +67,17 @@ Para prever e comparar cada modelo obtido na revisão sintemática para cada coi
     	\end{itemize}
     	\item \label{etp:4} Separação dos dados.
     	
-    	Verifique a média e o desvio padrão de cada um desses conjuntos para obter a divisão mais adequada dos dados. Divida o conjunto de dados em treinamento, validação e teste. 70\% para treinamento e validação e 30\% para teste, a partir dessa divisão de 70\% em 80\% para treinamento e 20\% para validação.
+  
+    
+    
+    A fim de obter uma divisão mais adequada dos dados, é realizado um estudo das medidas de tendência central e dispersão de cada conjunto. O conjunto de dados é então dividido em três partes distintas: treinamento, validação e teste. Nessa divisão, inicialmente, 70\% dos dados são utilizados para o treinamento e validação, enquanto os 30\% restantes são reservados para o conjunto de teste. Em seguida, a porção destinada ao treinamento e validação é subdividida em uma proporção de 80\% para treinamento e 20\% para validação.
     	
     	
     	\item Estratégia de previsão (recursiva e iterada-método direto). \label{etp:5}
     	
-    	A estratégia recursiva envolve o uso de um modelo de uma etapa várias vezes, em que a previsão para a etapa de tempo anterior é usada como entrada para fazer uma previsão na próxima etapa de tempo.    	
-    	No caso da previsão da demanda de água para os próximos dias, seria desenvolvido um modelo de previsão em uma etapa. Esse modelo seria usado para prever o dia 1 e, em seguida, essa previsão seria usada como uma observação para prever o dia 2.
+    	A estratégia recursiva consiste em utilizar um modelo de previsão de um passo de tempo várias vezes, onde a previsão obtida no passo anterior é utilizada como entrada para realizar a previsão do próximo passo de tempo.
+    	
+    	No contexto da previsão da demanda de água para os próximos dias, seria desenvolvido um modelo de previsão de um único passo. Esse modelo seria aplicado para prever a demanda no primeiro dia e, em seguida, essa previsão seria utilizada como dado de entrada para prever a demanda do segundo dia. Esse processo se repetiria para os demais dias, permitindo a previsão da demanda ao longo do tempo.
     	    		 
     	Por Exemplo:
     	
@@ -88,15 +91,14 @@ Para prever e comparar cada modelo obtido na revisão sintemática para cada coi
     	
     	\item Horizonte de previsão (1 passo ou n passos à frente). \label{etp:6}
     	
-    	O tipo de horizonte foi escolhido de modo a mudar entre dias, prevendo um passo à frente, uma semana, duas semanas e um mês.
+    	Para abordar a diversidade de horizontes de previsão, optou-se por considerar diferentes intervalos de tempo. Isso permitirá a realização de previsões para um passo à frente, uma semana, duas semanas e um mês, de forma a abranger distintas perspectivas de curto e médio prazo. Essa abordagem proporciona uma análise abrangente da capacidade dos modelos em lidar com horizontes de previsão variados, contribuindo para uma avaliação mais completa e precisa do desempenho dos mesmos.
     	
     	
     	\item Modelos de previsão e métricas de desempenho. \label{etp:7}
     	
-    	Os modelos discutidos aqui são os modelos clássicos de previsão, juntamente com os modelos de regressão gradiente. Os modelos são AR, ARX, ARMA, ARIMA, SARIMA, SARIMAX e ARIMAX, seguidos pelos modelos de regressão LR, XGBRegressor, RFR e LGBMRegressor. Esses modelos adotados foram escolhidos pela revisão sistemática realizada na dissertação.
+    	Os modelos abordados nesta pesquisa são tanto os modelos clássicos de previsão quanto os modelos de regressão por gradiente. Entre os modelos clássicos, incluem-se o AR, ARX, ARMA, ARIMA, SARIMA, SARIMAX e ARIMAX, enquanto os modelos de regressão por gradiente englobam o LR, XGBRegressor, RFR e LGBMRegressor. A seleção desses modelos foi baseada em uma revisão sistemática realizada durante a dissertação, buscando identificar os modelos mais eficazes e amplamente utilizados na literatura.
     	
-    	    	
-    	As métricas usadas em toda a dissertação são as métricas RMSE, MAE e MAPE, encontradas na revisão e uma das mais usadas até hoje, na subseção \ref{subsec:metrica} é explicado em mais detalhes cada uma delas.
+    	Ao longo da pesquisa, foram adotadas três métricas principais para avaliar o desempenho dos modelos: RMSE, MAE  e MAPE. Essas métricas foram escolhidas com base na revisão sistemática e são amplamente reconhecidas como medidas de qualidade de previsão. Cada métrica tem sua própria interpretação e importância, sendo detalhada na subseção \ref{subsec:metrica} para um melhor entendimento de como são aplicadas e interpretadas na pesquisa.
     	
     	
     	

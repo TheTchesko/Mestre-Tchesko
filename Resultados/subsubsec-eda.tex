@@ -1,10 +1,10 @@
 \subsubsection{An\'alise Explorat\'oria dos dados (EDA)}
 
-A partir de \ref{etp:1} é realizado o EDA para o processamento de dados obtidos até agora, com EDA será respondido. De acordo com a \citeonline{Yu2016} Na era dos grandes dados, coletamos volumes de dados em massa caóticos, não estruturados e multimídia através de vários canais. Como descobrir as regras, modelos analíticos e hipóteses destes dados se tornou o novo desafio. A análise exploratória de dados foi promovida por John Tukey para encorajar os estatísticos a explorar os dados e possivelmente formular hipóteses que poderiam levar a uma maior coleta de dados e experimentos. Em contraste com a análise inicial de dados, a análise exploratória de dados (EDA) é uma abordagem para analisar conjuntos de dados para resumir suas principais características, muitas vezes com métodos visuais. Muitas técnicas de EDA têm sido adotadas em grandes análises de dados.
+A partir do passo \ref{etp:1}, foi realizado o EDA (Exploratory Data Analysis) para processar os dados obtidos até o momento. O EDA permite responder às questões de pesquisa levantadas. Conforme mencionado por \citeonline{Yu2016}, na era dos grandes dados, é desafiador descobrir as regras, modelos analíticos e hipóteses por trás dos volumes massivos de dados caóticos, não estruturados e multimídia coletados por meio de vários canais. A análise exploratória de dados foi promovida por John Tukey como uma abordagem para explorar os dados, resumir suas principais características e formular hipóteses que possam direcionar a coleta adicional de dados e experimentos. No contexto de grandes análises de dados, várias técnicas de EDA têm sido adotadas.
 
-Olhando o \ref{q1} relacionando a demanda com a variável prevista e a pressão para a variável PT01 na Figura \ref{fig:person} pode-se ver que ambas estão trabalhando igualmente, quase uma correlação perfeita de $r=1$, então para esta pergunta basta olhar para a correlação Pearson na Figura \ref{fig:person}. 
+Ao analisar a pergunta \ref{q1}, que relaciona a demanda com a variável prevista e a pressão para a variável PT01, pode-se observar na Figura \ref{fig:person} que ambas as variáveis apresentam uma correlação quase perfeita, com um coeficiente de correlação de Pearson ($r$) igual a 1. Portanto, para responder a essa pergunta, basta observar a correlação de Pearson na Figura \ref{fig:person}.
 
-Para \ref{q2} uma tabela é feita para responder melhor a esta pergunta
+Para responder à pergunta \ref{q2}, é criada uma tabela para fornecer uma resposta mais completa.
 
 
 \begin{table}[H]
@@ -26,7 +26,9 @@ Para \ref{q2} uma tabela é feita para responder melhor a esta pergunta
 	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
 \end{table}
 
-Na tabela \ref{tb:est} o desvio padrão é dado pela sigla STD que vem do inglês \textit{standard deviation} também observando para responder ao \ref{q2} assim como toda empresa de tratamento de água é feito um acionamento automático chamado trava de segurança para que o tanque não chegue a zero e falte água em todos os lugares adjacentes que é abastecida por esta água, este mínimo que o tanque pode alcançar é $1.459 m^3\Longleftrightarrow 1459 $ litros e as bombas serão ativadas em sua potência máxima para evitar a ativação das bombas o nível do tanque tem que estar na faixa de $[3.843,4.256]\ m^3$ bomba 1 ainda estaria funcionando para completar o nível. Em casos de pico, o mais ideal, mas não o mais rentável, é outro tanque de reserva nesses momentos e instalar uma tubulação para conectar uma à outra. Durante o dia, ambos estariam abastecendo e à noite, por gravidade, ficariam com o mesmo nível até que o consumo atingisse um nível para acionar as bombas.  
+Na Tabela \ref{tb:est}, o desvio padrão é representado pela sigla STD, que corresponde à expressão em inglês "standard deviation". Além disso, em resposta à pergunta \ref{q2}, é importante mencionar que, assim como em qualquer empresa de tratamento de água, é utilizado um mecanismo de acionamento automático chamado "trava de segurança" para evitar que o nível do tanque chegue a zero e haja falta de água nos locais abastecidos por esse tanque. O nível mínimo que o tanque pode alcançar é de $1.459 m^3$ (equivalente a 1459 litros). As bombas são ativadas em sua potência máxima para evitar que sejam acionadas quando o nível do tanque estiver fora da faixa de $[3.843, 4.256]\ m^3$. No entanto, a bomba 1 ainda estaria operando para completar o nível do tanque caso ele esteja dentro dessa faixa.
+
+Em situações de demanda de pico, uma abordagem ideal, embora não necessariamente a mais econômica, seria ter um tanque de reserva adicional e instalar uma tubulação que os conecte. Durante o dia, ambos os tanques seriam abastecidos e, à noite, por meio da ação da gravidade, eles manteriam o mesmo nível até que o consumo atinja um ponto em que as bombas sejam acionadas. Essa estratégia permite um abastecimento contínuo e eficiente de água.
 
 
 
@@ -40,8 +42,7 @@ Na tabela \ref{tb:est} o desvio padrão é dado pela sigla STD que vem do inglê
 %
 %Na Figura \ref{fig:esquema} um esquema prático para evitar a escassez de água e o consumo em horários de pico. Este é um esquema muito simples de como a hora do dia pode ser melhorada para o armazenamento de água.
 
-Na \ref{q3} o tanque tem como máximo nos dados $4,256 m^3$ de dano em litros $4256$L para atender esta demanda e manter o tanque quase cheio ou sempre cheio o fluxo de entrada tem que estar entre $[238,302] \ m^3/h$ fluxo de gravidade tem que estar entre $[126,182] \ m^3/h$ fluxo de retorno entre $[110,144] \ m^3/h$ pressão de sucção entre $[1.92,4.24] mca$, pressão de retorno entre $[21,24] \ mca$.
+Na pergunta \ref{q3}, observa-se que o tanque tem uma capacidade máxima de $4,256 m^3$, o que equivale a $4.256$ litros. Para atender a essa demanda e manter o tanque quase cheio ou sempre cheio, é necessário que o fluxo de entrada esteja na faixa de $[238, 302] \ m^3/h$, o fluxo de gravidade esteja entre $[126, 182] \ m^3/h$, o fluxo de retorno esteja entre $[110, 144] \ m^3/h$, a pressão de sucção esteja entre $[1.92, 4.24] \ mca$ e a pressão de retorno esteja entre $[21, 24] \ mca$.
 
-Para \ref{q4}, o ponto de equilíbrio para não iniciar as bombas seria o fluxo FT01 $211 m^3/h$ FT02 $114 m^3/h$ FT03 $100m^3/h$ e o nível do tanque a $3,545 m^3$.
-
-Ao \ref{q5}\ref{q5:a} o tanque deve estar a um nível de $4,00 m^3$ para que não precise funcionar com bombas nas horas de pico. 
+Para responder à pergunta \ref{q4}, o ponto de equilíbrio, onde as bombas não precisam ser acionadas, ocorre quando o fluxo de FT01 é de $211 \ m^3/h$, FT02 é de $114 \ m^3/h$, FT03 é de $100 \ m^3/h$ e o nível do tanque está em $3.545 \ m^3$.
+No que diz respeito à pergunta \ref{q5}\ref{q5:a}, o nível do tanque deve ser de $4,00 \ m^3$ para evitar o funcionamento das bombas durante as horas de pico.

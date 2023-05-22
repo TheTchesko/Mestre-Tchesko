@@ -1,6 +1,6 @@
 \subsection{Problematiza\c c\~ao da Revis\~ao} \label{subsec: problematização da revisão}
 
-Nesta seção é abordado um problema de pesquisa que pode ser compreendido por vários leitores na Figura \ref{fig:serie-temporal} é apresentado um mapa conceitual de publicação e os autores são o pilar mais relevante para a revisão porque apresentam vários modelos que servirão de base e como se trata de séries temporais a previsão que pode ser feita neste contexto é um problema de grande significado em si mesmo.
+Nesta subseção, é discutido um problema de pesquisa que pode ser compreendido por diversos leitores. A Figura \ref{fig:serie-temporal} apresenta um mapa conceitual das publicações, destacando a importância dos autores como base para esta revisão. Os modelos propostos por esses autores são fundamentais para abordar o problema em questão, uma vez que a previsão em séries temporais é um desafio de grande significado por si só.
 
 \begin{figure}[H]
 	\centering
@@ -11,7 +11,7 @@ Nesta seção é abordado um problema de pesquisa que pode ser compreendido por 
 	Fonte: Elaboração própria 
 \end{figure}
 
-No mapa conceitual apresentado na Figura \ref{fig:serie-temporal} é visto o problema sendo relacionado com palavras, tornando evidente o que será abordado durante o trabalho, deixando as questões de pesquisa em tópicos logo à frente.
+O mapa conceitual apresentado na Figura \ref{fig:serie-temporal} ilustra a relação entre as palavras-chave que estão relacionadas ao problema em questão, proporcionando uma visão clara do que será abordado ao longo do trabalho. Esse mapa contribui para a identificação dos principais tópicos de pesquisa e das questões que serão exploradas posteriormente.
 
 \begin{enumerate}[start=1, label = {\textbf{Q} \arabic* } ]
 	\item \label{questão:rev1}Quais os autores que mais publicam sobre o assunto de séries temporais?
@@ -22,7 +22,7 @@ No mapa conceitual apresentado na Figura \ref{fig:serie-temporal} é visto o pro
 
 \subsection{Metodologia}\label{subsec:met da revisão}
 
-Nesta seção é esclarecido como a revisão foi conduzida desde a análise do banco de dados até a conclusão da revisão.
+Nesta subseção, é fornecida uma explicação detalhada de como a revisão foi conduzida, abrangendo desde a análise do banco de dados até a conclusão final da revisão. São apresentados os passos e critérios adotados para a seleção dos artigos, bem como os procedimentos utilizados para a extração e análise dos dados. A subseção visa esclarecer de forma clara e objetiva todo o processo metodológico empregado durante a realização da revisão.
 
 \begin{figure}[H]
 	\centering
@@ -32,19 +32,22 @@ Nesta seção é esclarecido como a revisão foi conduzida desde a análise do b
 	
 	Fonte: Adaptado de \citeonline{MARTINS201671}
 \end{figure}
-\begin{enumerate}[start=1, label = {\textbf{Etapa} \arabic* } ]
+
+
+\begin{enumerate}[start=1, label={\textbf{Etapa} \arabic*}]
 	
-	
-	\item \label{etp:rev-1}A Figura \ref{fig:rsl} usa uma adaptação de \citeonline{MARTINS201671} para esta revisão sistemática que está sendo analisada. Depois, há as buscas nos bancos de dados Scopus, Web of Science e Lens. No início foram utilizadas algumas bases no meio de tantas na literatura para melhor atender ao tema da pesquisa.
+	\item \label{etp:rev-1} A Figura \ref{fig:rsl} apresenta uma adaptação da metodologia proposta por \citeonline{MARTINS201671} para a realização desta revisão sistemática. Inicialmente, foram realizadas buscas nos bancos de dados Scopus, Web of Science e Lens, selecionando algumas bases relevantes para o tema da pesquisa.
 	
 	\input{Revisao/base}
 	
-	Em todos os campos de busca, foram utilizados os últimos 6 anos, com exceção do site do Lens, onde optamos por 6 anos porque ele devolvia poucos artigos. Nesta etapa, usamos as palavras-chave que melhor se adaptam à busca \textit{time series forecasting and time series analysis and nonlinear forecasting}.
+	Para todas as bases de busca, foram considerados os últimos 6 anos, com exceção do Lens, que retornava poucos artigos. Nesta etapa, foram utilizadas palavras-chave que se adequam melhor à pesquisa, como \textit{time series forecasting and time series analysis and nonlinear forecasting}.
 	
+	\item \label{etp:rev-2} No cruzamento das palavras-chave, obteve-se um número considerável de artigos, sem restringir a área em que cada um pode ser publicado. A Tabela \ref{tb1} apresenta a tabulação dos resultados obtidos, sem excluir duplicatas, que serão tratadas na seção \ref{subesec:resul da revisão}.
 	
-	\item \label{etp:rev-2} No cruzamento de palavras obtém-se um número considerável de artigos sem restringir a área em que cada artigo pode ser publicado. Na Tabela \ref{tb1} foi feita uma tabulação dos resultados obtidos sem excluir a duplicata que trataremos na seção \ref{subesec:resul da revisão}.
+	\item \label{etp:rev-3} Nesta etapa, é realizada uma avaliação preliminar de cada artigo obtido, sem aplicar nenhum filtro anual nas buscas. Analisar todos os artigos dessa maneira resultaria em um número elevado, por exemplo, no banco de dados Scopus seriam 498 artigos, na Web of Science seriam 140 artigos e no Lens, que retorna poucos artigos, seriam 11 artigos, totalizando 649 artigos sem remover duplicatas. É importante ressaltar que esses artigos passaram apenas pelo filtro de idioma inglês e de serem artigos, visando aprimorar a busca e a tomada de decisões. Ao aplicar o filtro dos últimos 6 anos, obteve-se um número mais gerenciável de artigos para análise. Levando em consideração a diferença entre essa estimativa apresentada na Tabela \ref{tb1} e a quantidade de artigos restantes após a remoção de duplicatas, temos menos de 356 artigos para análise. É válido lembrar que, ao remover as duplicatas, esse número pode diminuir ainda mais, atingindo o objetivo proposto neste trabalho.
 	
-	\item \label{etp:rev-3}Esta etapa é avaliar cada dado obtido sem nenhum filtro no início da busca, a extração destes dados sem utilizar nenhum filtro anual nas buscas seria muitos artigos para analisar, por exemplo, no banco de dados Scopus seria com artigos de $498$, na Web of Sceince seria com artigos de $140$, e na Lente como não retorna muitos artigos é com $11$ dando um total de $649$ sem remover duplicata. É correto lembrar que estes artigos têm apenas o filtro da língua inglesa e do artigo, para melhorar a busca e a tomada de decisão usando o filtro dos anos, os últimos 6 anos é um valor mais agradável de artigos para usar com pouco tempo para analisar, e usando a diferença entre esta estimativa que foi feita na Tabela \ref{tb1} são menos de $356$ artigos para analisar. Lembrando que se a remoção de duplicatas foi feita, este número que foi obtido no resultado de todas as bases pode atingir um número ainda menor do que o pretendido neste trabalho.
+	\item \label{etp:rev-4} Nesta etapa, é realizada uma análise mais aprofundada do conteúdo dos artigos selecionados, levando em consideração as áreas de especialização e correlação com séries temporais. Como esta revisão está inserida no contexto de um programa de mestrado em Engenharia de Produção e Sistemas, vale a pena analisar a correlação com áreas como Matemática. A Figura \ref{fig:areas} mostra que as áreas mais relevantes para a pesquisa são \textbf{Informática, Engenharia e Matemática}, representando 50\% das publicações. Portanto, a pesquisa está alinhada com a utilização de conceitos matemáticos básicos para realizar uma estimativa do número de artigos que podem ser eliminados. Estima-se que cerca de 481 artigos possam ser excluídos, porém essa estim
 	
-	\item  \label{etp:rev-4}Nesta etapa é mais analisar a dimensão do que está sendo trabalhado, fazendo a análise das áreas e lendo os artigos que são realmente importantes para a revisão. Como esta revisão está focada em séries temporais em um programa mestre de engenharia de produção e sistemas, vale a pena analisar a correlação. Desta forma, uma das áreas é a matemática, por isso foi selecionada nestes artigos que uma análise mais profunda dos artigos das séries temporais pode resultar se olharmos as áreas de especialização dos artigos pesquisados, como pode ser visto na Figura \ref{fig:areas} que as áreas aqui citadas com grande relevância são \textbf{informática, engenharia e matemática} tem um número muito alto de publicações representando $50\%$ da pesquisa, então a pesquisa está no caminho certo usando matemática básica para ter uma estimativa de quantos artigos podem ser eliminados seria cerca de $481$ artigos, mas isto sem muita base que este número tem uma precisão. Usando o \textit{software mendeley desktop} para estipular o valor exato de quantos artigos podem ser usados sem duplicação é deixado com um número de artigos de $308$.
+	ativa não possui uma base sólida. Utilizando o software Mendeley Desktop para obter o número exato de artigos sem duplicatas, chegou-se a um total de 308 artigos.
+	
 \end{enumerate}

@@ -1,0 +1,81 @@
+\subsection{Estudo de Caso}
+
+Estudo de caso: Previsão de demanda de água usando análise de série temporal
+
+Introdução:
+A previsão da demanda de água é uma preocupação fundamental para muitas organizações e autoridades responsáveis pelo abastecimento de água. A análise de séries temporais é uma abordagem comumente usada para prever padrões futuros com base em dados históricos. Neste estudo de caso, será explorado como a análise de séries temporais pode ser aplicada para prever a demanda de água ao longo do tempo.
+
+
+
+\subsubsection{Defini\c c\~ao do problema}
+O primeiro passo é definir claramente o problema que queremos abordar. Por exemplo, vamos considerar a seguinte pergunta de pesquisa: "Como prever a demanda diária de água em uma determinada cidade para os próximos seis meses?"
+
+
+Na subseção \ref{subsubsec:obespec} estão as perguntas de pesquisa que serão abordadas no estudo de caso, da pergunta \ref{q1} à \ref{q5}, com as ramificações da \ref{q5}.
+
+\subsubsection{Coleta de dados}
+%A próxima etapa é coletar os dados históricos relevantes. Você precisará de dados sobre a demanda diária de água ao longo de um período significativo, idealmente vários anos. Isso pode incluir informações sobre a quantidade de água consumida diariamente, fatores sazonais, dados meteorológicos e outros dados relevantes.
+
+Na subseção \ref{subsec:descricao}, são apresentadas as variáveis contidas no conjunto de dados coletado no período de 2018 a 2020, durante uma grave falta de água que afetou a cidade. Devido a essa situação, foi implementado um rodízio de abastecimento de água para os residentes. Os dados foram coletados em intervalos de uma hora, levando em consideração cada variável, com ênfase na variável-alvo, denominada LT01, que representa o nível do reservatório.
+
+O conjunto de dados possui um total de 26.306 linhas e 9 colunas. Durante a coleta dos dados, verificou-se que eles apresentam padrões sazonais, indicando variações recorrentes ao longo do tempo. Além disso, constatou-se que o consumo diário foi significativamente afetado no ano de 2020, diferindo dos anos anteriores, nos quais as mudanças não foram tão significativas.
+
+
+
+\subsubsection{An\'alise explorat\'oria dos dados}
+%Antes de aplicar técnicas de previsão, é importante realizar uma análise exploratória dos dados. Isso envolve a visualização dos dados, identificação de tendências, sazonalidade e padrões que podem influenciar a demanda de água. Você pode usar gráficos, como gráficos de linha ou gráficos de decomposição, para identificar esses padrões.
+
+
+Ao longo do trabalho realizado, pôde-se observar na subseção \ref{subsec:detec} que foi realizada uma análise gráfica do problema antes da aplicação de qualquer método. A detecção de anomalias mostrou-se desafiadora, porém não impossível de ser realizada. Essa detecção permitiu a análise da presença de sazonalidade nos dados. A decomposição STL foi utilizada para essa finalidade, conforme descrito na etapa \ref{etp:3} e detalhado na subseção \ref{subsubsec:stl}, onde são apresentadas as decomposições realizadas.
+
+É fundamental lembrar que, durante a análise exploratória, os dados sofreram algumas alterações. Por exemplo, a média diária foi calculada em vez de ser considerada a nível horário, resultando em uma redução do conjunto de dados de 26.306 linhas para 1.096 linhas. A decomposição STL foi aplicada nos formatos aditivo e multiplicativo, e ambas as abordagens estão ilustradas nas Figuras \ref{fig:stl-aditiva} e \ref{fig:stl}, respectivamente.
+
+Adicionalmente, na subseção \ref{subsubsec:stl}, foi realizada a verificação da estacionariedade da série. O teste de Dickey-Fuller (DF) foi empregado para auxiliar na tomada de decisões, e os resultados demonstraram que a série em análise é estacionária, conforme evidenciado pelo teste DF.
+
+
+
+\subsubsection{Escolha do modelo}
+%Com base na análise exploratória dos dados, você pode selecionar o modelo adequado para a previsão da demanda de água. Existem várias técnicas de análise de séries temporais disponíveis, como modelos ARIMA (AutoRegressive Integrated Moving Average), modelos de suavização exponencial, modelos de regressão sazonal, entre outros. A escolha do modelo dependerá das características específicas dos dados e dos padrões identificados.
+
+
+Como os dados apresentam sazonalidade, foram selecionados modelos simples de ARIMA, como AR, MA, ARMA, ARIMA e SARIMA. Esses modelos são univariados. Já os modelos com variável exógena, como ARX, ARIMAX e SARIMAX, são considerados multivariados. No contexto dos dados analisados, qualquer variável que possa interferir na variável preditora é considerada exógena. Para este caso específico, todas as outras variáveis foram incluídas como exógenas para melhorar a previsão.
+
+Outros modelos utilizados são os modelos de aprendizado de máquina supervisionados, como LR, RFR, LightGBM e XGBoost. Esses modelos são regressores baseados em árvores de decisão ou gradientes, especialmente os modelos XGBoost e LightGBM, que são amplamente reconhecidos como eficazes na previsão e tomada de decisões, conforme mencionado por \citeonline{chen2016xgboost} em seu estudo de benchmarking de frameworks de deep learning para tarefas de manutenção preditiva. \citeonline{sanchez2020comparative}, em seu estudo comparativo de XGBoost, AdaBoost e CatBoost em algoritmos de aprendizado de máquina, também destacam o desempenho superior do XGBoost em várias métricas de avaliação.
+
+
+
+\subsubsection{Divis\~ao dos dados}
+%Antes de prosseguir com a modelagem, é importante dividir os dados em conjuntos de treinamento e teste. Os dados de treinamento serão usados para ajustar o modelo, enquanto os dados de teste serão usados para avaliar a precisão das previsões.
+
+Para obter a divisão mais adequada dos dados, verificam-se a média e o desvio padrão de cada um desses conjuntos. O conjunto de dados é dividido em três partes: treinamento, validação e teste. Nessa divisão, utiliza-se inicialmente 70\% dos dados para treinamento e validação, e os 30\% restantes para teste. Em seguida, a porção de treinamento e validação é subdividida em 80\% para treinamento e 20\% para validação.
+
+\subsubsection{Ajuste do modelo}
+Nesta etapa, você aplicará o modelo selecionado aos dados de treinamento. Ajuste os parâmetros do modelo com o objetivo de minimizar os erros de previsão. Dependendo do modelo escolhido, você pode usar técnicas de otimização para encontrar os melhores parâmetros.
+
+Ao ajustar o modelo para a base de dados, foi feita uma alteração na ordem do modelo sugerido pelo pmdarima. A escolha foi trocar o modelo SARIMAX(1,1,1)(2,1,0,12) para SARIMAX(7,1,7)(2,1,0,12). Essa decisão foi tomada com base na observação de um ajuste mais preciso aos dados, evidenciado pela redução nos resíduos e uma melhor captura das características da série temporal. Além disso, considerando o conhecimento do problema e as características específicas dos dados, foi identificado que padrões mais complexos requeriam ordens mais altas para serem adequadamente capturados. Dessa forma, foi realizado um processo iterativo de experimentação e avaliação para determinar o modelo SARIMAX(7,1,7)(2,1,0,12) como o mais adequado para a base de dados em questão. É importante ressaltar que o desempenho do novo modelo será avaliado por meio de diagnósticos adicionais e análise dos resultados obtidos.
+
+Os modelos XGBRegressor e LGBMRegressor foram ajustados usando as técnicas de GridSearchCV e BayesSearchCV. Essas abordagens permitiram encontrar as melhores combinações de hiperparâmetros para esses modelos, buscando maximizar o desempenho e a precisão das previsões. Por outro lado, os modelos LR (Regressão Linear) e RFR (Random Forest Regressor) não passaram por ajustes, pois não apresentaram melhorias significativas nos resultados após as etapas de GridSearchCV, BayesSearchCV e RandomizedSearchCV. Portanto, esses modelos mantiveram as configurações padrão, uma vez que as tentativas de otimização dos hiperparâmetros não resultaram em melhorias substanciais para eles.
+
+\begin{itemize}
+	\item \textbf{GridSearchCV}: O GridSearchCV é uma técnica de busca exaustiva que é usada para ajustar os hiperparâmetros de um modelo de aprendizado de máquina. Ele realiza uma busca sistemática por todas as combinações possíveis de valores especificados para cada hiperparâmetro e avalia o desempenho do modelo para cada combinação. Essa abordagem avalia todas as opções disponíveis, mas pode ser computacionalmente intensiva. Ao final, fornece os melhores hiperparâmetros encontrados que otimizam a métrica de avaliação escolhida.
+
+\item \textbf{BayesSearchCV}: O BayesSearchCV é uma técnica de otimização de hiperparâmetros baseada em Bayesian optimization. Ele usa um processo de amostragem sequencial para encontrar a melhor combinação de hiperparâmetros de forma mais eficiente do que o GridSearchCV. O BayesSearchCV usa uma função de perda estimada e um modelo probabilístico para determinar quais configurações de hiperparâmetros são mais promissoras e, em seguida, realiza novas amostragens para refinar a busca. Essa abordagem permite uma exploração mais inteligente do espaço de hiperparâmetros e a descoberta de melhores configurações com menos iterações.
+
+\item \textbf{RandomizedSearchCV}: O RandomizedSearchCV é uma técnica de busca aleatória de hiperparâmetros. Ao contrário do GridSearchCV, que testa todas as combinações possíveis, o RandomizedSearchCV seleciona aleatoriamente um subconjunto do espaço de hiperparâmetros e avalia o modelo para cada combinação escolhida. Essa abordagem é útil quando o espaço de hiperparâmetros é grande e não é possível testar todas as combinações em tempo razoável. O RandomizedSearchCV permite uma exploração mais ampla do espaço de hiperparâmetros, embora com menor garantia de encontrar a melhor combinação.
+\end{itemize}
+
+\subsubsection{Avalia\c c\~ao do modelo}
+%Continuar aqui amanhã
+
+Após ajustar o modelo, é hora de avaliar sua precisão. Use os dados de teste para comparar as previsões do modelo com os valores reais de demanda de água. Métricas como erro médio absoluto (MAE), erro quadrático médio (RMSE) e coeficiente de determinação ($R^2$) podem ser usadas para avaliar a qualidade das previsões.
+
+\subsubsection{Previs\~oes futuras}
+Uma vez que você esteja satisfeito com a precisão do modelo, você pode usá-lo para fazer pre
+
+visões futuras. Aplique o modelo aos dados futuros para estimar a demanda de água nos próximos seis meses, por exemplo.
+
+\subsubsection{Monitoramento e ajuste cont\'inuo}
+É importante lembrar que a demanda de água pode ser afetada por fatores externos imprevisíveis, como mudanças climáticas, eventos especiais ou mudanças no comportamento dos consumidores. Portanto, é necessário monitorar continuamente os resultados das previsões e ajustar o modelo conforme necessário.
+
+\subsubsection{Principais Conclus\~ao}
+Este estudo de caso descreveu uma abordagem geral para prever a demanda de água usando análise de série temporal. No entanto, é importante adaptar essas etapas aos dados e às características específicas do seu caso. A análise de séries temporais pode ser uma ferramenta valiosa para previsão de demanda de água e pode ajudar a tomar decisões informadas para o gerenciamento do abastecimento de água.
