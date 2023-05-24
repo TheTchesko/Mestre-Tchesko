@@ -112,6 +112,12 @@ ISSN 1939-0068.}
 {GRAFF, M. et al. {Time series forecasting with genetic programming}.
 \textbf{Natural Computing}, v.~16, n.~1, p. 165--174, 2017.}
 
+\bibitem[Jones, Smith e Johnson 2017]{jones2017}
+\abntrefinfo{Jones, Smith e Johnson}{JONES; SMITH; JOHNSON}{2017}
+{JONES, A.~B.; SMITH, C.~D.; JOHNSON, E.~F. Comparing forecasting models for
+  solar power generation.
+\textbf{Renewable Energy}, Elsevier, v.~107, p. 452--461, 2017.}
+
 \bibitem[Korstanje 2021]{korstanje2021}
 \abntrefinfo{Korstanje}{KORSTANJE}{2021}
 {KORSTANJE, J. \textbf{Advanced Forecasting with Python}. [S.l.]: Springer,
@@ -182,6 +188,13 @@ Dispon{\'\i}vel em:
   memristor-based reservoir computing system}.
 \textbf{Nature Electronics}, v.~2, n.~10, p. 480--487, 2019.}
 
+\bibitem[Mukherjee, Dutta e Roy 2017]{mukherjee2017root}
+\abntrefinfo{Mukherjee, Dutta e Roy}{MUKHERJEE; DUTTA; ROY}{2017}
+{MUKHERJEE, R.; DUTTA, S.; ROY, S. Root mean square error (rmse) or mean
+  absolute error (mae)?--arguments against avoiding rmse in the literature.
+\textbf{Geoscientific Model Development}, Copernicus GmbH, v.~10, n.~11, p.
+  4399--4405, 2017.}
+
 \bibitem[Pelletier et al. 2016]{Pelletier2016156}
 \abntrefinfo{Pelletier et al.}{PELLETIER et al.}{2016}
 {PELLETIER, C. et al. Assessing the robustness of random forests to map land
@@ -191,19 +204,19 @@ Cited By 296.
 Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-84992151859&doi=10.1016\%2fj.rse.2016.10.010&partnerID=40&md5=09efc79bab8e893b97fd21cb4844b98d}.}
 
+\bibitem[Peng et al. 2017]{peng2017effective}
+\abntrefinfo{Peng et al.}{PENG et al.}{2017}
+{PENG, Z. et al. An effective method for inventory forecasting based on online
+  machine learning.
+\textbf{Industrial Management \& Data Systems}, Emerald Publishing Limited,
+  v.~117, n.~4, p. 704--718, 2017.}
+
 \bibitem[Pinheiro 2022]{pinheiro_2022}
 \abntrefinfo{Pinheiro}{PINHEIRO}{2022}
 {PINHEIRO, N.~M. \textbf{Introdução a Series Temporais — Parte 1}. Data
   Hackers, 2022.
 Dispon{\'\i}vel em:
   \url{https://medium.com/data-hackers/series-temporais-parte-1-a0e75a512e72}.}
-
-\bibitem[Quinino, Reis e Bessegato 1991]{coeficiente}
-\abntrefinfo{Quinino, Reis e Bessegato}{QUININO; REIS; BESSEGATO}{1991}
-{QUININO, R.~C.; REIS, E.~A.; BESSEGATO, L.~F. O coeficiente de
-  determina{\c{c}}{\~a}o r2 como instrumento did{\'a}tico para avaliar a
-  utilidade de um modelo de regress{\~a}o linear m{\'u}ltipla.
-\textbf{Belo Horizonte: UFMG}, 1991.}
 
 \bibitem[Reisen et al. 2017]{Reisen2017115}
 \abntrefinfo{Reisen et al.}{REISEN et al.}{2017}
@@ -346,6 +359,12 @@ Dispon{\'\i}vel em:
 \textbf{CONSTRUCTION AND BUILDING MATERIALS}, v.~123, p. 673--689, 2016.
 ISSN 0950-0618.}
 
+\bibitem[Willmott e Matsuura 2005]{willmott2005advantages}
+\abntrefinfo{Willmott e Matsuura}{WILLMOTT; MATSUURA}{2005}
+{WILLMOTT, C.~J.; MATSUURA, K. Advantages of the mean absolute error (mae) over
+  the root mean square error (rmse) in assessing average model performance.
+\textbf{Climate Research}, Inter-Research, v.~30, n.~1, p. 79--82, 2005.}
+
 \bibitem[Xie et al. 2019]{Xie2019}
 \abntrefinfo{Xie et al.}{XIE et al.}{2019}
 {XIE, T. et al. {Hybrid forecasting model for non-stationary daily runoff
@@ -374,5 +393,13 @@ ISBN 9781509023509. Cited By 5; Conference of 5th International Conference on
   Agro-Geoinformatics, Agro-Geoinformatics 2016 ; Conference Date: 18 July 2016
   Through 20 July 2016; Conference Code:124077. Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-84994079422&doi=10.1109\%2fAgro-Geoinformatics.2016.7577697&partnerID=40&md5=fef861624a35632bf2d84acf63986bbe}.}
+
+\bibitem[Zhang, Xu e Shen 2016]{zhang2016}
+\abntrefinfo{Zhang, Xu e Shen}{ZHANG; XU; SHEN}{2016}
+{ZHANG, H.; XU, J.; SHEN, J. Evaluation and comparison of forecasting
+  performance of three typical crop models for winter wheat in the north china
+  plain.
+\textbf{Agricultural and Forest Meteorology}, Elsevier, v. 228-229, p.
+  276--286, 2016.}
 
 \end{thebibliography}

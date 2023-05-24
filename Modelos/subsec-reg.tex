@@ -1,4 +1,4 @@
-\subsection{Modelos de aprendizado de m\'aquina supervisionados}\label{subsec:reg}
+\subsection{Modelos de Aprendizado de M\'aquina Supervisionados}\label{subsec:reg}
 
 Os modelos regressivos para séries temporais têm sido amplamente reconhecidos e utilizados na literatura atual, especialmente aqueles baseados em métodos de gradiente. Esses modelos, incluindo a regressão linear simples, têm se destacado como uma escolha popular em competições de séries temporais em todo o mundo.
 
@@ -88,7 +88,7 @@ A fórmula mencionada, conhecida como \textbf{OLS} (método dos mínimos quadrad
 \end{figure}
 
 
-\subsubsection{Floresta Aleat\'oria} \label{subsubsec:rf}
+\subsubsection{Floresta Aleat\'oria (Random Forest)} \label{subsubsec:rf}
 
 Pode-se observar que ter exatamente a mesma árvore de decisão repetidas vezes não adiciona valor significativo em comparação a usar essa mesma árvore de decisão apenas uma vez. Em modelos de conjunto, cada modelo individual deve ser ligeiramente diferente dos demais. Existem dois métodos amplamente reconhecidos para criar conjuntos: o ensacamento (\textit{bagging}) e o reforço (\textit{boosting}). A floresta aleatória utiliza o ensacamento para criar um conjunto de árvores de decisão, onde cada árvore é construída com uma amostra aleatória do conjunto de dados original. Isso garante que as árvores sejam distintas e diversificadas, contribuindo para a robustez e eficácia do modelo.
 
@@ -115,7 +115,7 @@ Segundo \citeonline{Pelletier2016156}, cada árvore em um modelo de Floresta Ale
 \end{figure}
 
 
-\subsubsection{LightGBM e XGboost}\label{subsubsec:lgbxgb}
+\subsubsection{Gradient Boosting (como XGBoost, LightGBM)}\label{subsubsec:lgbxgb}
 
 O aumento de gradiente (do inglês\textit{gradient boosting}) é um método que combina vários modelos de árvore de decisão para realizar previsões. Cada uma dessas árvores de decisão é única, pois a diversidade é um elemento importante nesse processo. A diversidade é alcançada através de um processo chamado boosting, que é uma abordagem iterativa. O boosting adiciona modelos fracos ao conjunto de forma inteligente, dando mais peso aos pontos de dados que ainda não foram bem previstos. 
 
