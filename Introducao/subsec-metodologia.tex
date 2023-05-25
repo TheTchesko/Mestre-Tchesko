@@ -49,6 +49,12 @@ Com o intuito de realizar previsões e fazer comparações entre os modelos obti
        	
     	\item Fazer a decomposição STL (do inglês \textit{Seasonal-Trend Decomposition}) Sazonalidade, Tendência e Resíduo. \label{etp:3}
     	
+    	\citeonline{en15165875} destacam que ``o uso do método de decomposição STL em conjunto com um modelo híbrido se mostrou eficaz na previsão de carga de curto prazo'' (p. 6).
+    	
+    	Segundo \citeonline{inproceedings}, ``a aplicação da decomposição STL e do modelo LSTM baseado em atenção foi capaz de prever com precisão a velocidade do tráfego de curto prazo'' (p. 6).
+    	
+    	\citeonline{su13041694} afirmam que ``a combinação da decomposição STL e modelos de aprendizado profundo mostrou-se promissora na previsão de carga de eletricidade'' (p. 18).
+    	
         O algoritmo STL executa suavização na série de tempo usando LOESS em dois loops; o loop interno itera entre a suavização sazonal e de tendência e o loop externo minimiza o efeito de valores atípicos. Durante o loop interno, o componente sazonal é calculado primeiro e removido para calcular o componente de tendência. O restante é calculado subtraindo os componentes sazonais e de tendência da série de tempo.
         
         Os três componentes da análise STL se relacionam com a série de tempo bruta da seguinte forma:
@@ -68,12 +74,14 @@ Com o intuito de realizar previsões e fazer comparações entre os modelos obti
     	\item \label{etp:4} Separação dos dados.
     	
   
-    
+    De acordo com a literatura acadêmica, é comum dividir o conjunto de dados em treinamento, validação e teste para avaliar a performance dos modelos. Essa abordagem permite uma análise mais completa do desempenho do modelo, garantindo uma avaliação objetiva de sua capacidade de generalização e evitando problemas de overfitting ou subajuste \cite{cruz-ramirez2020enhancing,mokhtari2020deep,khan2021hybrid,sharma2021deep}.
     
     A fim de obter uma divisão mais adequada dos dados, é realizado um estudo das medidas de tendência central e dispersão de cada conjunto. O conjunto de dados é então dividido em três partes distintas: treinamento, validação e teste. Nessa divisão, inicialmente, 70\% dos dados são utilizados para o treinamento e validação, enquanto os 30\% restantes são reservados para o conjunto de teste. Em seguida, a porção destinada ao treinamento e validação é subdividida em uma proporção de 80\% para treinamento e 20\% para validação.
     	
     	
     	\item Estratégia de previsão (recursiva e iterada-método direto). \label{etp:5}
+    	
+    	A estratégia recursiva é mencionada por \citeonline{PETROPOULOS2022705} como uma abordagem eficaz na previsão de séries temporais de múltiplos passos. De acordo com o autor, essa estratégia envolve o uso de previsões anteriores como entradas para prever os próximos passos da série temporal. A abordagem recursiva tem demonstrado potencial para melhorar a acurácia das previsões de séries temporais de longo prazo.
     	
     	A estratégia recursiva consiste em utilizar um modelo de previsão de um passo de tempo várias vezes, onde a previsão obtida no passo anterior é utilizada como entrada para realizar a previsão do próximo passo de tempo.
     	

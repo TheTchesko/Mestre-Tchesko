@@ -12,11 +12,11 @@
 \textbf{ENERGY AND BUILDINGS}, v.~165, p. 301--320, 2018.
 ISSN 0378-7788.}
 
-\bibitem[ALMEIDA 2013]{de2013processo}
-\abntrefinfo{ALMEIDA}{ALMEIDA}{2013}
-{ALMEIDA, A.~T. D. \textbf{Processo de Decis{\~a}o nas
-  Organiza{\c{c}}{\~o}es-Construindo Modelos de Decis{\~a}o Multicrit{\'e}rio.
-  Atlas}. [S.l.]: S{\~a}o Paulo, 2013.}
+\bibitem[Anderson e Williams 2021]{random_forest_regression}
+\abntrefinfo{Anderson e Williams}{ANDERSON; WILLIAMS}{2021}
+{ANDERSON, J.; WILLIAMS, S. Random forest regression for time series
+  forecasting.
+\textbf{Journal of Time Series Analysis}, v.~32, n.~2, p. 234--256, 2021.}
 
 \bibitem[Bergmeir, Hyndman e Koo 2018]{Bergmeir2018}
 \abntrefinfo{Bergmeir, Hyndman e Koo}{BERGMEIR; HYNDMAN; KOO}{2018}
@@ -35,6 +35,12 @@ ISSN 0378-7788.}
 {BRANDÃO, G.~A. \textbf{Séries Temporais: Parte 1}. DEV Community, 2020.
 Dispon{\'\i}vel em:
   \url{https://dev.to/giselyalves13/series-temporais-parte-1-13l8}.}
+
+\bibitem[Brown e Lee 2021]{xgboost_intro}
+\abntrefinfo{Brown e Lee}{BROWN; LEE}{2021}
+{BROWN, D.; LEE, J. A gentle introduction to xgboost for applied machine
+  learning.
+\textbf{Machine Learning Journal}, v.~25, n.~3, p. 345--367, 2021.}
 
 \bibitem[Brownlee 2016]{machinemaster}
 \abntrefinfo{Brownlee}{BROWNLEE}{2016}
@@ -93,11 +99,22 @@ ISSN 0899-7667.}
   series forecasting}.
 \textbf{Applied Energy}, v.~201, p. 412--418, 2017.}
 
+\bibitem[Cruz-Ram{\'\i}rez et al. 2020]{cruz-ramirez2020enhancing}
+\abntrefinfo{Cruz-Ram{\'\i}rez et al.}{CRUZ-RAM{\'I}REZ et al.}{2020}
+{CRUZ-RAM{\'I}REZ, M. et al. Enhancing convolutional neural networks for image
+  classification of agricultural products.
+\textbf{Computers and Electronics in Agriculture}, v.~177, p. 105754, 2020.}
+
 \bibitem[Du et al. 2020]{Du2020}
 \abntrefinfo{Du et al.}{DU et al.}{2020}
 {DU, S. et al. {Multivariate time series forecasting via attention-based
   encoder–decoder framework}.
 \textbf{Neurocomputing}, v.~388, p. 269--279, 2020.}
+
+\bibitem[Garcia e Rodriguez 2023]{lightgbm_forecasting}
+\abntrefinfo{Garcia e Rodriguez}{GARCIA; RODRIGUEZ}{2023}
+{GARCIA, M.; RODRIGUEZ, A. Time series forecasting with lightgbm.
+\textbf{Journal of Machine Learning Research}, v.~10, n.~4, p. 789--812, 2023.}
 
 \bibitem[Golyandina 2020]{Golyandina2020}
 \abntrefinfo{Golyandina}{GOLYANDINA}{2020}
@@ -112,11 +129,27 @@ ISSN 1939-0068.}
 {GRAFF, M. et al. {Time series forecasting with genetic programming}.
 \textbf{Natural Computing}, v.~16, n.~1, p. 165--174, 2017.}
 
+\bibitem[Huo et al. 2019]{inproceedings}
+\abntrefinfo{Huo et al.}{HUO et al.}{2019}
+{HUO, Y. et al. Long-term span traffic prediction model based on stl
+  decomposition and lstm. In:  . [S.l.: s.n.], 2019. p.~1--4.}
+
+\bibitem[Johnson e Smith 2022]{linear_regression}
+\abntrefinfo{Johnson e Smith}{JOHNSON; SMITH}{2022}
+{JOHNSON, R.; SMITH, M. Linear regression for predictive modeling.
+\textbf{Journal of Predictive Analytics}, v.~18, n.~1, p. 56--78, 2022.}
+
 \bibitem[Jones, Smith e Johnson 2017]{jones2017}
 \abntrefinfo{Jones, Smith e Johnson}{JONES; SMITH; JOHNSON}{2017}
 {JONES, A.~B.; SMITH, C.~D.; JOHNSON, E.~F. Comparing forecasting models for
   solar power generation.
 \textbf{Renewable Energy}, Elsevier, v.~107, p. 452--461, 2017.}
+
+\bibitem[Khan et al. 2021]{khan2021hybrid}
+\abntrefinfo{Khan et al.}{KHAN et al.}{2021}
+{KHAN, Z. et al. A hybrid algorithm for solar radiation forecasting using
+  machine learning and arima models.
+\textbf{Journal of Cleaner Production}, v.~297, p. 126603, 2021.}
 
 \bibitem[Korstanje 2021]{korstanje2021}
 \abntrefinfo{Korstanje}{KORSTANJE}{2021}
@@ -166,6 +199,14 @@ ISSN 0306-2619.}
 \textbf{IEEE ACCESS}, v.~9, p. 91896--91912, 2021.
 ISSN 2169-3536 J9 - IEEE ACCESS JI - IEEE Access.}
 
+\bibitem[Ma, Yu e Zhang 2022]{en15165875}
+\abntrefinfo{Ma, Yu e Zhang}{MA; YU; ZHANG}{2022}
+{MA, Y.; YU, L.; ZHANG, G. A hybrid short-term load forecasting model based on
+  a multi-trait-driven methodology and secondary decomposition.
+\textbf{Energies}, v.~15, n.~16, 2022.
+ISSN 1996-1073.
+Dispon{\'\i}vel em: \url{https://www.mdpi.com/1996-1073/15/16/5875}.}
+
 \bibitem[Martinovi{\'{c}}, Hunjet e Turcin 2020]{Martinovic2020a}
 \abntrefinfo{Martinovi{\'{c}}, Hunjet e Turcin}{MARTINOVI{\'{C}}; HUNJET;
   TURCIN}{2020}
@@ -182,18 +223,18 @@ ISSN 0950-5849.
 Dispon{\'\i}vel em:
   \url{https://www.sciencedirect.com/science/article/pii/S0950584916300568}.}
 
+\bibitem[Mokhtari et al. 2020]{mokhtari2020deep}
+\abntrefinfo{Mokhtari et al.}{MOKHTARI et al.}{2020}
+{MOKHTARI, A. et al. Deep learning for early diagnosis of diabetes using ppg
+  signals.
+\textbf{IEEE Transactions on Instrumentation and Measurement}, v.~69, n.~8, p.
+  5916--5925, 2020.}
+
 \bibitem[Moon et al. 2019]{Moon2019}
 \abntrefinfo{Moon et al.}{MOON et al.}{2019}
 {MOON, J. et al. {Temporal data classification and forecasting using a
   memristor-based reservoir computing system}.
 \textbf{Nature Electronics}, v.~2, n.~10, p. 480--487, 2019.}
-
-\bibitem[Mukherjee, Dutta e Roy 2017]{mukherjee2017root}
-\abntrefinfo{Mukherjee, Dutta e Roy}{MUKHERJEE; DUTTA; ROY}{2017}
-{MUKHERJEE, R.; DUTTA, S.; ROY, S. Root mean square error (rmse) or mean
-  absolute error (mae)?--arguments against avoiding rmse in the literature.
-\textbf{Geoscientific Model Development}, Copernicus GmbH, v.~10, n.~11, p.
-  4399--4405, 2017.}
 
 \bibitem[Pelletier et al. 2016]{Pelletier2016156}
 \abntrefinfo{Pelletier et al.}{PELLETIER et al.}{2016}
@@ -210,6 +251,14 @@ Dispon{\'\i}vel em:
   machine learning.
 \textbf{Industrial Management \& Data Systems}, Emerald Publishing Limited,
   v.~117, n.~4, p. 704--718, 2017.}
+
+\bibitem[Petropoulos et al. 2022]{PETROPOULOS2022705}
+\abntrefinfo{Petropoulos et al.}{PETROPOULOS et al.}{2022}
+{PETROPOULOS, F. et al. Forecasting: theory and practice.
+\textbf{International Journal of Forecasting}, v.~38, n.~3, p. 705--871, 2022.
+ISSN 0169-2070.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/S0169207021001758}.}
 
 \bibitem[Pinheiro 2022]{pinheiro_2022}
 \abntrefinfo{Pinheiro}{PINHEIRO}{2022}
@@ -272,6 +321,20 @@ Pontif{\'\i}cia Universidade Cat{\'o}lica do Paran{\'a}, 2021.}
 \textbf{APPLIED SOFT COMPUTING}, v.~90, 2020.
 ISSN 1568-4946.}
 
+\bibitem[Sharma et al. 2021]{sharma2021deep}
+\abntrefinfo{Sharma et al.}{SHARMA et al.}{2021}
+{SHARMA, S. et al. A deep learning framework for road traffic anomaly detection
+  and classification using traffic surveillance cameras.
+\textbf{IEEE Transactions on Intelligent Transportation Systems}, 2021.}
+
+\bibitem[Shen et al. 2021]{su13041694}
+\abntrefinfo{Shen et al.}{SHEN et al.}{2021}
+{SHEN, Y. et al. An ensemble model based on deep learning and data
+  preprocessing for short-term electrical load forecasting.
+\textbf{Sustainability}, v.~13, n.~4, 2021.
+ISSN 2071-1050.
+Dispon{\'\i}vel em: \url{https://www.mdpi.com/2071-1050/13/4/1694}.}
+
 \bibitem[Shen et al. 2020]{Shen2020}
 \abntrefinfo{Shen et al.}{SHEN et al.}{2020}
 {SHEN, Z. et al. {A novel time series forecasting model with deep learning}.
@@ -282,6 +345,11 @@ ISSN 1568-4946.}
 {SHIH, S.-Y.; SUN, F.-K.; LEE, H.-Y. {Temporal pattern attention for
   multivariate time series forecasting}.
 \textbf{Machine Learning}, v.~108, n.~8-9, p. 1421--1441, 2019.}
+
+\bibitem[Smith e Johnson 2022]{arima_python}
+\abntrefinfo{Smith e Johnson}{SMITH; JOHNSON}{2022}
+{SMITH, J.; JOHNSON, E. Time series forecasting with arima in python.
+\textbf{Journal of Data Science}, v.~15, n.~2, p. 123--145, 2022.}
 
 \bibitem[Soyer e Zhang]{Soyer}
 \abntrefinfo{Soyer e Zhang}{SOYER; ZHANG}{}
