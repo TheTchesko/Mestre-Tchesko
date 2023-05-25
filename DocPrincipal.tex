@@ -45,7 +45,10 @@
 \include{Resumos/abstract}
 
 
-\include{Pretextuais/lista-simbolos}
+%% LISTA DE FIGURAS
+\newpage 
+\pdfbookmark[1]{\listfigurename}{lof}
+\listoffigures 
 
 %% LISTA DE TABELAS
 \newpage 
@@ -53,12 +56,11 @@
 \listoftables
 \cleardoublepage
 
-%% LISTA DE FIGURAS
-\newpage 
-\pdfbookmark[1]{\listfigurename}{lof}
-\listoffigures 
 
 
+%% Lista de abreviaturas e siglas (opcional)
+
+\include{Pretextuais/lista-simbolos}
 
 %% SUMÁRIO
 \newpage
@@ -93,6 +95,6 @@
 
 %-----------------------------------------------------------------
 %% FIM DO DOCUMENTO
-
+\printnomenclature
 
 \end{document}

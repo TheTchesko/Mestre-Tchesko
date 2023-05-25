@@ -1,0 +1,19 @@
+This is makeindex, version 2.16 [MiKTeX 23.4].
+Scanning style file C:/Users/msndo/AppData/Local/Programs/MiKTeX/makeindex/nomencl/nomencl.ist........
+** Input style error (file = C:/Users/msndo/AppData/Local/Programs/MiKTeX/makeindex/nomencl/nomencl.ist, line = 36):
+   -- Unknown specifier lethead_prefix.
+** Input style error (file = C:/Users/msndo/AppData/Local/Programs/MiKTeX/makeindex/nomencl/nomencl.ist, line = 37):
+   -- Unknown specifier lethead_suffix.
+** Input style error (file = C:/Users/msndo/AppData/Local/Programs/MiKTeX/makeindex/nomencl/nomencl.ist, line = 38):
+   -- Unknown specifier lethead_flag.
+....done (12 attributes redefined, 3 ignored).
+Scanning input file DocPrincipal.nlo...
+!! Input index error (file = DocPrincipal.nlo, line = 1):
+   -- Illegal page number  or page_precedence rnaRA.
+!! Input index error (file = DocPrincipal.nlo, line = 2):
+   -- Illegal page number  or page_precedence rnaRA.
+!! Input index error (file = DocPrincipal.nlo, line = 3):
+   -- Illegal page number  or page_precedence rnaRA.
+done (0 entries accepted, 3 rejected).
+Nothing written in DocPrincipal.nls.
+Transcript written in DocPrincipal.ilg.
