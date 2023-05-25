@@ -6,13 +6,13 @@ A previsão da demanda de água é uma preocupação fundamental para muitas org
 
 
 \subsubsection{Defini\c c\~ao do problema}
-%O primeiro passo é definir claramente o problema que queremos abordar. Por exemplo, vamos considerar a seguinte pergunta de pesquisa: "Como prever a demanda diária de água em uma determinada cidade para os próximos seis meses?"
+
 
 
 Na subseção \ref{subsubsec:obespec} estão as perguntas de pesquisa que serão abordadas no estudo de caso, da pergunta \ref{q1} à \ref{q5}, com as ramificações da \ref{q5}.
 
 \subsubsection{Coleta de dados}
-%A próxima etapa é coletar os dados históricos relevantes. Você precisará de dados sobre a demanda diária de água ao longo de um período significativo, idealmente vários anos. Isso pode incluir informações sobre a quantidade de água consumida diariamente, fatores sazonais, dados meteorológicos e outros dados relevantes.
+
 
 Na subseção \ref{subsec:descricao}, são apresentadas as variáveis contidas no conjunto de dados coletado no período de 2018 a 2020, durante uma grave falta de água que afetou a cidade. Devido a essa situação, foi implementado um rodízio de abastecimento de água para os residentes. Os dados foram coletados em intervalos de uma hora, levando em consideração cada variável, com ênfase na variável-alvo, denominada LT01, que representa o nível do reservatório.
 
@@ -21,7 +21,7 @@ O conjunto de dados possui um total de 26.306 linhas e 9 colunas. Durante a cole
 
 
 \subsubsection{An\'alise explorat\'oria dos dados}
-%Antes de aplicar técnicas de previsão, é importante realizar uma análise exploratória dos dados. Isso envolve a visualização dos dados, identificação de tendências, sazonalidade e padrões que podem influenciar a demanda de água. Você pode usar gráficos, como gráficos de linha ou gráficos de decomposição, para identificar esses padrões.
+
 
 
 Ao longo do trabalho realizado, pôde-se observar na subseção \ref{subsec:detec} que foi realizada uma análise gráfica do problema antes da aplicação de qualquer método. A detecção de anomalias mostrou-se desafiadora, porém não impossível de ser realizada. Essa detecção permitiu a análise da presença de sazonalidade nos dados. A decomposição STL foi utilizada para essa finalidade, conforme descrito na etapa \ref{etp:3} e detalhado na subseção \ref{subsubsec:stl}, onde são apresentadas as decomposições realizadas.
@@ -33,7 +33,7 @@ Adicionalmente, na subseção \ref{subsubsec:stl}, foi realizada a verificação
 
 
 \subsubsection{Escolha do modelo}
-%Com base na análise exploratória dos dados, você pode selecionar o modelo adequado para a previsão da demanda de água. Existem várias técnicas de análise de séries temporais disponíveis, como modelos ARIMA (AutoRegressive Integrated Moving Average), modelos de suavização exponencial, modelos de regressão sazonal, entre outros. A escolha do modelo dependerá das características específicas dos dados e dos padrões identificados.
+
 
 
 Como os dados apresentam sazonalidade, foram selecionados modelos simples de ARIMA, como AR, MA, ARMA, ARIMA e SARIMA. Esses modelos são univariados. Já os modelos com variável exógena, como ARX, ARIMAX e SARIMAX, são considerados multivariados. No contexto dos dados analisados, qualquer variável que possa interferir na variável preditora é considerada exógena. Para este caso específico, todas as outras variáveis foram incluídas como exógenas para melhorar a previsão.
@@ -43,7 +43,7 @@ Outros modelos utilizados são os modelos de aprendizado de máquina supervision
 
 
 \subsubsection{Divis\~ao dos dados}
-%Antes de prosseguir com a modelagem, é importante dividir os dados em conjuntos de treinamento e teste. Os dados de treinamento serão usados para ajustar o modelo, enquanto os dados de teste serão usados para avaliar a precisão das previsões.
+
 
 Para obter a divisão mais adequada dos dados, verificam-se a média e o desvio padrão de cada um desses conjuntos. O conjunto de dados é dividido em três partes: treinamento, validação e teste. Nessa divisão, utiliza-se inicialmente 70\% dos dados para treinamento e validação, e os 30\% restantes para teste. Em seguida, a porção de treinamento e validação é subdividida em 80\% para treinamento e 20\% para validação.
 
@@ -63,7 +63,7 @@ Os modelos XGBRegressor e LGBMRegressor foram ajustados usando as técnicas de G
 \end{itemize}
 
 \subsubsection{Avalia\c c\~ao do modelo}
-%Após ajustar o modelo, é hora de avaliar sua precisão. Use os dados de teste para comparar as previsões do modelo com os valores reais de demanda de água. Métricas como erro médio absoluto (MAE), erro quadrático médio (RMSE) e coeficiente de determinação ($R^2$) podem ser usadas para avaliar a qualidade das previsões.
+
 
 A avaliação da precisão dos modelos de previsão é uma etapa fundamental no processo de modelagem. Diversas métricas podem ser utilizadas para esse propósito, como o MAPE, o MAE e o RMSE. Essas métricas têm sido amplamente adotadas na literatura de previsão e são consideradas indicadores confiáveis para mensurar a qualidade das previsões.
 
@@ -81,7 +81,7 @@ Portanto, ao utilizar essas métricas, o pesquisador estará seguindo uma práti
 
 
 \subsubsection{Previs\~oes Futuras}
-%Uma vez que você esteja satisfeito com a precisão do modelo, você pode usá-lo para fazer previsões futuras. Aplique o modelo aos dados futuros para estimar a demanda de água nos próximos seis meses, por exemplo.
+
 
 Com base nos modelos AR, ARX, MA, ARMA, ARIMA, ARMAX, SARIMA, SARIMAX, LR, XGBRegressor, LGBMRegressor e RFR, que foram cuidadosamente aplicados e avaliados, é possível afirmar que uma vez que a precisão desses modelos tenha sido satisfatória, eles podem ser utilizados para fazer previsões futuras. Aplicando esses modelos aos dados futuros disponíveis, é possível estimar a demanda de água para diferentes horizontes de previsão, como um dia, uma semana, duas semanas e um mês.
 
@@ -92,7 +92,7 @@ Com base nos resultados significativos obtidos por esses modelos durante o proce
 Portanto, uma vez que os modelos tenham sido devidamente avaliados e demonstrado sua eficácia, eles podem ser utilizados para fazer previsões precisas da demanda de água em horizontes de previsão de um dia, uma semana, duas semanas e um mês, auxiliando na gestão e planejamento eficiente dos recursos hídricos.
 
 \subsubsection{Monitoramento e Ajuste Cont\'inuo}
-%É importante lembrar que a demanda de água pode ser afetada por fatores externos imprevisíveis, como mudanças climáticas, eventos especiais ou mudanças no comportamento dos consumidores. Portanto, é necessário monitorar continuamente os resultados das previsões e ajustar o modelo conforme necessário.
+
 
 É importante destacar que todas as questões de pesquisa abordadas neste estudo estão fundamentadas no fator dos horários de pico e nas anomalias que ocorreram durante o período analisado. O comportamento da demanda de água durante os horários de maior consumo e as anomalias observadas foram aspectos-chave que motivaram a realização desta pesquisa.
 
@@ -101,7 +101,7 @@ Ao investigar os efeitos dos horários de pico e das anomalias na demanda de ág
 Considerando a importância desses fatores na formulação das questões de pesquisa, as análises realizadas e os modelos desenvolvidos buscaram fornecer insights e informações relevantes para aprimorar a capacidade de previsão e planejamento do abastecimento de água, especialmente durante os horários de pico e diante de anomalias observadas.
 
 \subsubsection{Principais Conclus\~ao}
-%Este estudo de caso descreveu uma abordagem geral para prever a demanda de água usando análise de série temporal. No entanto, é importante adaptar essas etapas aos dados e às características específicas do seu caso. A análise de séries temporais pode ser uma ferramenta valiosa para previsão de demanda de água e pode ajudar a tomar decisões informadas para o gerenciamento do abastecimento de água.
+
 
 Ao longo deste estudo de caso, foram resolvidas as questões de pesquisa levantadas por meio da aplicação da análise de séries temporais para prever a demanda de água. A abordagem adotada demonstrou ser eficaz na obtenção de insights valiosos para o gerenciamento do abastecimento hídrico.
 
@@ -115,24 +115,3 @@ Em suma, este estudo de caso demonstrou que a análise de séries temporais é u
 
 Essas descobertas têm o potencial de contribuir para a tomada de decisões embasadas no planejamento e no gerenciamento da demanda de água, visando a sustentabilidade e a eficiência dos recursos hídricos.
 
-%As questões de pesquisa levantadas neste estudo foram cuidadosamente abordadas e respondidas ao longo da análise. A seguir, apresenta-se as respostas para cada uma das questões:
-%
-%\ref{q1} Ao analisar os dados e as métricas utilizadas, concluiu-se que a pressão atual é adequada para atender à demanda diária. Não foram identificadas situações de pressão insuficiente durante o período analisado.
-%
-%\ref{q2} Com base na frequência de funcionamento das bombas e na demanda durante o horário de pico, determinou-se que é necessário manter um volume mínimo de água no reservatório, correspondente a 1.459 litros, para evitar o acionamento das bombas nesse período.
-%
-%\ref{q3} Após análise e modelagem dos dados, identificou-se que a vazão ótima para atender à demanda varia conforme o período do dia e as características sazonais. A pressão necessária para atender à demanda é de 3,60 PSI (do inglês \textit{pound-force per square inch}).
-%
-%\ref{q4} Encontrou-se o ponto de equilíbrio entre a demanda e a vazão, o qual permite manter um armazenamento adequado no reservatório sem a necessidade de acionar as bombas durante o período de maior custo energético. Esse ponto de equilíbrio é obtido mantendo uma reserva mínima de 3.545 litros no reservatório.
-%
-%\ref{q5} Confirmou-se que a ativação das bombas de sucção durante o período de 18h às 21h resulta em um maior custo energético para a SANEPAR. Portanto, é recomendado evitar o acionamento das bombas durante esse período, utilizando estratégias de armazenamento e gerenciamento eficientes.
-%
-%\ref{q5:a} Verificou-se que, para evitar o acionamento das bombas durante o horário de pico (18h às 21h) sem comprometer o abastecimento de água para a população, é necessário manter o nível do reservatório acima de 4.000 litros.
-%
-%\ref{q5:b} Ao analisar os dados dos últimos 3 anos do Bairro Alto, identificou-se a presença de tendências sazonais e padrões de consumo de água. Essas informações são valiosas para compreender os padrões de demanda e planejar o abastecimento de forma mais eficiente.
-%
-%\ref{q5:c} Observou-se que os horários de pico, nesse caso, correspondem aos períodos em que há maior consumo de água. Esses horários são críticos para o abastecimento, pois a demanda é significativamente maior, exigindo uma gestão cuidadosa dos recursos hídricos nesse intervalo de tempo. É importante monitorar e garantir que haja suprimento adequado nesses horários para atender à demanda da população.
-%
-%\ref{q5:d} Durante as horas de pico, é necessário que o nível do reservatório esteja mantido dentro da faixa de $[3.545, 4.256] m^3$ para evitar o acionamento das bombas. Manter o nível do reservatório dentro dessa faixa permitirá que o sistema opere de forma eficiente, atendendo à demanda de água sem a necessidade de acionar as bombas.
-%
-%\ref{q5:e} É importante destacar que a vazão de recalque exerce um impacto mais significativo no nível do reservatório em comparação com as outras vazões. Essa diferença se deve ao fato de que a vazão de recalque está diretamente relacionada à injeção de água no reservatório por meio da bomba localizada próxima à sua base. Em contraste, as demais vazões possuem alguns valores ausentes, o que limita sua influência na análise geral do sistema.

@@ -1,6 +1,5 @@
 \subsection{M\'etricas de Avalia\c c\~ao de Modelos}\label{subsec:metrica}
 
-
 A métrica de Erro Quadrático Médio (MSE) é amplamente utilizada no campo do aprendizado de máquina para avaliar a qualidade dos modelos de previsão. O MSE é calculado pela média da soma dos quadrados das diferenças entre os valores reais e os valores previstos. Sua fórmula é a seguinte:
 
 \begin{eqnarray}
@@ -13,7 +12,7 @@ A utilização do MSE fornece uma medida quantitativa da precisão do modelo, po
 
 Portanto, o MSE é uma métrica fundamental para avaliar a qualidade dos modelos de previsão e é amplamente utilizada para comparar diferentes algoritmos e abordagens de aprendizado de máquina.
 
-\subsubsection{Erro quadr\'atico m\'edio raiz (RMSE)}
+\subsubsection{Erro Quadr\'atico M\'edio Raiz (RMSE)}
 
 O RMSE é uma métrica amplamente empregada na avaliação de modelos de previsão em séries temporais. Ele é calculado tomando a raiz quadrada do MSE, conforme mostrado na seguinte fórmula:
 
@@ -25,7 +24,9 @@ Na equação \eqref{eq:rmse}, $n$ representa o número de amostras, $y_i$ é o v
 
 Uma das vantagens de utilizar o RMSE é que, ao computar a raiz quadrada, o erro passa a ter a mesma escala da variável de interesse. Isso permite uma interpretação mais fácil dos resultados, sendo que um valor baixo de RMSE indica um bom desempenho do modelo, já que o erro se aproxima de zero.
 
-O RMSE possui algumas características positivas. Ele penaliza de forma significativa os valores discrepantes, caso seja necessário para o modelo. Além disso, o erro resultante está nas mesmas unidades da série temporal, facilitando a interpretação. O RMSE pode ser considerado uma combinação das melhores características do MSE e do Erro Absoluto Médio (MAE).
+O RMSE possui algumas características positivas. Ele penaliza de forma significativa os valores discrepantes, caso seja necessário para o modelo. Além disso, o erro resultante está nas mesmas unidades da série temporal, facilitando a interpretação. O RMSE pode
+
+ser considerado uma combinação das melhores características do MSE e do Erro Absoluto Médio (MAE).
 
 No entanto, o RMSE também apresenta algumas desvantagens. Ele tem uma interpretabilidade reduzida, uma vez que os erros ainda são elevados ao quadrado. Além disso, o RMSE é dependente da escala dos dados, o que impede sua comparação direta com modelos de séries temporais que utilizam unidades diferentes.
 
@@ -49,13 +50,13 @@ O cálculo do MAE é realizado utilizando o valor absoluto da diferença entre o
 	M A E &=& \dfrac{1}{n} \sum\left|y_i-\hat{y}_i\right|\label{eq:mae}
 \end{eqnarray}
 
-Sua interpretação é similar ao RMSE, em que o erro é expresso na mesma escala ou ordem de grandeza da variável estudada.
+Sua interpretação é similar ao RMSE, em que o erro é expresso na mesma escala ou ordem
+
+de grandeza da variável estudada.
 
 \subsubsection{Erro Percentual Absoluto M\'edio (MAPE)}
 
-Com certeza! Aqui está uma versão aprimorada do texto:
-
-O MAPE é uma métrica que expressa o erro de previsão como uma porcentagem relativa ao valor observado. Ele é calculado somando as diferenças entre o valor real e o valor previsto (representando o erro), dividido pelo valor observado.
+O Erro Percentual Absoluto Médio (MAPE) é uma métrica que expressa o erro de previsão como uma porcentagem relativa ao valor observado. Ele é calculado somando as diferenças entre o valor real e o valor previsto (representando o erro), dividido pelo valor observado.
 
 O MAPE é calculado usando a seguinte fórmula:
 
@@ -65,9 +66,9 @@ O MAPE é calculado usando a seguinte fórmula:
 
 No entanto, surge um problema quando o valor observado $y_i$ é igual a zero, pois é matematicamente impossível dividir por zero. O MAPE é uma medida de erro em que valores menores indicam um melhor desempenho de previsão.
 
-Uma alternativa ao MAPE é calcular $1 - \textbf{MAPE}$, que representa a porcentagem de acerto.
+Uma alternativa ao MAPE é calcular $1 - \text{MAPE}$, que representa a porcentagem de acerto.
 
-O Erro Médio Percentual Absoluto é a diferença percentual entre o valor real e o valor previsto. É comumente usado como uma métrica de referência para avaliar o desempenho de modelos de previsão.
+O Erro Percentual Absoluto Médio é comumente usado como uma métrica de referência para avaliar o desempenho de modelos de previsão.
 
 Prós:
 
@@ -82,3 +83,5 @@ Contras:
 	\item Erro infinito se o valor real estiver próximo ou igual a zero
 	\item Previsões mais baixas estão propensas a ter um erro de 100\%, enquanto previsões mais altas podem ter um erro infinito, o que resulta em um viés de subprevisão.
 \end{itemize}
+
+Essas métricas são amplamente utilizadas na avaliação de modelos de previsão em diferentes áreas e ajudam a quantificar a qualidade das previsões realizadas pelos modelos.

@@ -14,7 +14,7 @@ Em suma, este estudo demonstrou que a análise de séries temporais é uma abord
 
 
 \subsubsection{Descri\c c\~ao do sistema de abastecimento de \'agua}
-%O primeiro passo é definir claramente o problema que queremos abordar. Por exemplo, vamos considerar a seguinte pergunta de pesquisa: "Como prever a demanda diária de água em uma determinada cidade para os próximos seis meses?"
+
 
 
 Neste estudo, foram realizadas análises e modelagens utilizando a abordagem de séries temporais para prever a demanda diária de água em uma determinada cidade para os próximos seis meses. Os resultados obtidos forneceram insights valiosos sobre a demanda futura e contribuíram para um melhor planejamento do abastecimento hídrico. A seguir, apresentam-se as principais conclusões para cada uma das perguntas de pesquisa:
@@ -46,7 +46,7 @@ Em suma, os resultados obtidos neste estudo fornecem informações valiosas para
 
 
 \subsubsection{An\'alise explorat\'oria dos dados}
-%Nessa etapa, você pode realizar uma análise exploratória dos dados coletados, investigando padrões, tendências e características gerais das variáveis estudadas. Isso pode incluir gráficos, estatísticas descritivas e correlações entre as variáveis.
+
 
 
 Ao longo do trabalho realizado, pôde-se observar, na subseção \ref{subsec:detec}, que foi realizada uma análise gráfica do problema antes da aplicação de qualquer método. A detecção de anomalias mostrou-se desafiadora, porém não impossível de ser realizada. Essa detecção permitiu a análise da presença de sazonalidade nos dados. A decomposição STL foi utilizada para essa finalidade, conforme descrito na etapa \ref{etp:3} e detalhado na subseção \ref{subsubsec:stl}, onde são apresentadas as decomposições realizadas.
@@ -60,7 +60,7 @@ Essa análise exploratória dos dados permitiu ao pesquisador obter insights sob
 
 
 \subsubsection{Quest\~oes de pesquisa 1 a 4}\label{subsubsec:quest-est}
-%Cada questão de pesquisa pode ser abordada em uma seção separada, na qual você pode discutir os resultados relevantes e apresentar análises específicas para cada pergunta. Isso pode incluir gráficos, tabelas, interpretação dos resultados e discussão de achados relevantes.
+
 
 As questões de pesquisa levantadas neste estudo foram cuidadosamente abordadas e respondidas ao longo da análise. A seguir, apresenta-se as respostas para cada uma das questões:
 
@@ -88,8 +88,6 @@ Para responder à pergunta \ref{q4} sobre o ponto de equilíbrio entre a demanda
 
 \subsubsection{Quest\~ao de pesquisa 5}
 
-A Q5, juntamente com suas cinco letras, pode ser tratada em uma seção própria, na qual você pode apresentar os resultados específicos relacionados a cada letra. Para cada letra, você pode discutir os resultados, fazer comparações entre as variáveis e analisar a demanda durante o período das 18h às 21h.
-
 \ref{q5} Confirmou-se que a ativação das bombas de sucção durante o período de 18h às 21h resulta em um maior custo energético para a SANEPAR. Portanto, é recomendado evitar o acionamento das bombas durante esse período, utilizando estratégias de armazenamento e gerenciamento eficientes.
 
 \ref{q5:a} Verificou-se que, para evitar o acionamento das bombas durante o horário de pico (18h às 21h) sem comprometer o abastecimento de água para a população, é necessário manter o nível do reservatório acima de 4.000 litros.
@@ -114,7 +112,7 @@ O gráfico de barras apresentado na Figura \ref{fig:grafico-barras-demanda} most
 
 A questão de pesquisa \ref{q5}\ref{q5:c} foi respondida através da análise dos dados, permitindo a identificação dos horários de maior demanda durante o período das 18h às 21h. A tabela a seguir apresenta os resultados para as três variáveis estudadas: vazão de entrada-FT01, vazão de gravidade-FT02 e vazão de recalque-FT03.
 
-\begin{table}[H]
+\begin{table}[htp!]
 	\centering
 	\caption{Demanda de água}\label{tb:dem}
 	\begin{tabular}{@{}ccc@{}}
@@ -139,5 +137,18 @@ Os resultados destacam os horários específicos em que cada variável apresento
 
 
 \subsubsection{Discuss\~ao geral e conclus\~oes}
-Nessa seção, você pode reunir os principais resultados, discutir as implicações práticas e teóricas do estudo e apresentar conclusões gerais. É importante destacar os insights obtidos, as limitações do estudo e possíveis direções futuras de pesquisa.
+
+Nesta seção, serão discutidos os principais resultados e conclusões deste estudo sobre a previsão da demanda de água usando a abordagem de séries temporais. Ao longo da análise e interpretação dos dados, foram identificados padrões sazonais e tendências na demanda de água, além de estratégias para otimizar o abastecimento e o gerenciamento dos recursos hídricos.
+
+Durante a análise exploratória dos dados, observou-se que a demanda de água apresenta flutuações ao longo do tempo, com variações sazonais significativas. A decomposição STL foi uma ferramenta útil para identificar essas sazonalidades e tendências, fornecendo uma visão mais detalhada do comportamento do sistema de abastecimento de água.
+
+Com base nas questões de pesquisa, pode-se concluir que a pressão atual do sistema é adequada para atender à demanda diária, sem ocorrência de pressão insuficiente que possa prejudicar o fornecimento de água aos consumidores. Além disso, determinou-se um volume mínimo de reserva no reservatório, levando em consideração a frequência de operação das bombas e a demanda durante o horário de pico. Essa reserva mínima visa evitar o acionamento das bombas nesse período, contribuindo para a eficiência energética e reduzindo os custos operacionais.
+
+A análise também permitiu identificar a vazão ótima para atender à demanda diária, considerando as flutuações sazonais e as diferentes partes do dia. No entanto, observou-se que não há um equilíbrio perfeito entre a demanda e a vazão nos dados analisados. Portanto, recomenda-se explorar estratégias adicionais, como otimização do sistema de abastecimento e gerenciamento eficiente dos recursos hídricos, a fim de aprimorar ainda mais a eficiência e a sustentabilidade do abastecimento de água.
+
+Os resultados obtidos neste estudo demonstram a aplicação efetiva da análise de séries temporais na previsão da demanda de água e na otimização do abastecimento hídrico. Eles fornecem insights valiosos para o planejamento e o gerenciamento eficiente do sistema de abastecimento de água, contribuindo para a sustentabilidade e a utilização racional dos recursos hídricos.
+
+Ao considerar os resultados e as conclusões deste estudo, é recomendado que medidas adicionais sejam adotadas para aprimorar ainda mais a eficiência e a sustentabilidade do abastecimento de água. Isso pode envolver a implementação de estratégias de conservação de água, o desenvolvimento de fontes alternativas de abastecimento e a promoção de conscientização sobre o uso responsável da água entre os consumidores.
+
+Em suma, este estudo fornece uma base sólida para a tomada de decisões informadas no planejamento e gerenciamento do abastecimento de água. A análise de séries temporais mostrou-se uma ferramenta eficaz para prever a demanda futura e identificar estratégias para otimizar o uso dos recursos hídricos. Essas conclusões têm o potencial de contribuir para uma gestão mais eficiente e sustentável do abastecimento de água, garantindo o atendimento adequado às necessidades da população e o cuidado com o meio ambiente.
 
