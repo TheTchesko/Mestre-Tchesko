@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.24)  24 MAY 2023 21:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.24)  24 MAY 2023 21:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1782,7 +1782,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 ... Autocorrelação parcial}}{62}{figure.37}
+l.40 ... Autocorrelação parcial}}{61}{figure.37}
                                                   % [12
 
 ])
@@ -2149,84 +2149,84 @@ delos/Figuras/0-lgbm-regressão.pdf>] [49] [50] [51] [52] [53])) [54]
 
 
 ]
-Overfull \hbox (2.38622pt too wide) in paragraph at lines 34--35
+Overfull \hbox (2.38622pt too wide) in paragraph at lines 36--37
 []\T1/cmr/m/n/12 Na per-gunta [][]\T1/cmr/bx/n/12 Q \T1/cmr/m/n/12 3[][], obser
 va-se que o tan-que tem uma ca-pa-ci-dade m�-xima de $\OT1/cmr/m/n/12 4\OML/cmm
 /m/it/12 ; \OT1/cmr/m/n/12 256\OML/cmm/m/it/12 m[]$\T1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (13.69345pt too wide) in paragraph at lines 34--35
+Overfull \hbox (13.69345pt too wide) in paragraph at lines 36--37
 \T1/cmr/m/n/12 fluxo de gra-vi-dade es-teja en-tre $\OT1/cmr/m/n/12 [126\OML/cm
 m/m/it/12 ; \OT1/cmr/m/n/12 182] \OML/cmm/m/it/12 m[]=h$\T1/cmr/m/n/12 , o flux
 o de re-torno es-teja en-tre $\OT1/cmr/m/n/12 [110\OML/cmm/m/it/12 ; \OT1/cmr/m
 /n/12 144] \OML/cmm/m/it/12 m[]=h$\T1/cmr/m/n/12 ,
  []
 
-) [56] (Resultados/subsubsec-miso.tex) (Resultados/subsubsec-stl.tex [57]
-<Resultados/Figuras/STL aditiva.pdf, id=1988, 1156.32pt x 578.16pt>
+) (Resultados/subsubsec-miso.tex) [56] (Resultados/subsubsec-stl.tex
+<Resultados/Figuras/STL aditiva.pdf, id=1982, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/STL aditiva.pdf Graphic file (type pdf)
 <use Resultados/Figuras/STL aditiva.pdf>
 Package pdftex.def Info: Resultados/Figuras/STL aditiva.pdf  used on input line
  22.
 (pdftex.def)             Requested size: 409.71692pt x 204.85565pt.
-<Resultados/Figuras/STL.pdf, id=1989, 1156.32pt x 578.16pt>
+<Resultados/Figuras/STL.pdf, id=1983, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/STL.pdf Graphic file (type pdf)
 <use Resultados/Figuras/STL.pdf>
 Package pdftex.def Info: Resultados/Figuras/STL.pdf  used on input line 32.
 (pdftex.def)             Requested size: 409.71692pt x 204.85565pt.
-
+ [57]
 [58 <./Resultados/Figuras/STL aditiva.pdf> <./Resultados/Figuras/STL.pdf>]
 <Resultados/Figuras/viol.pdf, id=2104, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/viol.pdf Graphic file (type pdf)
 <use Resultados/Figuras/viol.pdf>
 Package pdftex.def Info: Resultados/Figuras/viol.pdf  used on input line 59.
 (pdftex.def)             Requested size: 409.71692pt x 204.85565pt.
-
-[59 <./Resultados/Figuras/viol.pdf>]
-<Resultados/Figuras/ft03.pdf, id=2144, 1156.32pt x 578.16pt>
+<Resultados/Figuras/ft03.pdf, id=2108, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/ft03.pdf Graphic file (type pdf)
 <use Resultados/Figuras/ft03.pdf>
 Package pdftex.def Info: Resultados/Figuras/ft03.pdf  used on input line 73.
 (pdftex.def)             Requested size: 409.71692pt x 204.85565pt.
- [60 <./Resultados/Figuras/ft03.pdf>]
-<Resultados/Figuras/acf.pdf, id=2193, 1156.32pt x 578.16pt>
+
+[59 <./Resultados/Figuras/viol.pdf>] [60 <./Resultados/Figuras/ft03.pdf>]
+<Resultados/Figuras/acf.pdf, id=2194, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/acf.pdf Graphic file (type pdf)
 <use Resultados/Figuras/acf.pdf>
 Package pdftex.def Info: Resultados/Figuras/acf.pdf  used on input line 125.
 (pdftex.def)             Requested size: 409.71692pt x 204.85565pt.
-<Resultados/Figuras/pacf.pdf, id=2194, 1156.32pt x 578.16pt>
+<Resultados/Figuras/pacf.pdf, id=2195, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/pacf.pdf Graphic file (type pdf)
 <use Resultados/Figuras/pacf.pdf>
 Package pdftex.def Info: Resultados/Figuras/pacf.pdf  used on input line 130.
 (pdftex.def)             Requested size: 409.71692pt x 204.85565pt.
 
-[61] [62 <./Resultados/Figuras/acf.pdf> <./Resultados/Figuras/pacf.pdf>]
-<Resultados/Figuras/ruido-branco.pdf, id=2259, 867.24pt x 433.62pt>
+[61 <./Resultados/Figuras/acf.pdf>]
+<Resultados/Figuras/ruido-branco.pdf, id=2228, 867.24pt x 433.62pt>
 File: Resultados/Figuras/ruido-branco.pdf Graphic file (type pdf)
 <use Resultados/Figuras/ruido-branco.pdf>
 Package pdftex.def Info: Resultados/Figuras/ruido-branco.pdf  used on input lin
 e 145.
 (pdftex.def)             Requested size: 409.71692pt x 204.86006pt.
-)
-(Resultados/subsubsec-divisao.tex [63 <./Resultados/Figuras/ruido-branco.pdf>])
-(Resultados/subsubsec-estrategia.tex) (Resultados/subsubsec-horizonte.tex)
-(Resultados/subsubsec-model.tex [64]) (Resultados/subsubsec-test.tex [65])
+) (Resultados/subsubsec-divisao.tex [62 <./Resultados/Figuras/pacf.pdf>]) (Resu
+ltados/subsubsec-estrategia.tex [63 <./Resultados/Figuras/ruido-branco.pdf>]) (
+Resultados/subsubsec-horizonte.tex)
+(Resultados/subsubsec-model.tex) (Resultados/subsubsec-test.tex [64] [65])
 (Resultados/subsubsec-comparacao.tex
-<Resultados/Figuras/modelos-arima.pdf, id=2310, 1156.32pt x 578.16pt>
+<Resultados/Figuras/modelos-arima.pdf, id=2312, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/modelos-arima.pdf Graphic file (type pdf)
 <use Resultados/Figuras/modelos-arima.pdf>
 Package pdftex.def Info: Resultados/Figuras/modelos-arima.pdf  used on input li
 ne 9.
 (pdftex.def)             Requested size: 409.71692pt x 204.85565pt.
-<Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf, id=2311, 1156.32pt x 578.16pt>
+<Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf, id=2313, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf Graphic file (type pdf)
 <use Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf>
 Package pdftex.def Info: Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf  used on 
 input line 20.
 (pdftex.def)             Requested size: 409.71692pt x 204.85565pt.
- [66 <./Resultados/Figuras/modelos-arima.pdf>]) (Resultados/subsec-estudo.tex [
-67 <./Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf>] [68] [69] [70]
+ [66 <./Resultados/Figuras/modelos-arima.pdf> <./Resultados/Figuras/violin-LR-X
+GB-LGBM-RF.pdf>])
+(Resultados/subsec-estudo.tex [67] [68] [69] [70]
 <Resultados/Figuras/grafico-barras-demanda.pdf, id=2433, 462.52798pt x 346.8960
 1pt>
 File: Resultados/Figuras/grafico-barras-demanda.pdf Graphic file (type pdf)
@@ -2405,7 +2405,7 @@ ype1/public/amsfonts/cm/cmr6.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/msndo/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/msndo/AppData/Local/
 Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on DocPrincipal.pdf (113 pages, 7819989 bytes).
+Output written on DocPrincipal.pdf (113 pages, 7819799 bytes).
 PDF statistics:
  3682 PDF objects out of 4296 (max. 8388607)
  366 named destinations out of 1000 (max. 500000)
