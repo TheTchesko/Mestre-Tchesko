@@ -14,6 +14,12 @@ Scanning input file DocPrincipal.nlo...
    -- Illegal page number  or page_precedence rnaRA.
 !! Input index error (file = DocPrincipal.nlo, line = 3):
    -- Illegal page number  or page_precedence rnaRA.
-done (0 entries accepted, 3 rejected).
+!! Input index error (file = DocPrincipal.nlo, line = 4):
+   -- Illegal page number  or page_precedence rnaRA.
+!! Input index error (file = DocPrincipal.nlo, line = 5):
+   -- Illegal page number  or page_precedence rnaRA.
+!! Input index error (file = DocPrincipal.nlo, line = 6):
+   -- Illegal page number  or page_precedence rnaRA.
+done (0 entries accepted, 6 rejected).
 Nothing written in DocPrincipal.nls.
 Transcript written in DocPrincipal.ilg.

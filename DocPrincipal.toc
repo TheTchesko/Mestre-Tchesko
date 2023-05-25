@@ -1,6 +1,7 @@
 \babel@toc {brazil}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {brazil}{}\relax 
+\contentsline {section}{Lista de Abreviaturas e Siglas}{}{Doc-Start}%
 \contentsline {section}{\numberline {1}Introdu{\c c}{\~a}o}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Contexto da pesquisa}{1}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}Motiva\c c\~ao da pesquisa}{3}{subsubsection.1.1.1}%
@@ -13,12 +14,12 @@
 \contentsline {subsubsection}{\numberline {1.5.1}Contribui\c c\~oes}{9}{subsubsection.1.5.1}%
 \contentsline {subsection}{\numberline {1.6}Estrutura do trabalho}{10}{subsection.1.6}%
 \contentsline {section}{\numberline {2}Referencial}{12}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Detec\c cão de anomalias}{12}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.1}Detec\c c\~ao de anomalias}{12}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Revis\~ao sistem\'atica da literatura}{12}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Problematiza\c c\~ao da Revis\~ao}{16}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Metodologia}{17}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Resultados da busca de revis\~ao}{18}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Principais conclus\~ao}{27}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.6}Principais conclus\~ao}{26}{subsection.2.6}%
 \contentsline {section}{\numberline {3}Base Te\'orica}{28}{section.3}%
 \contentsline {subsection}{\numberline {3.1}M\'etricas de Avalia\c c\~ao de Modelos}{28}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Erro Quadr\'atico M\'edio Raiz (RMSE)}{28}{subsubsection.3.1.1}%
@@ -75,7 +76,7 @@
 \contentsline {subsection}{\numberline {5.1}Limita\c c\~oes da Pesquisa e Propostas Futuras}{77}{subsection.5.1}%
 \contentsline {section}{Refer\^encias}{78}{subsection.5.1}%
 \contentsline {section}{\numberline {A}Ap\^endice - Compara\c c\~ao dos modelos de previs\~ao de series temporais m\'edia de 24h}{84}{appendix.A}%
-\contentsline {section}{\numberline {B}Ap\^endice - Compara\c c\~ao dos modelos de previs\~ao com o m\'etodo Ljung Box}{92}{appendix.B}%
+\contentsline {section}{\numberline {B}Ap\^endice - Compara\c c\~ao dos modelos de previs\~ao com o m\'etodo Ljung-Box}{92}{appendix.B}%
 \contentsline {section}{\numberline {C}Ap\^endice - Modelos AR(7), ARX (7) e MA (7) 24h }{94}{appendix.C}%
 \contentsline {section}{\numberline {D}Ap\^endice - Modelos ARMA(7,7) e ARIMA (7,1,7) 24h}{96}{appendix.D}%
 \contentsline {section}{\numberline {E}Ap\^endice - Modelos ARIMAX (7,1,7), SARIMA (7,1,7) (2,1,0,12) e SARIMAX (7,1,7) (2,1,0,12) 24h}{98}{appendix.E}%
