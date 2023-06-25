@@ -5,6 +5,26 @@
 
 $(p = 7,d = 1,q = 7) (P = 2,D = 1,Q = 1)_{M = 12}$ Média 24h
 
+\begin{table}[H]
+	\begin{tabular}{@{}cccccccccccccc@{}}
+		\toprule
+		\textbf{}                         &          & \multicolumn{12}{c}{Modelos Treino}                                                                                                                                 \\ \midrule
+		Horizontes                        & Métricas & A             & B             & C             & D             & E             & F             & G             & H             & I             & J    & K     & L    \\
+		\multirow{3}{*}{1 dia à frente}   & sMAPE    & 4,56          & 5,74          & 4,42          & 4,84          & 4,50          & 5,09          & 5,75          & 5,73          & 5,44          & 8,48 & 9,20  & 8,21 \\
+		& MAE      & 31\%          & 38\%          & 30\%          & 32\%          & 30\%          & 34\%          & 38\%          & 38\%          & \textbf{7\%}  & 62\% & 68\%  & 60\% \\
+		& RRMSE    & \textbf{12\%} & \textbf{15\%} & \textbf{12\%} & \textbf{12\%} & \textbf{12\%} & \textbf{13\%} & \textbf{15\%} & \textbf{15\%} & \textbf{14\%} & 19\% & 21\%  & 19\% \\
+		\multirow{3}{*}{7 dias à frente}  & sMAPE    & 4,46          & 5,74          & 4,95          & 4,95          & 5,13          & 5,38          & 5,76          & 5,76          & 37,19         & 9,48 & 10,88 & 8,21 \\
+		& MAE      & 30\%          & 38\%          & 33\%          & 33\%          & 34\%          & 36\%          & 38\%          & 38\%          & 523\%         & 70\% & 82\%  & 60\% \\
+		& RRMSE    & \textbf{11\%} & \textbf{15\%} & \textbf{13\%} & \textbf{13\%} & \textbf{13\%} & \textbf{14\%} & 15\%          & 15\%          & 119\%         & 23\% & 27\%  & 19\% \\
+		\multirow{3}{*}{14 dias à frente} & sMAPE    & 5,02          & 6,08          & 5,05          & 5,25          & 5,28          & 5,48          & 6,10          & 6,10          & 56,30         & 9,48 & 11,28 & 8,21 \\
+		& MAE      & 33\%          & 40\%          & 34\%          & 35\%          & 35\%          & 37\%          & 40\%          & 40\%          & 1139\%        & 70\% & 86\%  & 60\% \\
+		& RRMSE    & \textbf{13\%} & 16\%          & \textbf{13\%} & \textbf{13\%} & \textbf{14\%} & \textbf{14\%} & 16\%          & 16\%          & 257\%         & 23\% & 28\%  & 19\% \\
+		\multirow{3}{*}{30 dias à frente} & sMAPE    & 5,73          & 6,58          & 5,67          & 5,73          & 5,90          & 6,06          & 6,61          & 6,62          & 74,21         & 9,40 & 11,77 & 8,21 \\
+		& MAE      & 38\%          & 43\%          & 38\%          & 38\%          & 40\%          & 40\%          & 43\%          & 44\%          & 2548\%        & 69\% & 90\%  & 60\% \\
+		& RRMSE    & \textbf{15\%} & 17\%          & \textbf{15\%} & \textbf{15\%} & 15\%          & 15\%          & 17\%          & 17\%          & 575\%         & 23\% & 29\%  & 19\% \\ \cmidrule(l){2-14} 
+	\end{tabular}
+\end{table}
+
 	\begin{table}[H]
 	\centering
 	\caption{Comparação dos modelos com 1 dia de antecedência 24h \textbf{Treinamento} }\label{tb:1-24trn}
