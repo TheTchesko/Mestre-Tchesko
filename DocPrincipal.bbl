@@ -134,6 +134,12 @@ ISSN 1939-0068.}
 {HUO, Y. et al. Long-term span traffic prediction model based on stl
   decomposition and lstm. In:  . [S.l.: s.n.], 2019. p.~1--4.}
 
+\bibitem[Hyndman e Koehler 2006]{hyndman2006effect}
+\abntrefinfo{Hyndman e Koehler}{HYNDMAN; KOEHLER}{2006}
+{HYNDMAN, R.~J.; KOEHLER, A.~B. Effect of question formats on item endorsement
+  rates in web surveys.
+\textbf{International Journal of Forecasting}, v.~22, n.~4, p. 679--688, 2006.}
+
 \bibitem[Johnson e Smith 2022]{linear_regression}
 \abntrefinfo{Johnson e Smith}{JOHNSON; SMITH}{2022}
 {JOHNSON, R.; SMITH, M. Linear regression for predictive modeling.
@@ -199,6 +205,11 @@ ISSN 0306-2619.}
 \textbf{IEEE ACCESS}, v.~9, p. 91896--91912, 2021.
 ISSN 2169-3536 J9 - IEEE ACCESS JI - IEEE Access.}
 
+\bibitem[Lopes, Silva e Santos 2020]{lopes2020evaluation}
+\abntrefinfo{Lopes, Silva e Santos}{LOPES; SILVA; SANTOS}{2020}
+{LOPES, J.; SILVA, M.; SANTOS, P. Evaluation metrics for regression models.
+\textbf{Journal of Data Science}, v.~15, n.~2, p. 345--362, 2020.}
+
 \bibitem[Ma, Yu e Zhang 2022]{en15165875}
 \abntrefinfo{Ma, Yu e Zhang}{MA; YU; ZHANG}{2022}
 {MA, Y.; YU, L.; ZHANG, G. A hybrid short-term load forecasting model based on
@@ -235,6 +246,12 @@ Dispon{\'\i}vel em:
 {MOON, J. et al. {Temporal data classification and forecasting using a
   memristor-based reservoir computing system}.
 \textbf{Nature Electronics}, v.~2, n.~10, p. 480--487, 2019.}
+
+\bibitem[Nguyen 2020]{nguyen2020toxicological}
+\abntrefinfo{Nguyen}{NGUYEN}{2020}
+{NGUYEN, A.~K. \textbf{Toxicological and Materials Evaluation of Photopolymers
+  for Use in Additively Manufactured Medical Devices}. [S.l.]: North Carolina
+  State University, 2020.}
 
 \bibitem[Pelletier et al. 2016]{Pelletier2016156}
 \abntrefinfo{Pelletier et al.}{PELLETIER et al.}{2016}
