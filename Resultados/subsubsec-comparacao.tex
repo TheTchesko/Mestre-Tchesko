@@ -5,21 +5,18 @@ Com o objetivo de obter uma análise mais aprofundada do desempenho de cada mode
 
 \begin{figure}[H]
 	\centering
-	\caption{Comparação dos modelos ARIMAS}
-	\includegraphics[width=0.9\linewidth]{Resultados/Figuras/modelos-arima}
+	\caption{Análise comparativa dos modelos utilizando gráficos de violino}
+	\begin{subfigure}{0.9\textwidth}
+		\includegraphics[width=\linewidth]{Resultados/Figuras/modelos-arima}
+		\caption{Comparação dos modelos ARIMA}
+		\label{fig:modelos-arima}
+	\end{subfigure}
 	
-	\label{fig:modelos-arima}
-	
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\caption{Comparação de modelos de regressão }
-	\includegraphics[width=0.9\linewidth]{Resultados/Figuras/violin-LR-XGB-LGBM-RF}
-	
-	\label{fig:violin-lr-xgb-lgbm-rf}
+	\begin{subfigure}{0.9\textwidth}
+		\includegraphics[width=\linewidth]{Resultados/Figuras/violin-LR-XGB-LGBM-RF}
+		\caption{Comparação de modelos de regressão}
+		\label{fig:violin-lr-xgb-lgbm-rf}
+	\end{subfigure}
 	
 	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
 \end{figure}

@@ -27,6 +27,8 @@ A pesquisa fará uso da variável LT01, que representa o nível do reservatório
 Com o intuito de realizar previsões e fazer comparações entre os modelos obtidos na revisão sistemática, será adotado um processo metodológico bem definido. Tal processo está detalhado na subseção \ref{subsubsec:etp} desta seção, onde foram estabelecidas as etapas a serem seguidas desde o início. Isso inclui a definição do que será previsto, bem como a seleção dos métodos a serem utilizados na Análise Exploratória de Dados (EDA), seguindo uma sequência lógica e coerente.
    
     \subsubsection{Etapas da pesquisa}\label{subsubsec:etp}
+
+    
     A pesquisa seguiu as seguintes etapas:
     \begin{figure}[H]
     	\centering
@@ -59,11 +61,11 @@ Com o intuito de realizar previsões e fazer comparações entre os modelos obti
         
         Os três componentes da análise STL se relacionam com a série de tempo bruta da seguinte forma:
         
-        \begin{eqnarray}
-        	y_i &=& s_i + t_i + r_i
-        \end{eqnarray}
+        \begin{align}
+        	y_i &= s_i + t_i + r_i\label{eq:stl1}
+        \end{align}
     	
-    	Onde:
+    	Da equação \eqref{eq:stl1}:
     	
     	\begin{itemize}
     		\item $y_i = O$ valor da série de tempo no ponto $i$.

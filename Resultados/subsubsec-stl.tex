@@ -122,17 +122,27 @@ O ACF é útil para analisar a dependência temporal dos dados e identificar pad
 	\centering
 	\caption{Autocorrelação e Autocorrelação parcial}
 	\label{fig:acf}
-	\includegraphics[width=0.9\linewidth]{Resultados/Figuras/acf} 
 	
-\end{figure}	
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\linewidth]{Resultados/Figuras/pacf}
+	
+	\begin{subfigure}{0.9\textwidth}
+		\includegraphics[width=\linewidth]{Resultados/Figuras/acf} 
+		\caption{ACF}\label{fig:acfa}
+	\end{subfigure}
+	
+
+	\begin{subfigure}{0.9\textwidth}
+		\includegraphics[width=\linewidth]{Resultados/Figuras/pacf}
+		\caption{PACF}\label{fig:pacf}
+	\end{subfigure}
 	
 	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
 \end{figure}
 
-Na Figura \ref{fig:acf}, é possível observar a diferença entre a autocorrelação e a autocorrelação parcial (PACF). A autocorrelação mede a correlação entre os valores da série temporal em diferentes defasagens, levando em consideração tanto a correlação direta quanto a correlação indireta. Por outro lado, a autocorrelação parcial mede apenas a correlação direta entre os valores, eliminando a influência das defasagens intermediárias.
+A estatística ADF (do ingê \textit{Augmented Dickey-Fuller}) de $-4,27$ indica a evidência de estacionariedade na série temporal. Quanto mais negativo for o valor da estatística ADF, maior é a evidência de estacionariedade nos dados.
+
+O valor-p de $0,0005$, por sua vez, está associado ao teste ADF. O valor-p é uma medida estatística que representa a probabilidade de obter um resultado igual ou mais extremo do que o observado, sob a suposição de que a hipótese nula seja verdadeira. No caso do teste ADF, a hipótese nula é a presença de raiz unitária na série temporal, o que indica não estacionariedade. Assim, um valor-p baixo (geralmente abaixo de um nível de significância predefinido, como 0,05) sugere que a série temporal é estacionária, enquanto um valor-p alto sugere que a série temporal é não estacionária. Neste caso, o valor-p de $0,0005$ é bastante baixo, o que indica forte evidência contra a hipótese nula e sugere que a série temporal é estacionária.
+
+Na Figura \ref{fig:acf}, pode-se observar a diferença entre a autocorrelação (ACF) exibida na Figura \ref{fig:acfa} e a autocorrelação parcial (PACF) exibida na Figura \ref{fig:pacf}. A autocorrelação é uma medida da correlação entre os valores da série temporal em diferentes defasagens, levando em consideração tanto a correlação direta quanto a correlação indireta. Por outro lado, a autocorrelação parcial mede apenas a correlação direta entre os valores, desconsiderando a influência das defasagens intermediárias. Essas análises são úteis para identificar padrões e relações de dependência entre os valores da série temporal, fornecendo informações importantes para a modelagem e previsão desses dados.
 
 O intervalo de confiança padrão de 95\% é representado pela marca azul na Figura. As observações que estão fora desse intervalo são consideradas estatisticamente correlacionadas, indicando a presença de padrões ou estrutura na série temporal.
 

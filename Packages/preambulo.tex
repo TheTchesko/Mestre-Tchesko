@@ -39,9 +39,9 @@
            shorten <=2pt,
            shorten >=2pt,}
 }
-\usepackage{subfigure}                  %% ATIVAR SUBFIGURAS
-\PassOptionsToPackage{subfigure}{tocloft} %% EVITAR ERROS DE SUBFIGURAS
-\usepackage{fixmetodonotes}             %% EVITAR ERROS DE SUBFIGURAS
+%\usepackage{subfig}                  %% ATIVAR SUBFIGURAS
+%\PassOptionsToPackage{subfigure}{tocloft} %% EVITAR ERROS DE SUBFIGURAS
+%\usepackage{fixmetodonotes}             %% EVITAR ERROS DE SUBFIGURAS
 \usepackage{hyperref}                   %% HYPERLINK
 \hypersetup{
     %bookmarks=true,         % show bookmarks bar?
@@ -124,5 +124,13 @@
 \newcommand{\fonte}[1]{{Fonte: {#1}}}
 
 \usepackage{quoting}
+\usepackage{subcaption}
+
+\usepackage{chngcntr}
+
+\numberwithin{equation}{section} % Numeração das equações em relação à seção
+\numberwithin{equation}{subsection} % Numeração das equações em relação à subseção
+\counterwithin{equation}{subsubsection} % Numeração das equações em relação à subsubseção
+
 
 
