@@ -177,7 +177,7 @@ Os Modelos de Série Temporal Multivariada são uma abordagem estatística utili
 
 Em \eqref{eq:sarmax}, o modelo SARIMAX é apresentado. Nesse modelo, são consideradas variáveis exógenas, ou seja, são utilizados dados externos para a realização das previsões. É importante ressaltar que mesmo que essas variáveis exógenas sejam indiretamente modeladas no histórico de previsões do modelo, ao incluí-las diretamente, o modelo será capaz de responder de forma mais ágil aos efeitos dessas variáveis. Isso significa que a incorporação de informações externas possibilita uma resposta mais rápida e precisa do modelo em relação aos fatores externos, resultando em previsões mais atualizadas e acuradas.
 
-\begin{figure}[H]
+\begin{figure}[htpb!]
 	\centering
 	\caption{Comparação entre ARIMAX e SARIMAX}
 	\begin{subfigure}{1\textwidth}
@@ -185,6 +185,7 @@ Em \eqref{eq:sarmax}, o modelo SARIMAX é apresentado. Nesse modelo, são consid
 		\caption{ARIMAX $(7,1,7)$}
 		\label{fig:1-arimax}
 	\end{subfigure}
+	\hfill
 	
 	\begin{subfigure}{1\textwidth}
 		\includegraphics[width=\linewidth]{Modelos/Figuras/SARIMAX}

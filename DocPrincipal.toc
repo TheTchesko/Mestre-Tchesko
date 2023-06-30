@@ -3,7 +3,7 @@
 \babel@toc {brazil}{}\relax 
 \contentsline {section}{\numberline {1}Introdu{\c c}{\~a}o}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Contexto da pesquisa}{1}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}Motiva\c c\~ao da pesquisa}{3}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Motiva\c c\~ao da pesquisa}{2}{subsubsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.2}Objetivo geral}{3}{subsection.1.2}%
 \contentsline {subsubsection}{\numberline {1.2.1}Objetivos espec\'ificos e quest\~ao de pesquisa}{3}{subsubsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.3}Descri\c c\~ao do problema}{4}{subsection.1.3}%
@@ -18,66 +18,66 @@
 \contentsline {subsection}{\numberline {2.3}Problematiza\c c\~ao da Revis\~ao}{16}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Metodologia}{17}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Resultados da busca de revis\~ao}{18}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Principais conclus\~ao}{27}{subsection.2.6}%
-\contentsline {section}{\numberline {3}Base Te\'orica}{29}{section.3}%
-\contentsline {subsection}{\numberline {3.1}M\'etricas de Avalia\c c\~ao de Modelos}{29}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Erro Quadr\'atico M\'edio Raiz (RMSE)}{29}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Raiz do Erro M\'edio Quadr\'atico Relativo (RRMSE)}{30}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Erro Absoluto M\'edio (MAE)}{32}{subsubsection.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.1.4}Erro Percentual Absoluto M\'edio (MAPE)}{32}{subsubsection.3.1.4}%
-\contentsline {subsubsection}{\numberline {3.1.5}Erro Percentual Absoluto M\'edio Sim\'etrico (sMAPE)}{33}{subsubsection.3.1.5}%
-\contentsline {subsection}{\numberline {3.2}Modelos de S\'eries Temporais Univariados}{34}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Componente Autorregressivo}{35}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}AR(0): Ru\'ido branco}{36}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}AR(1): Caminhadas aleat\'orias e Oscila\c c\~oes}{36}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}AR(p): Termos de ordem superior}{37}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}M\'edia M\'ovel}{38}{subsubsection.3.2.5}%
-\contentsline {subsubsection}{\numberline {3.2.6}Modelos ARMA e ARIMA}{39}{subsubsection.3.2.6}%
-\contentsline {subsubsection}{\numberline {3.2.7}ARIMA}{40}{subsubsection.3.2.7}%
-\contentsline {subsubsection}{\numberline {3.2.8}SARIMA}{41}{subsubsection.3.2.8}%
-\contentsline {subsection}{\numberline {3.3}Modelos de S\'erie Temporal Multivariada}{42}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}ARIMAX e SARIMAX}{42}{subsubsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.4}Modelos de Aprendizado de M\'aquina Supervisionados}{43}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Regress\~ao Linear (LR)}{44}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Defini\c c\~ ao do modelo}{45}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}Floresta Aleat\'oria (Random Forest)}{47}{subsubsection.3.4.3}%
-\contentsline {subsubsection}{\numberline {3.4.4}Gradient Boosting (como XGBoost, LightGBM)}{48}{subsubsection.3.4.4}%
-\contentsline {subsubsection}{\numberline {3.4.5}O Gradiente em Gradiente de Boosting (Refor\c co)}{49}{subsubsection.3.4.5}%
-\contentsline {subsubsection}{\numberline {3.4.6}Algoritmos de boosting de gradiente}{50}{subsubsection.3.4.6}%
-\contentsline {subsubsection}{\numberline {3.4.7}A diferen\c ca entre XGBoost e LightGBM}{50}{subsubsection.3.4.7}%
-\contentsline {subsection}{\numberline {3.5}Estudo de Caso Emp\'irico}{53}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}Defini\c c\~ao do problema}{53}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Coleta de dados}{53}{subsubsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.3}An\'alise explorat\'oria dos dados}{53}{subsubsection.3.5.3}%
-\contentsline {subsubsection}{\numberline {3.5.4}Escolha do modelo}{54}{subsubsection.3.5.4}%
-\contentsline {subsubsection}{\numberline {3.5.5}Divis\~ao dos dados}{54}{subsubsection.3.5.5}%
-\contentsline {subsubsection}{\numberline {3.5.6}Ajuste do modelo}{54}{subsubsection.3.5.6}%
-\contentsline {subsubsection}{\numberline {3.5.7}Avalia\c c\~ao do modelo}{56}{subsubsection.3.5.7}%
-\contentsline {subsubsection}{\numberline {3.5.8}Previs\~oes Futuras}{57}{subsubsection.3.5.8}%
-\contentsline {subsubsection}{\numberline {3.5.9}Monitoramento e Ajuste Cont\'inuo}{58}{subsubsection.3.5.9}%
-\contentsline {subsubsection}{\numberline {3.5.10}Principais Conclus\~ao}{58}{subsubsection.3.5.10}%
-\contentsline {section}{\numberline {4}Resultados}{60}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Planejamento do Problema}{60}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}An\'alise Explorat\'oria dos dados (EDA)}{60}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}M\'ultiplas entradas e sa\'ida \'unica (MISO)}{61}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}Decomposi\c c\~ao STL}{62}{subsubsection.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.1.4}Separa\c c\~ao dos dados}{69}{subsubsection.4.1.4}%
-\contentsline {subsubsection}{\numberline {4.1.5}Estrat\'egia de Previs\~ao}{69}{subsubsection.4.1.5}%
-\contentsline {subsubsection}{\numberline {4.1.6}Horizonte}{70}{subsubsection.4.1.6}%
-\contentsline {subsubsection}{\numberline {4.1.7}Modelos de previs\~ao e m\'etricas de desempenho}{70}{subsubsection.4.1.7}%
-\contentsline {subsubsection}{\numberline {4.1.8}Teste de Signific\^ancia}{71}{subsubsection.4.1.8}%
-\contentsline {subsubsection}{\numberline {4.1.9}Compara\c c\~ao dos modelos}{72}{subsubsection.4.1.9}%
-\contentsline {subsection}{\numberline {4.2}Estudo de Caso Emp\'irico Resultado}{73}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Descri\c c\~ao do sistema de abastecimento de \'agua}{74}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}An\'alise explorat\'oria dos dados}{75}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Quest\~oes de pesquisa 1 a 4}{75}{subsubsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.4}Quest\~ao de pesquisa 5}{77}{subsubsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.5}Discuss\~ao geral e conclus\~oes}{78}{subsubsection.4.2.5}%
-\contentsline {section}{\numberline {5}Conclus\~oes}{80}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Limita\c c\~oes da Pesquisa e Propostas Futuras}{81}{subsection.5.1}%
-\contentsline {section}{Refer\^encias}{82}{subsection.5.1}%
-\contentsline {section}{\numberline {A}Ap\^endice - Compara\c c\~ao dos modelos de previs\~ao de series temporais m\'edia de 24h}{88}{appendix.A}%
-\contentsline {section}{\numberline {B}Ap\^endice - Compara\c c\~ao dos modelos de previs\~ao com o m\'etodo Ljung-Box}{93}{appendix.B}%
-\contentsline {section}{\numberline {C}Ap\^endice - Modelos AR(7), ARX (7) e MA (7) 24h }{95}{appendix.C}%
-\contentsline {section}{\numberline {D}Ap\^endice - Modelos ARMA(7,7) e ARIMA (7,1,7) 24h}{96}{appendix.D}%
-\contentsline {section}{\numberline {E}Ap\^endice - Modelos ARIMAX (7,1,7), SARIMA (7,1,7) (2,1,0,12) e SARIMAX (7,1,7) (2,1,0,12) 24h}{98}{appendix.E}%
+\contentsline {subsection}{\numberline {2.6}Principais conclus\~ao}{26}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Base Te\'orica}{28}{section.3}%
+\contentsline {subsection}{\numberline {3.1}M\'etricas de Avalia\c c\~ao de Modelos}{28}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Erro Quadr\'atico M\'edio Raiz (RMSE)}{28}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Raiz do Erro M\'edio Quadr\'atico Relativo (RRMSE)}{29}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Erro Absoluto M\'edio (MAE)}{31}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Erro Percentual Absoluto M\'edio (MAPE)}{31}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}Erro Percentual Absoluto M\'edio Sim\'etrico (sMAPE)}{32}{subsubsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.2}Modelos de S\'eries Temporais Univariados}{33}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Componente Autorregressivo}{34}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}AR(0): Ru\'ido branco}{35}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}AR(1): Caminhadas aleat\'orias e Oscila\c c\~oes}{35}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}AR(p): Termos de ordem superior}{36}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}M\'edia M\'ovel}{37}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.6}Modelos ARMA e ARIMA}{38}{subsubsection.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.7}ARIMA}{39}{subsubsection.3.2.7}%
+\contentsline {subsubsection}{\numberline {3.2.8}SARIMA}{40}{subsubsection.3.2.8}%
+\contentsline {subsection}{\numberline {3.3}Modelos de S\'erie Temporal Multivariada}{41}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}ARIMAX e SARIMAX}{41}{subsubsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.4}Modelos de Aprendizado de M\'aquina Supervisionados}{41}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Regress\~ao Linear (LR)}{43}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Defini\c c\~ ao do modelo}{44}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Floresta Aleat\'oria (Random Forest)}{46}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}Gradient Boosting (como XGBoost, LightGBM)}{47}{subsubsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.5}O Gradiente em Gradiente de Boosting (Refor\c co)}{48}{subsubsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {3.4.6}Algoritmos de boosting de gradiente}{49}{subsubsection.3.4.6}%
+\contentsline {subsubsection}{\numberline {3.4.7}A diferen\c ca entre XGBoost e LightGBM}{49}{subsubsection.3.4.7}%
+\contentsline {subsection}{\numberline {3.5}Estudo de Caso Emp\'irico}{52}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Defini\c c\~ao do problema}{52}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Coleta de dados}{52}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}An\'alise explorat\'oria dos dados}{52}{subsubsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.4}Escolha do modelo}{53}{subsubsection.3.5.4}%
+\contentsline {subsubsection}{\numberline {3.5.5}Divis\~ao dos dados}{53}{subsubsection.3.5.5}%
+\contentsline {subsubsection}{\numberline {3.5.6}Ajuste do modelo}{53}{subsubsection.3.5.6}%
+\contentsline {subsubsection}{\numberline {3.5.7}Avalia\c c\~ao do modelo}{55}{subsubsection.3.5.7}%
+\contentsline {subsubsection}{\numberline {3.5.8}Previs\~oes Futuras}{56}{subsubsection.3.5.8}%
+\contentsline {subsubsection}{\numberline {3.5.9}Monitoramento e Ajuste Cont\'inuo}{57}{subsubsection.3.5.9}%
+\contentsline {subsubsection}{\numberline {3.5.10}Principais Conclus\~ao}{57}{subsubsection.3.5.10}%
+\contentsline {section}{\numberline {4}Resultados}{59}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Planejamento do Problema}{59}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}An\'alise Explorat\'oria dos dados (EDA)}{59}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}M\'ultiplas entradas e sa\'ida \'unica (MISO)}{60}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Decomposi\c c\~ao STL}{61}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Separa\c c\~ao dos dados}{68}{subsubsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.5}Estrat\'egia de Previs\~ao}{68}{subsubsection.4.1.5}%
+\contentsline {subsubsection}{\numberline {4.1.6}Horizonte}{69}{subsubsection.4.1.6}%
+\contentsline {subsubsection}{\numberline {4.1.7}Modelos de previs\~ao e m\'etricas de desempenho}{69}{subsubsection.4.1.7}%
+\contentsline {subsubsection}{\numberline {4.1.8}Teste de Signific\^ancia}{70}{subsubsection.4.1.8}%
+\contentsline {subsubsection}{\numberline {4.1.9}Compara\c c\~ao dos modelos}{71}{subsubsection.4.1.9}%
+\contentsline {subsection}{\numberline {4.2}Estudo de Caso Emp\'irico Resultado}{72}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Descri\c c\~ao do sistema de abastecimento de \'agua}{73}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}An\'alise explorat\'oria dos dados}{74}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Quest\~oes de pesquisa 1 a 4}{74}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Quest\~ao de pesquisa 5}{76}{subsubsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.5}Discuss\~ao geral e conclus\~oes}{77}{subsubsection.4.2.5}%
+\contentsline {section}{\numberline {5}Conclus\~oes}{79}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Limita\c c\~oes da Pesquisa e Propostas Futuras}{80}{subsection.5.1}%
+\contentsline {section}{Refer\^encias}{81}{subsection.5.1}%
+\contentsline {section}{\numberline {A}Ap\^endice - Compara\c c\~ao dos modelos de previs\~ao de series temporais m\'edia de 24h}{87}{appendix.A}%
+\contentsline {section}{\numberline {B}Ap\^endice - Compara\c c\~ao dos modelos de previs\~ao com o m\'etodo Ljung-Box}{92}{appendix.B}%
+\contentsline {section}{\numberline {C}Ap\^endice - Modelos AR(7), ARX (7) e MA (7) 24h }{94}{appendix.C}%
+\contentsline {section}{\numberline {D}Ap\^endice - Modelos ARMA(7,7) e ARIMA (7,1,7) 24h}{95}{appendix.D}%
+\contentsline {section}{\numberline {E}Ap\^endice - Modelos ARIMAX (7,1,7), SARIMA (7,1,7) (2,1,0,12) e SARIMAX (7,1,7) (2,1,0,12) 24h}{97}{appendix.E}%
