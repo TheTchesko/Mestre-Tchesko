@@ -3,7 +3,7 @@
 Com o objetivo de obter uma análise mais aprofundada do desempenho de cada modelo, foi realizada uma comparação por meio de um gráfico de violino. Dessa forma, pôde-se observar qual dos modelos apresentava o melhor desempenho.
 
 
-\begin{figure}[H]
+\begin{figure}[!htpb]
 	\centering
 	\caption{Análise comparativa dos modelos utilizando gráficos de violino}
 	\begin{subfigure}{0.9\textwidth}
@@ -25,4 +25,4 @@ Ao comparar os modelos apresentados nas Figuras \ref{fig:modelos-arima} e \ref{f
 
 Quando se trata de um horizonte de previsão curto, o modelo de LR apresenta melhor desempenho em comparação com os demais. No entanto, em horizontes de previsão mais longos, os modelos XGBoost e Light GBM demonstram maior precisão. A Random Forest também é capaz de realizar previsões precisas, ficando ligeiramente atrás do XGBoost em previsões de longo prazo.
 
-Para avaliar a eficiência dos modelos ARIMA em previsões de longo prazo, utiliza-se o método conhecido como Ljung-Box. Os modelos que mostram melhor desempenho nesse contexto são o ARX, ARIMAX e SARIMAX, os quais incorporam variáveis exógenas. Esses modelos não lineares têm capacidade de previsão mais robusta em horizontes de tempo mais distantes, em comparação com os outros modelos ARIMA.
+Para avaliar a eficiência dos modelos ARIMA em previsões de longo prazo, utiliza-se o método conhecido como Ljung-Box, como apresentado no apêndice \ref{sec:comtb18}. As Tabelas de \ref{tb:lbtrn} a \ref{tb:lbcm} mostram a precisão dos modelos ARIMA ao longo do tempo, destacando em \textbf{negrito} os números menores para facilitar a compreensão. Os modelos ARX, ARIMAX e SARIMAX, que incorporam variáveis exógenas, demonstram um melhor desempenho nesse contexto. Esses modelos não lineares possuem uma capacidade de previsão mais robusta em horizontes de tempo mais distantes, em comparação com os outros modelos ARIMA.

@@ -3,82 +3,103 @@
 
 
 
+
+
 Modelo ARIMA com defasagem de 10 para previsão de longo prazo na demanda de água.
 
-	\begin{table}[H]
+
+
+\begin{table}[!htpb]
+	\centering		
+	\caption{Comparação dos modelos Ljung Box}
+	
+	\begin{subtable}{0.45\linewidth}
 		\centering
-		\caption{Comparação dos modelos Ljung Box \textbf{Treinamento} }\label{tb:lbtrn}
-	\begin{tabular}{@{}ccc@{}}
-		\toprule
-		\textbf{Ljung Box} & \textbf{Estatística de Teste} & \textbf{Valor De p} \\ \midrule
-\textbf{ARX}       & \textbf{6,30}                          & 0,79                \\
-\textbf{AR}        & 7,13                          & 0,07                \\
-\textbf{MA}        & 34,34                         & 0,00                \\
-\textbf{ARMA}      & 11,60                         & 0,31                \\
-\textbf{ARIMA}     & 13,01                         & 0,22                \\
-\textbf{SARIMA}    & 10,17                         & 0,43                \\
-\textbf{ARIMAX}    & 30,36                         & 0,00                \\
-\textbf{SARIMAX}   & 11,63                         & 0,31                \\ \bottomrule
-	\end{tabular}
-
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
-	\end{table}
-
-\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos Ljung Box \textbf{Validação} }\label{tb:lbvld}
-	\begin{tabular}{@{}ccc@{}}
-		\toprule
-		\textbf{Ljung Box} & \textbf{Estatística de Teste} & \textbf{Valor De p} \\ \midrule
-\textbf{ARX}       & 7,47                          & 0,68                \\
-\textbf{AR}        & 2,43                          & 0,99                \\
-\textbf{MA}        & 1,39                          & 1,00                \\
-\textbf{ARMA}      & 5,42                          & 0,86                \\
-\textbf{ARIMA}     & 4,04                          & 0,95                \\
-\textbf{SARIMA}    & 4,45                          & 0,93                \\
-\textbf{ARIMAX}    & \textbf{0,02}                          & 1,00                \\
-\textbf{SARIMAX}   & 0,04                          & 1,00                \\ \bottomrule
-	\end{tabular}
-
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos Ljung Box \textbf{Teste} }\label{tb:lbtst}
-	\begin{tabular}{@{}ccc@{}}
-		\toprule
-		\textbf{Ljung Box} & \textbf{Estatística de Teste} & \textbf{Valor De p} \\ \midrule
-\textbf{ARX}       & 0,86                          & 1,00                \\
-\textbf{AR}        & 7,80                          & 0,65                \\
-\textbf{MA}        & 7,89                          & 0,64                \\
-\textbf{ARMA}      & 19,34                         & 0,04                \\
-\textbf{ARIMA}     & 9,50                          & 0,49                \\
-\textbf{SARIMA}    & 3,57                          & 0,97                \\
-\textbf{ARIMAX}    & \textbf{0,60}                          & 1,00                \\
-\textbf{SARIMAX}   & 3,72                          & 0,96                \\ \bottomrule
-	\end{tabular}
+		\caption{\textbf{Treinamento}} \label{tb:lbtrn}
+		\begin{tabular}{@{}ccc@{}}
+			\toprule
+			\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Valor \\ De p\end{tabular}} \\
+			& & \\
+			& & \\
+			& & \\
+			& & \\ \midrule
+			A & 7,125 & 0,072 \\
+			B & \textbf{6,297} & 0,790 \\
+			C & 34,340 & \textbf{0} \\
+			D & 11,603 & 0,313 \\
+			E & 13,011 & 0,223 \\
+			F & 10,165 & 0,426 \\
+			G & 30,360 & \textbf{0,001} \\
+			H & 11,634 & 0,310 \\ \bottomrule
+		\end{tabular}
+	\end{subtable}
+	\hfill
+	\begin{subtable}{0.45\linewidth}
+		\centering
+		\caption{\textbf{Teste}} \label{tb:lbtst}
+		\begin{tabular}{@{}ccc@{}}
+			\toprule
+			\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Valor \\ De p\end{tabular}} \\
+			& & \\
+			& & \\
+			& & \\
+			& & \\ \midrule
+			A & 7,795 & 0,649 \\
+			B & \textbf{0,857} & 1 \\
+			C & 7,886 & \textbf{0,64} \\
+			D & 19,344 & \textbf{0,036} \\
+			E & 9,499 & 0,485 \\
+			F & 3,567 & 0,965 \\
+			G & \textbf{0,597} & \textbf{1} \\
+			H & 3,717 & 0,959 \\ \bottomrule
+		\end{tabular}
+	\end{subtable}
 	
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\caption{Comparação dos modelos Ljung Box \textbf{Completo} }\label{tb:lbcm}
-	\begin{tabular}{@{}ccc@{}}
-		\toprule
-		\textbf{Ljung Box} & \textbf{Estatística de Teste} & \textbf{Valor De p} \\ \midrule
-\textbf{ARX}       & 4,70                          & 0,91                \\
-\textbf{AR}        & \textbf{4,26}                          & 0,16                \\
-\textbf{MA}        & 49,16                         & 0,00                \\
-\textbf{ARMA}      & 40,49                         & 0,00                \\
-\textbf{ARIMA}     & 40,49                         & 0,00                \\
-\textbf{SARIMA}    & 40,49                         & 0,00                \\
-\textbf{ARIMAX}    & 60,91                         & 0,00                \\
-\textbf{SARIMAX}   & 5,83                          & 0,83                \\ \bottomrule
-	\end{tabular}
-
+	\vspace{1em}
 	
+	\begin{subtable}{0.45\linewidth}
+		\centering
+		\caption{\textbf{Validação}} \label{tb:lbvld}
+		\begin{tabular}{@{}ccc@{}}
+			\toprule
+			\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Valor \\ De p\end{tabular}} \\
+			& & \\
+			& & \\
+			& & \\
+			& & \\ \midrule
+			A & 2,428 & 0,992 \\
+			B & 7,468 & \textbf{0,681} \\
+			C & 1,387 & 0,999 \\
+			D & 5,416 & 0,862 \\
+			E & 4,038 & 0,946 \\
+			F & 4,447 & 0,925 \\
+			G & \textbf{0,021} & \textbf{1} \\
+			H & 0,044 & 1 \\ \bottomrule
+		\end{tabular}
+	\end{subtable}
+	\hfill
+	\begin{subtable}{0.45\linewidth}
+		\centering
+		\caption{\textbf{Inteiro}} \label{tb:lbcm}
+		\begin{tabular}{@{}ccc@{}}
+			\toprule
+			\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Valor \\ De p\end{tabular}} \\
+			& & \\
+			& & \\
+			& & \\
+			& & \\ \midrule
+			A & \textbf{4,262} & 0,161 \\
+			B & \textbf{4,703} & 0,91 \\
+			C & 30,713 & \textbf{0,001} \\
+			D & 40,49 & \textbf{0} \\
+			E & 40,49 & \textbf{0} \\
+			F & 40,49 & \textbf{0} \\
+			G & 60,913 & \textbf{0} \\
+			H & \textbf{5,827} & 0,83 \\ \bottomrule
+		\end{tabular}
+	\end{subtable}
+	
+	
+	\vspace{0.5cm}
 	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
 \end{table}
-

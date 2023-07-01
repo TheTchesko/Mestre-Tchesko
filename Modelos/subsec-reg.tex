@@ -30,11 +30,11 @@ A fórmula do coeficiente de correlação de Pearson é dada por:
 
 Onde $x_i$ e $y_i$ representam os valores das variáveis $X$ e $Y$, respectivamente. $\bar{x}$ e $\bar{y}$ são as médias dos valores $x_i$ e $y_i$. O coeficiente de correlação de Pearson mede a força e a direção da relação linear entre as variáveis $X$ e $Y$. Valores próximos a 1 indicam uma correlação positiva forte, valores próximos a -1 indicam uma correlação negativa forte, e valores próximos a 0 indicam uma ausência de correlação entre as variáveis.
 
-\begin{figure}[H]
+\begin{figure}[!htpb]
 	\centering
 	\caption{Corelação de Pearson}
 	\label{fig:person}
-	\includegraphics[width=1\linewidth]{Apendices/Figuras/modelagem-24h/person}
+	\includegraphics[width=0.82\linewidth]{Apendices/Figuras/modelagem-24h/person}
 	
 	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
 \end{figure}
@@ -57,11 +57,11 @@ Da Equação \eqref{eq:lr}, temos as seguintes variáveis:
 	\item O valor de $y$ é calculado como uma constante $\beta_0$, somada aos valores das variáveis $x$ multiplicados por seus coeficientes $\beta_1$ a $\beta_p$.
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}[!htpb]
 	\centering
 	\caption{Regressão linear LT01 vs PT01 correlação 98\%}
 	\label{fig:lr-lt01-m3}
-	\includegraphics[width=1\linewidth]{"Modelos/Figuras/LR LT01 (m³)"}
+	\includegraphics[width=0.82\linewidth]{"Modelos/Figuras/LR LT01 (m³)"}
 	
 	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
 \end{figure}
@@ -78,7 +78,7 @@ Para utilizar a regressão linear, é necessário estimar os coeficientes (betas
 
 A fórmula mencionada, conhecida como \textbf{OLS} (método dos mínimos quadrados ordinários), é amplamente utilizada na regressão linear \citeonline{korstanje2021}. Esse método é conhecido por ser rápido de ajustar, pois requer apenas cálculos matriciais para estimar os coeficientes $\beta$. No entanto, ele é mais adequado para processos lineares e pode ser menos adequado para modelos mais complexos que envolvam relações não-lineares. Portanto, é importante considerar suas limitações ao aplicar a regressão linear em contextos mais complexos.
 
-\begin{figure}[H]
+\begin{figure}[!htpb]
 	\centering
 	\caption{Regressão linear (LR) um passo a frente}
 	\label{fig:1-regressao-linear}
@@ -93,7 +93,7 @@ A fórmula mencionada, conhecida como \textbf{OLS} (método dos mínimos quadrad
 Pode-se observar que ter exatamente a mesma árvore de decisão repetidas vezes não adiciona valor significativo em comparação a usar essa mesma árvore de decisão apenas uma vez. Em modelos de conjunto, cada modelo individual deve ser ligeiramente diferente dos demais. Existem dois métodos amplamente reconhecidos para criar conjuntos: o ensacamento (\textit{bagging}) e o reforço (\textit{boosting}). A floresta aleatória utiliza o ensacamento para criar um conjunto de árvores de decisão, onde cada árvore é construída com uma amostra aleatória do conjunto de dados original. Isso garante que as árvores sejam distintas e diversificadas, contribuindo para a robustez e eficácia do modelo.
 
 
-\begin{figure}[H]
+\begin{figure}[!htpb]
 	\centering
 	\caption{Regressão da Floresta Aleatória (RFR)}
 	\label{fig:1-regressao-rfa}
@@ -105,7 +105,7 @@ Pode-se observar que ter exatamente a mesma árvore de decisão repetidas vezes 
 
 Segundo \citeonline{Pelletier2016156}, cada árvore em um modelo de Floresta Aleatória de Regressão (RFR) é construída por meio de um algoritmo de aprendizado individual que divide o conjunto de variáveis de entrada em subconjuntos, com base em um teste de valor de atributo, como o coeficiente de Gini. Ao contrário das árvores de decisão clássicas, as árvores de RFR são construídas sem poda e selecionam aleatoriamente um subconjunto de variáveis de entrada em cada nó. Atualmente, o número de variáveis utilizadas para dividir um nó em uma RFR (denotado por $m$) corresponde à raiz quadrada do número total de variáveis de entrada. Essa abordagem ajuda a aumentar a diversidade das árvores e aprimorar o desempenho do modelo.
 
-\begin{figure}[H]
+\begin{figure}[!htpb]
 	\centering
 	\caption{Esquema da Floresta Aleatória}
 	\label{fig:rf}
@@ -124,7 +124,7 @@ O processo de boosting melhora o conjunto ao focar nas partes dos dados que aind
 O boosting é apenas um dos métodos de ensemble utilizados em conjunto com o bagging. O bagging também é um método que utiliza múltiplos modelos de árvore de decisão, porém, em vez de adicionar os modelos de forma iterativa, cada modelo é treinado independentemente em subconjuntos aleatórios dos dados de treinamento. Ambos os métodos, boosting e bagging, têm como objetivo melhorar o desempenho do modelo combinando as previsões de múltiplos modelos individuais.
 
 
-\begin{figure}[H]
+\begin{figure}[!htpb]
 	\centering
 	\caption{Impulsionando gradiente com XGBoost e LightGBM}
 	\label{fig:xgboos}
@@ -181,11 +181,11 @@ O LightGBM também utiliza uma abordagem chamada Exclusive Feature Bundling (EFB
 
 Essa diferença teoricamente favorece o LightGBM em termos de precisão, mas também apresenta um maior risco de overfitting (sobreajuste) quando há poucos dados disponíveis. Portanto, é importante que a pessoa considere essas distinções ao escolher entre os dois algoritmos de aumento de gradiente.
 
-\begin{figure}[H]
+\begin{figure}[!htpb]
 	\centering
 	\caption{Compara-se o crescimento em folha com o crescimento em nível}
 	\label{fig:xgboost}
-	\includegraphics[width=1\linewidth]{Modelos/Figuras/xgboost}
+	\includegraphics[width=0.7\linewidth]{Modelos/Figuras/xgboost}
 	
 	\fonte{Adaptação de \citeonline{korstanje2021}}
 \end{figure}
@@ -199,7 +199,7 @@ Por outro lado, no crescimento em níveis, como no XGBoost, as árvores são exp
 
 Essa distinção no modo de crescimento das árvores pode afetar o comportamento e o desempenho do modelo. Portanto, compreender essa diferença é importante ao escolher entre esses algoritmos de aumento de gradiente.
 
-\begin{figure}[H]
+\begin{figure}[!htpb]
 	\centering
 	\caption{A performance da regressão utilizando XGBoost e LightGBM é comparada}
 	\label{fig:1-xgb-regressao}
