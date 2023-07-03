@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.6.28)  1 JUL 2023 00:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.6.28)  3 JUL 2023 18:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1804,7 +1804,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.41 ...à frente \relax }}{91}{figure.caption.51}
+l.41 ...à frente \relax }}{88}{figure.caption.51}
                                                   % [9
 
 
@@ -1863,7 +1863,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 ...ARIMAX e SARIMAX}{40}{subsubsection.3.3.1}
+l.39 ...ARIMAX e SARIMAX}{38}{subsubsection.3.3.1}
                                                   % [14
 
 
@@ -1872,7 +1872,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.76 ...numberline {5}Conclus\~oes}{77}{section.5}
+l.76 ...numberline {5}Conclus\~oes}{74}{section.5}
                                                   % [15])
 \tf@toc=\write8
 \openout8 = `DocPrincipal.toc'.
@@ -1897,122 +1897,115 @@ inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: Introducao/Figuras/paradigma-ml.pdf Graphic file (type pdf)
 <use Introducao/Figuras/paradigma-ml.pdf>
 Package pdftex.def Info: Introducao/Figuras/paradigma-ml.pdf  used on input lin
-e 17.
+e 16.
 (pdftex.def)             Requested size: 455.24411pt x 237.12126pt.
 [2 <./Introducao/Figuras/paradigma-ml.pdf>]) (Introducao/subsec-objetivos.tex
 [3]) (Introducao/subsec-metodologia.tex [4]
 
 pdfTeX warning: pdflatex.exe (file ./Introducao/Figuras/Etapas.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<Introducao/Figuras/Etapas.pdf, id=696, 787.24112pt x 476.07861pt>
+<Introducao/Figuras/Etapas.pdf, id=694, 787.24112pt x 476.07861pt>
 File: Introducao/Figuras/Etapas.pdf Graphic file (type pdf)
 <use Introducao/Figuras/Etapas.pdf>
-Package pdftex.def Info: Introducao/Figuras/Etapas.pdf  used on input line 37.
+Package pdftex.def Info: Introducao/Figuras/Etapas.pdf  used on input line 142.
+
 (pdftex.def)             Requested size: 455.24411pt x 275.31216pt.
-[5 <./Introducao/Figuras/Etapas.pdf>] [6] [7] [8])
-(Introducao/subsec-justif.tex [9]) (Introducao/subsec-estrutura.tex [10]
+[5 <./Introducao/Figuras/Etapas.pdf>] [6]) (Introducao/subsec-justif.tex
+[7]) [8] (Introducao/subsec-estrutura.tex
 
 pdfTeX warning: pdflatex.exe (file ./Introducao/Figuras/Estrutura.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Introducao/Figuras/Estrutura.pdf, id=863, 984.67876pt x 617.00514pt>
+<Introducao/Figuras/Estrutura.pdf, id=820, 830.2016pt x 574.54652pt>
 File: Introducao/Figuras/Estrutura.pdf Graphic file (type pdf)
 <use Introducao/Figuras/Estrutura.pdf>
 Package pdftex.def Info: Introducao/Figuras/Estrutura.pdf  used on input line 2
 4.
-(pdftex.def)             Requested size: 455.24411pt x 285.25685pt.
-)) [11 <./Introducao/Figuras/Estrutura.pdf>]
-\openout2 = `Revisao/sec-revisao.aux'.
-
- (Revisao/sec-revisao.tex
-(Revisao/subsec-descricao.tex
-<Introducao/Figuras/dados todos.png, id=924, 867.24pt x 505.89pt>
+(pdftex.def)             Requested size: 455.24411pt x 315.05473pt.
+[9] (Revisao/subsec-descricao.tex
+<Introducao/Figuras/dados todos.png, id=827, 867.24pt x 505.89pt>
 File: Introducao/Figuras/dados todos.png Graphic file (type png)
 <use Introducao/Figuras/dados todos.png>
 Package pdftex.def Info: Introducao/Figuras/dados todos.png  used on input line
  13.
 (pdftex.def)             Requested size: 409.71692pt x 239.0034pt.
-<Introducao/Figuras/2020 a frente.pdf, id=925, 867.24pt x 505.89pt>
+<Introducao/Figuras/2020 a frente.pdf, id=828, 867.24pt x 505.89pt>
 File: Introducao/Figuras/2020 a frente.pdf Graphic file (type pdf)
 <use Introducao/Figuras/2020 a frente.pdf>
 Package pdftex.def Info: Introducao/Figuras/2020 a frente.pdf  used on input li
 ne 19.
 (pdftex.def)             Requested size: 409.71692pt x 239.0034pt.
-) (Revisao/subsec-revisao.tex [12
-
-
-
-] [13 <./Introducao/Figuras/dados todos.png> <./Introducao/Figuras/2020 a frent
-e.pdf>]
-(Revisao/exemplo serie.tex
-<Revisao/Figuras/serie_estacionaria.pdf, id=991, 1084.05pt x 578.16pt>
+ [10 <./Introducao/Figuras/Estrutura.pdf>])
+(Revisao/subsec-revisao.tex [11 <./Introducao/Figuras/dados todos.png> <./Intro
+ducao/Figuras/2020 a frente.pdf>] (Revisao/exemplo serie.tex
+<Revisao/Figuras/serie_estacionaria.pdf, id=949, 1084.05pt x 578.16pt>
 File: Revisao/Figuras/serie_estacionaria.pdf Graphic file (type pdf)
 <use Revisao/Figuras/serie_estacionaria.pdf>
 Package pdftex.def Info: Revisao/Figuras/serie_estacionaria.pdf  used on input 
 line 8.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Revisao/Figuras/serie_nao_estacionaria_1.pdf, id=992, 1084.05pt x 578.16pt>
+<Revisao/Figuras/serie_nao_estacionaria_1.pdf, id=950, 1084.05pt x 578.16pt>
 File: Revisao/Figuras/serie_nao_estacionaria_1.pdf Graphic file (type pdf)
 <use Revisao/Figuras/serie_nao_estacionaria_1.pdf>
 Package pdftex.def Info: Revisao/Figuras/serie_nao_estacionaria_1.pdf  used on 
 input line 12.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Revisao/Figuras/serie_nao_estacionaria_2.pdf, id=993, 1084.05pt x 578.16pt>
+<Revisao/Figuras/serie_nao_estacionaria_2.pdf, id=951, 1084.05pt x 578.16pt>
 File: Revisao/Figuras/serie_nao_estacionaria_2.pdf Graphic file (type pdf)
 <use Revisao/Figuras/serie_nao_estacionaria_2.pdf>
 Package pdftex.def Info: Revisao/Figuras/serie_nao_estacionaria_2.pdf  used on 
 input line 17.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Revisao/Figuras/serie_nao_estacionaria_3.pdf, id=994, 1084.05pt x 578.16pt>
+<Revisao/Figuras/serie_nao_estacionaria_3.pdf, id=952, 1084.05pt x 578.16pt>
 File: Revisao/Figuras/serie_nao_estacionaria_3.pdf Graphic file (type pdf)
 <use Revisao/Figuras/serie_nao_estacionaria_3.pdf>
 Package pdftex.def Info: Revisao/Figuras/serie_nao_estacionaria_3.pdf  used on 
 input line 21.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-) [14 <./Revisao/Figuras/serie_estacionaria.pdf> <./Revisao/Figuras/serie_nao_e
-stacionaria_1.pdf> <./Revisao/Figuras/serie_nao_estacionaria_2.pdf> <./Revisao/
-Figuras/serie_nao_estacionaria_3.pdf>]
+)
 (Revisao/estocatico.tex
-<Revisao/Figuras/serie.pdf, id=1112, 1084.05pt x 578.16pt>
+<Revisao/Figuras/serie.pdf, id=957, 1084.05pt x 578.16pt>
 File: Revisao/Figuras/serie.pdf Graphic file (type pdf)
 <use Revisao/Figuras/serie.pdf>
 Package pdftex.def Info: Revisao/Figuras/serie.pdf  used on input line 5.
 (pdftex.def)             Requested size: 364.19667pt x 194.23396pt.
-)) [15 <./Revisao/Figuras/serie.pdf>]
-(Revisao/subsec-problematizacao.tex
+) [12] [13 <./Revisao/Figuras/serie_estacionaria.pdf> <./Revisao/Figuras/serie_
+nao_estacionaria_1.pdf> <./Revisao/Figuras/serie_nao_estacionaria_2.pdf> <./Rev
+isao/Figuras/serie_nao_estacionaria_3.pdf> <./Revisao/Figuras/serie.pdf>]) (Rev
+isao/subsec-problematizacao.tex
 
 pdfTeX warning: pdflatex.exe (file ./Revisao/Figuras/Série temporal.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Revisao/Figuras/Série temporal.pdf, id=1158, 818.45778pt x 379.4175pt>
+<Revisao/Figuras/Série temporal.pdf, id=1115, 818.45778pt x 379.4175pt>
 File: Revisao/Figuras/Série temporal.pdf Graphic file (type pdf)
 <use Revisao/Figuras/Série temporal.pdf>
 Package pdftex.def Info: Revisao/Figuras/Série temporal.pdf  used on input lin
 e 9.
 (pdftex.def)             Requested size: 455.24411pt x 211.04236pt.
-[16 <./Revisao/Figuras/Série temporal.pdf>]
+[14 <./Revisao/Figuras/Série temporal.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Revisao/Figuras/RSL.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Revisao/Figuras/RSL.pdf, id=1189, 2004.48875pt x 315.67938pt>
+<Revisao/Figuras/RSL.pdf, id=1143, 2004.48875pt x 315.67938pt>
 File: Revisao/Figuras/RSL.pdf Graphic file (type pdf)
 <use Revisao/Figuras/RSL.pdf>
 Package pdftex.def Info: Revisao/Figuras/RSL.pdf  used on input line 35.
 (pdftex.def)             Requested size: 455.24411pt x 71.69434pt.
-[17 <./Revisao/Figuras/RSL.pdf>]) (Revisao/subsec-result.tex
+[15 <./Revisao/Figuras/RSL.pdf>]) (Revisao/subsec-result.tex
 (Revisao/base-dados.tex
-<Revisao/Figuras/scopus 09-08.png, id=1217, 1903.11pt x 1206.5075pt>
+<Revisao/Figuras/scopus 09-08.png, id=1174, 1903.11pt x 1206.5075pt>
 File: Revisao/Figuras/scopus 09-08.png Graphic file (type png)
 <use Revisao/Figuras/scopus 09-08.png>
 Package pdftex.def Info: Revisao/Figuras/scopus 09-08.png  used on input line 5
 .
 (pdftex.def)             Requested size: 364.19667pt x 230.87727pt.
-) [18 <./Revisao/Figuras/scopus 09-08.png>]
-(Revisao/web.tex
-<Revisao/Figuras/web 09-08.png, id=1225, 1903.11pt x 1206.5075pt>
+) (Revisao/web.tex
+<Revisao/Figuras/web 09-08.png, id=1176, 1903.11pt x 1206.5075pt>
 File: Revisao/Figuras/web 09-08.png Graphic file (type png)
 <use Revisao/Figuras/web 09-08.png>
 Package pdftex.def Info: Revisao/Figuras/web 09-08.png  used on input line 5.
 (pdftex.def)             Requested size: 364.19667pt x 230.87727pt.
-) (Revisao/cruzamento.tex
+) [16] [17 <./Revisao/Figuras/scopus 09-08.png> <./Revisao/Figuras/web 09-08.pn
+g>] (Revisao/cruzamento.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--8
 []|\T1/cmr/m/n/12 nonlinear
  []
@@ -2027,8 +2020,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--11
 []|\T1/cmr/m/n/12 nonlinear
  []
 
-) [19 <./Revisao/Figuras/web 09-08.png>] (Revisao/reta.tex
-<Revisao/Figuras/regressão linear dos artigos baseados nos anos.pdf, id=1234, 
+) (Revisao/reta.tex
+<Revisao/Figuras/regressão linear dos artigos baseados nos anos.pdf, id=1192, 
 1084.05pt x 361.35pt>
 File: Revisao/Figuras/regressão linear dos artigos baseados nos anos.pdf Graph
 ic file (type pdf)
@@ -2036,14 +2029,14 @@ ic file (type pdf)
 Package pdftex.def Info: Revisao/Figuras/regressão linear dos artigos baseados
  nos anos.pdf  used on input line 5.
 (pdftex.def)             Requested size: 409.71692pt x 136.57007pt.
-) [20 <./Revisao/Figuras/regressão linear dos artigos baseados nos anos.pdf>]
+) [18 <./Revisao/Figuras/regressão linear dos artigos baseados nos anos.pdf>] 
 (Revisao/tabela-factor.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--6
 []|\T1/cmr/m/n/12 Quantidade de
  []
 
-) [21] (Revisao/autores-publicação.tex
-<Revisao/Figuras/Autores Relação entre artigos publicados.pdf, id=1292, 578.1
+) [19] (Revisao/autores-publicação.tex
+<Revisao/Figuras/Autores Relação entre artigos publicados.pdf, id=1251, 578.1
 6pt x 361.35pt>
 File: Revisao/Figuras/Autores Relação entre artigos publicados.pdf Graphic fi
 le (type pdf)
@@ -2052,167 +2045,166 @@ Package pdftex.def Info: Revisao/Figuras/Autores Relação entre artigos public
 ados.pdf  used on input line 5.
 (pdftex.def)             Requested size: 364.19667pt x 227.61862pt.
 ) (Revisao/autores.tex
-<Revisao/Figuras/Autores.png, id=1293, 1903.11pt x 1206.5075pt>
+<Revisao/Figuras/Autores.png, id=1252, 1903.11pt x 1206.5075pt>
 File: Revisao/Figuras/Autores.png Graphic file (type png)
 <use Revisao/Figuras/Autores.png>
 Package pdftex.def Info: Revisao/Figuras/Autores.png  used on input line 5.
 (pdftex.def)             Requested size: 364.19667pt x 230.87727pt.
-)
-(Revisao/mapa.tex
-<Revisao/Figuras/mapa mundi artigos.pdf, id=1296, 527.08919pt x 376.52669pt>
+) [20 <./Revisao/Figuras/Autores Relação entre artigos publicados.pdf>] (Revi
+sao/mapa.tex
+<Revisao/Figuras/mapa mundi artigos.pdf, id=1310, 527.08919pt x 376.52669pt>
 File: Revisao/Figuras/mapa mundi artigos.pdf Graphic file (type pdf)
 <use Revisao/Figuras/mapa mundi artigos.pdf>
 Package pdftex.def Info: Revisao/Figuras/mapa mundi artigos.pdf  used on input 
 line 5.
 (pdftex.def)             Requested size: 396.06015pt x 282.93437pt.
-) [22 <./Revisao/Figuras/Autores Relação entre artigos publicados.pdf>] [23 <
-./Revisao/Figuras/Autores.png> <./Revisao/Figuras/mapa mundi artigos.pdf>] (Rev
-isao/areas.tex
-<Revisao/Figuras/areas.pdf, id=1368, 1049.20828pt x 539.39076pt>
+)
+(Revisao/areas.tex
+<Revisao/Figuras/areas.pdf, id=1313, 1049.20828pt x 539.39076pt>
 File: Revisao/Figuras/areas.pdf Graphic file (type pdf)
 <use Revisao/Figuras/areas.pdf>
 Package pdftex.def Info: Revisao/Figuras/areas.pdf  used on input line 5.
 (pdftex.def)             Requested size: 409.71692pt x 210.63315pt.
-) (Revisao/areas-tabela.tex)
+) [21 <./Revisao/Figuras/Autores.png>] [22 <./Revisao/Figuras/mapa mundi artigo
+s.pdf> <./Revisao/Figuras/areas.pdf>]
+(Revisao/areas-tabela.tex)
 
-Package hyperref Warning: Suppressing empty link on input line 79.
+Package hyperref Warning: Suppressing empty link on input line 80.
 
-[24 <./Revisao/Figuras/areas.pdf>] [25]) (Revisao/subsec-conclusao.tex))
-[26]
+[23]) (Revisao/subsec-conclusao.tex))) [24]
+\openout2 = `Revisao/sec-revisao.aux'.
+
+ (Revisao/sec-revisao.tex)
 \openout2 = `Modelos/sec-modelos.aux'.
 
- (Modelos/sec-modelos.tex (Modelos/subsec-metrica.tex [27
+
+(Modelos/sec-modelos.tex (Modelos/subsec-metrica.tex [25
 
 
 
-] [28] [29]
-[30] [31]) (Modelos/subsec-arima.tex [32]
-<Modelos/Figuras/AR.pdf, id=1595, 1084.05pt x 361.35pt>
+
+
+
+] [26] [27] [28]
+[29]) (Modelos/subsec-arima.tex [30]
+<Modelos/Figuras/AR.pdf, id=1555, 1084.05pt x 361.35pt>
 File: Modelos/Figuras/AR.pdf Graphic file (type pdf)
 <use Modelos/Figuras/AR.pdf>
 Package pdftex.def Info: Modelos/Figuras/AR.pdf  used on input line 25.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
-<Modelos/Figuras/ARX.pdf, id=1596, 1084.05pt x 361.35pt>
+<Modelos/Figuras/ARX.pdf, id=1556, 1084.05pt x 361.35pt>
 File: Modelos/Figuras/ARX.pdf Graphic file (type pdf)
 <use Modelos/Figuras/ARX.pdf>
 Package pdftex.def Info: Modelos/Figuras/ARX.pdf  used on input line 31.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
- [33 <./Modelos/Figuras/AR.pdf> <./Modelos/Figuras/ARX.pdf>] [34] [35]
-<Modelos/Figuras/MA.pdf, id=1699, 1084.05pt x 361.35pt>
+ [31 <./Modelos/Figuras/AR.pdf> <./Modelos/Figuras/ARX.pdf>] [32] [33]
+<Modelos/Figuras/MA.pdf, id=1659, 1084.05pt x 361.35pt>
 File: Modelos/Figuras/MA.pdf Graphic file (type pdf)
 <use Modelos/Figuras/MA.pdf>
 Package pdftex.def Info: Modelos/Figuras/MA.pdf  used on input line 103.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
- [36]
-<Modelos/Figuras/ARMA.pdf, id=1709, 1084.05pt x 361.35pt>
+ [34]
+<Modelos/Figuras/ARMA.pdf, id=1669, 1084.05pt x 361.35pt>
 File: Modelos/Figuras/ARMA.pdf Graphic file (type pdf)
 <use Modelos/Figuras/ARMA.pdf>
 Package pdftex.def Info: Modelos/Figuras/ARMA.pdf  used on input line 119.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
- [37 <./Modelos/Figuras/MA.pdf> <./Modelos/Figuras/ARMA.pdf>]
-<Modelos/Figuras/ARIMA.pdf, id=1792, 1084.05pt x 361.35pt>
+ [35 <./Modelos/Figuras/MA.pdf> <./Modelos/Figuras/ARMA.pdf>]
+<Modelos/Figuras/ARIMA.pdf, id=1752, 1084.05pt x 361.35pt>
 File: Modelos/Figuras/ARIMA.pdf Graphic file (type pdf)
 <use Modelos/Figuras/ARIMA.pdf>
 Package pdftex.def Info: Modelos/Figuras/ARIMA.pdf  used on input line 140.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
- [38 <./Modelos/Figuras/ARIMA.pdf>]
-<Modelos/Figuras/SARIMA.pdf, id=1835, 1084.05pt x 361.35pt>
+ [36 <./Modelos/Figuras/ARIMA.pdf>]
+<Modelos/Figuras/SARIMA.pdf, id=1795, 1084.05pt x 361.35pt>
 File: Modelos/Figuras/SARIMA.pdf Graphic file (type pdf)
 <use Modelos/Figuras/SARIMA.pdf>
 Package pdftex.def Info: Modelos/Figuras/SARIMA.pdf  used on input line 161.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
- [39 <./Modelos/Figuras/SARIMA.pdf>]
-<Modelos/Figuras/ARIMAX.pdf, id=1881, 1084.05pt x 361.35pt>
+ [37 <./Modelos/Figuras/SARIMA.pdf>]
+<Modelos/Figuras/ARIMAX.pdf, id=1840, 1084.05pt x 361.35pt>
 File: Modelos/Figuras/ARIMAX.pdf Graphic file (type pdf)
 <use Modelos/Figuras/ARIMAX.pdf>
 Package pdftex.def Info: Modelos/Figuras/ARIMAX.pdf  used on input line 184.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
-<Modelos/Figuras/SARIMAX.pdf, id=1882, 1084.05pt x 361.35pt>
+<Modelos/Figuras/SARIMAX.pdf, id=1841, 1084.05pt x 361.35pt>
 File: Modelos/Figuras/SARIMAX.pdf Graphic file (type pdf)
 <use Modelos/Figuras/SARIMAX.pdf>
 Package pdftex.def Info: Modelos/Figuras/SARIMAX.pdf  used on input line 191.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
-) (Modelos/subsec-reg.tex [40] [41 <./Modelos/Figuras/ARIMAX.pdf> <./Modelos/Fi
+) (Modelos/subsec-reg.tex [38] [39 <./Modelos/Figuras/ARIMAX.pdf> <./Modelos/Fi
 guras/SARIMAX.pdf>]
-<Apendices/Figuras/modelagem-24h/person.pdf, id=1979, 606.33606pt x 500.93187pt
+<Apendices/Figuras/modelagem-24h/person.pdf, id=1940, 606.33606pt x 500.93187pt
 >
 File: Apendices/Figuras/modelagem-24h/person.pdf Graphic file (type pdf)
 <use Apendices/Figuras/modelagem-24h/person.pdf>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/person.pdf  used on in
 put line 37.
 (pdftex.def)             Requested size: 373.3035pt x 308.41905pt.
- [42]
-<Modelos/Figuras/LR LT01 (m³).png, id=1989, 613.51207pt x 276.25208pt>
+ [40 <./Apendices/Figuras/modelagem-24h/person.pdf>]
+<Modelos/Figuras/LR LT01 (m³).png, id=1974, 613.51207pt x 276.25208pt>
 File: Modelos/Figuras/LR LT01 (m³).png Graphic file (type png)
 <use Modelos/Figuras/LR LT01 (m³).png>
 Package pdftex.def Info: Modelos/Figuras/LR LT01 (m³).png  used on input line 
 64.
 (pdftex.def)             Requested size: 373.3035pt x 168.09198pt.
- [43 <./Apendices/Figuras/modelagem-24h/person.pdf>]
-<Modelos/Figuras/regressão-linear.pdf, id=2023, 1084.05pt x 361.35pt>
+
+[41 <./Modelos/Figuras/LR LT01 (m³).png>]
+<Modelos/Figuras/regressão-linear.pdf, id=1984, 1084.05pt x 361.35pt>
 File: Modelos/Figuras/regressão-linear.pdf Graphic file (type pdf)
 <use Modelos/Figuras/regressão-linear.pdf>
 Package pdftex.def Info: Modelos/Figuras/regressão-linear.pdf  used on input l
 ine 85.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
- [44 <./Modelos/Figuras/LR LT01 (m³).png> <./Modelos/Figuras/regressão-linear
-.pdf>]
-<Modelos/Figuras/regressão-rfa.pdf, id=2060, 1084.05pt x 361.35pt>
+<Modelos/Figuras/regressão-rfa.pdf, id=1985, 1084.05pt x 361.35pt>
 File: Modelos/Figuras/regressão-rfa.pdf Graphic file (type pdf)
 <use Modelos/Figuras/regressão-rfa.pdf>
 Package pdftex.def Info: Modelos/Figuras/regressão-rfa.pdf  used on input line
  100.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
-
+ [42 <./Modelos/Figuras/regressão-linear.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/RF.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/RF.pdf, id=2063, 1472.50125pt x 478.78876pt>
+<Modelos/Figuras/RF.pdf, id=2024, 1472.50125pt x 478.78876pt>
 File: Modelos/Figuras/RF.pdf Graphic file (type pdf)
 <use Modelos/Figuras/RF.pdf>
 Package pdftex.def Info: Modelos/Figuras/RF.pdf  used on input line 112.
 (pdftex.def)             Requested size: 455.24411pt x 148.02116pt.
-[45 <./Modelos/Figuras/regressão-rfa.pdf>]
+[43 <./Modelos/Figuras/regressão-rfa.pdf> <./Modelos/Figuras/RF.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/xgboos.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/xgboos.pdf, id=2108, 820.26451pt x 346.89601pt>
+<Modelos/Figuras/xgboos.pdf, id=2364, 820.26451pt x 346.89601pt>
 File: Modelos/Figuras/xgboos.pdf Graphic file (type pdf)
 <use Modelos/Figuras/xgboos.pdf>
 Package pdftex.def Info: Modelos/Figuras/xgboos.pdf  used on input line 131.
 (pdftex.def)             Requested size: 455.24411pt x 192.52426pt.
-[46 <./Modelos/Figuras/RF.pdf> <./Modelos/Figuras/xgboos.pdf>] [47] [48]
+[44 <./Modelos/Figuras/xgboos.pdf>] [45]
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/xgboost.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/xgboost.pdf, id=2462, 916.02223pt x 856.80098pt>
+<Modelos/Figuras/xgboost.pdf, id=2418, 916.02223pt x 856.80098pt>
 File: Modelos/Figuras/xgboost.pdf Graphic file (type pdf)
 <use Modelos/Figuras/xgboost.pdf>
 Package pdftex.def Info: Modelos/Figuras/xgboost.pdf  used on input line 188.
 (pdftex.def)             Requested size: 318.66948pt x 298.06758pt.
-<Modelos/Figuras/xgb-regressão.pdf, id=2466, 1084.05pt x 361.35pt>
+[46]
+<Modelos/Figuras/xgb-regressão.pdf, id=2426, 1084.05pt x 361.35pt>
 File: Modelos/Figuras/xgb-regressão.pdf Graphic file (type pdf)
 <use Modelos/Figuras/xgb-regressão.pdf>
 Package pdftex.def Info: Modelos/Figuras/xgb-regressão.pdf  used on input line
  208.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
-<Modelos/Figuras/lgbm-regressão.pdf, id=2467, 1084.05pt x 361.35pt>
+<Modelos/Figuras/lgbm-regressão.pdf, id=2427, 1084.05pt x 361.35pt>
 File: Modelos/Figuras/lgbm-regressão.pdf Graphic file (type pdf)
 <use Modelos/Figuras/lgbm-regressão.pdf>
 Package pdftex.def Info: Modelos/Figuras/lgbm-regressão.pdf  used on input lin
 e 212.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
-[49 <./Modelos/Figuras/xgboost.pdf>]) (Modelos/subsec-estudo.tex [50 <./Modelos
-/Figuras/xgb-regressão.pdf> <./Modelos/Figuras/lgbm-regressão.pdf>] [51]
-[52] [53] [54] [55])) [56]
-\openout2 = `Resultados/sec-resultados.aux'.
-
- (Resultados/sec-resultados.tex
-(Resultados/subsubsec-eda.tex [57
-
-
-
-]
+) (Modelos/subsec-estudo.tex [47 <./Modelos/Figuras/xgboost.pdf>] [48 <./Modelo
+s/Figuras/xgb-regressão.pdf> <./Modelos/Figuras/lgbm-regressão.pdf>]
+[49] [50] [51] [52] [53] [54] (Resultados/subsubsec-eda.tex [55]
 Overfull \hbox (2.38622pt too wide) in paragraph at lines 36--37
 []\T1/cmr/m/n/12 Na per-gunta [][]\T1/cmr/bx/n/12 Q \T1/cmr/m/n/12 3[][], obser
 va-se que o tan-que tem uma ca-pa-ci-dade m�-xima de $\OT1/cmr/m/n/12 4\OML/cmm
@@ -2227,100 +2219,109 @@ o de re-torno es-teja en-tre $\OT1/cmr/m/n/12 [110\OML/cmm/m/it/12 ; \OT1/cmr/m
 /n/12 144] \OML/cmm/m/it/12 m[]=h$\T1/cmr/m/n/12 ,
  []
 
-) (Resultados/subsubsec-miso.tex) [58] (Resultados/subsubsec-stl.tex
-<Resultados/Figuras/STL aditiva.pdf, id=2769, 1156.32pt x 578.16pt>
+) (Resultados/subsubsec-miso.tex) (Resultados/subsubsec-stl.tex [56]
+<Resultados/Figuras/STL aditiva.pdf, id=2728, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/STL aditiva.pdf Graphic file (type pdf)
 <use Resultados/Figuras/STL aditiva.pdf>
 Package pdftex.def Info: Resultados/Figuras/STL aditiva.pdf  used on input line
  22.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
-<Resultados/Figuras/STL.pdf, id=2770, 1156.32pt x 578.16pt>
+<Resultados/Figuras/STL.pdf, id=2729, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/STL.pdf Graphic file (type pdf)
 <use Resultados/Figuras/STL.pdf>
 Package pdftex.def Info: Resultados/Figuras/STL.pdf  used on input line 28.
 (pdftex.def)             Requested size: 455.24411pt x 227.61641pt.
- [59]
-[60 <./Resultados/Figuras/STL aditiva.pdf> <./Resultados/Figuras/STL.pdf>]
-<Resultados/Figuras/viol.pdf, id=2890, 1156.32pt x 578.16pt>
+ [57]
+[58 <./Resultados/Figuras/STL aditiva.pdf> <./Resultados/Figuras/STL.pdf>]
+<Resultados/Figuras/viol.pdf, id=2850, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/viol.pdf Graphic file (type pdf)
 <use Resultados/Figuras/viol.pdf>
 Package pdftex.def Info: Resultados/Figuras/viol.pdf  used on input line 58.
 (pdftex.def)             Requested size: 409.71692pt x 204.85565pt.
-<Resultados/Figuras/ft03.pdf, id=2894, 1156.32pt x 578.16pt>
+<Resultados/Figuras/ft03.pdf, id=2854, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/ft03.pdf Graphic file (type pdf)
 <use Resultados/Figuras/ft03.pdf>
 Package pdftex.def Info: Resultados/Figuras/ft03.pdf  used on input line 72.
 (pdftex.def)             Requested size: 409.71692pt x 204.85565pt.
 
-[61 <./Resultados/Figuras/viol.pdf>] [62 <./Resultados/Figuras/ft03.pdf>]
+[59 <./Resultados/Figuras/viol.pdf> <./Resultados/Figuras/ft03.pdf>]
 Overfull \hbox (40.96857pt too wide) in paragraph at lines 114--115
 []\T1/cmr/m/n/12 A par-tir de [], onde $[]$ de-nota con-ver-g�n-cia na dis-tri-
 bui-��o e onde $[]$
  []
 
-<Resultados/Figuras/acf.pdf, id=2979, 1156.32pt x 578.16pt>
+[60]
+<Resultados/Figuras/acf.pdf, id=2941, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/acf.pdf Graphic file (type pdf)
 <use Resultados/Figuras/acf.pdf>
 Package pdftex.def Info: Resultados/Figuras/acf.pdf  used on input line 127.
 (pdftex.def)             Requested size: 409.71692pt x 204.85565pt.
-<Resultados/Figuras/pacf.pdf, id=2980, 1156.32pt x 578.16pt>
+<Resultados/Figuras/pacf.pdf, id=2942, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/pacf.pdf Graphic file (type pdf)
 <use Resultados/Figuras/pacf.pdf>
 Package pdftex.def Info: Resultados/Figuras/pacf.pdf  used on input line 133.
 (pdftex.def)             Requested size: 409.71692pt x 204.85565pt.
-[63] [64 <./Resultados/Figuras/acf.pdf> <./Resultados/Figuras/pacf.pdf>]
-<Resultados/Figuras/ruido-branco.pdf, id=3048, 867.24pt x 433.62pt>
+ [61 <./Resultados/Figuras/acf.pdf> <./Resultados/Figuras/pacf.pdf>]
+<Resultados/Figuras/ruido-branco.pdf, id=3003, 867.24pt x 433.62pt>
 File: Resultados/Figuras/ruido-branco.pdf Graphic file (type pdf)
 <use Resultados/Figuras/ruido-branco.pdf>
 Package pdftex.def Info: Resultados/Figuras/ruido-branco.pdf  used on input lin
 e 154.
 (pdftex.def)             Requested size: 409.71692pt x 204.86006pt.
 )
-(Resultados/subsubsec-divisao.tex [65 <./Resultados/Figuras/ruido-branco.pdf>])
-(Resultados/subsubsec-estrategia.tex [66]) (Resultados/subsubsec-horizonte.tex)
-(Resultados/subsubsec-model.tex) (Resultados/subsubsec-test.tex [67])
-(Resultados/subsubsec-comparacao.tex [68]
-<Resultados/Figuras/modelos-arima.pdf, id=3108, 1156.32pt x 578.16pt>
+(Resultados/subsubsec-divisao.tex [62]) [63 <./Resultados/Figuras/ruido-branco.
+pdf>] (Resultados/subsubsec-estrategia.tex) (Resultados/subsubsec-horizonte.tex
+) (Resultados/subsubsec-model.tex [64]) (Resultados/subsubsec-test.tex [65])
+(Resultados/subsubsec-comparacao.tex
+<Resultados/Figuras/modelos-arima.pdf, id=3064, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/modelos-arima.pdf Graphic file (type pdf)
 <use Resultados/Figuras/modelos-arima.pdf>
 Package pdftex.def Info: Resultados/Figuras/modelos-arima.pdf  used on input li
 ne 10.
 (pdftex.def)             Requested size: 409.71692pt x 204.85565pt.
-<Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf, id=3109, 1156.32pt x 578.16pt>
+<Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf, id=3065, 1156.32pt x 578.16pt>
 File: Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf Graphic file (type pdf)
 <use Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf>
 Package pdftex.def Info: Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf  used on 
 input line 16.
 (pdftex.def)             Requested size: 409.71692pt x 204.85565pt.
- [69 <./Resultados/Figuras/modelos-arima.pdf> <./Resultados/Figuras/violin-LR-X
-GB-LGBM-RF.pdf>])
-(Resultados/subsec-estudo.tex [70] [71] [72] [73]
-<Resultados/Figuras/grafico-barras-demanda.pdf, id=3232, 972.88971pt x 543.6922
+) (Resultados/subsec-estudo.tex [66]
+[67 <./Resultados/Figuras/modelos-arima.pdf> <./Resultados/Figuras/violin-LR-XG
+B-LGBM-RF.pdf>] [68] [69] [70]
+<Resultados/Figuras/grafico-barras-demanda.pdf, id=3189, 972.88971pt x 543.6922
 5pt>
 File: Resultados/Figuras/grafico-barras-demanda.pdf Graphic file (type pdf)
 <use Resultados/Figuras/grafico-barras-demanda.pdf>
 Package pdftex.def Info: Resultados/Figuras/grafico-barras-demanda.pdf  used on
  input line 104.
 (pdftex.def)             Requested size: 409.71692pt x 228.96309pt.
- [74 <./Resultados/Figuras/grafico-barras-demanda.pdf>] [75])) [76]
+ [71] [72 <./Resultados/Figuras/grafico-barras-demanda.pdf>] [73] [74] (Conclus
+oes/subsec-limitacao.tex)))) [75]
+\openout2 = `Resultados/sec-resultados.aux'.
+
+
+(Resultados/sec-resultados.tex)
 \openout2 = `Conclusoes/sec-conclusoes.aux'.
 
- (Conclusoes/sec-conclusoes.tex
-(Conclusoes/subsec-limitacao.tex [77
-
-
-
-])) [78]
+ (Conclusoes/sec-conclusoes.tex)
 \openout2 = `Bibliografia/sec-bibliografia.aux'.
 
- (Bibliografia/sec-bibliografia.tex (DocPrincipal.bbl [79
+
+(Bibliografia/sec-bibliografia.tex (DocPrincipal.bbl [76
 
 
 
-] [80] [81] [82] [83])) [84]
+
+
+
+
+
+
+] [77] [78] [79]
+[80])) [81]
 \openout2 = `Apendices/sec-apendices.aux'.
 
- (Apendices/sec-apendices.tex (Apendices/tabelas-1.tex [85
+ (Apendices/sec-apendices.tex (Apendices/tabelas-1.tex [82
 
 
 
@@ -2329,50 +2330,50 @@ Overfull \hbox (26.66833pt too wide) in paragraph at lines 33--50
  [][] 
  []
 
-[86
+[83
 
 ]
 Overfull \hbox (26.66833pt too wide) in paragraph at lines 59--76
  [][] 
  []
 
-[87]
+[84]
 Overfull \hbox (26.66833pt too wide) in paragraph at lines 85--102
  [][] 
  []
 
-[88]
+[85]
 Overfull \hbox (26.66833pt too wide) in paragraph at lines 111--128
  [][] 
  []
 
-[89]) (Apendices/tabelas-2.tex) (Apendices/24h/modelos-24h.tex
+[86]) (Apendices/tabelas-2.tex) (Apendices/24h/modelos-24h.tex
 (Apendices/24h/AR-ARX-MA.tex
-<Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.pdf, id=3360, 1084.05pt x 361.35pt
+<Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.pdf, id=3324, 1084.05pt x 361.35pt
 >
 File: Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.pdf Graphic file (type pdf)
 <use Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.pdf>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.pdf  used 
 on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
- [90
+ [87
 
 ]
-<Apendices/Figuras/modelagem-24h/7-AR-ARX-MA.pdf, id=3365, 1084.05pt x 361.35pt
+<Apendices/Figuras/modelagem-24h/7-AR-ARX-MA.pdf, id=3330, 1084.05pt x 361.35pt
 >
 File: Apendices/Figuras/modelagem-24h/7-AR-ARX-MA.pdf Graphic file (type pdf)
 <use Apendices/Figuras/modelagem-24h/7-AR-ARX-MA.pdf>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/7-AR-ARX-MA.pdf  used 
 on input line 17.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
-<Apendices/Figuras/modelagem-24h/14-AR-ARX-MA.pdf, id=3366, 1084.05pt x 361.35p
+<Apendices/Figuras/modelagem-24h/14-AR-ARX-MA.pdf, id=3331, 1084.05pt x 361.35p
 t>
 File: Apendices/Figuras/modelagem-24h/14-AR-ARX-MA.pdf Graphic file (type pdf)
 <use Apendices/Figuras/modelagem-24h/14-AR-ARX-MA.pdf>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/14-AR-ARX-MA.pdf  used
  on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
-<Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.pdf, id=3367, 1084.05pt x 361.35p
+<Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.pdf, id=3332, 1084.05pt x 361.35p
 t>
 File: Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.pdf Graphic file (type pdf)
 <use Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.pdf>
@@ -2380,24 +2381,24 @@ Package pdftex.def Info: Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.pdf  used
  on input line 36.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
 ) (Apendices/24h/ARMA-ARIMA.tex
-<Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.pdf, id=3368, 1084.05pt x 361.35p
+<Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.pdf, id=3333, 1084.05pt x 361.35p
 t>
 File: Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.pdf Graphic file (type pdf)
 <use Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.pdf>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/1-ARMA-ARIMA.pdf  used
  on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
- [91 <./Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.pdf> <./Apendices/Figuras/m
+ [88 <./Apendices/Figuras/modelagem-24h/1-AR-ARX-MA.pdf> <./Apendices/Figuras/m
 odelagem-24h/7-AR-ARX-MA.pdf> <./Apendices/Figuras/modelagem-24h/14-AR-ARX-MA.p
 df>]
-<Apendices/Figuras/modelagem-24h/7-ARMA-ARIMA.pdf, id=3498, 1084.05pt x 361.35p
+<Apendices/Figuras/modelagem-24h/7-ARMA-ARIMA.pdf, id=3463, 1084.05pt x 361.35p
 t>
 File: Apendices/Figuras/modelagem-24h/7-ARMA-ARIMA.pdf Graphic file (type pdf)
 <use Apendices/Figuras/modelagem-24h/7-ARMA-ARIMA.pdf>
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/7-ARMA-ARIMA.pdf  used
  on input line 17.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
-<Apendices/Figuras/modelagem-24h/14-ARMA-ARIMA.pdf, id=3499, 1084.05pt x 361.35
+<Apendices/Figuras/modelagem-24h/14-ARMA-ARIMA.pdf, id=3464, 1084.05pt x 361.35
 pt>
 File: Apendices/Figuras/modelagem-24h/14-ARMA-ARIMA.pdf Graphic file (type pdf)
 
@@ -2405,7 +2406,7 @@ File: Apendices/Figuras/modelagem-24h/14-ARMA-ARIMA.pdf Graphic file (type pdf)
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/14-ARMA-ARIMA.pdf  use
 d on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
-<Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.pdf, id=3500, 1084.05pt x 361.35
+<Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.pdf, id=3465, 1084.05pt x 361.35
 pt>
 File: Apendices/Figuras/modelagem-24h/30-ARMA-ARIMA.pdf Graphic file (type pdf)
 
@@ -2419,7 +2420,7 @@ Overfull \hbox (19.48044pt too wide) in paragraph at lines 2--2
 |[]\T1/cmr/bx/n/17.28 Ap�ndice - Mo-de-los ARI-MAX (7,1,7), SA-RIMA (7,1,7)
  []
 
-<Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.pdf, id=3501, 1084.05p
+<Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.pdf, id=3466, 1084.05p
 t x 361.35pt>
 File: Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.pdf Graphic file 
 (type pdf)
@@ -2427,11 +2428,11 @@ File: Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.pdf Graphic file
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMA
 X.pdf  used on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
-[92 <./Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.pdf> <./Apendices/Figuras/m
-odelagem-24h/1-ARMA-ARIMA.pdf>] [93 <./Apendices/Figuras/modelagem-24h/7-ARMA-A
+[89 <./Apendices/Figuras/modelagem-24h/30-AR-ARX-MA.pdf> <./Apendices/Figuras/m
+odelagem-24h/1-ARMA-ARIMA.pdf>] [90 <./Apendices/Figuras/modelagem-24h/7-ARMA-A
 RIMA.pdf> <./Apendices/Figuras/modelagem-24h/14-ARMA-ARIMA.pdf> <./Apendices/Fi
 guras/modelagem-24h/30-ARMA-ARIMA.pdf>]
-<Apendices/Figuras/modelagem-24h/7-ARIMAX-SARIMA-SARIMAX.pdf, id=3714, 1084.05p
+<Apendices/Figuras/modelagem-24h/7-ARIMAX-SARIMA-SARIMAX.pdf, id=3678, 1084.05p
 t x 361.35pt>
 File: Apendices/Figuras/modelagem-24h/7-ARIMAX-SARIMA-SARIMAX.pdf Graphic file 
 (type pdf)
@@ -2439,7 +2440,7 @@ File: Apendices/Figuras/modelagem-24h/7-ARIMAX-SARIMA-SARIMAX.pdf Graphic file
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/7-ARIMAX-SARIMA-SARIMA
 X.pdf  used on input line 17.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
-<Apendices/Figuras/modelagem-24h/14-ARIMAX-SARIMA-SARIMAX.pdf, id=3715, 1084.05
+<Apendices/Figuras/modelagem-24h/14-ARIMAX-SARIMA-SARIMAX.pdf, id=3679, 1084.05
 pt x 361.35pt>
 File: Apendices/Figuras/modelagem-24h/14-ARIMAX-SARIMA-SARIMAX.pdf Graphic file
  (type pdf)
@@ -2447,7 +2448,9 @@ File: Apendices/Figuras/modelagem-24h/14-ARIMAX-SARIMA-SARIMAX.pdf Graphic file
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/14-ARIMAX-SARIMA-SARIM
 AX.pdf  used on input line 27.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
-<Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.pdf, id=3716, 1084.05
+ [91 <./Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.pdf> <./Apendic
+es/Figuras/modelagem-24h/7-ARIMAX-SARIMA-SARIMAX.pdf>]
+<Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.pdf, id=3770, 1084.05
 pt x 361.35pt>
 File: Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.pdf Graphic file
  (type pdf)
@@ -2455,10 +2458,8 @@ File: Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.pdf Graphic file
 Package pdftex.def Info: Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIM
 AX.pdf  used on input line 36.
 (pdftex.def)             Requested size: 455.24411pt x 151.74942pt.
-))) [94 <./Apendices/Figuras/modelagem-24h/1-ARIMAX-SARIMA-SARIMAX.pdf> <./Apen
-dices/Figuras/modelagem-24h/7-ARIMAX-SARIMA-SARIMAX.pdf>] [95 <./Apendices/Figu
-ras/modelagem-24h/14-ARIMAX-SARIMA-SARIMAX.pdf> <./Apendices/Figuras/modelagem-
-24h/30-ARIMAX-SARIMA-SARIMAX.pdf>]
+))) [92 <./Apendices/Figuras/modelagem-24h/30-ARIMAX-SARIMA-SARIMAX.pdf> <./Ape
+ndices/Figuras/modelagem-24h/14-ARIMAX-SARIMA-SARIMAX.pdf>]
 (DocPrincipal.aux (Pretextuais/capa.aux) (Pretextuais/folha_rosto1.aux)
 (Pretextuais/folha_aprovacao.aux) (Pretextuais/dedicatoria.aux)
 (Pretextuais/agradecimentos.aux) (Pretextuais/epigrafe.aux) (Resumos/resumo.aux
@@ -2468,16 +2469,16 @@ ras/modelagem-24h/14-ARIMAX-SARIMA-SARIMAX.pdf> <./Apendices/Figuras/modelagem-
 (Conclusoes/sec-conclusoes.aux) (Bibliografia/sec-bibliografia.aux)
 (Apendices/sec-apendices.aux))
 Package rerunfilecheck Info: File `DocPrincipal.out' has not changed.
-(rerunfilecheck)             Checksum: 4E10E9BCE913134782FB86583F03626F;7110.
+(rerunfilecheck)             Checksum: 88A607FAD959C2A823B7CC319A72AC4B;7098.
  ) 
 Here is how much of TeX's memory you used:
- 35194 strings out of 476331
- 750408 string characters out of 5787765
+ 35189 strings out of 476331
+ 750362 string characters out of 5787765
  1882660 words of memory out of 5000000
  54305 multiletter control sequences out of 15000+600000
  530170 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,20n,136p,1622b,1069s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,20n,136p,1183b,1069s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
 1000.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -2504,9 +2505,9 @@ sndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
 Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb>
-Output written on DocPrincipal.pdf (111 pages, 7134167 bytes).
+Output written on DocPrincipal.pdf (108 pages, 7069483 bytes).
 PDF statistics:
- 4607 PDF objects out of 5155 (max. 8388607)
- 377 named destinations out of 1000 (max. 500000)
+ 4570 PDF objects out of 5155 (max. 8388607)
+ 372 named destinations out of 1000 (max. 500000)
  980 words of extra memory for PDF output out of 10000 (max. 10000000)
 

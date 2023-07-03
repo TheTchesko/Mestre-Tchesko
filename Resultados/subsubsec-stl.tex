@@ -15,7 +15,7 @@ A decomposição STL é formalmente definida como:
 	\end{array}\right. \label{eq:stl}
 \end{eqnarray}
 
-\begin{figure}[!htpb]
+\begin{figure}[!htb]
 	\centering
 	\caption{Decomposição STL}
 	\begin{subfigure}{1\textwidth}
@@ -51,7 +51,7 @@ Teste de Dickey-Fuller (DF) Aumentado:
 Com base na forte evidência contra a hipótese nula, podemos rejeitar a hipótese nula. Isso indica que os dados não possuem raiz unitária e são estacionários em \ref{q5}\ref{q5:c}. Identificar as horas de pico entre 18h e 21h não é uma tarefa fácil. No entanto, ao observar a Figura \ref{fig:hist}, podemos notar um aumento na demanda durante essas horas durante o ano de 2020.
 	
 	
-	\begin{figure}[!htpb]
+	\begin{figure}[!htb]
 		\centering
 		\caption{Violino no nível do reservatório}
 		\label{fig:hist}
@@ -65,7 +65,7 @@ Conforme mencionado na subseção \ref{subsubsec:motivacao}, as anomalias climá
 Com relação à pergunta \ref{q5}\ref{q5:d}, durante as horas de pico, é necessário que o nível do tanque esteja dentro da faixa de $[3.545,4.256] m^3$ para evitar o acionamento das bombas. Manter o nível do tanque dentro dessa faixa permitirá que o sistema opere de forma eficiente, atendendo à demanda sem a necessidade de acionar as bombas.
 	
 	
-	\begin{figure}[!htpb]
+	\begin{figure}[!htb]
 		\centering
 		\caption{Violino da vazão de recalque}
 		\label{fig:ft03}
@@ -117,7 +117,7 @@ O ACF (do inglês \textit{Auto-Correlation Function}) é uma medida estatística
 
 O ACF é útil para analisar a dependência temporal dos dados e identificar padrões de sazonalidade, tendência ou outros efeitos temporais. Através do ACF, é possível avaliar se a série exibe autocorrelação significativa em defasagens específicas, o que pode indicar a presença de não estacionariedade ou estrutura temporal que precisa ser considerada na análise ou modelagem da série temporal.
 
-\begin{figure}[!htpb]
+\begin{figure}[!htb]
 	\centering
 	\caption{Autocorrelação e Autocorrelação parcial}
 	\label{fig:acf}
@@ -147,7 +147,7 @@ O intervalo de confiança padrão de 95\% é representado pela marca azul na Fig
 
 A correlação visualizada na Figura \ref{fig:acf} é fundamental para a interpretação do teste DF. Em uma série de ruído branco, os valores são completamente aleatórios e não apresentam correlação significativa. Portanto, quando há correlação presente na série, isso indica a existência de padrões ou dependências entre os valores, o que pode ser explorado para a modelagem e previsão da série temporal.
 
-\begin{figure}[!htpb]
+\begin{figure}[!htb]
 	\centering
 	\caption{Ruído branco}
 	\label{fig:ruido-branco}
