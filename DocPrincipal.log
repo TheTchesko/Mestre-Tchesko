@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.6.28)  3 JUL 2023 18:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.14)  15 JUL 2023 11:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1383,7 +1383,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 (C:\Users\msndo\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
-Package: siunitx 2023-04-13 v3.2.5 A comprehensive (SI) units package
+Package: siunitx 2023-06-12 v3.2.6 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen302
 \l__siunitx_angle_marker_box=\box78
 \l__siunitx_angle_unit_box=\box79
@@ -2468,12 +2468,18 @@ ndices/Figuras/modelagem-24h/14-ARIMAX-SARIMA-SARIMAX.pdf>]
 (Modelos/sec-modelos.aux) (Resultados/sec-resultados.aux)
 (Conclusoes/sec-conclusoes.aux) (Bibliografia/sec-bibliografia.aux)
 (Apendices/sec-apendices.aux))
-Package rerunfilecheck Info: File `DocPrincipal.out' has not changed.
-(rerunfilecheck)             Checksum: 88A607FAD959C2A823B7CC319A72AC4B;7098.
+
+Package rerunfilecheck Warning: File `DocPrincipal.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `DocPrincipal.out':
+(rerunfilecheck)             Before: 13E30999323CF0D08C456668C052DD12;7182
+(rerunfilecheck)             After:  88A607FAD959C2A823B7CC319A72AC4B;7098.
  ) 
 Here is how much of TeX's memory you used:
  35189 strings out of 476331
- 750362 string characters out of 5787765
+ 749550 string characters out of 5787765
  1882660 words of memory out of 5000000
  54305 multiletter control sequences out of 15000+600000
  530170 words of font info for 72 fonts, out of 8000000 for 9000
