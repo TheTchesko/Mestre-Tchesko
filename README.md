@@ -66,4 +66,3 @@ Caso você tenha alguma dúvida, sugestão ou deseje colaborar com o projeto, si
 
 - 👤 Nome: Franchesco
 - 📧 E-mail: franchesco.sanches@gmail.com
-```
