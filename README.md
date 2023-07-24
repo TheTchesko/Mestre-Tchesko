@@ -1,7 +1,7 @@
 <!-- Exemplo de README.md com elementos HTML e emojis -->
 
 <div align="center">
-  <img alt="Mestre-Tchesko Logo" src="logo.png" width="200px">
+  <img alt="Mestre-Tchesko Logo" src="logo.png" width="600px">
 </div>
 
 # Mestre-Tchesko - Repositório da Dissertação
@@ -26,10 +26,15 @@ O objetivo principal da dissertação foi explorar e analisar os dados fornecido
 
 ## Conteúdo do Repositório
 O repositório está organizado da seguinte forma:
-- **/dados**: Este diretório contém os conjuntos de dados utilizados no projeto.
-- **/notebooks**: Nesta pasta, você encontrará os notebooks Jupyter utilizados para a análise e os experimentos com os modelos.
-- **/resultados**: Aqui estão os resultados gerados pelos modelos, bem como gráficos e métricas de desempenho.
-- **/referencias**: Este diretório inclui os artigos e materiais utilizados como referência durante a pesquisa.
+
+- **/Modelos em Python**: Esta pasta contém os notebooks, gráficos, tabelas e outros arquivos relacionados aos modelos de séries temporais em Python.
+
+  - **/Modelos em Python/DadosBA.xlsx**: Arquivo de Excel contendo os dados utilizados no projeto.
+  - **/Modelos em Python/Previsão de Séries Temporais.ipynb**: Notebook Jupyter com a implementação dos modelos e a análise dos resultados.
+
+- **/Revisao**: Esta pasta contém alguns documentos e informações revisadas durante o projeto.
+
+- **/resultados**: Esta pasta contém os resultados gerados pelos modelos, bem como métricas de desempenho.
 
 ## Como Reproduzir o Projeto
 Para reproduzir os resultados e experimentos realizados nesta dissertação, siga as instruções abaixo:
@@ -48,7 +53,13 @@ cd Mestre-Tchesko
 
 3. Instale as dependências necessárias (caso existam) e configure o ambiente de desenvolvimento.
 
-4. Explore os notebooks disponíveis na pasta **/notebooks** para acompanhar os passos da análise e experimentos.
+4. Acesse a pasta "Modelos em Python":
+
+```bash
+cd "Modelos em Python"
+```
+
+5. Abra o notebook "Previsão de Séries Temporais.ipynb" para acompanhar os passos da análise e experimentos.
 
 ## Contato
 Caso você tenha alguma dúvida, sugestão ou deseje colaborar com o projeto, sinta-se à vontade para entrar em contato comigo:
