@@ -1,7 +1,7 @@
 <!-- Exemplo de README.md com elementos HTML e emojis -->
 
 <div align="center">
-  <img alt="Mestre-Tchesko Logo" src="logo.png" width="600px">
+  <img alt="Mestre-Tchesko Logo" src="logo.png" width="300px">
 </div>
 
 # Mestre-Tchesko - Repositório da Dissertação
