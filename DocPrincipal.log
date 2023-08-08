@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.14)  23 JUL 2023 14:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.2)  2 AUG 2023 21:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1383,7 +1383,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 (C:\Users\msndo\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
-Package: siunitx 2023-06-12 v3.2.6 A comprehensive (SI) units package
+Package: siunitx 2023-07-26 v3.2.9 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen302
 \l__siunitx_angle_marker_box=\box78
 \l__siunitx_angle_unit_box=\box79
@@ -1472,23 +1472,23 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (C:\Users\msndo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\tocbasic.st
 y
-Package: tocbasic 2023/04/24 v3.40 KOMA-Script package (handling toc-files)
+Package: tocbasic 2023/07/07 v3.41 KOMA-Script package (handling toc-files)
 
 (C:\Users\msndo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.sty
-Package: scrbase 2023/04/24 v3.40 KOMA-Script package (KOMA-Script-independent 
+Package: scrbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
 (C:\Users\msndo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.st
 y
-Package: scrlfile 2023/04/24 v3.40 KOMA-Script package (file load hooks)
+Package: scrlfile 2023/07/07 v3.41 KOMA-Script package (file load hooks)
 
 (C:\Users\msndo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-ho
 ok.sty
-Package: scrlfile-hook 2023/04/24 v3.40 KOMA-Script package (using LaTeX hooks)
+Package: scrlfile-hook 2023/07/07 v3.41 KOMA-Script package (using LaTeX hooks)
 
 
 (C:\Users\msndo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
-Package: scrlogo 2023/04/24 v3.40 KOMA-Script package (logo)
+Package: scrlogo 2023/07/07 v3.41 KOMA-Script package (logo)
 )))
 Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
 Already applied: [0000/00/00] Usage of raw or classic option list on input line
@@ -2468,14 +2468,20 @@ ndices/Figuras/modelagem-24h/14-ARIMAX-SARIMA-SARIMAX.pdf>]
 (Modelos/sec-modelos.aux) (Resultados/sec-resultados.aux)
 (Conclusoes/sec-conclusoes.aux) (Bibliografia/sec-bibliografia.aux)
 (Apendices/sec-apendices.aux))
-Package rerunfilecheck Info: File `DocPrincipal.out' has not changed.
-(rerunfilecheck)             Checksum: 88A607FAD959C2A823B7CC319A72AC4B;7098.
+
+Package rerunfilecheck Warning: File `DocPrincipal.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `DocPrincipal.out':
+(rerunfilecheck)             Before: 13E30999323CF0D08C456668C052DD12;7182
+(rerunfilecheck)             After:  88A607FAD959C2A823B7CC319A72AC4B;7098.
  ) 
 Here is how much of TeX's memory you used:
- 35189 strings out of 476331
- 749550 string characters out of 5787765
+ 35185 strings out of 476331
+ 750288 string characters out of 5787766
  1883660 words of memory out of 5000000
- 54305 multiletter control sequences out of 15000+600000
+ 54301 multiletter control sequences out of 15000+600000
  530170 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,20n,136p,1183b,1069s stack positions out of 10000i,1000n,20000p,200000b,200000s
