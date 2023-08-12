@@ -79,6 +79,7 @@
 \BOOKMARK [1][-]{subsection.5.1}{Refer\352ncias}{}% 79
 \BOOKMARK [1][-]{appendix.A}{Ap\352ndice - Compara\347\343o dos modelos de previs\343o de series temporais m\351dia de 24h}{}% 80
 \BOOKMARK [1][-]{appendix.B}{Ap\352ndice - Compara\347\343o dos modelos de previs\343o com o m\351todo Ljung-Box}{}% 81
-\BOOKMARK [1][-]{appendix.C}{Ap\352ndice - Modelos AR\(7\), ARX \(7\) e MA \(7\) 24h }{}% 82
-\BOOKMARK [1][-]{appendix.D}{Ap\352ndice - Modelos ARMA\(7,7\) e ARIMA \(7,1,7\) 24h}{}% 83
-\BOOKMARK [1][-]{appendix.E}{Ap\352ndice - Modelos ARIMAX \(7,1,7\), SARIMA \(7,1,7\) \(2,1,0,12\) e SARIMAX \(7,1,7\) \(2,1,0,12\) 24h}{}% 84
+\BOOKMARK [1][-]{appendix.C}{Ap\352ndice - Modelos AR, ARX e MA }{}% 82
+\BOOKMARK [1][-]{appendix.D}{Ap\352ndice - Modelos ARMA e ARIMA }{}% 83
+\BOOKMARK [1][-]{appendix.E}{Ap\352ndice - Modelos ARIMAX, SARIMA e SARIMAX }{}% 84
+\BOOKMARK [1][-]{appendix.F}{Ap\352ndice - Modelos RNN e Prophet }{}% 85

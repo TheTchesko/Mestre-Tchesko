@@ -1,10 +1,12 @@
 \subsubsection{Relat\'orio dos Resultados}
 
-Na etapa \ref{etp:9}, foi utilizado o teste de Friedman e Nemenyi para comparar as classificações médias entre os classificadores. O teste de Nemenyi é um teste de comparação múltipla utilizado após a aplicação de testes não paramétricos com três ou mais fatores.
+Na etapa \ref{etp:9}, realizou-se o teste de Friedman e o teste de Nemenyi para comparar as classificações médias entre os diversos classificadores. O teste de Nemenyi é uma ferramenta de comparação múltipla frequentemente empregada após a aplicação de testes não paramétricos com três ou mais fatores.
+
+A matriz de comparação entre os classificadores, apresentada na Tabela \ref{tb:nemeyi}, exibe os valores de comparação múltipla de Nemenyi, onde as entradas evidenciam as diferenças significativas entre os pares de classificadores.
 
 \begin{table}[!htb]
 	\centering
-	\caption{Teste Nemenyi}
+	\caption{Teste Nemenyi}\label{tb:nemeyi}
 	\begin{tabular}{@{}clllllllll@{}}
 		\toprule
 		\multicolumn{1}{l}{\textbf{Nemenyi}} & \multicolumn{1}{c}{\textbf{0}} & \multicolumn{1}{c}{\textbf{1}} & \multicolumn{1}{c}{\textbf{2}} & \multicolumn{1}{c}{\textbf{3}} & \multicolumn{1}{c}{\textbf{4}} & \multicolumn{1}{c}{\textbf{5}} & \multicolumn{1}{c}{\textbf{6}} & \multicolumn{1}{c}{\textbf{7}} & \multicolumn{1}{c}{\textbf{8}} \\ \midrule
@@ -22,22 +24,36 @@ Na etapa \ref{etp:9}, foi utilizado o teste de Friedman e Nemenyi para comparar 
 	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
 \end{table}
 
-Para calcular a estatística de teste $F_r$ de Friedman, inicialmente cria-se uma tabela com os dados, onde cada linha representa uma amostra e cada coluna representa uma condição de teste. Em seguida, as amostras são ordenadas ao longo das condições, da melhor situação para a pior. Se não houver empates, a estatística de teste $F_r$ é calculada utilizando a seguinte fórmula:
+A Tabela \ref{tb:nemeyi} apresenta os resultados do teste de Nemenyi, um método utilizado para comparar as classificações médias entre diferentes classificadores após a aplicação de testes não paramétricos com três ou mais fatores. Cada célula da tabela mostra os valores de comparação múltipla de Nemenyi, que indicam as diferenças significativas entre os pares de classificadores. O valor na interseção da linha $i$ e da coluna $j$ representa a diferença significativa entre os classificadores $i$ e $j$.
+
+No contexto do estudo, os resultados da análise comparativa revelaram diferenças estatisticamente significativas entre vários pares de classificadores, como indicado pelas entradas da tabela. Isso sugere que pelo menos um modelo é considerado estatisticamente superior aos demais, com base nas comparações realizadas.
+
+Para calcular a estatística de teste $F_r$ de Friedman, os dados foram organizados em uma tabela na qual as linhas correspondem às amostras e as colunas representam as condições de teste. As amostras foram ordenadas de acordo com suas classificações, da melhor à pior. Na ausência de empates, a estatística de teste $F_r$ foi calculada usando a seguinte fórmula:
 
 \begin{equation}
 	F_r = \left(\frac{12}{n k(k+1)} \sum_{i=1}^k R_i^2\right) - 3n(k+1)
 \end{equation}
 
-Nessa fórmula, $n$ é o número de linhas (ou amostras), $k$ é o número de colunas (ou condições) e $R_i$ é a soma das fileiras da coluna (ou condição) $i$.
+Nessa fórmula, $n$ é o número de linhas (amostras), $k$ é o número de colunas (condições) e $R_i$ é a soma das fileiras da coluna (condição) $i$.
 
-Além disso, o valor crítico CD (Critical Difference) é utilizado para determinar se dois classificadores são significativamente diferentes um do outro. O CD é calculado usando a fórmula que mencionei anteriormente:
+Adicionalmente, utilizou-se o valor crítico CD (\textit{Critical Difference}) para determinar se dois classificadores eram significativamente diferentes entre si. O CD foi calculado conforme a fórmula mencionada anteriormente:
 
 \begin{equation}
 	CD = q_\alpha \sqrt{\frac{k(k+1)}{6N}}
 \end{equation}
 
-Na fórmula do CD, $q_\alpha$ é o valor crítico obtido da tabela de teste de Nemenyi, $k$ é o número de classificadores e $N$ é o número total de amostras.
+Na fórmula do CD, $q_\alpha$ representa o valor crítico obtido da Tabela \ref{tb:nemeyi} de teste de Nemenyi, $k$ é o número de classificadores e $N$ é o número total de amostras.
 
-De acordo com essa equação, os resultados da pesquisa foram os seguintes:
+O valor crítico CD foi utilizado para determinar se dois classificadores eram significativamente diferentes entre si. Esse valor é calculado com base no valor crítico obtido da Tabela \ref{tb:nemeyi} de teste de Nemenyi, o número de classificadores e o número total de amostras. O valor CD é uma métrica que auxilia na interpretação das diferenças entre os classificadores, ajudando a identificar quais pares de classificadores apresentam diferenças estatisticamente significativas.
 
-$statistic=8015.611,\ \ p-value=0.0$ com um total de 26.306 linhas por 9 colunas.
+Os resultados da pesquisa indicaram a existência de evidências estatísticas que sugerem a superioridade de pelo menos um modelo em relação aos demais. Além disso, a análise de comparação significativa entre os modelos revelou pares de classificadores que apresentam diferenças estatisticamente significativas em seus desempenhos. Essas informações são valiosas para a seleção e avaliação dos modelos de classificação, permitindo uma compreensão mais precisa das diferenças de desempenho entre os classificadores avaliados no estudo.
+
+
+Com base nos resultados da pesquisa, conclui-se que existem evidências estatísticas de que pelo menos um modelo é significativamente superior aos demais.
+
+A análise de comparação significativa entre modelos revela diferenças estatisticamente significativas nos seguintes pares de classificadores: (``AR'', ``ARX''), (``AR'', ``MA''), (``ARX'', ``AR''), (``ARX'', ``MA''), (``MA'', ``AR'') e (``MA'', ``ARX'').
+
+
+
+
+
