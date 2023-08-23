@@ -42,17 +42,20 @@ Dispon{\'\i}vel em:
   learning.
 \textbf{Machine Learning Journal}, v.~25, n.~3, p. 345--367, 2021.}
 
-\bibitem[Brownlee 2016]{machinemaster}
-\abntrefinfo{Brownlee}{BROWNLEE}{2016}
-{BROWNLEE, J. \textbf{Machine learning mastery with Python: understand your
-  data, create accurate models, and work projects end-to-end}. [S.l.]: Machine
-  Learning Mastery, 2016.}
-
 \bibitem[Buyuksahin e Ertekin 2019]{Buyuksahin2019}
 \abntrefinfo{Buyuksahin e Ertekin}{BUYUKSAHIN; ERTEKIN}{2019}
 {BUYUKSAHIN, U.; ERTEKIN. {Improving forecasting accuracy of time series data
   using a new ARIMA-ANN hybrid method and empirical mode decomposition}.
 \textbf{Neurocomputing}, v.~361, p. 151--163, 2019.}
+
+\bibitem[Cahuantzi, Chen e G{\"{u}}ttel
+  2021]{DBLP:journals/corr/abs-2107-02248}
+\abntrefinfo{Cahuantzi, Chen e G{\"{u}}ttel}{CAHUANTZI; CHEN;
+  G{\"{U}}TTEL}{2021}
+{CAHUANTZI, R.; CHEN, X.; G{\"{U}}TTEL, S. A comparison of {LSTM} and {GRU}
+  networks for learning symbolic sequences.
+\textbf{CoRR}, abs/2107.02248, 2021.
+Dispon{\'\i}vel em: \url{https://arxiv.org/abs/2107.02248}.}
 
 \bibitem[{Carvalho Jr.} e {Costa Jr.} 2019]{CarvalhoJr.2019}
 \abntrefinfo{{Carvalho Jr.} e {Costa Jr.}}{{Carvalho Jr.}; {Costa Jr.}}{2019}
@@ -66,18 +69,17 @@ ISSN 15684946 (ISSN).
 Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85064441622&doi=10.1016\%2Fj.asoc.2019.03.059&partnerID=40&md5=84d0bd291cc451de280dc9ed77524736}.}
 
-\bibitem[Chen e Guestrin 2016]{chen2016xgboost}
-\abntrefinfo{Chen e Guestrin}{CHEN; GUESTRIN}{2016}
-{CHEN, T.; GUESTRIN, C. Xgboost: A scalable tree boosting system. In:
-  \textbf{Proceedings of the 22nd acm sigkdd international conference on
-  knowledge discovery and data mining}. [S.l.: s.n.], 2016. p. 785--794.}
-
 \bibitem[Chen et al. 2018]{Chen2018}
 \abntrefinfo{Chen et al.}{CHEN et al.}{2018}
 {CHEN, Y.~Y. et al. {Applications of Recurrent Neural Networks in Environmental
   Factor Forecasting: A Review}.
 \textbf{NEURAL COMPUTATION}, v.~30, n.~11, p. 2855--2881, 2018.
 ISSN 0899-7667.}
+
+\bibitem[Cho et al. 2014]{gru}
+\abntrefinfo{Cho et al.}{CHO et al.}{2014}
+{CHO, K. et al. Gated recurrent units.
+\textbf{arXiv preprint arXiv:1412.3555}, 2014.}
 
 \bibitem[Chou e Nguyen 2018]{Chou2018a}
 \abntrefinfo{Chou e Nguyen}{CHOU; NGUYEN}{2018}
@@ -98,12 +100,6 @@ ISSN 0899-7667.}
 {COELHO, I. et al. {A GPU deep learning metaheuristic based model for time
   series forecasting}.
 \textbf{Applied Energy}, v.~201, p. 412--418, 2017.}
-
-\bibitem[Cruz-Ram{\'\i}rez et al. 2020]{cruz-ramirez2020enhancing}
-\abntrefinfo{Cruz-Ram{\'\i}rez et al.}{CRUZ-RAM{\'I}REZ et al.}{2020}
-{CRUZ-RAM{\'I}REZ, M. et al. Enhancing convolutional neural networks for image
-  classification of agricultural products.
-\textbf{Computers and Electronics in Agriculture}, v.~177, p. 105754, 2020.}
 
 \bibitem[Du et al. 2020]{Du2020}
 \abntrefinfo{Du et al.}{DU et al.}{2020}
@@ -129,10 +125,10 @@ ISSN 1939-0068.}
 {GRAFF, M. et al. {Time series forecasting with genetic programming}.
 \textbf{Natural Computing}, v.~16, n.~1, p. 165--174, 2017.}
 
-\bibitem[Huo et al. 2019]{inproceedings}
-\abntrefinfo{Huo et al.}{HUO et al.}{2019}
-{HUO, Y. et al. Long-term span traffic prediction model based on stl
-  decomposition and lstm. In:  . [S.l.: s.n.], 2019. p.~1--4.}
+\bibitem[Hochreiter e Schmidhuber 1997]{lstm}
+\abntrefinfo{Hochreiter e Schmidhuber}{HOCHREITER; SCHMIDHUBER}{1997}
+{HOCHREITER, S.; SCHMIDHUBER, J. Long short-term memory.
+\textbf{Neural Computation}, v.~9, n.~8, p. 1735--1780, 1997.}
 
 \bibitem[Hyndman e Koehler 2006]{hyndman2006effect}
 \abntrefinfo{Hyndman e Koehler}{HYNDMAN; KOEHLER}{2006}
@@ -140,27 +136,22 @@ ISSN 1939-0068.}
   rates in web surveys.
 \textbf{International Journal of Forecasting}, v.~22, n.~4, p. 679--688, 2006.}
 
-\bibitem[Johnson e Smith 2022]{linear_regression}
-\abntrefinfo{Johnson e Smith}{JOHNSON; SMITH}{2022}
-{JOHNSON, R.; SMITH, M. Linear regression for predictive modeling.
-\textbf{Journal of Predictive Analytics}, v.~18, n.~1, p. 56--78, 2022.}
-
 \bibitem[Jones, Smith e Johnson 2017]{jones2017}
 \abntrefinfo{Jones, Smith e Johnson}{JONES; SMITH; JOHNSON}{2017}
 {JONES, A.~B.; SMITH, C.~D.; JOHNSON, E.~F. Comparing forecasting models for
   solar power generation.
 \textbf{Renewable Energy}, Elsevier, v.~107, p. 452--461, 2017.}
 
-\bibitem[Khan et al. 2021]{khan2021hybrid}
-\abntrefinfo{Khan et al.}{KHAN et al.}{2021}
-{KHAN, Z. et al. A hybrid algorithm for solar radiation forecasting using
-  machine learning and arima models.
-\textbf{Journal of Cleaner Production}, v.~297, p. 126603, 2021.}
-
 \bibitem[Korstanje 2021]{korstanje2021}
 \abntrefinfo{Korstanje}{KORSTANJE}{2021}
 {KORSTANJE, J. \textbf{Advanced Forecasting with Python}. [S.l.]: Springer,
   2021.}
+
+\bibitem[Kotsiantis 2011]{decisiontree}
+\abntrefinfo{Kotsiantis}{KOTSIANTIS}{2011}
+{KOTSIANTIS, S.~B. Decision tree algorithm.
+\textbf{Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery},
+  Wiley Online Library, v.~1, n.~1, p. 14--23, 2011.}
 
 \bibitem[Kulshreshtha e Vijayalakshmi 2020]{Kulshreshtha2020}
 \abntrefinfo{Kulshreshtha e Vijayalakshmi}{KULSHRESHTHA; VIJAYALAKSHMI}{2020}
@@ -185,12 +176,22 @@ ISSN 1134-3060.}
 \textbf{INTERNATIONAL JOURNAL OF NEURAL SYSTEMS}, v.~31, n.~3, 2021.
 ISSN 0129-0657.}
 
+\bibitem[LeCun, Bengio e Hinton 2015]{cnn}
+\abntrefinfo{LeCun, Bengio e Hinton}{LECUN; BENGIO; HINTON}{2015}
+{LECUN, Y.; BENGIO, Y.; HINTON, G. Convolutional neural networks.
+\textbf{Nature}, Nature Publishing Group, v.~521, n.~7553, p. 436--444, 2015.}
+
 \bibitem[Li e Bastos 2020]{Li2020}
 \abntrefinfo{Li e Bastos}{LI; BASTOS}{2020}
 {LI, A.~W.; BASTOS, G.~S. {Stock Market Forecasting Using Deep Learning and
   Technical Analysis: A Systematic Review}.
 \textbf{IEEE ACCESS}, v.~8, p. 185232--185242, 2020.
 ISSN 2169-3536.}
+
+\bibitem[Lipton, Berkowitz e Elkan 2015]{rnn}
+\abntrefinfo{Lipton, Berkowitz e Elkan}{LIPTON; BERKOWITZ; ELKAN}{2015}
+{LIPTON, Z.~C.; BERKOWITZ, J.; ELKAN, C. Recurrent neural networks.
+\textbf{arXiv preprint arXiv:1511.07889}, 2015.}
 
 \bibitem[Liu e Chen 2019]{Liu2019}
 \abntrefinfo{Liu e Chen}{LIU; CHEN}{2019}
@@ -210,14 +211,6 @@ ISSN 2169-3536 J9 - IEEE ACCESS JI - IEEE Access.}
 {LOPES, J.; SILVA, M.; SANTOS, P. Evaluation metrics for regression models.
 \textbf{Journal of Data Science}, v.~15, n.~2, p. 345--362, 2020.}
 
-\bibitem[Ma, Yu e Zhang 2022]{en15165875}
-\abntrefinfo{Ma, Yu e Zhang}{MA; YU; ZHANG}{2022}
-{MA, Y.; YU, L.; ZHANG, G. A hybrid short-term load forecasting model based on
-  a multi-trait-driven methodology and secondary decomposition.
-\textbf{Energies}, v.~15, n.~16, 2022.
-ISSN 1996-1073.
-Dispon{\'\i}vel em: \url{https://www.mdpi.com/1996-1073/15/16/5875}.}
-
 \bibitem[Martinovi{\'{c}}, Hunjet e Turcin 2020]{Martinovic2020a}
 \abntrefinfo{Martinovi{\'{c}}, Hunjet e Turcin}{MARTINOVI{\'{C}}; HUNJET;
   TURCIN}{2020}
@@ -234,12 +227,13 @@ ISSN 0950-5849.
 Dispon{\'\i}vel em:
   \url{https://www.sciencedirect.com/science/article/pii/S0950584916300568}.}
 
-\bibitem[Mokhtari et al. 2020]{mokhtari2020deep}
-\abntrefinfo{Mokhtari et al.}{MOKHTARI et al.}{2020}
-{MOKHTARI, A. et al. Deep learning for early diagnosis of diabetes using ppg
-  signals.
-\textbf{IEEE Transactions on Instrumentation and Measurement}, v.~69, n.~8, p.
-  5916--5925, 2020.}
+\bibitem[Migliato e Ponti 2021]{mastersthesis53fd58a7}
+\abntrefinfo{Migliato e Ponti}{MIGLIATO; PONTI}{2021}
+{MIGLIATO, A. L.~T.; PONTI, M.~A.
+\textbf{Detecção de Outliers em Dados não Vistos de Séries Temporais por
+  meio de Erros de Predição com SARIMA e Redes Neurais Recorrentes LSTM e
+  GRU}.
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade de São Paulo, 2021.}
 
 \bibitem[Moon et al. 2019]{Moon2019}
 \abntrefinfo{Moon et al.}{MOON et al.}{2019}
@@ -323,34 +317,12 @@ Pontif{\'\i}cia Universidade Cat{\'o}lica do Paran{\'a}, 2021.}
   forecasting}.
 \textbf{Neurocomputing}, v.~390, p. 315--326, 2020.}
 
-\bibitem[S{\'a}nchez, D{\'i}az e L{\'o}pez 2020]{sanchez2020comparative}
-\abntrefinfo{S{\'a}nchez, D{\'i}az e L{\'o}pez}{S{\'A}NCHEZ; D{\'I}AZ;
-  L{\'O}PEZ}{2020}
-{S{\'A}NCHEZ, A.~M.; D{\'I}AZ, A.~A.; L{\'O}PEZ, A.~O. A comparative study of
-  xgboost, adaboost, and catboost in machine learning algorithms. In:
-  SPRINGER. \textbf{International Conference on Learning and Optimization
-  Algorithms: Theory and Applications (LOPAL)}. [S.l.], 2020. p. 292--303.}
-
 \bibitem[Sezer, Gudelek e Ozbayoglu 2020]{Sezer2020}
 \abntrefinfo{Sezer, Gudelek e Ozbayoglu}{SEZER; GUDELEK; OZBAYOGLU}{2020}
 {SEZER, O.~B.; GUDELEK, M.~U.; OZBAYOGLU, A.~M. {Financial time series
   forecasting with deep learning : A systematic literature review: 2005-2019}.
 \textbf{APPLIED SOFT COMPUTING}, v.~90, 2020.
 ISSN 1568-4946.}
-
-\bibitem[Sharma et al. 2021]{sharma2021deep}
-\abntrefinfo{Sharma et al.}{SHARMA et al.}{2021}
-{SHARMA, S. et al. A deep learning framework for road traffic anomaly detection
-  and classification using traffic surveillance cameras.
-\textbf{IEEE Transactions on Intelligent Transportation Systems}, 2021.}
-
-\bibitem[Shen et al. 2021]{su13041694}
-\abntrefinfo{Shen et al.}{SHEN et al.}{2021}
-{SHEN, Y. et al. An ensemble model based on deep learning and data
-  preprocessing for short-term electrical load forecasting.
-\textbf{Sustainability}, v.~13, n.~4, 2021.
-ISSN 2071-1050.
-Dispon{\'\i}vel em: \url{https://www.mdpi.com/2071-1050/13/4/1694}.}
 
 \bibitem[Shen et al. 2020]{Shen2020}
 \abntrefinfo{Shen et al.}{SHEN et al.}{2020}
@@ -368,12 +340,12 @@ Dispon{\'\i}vel em: \url{https://www.mdpi.com/2071-1050/13/4/1694}.}
 {SMITH, J.; JOHNSON, E. Time series forecasting with arima in python.
 \textbf{Journal of Data Science}, v.~15, n.~2, p. 123--145, 2022.}
 
-\bibitem[Soyer e Zhang]{Soyer}
-\abntrefinfo{Soyer e Zhang}{SOYER; ZHANG}{}
-{SOYER, R.; ZHANG, D. {Bayesian modeling of multivariate time series of
-  counts}.
-\textbf{WILEY INTERDISCIPLINARY REVIEWS-COMPUTATIONAL STATISTICS}.
-ISSN 1939-0068.}
+\bibitem[Soyer e Zhang 2022]{Soyer}
+\abntrefinfo{Soyer e Zhang}{SOYER; ZHANG}{2022}
+{SOYER, R.; ZHANG, D. Bayesian modeling of multivariate time series of counts.
+\textbf{WIREs Computational Statistics}, v.~14, n.~6, p. e1559, 2022.
+Dispon{\'\i}vel em:
+  \url{https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wics.1559}.}
 
 \bibitem[Taieb e Atiya 2016]{Taieb2016}
 \abntrefinfo{Taieb e Atiya}{TAIEB; ATIYA}{2016}
@@ -429,6 +401,11 @@ ISSN 1436-3240.}
   É culpa só da estiagem}. 2020.
 Dispon{\'\i}vel em:
   \url{https://www.brasildefato.com.br/2020/11/03/falta-d-agua-em-curitiba-e-regiao-metropolitana-nao-e-culpa-so-da-estiagem}.}
+
+\bibitem[Vaswani et al. 2017]{vaswani2017attention}
+\abntrefinfo{Vaswani et al.}{VASWANI et al.}{2017}
+{VASWANI, A. et al. Attention is all you need. In:  \textbf{Advances in Neural
+  Information Processing Systems}. [S.l.: s.n.], 2017.}
 
 \bibitem[Vlachas et al. 2020]{Vlachas2020}
 \abntrefinfo{Vlachas et al.}{VLACHAS et al.}{2020}

@@ -39,47 +39,56 @@
 \BOOKMARK [2][-]{subsection.3.3}{Modelos de S\351rie Temporal Multivariada}{section.3}% 39
 \BOOKMARK [3][-]{subsubsection.3.3.1}{ARIMAX e SARIMAX}{subsection.3.3}% 40
 \BOOKMARK [2][-]{subsection.3.4}{Modelos de Aprendizado de M\341quina Supervisionados}{section.3}% 41
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Regress\343o Linear \(LR\)}{subsection.3.4}% 42
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Defini\347\343o do modelo}{subsection.3.4}% 43
-\BOOKMARK [3][-]{subsubsection.3.4.3}{Floresta Aleat\363ria \(Random Forest\)}{subsection.3.4}% 44
-\BOOKMARK [3][-]{subsubsection.3.4.4}{Gradient Boosting \(como XGBoost, LightGBM\)}{subsection.3.4}% 45
-\BOOKMARK [3][-]{subsubsection.3.4.5}{O Gradiente em Gradiente de Boosting \(Refor\347o\)}{subsection.3.4}% 46
-\BOOKMARK [3][-]{subsubsection.3.4.6}{Algoritmos de boosting de gradiente}{subsection.3.4}% 47
-\BOOKMARK [3][-]{subsubsection.3.4.7}{A diferen\347a entre XGBoost e LightGBM}{subsection.3.4}% 48
-\BOOKMARK [2][-]{subsection.3.5}{Estudo de Caso Emp\355rico}{section.3}% 49
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Defini\347\343o do problema}{subsection.3.5}% 50
-\BOOKMARK [3][-]{subsubsection.3.5.2}{Coleta de dados}{subsection.3.5}% 51
-\BOOKMARK [3][-]{subsubsection.3.5.3}{An\341lise explorat\363ria dos dados}{subsection.3.5}% 52
-\BOOKMARK [3][-]{subsubsection.3.5.4}{Escolha do modelo}{subsection.3.5}% 53
-\BOOKMARK [3][-]{subsubsection.3.5.5}{Divis\343o dos dados}{subsection.3.5}% 54
-\BOOKMARK [3][-]{subsubsection.3.5.6}{Ajuste do modelo}{subsection.3.5}% 55
-\BOOKMARK [3][-]{subsubsection.3.5.7}{Avalia\347\343o do modelo}{subsection.3.5}% 56
-\BOOKMARK [3][-]{subsubsection.3.5.8}{Previs\365es Futuras}{subsection.3.5}% 57
-\BOOKMARK [3][-]{subsubsection.3.5.9}{Monitoramento e Ajuste Cont\355nuo}{subsection.3.5}% 58
-\BOOKMARK [3][-]{subsubsection.3.5.10}{Principais Conclus\343o}{subsection.3.5}% 59
-\BOOKMARK [1][-]{section.4}{Resultados}{}% 60
-\BOOKMARK [2][-]{subsection.4.1}{Planejamento do Problema}{section.4}% 61
-\BOOKMARK [3][-]{subsubsection.4.1.1}{An\341lise Explorat\363ria dos dados \(EDA\)}{subsection.4.1}% 62
-\BOOKMARK [3][-]{subsubsection.4.1.2}{M\372ltiplas entradas e sa\355da \372nica \(MISO\)}{subsection.4.1}% 63
-\BOOKMARK [3][-]{subsubsection.4.1.3}{Decomposi\347\343o STL}{subsection.4.1}% 64
-\BOOKMARK [3][-]{subsubsection.4.1.4}{Separa\347\343o dos dados}{subsection.4.1}% 65
-\BOOKMARK [3][-]{subsubsection.4.1.5}{Modelagem e Sele\347\343o do Modelo}{subsection.4.1}% 66
-\BOOKMARK [3][-]{subsubsection.4.1.6}{Horizonte}{subsection.4.1}% 67
-\BOOKMARK [3][-]{subsubsection.4.1.7}{Previs\343o e Avalia\347\343o}{subsection.4.1}% 68
-\BOOKMARK [3][-]{subsubsection.4.1.8}{Relat\363rio dos Resultados}{subsection.4.1}% 69
-\BOOKMARK [3][-]{subsubsection.4.1.9}{Compara\347\343o dos modelos}{subsection.4.1}% 70
-\BOOKMARK [2][-]{subsection.4.2}{Estudo de Caso Emp\355rico Resultado}{section.4}% 71
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Descri\347\343o do sistema de abastecimento de \341gua}{subsection.4.2}% 72
-\BOOKMARK [3][-]{subsubsection.4.2.2}{An\341lise explorat\363ria dos dados}{subsection.4.2}% 73
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Quest\365es de pesquisa 1 a 4}{subsection.4.2}% 74
-\BOOKMARK [3][-]{subsubsection.4.2.4}{Quest\343o de pesquisa 5}{subsection.4.2}% 75
-\BOOKMARK [3][-]{subsubsection.4.2.5}{Discuss\343o geral e conclus\365es}{subsection.4.2}% 76
-\BOOKMARK [1][-]{section.5}{Conclus\365es}{}% 77
-\BOOKMARK [2][-]{subsection.5.1}{Limita\347\365es da Pesquisa e Propostas Futuras}{section.5}% 78
-\BOOKMARK [1][-]{subsection.5.1}{Refer\352ncias}{}% 79
-\BOOKMARK [1][-]{appendix.A}{Ap\352ndice - Compara\347\343o dos modelos de previs\343o de series temporais m\351dia de 24h}{}% 80
-\BOOKMARK [1][-]{appendix.B}{Ap\352ndice - Compara\347\343o dos modelos de previs\343o com o m\351todo Ljung-Box}{}% 81
-\BOOKMARK [1][-]{appendix.C}{Ap\352ndice - Modelos AR, ARX e MA }{}% 82
-\BOOKMARK [1][-]{appendix.D}{Ap\352ndice - Modelos ARMA e ARIMA }{}% 83
-\BOOKMARK [1][-]{appendix.E}{Ap\352ndice - Modelos ARIMAX, SARIMA e SARIMAX }{}% 84
-\BOOKMARK [1][-]{appendix.F}{Ap\352ndice - Modelos RNN e Prophet }{}% 85
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Prophet}{subsection.3.4}% 42
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Regress\343o Linear \(LR\)}{subsection.3.4}% 43
+\BOOKMARK [3][-]{subsubsection.3.4.3}{Defini\347\343o do modelo}{subsection.3.4}% 44
+\BOOKMARK [3][-]{subsubsection.3.4.4}{Regressor de \301rvore de Decis\343o \(do ingl\352s Decision Tree Regressor\)}{subsection.3.4}% 45
+\BOOKMARK [3][-]{subsubsection.3.4.5}{Floresta Aleat\363ria \(Random Forest\)}{subsection.3.4}% 46
+\BOOKMARK [3][-]{subsubsection.3.4.6}{Gradient Boosting \(como XGBoost, LightGBM\)}{subsection.3.4}% 47
+\BOOKMARK [3][-]{subsubsection.3.4.7}{O Gradiente em Gradiente de Boosting \(Refor\347o\)}{subsection.3.4}% 48
+\BOOKMARK [3][-]{subsubsection.3.4.8}{Algoritmos de boosting de gradiente}{subsection.3.4}% 49
+\BOOKMARK [3][-]{subsubsection.3.4.9}{A diferen\347a entre XGBoost e LightGBM}{subsection.3.4}% 50
+\BOOKMARK [2][-]{subsection.3.5}{Introdu\347\343o \340s Redes Neurais no Deep Learning}{section.3}% 51
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Rede Neural Recorrente \(RNN - Recurrent Neural Network\)}{subsection.3.5}% 52
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Compreendendo Redes de Mem\363ria de Curto e Longo Prazo \(LSTM\)}{subsection.3.5}% 53
+\BOOKMARK [3][-]{subsubsection.3.5.3}{GRU \(Gated Recurrent Unit - Unidade Recorrente com Port\365es\)}{subsection.3.5}% 54
+\BOOKMARK [3][-]{subsubsection.3.5.4}{An\341lise Comparativa entre os Modelos RNN, LSTM e GRU}{subsection.3.5}% 55
+\BOOKMARK [3][-]{subsubsection.3.5.5}{Explorando o Transformer: Al\351m dos Bits e Bytes}{subsection.3.5}% 56
+\BOOKMARK [2][-]{subsection.3.6}{Estudo de Caso Emp\355rico}{section.3}% 57
+\BOOKMARK [3][-]{subsubsection.3.6.1}{Defini\347\343o do problema}{subsection.3.6}% 58
+\BOOKMARK [3][-]{subsubsection.3.6.2}{Coleta de dados}{subsection.3.6}% 59
+\BOOKMARK [3][-]{subsubsection.3.6.3}{An\341lise explorat\363ria dos dados}{subsection.3.6}% 60
+\BOOKMARK [3][-]{subsubsection.3.6.4}{Escolha do modelo}{subsection.3.6}% 61
+\BOOKMARK [3][-]{subsubsection.3.6.5}{Divis\343o dos dados}{subsection.3.6}% 62
+\BOOKMARK [3][-]{subsubsection.3.6.6}{Ajuste do modelo}{subsection.3.6}% 63
+\BOOKMARK [3][-]{subsubsection.3.6.7}{Avalia\347\343o do modelo}{subsection.3.6}% 64
+\BOOKMARK [3][-]{subsubsection.3.6.8}{Previs\365es Futuras}{subsection.3.6}% 65
+\BOOKMARK [3][-]{subsubsection.3.6.9}{Monitoramento e Ajuste Cont\355nuo}{subsection.3.6}% 66
+\BOOKMARK [3][-]{subsubsection.3.6.10}{Principais Conclus\343o}{subsection.3.6}% 67
+\BOOKMARK [1][-]{section.4}{Resultados}{}% 68
+\BOOKMARK [2][-]{subsection.4.1}{Planejamento do Problema}{section.4}% 69
+\BOOKMARK [3][-]{subsubsection.4.1.1}{An\341lise Explorat\363ria dos dados \(EDA\)}{subsection.4.1}% 70
+\BOOKMARK [3][-]{subsubsection.4.1.2}{M\372ltiplas entradas e sa\355da \372nica \(MISO\)}{subsection.4.1}% 71
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Decomposi\347\343o STL}{subsection.4.1}% 72
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Separa\347\343o dos dados}{subsection.4.1}% 73
+\BOOKMARK [3][-]{subsubsection.4.1.5}{Modelagem e Sele\347\343o do Modelo}{subsection.4.1}% 74
+\BOOKMARK [3][-]{subsubsection.4.1.6}{Horizonte}{subsection.4.1}% 75
+\BOOKMARK [3][-]{subsubsection.4.1.7}{Previs\343o e Avalia\347\343o}{subsection.4.1}% 76
+\BOOKMARK [3][-]{subsubsection.4.1.8}{Relat\363rio dos Resultados}{subsection.4.1}% 77
+\BOOKMARK [3][-]{subsubsection.4.1.9}{Compara\347\343o dos modelos}{subsection.4.1}% 78
+\BOOKMARK [2][-]{subsection.4.2}{Estudo de Caso Emp\355rico Resultado}{section.4}% 79
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Descri\347\343o do sistema de abastecimento de \341gua}{subsection.4.2}% 80
+\BOOKMARK [3][-]{subsubsection.4.2.2}{An\341lise explorat\363ria dos dados}{subsection.4.2}% 81
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Quest\365es de pesquisa 1 a 4}{subsection.4.2}% 82
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Quest\343o de pesquisa 5}{subsection.4.2}% 83
+\BOOKMARK [3][-]{subsubsection.4.2.5}{Discuss\343o geral e conclus\365es}{subsection.4.2}% 84
+\BOOKMARK [1][-]{section.5}{Conclus\365es}{}% 85
+\BOOKMARK [2][-]{subsection.5.1}{Limita\347\365es da Pesquisa}{section.5}% 86
+\BOOKMARK [2][-]{subsection.5.2}{Propostas Futuras}{section.5}% 87
+\BOOKMARK [1][-]{subsection.5.2}{Refer\352ncias}{}% 88
+\BOOKMARK [1][-]{appendix.A}{Ap\352ndice - Compara\347\343o dos modelos de previs\343o de series temporais m\351dia de 24h}{}% 89
+\BOOKMARK [1][-]{appendix.B}{Ap\352ndice - Compara\347\343o dos modelos de previs\343o com o m\351todo Ljung-Box}{}% 90
+\BOOKMARK [1][-]{appendix.C}{Ap\352ndice - Modelos AR, ARX e MA }{}% 91
+\BOOKMARK [1][-]{appendix.D}{Ap\352ndice - Modelos ARMA e ARIMA }{}% 92
+\BOOKMARK [1][-]{appendix.E}{Ap\352ndice - Modelos ARIMAX, SARIMA e SARIMAX }{}% 93
+\BOOKMARK [1][-]{appendix.F}{Ap\352ndice - Modelos RNN e Prophet }{}% 94

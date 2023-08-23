@@ -8,6 +8,43 @@ A abordagem regressiva, combinada com técnicas de otimização baseadas em grad
 
 Com a crescente disponibilidade de dados e avanços na área de aprendizado de máquina, espera-se que os modelos regressivos para séries temporais continuem a evoluir e desempenhar um papel importante na análise e previsão de dados temporais em diversas aplicações.
 
+\subsubsection{Prophet}
+
+
+O Prophet é um modelo de previsão de séries temporais desenvolvido pelo Facebook. Foi projetado para simplificar a previsão de séries temporais comuns que apresentam padrões sazonais, tendências e feriados. O Prophet é especialmente útil para usuários que desejam realizar previsões precisas sem requerer um profundo conhecimento em estatística ou aprendizado de máquina.
+
+O modelo se baseia em uma abordagem aditiva que desagrega a série temporal em vários componentes individuais, como tendência de longo prazo, sazonalidade semanal e anual, e efeitos de feriados. Esses componentes são combinados para formar uma previsão geral.
+
+\textbf{Equação Básica do Prophet:}
+
+A equação básica do modelo Prophet pode ser representada da seguinte forma:
+
+\begin{eqnarray}
+	 y(t) &=& g(t) + s(t) + h(t) + \varepsilon_t 
+\end{eqnarray}
+
+onde:
+\begin{itemize}
+	\item \( y(t) \) é o valor da série temporal no tempo \( t \), que se deseja prever.
+	\item \( g(t) \) representa a tendência de longo prazo da série.
+	\item \( s(t) \) representa os componentes sazonais, que podem incluir padrões semanais e anuais.
+	\item \( h(t) \) é a representação dos efeitos de feriados ou eventos especiais.
+	\item \( \varepsilon_t \) é o erro aleatório ou ruído na previsão.
+\end{itemize}
+
+O modelo Prophet ajusta esses componentes aos dados históricos de séries temporais para criar uma previsão futura. Ele utiliza um procedimento de ajuste automático para estimar os parâmetros desses componentes com base nos dados fornecidos. A abordagem aditiva do Prophet permite que os padrões sazonais, tendências e feriados sejam capturados separadamente e, em seguida, somados para gerar uma previsão global.
+
+Lembrando que essa é uma perspectiva simplificada da equação do Prophet. O modelo em sua totalidade incorpora uma gama de ajustes e considerações destinados a aprimorar a precisão das previsões, incluindo o tratamento de incertezas, a seleção automática de sazonalidades relevantes e outras otimizações. A Figura \ref{fig:prophet1} ilustra como esses procedimentos foram aplicados aos dados da SANEPAR.
+
+\begin{figure}[!htpb]
+	\centering
+	\caption{Previsões do Modelo Prophet para o Reservatório LT01}\label{fig:prophet1}
+	\includegraphics[width=1\linewidth]{Apendices/Figuras/modelagem-24h/prophet1}
+	
+	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+\end{figure}
+
+
 \subsubsection{Regress\~ao Linear (LR)}
 
 De acordo com o estudo realizado por \citeonline{korstanje2021}, nos modelos de aprendizado de máquina supervisionados, é feita uma tentativa de identificar as relações existentes entre diferentes variáveis:
@@ -86,6 +123,58 @@ A fórmula mencionada, conhecida como \textbf{OLS} (método dos mínimos quadrad
 	
 	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
 \end{figure}
+
+\subsubsection{Regressor de \'Arvore de Decis\~ao (do ingl\^es \textit{Decision Tree Regressor})}
+
+
+
+A Regressão de Árvore de Decisão é um algoritmo de aprendizado de máquina usado para prever a demanda de água na Sanepar em Curitiba. Esse modelo tem o propósito de prever a quantidade de água necessária com base nas características dos dados de entrada, como clima, população e dia da semana. O objetivo é fornecer uma estimativa precisa da demanda de água para auxiliar a Sanepar no planejamento e gerenciamento do abastecimento de água na cidade.
+
+\textbf{Funcionamento:}
+
+\begin{enumerate}
+	\item \textbf{Divisões de Dados}: A árvore inicia com um nó raiz que representa um conjunto de dados históricos sobre a demanda de água em Curitiba. A cada passo, a árvore divide esses dados em subconjuntos menores baseados em características como temperatura, umidade, época do ano e outros fatores.
+
+	\item \textbf{Escolha de Características}: A seleção das características para a divisão é baseada em critérios que buscam maximizar a redução na variabilidade da demanda de água em cada divisão. Isso é realizado usando métricas como a redução do erro médio quadrático (MSE) ou a diminuição do desvio padrão.
+
+	\item \textbf{Criação de Nós Filhos}: A cada divisão, novos nós filhos são criados. Cada nó representa um teste ou condição sobre os dados, como verificar se a temperatura está acima de um determinado valor ou se é um dia de semana ou final de semana.
+
+	\item \textbf{Folhas e Previsões}: A cada divisão, novos nós filhos são criados. Cada nó representa um teste ou condição sobre os dados, como verificar se a temperatura está acima de um determinado valor ou se é um dia de semana ou final de semana.
+\end{enumerate}
+
+\textbf{Vantagens e Desvantagens}:
+
+\begin{itemize}
+	\item \textbf{Vantagens}: Árvores de decisão são fáceis de entender e interpretar, pois têm uma representação visual intuitiva. Elas podem tratar dados numéricos e categóricos e podem ser usadas para tarefas de regressão e classificação.
+
+	\item \textbf{Desvantagens}: Árvores de decisão podem se tornar complexas rapidamente, levando ao overfitting (ajuste excessivo aos dados de treinamento). Estratégias como poda (pruning) ou uso de florestas aleatórias (Random Forests) podem auxiliar na mitigação desse problema.
+\end{itemize}
+
+\textbf{Aplicação}:
+
+No contexto da previsão da demanda de água na Sanepar em Curitiba, é crucial considerar elementos como as flutuações climáticas, eventos particulares na cidade (como feriados) e padrões históricos de consumo. É fundamental reconhecer a eventualidade de que a árvore de decisão possa adquirir maior complexidade devido à diversidade de fatores que impactam a demanda de água.
+
+Na Figura \ref{fig:decision-tree-regressor}, é apresentada a representação visual do processo pelo qual esse modelo foi aplicado aos dados da SANEPAR.
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Regressor de \'Arvore de Decis\~ao }\label{fig:decision-tree-regressor}
+	\includegraphics[width=1\linewidth]{Apendices/Figuras/modelagem-24h/Decision-Tree-Regressor}
+	
+	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+\end{figure}
+
+Na Figura \ref{fig:arvore-de-decisao}, é demonstrado como o processo é representado por meio de uma árvore de decisão, em relação ao mapa mental.
+
+\begin{figure}[!ht]
+	\centering
+	\caption{Decision Tree Regressor}
+	\label{fig:arvore-de-decisao}
+	\includegraphics[width=0.7\linewidth]{"Apendices/Figuras/modelagem-24h/Árvore de decisão"}
+	
+	\fonte{Elaboração própria}
+\end{figure}
+
 
 
 \subsubsection{Floresta Aleat\'oria (Random Forest)} \label{subsubsec:rf}
@@ -219,4 +308,188 @@ Essa distinção no modo de crescimento das árvores pode afetar o comportamento
 
 
 Na Figura \ref{fig:1-xgb-regressao} é um modelo baseado nos dados coletados da SANEPAR.
+\subsection{Introdu\c c\~ao \`as Redes Neurais no Deep Learning}
 
+Uma rede neural é um modelo de processamento de informações inspirado pelo funcionamento do cérebro humano. Consiste em um conjunto interconectado de unidades de processamento, conhecidas como neurônios artificiais, que trabalham em conjunto para realizar tarefas de aprendizado a partir de dados. Assim como os neurônios no cérebro estão interligados por sinapses, os neurônios artificiais são conectados por conexões ponderadas. Essas conexões permitem que a rede neural analise padrões complexos nos dados, reconhecendo relações e características importantes para executar tarefas como classificação, previsão, reconhecimento de padrões e muito mais. Conforme a rede é exposta a exemplos e informações, ela ajusta suas conexões para melhorar seu desempenho, tornando-a capaz de generalizar e lidar com novos dados.
+
+\subsubsection{Rede Neural Recorrente (RNN - Recurrent Neural Network)}
+
+
+Uma Rede Neural Recorrente (RNN - Recurrent Neural Network) é um tipo de arquitetura de rede neural que pode ser utilizada para lidar com dados sequenciais ou temporais. Ao contrário das redes neurais convencionais, onde as entradas e saídas são tratadas como dados independentes, as RNNs levam em consideração a ordem e a relação entre os elementos em uma sequência, tornando-as ideais para lidar com dados como séries temporais, texto e áudio.
+
+A característica principal das RNNs é que elas contêm loops em sua estrutura, permitindo que informações anteriores influenciem o processamento de informações subsequentes. Isso significa que a saída em um determinado passo de tempo não depende apenas da entrada atual, mas também das entradas anteriores na sequência.
+
+A equação geral de uma célula RNN pode ser expressa da seguinte maneira:
+
+\begin{eqnarray}
+	h_t &=& f(W_{hh} \cdot h_{t-1} + W_{xh} \cdot x_t + b_h)
+\end{eqnarray}
+
+Onde:
+\begin{itemize}
+	\item \( h_t \) é o estado oculto (ou saída) no tempo \( t \).
+	\item \( h_{t-1} \) é o estado oculto anterior no tempo \( t-1 \).
+	\item \( x_t \) é a entrada no tempo \( t \).
+	\item \( W_{hh} \) é a matriz de pesos que controla a influência do estado oculto anterior.
+	\item \( W_{xh} \) é a matriz de pesos que controla a influência da entrada.
+	\item \( b_h \) é o vetor de viés.
+	\item \( f \) é uma função de ativação, frequentemente a função tangente hiperbólica (tanh) ou a função sigmoide.
+\end{itemize}
+
+Essa equação representa a propagação do estado oculto ao longo do tempo em uma RNN. A cada novo passo de tempo, a RNN considera a entrada atual \( x_t \) e o estado oculto anterior \( h_{t-1} \), calculando o novo estado oculto \( h_t \) usando as matrizes de pesos e a função de ativação.
+
+No entanto, as RNNs tradicionais podem enfrentar dificuldades em capturar dependências de longo prazo, devido ao problema de dissipação do gradiente. Para lidar com isso, surgiram variações mais avançadas, como Long Short-Term Memory (LSTM) e Gated Recurrent Units (GRU), que incorporam mecanismos de aprendizado de esquecimento e controle de informação, permitindo que informações relevantes sejam mantidas por períodos mais longos de tempo.
+
+Na Figura \ref{fig:8s40xcsn}, é apresentado um esquema que ilustra como uma RNN é construída.
+
+\begin{figure}[!htpb]
+	\centering
+	\caption{RNN - Recurrent Neural Network}
+	\label{fig:8s40xcsn}
+	\includegraphics[width=1\linewidth]{Apendices/Figuras/modelagem-24h/8s40xcsn}
+	
+	\fonte{Elaboração própria}
+\end{figure}
+
+\subsubsection{Compreendendo Redes de Mem\'oria de Curto e Longo Prazo (LSTM)}
+
+As Redes de Memória de Curto e Longo Prazo (LSTM - Long Short-Term Memory) são uma evolução das Redes Neurais Recorrentes (RNNs), projetadas para superar desafios na captura de dependências de longo prazo em sequências de dados. Diferentemente das RNNs convencionais, as LSTMs têm a capacidade de manter informações relevantes por longos períodos, tornando-as especialmente eficazes em tarefas que envolvem padrões complexos e dependências temporais distantes.
+
+Uma das principais inovações das LSTMs é a introdução de unidades de memória chamadas ``células'', que possuem três componentes principais: uma porta de entrada (input gate), uma porta de esquecimento (forget gate) e uma porta de saída (output gate). Essas portas permitem que as LSTMs controlem o fluxo de informações através da célula, decidindo quais informações devem ser mantidas, esquecidas ou passadas para a saída.
+
+A equação geral de uma célula LSTM pode ser expressa da seguinte forma:
+
+
+\begin{eqnarray}
+	f_t &=& \sigma(W_{xf} \cdot x_t + W_{hf} \cdot h_{t-1} + b_f) \\
+	i_t &=& \sigma(W_{xi} \cdot x_t + W_{hi} \cdot h_{t-1} + b_i) \\
+	\tilde{C}_t &=& \tanh(W_{xc} \cdot x_t + W_{hc} \cdot h_{t-1} + b_c) \\
+	C_t &=& f_t \odot C_{t-1} + i_t \odot \tilde{C}_t \\
+	o_t &=& \sigma(W_{xo} \cdot x_t + W_{ho} \cdot h_{t-1} + b_o) \\
+	h_t &=& o_t \odot \tanh(C_t)
+\end{eqnarray}
+
+
+onde:
+\begin{itemize}
+	\item \(x_t\) é a entrada no tempo \(t\).
+	\item \(h_{t-1}\) é o estado oculto anterior no tempo \(t-1\).
+	\item \(f_t\) é o valor da porta de esquecimento.
+	\item \(i_t\) é o valor da porta de entrada.
+	\item \(\tilde{C}_t\) é o candidato a novo estado de memória.
+	\item \(C_t\) é o novo estado de memória.
+	\item \(o_t\) é o valor da porta de saída.
+	\item \(h_t\) é o novo estado oculto (saída) no tempo \(t\).
+	\item \(\sigma\) é a função de ativação sigmoide.
+	\item \(\odot\) representa a multiplicação elemento a elemento.
+\end{itemize}
+
+Essa estrutura permite que as LSTMs controlem o fluxo de informações e aprendam a armazenar ou descartar informações relevantes para diferentes tarefas. As portas de entrada, esquecimento e saída funcionam como mecanismos de controle, permitindo que as LSTMs aprendam a manter informações importantes, esquecer informações desnecessárias e gerar saídas precisas ao longo de sequências temporais.
+
+\subsubsection{GRU (Gated Recurrent Unit - Unidade Recorrente com Port\~oes)}
+
+
+Um GRU é um tipo de arquitetura de rede neural recorrente (RNN) que foi projetado para lidar com o problema de dissipação de gradiente e captura de dependências de longo prazo em sequências de dados. Essa variação das RNNs tradicionais introduz mecanismos de portão para controlar o fluxo de informação por meio das unidades de tempo.
+
+Segundo \citeonline{mastersthesis53fd58a7}, a Gated Recurrent Unit (GRU) é uma alternativa vantajosa para a análise de séries temporais, devido à sua habilidade de lidar com sequências de dados de extensões variáveis e de capturar dependências de longo prazo presentes em informações sequenciais. Além disso, a GRU apresenta uma estrutura de simplicidade superior à Long Short-Term Memory (LSTM), permitindo um processo de treinamento mais ágil.
+
+A estrutura do GRU inclui dois portões principais: o portão de atualização (update gate) e o portão de reinicialização (reset gate). Esses portões permitem que o GRU decida quais informações serão transmitidas para a próxima etapa de tempo e quais informações serão descartadas.
+
+As equações do GRU são definidas da seguinte maneira:
+
+\textbf{Equações do GRU:}
+
+\begin{description}
+	\item[Portão de Reinicialização (\(r_t\))]: Controla a quantidade de informação do passado a ser esquecida.
+	
+ \begin{eqnarray}
+ 	r_t &=& \sigma(W_r \cdot [h_{t-1}, x_t])\label{eq:gru}
+ \end{eqnarray} 
+
+\item[Portão de Atualização (\(z_t\))]: Controla a quantidade de informação do passado a ser passada para o próximo estado.
+
+ \begin{eqnarray}
+ 	z_t &=& \sigma(W_z \cdot [h_{t-1}, x_t])\label{eq:gru1}
+ \end{eqnarray}
+
+\item[Ativação do Candidato (\(h\widetilde{_t}\))]: Candidato a novo estado oculto.
+
+\begin{eqnarray}
+	h\widetilde{_t} &=& \tanh\left(W_h \cdot [r_t \odot h_{t-1}, x_t]\right)\label{eq:gru2}
+\end{eqnarray}
+
+\item[Novo Estado Oculto (\(h_t\))]: Combinação ponderada do estado anterior e do novo candidato.
+\begin{eqnarray}
+	h_t &=& (1 - z_t) \odot h_{t-1} + z_t \odot h\widetilde{_t}\label{eq:gru3}
+\end{eqnarray}
+\end{description}
+
+Nessas equações \eqref{eq:gru}, \eqref{eq:gru1}, \eqref{eq:gru2} e \eqref{eq:gru3}:
+
+\begin{itemize}
+	\item \( h_t \) representa o estado oculto na etapa de tempo \( t \).
+
+	\item \( h_{t-1} \) é o estado oculto na etapa de tempo anterior \( t-1 \).
+
+	\item \( x_t \) é a entrada na etapa de tempo \( t \).
+
+	\item \( r_t \) é o valor do portão de reinicialização na etapa \( t \).
+
+	\item \( z_t \) é o valor do portão de atualização na etapa \( t \).
+
+	\item \( \odot \) denota a multiplicação elemento a elemento.
+
+	\item \( \sigma \) é a função sigmoid, que retorna valores entre 0 e 1.
+
+	\item \( \tanh \) é a função tangente hiperbólica, que retorna valores entre $-1$ e $1$.
+
+	\item \( W_r, W_z, W_h \) são matrizes de pesos que o modelo aprende durante o treinamento.
+\end{itemize}
+
+Resumidamente, o GRU controla como as informações são atualizadas e propagadas ao longo do tempo, permitindo a captura de dependências de longo prazo em sequências de dados. Isso o torna uma escolha popular para tarefas que envolvem processamento de linguagem natural, como tradução automática, geração de texto, entre outras.
+
+\begin{figure}[!htpb]
+	\centering
+	\caption{Diagrama Ilustrativo do Funcionamento de uma Unidade Recorrente Gated (GRU)}
+	\label{fig:gru4-1024x835}
+	\includegraphics[width=0.7\linewidth]{Apendices/Figuras/modelagem-24h/gru4-1024x835}
+	
+	\fonte{Elaboração própria}
+\end{figure}
+
+
+
+\subsubsection{An\'alise Comparativa entre os Modelos RNN, LSTM e GRU}
+
+As Unidades Recorrentes Gated (GRUs), as Redes de Memória de Curto e Longo Prazo (LSTMs) e as Redes Neurais Recorrentes (RNNs) são variações avançadas das arquiteturas de redes neurais, todas projetadas para abordar a dificuldade de capturar dependências temporais em sequências de dados. Cada uma dessas abordagens tem características distintas que influenciam sua capacidade de lidar com esse desafio.
+
+Enquanto as RNNs tradicionais têm uma tendência a sofrer com o desvanecimento do gradiente ao longo do tempo, as LSTMs e GRUs foram desenvolvidas para superar essa limitação. As LSTMs introduzem células de memória e portas de controle que permitem armazenar e atualizar informações relevantes ao longo das etapas temporais, sendo especialmente adequadas para capturar relações de dependência de longo prazo. As GRUs, por sua vez, simplificam a arquitetura das LSTMs, utilizando portas de atualização e reset para permitir o fluxo de informações e controle sobre o estado oculto.
+
+Na Figura \ref{fig:rnn-vs-lstm-vs-gru-1024x308}, há um esquema que ilustra as arquiteturas das RNNs, LSTMs e GRUs, permitindo uma visualização das diferenças entre essas abordagens.
+
+\begin{figure}[!htpb]
+	\centering
+	\caption{RNN vs LSTM vs GRU}
+	\label{fig:rnn-vs-lstm-vs-gru-1024x308}
+	\includegraphics[width=1\linewidth]{Apendices/Figuras/modelagem-24h/RNN-vs-LSTM-vs-GRU-1024x308}
+\end{figure}
+
+
+Ao observar essa imagem, é possível compreender melhor como cada uma das arquiteturas lida com a complexidade de capturar dependências temporais em sequências de dados. As LSTMs e GRUs oferecem soluções mais sofisticadas em relação às RNNs tradicionais, apresentando mecanismos que permitem capturar dependências de longo prazo de maneira mais eficaz.
+
+\subsubsection{Explorando o Transformer: Al\'em dos Bits e Bytes}
+
+A arquitetura de rede neural Transformer representa um avanço significativo no campo do processamento de linguagem natural e tarefas relacionadas. Foi introduzida por \citeonline{vaswani2017attention} e revolucionou a maneira como as redes neurais lidam com sequências de dados, superando limitações anteriores, como a dependência sequencial e a complexidade computacional. A abordagem do Transformer se destaca por sua capacidade de processar simultaneamente todas as posições de uma sequência, tornando-o altamente paralelizável e eficiente.
+
+A equação fundamental do Transformer é a autoatencão, também conhecida como mecanismo de atenção. A atenção é um conceito-chave que permite que a rede neural "preste atenção" a diferentes partes da entrada em graus variados, capturando relações contextuais e semânticas. A equação da autoatencão é calculada ao dividir a sequência de entrada em três representações lineares: consultas (Q), chaves (K) e valores (V). A matriz de atenção é obtida multiplicando as consultas pelas chaves transpostas e aplicando uma função de softmax aos resultados, ponderando os valores de acordo com a importância atribuída pela atenção. A saída final é uma combinação linear dos valores ponderados pela matriz de atenção.
+
+Essa equação, embora simplificada, serve como base para a arquitetura do Transformer e é repetida várias vezes em diferentes camadas. Isso permite que a rede aprenda representações ricas e contextuais das sequências de entrada. A estrutura de múltiplas cabeças de atenção, presente no Transformer, aprimora ainda mais a capacidade da rede em capturar diferentes tipos de relações e padrões nas sequências. Em suma, o modelo Transformer revolucionou o processamento de sequências, proporcionando melhorias notáveis em tarefas como tradução automática, resumo de texto, geração de linguagem natural e muito mais.
+
+\begin{figure}[!htpb]
+	\centering
+	\caption{Arquitetura do Transformer}
+	\label{fig:transformer}
+	\includegraphics[width=1\linewidth]{Apendices/Figuras/modelagem-24h/Transformer}
+	
+	\fonte{Elaboração própria}
+\end{figure}

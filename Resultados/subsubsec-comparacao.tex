@@ -18,11 +18,33 @@ Com o objetivo de obter uma análise mais aprofundada do desempenho de cada mode
 		\label{fig:violin-lr-xgb-lgbm-rf}
 	\end{subfigure}
 	
+
+	
 	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
 \end{figure}
 
-Ao comparar os modelos apresentados nas Figuras \ref{fig:modelos-arima} e \ref{fig:violin-lr-xgb-lgbm-rf}, é possível observar quais são os modelos que se destacam, levando em consideração a modelagem dos dados. Os modelos ARIMA que mostram melhor desempenho são o AR, ARX, MA, ARMA, ARIMAX e SARIMAX, devido à sua capacidade de lidar com \textit{outliers} e limites inferiores em alguns modelos. No caso dos modelos baseados em gradientes e regressão, é perceptível que eles exibem resultados semelhantes, graças às técnicas de otimização matemática conhecidas como Grid Search e Randomized Search, que permitem aprimorar os métodos utilizados.
+\begin{figure}[!htb]
+	\centering
+	\caption{Análise Comparativa dos Modelos Utilizando Gráfico de Barras}
+		\begin{subfigure}{0.9\textwidth}
+		\includegraphics[width=\linewidth]{Resultados/Figuras/rrmse_comparar}
+		\caption{Comparação de Modelos de Redes Neurais e Prophet através da Métrica RRMSE}
+		\label{fig:rrmse_comparar}
+	\end{subfigure}
+	
+	\begin{subfigure}{0.9\textwidth}
+		\includegraphics[width=\linewidth]{Resultados/Figuras/basic_comparar}
+		\caption{Comparação de modelos}
+		\label{fig:basic_comparar}
+	\end{subfigure}
+	
+	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+\end{figure}
 
-Quando se trata de um horizonte de previsão curto, o modelo de LR apresenta melhor desempenho em comparação com os demais. No entanto, em horizontes de previsão mais longos, os modelos XGBoost e Light GBM demonstram maior precisão. A Random Forest também é capaz de realizar previsões precisas, ficando ligeiramente atrás do XGBoost em previsões de longo prazo.
 
-Para avaliar a eficiência dos modelos ARIMA em previsões de longo prazo, utiliza-se o método conhecido como Ljung-Box, como apresentado no apêndice \ref{sec:comtb18}. As Tabelas de \ref{tb:lbtrn} a \ref{tb:lbcm} mostram a precisão dos modelos ARIMA ao longo do tempo, destacando em \textbf{negrito} os números menores para facilitar a compreensão. Os modelos ARX, ARIMAX e SARIMAX, que incorporam variáveis exógenas, demonstram um melhor desempenho nesse contexto. Esses modelos não lineares possuem uma capacidade de previsão mais robusta em horizontes de tempo mais distantes, em comparação com os outros modelos ARIMA.
+
+Ao examinar os modelos representados nas Figuras \ref{fig:modelos-arima} e \ref{fig:violin-lr-xgb-lgbm-rf}, identifico os modelos que se destacam em relação à natureza dos dados. Na Figura \ref{fig:basic_comparar}, que compara os modelos ARIMA e XGBoost com outros, torna-se evidente que os modelos ARIMA como AR, ARX, MA, ARMA, ARIMAX e SARIMAX demonstram um desempenho sólido. Além disso, os modelos baseados em gradientes e regressão, como o XGBoost, exibem resultados comparáveis, beneficiando-se da otimização por meio do Optuna, uma abordagem mais eficaz em relação aos tradicionais Grid Search e Randomized Search.
+
+Na Figura \ref{fig:rrmse_comparar}, que contrasta as redes neurais com o modelo Prophet, é importante destacar que os modelos de redes neurais, incluindo RNN, LSTM, GRU, ANN, CNN e Transformer, foram avaliados em conjunto com o modelo Prophet. A análise estatística também demonstrou que o modelo RNN se sobressai como o vencedor entre as métricas avaliadas. Essa conclusão é respaldada pelas evidências de que pelo menos um modelo é superior aos demais. Os modelos com valores de p-valor abaixo de 0,05 foram realçados em \textit{itálico} para enfatizar sua significância.
+
+A avaliação da eficácia dos modelos ARIMA em previsões de longo prazo emprega o teste de Ljung-Box, conforme detalhado no Apêndice \ref{sec:comtb18}. As Tabelas \ref{tb:lbtrn} a \ref{tb:lbcm} ilustram a acurácia dos modelos ARIMA ao longo do tempo, com valores menores sendo destacados em \textbf{negrito} e \textit{itálico} para facilitar a interpretação. Modelos como ARX, ARIMAX e SARIMAX, que incorporam variáveis exógenas, demonstram um desempenho superior nesse contexto. Esses modelos não lineares apresentam uma capacidade de previsão robusta em horizontes temporais mais longos, diferenciando-se positivamente dos outros modelos ARIMA.

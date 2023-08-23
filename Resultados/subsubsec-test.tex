@@ -1,6 +1,6 @@
 \subsubsection{Relat\'orio dos Resultados}
 
-Na etapa \ref{etp:9}, realizou-se o teste de Friedman e o teste de Nemenyi para comparar as classificações médias entre os diversos classificadores. O teste de Nemenyi é uma ferramenta de comparação múltipla frequentemente empregada após a aplicação de testes não paramétricos com três ou mais fatores.
+Na etapa \ref{etp:8}, realizou-se o teste de Friedman e o teste de Nemenyi para comparar as classificações médias entre os diversos classificadores. O teste de Nemenyi é uma ferramenta de comparação múltipla frequentemente empregada após a aplicação de testes não paramétricos com três ou mais fatores.
 
 A matriz de comparação entre os classificadores, apresentada na Tabela \ref{tb:nemeyi}, exibe os valores de comparação múltipla de Nemenyi, onde as entradas evidenciam as diferenças significativas entre os pares de classificadores.
 
@@ -51,9 +51,33 @@ Os resultados da pesquisa indicaram a existência de evidências estatísticas q
 
 Com base nos resultados da pesquisa, conclui-se que existem evidências estatísticas de que pelo menos um modelo é significativamente superior aos demais.
 
-A análise de comparação significativa entre modelos revela diferenças estatisticamente significativas nos seguintes pares de classificadores: (``AR'', ``ARX''), (``AR'', ``MA''), (``ARX'', ``AR''), (``ARX'', ``MA''), (``MA'', ``AR'') e (``MA'', ``ARX'').
 
 
 
+\begin{enumerate}
+	\item \textbf{Modelo com menor valor em cada métrica}:
+	
+	Primeiramente, os diversos modelos de previsão de séries temporais foram avaliados para um horizonte de previsão de 30 dias. Para cada métrica (\textbf{sMAPE}, \textbf{MAE} e \textbf{RRMSE}), identificou-se o modelo que apresentou o menor valor.
+\begin{itemize}
+	\item A métrica \textbf{sMAPE} apontou que o modelo \textbf{RNN} obteve o menor valor.
+	\item Quanto à métrica \textbf{MAE}, novamente o modelo \textbf{RNN} demonstrou o menor valor.
+	\item A métrica \textbf{RRMSE} também indicou que o modelo \textbf{RNN} teve o menor valor.
+\end{itemize}
+
+	\item \textbf{Evidências estatísticas de que pelo menos um modelo é superior}:
+
+	Para validar estatisticamente as diferenças entre os modelos, foi realizado um teste estatístico denominado \textbf{Teste de Friedman}. Esse teste avalia o desempenho dos modelos em todas as métricas simultaneamente. O resultado do teste de Friedman revelou \textbf{evidências estatísticas} que pelo menos um dos modelos apresenta superioridade estatística em relação aos demais, considerando um nível de significância de $0.05$.
+	
+	\item  \textbf{Comparação significativa entre modelos - Teste de Nemenyi}:
+	
+	A fim de determinar quais modelos apresentam diferenças estatisticamente significativas entre si, foi conduzido o \textbf{teste de comparações múltiplas de Nemenyi}. Esse teste avalia todos os pares possíveis de modelos e identifica quais deles possuem diferenças estatisticamente significativas. Os resultados indicaram \textbf{diferenças estatisticamente significativas} entre vários pares de modelos. Especificamente:
+	\begin{itemize}
+		\item O modelo \textbf{RNN} apresentou diferenças significativas em relação aos modelos \textbf{LSTM} e \textbf{GRU}.
+		\item  O modelo \textbf{LSTM} apresentou diferenças significativas em relação ao modelo \textbf{RNN}.
+		\item O modelo \textbf{GRU} exibiu diferenças significativas em relação ao modelo \textbf{RNN}.
+	\end{itemize}
+\end{enumerate}
+
+Portanto, com base na análise estatística de Friedman e no teste de comparações múltiplas de Nemenyi, conclui-se que o modelo \textbf{RNN} apresenta o melhor desempenho geral em relação às métricas consideradas (\textbf{sMAPE}, \textbf{MAE} e \textbf{RRMSE}) para um horizonte de previsão de 30 dias, utilizando os dados completos.
 
 

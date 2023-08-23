@@ -36,9 +36,38 @@ Adicionalmente, na subseção \ref{subsubsec:stl}, foi realizada a verificação
 
 
 
-Como os dados apresentam sazonalidade, foram selecionados modelos simples de ARIMA, como AR, MA, ARMA, ARIMA e SARIMA. Esses modelos são univariados. Já os modelos com variável exógena, como ARX, ARIMAX e SARIMAX, são considerados multivariados. No contexto dos dados analisados, qualquer variável que possa interferir na variável preditora é considerada exógena. Para este caso específico, todas as outras variáveis foram incluídas como exógenas para melhorar a previsão.
+Dentro da análise, foram incluídos uma variedade de modelos para melhor capturar a natureza dos dados e aprimorar as previsões. Esses modelos incluem:
 
-Outros modelos utilizados são os modelos de aprendizado de máquina supervisionados, como LR, RFR, LightGBM e XGBoost. Esses modelos são regressores baseados em árvores de decisão ou gradientes, especialmente os modelos XGBoost e LightGBM, que são amplamente reconhecidos como eficazes na previsão e tomada de decisões, conforme mencionado por \citeonline{chen2016xgboost} em seu estudo de benchmarking de frameworks de deep learning para tarefas de manutenção preditiva. \citeonline{sanchez2020comparative}, em seu estudo comparativo de XGBoost, AdaBoost e CatBoost em algoritmos de aprendizado de máquina, também destacam o desempenho superior do XGBoost em várias métricas de avaliação.
+\begin{description}
+	\item [RNN (Rede Neural Recorrente),] que leva em conta as dependências sequenciais nos dados para prever valores futuros.
+
+	\item [LSTM (Long Short-Term Memory),] um tipo de RNN que lida especialmente bem com sequências longas e dependências de longo prazo.
+
+	\item [GRU (Gated Recurrent Unit),] outra variante de RNN que equilibra o poder de modelagem e a eficiência computacional.
+
+	\item [Transformer,] um modelo amplamente utilizado para tarefas de processamento de linguagem natural e sequências, que também pode ser adaptado para previsões sequenciais.
+
+	\item [Prophet,] um modelo de previsão desenvolvido pelo Facebook que lida bem com dados sazonais e tendências.
+
+	\item [Decision Tree Regressor,] um modelo baseado em árvore de decisão que segmenta os dados em subgrupos para fazer previsões.
+
+Esses modelos são complementados com abordagens tradicionais como:
+
+	\item [Modelos de séries temporais univariados,] incluindo AR, MA, ARMA, ARIMA e SARIMA, que levam em consideração a sazonalidade dos dados.
+
+	\item [Modelos de séries temporais multivariados,] como ARX, ARIMAX e SARIMAX, que incorporam variáveis exógenas para melhorar as previsões.
+
+Além disso, foram explorados modelos de aprendizado de máquina supervisionados:
+
+	\item [LR (\textit{Regressão Linear}),] que estabelece relações lineares entre variáveis para fazer previsões.
+
+	\item [RFR (\textit{Random Forest Regressor}),] um \textit{ensemble} de árvores de decisão que captura complexas relações nos dados.
+
+	\item [LightGBM e XGBoost,] modelos baseados em \textit{gradient boosting} que são reconhecidos por sua eficácia na previsão e tomada de decisões. O XGBoost é particularmente conhecido por seu desempenho superior em várias métricas de avaliação.
+
+\end{description}
+
+A inclusão desses modelos permite uma abordagem abrangente à previsão, aproveitando as vantagens específicas de cada método para lidar com diferentes aspectos dos dados e melhorar as previsões em um conjunto diversificado de cenários.
 
 
 
@@ -52,15 +81,29 @@ Nesta etapa, você aplicará o modelo selecionado aos dados de treinamento. Ajus
 
 Ao ajustar o modelo para a base de dados, foi feita uma alteração na ordem do modelo sugerido pelo pmdarima. A escolha foi trocar o modelo SARIMAX(1,1,1)(2,1,0,12) para SARIMAX(7,1,7)(2,1,0,12). Essa decisão foi tomada com base na observação de um ajuste mais preciso aos dados, evidenciado pela redução nos resíduos e uma melhor captura das características da série temporal. Além disso, considerando o conhecimento do problema e as características específicas dos dados, foi identificado que padrões mais complexos requeriam ordens mais altas para serem adequadamente capturados. Dessa forma, foi realizado um processo iterativo de experimentação e avaliação para determinar o modelo SARIMAX(7,1,7)(2,1,0,12) como o mais adequado para a base de dados em questão. É importante ressaltar que o desempenho do novo modelo será avaliado por meio de diagnósticos adicionais e análise dos resultados obtidos.
 
-Os modelos XGBRegressor e LGBMRegressor foram ajustados usando as técnicas de GridSearchCV e BayesSearchCV. Essas abordagens permitiram encontrar as melhores combinações de hiperparâmetros para esses modelos, buscando maximizar o desempenho e a precisão das previsões. Por outro lado, os modelos LR (Regressão Linear) e RFR (Random Forest Regressor) não passaram por ajustes, pois não apresentaram melhorias significativas nos resultados após as etapas de GridSearchCV, BayesSearchCV e RandomizedSearchCV. Portanto, esses modelos mantiveram as configurações padrão, uma vez que as tentativas de otimização dos hiperparâmetros não resultaram em melhorias substanciais para eles.
+Os modelos RNN, LSTM e GRU foram ajustados minuciosamente por meio da técnica de otimização de hiperparâmetros do Optuna, permitindo uma exploração adaptativa e eficiente do espaço de configurações. Essa abordagem exclusiva do Optuna resultou em modelos sequenciais com aprimoramento notável na capacidade preditiva. Parâmetros vitais, como taxa de aprendizado, tamanho da camada oculta e número de unidades, foram otimizados de forma eficaz através do Optuna.
 
-\begin{itemize}
-	\item \textbf{GridSearchCV}: O GridSearchCV é uma técnica de busca exaustiva que é usada para ajustar os hiperparâmetros de um modelo de aprendizado de máquina. Ele realiza uma busca sistemática por todas as combinações possíveis de valores especificados para cada hiperparâmetro e avalia o desempenho do modelo para cada combinação. Essa abordagem avalia todas as opções disponíveis, mas pode ser computacionalmente intensiva. Ao final, fornece os melhores hiperparâmetros encontrados que otimizam a métrica de avaliação escolhida.
+O Random Forest Regressor (RFR) apresentou melhorias notáveis após o ajuste com o Optuna. A otimização realizada pelo Optuna permitiu identificar uma combinação de hiperparâmetros ideal para o RFR, resultando em um significativo aprimoramento no desempenho preditivo desse modelo.
 
-\item \textbf{BayesSearchCV}: O BayesSearchCV é uma técnica de otimização de hiperparâmetros baseada em Bayesian optimization. Ele usa um processo de amostragem sequencial para encontrar a melhor combinação de hiperparâmetros de forma mais eficiente do que o GridSearchCV. O BayesSearchCV usa uma função de perda estimada e um modelo probabilístico para determinar quais configurações de hiperparâmetros são mais promissoras e, em seguida, realiza novas amostragens para refinar a busca. Essa abordagem permite uma exploração mais inteligente do espaço de hiperparâmetros e a descoberta de melhores configurações com menos iterações.
+No entanto, o modelo Transformer e o Prophet não puderam ser otimizados com sucesso por meio do Optuna. Apesar das tentativas de ajuste, as melhorias significativas não foram observadas em seus resultados. Estes modelos mantiveram suas configurações padrão, uma vez que os esforços de otimização com o Optuna não resultaram em ganhos substanciais.
 
-\item \textbf{RandomizedSearchCV}: O RandomizedSearchCV é uma técnica de busca aleatória de hiperparâmetros. Ao contrário do GridSearchCV, que testa todas as combinações possíveis, o RandomizedSearchCV seleciona aleatoriamente um subconjunto do espaço de hiperparâmetros e avalia o modelo para cada combinação escolhida. Essa abordagem é útil quando o espaço de hiperparâmetros é grande e não é possível testar todas as combinações em tempo razoável. O RandomizedSearchCV permite uma exploração mais ampla do espaço de hiperparâmetros, embora com menor garantia de encontrar a melhor combinação.
-\end{itemize}
+Considerando que o modelo LR (Regressão Linear) não demonstrou melhorias significativas, uma decisão foi tomada para substituí-lo pelo modelo Decision Tree Regressor. Este último foi ajustado empregando o Optuna, buscando encontrar a configuração de hiperparâmetros ideal para o modelo de árvore de decisão. Essa decisão foi respaldada pelo fato de que o Optuna havia demonstrado ser uma ferramenta eficaz para otimização de hiperparâmetros, como evidenciado pelas melhorias observadas no RFR e em outros modelos.
+
+Dessa forma, os modelos RNN, LSTM, GRU, XGBRegressor, LGBMRegressor e o Decision Tree Regressor foram todos otimizados com sucesso utilizando o Optuna, resultando em previsões mais robustas e confiáveis. No entanto, os modelos Transformer e Prophet mantiveram suas configurações originais devido à ausência de melhorias substanciais após tentativas de otimização com o Optuna.
+
+O \textbf{Optuna} oferece uma abordagem de otimização de hiperparâmetros mais avançada e eficaz em comparação com outras técnicas amplamente utilizadas, como o GridSearchCV, BayesSearchCV e RandomizedSearchCV. Enquanto essas abordagens tradicionais têm suas vantagens, o Optuna leva a otimização de hiperparâmetros a um nível superior.
+
+O \textbf{GridSearchCV}, por exemplo, é uma técnica exaustiva que explora todas as combinações possíveis de hiperparâmetros. Embora seja abrangente, essa abordagem pode se tornar computacionalmente intensiva e demorada, especialmente quando o espaço de busca é grande. Além disso, o GridSearchCV não considera a interação entre os hiperparâmetros, o que pode limitar sua capacidade de encontrar combinações ótimas.
+
+O \textbf{BayesSearchCV} melhora a eficiência em relação ao GridSearchCV usando otimização bayesiana, mas ainda enfrenta limitações. Ele utiliza um processo de amostragem sequencial com um modelo probabilístico para explorar o espaço de hiperparâmetros de maneira mais inteligente. No entanto, o BayesSearchCV ainda pode exigir muitas iterações para encontrar configurações ideais, especialmente em espaços de busca complexos.
+
+O \textbf{RandomizedSearchCV}, por outro lado, busca aleatoriamente subconjuntos do espaço de hiperparâmetros. Isso pode ser útil para espaços de busca vastos, mas ainda não garante uma exploração eficaz do espaço para encontrar as melhores configurações.
+
+Aqui é onde o Optuna se destaca. Utilizando algoritmos avançados de otimização, o Optuna oferece uma abordagem mais inteligente e eficiente para encontrar as configurações ideais de hiperparâmetros. Ele emprega técnicas de amostragem adaptativa, como o algoritmo TPE (Tree-structured Parzen Estimator), para direcionar a pesquisa para as áreas mais promissoras do espaço de hiperparâmetros. Isso permite uma exploração mais eficaz e uma descoberta mais rápida das configurações que maximizam a métrica de avaliação.
+
+Além disso, o Optuna é altamente flexível e pode ser facilmente integrado a diversos algoritmos e frameworks de aprendizado de máquina. Sua abordagem adaptativa e inteligente proporciona economia de recursos computacionais e, ao mesmo tempo, aumenta as chances de encontrar configurações de hiperparâmetros que levem a um desempenho superior do modelo.
+
+Em resumo, o Optuna supera as abordagens tradicionais, como o GridSearchCV, BayesSearchCV e RandomizedSearchCV, oferecendo uma otimização de hiperparâmetros mais eficiente, inteligente e adaptativa. Sua capacidade de explorar de maneira direcionada o espaço de hiperparâmetros resulta em uma descoberta mais rápida das configurações ideais, impulsionando o desempenho dos modelos de aprendizado de máquina de forma significativa.
 
 \subsubsection{Avalia\c c\~ao do modelo}
 
@@ -105,13 +148,13 @@ Portanto, ao utilizar essas métricas, o pesquisador estará seguindo uma práti
 \subsubsection{Previs\~oes Futuras}
 
 
-Com base nos modelos AR, ARX, MA, ARMA, ARIMA, ARMAX, SARIMA, SARIMAX, LR, XGBRegressor, LGBMRegressor e RFR, que foram cuidadosamente aplicados e avaliados, é possível afirmar que uma vez que a precisão desses modelos tenha sido satisfatória, eles podem ser utilizados para fazer previsões futuras. Aplicando esses modelos aos dados futuros disponíveis, é possível estimar a demanda de água para diferentes horizontes de previsão, como um dia, uma semana, duas semanas e um mês.
+Com base nos modelos AR, ARX, MA, ARMA, ARIMA, ARMAX, SARIMA, SARIMAX,  XGBRegressor, LGBMRegressor, RNN, LSTM, GRU, Transformer, Prophet e Decision Tree Regressor, que foram cuidadosamente aplicados e avaliados, é possível afirmar que uma vez que a precisão desses modelos tenha sido satisfatória, eles podem ser utilizados para fazer previsões futuras. Ao aplicar esses modelos aos dados futuros disponíveis, ele poderá estimar a demanda de água para diferentes horizontes de previsão, como um dia, uma semana, duas semanas e um mês.
 
-Essas previsões fornecerão informações valiosas para o planejamento e gerenciamento eficiente dos recursos hídricos. Ao ter conhecimento antecipado da demanda de água esperada nos próximos períodos, é possível tomar medidas adequadas para garantir o suprimento adequado de água, evitar escassez ou desperdício, e realizar um planejamento eficaz para a distribuição e utilização dos recursos hídricos.
+Essas previsões fornecerão informações valiosas para o planejamento e gerenciamento eficiente dos recursos hídricos. Ao ter conhecimento antecipado da demanda de água esperada nos próximos períodos, será possível adotar medidas adequadas para garantir o suprimento apropriado de água, prevenir escassez ou desperdício e realizar um planejamento eficaz para a distribuição e uso dos recursos hídricos.
 
-Com base nos resultados significativos obtidos por esses modelos durante o processo de validação, o pesquisador terá confiança em aplicá-los para previsões futuras de curto prazo. Essas previsões permitirão uma compreensão das tendências e variações na demanda de água ao longo de diferentes períodos, capacitando os responsáveis pela gestão dos recursos hídricos a tomar decisões informadas e estratégicas.
+Com base nos resultados significativos obtidos por esses modelos durante o processo de validação, o pesquisador terá confiança em aplicá-los para previsões futuras de curto prazo. Essas previsões permitirão a compreensão das tendências e variações na demanda de água ao longo de diferentes períodos, capacitando os responsáveis pela gestão dos recursos hídricos a tomar decisões informadas e estratégicas.
 
-Portanto, uma vez que os modelos tenham sido devidamente avaliados e demonstrado sua eficácia, eles podem ser utilizados para fazer previsões precisas da demanda de água em horizontes de previsão de um dia, uma semana, duas semanas e um mês, auxiliando na gestão e planejamento eficiente dos recursos hídricos.
+Portanto, uma vez que os modelos tenham sido devidamente avaliados e demonstrado sua eficácia, eles podem ser utilizados para fazer previsões precisas da demanda de água em horizontes de previsão de um dia, uma semana, duas semanas e um mês, contribuindo para a gestão e planejamento eficiente dos recursos hídricos.
 
 \subsubsection{Monitoramento e Ajuste Cont\'inuo}
 
@@ -127,7 +170,7 @@ Considerando a importância desses fatores na formulação das questões de pesq
 
 Ao longo deste estudo de caso, foram resolvidas as questões de pesquisa levantadas por meio da aplicação da análise de séries temporais para prever a demanda de água. A abordagem adotada demonstrou ser eficaz na obtenção de insights valiosos para o gerenciamento do abastecimento hídrico.
 
-Foi constatado que a análise de séries temporais é uma ferramenta promissora para prever a demanda de água, permitindo tomar decisões informadas e embasadas nesse contexto. Por meio da modelagem e aplicação de diversos modelos, como ARIMA, SARIMA, LR e outros, foi possível analisar e interpretar os dados históricos de maneira precisa, obtendo previsões confiáveis.
+Foi constatado que a análise de séries temporais é uma ferramenta promissora para prever a demanda de água, permitindo tomar decisões informadas e embasadas nesse contexto. Por meio da modelagem e aplicação de diversos modelos, como ARIMA, SARIMA e outros, foi possível analisar e interpretar os dados históricos de maneira precisa, obtendo previsões confiáveis.
 
 Durante o estudo, foram levantadas questões relacionadas à sazonalidade da demanda de água, influência de fatores externos imprevisíveis e mudanças no comportamento dos consumidores. Através da adaptação das técnicas de análise de séries temporais, foi possível abordar essas questões de forma eficiente e obter respostas relevantes para o gerenciamento do abastecimento de água.
 

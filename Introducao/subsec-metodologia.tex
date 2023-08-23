@@ -127,13 +127,9 @@ Com o intuito de realizar previsões e fazer comparações entre os modelos obti
 %    	
 %    \end{enumerate}
 
-
-
-
-
 \subsubsection{Etapas da pesquisa}\label{subsubsec:etp}
 
-A pesquisa foi conduzida seguindo as seguintes etapas:
+A pesquisa foi conduzida seguindo as etapas delineadas:
 
 \begin{figure}[!htpb]
 	\centering
@@ -145,40 +141,29 @@ A pesquisa foi conduzida seguindo as seguintes etapas:
 \end{figure}
 
 \begin{enumerate}[start=1, label={\textbf{Etapa} \arabic*}]
-	\item Análise exploratória dos dados - EDA (do inglês \textit{Exploratory Data Analysis})\label{etp:1}
 	
-	A análise exploratória dos dados (EDA) desempenha um papel fundamental na compreensão dos dados em questão. Essa etapa envolve a exploração e a compreensão das características dos dados, como a identificação de valores ausentes, a observação de padrões temporais e a detecção de possíveis anomalias. Gráficos de linha são comumente utilizados para visualizar a convergência dos dados e identificar possíveis desvios.
+	\item \label{etp:1} \textbf{Análise Exploratória de Dados (EDA)}: Nesta etapa inicial, compreende-se abrangentemente as características dos dados. As tarefas envolvem a identificação de valores ausentes, a observação de padrões temporais e a detecção de anomalias. Gráficos de linha são comuns para visualizar a convergência dos dados e desvios potenciais.
 	
-	\item Definição das variáveis preditoras e da variável a ser predita (MISO)\label{etp:2}
+	\item \label{etp:2} \textbf{Definição de Variáveis Preditoras e Variável Alvo (MISO)}: Na segunda etapa, as variáveis preditoras e a variável alvo para a previsão de Múltiplas Entradas e Uma Saída (MISO) são selecionadas. Além dos modelos de redes neurais RNN, LSTM, GRU, bem como o Prophet, conforme listados, diferentes modelos, como SARIMAX, ARX e ARIMAX, podem incorporar variáveis exógenas na modelagem. Essas variáveis adicionais aprimoram as capacidades de previsão do modelo, especialmente quando o horizonte de previsão se estende além dos dados históricos.
 	
-	Nesta etapa, são selecionadas as variáveis que serão utilizadas como preditoras e a variável que será alvo da previsão (MISO). Diferentes modelos, como SARIMAX, ARX e ARIMAX, podem ser utilizados para incluir variáveis exógenas na modelagem. Essas variáveis adicionais enriquecem a capacidade de previsão dos modelos, especialmente quando o horizonte de previsão se estende além dos dados históricos.
+	\item \label{etp:3} \textbf{Decomposição Sazonal-Tendência Usando STL (Decomposição Sazonal-Tendência)}: O método de decomposição STL separa uma série temporal em três componentes: sazonalidade, tendência e resíduo. Essa decomposição permite uma análise separada das diferentes influências presentes nos dados. O componente sazonal representa variações periódicas e repetitivas, o componente de tendência indica a direção geral dos dados ao longo do tempo, e o componente de resíduo captura variações não explicadas pelas componentes anteriores.
 	
-	\item Decomposição sazonal, de tendência e de resíduo usando a decomposição STL (do inglês \textit{Seasonal-Trend Decomposition})\label{etp:3}
+	\item \label{etp:4} \textbf{Divisão dos Dados}: É prática comum dividir o conjunto de dados em conjuntos de treinamento, validação e teste para avaliar o desempenho do modelo. Essa divisão permite uma análise abrangente e objetiva das habilidades de generalização dos modelos, evitando problemas de ajuste excessivo ou insuficiente. A proporção de alocação pode variar, mas uma abordagem comum é alocar 70\% para treinamento e validação, e os 30\% restantes para o conjunto de testes. A porção de treinamento e validação pode ser subdividida em 80\% para treinamento e 20\% para validação.
 	
-	A decomposição STL é um método utilizado para decompor uma série temporal em três componentes: sazonalidade, tendência e resíduo. Essa decomposição permite analisar separadamente as diferentes influências presentes nos dados. O componente sazonal representa as variações periódicas e repetitivas, o componente de tendência indica a direção geral dos dados ao longo do tempo e o componente de resíduo captura as variações não explicadas pelas componentes anteriores.
+	\item \label{etp:5} \textbf{Modelagem e Seleção do Modelo}: Nesta etapa, diversos modelos são construídos e avaliados. Alguns modelos comumente usados para previsão de séries temporais incluem ARIMA (Média Móvel Integrada Auto-Regressiva), SARIMA (ARIMA Sazonal), SARIMAX (ARIMA Sazonal com variáveis exógenas) e modelos de aprendizado de máquina como RNN, LSTM, GRU, além do Prophet. A escolha do modelo final baseia-se em critérios como desempenho na validação, simplicidade do modelo e interpretabilidade dos resultados.
 	
-	\item Separação dos dados\label{etp:4}
+	\item \label{etp:6} \textbf{Validação e Ajuste do Modelo}: Após a construção do modelo, é importante avaliar seu desempenho usando dados de validação. Métricas de avaliação como Erro Médio Absoluto (MAE), Erro Médio Percentual Absoluto Simétrico (sMAPE) e Raiz do Erro Médio Quadrático Relativo (RRMSE) podem ser usadas para comparar e selecionar o melhor modelo. Além disso, técnicas de ajuste como otimização de hiperparâmetros e refinamento do modelo usando dados de treinamento e validação combinados podem melhorar o desempenho do modelo selecionado.
 	
-	É comum dividir o conjunto de dados em conjuntos de treinamento, validação e teste para avaliar o desempenho dos modelos. Essa divisão permite uma análise mais completa e objetiva da capacidade de generalização dos modelos, evitando problemas de sobreajuste ou subajuste. A proporção utilizada pode variar, mas uma abordagem comum é alocar 70\% dos dados para treinamento e validação, e os 30\% restantes para o conjunto de teste. Em seguida, a porção destinada ao treinamento e validação pode ser subdividida em 80\% para treinamento e 20\% para validação.
+	\item \label{etp:7} \textbf{Previsão e Avaliação}: Com o modelo final ajustado, é possível fazer previsões para o conjunto de testes, que representa dados futuros não observados. Essas previsões são comparadas com os valores reais correspondentes para avaliar a qualidade e precisão do modelo. Métricas de desempenho mencionadas anteriormente (MAE, RRMSE, sMAPE) podem quantificar a precisão do modelo e compará-lo com outros modelos ou abordagens.
 	
-	\item Modelagem e seleção do modelo\label{etp:5}
+	\item \label{etp:8} \textbf{Relatório dos Resultados}: Ao final do processo, os resultados obtidos são documentados em um relatório. Esse relatório contém informações sobre as etapas realizadas, técnicas aplicadas, modelos usados e métricas de desempenho alcançadas. Deve ser claro e conciso, permitindo que outras pessoas entendam o trabalho realizado e possam replicá-lo ou desenvolvê-lo.
+
 	
-	Nesta etapa, diferentes modelos são construídos e avaliados. Alguns dos modelos amplamente utilizados para previsão de séries temporais incluem ARIMA (\textit{Autoregressive Integrated Moving Average}), SARIMA (\textit{Seasonal ARIMA}), SARIMAX (\textit{Seasonal ARIMA with exogenous variables}) e modelos de aprendizado de máquina, como redes neurais. A escolha do modelo final é baseada em critérios como o desempenho na validação, a simplicidade do modelo e a interpretabilidade dos resultados.
-	
-	\item Validação e ajuste do modelo\label{etp:6}
-	
-	Após a construção do modelo, é importante avaliar seu desempenho usando dados de validação. Métricas de avaliação, como o erro médio absoluto (MAE), o erro médio percentual absoluto simétrico (sMAPE) e o erro médio quadrático relativo (RRMSE), podem ser utilizadas para comparar e selecionar o melhor modelo. Além disso, técnicas de ajuste, como otimização de hiperparâmetros e reajuste do modelo com os dados de treinamento e validação combinados, podem ser aplicadas para melhorar o desempenho do modelo selecionado.
-	
-	\item Previsão e avaliação\label{etp:7}
-	
-	Com o modelo final ajustado, é possível fazer previsões para o conjunto de teste, que representa dados futuros não observados. Essas previsões são comparadas com os valores reais correspondentes para avaliar a qualidade e a precisão do modelo. Métricas de desempenho, como as mencionadas anteriormente (MAE, RRMSE, sMAPE), podem ser utilizadas para quantificar a acurácia do modelo e compará-lo com outros modelos ou abordagens.
-	
-	\item Relatório dos resultados\label{etp:9}
-	
-	Ao final do processo, os resultados obtidos são documentados em um relatório contendo informações sobre as etapas seguidas, as técnicas aplicadas, os modelos utilizados e as métricas de desempenho alcançadas. Esse relatório deve ser claro e objetivo, permitindo que outras pessoas entendam o trabalho realizado e possam reproduzi-lo ou construir sobre ele.
 \end{enumerate}
 
-Cada uma dessas etapas desempenha um papel importante no processo de pesquisa e modelagem de séries temporais, contribuindo para a compreensão dos dados, a construção e validação dos modelos e a obtenção de previsões precisas.
+Cada uma dessas etapas desempenha um papel crucial na pesquisa e no processo de modelagem de séries temporais, contribuindo para a compreensão dos dados, construção e validação dos modelos, além de previsões precisas.
+
+
 
 
     
