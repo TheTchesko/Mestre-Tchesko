@@ -131,8 +131,41 @@
 \usepackage{chngcntr}
 
 \numberwithin{equation}{section} % Numeração das equações em relação à seção
-\numberwithin{equation}{subsection} % Numeração das equações em relação à subseção
-\counterwithin{equation}{subsubsection} % Numeração das equações em relação à subsubseção
+%\numberwithin{equation}{subsection} % Numeração das equações em relação à subseção
+%\counterwithin{equation}{subsubsection} % Numeração das equações em relação à subsubseção
 
+
+\usepackage{fancyhdr}
+%
+%\pagestyle{fancy}
+%\fancyhead[R]{Capítulo \thesection} % Adicione "Seção X" ao cabeçalho
+%\renewcommand{\headrulewidth}{0pt} % Remove a linha horizontal superior
+%\fancyfoot[C]{} % Limpa o rodapé central
+%
+%\pagestyle{fancy}
+%\fancyhf{} % Limpa todos os cabeçalhos e rodapés anteriores
+%\fancyhead[R]{\leftmark} % Exibe o título do capítulo ou seção no cabeçalho direito
+%\fancyfoot[C]{\thepage} % Exibe o número da página no rodapé central
+%%\usepackage{fancyhdr}
+%%%\usepackage{lastpage}
+%
+\pagestyle{fancy}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt} % Remove a linha horizontal superior
+\fancyfoot[C]{} % Limpa o rodapé central
+%
+%% Defina um estilo de página personalizado para remover os números de página
+%\fancypagestyle{mystyle}{
+%	\fancyhf{} % Limpa todos os cabeçalhos e rodapés
+%	\renewcommand{\headrulewidth}{0pt} % Remove a linha horizontal no cabeçalho
+%	\fancyfoot[C]{} % Limpa o rodapé central
+%}
+
+
+\usepackage{longtable}
+
+
+% Defina a largura da primeira coluna (Informação)
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 
 

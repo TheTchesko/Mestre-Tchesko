@@ -1,13 +1,24 @@
 \subsubsection{An\'alise Explorat\'oria dos dados (EDA)}
 
-A partir do passo \ref{etp:1}, foi realizado o EDA (Exploratory Data Analysis) para processar os dados obtidos até o momento. O EDA permite responder às questões de pesquisa levantadas. Conforme mencionado por \citeonline{Yu2016}, na era dos grandes dados, é desafiador descobrir as regras, modelos analíticos e hipóteses por trás dos volumes massivos de dados caóticos, não estruturados e multimídia coletados por meio de vários canais. A análise exploratória de dados foi promovida por John Tukey como uma abordagem para explorar os dados, resumir suas principais características e formular hipóteses que possam direcionar a coleta adicional de dados e experimentos. No contexto de grandes análises de dados, várias técnicas de EDA têm sido adotadas.
+A partir do passo \ref{etp:1}, foi realizado o EDA (do inglês \textit{Exploratory Data Analysis}) para processar os dados obtidos até o momento. O EDA permite responder às questões de pesquisa levantadas. Conforme mencionado por \citeonline{Yu2016}, na era dos grandes dados, é desafiador descobrir as regras, modelos analíticos e hipóteses por trás dos volumes massivos de dados caóticos, não estruturados e multimídia coletados por meio de vários canais. A análise exploratória de dados foi promovida por John Tukey como uma abordagem para explorar os dados, resumir suas principais características e formular hipóteses que possam direcionar a coleta adicional de dados e experimentos. No contexto de grandes análises de dados, várias técnicas de EDA têm sido adotadas.
 
 Ao analisar a pergunta \ref{q1}, que relaciona a demanda com a variável prevista e a pressão para a variável PT01, pode-se observar na Figura \ref{fig:person} que ambas as variáveis apresentam uma correlação quase perfeita, com um coeficiente de correlação de Pearson ($r$) igual a 1. Portanto, para responder a essa pergunta, basta observar a correlação de Pearson na Figura \ref{fig:person}.
+
+\begin{figure}[H]
+	\centering
+	\caption{Correlação de Pearson}
+	\label{fig:person}
+	\includegraphics[width=0.9\linewidth]{Apendices/Figuras/modelagem-24h/person}
+	
+	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+\end{figure}
+
+A Figura \ref{fig:person} ilustra a correlação entre as variáveis no conjunto de dados em questão. Essa imagem representa graficamente a relação entre as variáveis e é usada para demonstrar a existência de uma correlação forte entre elas. Com base nessa análise, é possível responder à pergunta de pesquisa \ref{q1}, pois a correlação entre as variáveis é significativa.
 
 Para responder à pergunta \ref{q2}, é criada uma tabela para fornecer uma resposta mais completa.
 
 
-\begin{table}[!htb]
+\begin{table}[H]
 	\centering
 	\caption{Descrição estatística dos dados com o filtro aplicado das 18h às 21h}\label{tb:est}
 	\begin{tabular}{@{}cccccccccc@{}}

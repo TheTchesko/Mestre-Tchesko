@@ -1,12 +1,12 @@
 \subsection{M\'etricas de Avalia\c c\~ao de Modelos}\label{subsec:metrica}
 
-A métrica de Erro Quadrático Médio (MSE) é amplamente utilizada no campo do aprendizado de máquina para avaliar a qualidade dos modelos de previsão. O MSE é calculado pela média da soma dos quadrados das diferenças entre os valores reais e os valores previstos. Sua fórmula é a seguinte:
+A métrica de Erro Quadrático Médio (MSE) é amplamente utilizada no campo do aprendizado de máquina para avaliar a qualidade dos modelos de previsão. O MSE é calculado pela média da soma dos quadrados das diferenças entre os valores reais e os valores previstos,
 
 \begin{eqnarray}
 	MSE &=& \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 \label{eq:mse}
 \end{eqnarray}
 
-Nessa fórmula, $n$ representa o número de amostras, $y_i$ é o valor real correspondente à amostra $i$ e $\hat{y}_i$ é o valor previsto para a mesma amostra. O MSE é calculado como a média das diferenças ao quadrado entre os valores reais e os valores previstos.
+\noindent onde, $n$ representa o número de amostras, $y_i$ é o valor real correspondente à amostra $i$ e $\hat{y}_i$ é o valor previsto para a mesma amostra. O MSE é calculado como a média das diferenças ao quadrado entre os valores reais e os valores previstos.
 
 A utilização do MSE fornece uma medida quantitativa da precisão do modelo, pois penaliza de forma mais significativa os erros maiores. Ao elevar as diferenças ao quadrado, a métrica enfatiza a importância de minimizar as discrepâncias entre os valores reais e os valores previstos. Dessa forma, quanto menor o valor do MSE, melhor é o desempenho do modelo em termos de previsão.
 
@@ -14,19 +14,17 @@ Portanto, o MSE é uma métrica fundamental para avaliar a qualidade dos modelos
 
 \subsubsection{Erro Quadr\'atico M\'edio Raiz (RMSE)}
 
-O RMSE é uma métrica amplamente empregada na avaliação de modelos de previsão em séries temporais. Ele é calculado tomando a raiz quadrada do MSE, conforme mostrado na seguinte fórmula:
+O RMSE é uma métrica amplamente empregada na avaliação de modelos de previsão em séries temporais. Ele é calculado tomando a raiz quadrada do MSE, conforme segue,
 
 \begin{eqnarray}
-	RMSE &=& \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2} \label{eq:rmse}
+	RMSE &=& \sqrt{\dfrac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2} \label{eq:rmse}
 \end{eqnarray}
 
-Na equação \eqref{eq:rmse}, $n$ representa o número de amostras, $y_i$ é o valor real correspondente à amostra $i$, e $\hat{y}_i$ é o valor previsto para a mesma amostra. O RMSE fornece uma medida da dispersão média entre os valores reais e os valores previstos pelo modelo.
+\noindent onde \eqref{eq:rmse}, $n$ representa o número de amostras, $y_i$ é o valor real correspondente à amostra $i$, e $\hat{y}_i$ é o valor previsto para a mesma amostra. O RMSE fornece uma medida da dispersão média entre os valores reais e os valores previstos pelo modelo.
 
 Uma das vantagens de utilizar o RMSE é que, ao computar a raiz quadrada, o erro passa a ter a mesma escala da variável de interesse. Isso permite uma interpretação mais fácil dos resultados, sendo que um valor baixo de RMSE indica um bom desempenho do modelo, já que o erro se aproxima de zero.
 
-O RMSE possui algumas características positivas. Ele penaliza de forma significativa os valores discrepantes, caso seja necessário para o modelo. Além disso, o erro resultante está nas mesmas unidades da série temporal, facilitando a interpretação. O RMSE pode
-
-ser considerado uma combinação das melhores características do MSE e do Erro Absoluto Médio (MAE).
+O RMSE possui algumas características positivas. Ele penaliza de forma significativa os valores discrepantes, caso seja necessário para o modelo. Além disso, o erro resultante está nas mesmas unidades da série temporal, facilitando a interpretação. O RMSE pode ser considerado uma combinação das melhores características do MSE e do Erro Absoluto Médio (MAE).
 
 No entanto, o RMSE também apresenta algumas desvantagens. Ele tem uma interpretabilidade reduzida, uma vez que os erros ainda são elevados ao quadrado. Além disso, o RMSE é dependente da escala dos dados, o que impede sua comparação direta com modelos de séries temporais que utilizam unidades diferentes.
 
@@ -34,27 +32,27 @@ Apesar das limitações, o RMSE é uma métrica amplamente utilizada para avalia
 
 \subsubsection{Raiz do Erro M\'edio Quadr\'atico Relativo (RRMSE)}\label{subsub:rrmse}
 
-Vantagens do RRMSE :
+\noindent\textbf{Vantagens do RRMSE :}
 
-\begin{enumerate}
-	\item  Interpretação intuitiva: O RRMSE é expresso como uma porcentagem, o que facilita a compreensão da precisão relativa do modelo. Quanto menor o valor do RRMSE, mais próximas estão as previsões dos valores reais.
-	
-	\item  Considera a escala dos dados: O RRMSE leva em consideração a magnitude dos erros em relação aos valores de referência. Isso é especialmente útil quando os dados têm uma grande variação e escala, pois evita que erros de grande magnitude dominem a avaliação.
-	
-	\item  Comparação entre modelos e algoritmos: O RRMSE pode ser usado para comparar a precisão de diferentes modelos ou algoritmos em um problema de regressão. Ao calcular o RRMSE para cada modelo, é possível identificar aquele que apresenta melhor desempenho em relação aos valores reais.
-	
-	\item  Sensibilidade relativa a diferentes magnitudes de erro: O RRMSE captura erros relativos em diferentes magnitudes. Isso significa que ele é capaz de identificar discrepâncias proporcionais, independentemente do valor absoluto dos erros.
-\end{enumerate}
 
-Desvantagens do RRMSE:
+Interpretação intuitiva: O RRMSE é expresso como uma porcentagem, o que facilita a compreensão da precisão relativa do modelo. Quanto menor o valor do RRMSE, mais próximas estão as previsões dos valores reais.
+	
+Considera a escala dos dados: O RRMSE leva em consideração a magnitude dos erros em relação aos valores de referência. Isso é especialmente útil quando os dados têm uma grande variação e escala, pois evita que erros de grande magnitude dominem a avaliação.
+	
+Comparação entre modelos e algoritmos: O RRMSE pode ser usado para comparar a precisão de diferentes modelos ou algoritmos em um problema de regressão. Ao calcular o RRMSE para cada modelo, é possível identificar aquele que apresenta melhor desempenho em relação aos valores reais.
+	
+Sensibilidade relativa a diferentes magnitudes de erro: O RRMSE captura erros relativos em diferentes magnitudes. Isso significa que ele é capaz de identificar discrepâncias proporcionais, independentemente do valor absoluto dos erros.
 
-\begin{enumerate}
-	\item Sensibilidade a outliers: O RRMSE pode ser influenciado por valores discrepantes nos dados. Se houver valores extremos que não representem a tendência geral, o RRMSE pode ser distorcido, pois considera a média dos valores reais na fórmula de cálculo.
+
+\noindent\textbf{Desvantagens do RRMSE:}
+
+
+Sensibilidade a \textit{outliers}: O RRMSE pode ser influenciado por valores discrepantes nos dados. Se houver valores extremos que não representem a tendência geral, o RRMSE pode ser distorcido, pois considera a média dos valores reais na fórmula de cálculo.
 	
-	\item Necessidade de uma linha de base adequada: O RRMSE requer uma linha de base apropriada para comparação. Isso significa que é necessário ter um valor de referência confiável ou um modelo de referência para calcular o RRMSE e interpretar os resultados corretamente.
+Necessidade de uma linha de base adequada: O RRMSE requer uma linha de base apropriada para comparação. Isso significa que é necessário ter um valor de referência confiável ou um modelo de referência para calcular o RRMSE e interpretar os resultados corretamente.
 	
-	\item Foco exclusivo na precisão relativa: O RRMSE se concentra exclusivamente na precisão relativa e não leva em consideração outras métricas de desempenho, como tempo de execução, complexidade do modelo ou outros aspectos específicos do problema em questão. Portanto, é importante complementar o uso do RRMSE com outras métricas relevantes.
-\end{enumerate}
+Foco exclusivo na precisão relativa: O RRMSE se concentra exclusivamente na precisão relativa e não leva em consideração outras métricas de desempenho, como tempo de execução, complexidade do modelo ou outros aspectos específicos do problema em questão. Portanto, é importante complementar o uso do RRMSE com outras métricas relevantes,
+
 
 
 
@@ -64,7 +62,7 @@ Desvantagens do RRMSE:
 \end{eqnarray}
 
 
-Onde RMSE representa o Erro Médio Quadrático e ``Média dos Valores Reais'' denota a média aritmética dos valores reais no conjunto de dados.
+\noindent onde RMSE representa o Erro Médio Quadrático e ``Média dos Valores Reais'' denota a média aritmética dos valores reais no conjunto de dados.
 
 É essencial que sejam consideradas essas vantagens e desvantagens ao utilizar o RRMSE como métrica de avaliação. Além disso, é recomendado o uso de várias métricas em conjunto para obter uma visão mais completa do desempenho do modelo de regressão.
 
@@ -88,14 +86,11 @@ O cálculo do MAE é realizado utilizando o valor absoluto da diferença entre o
 	M A E &=& \dfrac{1}{n} \sum\left|y_i-\hat{y}_i\right|\label{eq:mae}
 \end{eqnarray}
 
-Sua interpretação é similar ao RMSE, em que o erro é expresso na mesma escala ou ordem
-
-de grandeza da variável estudada.
+Sua interpretação é similar ao RMSE, em que o erro é expresso na mesma escala ou ordem de grandeza da variável estudada.
 
 \subsubsection{Erro Percentual Absoluto M\'edio (MAPE)}
 
 O Erro Percentual Absoluto Médio (MAPE) é uma métrica que expressa o erro de previsão como uma porcentagem relativa ao valor observado. Ele é calculado somando as diferenças entre o valor real e o valor previsto (representando o erro), dividido pelo valor observado.
-
 O MAPE é calculado usando a seguinte fórmula:
 
 \begin{eqnarray}
@@ -103,51 +98,41 @@ O MAPE é calculado usando a seguinte fórmula:
 \end{eqnarray}
 
 No entanto, surge um problema quando o valor observado $y_i$ é igual a zero, pois é matematicamente impossível dividir por zero. O MAPE é uma medida de erro em que valores menores indicam um melhor desempenho de previsão.
-
 Uma alternativa ao MAPE é calcular $1 - \text{MAPE}$, que representa a porcentagem de acerto.
-
 O Erro Percentual Absoluto Médio é comumente usado como uma métrica de referência para avaliar o desempenho de modelos de previsão.
 
-Prós:
+\noindent\textbf{Vantagens do MAPE:}
 
-\begin{itemize}
-	\item Fácil de interpretar
-	\item Independente de escala, permitindo comparações entre diferentes séries temporais
-\end{itemize}
 
-Contras:
+Fácil de interpretar.
+Independente de escala, permitindo comparações entre diferentes séries temporais
 
-\begin{itemize}
-	\item Erro infinito se o valor real estiver próximo ou igual a zero
-	\item Previsões mais baixas estão propensas a ter um erro de 100\%, enquanto previsões mais altas podem ter um erro infinito, o que resulta em um viés de subprevisão.
-\end{itemize}
 
-Essas métricas são amplamente utilizadas na avaliação de modelos de previsão em diferentes áreas e ajudam a quantificar a qualidade das previsões realizadas pelos modelos.
+\noindent\textbf{Desvantagens do MAPE:}
+
+Erro infinito se o valor real estiver próximo ou igual a zero.
+Previsões mais baixas estão propensas a ter um erro de 100\%, enquanto previsões mais altas podem ter um erro infinito, o que resulta em um viés de subprevisão.
+Essa métrica são amplamente utilizadas na avaliação de modelos de previsão em diferentes áreas e ajudam a quantificar a qualidade das previsões realizadas pelos modelos.
 
 \subsubsection{Erro Percentual Absoluto M\'edio Sim\'etrico (sMAPE)}
 
 
-O sMAPE (Symmetric Mean Absolute Percentage Error), ou Erro Médio Percentual Absoluto Simétrico, é outra métrica comumente utilizada para avaliar a precisão de modelos de previsão. Aqui estão os prós e contras do sMAPE:
+O sMAPE (do inglês \textit{Symmetric Mean Absolute Percentage Error}), ou Erro Médio Percentual Absoluto Simétrico, é outra métrica comumente utilizada para avaliar a precisão de modelos de previsão. Aqui estão as vantagens e desvantagens do sMAPE:
 
-Prós do sMAPE:
+\noindent\textbf{Vantagens do sMAPE:}
 
-\begin{enumerate}
-	\item Interpretação intuitiva: O sMAPE é expresso como uma porcentagem, facilitando a compreensão da precisão relativa do modelo. Valores menores indicam uma melhor precisão.
-	
-	\item Simetria: Ao contrário do MAPE (Mean Absolute Percentage Error), o sMAPE é simétrico em relação aos valores previstos e reais. Isso significa que ele considera igualmente as discrepâncias de subestimação e superestimação.
-	
-	\item Robustez contra valores nulos: O sMAPE é adequado para lidar com valores nulos nos dados, pois a divisão por zero é evitada no cálculo da métrica.
-\end{enumerate}
 
-Contras do sMAPE:
+Interpretação intuitiva: O sMAPE é expresso como uma porcentagem, facilitando a compreensão da precisão relativa do modelo. Valores menores indicam uma melhor precisão.	
+Simetria: Ao contrário do MAPE (do inglês \textit{Mean Absolute Percentage Error}), o sMAPE é simétrico em relação aos valores previstos e reais. Isso significa que ele considera igualmente as discrepâncias de subestimação e superestimação.	
+Robustez contra valores nulos: O sMAPE é adequado para lidar com valores nulos nos dados, pois a divisão por zero é evitada no cálculo da métrica.
 
-\begin{enumerate}
-	\item Sensibilidade a valores extremos: O sMAPE é sensível a valores extremos nos dados. Se houver valores discrepantes que não representem a tendência geral, eles podem influenciar significativamente a métrica.
-	
-	\item Assimetria em torno de zero: Embora o sMAPE seja simétrico em relação aos valores previstos e reais, ele não é simétrico em torno de zero. Isso pode causar interpretações inconsistentes, especialmente quando os valores reais são próximos de zero.
-\end{enumerate}
 
-A fórmula do sMAPE, usando a média aritmética, é dada por:
+\noindent\textbf{Desvantagens do sMAPE:}
+
+
+Sensibilidade a valores extremos: O sMAPE é sensível a valores extremos nos dados. Se houver valores discrepantes que não representem a tendência geral, eles podem influenciar significativamente a métrica.	
+Assimetria em torno de zero: Embora o sMAPE seja simétrico em relação aos valores previstos e reais, ele não é simétrico em torno de zero. Isso pode causar interpretações inconsistentes, especialmente quando os valores reais são próximos de zero.
+
 
 
 \begin{eqnarray}
@@ -155,6 +140,9 @@ A fórmula do sMAPE, usando a média aritmética, é dada por:
 \end{eqnarray}
 
 
-Onde $y_i$ representa o valor real, $\hat{y}_i$ representa o valor previsto e $n$ é o número total de amostras.
-
+\noindent onde $y_i$ representa o valor real, $\hat{y}_i$ representa o valor previsto e $n$ é o número total de amostras.
 Ao utilizar o sMAPE como métrica de avaliação, é importante considerar esses prós e contras. Além disso, recomenda-se o uso de várias métricas em conjunto para obter uma visão abrangente do desempenho do modelo de previsão.
+
+
+
+

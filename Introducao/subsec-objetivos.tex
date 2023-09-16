@@ -1,12 +1,14 @@
-\subsection{Objetivo geral} \label{subsec:objetivos}
+\subsection{Objetivo Geral} \label{subsec:objetivos}
 
-O objetivo desta pesquisa é identificar o modelo mais adequado de séries temporais para abordar a escassez de água em Curitiba. Ao longo da dissertação, serão avaliados diversos modelos de regressão, com destaque para os modelos de redes neurais e o Prophet, conforme listados. É importante mencionar que a pesquisa enfatizará os modelos de \textit{gradient boosting}, amplamente reconhecidos na literatura por sua eficácia na previsão de séries temporais. Os principais modelos analisados incluem o ARIMA e suas variações mais contemporâneas. Além das previsões, também serão realizadas análises de anomalias nos dados, buscando compreender as causas subjacentes a essas ocorrências
+O objetivo desta pesquisa é identificar o modelo de aprendizado de máquina mais adequado para previsão de séries temporais. 
+
+Ao longo da dissertação, serão avaliados diversos modelos de regressão, com destaque para os modelos de redes neurais e o Prophet. É importante mencionar que a pesquisa enfatizará os modelos de \textit{gradient boosting}, além do ARIMA e suas variações mais contemporâneas. Além das previsões, também serão realizadas análises de anomalias nos dados, buscando compreender as causas subjacentes a essas ocorrências.
  
     
     
-    \subsubsection{Objetivos espec\'ificos e quest\~ao de pesquisa} \label{subsubsec:obespec}
+    \subsubsection{Objetivos Espec\'ificos e Quest\~ao de Pesquisa} \label{subsubsec:obespec}
     
-Neste estudo, busca-se identificar e compreender possíveis anomalias nos dados, bem como investigar as causas por trás dessas ocorrências. O objetivo é responder às perguntas de pesquisa relacionadas a essas anomalias.
+Neste estudo, busca-se identificar e compreender possíveis anomalias nos dados, bem como investigar as causas por trás dessas ocorrências. Entre os objetivos específicos está responder às perguntas de pesquisa relacionadas a essas anomalias.
 
 \begin{enumerate}[start=1, label={\textbf{Q} \arabic*}]
 	\item \label{q1} Qual é a adequação da pressão atual para atender à demanda diária?
@@ -19,7 +21,7 @@ Neste estudo, busca-se identificar e compreender possíveis anomalias nos dados,
 	\item \label{q5:a} Qual é o nível ideal no reservatório para evitar a ativação das bombas da SANEPAR durante o período de maior demanda, das 18h às 21h, sem comprometer o abastecimento de água para a população? Além disso, como variam as médias das vazões nos horários críticos (18h às 21h) para as diferentes estações do ano (Outono, Inverno, Primavera, Verão)? 
 	\item \label{q5:b} Existe tendência, padrão, sazonalidade para os dados destes três anos do Bairro Alto?
 	\item \label{q5:c} Identificar quais os horários de maior demanda das $18$ às $21$?
-	\item \label{q5:d} Quanto tenho que armazenar previamente no reservatório para não acionar as bombas no horário de pico?
-	\item \label{q5:e} Se a vazão cresce e a pressão decresce temos uma ANOMALIA na rede (com base no histórico).	
+	\item \label{q5:d} Quanto deve-se armazenar previamente no reservatório para não acionar as bombas no horário de pico?
+	\item \label{q5:e} Se a vazão cresce e a pressão decresce existe uma ANOMALIA na rede (com base no histórico).	
 	\end{enumerate}
 \end{enumerate}

@@ -1,14 +1,17 @@
 \babel@toc {brazil}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {brazil}{}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Cruzamento de palavras-chave através da aplicação de filtros de ano e de linguagem\relax }}{18}{table.caption.12}%
-\contentsline {table}{\numberline {2}{\ignorespaces Fator de impacto\relax }}{20}{table.caption.14}%
-\contentsline {table}{\numberline {3}{\ignorespaces Áreas e seus valores respetivos de artigos em cada área.\relax }}{23}{table.caption.19}%
-\contentsline {table}{\numberline {4}{\ignorespaces Descrição estatística dos dados com o filtro aplicado das 18h às 21h\relax }}{68}{table.caption.41}%
-\contentsline {table}{\numberline {5}{\ignorespaces Teste Nemenyi\relax }}{78}{table.caption.47}%
-\contentsline {table}{\numberline {6}{\ignorespaces Demanda de água\relax }}{87}{table.caption.51}%
-\contentsline {table}{\numberline {7}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {treino}\relax }}{99}{table.caption.53}%
-\contentsline {table}{\numberline {8}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {teste}\relax }}{100}{table.caption.54}%
-\contentsline {table}{\numberline {9}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {validação}\relax }}{101}{table.caption.55}%
-\contentsline {table}{\numberline {10}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {inteiro}\relax }}{102}{table.caption.56}%
-\contentsline {table}{\numberline {11}{\ignorespaces Comparação dos modelos Ljung Box\relax }}{103}{table.caption.57}%
+\contentsline {table}{\numberline {1}{\ignorespaces Cruzamento de palavras-chave através da aplicação de filtros de área}}{30}{table.caption.9}%
+\contentsline {table}{\numberline {2}{\ignorespaces Resumo dos Dados}}{30}{table.caption.10}%
+\contentsline {table}{\numberline {3}{\ignorespaces Fator de impacto}}{31}{table.caption.11}%
+\contentsline {table}{\numberline {4}{\ignorespaces Os autores que mais publicam em relação ao tema de pesquisa}}{33}{table.caption.12}%
+\contentsline {table}{\numberline {5}{\ignorespaces Países com maior número de publicação}}{33}{table.caption.13}%
+\contentsline {table}{\numberline {6}{\ignorespaces Modelos baseado na literatura e nos artigos}}{36}{table.caption.14}%
+\contentsline {table}{\numberline {7}{\ignorespaces Descrição estatística dos dados com o filtro aplicado das 18h às 21h}}{82}{table.caption.39}%
+\contentsline {table}{\numberline {8}{\ignorespaces Teste Nemenyi}}{90}{table.caption.47}%
+\contentsline {table}{\numberline {9}{\ignorespaces Demanda de água}}{98}{table.caption.52}%
+\contentsline {table}{\numberline {10}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {treino}}}{112}{table.caption.54}%
+\contentsline {table}{\numberline {11}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {teste}}}{113}{table.caption.55}%
+\contentsline {table}{\numberline {12}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {validação}}}{114}{table.caption.56}%
+\contentsline {table}{\numberline {13}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {inteiro}}}{115}{table.caption.57}%
+\contentsline {table}{\numberline {14}{\ignorespaces Comparação dos modelos Ljung Box}}{117}{table.caption.58}%

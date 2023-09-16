@@ -1,61 +1,60 @@
 \babel@toc {brazil}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {brazil}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Paradigma de aprendizado de máquina\relax }}{2}{figure.caption.2}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Mapa das Etapas\relax }}{5}{figure.caption.3}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Estrutura da dissertação\relax }}{10}{figure.caption.4}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Detecção de anomalias\relax }}{12}{figure.caption.5}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Exemplo de séries temporais\relax }}{13}{figure.caption.6}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Processo estocástico\relax }}{14}{figure.caption.7}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Fluxograma do problema de pesquisa\relax }}{15}{figure.caption.8}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Etapas da Revisão\relax }}{15}{figure.caption.9}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Palavras-chave mais populares na Scopus\relax }}{17}{figure.caption.10}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Palavras-chave mais populares na Web of Science\relax }}{18}{figure.caption.11}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Analise das quantidades de artigos em relação aos anos\relax }}{19}{figure.caption.13}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Relação de autores entre artigos publicados\relax }}{21}{figure.caption.15}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Ligação bibliográfica entre os autores\relax }}{21}{figure.caption.16}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Mapa mundial da publicação de artigos em todo o mundo\relax }}{22}{figure.caption.17}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Áreas de aplicação do tema\relax }}{23}{figure.caption.18}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Comparação dos modelos AR e ARX\relax }}{32}{figure.caption.20}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Modelo MA(7) \relax }}{36}{figure.caption.21}%
-\contentsline {figure}{\numberline {18}{\ignorespaces ARMA (7,7)\relax }}{36}{figure.caption.22}%
-\contentsline {figure}{\numberline {19}{\ignorespaces ARIMA (7,1,7)\relax }}{37}{figure.caption.23}%
-\contentsline {figure}{\numberline {20}{\ignorespaces SARIMA $(7,1,7) (2,1,1)_{12}$\relax }}{38}{figure.caption.24}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Comparação entre ARIMAX e SARIMAX\relax }}{40}{figure.caption.25}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Previsões do Modelo Prophet para o Reservatório LT01\relax }}{42}{figure.caption.26}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Corelação de Pearson\relax }}{43}{figure.caption.27}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Regressão linear LT01 vs PT01 correlação 98\%\relax }}{44}{figure.caption.28}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Regressão linear (LR) um passo a frente\relax }}{44}{figure.caption.29}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Regressor de \'Arvore de Decis\~ao \relax }}{46}{figure.caption.30}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Decision Tree Regressor\relax }}{46}{figure.caption.31}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Regressão da Floresta Aleatória (RFR)\relax }}{47}{figure.caption.32}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Esquema da Floresta Aleatória\relax }}{48}{figure.caption.33}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Impulsionando gradiente com XGBoost e LightGBM\relax }}{48}{figure.caption.34}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Compara-se o crescimento em folha com o crescimento em nível\relax }}{51}{figure.caption.35}%
-\contentsline {figure}{\numberline {32}{\ignorespaces A performance da regressão utilizando XGBoost e LightGBM é comparada\relax }}{52}{figure.caption.36}%
-\contentsline {figure}{\numberline {33}{\ignorespaces RNN - Recurrent Neural Network\relax }}{54}{figure.caption.37}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Diagrama Ilustrativo do Funcionamento de uma Unidade Recorrente Gated (GRU)\relax }}{57}{figure.caption.38}%
-\contentsline {figure}{\numberline {35}{\ignorespaces RNN vs LSTM vs GRU\relax }}{58}{figure.caption.39}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Arquitetura do Transformer\relax }}{59}{figure.caption.40}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Decomposição STL\relax }}{71}{figure.caption.42}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Violino no nível do reservatório\relax }}{72}{figure.caption.43}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Violino da vazão de recalque\relax }}{72}{figure.caption.44}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Autocorrelação e Autocorrelação parcial\relax }}{74}{figure.caption.45}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Ruído branco\relax }}{75}{figure.caption.46}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Análise comparativa dos modelos utilizando gráficos de violino\relax }}{81}{figure.caption.48}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Análise Comparativa dos Modelos Utilizando Gráfico de Barras\relax }}{82}{figure.caption.49}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Demanda Média das Variáveis de Fluxo\relax }}{87}{figure.caption.50}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Comparação dos modelos AR, ARX e MA, 1 dia à frente \relax }}{104}{figure.caption.58}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Comparação dos modelos AR, ARX e MA, 7 dias à frente \relax }}{104}{figure.caption.59}%
-\contentsline {figure}{\numberline {47}{\ignorespaces Comparação dos modelos AR, ARX e MA, 14 dias à frente \relax }}{104}{figure.caption.60}%
-\contentsline {figure}{\numberline {48}{\ignorespaces Comparação dos modelos AR, ARX e MA, 30 dias à frente \relax }}{105}{figure.caption.61}%
-\contentsline {figure}{\numberline {49}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 1 dia à frente \relax }}{105}{figure.caption.62}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 7 dias à frente \relax }}{105}{figure.caption.63}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 14 dias à frente \relax }}{106}{figure.caption.64}%
-\contentsline {figure}{\numberline {52}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 30 dias à frente \relax }}{106}{figure.caption.65}%
-\contentsline {figure}{\numberline {53}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 1 dia à frente \relax }}{106}{figure.caption.66}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 7 dias à frente \relax }}{107}{figure.caption.67}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 14 dias à frente \relax }}{107}{figure.caption.68}%
-\contentsline {figure}{\numberline {56}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 30 dias à frente \relax }}{107}{figure.caption.69}%
-\contentsline {figure}{\numberline {57}{\ignorespaces A rede neural recorrente (RNN) com todos os horizontes \relax }}{108}{figure.caption.70}%
-\contentsline {figure}{\numberline {58}{\ignorespaces Previsões do Modelo Prophet para Diferentes Horizontes\relax }}{108}{figure.caption.71}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Exemplo de séries temporais}}{16}{figure.caption.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Processo estocástico}}{17}{figure.caption.3}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Paradigma de aprendizado de máquina}}{19}{figure.caption.4}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Estrutura da dissertação}}{26}{figure.caption.5}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Fluxograma do problema de pesquisa}}{27}{figure.caption.6}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Etapas da Revisão}}{28}{figure.caption.7}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Modelos de series temporais mais populares na Scopus e WoS }}{29}{figure.caption.8}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Fluxograma da árvore de decisão}}{47}{figure.caption.15}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Árvore de decisão mapa mental}}{48}{figure.caption.16}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Esquema da Floresta Aleatória}}{49}{figure.caption.17}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Impulsionando gradiente com XGBoost e LightGBM}}{50}{figure.caption.18}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Compara-se o crescimento em folha com o crescimento em nível}}{52}{figure.caption.19}%
+\contentsline {figure}{\numberline {13}{\ignorespaces RNN - Recurrent Neural Network}}{56}{figure.caption.20}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama Ilustrativo do Funcionamento de uma Unidade Recorrente Gated (GRU)}}{59}{figure.caption.21}%
+\contentsline {figure}{\numberline {15}{\ignorespaces RNN vs LSTM vs GRU}}{60}{figure.caption.22}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Arquitetura do Transformer}}{61}{figure.caption.23}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Comparação dos modelos AR e ARX}}{74}{figure.caption.24}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Modelo MA(7) }}{74}{figure.caption.25}%
+\contentsline {figure}{\numberline {19}{\ignorespaces ARMA (7,7)}}{75}{figure.caption.26}%
+\contentsline {figure}{\numberline {20}{\ignorespaces ARIMA (7,1,7)}}{75}{figure.caption.27}%
+\contentsline {figure}{\numberline {21}{\ignorespaces SARIMA $(7,1,7) (2,1,1)_{12}$}}{75}{figure.caption.28}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Comparação entre ARIMAX e SARIMAX}}{76}{figure.caption.29}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Previsões do modelo Prophet para o Reservatório LT01}}{76}{figure.caption.30}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Regressão linear LT01 vs PT01 correlação 98\%}}{77}{figure.caption.31}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Regressão linear (LR) um passo a frente}}{77}{figure.caption.32}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Regressor de \'Arvore de Decis\~ao }}{77}{figure.caption.33}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Regressão da Floresta Aleatória (RFR)}}{78}{figure.caption.34}%
+\contentsline {figure}{\numberline {28}{\ignorespaces A performance da regressão utilizando XGBoost e LightGBM é comparada}}{78}{figure.caption.35}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Dados completos com uma frequência média de 24 horas}}{79}{figure.caption.36}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Plotagem de dados para o ano de 2020}}{80}{figure.caption.37}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Correlação de Pearson}}{81}{figure.caption.38}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Decomposição STL aditiva dos dados coletados}}{83}{figure.caption.40}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Decomposição STL multiplicativa dos dados coletados}}{84}{figure.caption.41}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Violino no nível do reservatório}}{84}{figure.caption.42}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Violino da vazão de recalque}}{85}{figure.caption.43}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Autocorrelação e Autocorrelação parcial}}{86}{figure.caption.44}%
+\contentsline {figure}{\numberline {37}{\ignorespaces ACF}}{86}{figure.caption.44}%
+\contentsline {figure}{\numberline {38}{\ignorespaces PACF}}{87}{figure.caption.45}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Ruído branco}}{88}{figure.caption.46}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Comparação dos modelos ARIMA}}{93}{figure.caption.48}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Comparação de modelos de regressão}}{93}{figure.caption.49}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Análise Comparativa dos Modelos Utilizando Gráfico de Barras}}{94}{figure.caption.50}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Demanda Média das Variáveis de Fluxo}}{98}{figure.caption.51}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Comparação dos modelos AR, ARX e MA, 1 dia à frente }}{118}{figure.caption.59}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Comparação dos modelos AR, ARX e MA, 7 dias à frente }}{118}{figure.caption.60}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Comparação dos modelos AR, ARX e MA, 14 dias à frente }}{118}{figure.caption.61}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Comparação dos modelos AR, ARX e MA, 30 dias à frente }}{119}{figure.caption.62}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 1 dia à frente }}{119}{figure.caption.63}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 7 dias à frente }}{119}{figure.caption.64}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 14 dias à frente }}{120}{figure.caption.65}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Comparação dos modelos ARMA e ARIMA, 30 dias à frente }}{120}{figure.caption.66}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 1 dia à frente }}{121}{figure.caption.67}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 7 dias à frente }}{121}{figure.caption.68}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 14 dias à frente }}{122}{figure.caption.69}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Comparação dos modelos ARIMAX, SARIMA e SARIMAX, 30 dias à frente }}{122}{figure.caption.70}%
+\contentsline {figure}{\numberline {56}{\ignorespaces A rede neural recorrente (RNN) com todos os horizontes }}{123}{figure.caption.71}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Previsões do Modelo Prophet para Diferentes Horizontes}}{123}{figure.caption.72}%

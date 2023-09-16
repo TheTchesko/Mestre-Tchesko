@@ -3,92 +3,76 @@
 \BOOKMARK [1][-]{los.1}{Lista de Abreviaturas e Siglas}{}% 3
 \BOOKMARK [1][-]{toc.1}{Sum\341rio}{}% 4
 \BOOKMARK [1][-]{section.1}{Introdu\347\343o}{}% 5
-\BOOKMARK [2][-]{subsection.1.1}{Contexto da pesquisa}{section.1}% 6
-\BOOKMARK [3][-]{subsubsection.1.1.1}{Motiva\347\343o da pesquisa}{subsection.1.1}% 7
-\BOOKMARK [2][-]{subsection.1.2}{Objetivo geral}{section.1}% 8
-\BOOKMARK [3][-]{subsubsection.1.2.1}{Objetivos espec\355ficos e quest\343o de pesquisa}{subsection.1.2}% 9
-\BOOKMARK [2][-]{subsection.1.3}{Descri\347\343o do problema}{section.1}% 10
-\BOOKMARK [2][-]{subsection.1.4}{Procedimentos metodol\363gicos}{section.1}% 11
-\BOOKMARK [3][-]{subsubsection.1.4.1}{Etapas da pesquisa}{subsection.1.4}% 12
-\BOOKMARK [2][-]{subsection.1.5}{Justificativa da pesquisa}{section.1}% 13
+\BOOKMARK [2][-]{subsection.1.1}{Contexto da Pesquisa}{section.1}% 6
+\BOOKMARK [3][-]{subsubsection.1.1.1}{Motiva\347\343o da Pesquisa}{subsection.1.1}% 7
+\BOOKMARK [2][-]{subsection.1.2}{Objetivo Geral}{section.1}% 8
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Objetivos Espec\355ficos e Quest\343o de Pesquisa}{subsection.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.3}{Descri\347\343o do Problema}{section.1}% 10
+\BOOKMARK [2][-]{subsection.1.4}{Procedimentos Metodol\363gicos}{section.1}% 11
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Etapas da Pesquisa}{subsection.1.4}% 12
+\BOOKMARK [2][-]{subsection.1.5}{Justificativa da Pesquisa}{section.1}% 13
 \BOOKMARK [3][-]{subsubsection.1.5.1}{Contribui\347\365es}{subsection.1.5}% 14
-\BOOKMARK [2][-]{subsection.1.6}{Estrutura do trabalho}{section.1}% 15
-\BOOKMARK [1][-]{section.2}{Referencial}{}% 16
-\BOOKMARK [2][-]{subsection.2.1}{Detec\347\343o de anomalias}{section.2}% 17
-\BOOKMARK [2][-]{subsection.2.2}{Revis\343o sistem\341tica da literatura}{section.2}% 18
-\BOOKMARK [2][-]{subsection.2.3}{Problematiza\347\343o da Revis\343o}{section.2}% 19
-\BOOKMARK [2][-]{subsection.2.4}{Metodologia}{section.2}% 20
-\BOOKMARK [2][-]{subsection.2.5}{Resultados da Busca de Revis\343o}{section.2}% 21
-\BOOKMARK [2][-]{subsection.2.6}{Principais conclus\343o}{section.2}% 22
-\BOOKMARK [1][-]{section.3}{Base Te\363rica}{}% 23
-\BOOKMARK [2][-]{subsection.3.1}{M\351tricas de Avalia\347\343o de Modelos}{section.3}% 24
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Erro Quadr\341tico M\351dio Raiz \(RMSE\)}{subsection.3.1}% 25
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Raiz do Erro M\351dio Quadr\341tico Relativo \(RRMSE\)}{subsection.3.1}% 26
-\BOOKMARK [3][-]{subsubsection.3.1.3}{Erro Absoluto M\351dio \(MAE\)}{subsection.3.1}% 27
-\BOOKMARK [3][-]{subsubsection.3.1.4}{Erro Percentual Absoluto M\351dio \(MAPE\)}{subsection.3.1}% 28
-\BOOKMARK [3][-]{subsubsection.3.1.5}{Erro Percentual Absoluto M\351dio Sim\351trico \(sMAPE\)}{subsection.3.1}% 29
-\BOOKMARK [2][-]{subsection.3.2}{Modelos de S\351ries Temporais Univariados}{section.3}% 30
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Componente Autorregressivo}{subsection.3.2}% 31
-\BOOKMARK [3][-]{subsubsection.3.2.2}{AR\(0\): Ru\355do branco}{subsection.3.2}% 32
-\BOOKMARK [3][-]{subsubsection.3.2.3}{AR\(1\): Caminhadas aleat\363rias e Oscila\347\365es}{subsection.3.2}% 33
-\BOOKMARK [3][-]{subsubsection.3.2.4}{AR\(p\): Termos de ordem superior}{subsection.3.2}% 34
-\BOOKMARK [3][-]{subsubsection.3.2.5}{M\351dia M\363vel}{subsection.3.2}% 35
-\BOOKMARK [3][-]{subsubsection.3.2.6}{Modelos ARMA e ARIMA}{subsection.3.2}% 36
-\BOOKMARK [3][-]{subsubsection.3.2.7}{ARIMA}{subsection.3.2}% 37
-\BOOKMARK [3][-]{subsubsection.3.2.8}{SARIMA}{subsection.3.2}% 38
-\BOOKMARK [2][-]{subsection.3.3}{Modelos de S\351rie Temporal Multivariada}{section.3}% 39
-\BOOKMARK [3][-]{subsubsection.3.3.1}{ARIMAX e SARIMAX}{subsection.3.3}% 40
-\BOOKMARK [2][-]{subsection.3.4}{Modelos de Aprendizado de M\341quina Supervisionados}{section.3}% 41
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Prophet}{subsection.3.4}% 42
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Regress\343o Linear \(LR\)}{subsection.3.4}% 43
-\BOOKMARK [3][-]{subsubsection.3.4.3}{Defini\347\343o do modelo}{subsection.3.4}% 44
-\BOOKMARK [3][-]{subsubsection.3.4.4}{Regressor de \301rvore de Decis\343o \(do ingl\352s Decision Tree Regressor\)}{subsection.3.4}% 45
-\BOOKMARK [3][-]{subsubsection.3.4.5}{Floresta Aleat\363ria \(Random Forest\)}{subsection.3.4}% 46
-\BOOKMARK [3][-]{subsubsection.3.4.6}{Gradient Boosting \(como XGBoost, LightGBM\)}{subsection.3.4}% 47
-\BOOKMARK [3][-]{subsubsection.3.4.7}{O Gradiente em Gradiente de Boosting \(Refor\347o\)}{subsection.3.4}% 48
-\BOOKMARK [3][-]{subsubsection.3.4.8}{Algoritmos de boosting de gradiente}{subsection.3.4}% 49
-\BOOKMARK [3][-]{subsubsection.3.4.9}{A diferen\347a entre XGBoost e LightGBM}{subsection.3.4}% 50
-\BOOKMARK [2][-]{subsection.3.5}{Introdu\347\343o \340s Redes Neurais no Deep Learning}{section.3}% 51
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Rede Neural Recorrente \(RNN - Recurrent Neural Network\)}{subsection.3.5}% 52
-\BOOKMARK [3][-]{subsubsection.3.5.2}{Compreendendo Redes de Mem\363ria de Curto e Longo Prazo \(LSTM\)}{subsection.3.5}% 53
-\BOOKMARK [3][-]{subsubsection.3.5.3}{GRU \(Gated Recurrent Unit - Unidade Recorrente com Port\365es\)}{subsection.3.5}% 54
-\BOOKMARK [3][-]{subsubsection.3.5.4}{An\341lise Comparativa entre os Modelos RNN, LSTM e GRU}{subsection.3.5}% 55
-\BOOKMARK [3][-]{subsubsection.3.5.5}{Explorando o Transformer: Al\351m dos Bits e Bytes}{subsection.3.5}% 56
-\BOOKMARK [2][-]{subsection.3.6}{Estudo de Caso Emp\355rico}{section.3}% 57
-\BOOKMARK [3][-]{subsubsection.3.6.1}{Defini\347\343o do problema}{subsection.3.6}% 58
-\BOOKMARK [3][-]{subsubsection.3.6.2}{Coleta de dados}{subsection.3.6}% 59
-\BOOKMARK [3][-]{subsubsection.3.6.3}{An\341lise explorat\363ria dos dados}{subsection.3.6}% 60
-\BOOKMARK [3][-]{subsubsection.3.6.4}{Escolha do modelo}{subsection.3.6}% 61
-\BOOKMARK [3][-]{subsubsection.3.6.5}{Divis\343o dos dados}{subsection.3.6}% 62
-\BOOKMARK [3][-]{subsubsection.3.6.6}{Ajuste do modelo}{subsection.3.6}% 63
-\BOOKMARK [3][-]{subsubsection.3.6.7}{Avalia\347\343o do modelo}{subsection.3.6}% 64
-\BOOKMARK [3][-]{subsubsection.3.6.8}{Previs\365es Futuras}{subsection.3.6}% 65
-\BOOKMARK [3][-]{subsubsection.3.6.9}{Monitoramento e Ajuste Cont\355nuo}{subsection.3.6}% 66
-\BOOKMARK [3][-]{subsubsection.3.6.10}{Principais Conclus\343o}{subsection.3.6}% 67
-\BOOKMARK [1][-]{section.4}{Resultados}{}% 68
-\BOOKMARK [2][-]{subsection.4.1}{Planejamento do Problema}{section.4}% 69
-\BOOKMARK [3][-]{subsubsection.4.1.1}{An\341lise Explorat\363ria dos dados \(EDA\)}{subsection.4.1}% 70
-\BOOKMARK [3][-]{subsubsection.4.1.2}{M\372ltiplas entradas e sa\355da \372nica \(MISO\)}{subsection.4.1}% 71
-\BOOKMARK [3][-]{subsubsection.4.1.3}{Decomposi\347\343o STL}{subsection.4.1}% 72
-\BOOKMARK [3][-]{subsubsection.4.1.4}{Separa\347\343o dos dados}{subsection.4.1}% 73
-\BOOKMARK [3][-]{subsubsection.4.1.5}{Modelagem e Sele\347\343o do Modelo}{subsection.4.1}% 74
-\BOOKMARK [3][-]{subsubsection.4.1.6}{Horizonte}{subsection.4.1}% 75
-\BOOKMARK [3][-]{subsubsection.4.1.7}{Previs\343o e Avalia\347\343o}{subsection.4.1}% 76
-\BOOKMARK [3][-]{subsubsection.4.1.8}{Relat\363rio dos Resultados}{subsection.4.1}% 77
-\BOOKMARK [3][-]{subsubsection.4.1.9}{Compara\347\343o dos modelos}{subsection.4.1}% 78
-\BOOKMARK [2][-]{subsection.4.2}{Estudo de Caso Emp\355rico Resultado}{section.4}% 79
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Descri\347\343o do sistema de abastecimento de \341gua}{subsection.4.2}% 80
-\BOOKMARK [3][-]{subsubsection.4.2.2}{An\341lise explorat\363ria dos dados}{subsection.4.2}% 81
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Quest\365es de pesquisa 1 a 4}{subsection.4.2}% 82
-\BOOKMARK [3][-]{subsubsection.4.2.4}{Quest\343o de pesquisa 5}{subsection.4.2}% 83
-\BOOKMARK [3][-]{subsubsection.4.2.5}{Discuss\343o geral e conclus\365es}{subsection.4.2}% 84
-\BOOKMARK [1][-]{section.5}{Conclus\365es}{}% 85
-\BOOKMARK [2][-]{subsection.5.1}{Limita\347\365es da Pesquisa}{section.5}% 86
-\BOOKMARK [2][-]{subsection.5.2}{Propostas Futuras}{section.5}% 87
-\BOOKMARK [1][-]{subsection.5.2}{Refer\352ncias}{}% 88
-\BOOKMARK [1][-]{appendix.A}{Ap\352ndice - Compara\347\343o dos modelos de previs\343o de series temporais m\351dia de 24h}{}% 89
-\BOOKMARK [1][-]{appendix.B}{Ap\352ndice - Compara\347\343o dos modelos de previs\343o com o m\351todo Ljung-Box}{}% 90
-\BOOKMARK [1][-]{appendix.C}{Ap\352ndice - Modelos AR, ARX e MA }{}% 91
-\BOOKMARK [1][-]{appendix.D}{Ap\352ndice - Modelos ARMA e ARIMA }{}% 92
-\BOOKMARK [1][-]{appendix.E}{Ap\352ndice - Modelos ARIMAX, SARIMA e SARIMAX }{}% 93
-\BOOKMARK [1][-]{appendix.F}{Ap\352ndice - Modelos RNN e Prophet }{}% 94
+\BOOKMARK [2][-]{subsection.1.6}{Estrutura do Trabalho}{section.1}% 15
+\BOOKMARK [1][-]{section.2}{Revis\343o da Literatura}{}% 16
+\BOOKMARK [1][-]{section.3}{Base Te\363rica}{}% 17
+\BOOKMARK [2][-]{subsection.3.1}{Modelos de S\351ries Temporais Univariados}{section.3}% 18
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Componente Autorregressivo}{subsection.3.1}% 19
+\BOOKMARK [3][-]{subsubsection.3.1.2}{AR\(0\): Ru\355do branco}{subsection.3.1}% 20
+\BOOKMARK [3][-]{subsubsection.3.1.3}{AR\(1\): Caminhadas aleat\363rias e Oscila\347\365es}{subsection.3.1}% 21
+\BOOKMARK [3][-]{subsubsection.3.1.4}{AR\(p\): Termos de ordem superior}{subsection.3.1}% 22
+\BOOKMARK [3][-]{subsubsection.3.1.5}{M\351dia M\363vel}{subsection.3.1}% 23
+\BOOKMARK [3][-]{subsubsection.3.1.6}{Modelos ARMA e ARIMA}{subsection.3.1}% 24
+\BOOKMARK [2][-]{subsection.3.2}{Modelos de S\351rie Temporal Multivariada}{section.3}% 25
+\BOOKMARK [3][-]{subsubsection.3.2.1}{ARIMAX e SARIMAX}{subsection.3.2}% 26
+\BOOKMARK [2][-]{subsection.3.3}{Modelos de Aprendizado de M\341quina Supervisionados}{section.3}% 27
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Prophet}{subsection.3.3}% 28
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Correla\347 \343o de Pearson}{subsection.3.3}% 29
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Regress\343o Linear \(LR\)}{subsection.3.3}% 30
+\BOOKMARK [3][-]{subsubsection.3.3.4}{Regressor de \301rvore de Decis\343o }{subsection.3.3}% 31
+\BOOKMARK [3][-]{subsubsection.3.3.5}{Floresta Aleat\363ria }{subsection.3.3}% 32
+\BOOKMARK [3][-]{subsubsection.3.3.6}{Gradient Boosting \(como XGBoost, LightGBM\)}{subsection.3.3}% 33
+\BOOKMARK [3][-]{subsubsection.3.3.7}{Gradiente de Boosting \(Refor\347o\)}{subsection.3.3}% 34
+\BOOKMARK [2][-]{subsection.3.4}{Decomposi\347\343o STL}{section.3}% 35
+\BOOKMARK [2][-]{subsection.3.5}{Dickey-Fuller \(DF\)}{section.3}% 36
+\BOOKMARK [2][-]{subsection.3.6}{Teste de Signific\342ncia}{section.3}% 37
+\BOOKMARK [2][-]{subsection.3.7}{Introdu\347\343o \340s Redes Neurais no Deep Learning}{section.3}% 38
+\BOOKMARK [3][-]{subsubsection.3.7.1}{Rede Neural Recorrente}{subsection.3.7}% 39
+\BOOKMARK [3][-]{subsubsection.3.7.2}{Compreendendo Redes de Mem\363ria de Curto e Longo Prazo \(LSTM\)}{subsection.3.7}% 40
+\BOOKMARK [3][-]{subsubsection.3.7.3}{GRU \(Unidade Recorrente com Port\365es\)}{subsection.3.7}% 41
+\BOOKMARK [3][-]{subsubsection.3.7.4}{An\341lise Comparativa entre os Modelos RNN, LSTM e GRU}{subsection.3.7}% 42
+\BOOKMARK [3][-]{subsubsection.3.7.5}{Explorando o Transformer: Al\351m dos Bits e Bytes}{subsection.3.7}% 43
+\BOOKMARK [2][-]{subsection.3.8}{M\351tricas de Avalia\347\343o de Modelos}{section.3}% 44
+\BOOKMARK [3][-]{subsubsection.3.8.1}{Erro Quadr\341tico M\351dio Raiz \(RMSE\)}{subsection.3.8}% 45
+\BOOKMARK [3][-]{subsubsection.3.8.2}{Raiz do Erro M\351dio Quadr\341tico Relativo \(RRMSE\)}{subsection.3.8}% 46
+\BOOKMARK [3][-]{subsubsection.3.8.3}{Erro Absoluto M\351dio \(MAE\)}{subsection.3.8}% 47
+\BOOKMARK [3][-]{subsubsection.3.8.4}{Erro Percentual Absoluto M\351dio \(MAPE\)}{subsection.3.8}% 48
+\BOOKMARK [3][-]{subsubsection.3.8.5}{Erro Percentual Absoluto M\351dio Sim\351trico \(sMAPE\)}{subsection.3.8}% 49
+\BOOKMARK [2][-]{subsection.3.9}{Trabalhos Relacionados}{section.3}% 50
+\BOOKMARK [3][-]{subsubsection.3.9.1}{Estudo de Caso 1}{subsection.3.9}% 51
+\BOOKMARK [3][-]{subsubsection.3.9.2}{Estudo de Caso 2}{subsection.3.9}% 52
+\BOOKMARK [1][-]{section.4}{Resultados}{}% 53
+\BOOKMARK [2][-]{subsection.4.1}{An\341lise dos Modelos}{section.4}% 54
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Detec\347\343o de anomalias}{subsection.4.1}% 55
+\BOOKMARK [3][-]{subsubsection.4.1.2}{An\341lise Explorat\363ria dos dados \(EDA\)}{subsection.4.1}% 56
+\BOOKMARK [3][-]{subsubsection.4.1.3}{M\372ltiplas entradas e sa\355da \372nica \(MISO\)}{subsection.4.1}% 57
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Decomposi\347\343o STL}{subsection.4.1}% 58
+\BOOKMARK [3][-]{subsubsection.4.1.5}{Separa\347\343o dos dados}{subsection.4.1}% 59
+\BOOKMARK [3][-]{subsubsection.4.1.6}{Modelagem e Sele\347\343o do Modelo}{subsection.4.1}% 60
+\BOOKMARK [3][-]{subsubsection.4.1.7}{Horizonte}{subsection.4.1}% 61
+\BOOKMARK [3][-]{subsubsection.4.1.8}{Previs\343o e Avalia\347\343o}{subsection.4.1}% 62
+\BOOKMARK [3][-]{subsubsection.4.1.9}{Teste de Signific\342ncia}{subsection.4.1}% 63
+\BOOKMARK [3][-]{subsubsection.4.1.10}{Compara\347\343o dos Modelos}{subsection.4.1}% 64
+\BOOKMARK [2][-]{subsection.4.2}{Aplica\347\343o do Mundo Real}{section.4}% 65
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Descri\347\343o do Sistema de Abastecimento de \301gua}{subsection.4.2}% 66
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Estudo de Caso 1}{subsection.4.2}% 67
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Estudo de Caso 2}{subsection.4.2}% 68
+\BOOKMARK [1][-]{section.5}{Conclus\365es}{}% 69
+\BOOKMARK [2][-]{subsection.5.1}{Limita\347\365es da Pesquisa}{section.5}% 70
+\BOOKMARK [2][-]{subsection.5.2}{Propostas Futuras}{section.5}% 71
+\BOOKMARK [1][-]{subsection.5.2}{Refer\352ncias}{}% 72
+\BOOKMARK [1][-]{appendix.A}{Ap\352ndice - Compara\347\343o dos modelos de previs\343o de series temporais m\351dia de 24h}{}% 73
+\BOOKMARK [1][-]{appendix.B}{Ap\352ndice - Compara\347\343o dos modelos de previs\343o com o m\351todo Ljung-Box}{}% 74
+\BOOKMARK [1][-]{appendix.C}{Ap\352ndice - Modelos AR, ARX e MA }{}% 75
+\BOOKMARK [1][-]{appendix.D}{Ap\352ndice - Modelos ARMA e ARIMA }{}% 76
+\BOOKMARK [1][-]{appendix.E}{Ap\352ndice - Modelos ARIMAX, SARIMA e SARIMAX }{}% 77
+\BOOKMARK [1][-]{appendix.F}{Ap\352ndice - Modelos RNN e Prophet }{}% 78

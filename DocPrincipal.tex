@@ -14,10 +14,19 @@
 %-----------------------------------------------------------------
 %% ELEMENTOS PRE-TEXTUAIS
 
+%\thispagestyle{empty}
+%\pagestyle{empty} % Omitir numeração nas páginas pré-textuais
+
 %% CAPA
 \include{Pretextuais/capa}
 
 %% FOLHA DE ROSTO
+%\pagenumbering{arabic}
+
+
+
+
+
 \include{Pretextuais/folha_rosto1} %% QUALIFICAÇÃO
 %\include{Pretextuais/folha_rosto2} %% DISSERTAÇÃO
 
@@ -28,8 +37,12 @@
 \include{Pretextuais/folha_aprovacao} %% NÃO ASSINADA
 %\includepdf{Pretextuais/folha_aprovacao1.pdf} %% ASSINADA
 
+
+
+
 %% DEDICATÓRIA
 \include{Pretextuais/dedicatoria}
+
 
 %% AGRADECIMENTOS
 \include{Pretextuais/agradecimentos}
@@ -45,16 +58,9 @@
 \include{Resumos/abstract}
 
 
-%% LISTA DE FIGURAS
-\newpage 
-\pdfbookmark[1]{\listfigurename}{lof}
-\listoffigures 
+%% Listas de Figuras e Tabelas
 
-%% LISTA DE TABELAS
-\newpage 
-\pdfbookmark[1]{\listtablename}{lot}
-\listoftables
-\cleardoublepage
+\include{Pretextuais/listas}
 
 
 
@@ -65,18 +71,28 @@
 
 %% SUMÁRIO
 \newpage
-\pdfbookmark[1]{\contentsname}{toc}
-\tableofcontents 
+\thispagestyle{empty}
+\pdfbookmark[1]{\contentsname}{toc}\thispagestyle{empty}
+\tableofcontents \thispagestyle{empty}
 
 %-----------------------------------------------------------------
 %% ELEMENTOS TEXTUAIS
 
+
+
 %% INTRODUÇÃO
+
 \include{Introducao/sec-introducao}
+
+
+
 %% REFERENCIAL
+
 \include{Revisao/sec-revisao}
 
 \include{Modelos/sec-modelos}
+
+
 
 
 %% RESULTADOS

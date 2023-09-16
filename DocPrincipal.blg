@@ -17,6 +17,8 @@ Reallocating 'name_of_file' (item size: 1) to 19 items.
 A level-1 auxiliary file: Resumos/resumo.aux
 Reallocating 'name_of_file' (item size: 1) to 21 items.
 A level-1 auxiliary file: Resumos/abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: Pretextuais/listas.aux
 Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: Pretextuais/lista-simbolos.aux
 Reallocating 'name_of_file' (item size: 1) to 30 items.
@@ -46,108 +48,138 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'field_info' (item size: 4) to 12728 items.
 Database file #1: abntex2-options.bib
 Database file #2: Bibliografia/Dissert2.bib
-I was expecting an "="---line 891 of file Bibliografia/Dissert2.bib
+I was expecting a `,' or a `}'---line 3 of file Bibliografia/Dissert2.bib
+ :  
+ :  author = {Adrian Tam},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 1357 of file Bibliografia/Dissert2.bib
+ : @article{2-s2.0-85048003524
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1383 of file Bibliografia/Dissert2.bib
+ : @article{2-s2.0-84973369468
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1737 of file Bibliografia/Dissert2.bib
+ : @article{2-s2.0-84964575877
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2631 of file Bibliografia/Dissert2.bib
+ : @article{lstm
+ :              ,
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 3289 of file Bibliografia/Dissert2.bib
  :  funding_text 
  :               1={This work is funded by the French spatial agency ( CNES ) and the French mapping agency ( IGN ), and it has been carried out at CESBIO laboratory – supported by the University Paul Sabatier, CNRS (Centre National de la Recherche Scientifique), CNES, IRD (Institut de Recherche pour le Développement) – and MATIS laboratory supported by IGN.},
 I'm skipping whatever remains of this entry
-Repeated entry---line 10497 of file Bibliografia/Dissert2.bib
+Repeated entry---line 9193 of file Bibliografia/Dissert2.bib
+ : @article{Zhang2021
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 12895 of file Bibliografia/Dissert2.bib
  : @article{Li2020
  :                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 10519 of file Bibliografia/Dissert2.bib
+Repeated entry---line 12917 of file Bibliografia/Dissert2.bib
  : @article{Du2020
  :                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 10541 of file Bibliografia/Dissert2.bib
+Repeated entry---line 12939 of file Bibliografia/Dissert2.bib
  : @article{Kulshreshtha2020
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 10565 of file Bibliografia/Dissert2.bib
+Repeated entry---line 12963 of file Bibliografia/Dissert2.bib
  : @article{Samanta2020
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 10587 of file Bibliografia/Dissert2.bib
+Repeated entry---line 12985 of file Bibliografia/Dissert2.bib
  : @article{Xu2019
  :                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 10611 of file Bibliografia/Dissert2.bib
+Repeated entry---line 13009 of file Bibliografia/Dissert2.bib
  : @article{Graff2017
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 11065 of file Bibliografia/Dissert2.bib
+Repeated entry---line 13463 of file Bibliografia/Dissert2.bib
  : @article{Salgotra2020
  :                      ,
 I'm skipping whatever remains of this entry
-"}" immediately follows an entry type---line 11095 of file Bibliografia/Dissert2.bib
+"}" immediately follows an entry type---line 13493 of file Bibliografia/Dissert2.bib
  :  correspondence_address1={Salgotra, R.; Dept. of ECE, India; email: r.03dec@gmail.com
  :                                                                                      },
 I'm skipping whatever remains of this entry
-Repeated entry---line 11213 of file Bibliografia/Dissert2.bib
+Repeated entry---line 13611 of file Bibliografia/Dissert2.bib
  : @article{Shen2020
  :                  ,
 I'm skipping whatever remains of this entry
-")" immediately follows an entry type---line 11229 of file Bibliografia/Dissert2.bib
+")" immediately follows an entry type---line 13627 of file Bibliografia/Dissert2.bib
  :  affiliation={School of Artificial Intelligence, Xidian University, 47905 Xi'an, Shaanxi China (e-mail: f.shen@qq.com
  :                                                                                                                      ); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: neouma@163.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: kaiwu@stu.xidian.edu.cn)},
 I'm skipping whatever remains of this entry
-You're missing an entry type---line 11229 of file Bibliografia/Dissert2.bib
+You're missing an entry type---line 13627 of file Bibliografia/Dissert2.bib
  :  affiliation={School of Artificial Intelligence, Xidian University, 47905 Xi'an, Shaanxi China (e-mail: f.shen@qq.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: neouma@
  :                                                                                                                                                                                                                         163.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: kaiwu@stu.xidian.edu.cn)},
 I'm skipping whatever remains of this entry
-")" immediately follows an entry type---line 11229 of file Bibliografia/Dissert2.bib
+")" immediately follows an entry type---line 13627 of file Bibliografia/Dissert2.bib
  :  affiliation={School of Artificial Intelligence, Xidian University, 47905 Xi'an, Shaanxi China (e-mail: f.shen@qq.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: neouma@163.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: kaiwu@stu.xidian.edu.cn
  :                                                                                                                                                                                                                                                                                                                                                   )},
 I'm skipping whatever remains of this entry
 Reallocating 'singl_function' (item size: 4) to 100 items.
+Warning--para ordenar, precisa dos campos author, organization, editor, title ou key in lstm
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
+`title' is a missing field, not a string, for entry lstm
+while executing---line 2146 of file abntex2-alf.bst
+Warning--campo year vazio ou faltando em lstm
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 70 entries,
+You've used 112 entries,
             6714 wiz_defined-function locations,
-            1678 strings with 25658 characters,
-and the built_in function-call counts, 88012 in all, are:
-= -- 8758
-> -- 2500
-< -- 1571
-+ -- 2352
-- -- 736
-* -- 6186
-:= -- 10924
-add.period$ -- 241
-call.type$ -- 70
-change.case$ -- 829
-chr.to.int$ -- 240
-cite$ -- 68
-duplicate$ -- 7075
-empty$ -- 4106
-format.name$ -- 3553
-if$ -- 18677
-int.to.chr$ -- 1
+            1919 strings with 32913 characters,
+and the built_in function-call counts, 141790 in all, are:
+= -- 14137
+> -- 3996
+< -- 2566
++ -- 3835
+- -- 1175
+* -- 9875
+:= -- 17590
+add.period$ -- 417
+call.type$ -- 112
+change.case$ -- 1333
+chr.to.int$ -- 369
+cite$ -- 112
+duplicate$ -- 11541
+empty$ -- 6582
+format.name$ -- 5686
+if$ -- 30090
+int.to.chr$ -- 10
 int.to.str$ -- 0
-missing$ -- 1237
-newline$ -- 375
-num.names$ -- 340
-pop$ -- 1577
+missing$ -- 1983
+newline$ -- 625
+num.names$ -- 545
+pop$ -- 2510
 preamble$ -- 1
-purify$ -- 303
+purify$ -- 485
 quote$ -- 0
-skip$ -- 7296
+skip$ -- 11893
 stack$ -- 1
-substring$ -- 4193
-swap$ -- 2954
-text.length$ -- 147
+substring$ -- 6607
+swap$ -- 4797
+text.length$ -- 213
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
-warning$ -- 0
-while$ -- 553
+type$ -- 13
+warning$ -- 2
+while$ -- 855
 width$ -- 0
-write$ -- 1142
-(There were 13 error messages)
+write$ -- 1834
+(There were 20 error messages)
