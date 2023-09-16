@@ -71,7 +71,7 @@ Para utilizar a regressão linear, é necessário estimar os coeficientes (betas
 \subsubsection{Regressor de \'Arvore de Decis\~ao }
 
 
-Uma árvore de decisão (do ingl\^es \textit{Decision Tree Regressor}) é um dos algoritmos de aprendizado de máquina mais usados para resolver problemas de regressão e classificação. Como o nome sugere, o algoritmo usa um modelo de decisões semelhante a uma árvore para prever o valor de destino (regressão) ou prever a classe de destino (classificação). Antes de mergulhar em como as árvores de decisão funcionam, primeiro, vamos nos familiarizar com as terminologias básicas de uma árvore de decisão \cite{decision}:
+Uma árvore de decisão é um dos algoritmos de aprendizado de máquina mais usados para resolver problemas de regressão e classificação. Como o nome sugere, o algoritmo usa um modelo de decisões semelhante a uma árvore para prever o valor de destino (regressão) ou prever a classe de destino (classificação). Antes de mergulhar em como as árvores de decisão funcionam, primeiro, vamos nos familiarizar com as terminologias básicas de uma árvore de decisão \cite{decision}:
 
 Na Figura \ref{fig:decison} trás \textbf{Nó raiz} isso representa o nó mais alto da árvore que representa todos os pontos de dados.
 \textbf{Divisão} refere-se à divisão de um nó em dois ou mais sub-nós.
@@ -85,7 +85,7 @@ Na Figura \ref{fig:decison} trás \textbf{Nó raiz} isso representa o nó mais a
 	\centering
 	\caption{Fluxograma da árvore de decisão}
 	\label{fig:decison}
-	\includegraphics[width=0.9\linewidth]{Modelos/Figuras/decison}
+	\includegraphics[width=\linewidth]{Modelos/Figuras/decison}
 	
 	\fonte{Adaptado de \citeonline{decision}}
 \end{figure}
@@ -119,7 +119,7 @@ Na Figura \ref{fig:arvore-de-decisao}, é demonstrado como o processo é represe
 	\centering
 	\caption{Árvore de decisão mapa mental}
 	\label{fig:arvore-de-decisao}
-	\includegraphics[width=0.7\linewidth]{"Apendices/Figuras/modelagem-24h/Árvore de decisão"}
+	\includegraphics[width=\linewidth]{"Apendices/Figuras/modelagem-24h/Árvore de decisão"}
 	
 	\fonte{Elaboração própria}
 \end{figure}
@@ -132,13 +132,13 @@ Pode-se observar que ter exatamente a mesma árvore de decisão repetidas vezes 
 
 
 
-Cada árvore em um modelo de Floresta Aleatória de Regressão (RFR) é construída por meio de um algoritmo de aprendizado individual que divide o conjunto de variáveis de entrada em subconjuntos, com base em um teste de valor de atributo, como o coeficiente de Gini. Ao contrário das árvores de decisão clássicas, as árvores de RFR são construídas sem poda e selecionam aleatoriamente um subconjunto de variáveis de entrada em cada nó. Atualmente, o número de variáveis utilizadas para dividir um nó em uma RFR (denotado por $m$) corresponde à raiz quadrada do número total de variáveis de entrada. Essa abordagem ajuda a aumentar a diversidade das árvores e aprimorar o desempenho do modelo \cite{Pelletier2016156}.
+Cada árvore em um modelo de RFR (Floresta Aleatória de Regressão)  é construída por meio de um algoritmo de aprendizado individual que divide o conjunto de variáveis de entrada em subconjuntos, com base em um teste de valor de atributo, como o coeficiente de Gini. Ao contrário das árvores de decisão clássicas, as árvores de RFR são construídas sem poda e selecionam aleatoriamente um subconjunto de variáveis de entrada em cada nó. Atualmente, o número de variáveis utilizadas para dividir um nó em uma RFR (denotado por $m$) corresponde à raiz quadrada do número total de variáveis de entrada. Essa abordagem ajuda a aumentar a diversidade das árvores e aprimorar o desempenho do modelo \cite{Pelletier2016156}. Na Figura \ref{fig:rf}, o esquema do modelo RFR mostra como as árvores funcionam.
 
-\begin{figure}[!htb]
+\begin{figure}[H]
 	\centering
-	\caption{Esquema da Floresta Aleatória}
+	\caption{Esquema da floresta aleatória}
 	\label{fig:rf}
-	\includegraphics[width=1\linewidth]{Modelos/Figuras/RF}
+	\includegraphics[width=\linewidth]{Modelos/Figuras/RF}
 	
 	\fonte{Elaboração própria}
 \end{figure}
@@ -148,7 +148,7 @@ Cada árvore em um modelo de Floresta Aleatória de Regressão (RFR) é constru�
 
 O aumento de gradiente (do inglês\textit{gradient boosting}) é um método que combina vários modelos de árvore de decisão para realizar previsões. Cada uma dessas árvores de decisão é única, pois a diversidade é um elemento importante nesse processo. A diversidade é alcançada através de um processo chamado boosting, que é uma abordagem iterativa. O boosting adiciona modelos fracos ao conjunto de forma inteligente, dando mais peso aos pontos de dados que ainda não foram bem previstos. 
 
-O processo de boosting melhora o conjunto ao focar nas partes dos dados que ainda não são compreendidas. A Figura \ref{fig:xgboost} apresenta uma visão esquemática desse processo. À medida que novos modelos fracos são adicionados, todos os modelos fracos intermediários são mantidos. O modelo final é uma combinação de todos esses modelos fracos, resultando em um ensemble que oferece uma melhor capacidade de previsão do que um único modelo.
+O processo de boosting melhora o conjunto ao focar nas partes dos dados que ainda não são compreendidas. A Figura \ref{fig:xgboos} apresenta uma visão esquemática desse processo. À medida que novos modelos fracos são adicionados, todos os modelos fracos intermediários são mantidos. O modelo final é uma combinação de todos esses modelos fracos, resultando em um ensemble que oferece uma melhor capacidade de previsão do que um único modelo.
 
 O boosting é apenas um dos métodos de ensemble utilizados em conjunto com o bagging. O bagging também é um método que utiliza múltiplos modelos de árvore de decisão, porém, em vez de adicionar os modelos de forma iterativa, cada modelo é treinado independentemente em subconjuntos aleatórios dos dados de treinamento. Ambos os métodos, boosting e bagging, têm como objetivo melhorar o desempenho do modelo combinando as previsões de múltiplos modelos individuais.
 
@@ -157,7 +157,7 @@ O boosting é apenas um dos métodos de ensemble utilizados em conjunto com o ba
 	\centering
 	\caption{Impulsionando gradiente com XGBoost e LightGBM}
 	\label{fig:xgboos}
-	\includegraphics[width=1\linewidth]{Modelos/Figuras/xgboos}
+	\includegraphics[width=\linewidth]{Modelos/Figuras/xgboos}
 	
 	\fonte{Adaptação de \citeonline{korstanje2021}}
 \end{figure}
@@ -180,7 +180,7 @@ No aumento de gradiente, ao adicionar árvores adicionais ao modelo, o objetivo 
 	y-\hat{y} = -\dfrac{\partial L}{\partial \hat{y}} \label{eq:xb2}
 \end{equation}
 
-\noindent isso é definido como o objetivo da nova árvore a ser adicionada no modelo de aumento de gradiente, garantindo que ela explique a máxima quantidade de variação adicional no modelo geral. Essa é a razão pela qual o modelo é chamado de ``aumento de gradiente'' (do inglês ``\textit{gradient boosting}''). O processo utiliza o gradiente da função de perda para guiar a adição de novas árvores, buscando minimizar o erro e melhorar a capacidade do modelo em explicar a variação nos dados.
+\noindent isso é definido como o objetivo da nova árvore a ser adicionada no modelo de aumento de gradiente, garantindo que ela explique a máxima quantidade de variação adicional no modelo geral. Essa é a razão pela qual o modelo é chamado de ``aumento de gradiente''. O processo utiliza o gradiente da função de perda para guiar a adição de novas árvores, buscando minimizar o erro e melhorar a capacidade do modelo em explicar a variação nos dados.
 
 \noindent\textbf{Algoritmos de boosting de gradiente}
 
@@ -270,21 +270,30 @@ Suponha que $\left(z_t\right)_{1 \leq t \leq T}$ são dadas por \eqref{eq:df3}, 
 
 \subsection{Teste de Signific\^ancia}
 
-Para calcular a estatística de teste $F_r$ de Friedman, os dados foram organizados em uma tabela na qual as linhas correspondem às amostras e as colunas representam as condições de teste. As amostras foram ordenadas de acordo com suas classificações, da melhor à pior. Na ausência de empates, a estatística de teste $F_r$ foi calculada usando a seguinte fórmula:
 
-\begin{equation}
-	F_r = \left(\frac{12}{n k(k+1)} \sum_{i=1}^k R_i^2\right) - 3n(k+1) \label{eq:fr}
-\end{equation}
+O teste de Friedman precisa classificar os algoritmos $K$ em cada conjunto de dados em relação ao valor absoluto dos resultados dados por esses algoritmos. A classificação do algoritmo com maior desempenho é 1 , e o com menor desempenho é classificado como $\mathrm{K}$. Em seguida, o valor da estatística com base em todas as classificações é calculado como mostrado em equações \eqref{ff} e \eqref{fx} com $r_{e u}^j$ sendo a classificação do desempenho do j-ésimo algoritmo no i-ésimo conjunto de dados. Essa estatística obedece à distribuição do quiquadrado com $\mathrm{K}-1$ graus de liberdade \cite{Liu2022}.
 
-\noindent na equação \eqref{eq:fr}, $n$ é o número de linhas (amostras), $k$ é o número de colunas (condições) e $R_i$ é a soma das fileiras da coluna (condição) $i$.
+\begin{eqnarray}
+	\chi_F^2 & =&\frac{12 N}{K(K+1)}\left[\sum_{j=1}^K R_j^2-\frac{K(K+1)^2}{4}\right] \label{ff}\\
+	R_j & =&\frac{1}{N} \sum_{i=1}^N r_{e i l}^j \label{fx}
+\end{eqnarray}
 
-Adicionalmente, utilizou-se o valor crítico CD (\textit{Critical Difference}) para determinar se dois classificadores eram significativamente diferentes entre si. O CD foi calculado conforme a fórmula mencionada anteriormente:
+achavam que a estatística era conservadora e, como extensão, propuseram a estatística mostrada na equação \eqref{fx1}.
+
+\begin{eqnarray}
+	F_F&=&\dfrac{(N-1) \chi_F^2}{N(K-1) \chi_F^2}\label{fx1}
+\end{eqnarray}
+
+As estatísticas FF mostrados na equação \eqref{fx1} obedecem à distribuição F com graus de liberdade $K-1$ e $(K-1)$ $(N-1)$. Verificando-se a tabela de distribuição $F$, pode-se obter o valor crítico abaixo do nível de significância especificado (geralmente $\alpha = 0,05$ ou $0,01$). Ao comparar esse valor crítico com o valor calculado com a equação \eqref{fx1}, a hipótese nula é rejeitada se o valor estatístico $F_F$ é maior que o valor crítico, indicando que há diferenças significativas entre os algoritmos $K$. Em seguida, pode-se realizar um procedimento post hoc para analisar melhor se o algoritmo de controle é significativamente melhor do que cada algoritmo de referência nos experimentos. Ao contrário, se o valor for menor ou igual ao valor crítico, a hipótese nula é aceita, indicando que não há diferenças significativas entre os algoritmos $K$.
+
+
+Adicionalmente, utilizou-se o valor crítico CD (do inglês \textit{Critical Difference}) para determinar se dois classificadores eram significativamente diferentes entre si. O CD foi calculado conforme a fórmula mencionada anteriormente:
 
 \begin{equation}
 	CD = q_\alpha \sqrt{\frac{k(k+1)}{6N}}
 \end{equation}
 
-\noindent na equação do CD, $q_\alpha$ representa o valor crítico obtido da Tabela \ref{tb:nemeyi} de teste de Nemenyi, $k$ é o número de classificadores e $N$ é o número total de amostras.
+\noindent na equação do CD, $q_\alpha$ representa o valor crítico obtido da Tabela \ref{tb:nemeyi} de teste de Nemenyi, $k$ é o número de classificadores e $N$ é o número total de amostras \cite{Liu2022}.
 
 \subsection{Introdu\c c\~ao \`as Redes Neurais no Deep Learning}
 
@@ -293,7 +302,7 @@ Uma rede neural é um modelo de processamento de informações inspirado pelo fu
 \subsubsection{Rede Neural Recorrente}
 
 
-Uma Rede Neural Recorrente (do inglês \textit{Recurrent Neural Network}) é um tipo de arquitetura de rede neural que pode ser utilizada para lidar com dados sequenciais ou temporais. Ao contrário das redes neurais convencionais, onde as entradas e saídas são tratadas como dados independentes, as RNNs levam em consideração a ordem e a relação entre os elementos em uma sequência, tornando-as ideais para lidar com dados como séries temporais, texto e áudio.
+Uma Rede Neural Recorrente é um tipo de arquitetura de rede neural que pode ser utilizada para lidar com dados sequenciais ou temporais. Ao contrário das redes neurais convencionais, onde as entradas e saídas são tratadas como dados independentes, as RNNs levam em consideração a ordem e a relação entre os elementos em uma sequência, tornando-as ideais para lidar com dados como séries temporais, texto e áudio.
 
 A característica principal das RNNs é que elas contêm loops em sua estrutura, permitindo que informações anteriores influenciem o processamento de informações subsequentes. Isso significa que a saída em um determinado passo de tempo não depende apenas da entrada atual, mas também das entradas anteriores na sequência.
 
@@ -310,9 +319,9 @@ No entanto, as RNNs tradicionais podem enfrentar dificuldades em capturar depend
 
 Na Figura \ref{fig:8s40xcsn}, é apresentado um esquema que ilustra como uma RNN é construída.
 
-\begin{figure}[!htpb]
+\begin{figure}[H]
 	\centering
-	\caption{RNN - Recurrent Neural Network}
+	\caption{RNN - \textit{recurrent neural network}}
 	\label{fig:8s40xcsn}
 	\includegraphics[width=1\linewidth]{Apendices/Figuras/modelagem-24h/8s40xcsn}
 	
@@ -321,9 +330,9 @@ Na Figura \ref{fig:8s40xcsn}, é apresentado um esquema que ilustra como uma RNN
 
 \subsubsection{Compreendendo Redes de Mem\'oria de Curto e Longo Prazo (LSTM)}
 
-As Redes de Memória de Curto e Longo Prazo (LSTM) são uma evolução das Redes Neurais Recorrentes (RNNs), projetadas para superar desafios na captura de dependências de longo prazo em sequências de dados. Diferentemente das RNNs convencionais, as LSTMs têm a capacidade de manter informações relevantes por longos períodos, tornando-as especialmente eficazes em tarefas que envolvem padrões complexos e dependências temporais distantes.
+As LSTMs são uma evolução das RNNs, projetadas para superar desafios na captura de dependências de longo prazo em sequências de dados. Diferentemente das RNNs convencionais, as LSTMs têm a capacidade de manter informações relevantes por longos períodos, tornando-as especialmente eficazes em tarefas que envolvem padrões complexos e dependências temporais distantes \cite{Zhang2021}.
 
-Uma das principais inovações das LSTMs é a introdução de unidades de memória chamadas ``células'', que possuem três componentes principais: uma porta de entrada (\textit{input gate}), uma porta de esquecimento (\textit{forget gate}) e uma porta de saída (\textit{output gate}). Essas portas permitem que as LSTMs controlem o fluxo de informações através da célula, decidindo quais informações devem ser mantidas, esquecidas ou passadas para a saída.
+Uma das principais inovações das LSTMs é a introdução de unidades de memória chamadas ``células'', que possuem três componentes principais: uma porta de entrada (do inglês\textit{input gate}), uma porta de esquecimento (do inglês \textit{forget gate}) e uma porta de saída (do inglês \textit{output gate}). Essas portas permitem que as LSTMs controlem o fluxo de informações através da célula, decidindo quais informações devem ser mantidas, esquecidas ou passadas para a saída \cite{Zhang2021}.
 
 
 
@@ -341,14 +350,14 @@ Uma das principais inovações das LSTMs é a introdução de unidades de memór
 
 Essa estrutura permite que as LSTMs controlem o fluxo de informações e aprendam a armazenar ou descartar informações relevantes para diferentes tarefas. As portas de entrada, esquecimento e saída funcionam como mecanismos de controle, permitindo que as LSTMs aprendam a manter informações importantes, esquecer informações desnecessárias e gerar saídas precisas ao longo de sequências temporais.
 
-\subsubsection{GRU (Unidade Recorrente com Port\~oes)}
+\subsubsection{GRU (Unidade Recorrente Fechada)}
 
 
-Um GRU é um tipo de arquitetura de rede neural recorrente (RNN) que foi projetado para lidar com o problema de dissipação de gradiente e captura de dependências de longo prazo em sequências de dados. Essa variação das RNNs tradicionais introduz mecanismos de portão para controlar o fluxo de informação por meio das unidades de tempo.
+Um GRU é um tipo de arquitetura de RNN que foi projetado para lidar com o problema de dissipação de gradiente e captura de dependências de longo prazo em sequências de dados. Essa variação das RNNs tradicionais introduz mecanismos de portão para controlar o fluxo de informação por meio das unidades de tempo.
 
-A Gated Recurrent Unit (GRU) é uma alternativa vantajosa para a análise de séries temporais, devido à sua habilidade de lidar com sequências de dados de extensões variáveis e de capturar dependências de longo prazo presentes em informações sequenciais. Além disso, a GRU apresenta uma estrutura de simplicidade superior à LSTM, permitindo um processo de treinamento mais ágil  \cite{mastersthesis53fd58a7}.
+A GRU é uma alternativa vantajosa para a análise de séries temporais, devido à sua habilidade de lidar com sequências de dados de extensões variáveis e de capturar dependências de longo prazo presentes em informações sequenciais. Além disso, a GRU apresenta uma estrutura de simplicidade superior à LSTM, permitindo um processo de treinamento mais ágil  \cite{mastersthesis53fd58a7}.
 
-A estrutura do GRU inclui dois portões principais: o portão de atualização (\textit{update gate}) e o portão de reinicialização (\textit{reset gate}). Esses portões permitem que o GRU decida quais informações serão transmitidas para a próxima etapa de tempo e quais informações serão descartadas.
+A estrutura do GRU inclui dois portões principais: o portão de atualização (do inglês \textit{update gate}) e o portão de reinicialização (do inglês \textit{reset gate}). Esses portões permitem que o GRU decida quais informações serão transmitidas para a próxima etapa de tempo e quais informações serão descartadas.
 
 
 
@@ -385,7 +394,7 @@ Na Figura \ref{fig:gru4-1024x835} tem o escama da rede neural GRU.
 
 \begin{figure}[H]
 	\centering
-	\caption{Diagrama Ilustrativo do Funcionamento de uma Unidade Recorrente Gated (GRU)}
+	\caption{Diagrama ilustrativo do funcionamento de uma unidade recorrente gated (GRU)}
 	\label{fig:gru4-1024x835}
 	\includegraphics[width=0.5\linewidth]{Apendices/Figuras/modelagem-24h/gru4-1024x835}
 	
@@ -399,7 +408,6 @@ Na Figura \ref{fig:gru4-1024x835} tem o escama da rede neural GRU.
 As GRUs, as LSTMs e as RNNs são variações avançadas das arquiteturas de redes neurais, todas projetadas para abordar a dificuldade de capturar dependências temporais em sequências de dados. Cada uma dessas abordagens tem características distintas que influenciam sua capacidade de lidar com esse desafio.
 
 Enquanto as RNNs tradicionais têm uma tendência a sofrer com o desvanecimento do gradiente ao longo do tempo, as LSTMs e GRUs foram desenvolvidas para superar essa limitação. As LSTMs introduzem células de memória e portas de controle que permitem armazenar e atualizar informações relevantes ao longo das etapas temporais, sendo especialmente adequadas para capturar relações de dependência de longo prazo. As GRUs, por sua vez, simplificam a arquitetura das LSTMs, utilizando portas de atualização e reset para permitir o fluxo de informações e controle sobre o estado oculto.
-
 Na Figura \ref{fig:rnn-vs-lstm-vs-gru-1024x308}, há um esquema que ilustra as arquiteturas das RNNs, LSTMs e GRUs, permitindo uma visualização das diferenças entre essas abordagens.
 
 \begin{figure}[H]

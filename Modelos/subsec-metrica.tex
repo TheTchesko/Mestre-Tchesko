@@ -8,9 +8,7 @@ A métrica de Erro Quadrático Médio (MSE) é amplamente utilizada no campo do 
 
 \noindent onde, $n$ representa o número de amostras, $y_i$ é o valor real correspondente à amostra $i$ e $\hat{y}_i$ é o valor previsto para a mesma amostra. O MSE é calculado como a média das diferenças ao quadrado entre os valores reais e os valores previstos.
 
-A utilização do MSE fornece uma medida quantitativa da precisão do modelo, pois penaliza de forma mais significativa os erros maiores. Ao elevar as diferenças ao quadrado, a métrica enfatiza a importância de minimizar as discrepâncias entre os valores reais e os valores previstos. Dessa forma, quanto menor o valor do MSE, melhor é o desempenho do modelo em termos de previsão.
-
-Portanto, o MSE é uma métrica fundamental para avaliar a qualidade dos modelos de previsão e é amplamente utilizada para comparar diferentes algoritmos e abordagens de aprendizado de máquina.
+O MSE também é referido como uma perda quadrática porque a penalização é quadrada e não diretamente proporcional ao erro. Os \textit{outliers} recebem mais peso quando o erro é elevado ao quadrado, criando um gradiente suave para erros menores. Os algoritmos de otimização beneficiam desta penalização para erros enormes, uma vez que ajuda a obter os valores ideais para os parâmetros. Dado que os erros são elevados ao quadrado, o MSE nunca pode ser negativo, e o valor do erro pode estar em qualquer lugar entre 0 e infinito. Com erros crescentes, o MSE cresce exponencialmente, e o valor do MSE de um bom modelo será próximo de zero \cite{jadon2022comprehensive}.
 
 \subsubsection{Erro Quadr\'atico M\'edio Raiz (RMSE)}
 
@@ -26,45 +24,34 @@ Uma das vantagens de utilizar o RMSE é que, ao computar a raiz quadrada, o erro
 
 O RMSE possui algumas características positivas. Ele penaliza de forma significativa os valores discrepantes, caso seja necessário para o modelo. Além disso, o erro resultante está nas mesmas unidades da série temporal, facilitando a interpretação. O RMSE pode ser considerado uma combinação das melhores características do MSE e do Erro Absoluto Médio (MAE).
 
-No entanto, o RMSE também apresenta algumas desvantagens. Ele tem uma interpretabilidade reduzida, uma vez que os erros ainda são elevados ao quadrado. Além disso, o RMSE é dependente da escala dos dados, o que impede sua comparação direta com modelos de séries temporais que utilizam unidades diferentes.
+O RMSE também apresenta algumas desvantagens. Ele tem uma interpretabilidade reduzida, uma vez que os erros ainda são elevados ao quadrado. Além disso, o RMSE é dependente da escala dos dados, o que impede sua comparação direta com modelos de séries temporais que utilizam unidades diferentes.
 
 Apesar das limitações, o RMSE é uma métrica amplamente utilizada para avaliar modelos de previsão em séries temporais. Ele fornece uma medida da dispersão média entre os valores reais e previstos, auxiliando na compreensão do desempenho do modelo e na comparação com outras abordagens.
 
 \subsubsection{Raiz do Erro M\'edio Quadr\'atico Relativo (RRMSE)}\label{subsub:rrmse}
 
+O RRMSE é uma variante do RMSE sem dimensões. O erro quadrático médio (RMSE) é uma medida de erro quadrático médio relativo que foi escalado em relação ao valor real e depois normalizado pelo valor da raiz quadrada média. Enquanto as medidas originais medidas originais restringem o RMSE, o RRMSE pode ser usado para  comparar várias abordagens de medição. Um RRMSE acontece quando as suas previsões se revelam erradas, e o erro é expresso pelo RRMSE de forma relativa ou em percentagem. RRMSE A exatidão do modelo é excelente quando a pontuação do modelo é inferior a 10\%, boa quando a pontuação do modelo se situa entre 10\% e 20\%, razoável quando a pontuação do modelo está entre 20\% e 30\%, e má quando a pontuação do modelo é superior a 30\% O RRMSE pode ser expresso como,
+
+\begin{eqnarray}
+	R R M S E&=&\sqrt{\frac{\frac{1}{N} \sum_{i=1}^N\left(y_i-\hat{y}_i\right)^2}{\sum_{i=1}^N\left(\hat{y}_i\right)^2}}
+\end{eqnarray}
+
+\noindent onde, $N$ é o número de amostras de dados, $y_i$ é o valor real, e $\hat{y}_i$ é o valor previsto.
+
 \noindent\textbf{Vantagens do RRMSE :}
 
 
-Interpretação intuitiva: O RRMSE é expresso como uma porcentagem, o que facilita a compreensão da precisão relativa do modelo. Quanto menor o valor do RRMSE, mais próximas estão as previsões dos valores reais.
-	
-Considera a escala dos dados: O RRMSE leva em consideração a magnitude dos erros em relação aos valores de referência. Isso é especialmente útil quando os dados têm uma grande variação e escala, pois evita que erros de grande magnitude dominem a avaliação.
-	
-Comparação entre modelos e algoritmos: O RRMSE pode ser usado para comparar a precisão de diferentes modelos ou algoritmos em um problema de regressão. Ao calcular o RRMSE para cada modelo, é possível identificar aquele que apresenta melhor desempenho em relação aos valores reais.
-	
-Sensibilidade relativa a diferentes magnitudes de erro: O RRMSE captura erros relativos em diferentes magnitudes. Isso significa que ele é capaz de identificar discrepâncias proporcionais, independentemente do valor absoluto dos erros.
+ O RRMSE pode ser utilizado para comparar diferentes técnicas de medição
+ técnicas de medição \cite{jadon2022comprehensive}.
 
 
 \noindent\textbf{Desvantagens do RRMSE:}
 
 
-Sensibilidade a \textit{outliers}: O RRMSE pode ser influenciado por valores discrepantes nos dados. Se houver valores extremos que não representem a tendência geral, o RRMSE pode ser distorcido, pois considera a média dos valores reais na fórmula de cálculo.
-	
-Necessidade de uma linha de base adequada: O RRMSE requer uma linha de base apropriada para comparação. Isso significa que é necessário ter um valor de referência confiável ou um modelo de referência para calcular o RRMSE e interpretar os resultados corretamente.
-	
-Foco exclusivo na precisão relativa: O RRMSE se concentra exclusivamente na precisão relativa e não leva em consideração outras métricas de desempenho, como tempo de execução, complexidade do modelo ou outros aspectos específicos do problema em questão. Portanto, é importante complementar o uso do RRMSE com outras métricas relevantes,
+O RRMSE pode esconder a imprecisão nos resultados da experiência \cite{jadon2022comprehensive}.
 
 
-
-
-
-\begin{eqnarray}
-	\text{RRMSE} &=& \left(\frac{\text{RMSE}}{\text{Média dos Valores Reais}}\right) \times 100 \label{eq:rrmse}
-\end{eqnarray}
-
-
-\noindent onde RMSE representa o Erro Médio Quadrático e ``Média dos Valores Reais'' denota a média aritmética dos valores reais no conjunto de dados.
-
-É essencial que sejam consideradas essas vantagens e desvantagens ao utilizar o RRMSE como métrica de avaliação. Além disso, é recomendado o uso de várias métricas em conjunto para obter uma visão mais completa do desempenho do modelo de regressão.
+É essencial que sejam consideradas essas vantagens e desvantagens ao utilizar o RRMSE como métrica de avaliação. É recomendado o uso de várias métricas em conjunto para obter uma visão mais completa do desempenho do modelo de regressão.
 
 
 
@@ -78,7 +65,6 @@ Uma das vantagens do MAE é a sua insensibilidade a valores extremos, pois trata
 
 Para superar essa limitação, uma alternativa é o Erro Médio Absoluto Percentual (MAPE). O MAPE expressa o MAE como uma porcentagem em relação aos valores reais, proporcionando uma medida relativa de erro. Essa métrica é especialmente útil quando se deseja avaliar o desempenho de um modelo em relação à magnitude dos dados.
 
-Em resumo, o MAE é uma métrica simples e fácil de interpretar, que mede o desvio médio das previsões em relação aos valores reais. O MAPE, por sua vez, fornece uma medida relativa de erro, expressa como uma porcentagem dos valores reais. A escolha entre essas métricas depende do contexto do problema e dos requisitos específicos de avaliação.
 
 O cálculo do MAE é realizado utilizando o valor absoluto da diferença entre o valor real e o valor previsto, e em seguida, divide-se pela quantidade $n$ de amostras. Isso resulta no erro médio absoluto. A equação do MAE é dada por:
 

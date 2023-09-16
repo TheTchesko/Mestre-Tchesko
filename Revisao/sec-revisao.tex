@@ -13,7 +13,7 @@ A Figura \ref{fig:serie-temporal} apresenta um fluxograma de como a pesquisa foi
 	\centering
 	\caption{Fluxograma do problema de pesquisa}
 	\label{fig:serie-temporal}
-	\includegraphics[width=1\linewidth]{Revisao/Figuras/serie_temporal}
+	\includegraphics[width=\linewidth]{Revisao/Figuras/serie_temporal}
 	
 	\fonte{Elaboração própria} 
 \end{figure}
@@ -22,9 +22,9 @@ A Figura \ref{fig:rsl} apresenta uma adaptação da metodologia proposta por \ci
 
 \begin{figure}[H]
 	\centering
-	\caption{Etapas da Revisão}
+	\caption{Etapas da revisão}
 	\label{fig:rsl}
-	\includegraphics[width=1\linewidth]{Revisao/Figuras/RSL}
+	\includegraphics[width=\linewidth]{Revisao/Figuras/RSL}
 	
 	\fonte{Adaptado de \citeonline{MARTINS201671}}
 \end{figure}
@@ -44,7 +44,7 @@ A Figura \ref{fig:scopus-09-08} mostra os modelos que estão sendo usados com fr
 	\centering
 	\caption{Modelos de series temporais mais populares na Scopus e WoS }
 	\label{fig:scopus-09-08}
-	\includegraphics[width=0.8\linewidth]{Revisao/Figuras/base-wos-scopus}
+	\includegraphics[width=\linewidth]{Revisao/Figuras/base-wos-scopus}
 	
 	\fonte{Elaboração própria a partir de dados da WoS e Scopus }
 \end{figure}
@@ -77,7 +77,7 @@ Na Tabela \ref{tab:resumo}, os dados coletados na RSL realizada no software Scie
 
 \begin{table}[H]
 	\centering
-	\caption{Resumo dos Dados}
+	\caption{Resumo dos dados}
 	\label{tab:resumo}
 	\begin{tabular}{lc}
 		\hline
@@ -217,31 +217,31 @@ Foi realizada uma investigação dos artigos na revisão. Esses artigos retratam
 
 Esses artigos abordam diferentes métodos usados pelos autores para previsão de séries temporais e análise não-linear dessas previsões. Eles representam contribuições significativas para o avanço do conhecimento e aplicação prática das séries temporais, sobre abordagens eficazes nesse campo. Ao incluir esses estudos influentes na análise, obtém-se uma visão abrangente dos métodos e técnicas mais relevantes na previsão de séries temporais.
 
-No estudo conduzido por \citeonline{Xu2019}, um modelo híbrido foi proposto, combinando o modelo linear AR e LR com o modelo não-linear ARIMA e o modelo DBN. Essa abordagem permitiu capturar tanto os comportamentos lineares quanto os não-lineares de uma série temporal. Por outro lado, \citeonline{Li2020} comparou o desempenho de previsão da abordagem MAELS com outros modelos de aprendizado de máquina de última geração, como ANN, CNN, RNN, LSTM, GRU, Transformer, Prophet, ARIMA e SVM-VAR. As abordagens ANN, CNN, RNN, GRU, Transformer e LSTM são capazes de lidar com dados multivariados de entrada e saída, enquanto o ARIMA utiliza informações passadas para prever o futuro com base em características como autocorrelação e médias móveis. Na Tabela \ref{tb:mode} é mostrado quantos artigos são relacionados em cada modelo que é utilizado neste trabalho e um artigo de cada modelo.
+No estudo conduzido por \citeonline{Xu2019}, um modelo híbrido foi proposto, combinando o modelo linear AR e LR com o modelo não-linear ARIMA e o modelo DBN (do inglês \textit{Dynamic Bayesian Network}). Essa abordagem permitiu capturar tanto os comportamentos lineares quanto os não-lineares de uma série temporal. Por outro lado, \citeonline{Li2020} comparou o desempenho de previsão da abordagem MAELS (Modelo Alternativo de Estação Livre Série Temporal) com outros modelos de aprendizado de máquina de última geração, como ANN, CNN, RNN, LSTM, GRU, Transformer, Prophet, ARIMA e SVM-VAR (do inglês \textit{Support Vector Machine Variable Regression}). As abordagens ANN, CNN, RNN, GRU, Transformer e LSTM são capazes de lidar com dados multivariados de entrada e saída, enquanto o ARIMA utiliza informações passadas para prever o futuro com base em características como autocorrelação e médias móveis. Na Tabela \ref{tb:mode} é mostrado quantos artigos são relacionados em cada modelo que é utilizado neste trabalho e um artigo de cada modelo.
 
 
 
 \noindent\textbf{Estudo de Caso 1: Adequação da Pressão e Vazão em uma Rede de Distribuição de Água}
 
-\eqref{q1} Adequação da pressão atual para atender à demanda diária: Neste estudo de caso, o modelo SARIMAX (H) foi utilizado para avaliar a adequação da pressão atual em uma rede de distribuição de água, considerando a demanda diária \cite{2-s2.0-85099424908}. O objetivo foi prever a pressão na rede com base em dados históricos, permitindo que fosse realizada uma análise crítica da capacidade do sistema em atender às necessidades dos consumidores.
+\eqref{q1} Adequação da pressão atual para atender à demanda diária: Neste estudo de caso, o modelo SARIMAX foi utilizado para avaliar a adequação da pressão atual em uma rede de distribuição de água, considerando a demanda diária \cite{2-s2.0-85099424908}. O objetivo foi prever a pressão na rede com base em dados históricos, permitindo que fosse realizada uma análise crítica da capacidade do sistema em atender às necessidades dos consumidores.
 
-\eqref{q2} Volume mínimo de água no reservatório para evitar o acionamento das bombas: Para determinar o volume mínimo de água necessário no reservatório para evitar o acionamento das bombas durante o horário de pico, foi empregado um modelo Decision Tree Regressor (I) \cite{2-s2.0-85054695177}. Este modelo ajudou a identificar regras e padrões que guiam a tomada de decisão sobre o nível de armazenamento ideal.
+\eqref{q2} Volume mínimo de água no reservatório para evitar o acionamento das bombas: Para determinar o volume mínimo de água necessário no reservatório para evitar o acionamento das bombas durante o horário de pico, foi empregado um modelo DTR  \cite{2-s2.0-85054695177}. Este modelo ajudou a identificar regras e padrões que guiam a tomada de decisão sobre o nível de armazenamento ideal.
 
-\eqref{q3} Vazão ótima para atender à demanda diária: O estudo também buscou encontrar a vazão ótima para atender à demanda diária. Para isso, utilizou-se o modelo XGBRegressor (K) para otimizar a vazão na rede de distribuição, considerando as flutuações na demanda ao longo do dia \cite{2-s2.0-85130441623}.
+\eqref{q3} Vazão ótima para atender à demanda diária: O estudo também buscou encontrar a vazão ótima para atender à demanda diária. Para isso, utilizou-se o modelo XGBRegressor para otimizar a vazão na rede de distribuição, considerando as flutuações na demanda ao longo do dia \cite{2-s2.0-85130441623}.
 
 \noindent\textbf{Estudo de Caso 2: Impacto do Acionamento das Bombas durante o Horário de Pico em uma Rede de Distribuição de Água}
 
 \eqref{q5} Impacto do acionamento das bombas durante o horário de pico: Neste segundo estudo de caso, analisou-se o impacto do acionamento das bombas durante o horário de pico em uma rede de distribuição de água.
 
-\ref{q5}\eqref{q5:a} Nível ideal no reservatório e variação das vazões nos horários críticos: Utilizou-se o modelo ARIMA (E) \cite{2-s2.0-85069459067} para prever o nível ideal no reservatório e analisar as variações das vazões nos horários críticos, levando em consideração as diferentes estações do ano.
+\ref{q5}\eqref{q5:a} Nível ideal no reservatório e variação das vazões nos horários críticos: Utilizou-se o modelo ARIMA \cite{2-s2.0-85069459067} para prever o nível ideal no reservatório e analisar as variações das vazões nos horários críticos, levando em consideração as diferentes estações do ano.
 
 \ref{q5}\eqref{q5:b} Tendência, padrão e sazonalidade nos dados do Bairro Alto: Para identificar tendências, padrões e sazonalidades nos dados de três anos do Bairro Alto, empregou-se o modelo de decomposição STL, reconhecido por sua eficácia na modelagem de séries temporais com essas características.
 
 \ref{q5}\eqref{q5:c} Identificação dos horários de maior demanda: A identificação dos horários de maior demanda entre as 18h e as 21h foi realizada com o uso da RNN (P) \cite{2-s2.0-85067419084}.
 
-\ref{q5}\eqref{q5:d} Tendência, padrão e sazonalidade nos dados do Bairro Alto: Para identificar tendências, padrões e sazonalidades nos dados de três anos do Bairro Alto, empregou-se o modelo decomposição STL, reconhecido por sua eficácia na modelagem de séries temporais com essas características. Volume de armazenamento no reservatório para evitar o acionamento das bombas: Determinar a quantidade de água a ser armazenada previamente no reservatório para evitar o acionamento das bombas durante o horário de pico envolveu o modelo LGBMRegressor (L).
+\ref{q5}\eqref{q5:d} Tendência, padrão e sazonalidade nos dados do Bairro Alto: Para identificar tendências, padrões e sazonalidades nos dados de três anos do Bairro Alto, empregou-se o modelo decomposição STL, reconhecido por sua eficácia na modelagem de séries temporais com essas características. Volume de armazenamento no reservatório para evitar o acionamento das bombas: Determinar a quantidade de água a ser armazenada previamente no reservatório para evitar o acionamento das bombas durante o horário de pico envolveu o modelo LGBMRegressor.
 
-\ref{q5}\eqref{q5:e} Tendência, Padrão e Sazonalidade nos Dados do Bairro Alto: Para identificar tendências, padrões e sazonalidades nos dados de três anos do Bairro Alto, empregou-se o modelo STL, reconhecido por sua eficácia na modelagem de séries temporais com essas características. Detecção de anomalias na rede com base no histórico): Para detectar anomalias na rede com base no histórico de vazão e pressão, utilizou-se novamente o modelo ARX (B) \cite{2-s2.0-85051469381}.
+\ref{q5}\eqref{q5:e} Tendência, Padrão e Sazonalidade nos Dados do Bairro Alto: Para identificar tendências, padrões e sazonalidades nos dados de três anos do Bairro Alto, empregou-se o modelo STL, reconhecido por sua eficácia na modelagem de séries temporais com essas características. Detecção de anomalias na rede com base no histórico): Para detectar anomalias na rede com base no histórico de vazão e pressão, utilizou-se novamente o modelo ARX \cite{2-s2.0-85051469381}.
 
 Cada estudo de caso abordou questões específicas relacionadas ao sistema de abastecimento de água e utilizou modelos apropriados para cada tarefa. Isso permitiu uma análise detalhada das diferentes facetas do problema.
 

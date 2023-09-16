@@ -5,11 +5,6 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
-\bibitem[]{lstm}
-\abntrefinfo{nada}{NADA}{a}
-{FOTIOS Petropoulos and Daniele Apiletti and Vassilios Assimakopoulos and
-  others.}
-
 \bibitem[Ahmad et al. 2018]{Ahmad2018}
 \abntrefinfo{Ahmad et al.}{AHMAD et al.}{2018}
 {AHMAD, T. et al. {A comprehensive overview on the data driven and large scale
@@ -239,6 +234,11 @@ Acessado em: 22 de Março de 2023.}
   rates in web surveys.
 \textbf{International Journal of Forecasting}, v.~22, n.~4, p. 679--688, 2006.}
 
+\bibitem[Jadon, Patil e Jadon 2022]{jadon2022comprehensive}
+\abntrefinfo{Jadon, Patil e Jadon}{JADON; PATIL; JADON}{2022}
+{JADON, A.; PATIL, A.; JADON, S. \textbf{A Comprehensive Survey of Regression
+  Based Loss Functions for Time Series Forecasting}. 2022.}
+
 \bibitem[Jones, Smith e Johnson 2017]{jones2017}
 \abntrefinfo{Jones, Smith e Johnson}{JONES; SMITH; JOHNSON}{2017}
 {JONES, A.~B.; SMITH, C.~D.; JOHNSON, E.~F. Comparing forecasting models for
@@ -333,6 +333,14 @@ ISSN 0306-2619.}
 \textbf{International Journal of Intelligent Systems}, v.~37, p. 7837--7856,
   2022.
 ISSN 08848173.}
+
+\bibitem[Liu e Xu 2022]{Liu2022}
+\abntrefinfo{Liu e Xu}{LIU; XU}{2022}
+{LIU, J.; XU, Y. T-friedman test: A new statistical test for multiple
+  comparison with an adjustable conservativeness measure.
+\textbf{International Journal of Computational Intelligence Systems}, v.~15, p.
+  29--43, 2022.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s44196-022-00083-8}.}
 
 \bibitem[Liu et al. 2021]{Liu2021}
 \abntrefinfo{Liu et al.}{LIU et al.}{2021}
@@ -613,6 +621,13 @@ Dispon{\'\i}vel em:
 ISSN 2162237X (ISSN).
 Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-84925431469&doi=10.1109\%2FTNNLS.2015.2411629&partnerID=40&md5=e1c7f3c7a1136a0e0e4d2aff817b4008}.}
+
+\bibitem[Tam 2023]{lstm}
+\abntrefinfo{Tam}{TAM}{2023}
+{TAM, A. \textbf{LSTM for Time Series Prediction in PyTorch}. Machine Learning
+  Mastery, 2023.
+Dispon{\'\i}vel em:
+  \url{https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/}.}
 
 \bibitem[Tan et al. 2021]{Tan2021}
 \abntrefinfo{Tan et al.}{TAN et al.}{2021}

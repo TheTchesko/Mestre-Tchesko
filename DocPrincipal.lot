@@ -2,7 +2,7 @@
 \babel@toc {english}{}\relax 
 \babel@toc {brazil}{}\relax 
 \contentsline {table}{\numberline {1}{\ignorespaces Cruzamento de palavras-chave através da aplicação de filtros de área}}{30}{table.caption.9}%
-\contentsline {table}{\numberline {2}{\ignorespaces Resumo dos Dados}}{30}{table.caption.10}%
+\contentsline {table}{\numberline {2}{\ignorespaces Resumo dos dados}}{30}{table.caption.10}%
 \contentsline {table}{\numberline {3}{\ignorespaces Fator de impacto}}{31}{table.caption.11}%
 \contentsline {table}{\numberline {4}{\ignorespaces Os autores que mais publicam em relação ao tema de pesquisa}}{33}{table.caption.12}%
 \contentsline {table}{\numberline {5}{\ignorespaces Países com maior número de publicação}}{33}{table.caption.13}%
@@ -14,4 +14,4 @@
 \contentsline {table}{\numberline {11}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {teste}}}{113}{table.caption.55}%
 \contentsline {table}{\numberline {12}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {validação}}}{114}{table.caption.56}%
 \contentsline {table}{\numberline {13}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {inteiro}}}{115}{table.caption.57}%
-\contentsline {table}{\numberline {14}{\ignorespaces Comparação dos modelos Ljung Box}}{117}{table.caption.58}%
+\contentsline {table}{\numberline {14}{\ignorespaces Comparação dos modelos Ljung Box: Modelos ARIMA com defasagem de 10 para previsão de longo prazo na demanda de água}}{116}{table.caption.58}%

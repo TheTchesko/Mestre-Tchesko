@@ -38,7 +38,7 @@
 \BOOKMARK [2][-]{subsection.3.7}{Introdu\347\343o \340s Redes Neurais no Deep Learning}{section.3}% 38
 \BOOKMARK [3][-]{subsubsection.3.7.1}{Rede Neural Recorrente}{subsection.3.7}% 39
 \BOOKMARK [3][-]{subsubsection.3.7.2}{Compreendendo Redes de Mem\363ria de Curto e Longo Prazo \(LSTM\)}{subsection.3.7}% 40
-\BOOKMARK [3][-]{subsubsection.3.7.3}{GRU \(Unidade Recorrente com Port\365es\)}{subsection.3.7}% 41
+\BOOKMARK [3][-]{subsubsection.3.7.3}{GRU \(Unidade Recorrente Fechada\)}{subsection.3.7}% 41
 \BOOKMARK [3][-]{subsubsection.3.7.4}{An\341lise Comparativa entre os Modelos RNN, LSTM e GRU}{subsection.3.7}% 42
 \BOOKMARK [3][-]{subsubsection.3.7.5}{Explorando o Transformer: Al\351m dos Bits e Bytes}{subsection.3.7}% 43
 \BOOKMARK [2][-]{subsection.3.8}{M\351tricas de Avalia\347\343o de Modelos}{section.3}% 44
@@ -52,11 +52,11 @@
 \BOOKMARK [3][-]{subsubsection.3.9.2}{Estudo de Caso 2}{subsection.3.9}% 52
 \BOOKMARK [1][-]{section.4}{Resultados}{}% 53
 \BOOKMARK [2][-]{subsection.4.1}{An\341lise dos Modelos}{section.4}% 54
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Detec\347\343o de anomalias}{subsection.4.1}% 55
-\BOOKMARK [3][-]{subsubsection.4.1.2}{An\341lise Explorat\363ria dos dados \(EDA\)}{subsection.4.1}% 56
-\BOOKMARK [3][-]{subsubsection.4.1.3}{M\372ltiplas entradas e sa\355da \372nica \(MISO\)}{subsection.4.1}% 57
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Detec\347\343o de Anomalias}{subsection.4.1}% 55
+\BOOKMARK [3][-]{subsubsection.4.1.2}{An\341lise Explorat\363ria dos Dados \(EDA\)}{subsection.4.1}% 56
+\BOOKMARK [3][-]{subsubsection.4.1.3}{M\372ltiplas Entradas e Sa\355da \332nica \(MISO\)}{subsection.4.1}% 57
 \BOOKMARK [3][-]{subsubsection.4.1.4}{Decomposi\347\343o STL}{subsection.4.1}% 58
-\BOOKMARK [3][-]{subsubsection.4.1.5}{Separa\347\343o dos dados}{subsection.4.1}% 59
+\BOOKMARK [3][-]{subsubsection.4.1.5}{Separa\347\343o dos Dados}{subsection.4.1}% 59
 \BOOKMARK [3][-]{subsubsection.4.1.6}{Modelagem e Sele\347\343o do Modelo}{subsection.4.1}% 60
 \BOOKMARK [3][-]{subsubsection.4.1.7}{Horizonte}{subsection.4.1}% 61
 \BOOKMARK [3][-]{subsubsection.4.1.8}{Previs\343o e Avalia\347\343o}{subsection.4.1}% 62
@@ -71,7 +71,7 @@
 \BOOKMARK [2][-]{subsection.5.2}{Propostas Futuras}{section.5}% 71
 \BOOKMARK [1][-]{subsection.5.2}{Refer\352ncias}{}% 72
 \BOOKMARK [1][-]{appendix.A}{Ap\352ndice - Compara\347\343o dos modelos de previs\343o de series temporais m\351dia de 24h}{}% 73
-\BOOKMARK [1][-]{appendix.B}{Ap\352ndice - Compara\347\343o dos modelos de previs\343o com o m\351todo Ljung-Box}{}% 74
+\BOOKMARK [1][-]{appendix.B}{Ap\352ndice - Compara\347\343o dos Modelos de Previs\343o com o M\351todo Ljung-Box}{}% 74
 \BOOKMARK [1][-]{appendix.C}{Ap\352ndice - Modelos AR, ARX e MA }{}% 75
 \BOOKMARK [1][-]{appendix.D}{Ap\352ndice - Modelos ARMA e ARIMA }{}% 76
 \BOOKMARK [1][-]{appendix.E}{Ap\352ndice - Modelos ARIMAX, SARIMA e SARIMAX }{}% 77

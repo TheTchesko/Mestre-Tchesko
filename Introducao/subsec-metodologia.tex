@@ -3,7 +3,7 @@
 A descrição do problema é fundamental para obter uma compreensão mais precisa do que está sendo abordado neste trabalho. É por meio dessa descrição que as variáveis-chave são expostas e o objetivo da previsão é estabelecido de forma clara. Sem um plano estruturado para determinar o que deve ser previsto, torna-se difícil justificar o uso de modelos de previsão de dados. Portanto, é essencial estabelecer um propósito claro e definir as metas da previsão antes de aplicar os modelos adequados.
 
 \begin{itemize}
-	\item Bombas de sucção (B1, B2 e B3) – valor máximo da frequência 60 Hz
+	\item Bombas de sucção (B1, B2 e B3) – valor máximo da frequência $60$ Hz
 	
 	\item Nível do Reservatório (Câmara 1) LT01 $ (m^3) $ - \textbf{PREVER}
 	
@@ -18,7 +18,7 @@ A descrição do problema é fundamental para obter uma compreensão mais precis
 	\item Pressão de Recalque (PT02RBAL) (mca)
 \end{itemize}
 
-A pesquisa fará uso da variável LT01, que representa o nível do reservatório e desempenha um papel de extrema importância, como evidenciado pelas Figuras \ref{fig:dados-todos} e \ref{fig:2020-a-frente}. Essas figuras retratam as anomalias ocorridas durante o período em que a capital paranaense foi afetada pela escassez de chuvas, resultando na redução do nível dos reservatórios e na implementação de rodízios periódicos, conforme discutido na subseção \ref{subsubsec:motivacao}. Assim, tais observações permitem uma compreensão mais aprofundada das perspectivas futuras.
+A pesquisa fará uso da variável LT01, que representa o nível do reservatório e desempenha um papel de extrema importância, como evidenciado pelas Figuras \ref{fig:dados-todos} e \ref{fig:2020-a-frente}. Essas Figuras retratam as anomalias ocorridas durante o período em que a capital paranaense foi afetada pela escassez de chuvas, resultando na redução do nível dos reservatórios e na implementação de rodízios periódicos, conforme discutido na subseção \ref{subsubsec:motivacao}. Assim, tais observações permitem uma compreensão mais aprofundada das perspectivas futuras.
 
 \subsection{Procedimentos Metodol{\'o}gicos} \label{subsec:metod}
 
@@ -50,9 +50,9 @@ Com o intuito de realizar previsões e fazer comparações entre os modelos obti
 	
 	\item \label{etp:5} \textbf{Modelagem e Seleção do Modelo}: Nesta etapa, diversos modelos são construídos e avaliados. Alguns modelos comumente usados para previsão de séries temporais incluem ARX (do inglês \textit{Auto-Regressive with Exogenous Inputs}), AR (do inglês \textit{Auto-Regressive}), MA (do inglês \textit{Moving Average}), ARIMA, SARIMA (do inglês \textit{Seasonal Auto-Regressive Integrated Moving Averages}), SARIMAX (ARIMA Sazonal com variáveis exógenas) e modelos de aprendizado de máquina como RNN, LSTM (do inglês \textit{Long Short-Term Memory}), GRU (do inglês \textit{Gated Recurrent Unit}), Transformer (Transformador), DTR (do inglês \textit{Decision tree regressor}), LR (do inglês \textit{Linear Regression}), XGBoost (do inglês \textit{eXtreme Gradient Boosting}), Light GBM (do inglês \textit{Light Gradient Boosting Machine}) além do Prophet. A escolha do modelo final baseia-se em critérios como desempenho na validação, simplicidade do modelo e interpretabilidade dos resultados.
 	
-	\item \label{etp:6} \textbf{Validação e Ajuste do Modelo}: Após a construção do modelo, é importante avaliar seu desempenho usando dados de validação. Métricas de avaliação como Erro Médio Absoluto (MAE), Erro Médio Percentual Absoluto Simétrico (sMAPE) e Raiz do Erro Médio Quadrático Relativo (RRMSE) podem ser usadas para comparar e selecionar o melhor modelo. Além disso, técnicas de ajuste como otimização de hiperparâmetros e refinamento do modelo usando dados de treinamento e validação combinados podem melhorar o desempenho do modelo selecionado.
+	\item \label{etp:6} \textbf{Validação e Ajuste do Modelo}: Após a construção do modelo, é importante avaliar seu desempenho usando dados de validação. Métricas de avaliação como MAE (Erro Médio Absoluto), sMAPE (Erro Médio Percentual Absoluto Simétrico) e RRMSE (Raiz do Erro Médio Quadrático Relativo) podem ser usadas para comparar e selecionar o melhor modelo. Além disso, técnicas de ajuste como otimização de hiperparâmetros e refinamento do modelo usando dados de treinamento e validação combinados podem melhorar o desempenho do modelo selecionado.
 	
-	\item \label{etp:7} \textbf{Previsão e Avaliação}: Com o modelo final ajustado, é possível fazer previsões para o conjunto de testes, que representa dados futuros não observados. Essas previsões são comparadas com os valores reais correspondentes para avaliar a qualidade e precisão do modelo. Métricas de desempenho mencionadas anteriormente (MAE, RRMSE, sMAPE) podem quantificar a precisão do modelo e compará-lo com outros modelos ou abordagens.
+	\item \label{etp:7} \textbf{Previsão e Avaliação}: Com o modelo final ajustado, é possível fazer previsões para o conjunto de testes, que representa dados futuros não observados. Essas previsões são comparadas com os valores reais correspondentes para avaliar a qualidade e precisão do modelo. Métricas de desempenho (MAE, RRMSE, sMAPE) podem quantificar a precisão do modelo e compará-lo com outros modelos ou abordagens.
 	
 	\item \label{etp:8} \textbf{Teste de Significância}: Aplicar os modelos de previsão e fazer comparativo baseado em testes de significância estatística (\textit{Friedman e Nemenjy})
 
