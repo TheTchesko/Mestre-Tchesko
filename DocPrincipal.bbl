@@ -228,6 +228,12 @@ ISSN 02776693.}
   \url{https://medium.com/analytics-vidhya/recurrent-neural-network-and-its-variants-de75f9ee063}.
 Acessado em: 22 de Março de 2023.}
 
+\bibitem[Hedengren 2023]{apmonitor}
+\abntrefinfo{Hedengren}{HEDENGREN}{2023}
+{HEDENGREN, J.~D. \textbf{Machine Learning for Engineers - APMonitor}. 2023.
+[Online; accessed 21-September-2023].
+Dispon{\'\i}vel em: \url{https://apmonitor.com/pds/}.}
+
 \bibitem[Hyndman e Koehler 2006]{hyndman2006effect}
 \abntrefinfo{Hyndman e Koehler}{HYNDMAN; KOEHLER}{2006}
 {HYNDMAN, R.~J.; KOEHLER, A.~B. Effect of question formats on item endorsement
