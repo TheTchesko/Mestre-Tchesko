@@ -1,14 +1,12 @@
 \subsection{M\'etricas de Avalia\c c\~ao de Modelos}\label{subsec:metrica}
 
-A métrica de Erro Quadrático Médio (MSE) é amplamente utilizada no campo do aprendizado de máquina para avaliar a qualidade dos modelos de previsão. O MSE é calculado pela média da soma dos quadrados das diferenças entre os valores reais e os valores previstos,
+A métrica de Erro Quadrático Médio (MSE) é utilizada no campo do aprendizado de máquina para avaliar a qualidade dos modelos de previsão. O MSE é regido pela seguinte equação:
 
 \begin{eqnarray}
-	MSE &=& \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 \label{eq:mse}
+	MSE &=& \dfrac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 \label{eq:mse}
 \end{eqnarray}
 
-\noindent onde, $n$ representa o número de amostras, $y_i$ é o valor real correspondente à amostra $i$ e $\hat{y}_i$ é o valor previsto para a mesma amostra. O MSE é calculado como a média das diferenças ao quadrado entre os valores reais e os valores previstos.
-
-O MSE também é referido como uma perda quadrática porque a penalização é quadrada e não diretamente proporcional ao erro. Os \textit{outliers} recebem mais peso quando o erro é elevado ao quadrado, criando um gradiente suave para erros menores. Os algoritmos de otimização beneficiam desta penalização para erros enormes, uma vez que ajuda a obter os valores ideais para os parâmetros. Dado que os erros são elevados ao quadrado, o MSE nunca pode ser negativo, e o valor do erro pode estar em qualquer lugar entre 0 e infinito. Com erros crescentes, o MSE cresce exponencialmente, e o valor do MSE de um bom modelo será próximo de zero \cite{jadon2022comprehensive}.
+\noindent onde $n$ é o número de amostras, $y_i$ é o valor medido não real correspondente à amostra $i$ e $\hat{y}_i$ é o valor previsto para a mesma amostra.
 
 \subsubsection{Erro Quadr\'atico M\'edio Raiz (RMSE)}
 
@@ -18,106 +16,50 @@ O RMSE é uma métrica amplamente empregada na avaliação de modelos de previs�
 	RMSE &=& \sqrt{\dfrac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2} \label{eq:rmse}
 \end{eqnarray}
 
-\noindent onde \eqref{eq:rmse}, $n$ representa o número de amostras, $y_i$ é o valor real correspondente à amostra $i$, e $\hat{y}_i$ é o valor previsto para a mesma amostra. O RMSE fornece uma medida da dispersão média entre os valores reais e os valores previstos pelo modelo.
 
-Uma das vantagens de utilizar o RMSE é que, ao computar a raiz quadrada, o erro passa a ter a mesma escala da variável de interesse. Isso permite uma interpretação mais fácil dos resultados, sendo que um valor baixo de RMSE indica um bom desempenho do modelo, já que o erro se aproxima de zero.
 
-O RMSE possui algumas características positivas. Ele penaliza de forma significativa os valores discrepantes, caso seja necessário para o modelo. Além disso, o erro resultante está nas mesmas unidades da série temporal, facilitando a interpretação. O RMSE pode ser considerado uma combinação das melhores características do MSE e do Erro Absoluto Médio (MAE).
-
-O RMSE também apresenta algumas desvantagens. Ele tem uma interpretabilidade reduzida, uma vez que os erros ainda são elevados ao quadrado. Além disso, o RMSE é dependente da escala dos dados, o que impede sua comparação direta com modelos de séries temporais que utilizam unidades diferentes.
-
-Apesar das limitações, o RMSE é uma métrica amplamente utilizada para avaliar modelos de previsão em séries temporais. Ele fornece uma medida da dispersão média entre os valores reais e previstos, auxiliando na compreensão do desempenho do modelo e na comparação com outras abordagens.
+O RMSE penaliza os valores discrepantes.
 
 \subsubsection{Raiz do Erro M\'edio Quadr\'atico Relativo (RRMSE)}\label{subsub:rrmse}
 
-O RRMSE é uma variante do RMSE sem dimensões. O erro quadrático médio (RMSE) é uma medida de erro quadrático médio relativo que foi escalado em relação ao valor real e depois normalizado pelo valor da raiz quadrada média. Enquanto as medidas originais medidas originais restringem o RMSE, o RRMSE pode ser usado para  comparar várias abordagens de medição. Um RRMSE acontece quando as suas previsões se revelam erradas, e o erro é expresso pelo RRMSE de forma relativa ou em percentagem. RRMSE A exatidão do modelo é excelente quando a pontuação do modelo é inferior a 10\%, boa quando a pontuação do modelo se situa entre 10\% e 20\%, razoável quando a pontuação do modelo está entre 20\% e 30\%, e má quando a pontuação do modelo é superior a 30\% O RRMSE pode ser expresso como,
+O RRMSE é uma variante do RMSE. O erro quadrático médio (RMSE) é uma medida de erro quadrático médio relativo que foi escalado em relação ao valor real e depois normalizado pelo valor da raiz quadrada média.  O RRMSE pode ser expressado por,
 
 \begin{eqnarray}
 	R R M S E&=&\sqrt{\frac{\frac{1}{N} \sum_{i=1}^N\left(y_i-\hat{y}_i\right)^2}{\sum_{i=1}^N\left(\hat{y}_i\right)^2}}
 \end{eqnarray}
 
-\noindent onde, $N$ é o número de amostras de dados, $y_i$ é o valor real, e $\hat{y}_i$ é o valor previsto.
-
-\noindent\textbf{Vantagens do RRMSE :}
-
-
- O RRMSE pode ser utilizado para comparar diferentes técnicas de medição
- técnicas de medição \cite{jadon2022comprehensive}.
-
-
-\noindent\textbf{Desvantagens do RRMSE:}
-
-
-O RRMSE pode esconder a imprecisão nos resultados da experiência \cite{jadon2022comprehensive}.
-
-
-É essencial que sejam consideradas essas vantagens e desvantagens ao utilizar o RRMSE como métrica de avaliação. É recomendado o uso de várias métricas em conjunto para obter uma visão mais completa do desempenho do modelo de regressão.
-
-
-
 \subsubsection{Erro Absoluto M\'edio (MAE)}
 
-O Erro Absoluto Médio (MAE) é amplamente utilizado como uma métrica para avaliar o desempenho de modelos de previsão. Em vez de calcular a média das diferenças entre os valores reais e previstos, o MAE calcula a média dos valores absolutos dessas diferenças, garantindo que os erros positivos e negativos não se anulem.
-
-O MAE mede o desvio médio das previsões em relação aos valores reais e é uma métrica intuitiva e fácil de interpretar, representando a magnitude média dos erros em relação à escala dos dados. Por exemplo, um MAE de 2 significa que, em média, as previsões têm um desvio absoluto de 2 unidades em relação aos valores reais.
-
-Uma das vantagens do MAE é a sua insensibilidade a valores extremos, pois trata os erros de forma absoluta. No entanto, como o MAE não considera a magnitude dos erros individuais, pode não refletir adequadamente a gravidade de desvios significativos em relação aos valores reais.
-
-Para superar essa limitação, uma alternativa é o Erro Médio Absoluto Percentual (MAPE). O MAPE expressa o MAE como uma porcentagem em relação aos valores reais, proporcionando uma medida relativa de erro. Essa métrica é especialmente útil quando se deseja avaliar o desempenho de um modelo em relação à magnitude dos dados.
-
-
-O cálculo do MAE é realizado utilizando o valor absoluto da diferença entre o valor real e o valor previsto, e em seguida, divide-se pela quantidade $n$ de amostras. Isso resulta no erro médio absoluto. A equação do MAE é dada por:
+O Erro Absoluto Médio (MAE) é utilizado como uma métrica para avaliar o desempenho de modelos de previsão. Em vez de calcular a média das diferenças entre os valores reais e previstos, o MAE calcula a média dos valores absolutos dessas diferenças, garantindo que os erros positivos e negativos não se anulem.
+A equação do MAE é dada por:
 
 \begin{eqnarray}
 	M A E &=& \dfrac{1}{n} \sum\left|y_i-\hat{y}_i\right|\label{eq:mae}
 \end{eqnarray}
 
-Sua interpretação é similar ao RMSE, em que o erro é expresso na mesma escala ou ordem de grandeza da variável estudada.
+\noindent sua interpretação é similar ao RMSE, em que o erro é expresso na mesma escala ou ordem de grandeza da variável estudada.
 
 \subsubsection{Erro Percentual Absoluto M\'edio (MAPE)}
 
-O Erro Percentual Absoluto Médio (MAPE) é uma métrica que expressa o erro de previsão como uma porcentagem relativa ao valor observado. Ele é calculado somando as diferenças entre o valor real e o valor previsto (representando o erro), dividido pelo valor observado.
+O Erro Percentual Absoluto Médio (MAPE) é uma métrica que expressa o erro de previsão como uma porcentagem relativa ao valor observado. 
 O MAPE é calculado usando a seguinte fórmula:
 
 \begin{eqnarray}
 	MAPE &=& \dfrac{1}{n} \sum\left|\frac{y_i - \hat{y}_i}{y_i}\right|\label{eq:mape}
 \end{eqnarray}
 
-No entanto, surge um problema quando o valor observado $y_i$ é igual a zero, pois é matematicamente impossível dividir por zero. O MAPE é uma medida de erro em que valores menores indicam um melhor desempenho de previsão.
-Uma alternativa ao MAPE é calcular $1 - \text{MAPE}$, que representa a porcentagem de acerto.
-O Erro Percentual Absoluto Médio é comumente usado como uma métrica de referência para avaliar o desempenho de modelos de previsão.
 
-\noindent\textbf{Vantagens do MAPE:}
-
-
-Fácil de interpretar.
-Independente de escala, permitindo comparações entre diferentes séries temporais
-
-
-\noindent\textbf{Desvantagens do MAPE:}
-
-Erro infinito se o valor real estiver próximo ou igual a zero.
-Previsões mais baixas estão propensas a ter um erro de 100\%, enquanto previsões mais altas podem ter um erro infinito, o que resulta em um viés de subprevisão.
-Essa métrica são amplamente utilizadas na avaliação de modelos de previsão em diferentes áreas e ajudam a quantificar a qualidade das previsões realizadas pelos modelos.
 
 \subsubsection{Erro Percentual Absoluto M\'edio Sim\'etrico (sMAPE)}
 
 
-O sMAPE (do inglês \textit{Symmetric Mean Absolute Percentage Error}), ou Erro Médio Percentual Absoluto Simétrico, é outra métrica comumente utilizada para avaliar a precisão de modelos de previsão. Aqui estão as vantagens e desvantagens do sMAPE:
+O sMAPE (do inglês \textit{Symmetric Mean Absolute Percentage Error}), ou Erro Médio Percentual Absoluto Simétrico, é outra métrica comumente utilizada para avaliar a precisão de modelos de previsão. 
 
-\noindent\textbf{Vantagens do sMAPE:}
-
-
-Interpretação intuitiva: O sMAPE é expresso como uma porcentagem, facilitando a compreensão da precisão relativa do modelo. Valores menores indicam uma melhor precisão.	
-Simetria: Ao contrário do MAPE (do inglês \textit{Mean Absolute Percentage Error}), o sMAPE é simétrico em relação aos valores previstos e reais. Isso significa que ele considera igualmente as discrepâncias de subestimação e superestimação.	
-Robustez contra valores nulos: O sMAPE é adequado para lidar com valores nulos nos dados, pois a divisão por zero é evitada no cálculo da métrica.
+O sMAPE é expresso como uma porcentagem, facilitando a compreensão da precisão relativa do modelo.  O sMAPE é adequado para lidar com valores nulos nos dados, pois a divisão por zero é evitada no cálculo da métrica.
 
 
-\noindent\textbf{Desvantagens do sMAPE:}
-
-
-Sensibilidade a valores extremos: O sMAPE é sensível a valores extremos nos dados. Se houver valores discrepantes que não representem a tendência geral, eles podem influenciar significativamente a métrica.	
-Assimetria em torno de zero: Embora o sMAPE seja simétrico em relação aos valores previstos e reais, ele não é simétrico em torno de zero. Isso pode causar interpretações inconsistentes, especialmente quando os valores reais são próximos de zero.
+O sMAPE é sensível a valores extremos nos dados. Se houver valores discrepantes que não representem a tendência geral, eles podem influenciar significativamente a métrica.	
+O sMAPE é dado por:
 
 
 
@@ -126,9 +68,144 @@ Assimetria em torno de zero: Embora o sMAPE seja simétrico em relação aos val
 \end{eqnarray}
 
 
-\noindent onde $y_i$ representa o valor real, $\hat{y}_i$ representa o valor previsto e $n$ é o número total de amostras.
-Ao utilizar o sMAPE como métrica de avaliação, é importante considerar esses prós e contras. Além disso, recomenda-se o uso de várias métricas em conjunto para obter uma visão abrangente do desempenho do modelo de previsão.
 
 
 
+\subsection{Teste de Ljung-Box}
+
+O teste de Ljung-Box (nomeado em homenagem a Greta M. Ljung e George E. P. Box) é um tipo de teste estatístico de se qualquer um de um grupo de autocorrelações de uma série temporal é diferente de zero. Em vez de testar a aleatoriedade em cada lag distinto, ele testa a aleatoriedade ``geral'' com base em um número de lags, e é, portanto, um teste portmanteau.
+
+Este teste é às vezes conhecido como o teste de Ljung-Box Q, e está intimamente ligado ao teste Box-Pierce (que é nomeado após George E. P. Box e David A. Pierce). De fato, a estatística do teste de Ljung-Box foi descrita explicitamente no artigo que levou ao uso da estatística Box-Pierce,\cite{box}, \cite{ljung} e da qual essa estatística leva seu nome. A estatística de teste Box-Pierce é uma versão simplificada da estatística de Ljung-Box para a qual estudos de simulação subsequentes mostraram baixo desempenho \cite{dav}.
+
+O teste de Ljung-Box é amplamente aplicado em econometria e outras aplicações da análise de séries temporais. Avaliação semelhante também pode ser realizada com o teste de Breusch-Godfrey e o teste de Durbin-Watson.
+
+\noindent\textbf{Defini\c c\~ao Formal}
+o teste de Ljung-Box pode ser definido como:
+
+$H_0$: Os dados são distribuídos de forma independente (ou seja, as correlações na população da qual a amostra é retirada são 0, de modo que quaisquer correlações observadas nos dados resultam da aleatoriedade do processo de amostragem).
+
+$H_a$: Os dados não são distribuídos de forma independente; apresentam correlação serial.
+A estatística de teste é \cite{ljung}:
+
+\begin{eqnarray}
+	Q&=&n(n+2) \sum_{k=1}^h \dfrac{\hat{\rho}_k^2}{n-k}
+\end{eqnarray}
+
+\noindent onde $n$ é o tamanho da amostra, $\hat{\rho}_k$ é a autocorrelação da amostra no lag $k$ e $h$ é o número de defasagens que estão sendo testadas. Debaixo $H_0$ a estatística $Q$ segue assintoticamente um $\chi_{(h)}^2$. Para o nível de significância $\alpha$, a região crítica para rejeição da hipótese de aleatoriedade é:
+
+
+\begin{eqnarray}
+	Q&>&\chi_{1-\alpha, h}^2
+\end{eqnarray}
+
+\noindent onde $\chi_{1-\alpha, h}^2$ é o $(1-\alpha)-$ quantil \cite{Brockwell2002} da distribuição qui-quadrada com graus $h$ de liberdade.
+
+O teste de Ljung-Box é comumente usado na modelagem de média móvel integrada ARIMA. Note que ele é aplicado aos resíduos de um modelo ARIMA ajustado, não à série original, e em tais aplicações a hipótese que está sendo testada é que os resíduos do modelo ARIMA não têm autocorrelação. Ao testar os resíduos de um modelo ARIMA estimado, os graus de liberdade precisam ser ajustados para refletir a estimação do parâmetro. Por exemplo, para um modelo ARIMA $(p,0,q)$, os graus de liberdade devem ser definidos como $h-p-q$ \cite{Davidson2000}.
+
+\noindent\textbf{Teste Box-Pierce: }
+O teste Box-Pierce utiliza a estatística do teste, na notação descrita acima, dada por \cite{box}
+
+\begin{eqnarray}
+	Q_{\mathrm{BP}}=n \sum_{k=1}^h \hat{\rho}_k^2
+\end{eqnarray}
+
+\noindent e usa a mesma região crítica definida acima.
+Estudos de simulação mostraram que a distribuição para a estatística Ljung-Box é mais próxima de um $\chi^2_{(h)}$ 6 distribuição do que é a distribuição para a estatística Box-Pierce para todos os tamanhos de amostra, incluindo os pequenos.
+
+
+\subsection{Correla\c c\~ao de Pearson}
+
+Nos modelos de aprendizado de máquina supervisionados, é feita uma tentativa de identificar as relações existentes entre diferentes variáveis \cite{korstanje2021}:
+
+Variável de destino: a variável que tenta prever.
+Variáveis explicativas: Variáveis que ajudam a prever o alvo variável
+
+
+Para realizar previsões, é importante que se compreenda quais tipos de variáveis explicativas podem ser utilizadas. Neste exemplo, a variável \textbf{Pressão de Sucção (PT01SU)} será considerada como a variável $x$, enquanto a variável \textbf{Nível do Reservatório (Câmara 1) LT01} será considerada como a variável $y$. O coeficiente de correlação indica a relação entre o eixo $x$ e $y$, como expresso pela seguinte fórmula.
+A equação do coeficiente de correlação de Pearson é dada por:
+
+\begin{equation}
+	r=\frac{\sum\left(x_i-\bar{x}\right)\left(y_i-\bar{y}\right)}{\sqrt{\left(\sum\left(x_i-\bar{x}\right)^2\right)\left(\sum\left(y_i-\bar{y}\right)^2\right)}}
+\end{equation}
+
+\noindent onde $x_i$ e $y_i$ representam os valores das variáveis $X$ e $Y$, respectivamente. $\bar{x}$ e $\bar{y}$ são as médias dos valores $x_i$ e $y_i$. O coeficiente de correlação de Pearson mede a força e a direção da relação linear entre as variáveis $X$ e $Y$. Valores próximos a 1 indicam uma correlação positiva forte, valores próximos a -1 indicam uma correlação negativa forte, e valores próximos a 0 indicam uma ausência de correlação entre as variáveis.
+
+
+\subsection{Decomposi\c c\~ao STL}
+
+A decomposição sazonal e de tendência utilizando o procedimento de suavização de diagramas de dispersão estimada localmente (Loess) (STL) é uma técnica amplamente utilizada para decompor séries temporais em seus componentes sazonais, de tendência e restantes. O método STL realiza a decomposição aditiva dos dados por meio de uma sequência de aplicações do Loess mais suave, onde regressões polinomiais ponderadas localmente são aplicadas em cada amostra do conjunto de dados, tendo como variáveis explicativas os valores próximos do amostra cuja resposta está sendo estimada \cite{Theodosiou20111178}.
+
+A decomposição STL é útil para identificar padrões sazonais e de tendência presentes nas séries temporais. Ela permite a separação dos componentes sazonais, que ocorrem em intervalos regulares ao longo do tempo, da componente de tendência, que indica a direção geral dos dados ao longo do tempo. A decomposição também resulta em uma componente restante, que representa a variação não explicada pelos componentes sazonais e de tendência.
+
+Ao aplicar a decomposição STL, a série temporal pode ser expressa como a soma dos componentes sazonais, de tendência e restantes. Essa técnica é útil para análise e modelagem de séries temporais, pois proporciona uma compreensão mais clara dos padrões de variação presentes nos dados.
+
+A decomposição STL é formalmente definida como:
+
+\begin{eqnarray}
+	y_t=f\left(S_t, T_t, R_t\right)&=&\left\{\begin{array}{l}
+		y_t=S_t+T_t+R_t \quad \text { modelo aditivo } \\
+		y_t=S_t T_t R_t \quad \text { modelo multiplicativo }
+	\end{array}\right. \label{eq:stl}
+\end{eqnarray}
+
+\subsection{Dickey-Fuller (DF)}
+
+De acordo com o \citeonline{Reisen2017115}, o teste DF tem as seguintes equações:
+
+\begin{eqnarray}
+	z_t&=& y_t+\theta \beta_t, \qquad t=1,\ldots, T, \label{eq:df3}\\	
+	\hat{\rho}_{\mathrm{DF}}-1&=&\frac{\sum_{t=1}^T z_{t-1} \Delta z_t}{\sum_{t=1}^T z_{t-1}^2} \label{eq:regdf}
+\end{eqnarray}
+
+De \eqref{eq:regdf} onde $\Delta z_t=z_t-z_{t-1}$. Sob a hipótese nula $\left(H_0\right)$ : `` $\rho=1$'', as estatísticas do teste DF e suas distribuições limitantes são dadas da seguinte forma:
+
+
+\begin{eqnarray}
+	T\left(\hat{\rho}_{\mathrm{DF}}-1\right)=T \frac{\sum_{t=1}^T z_{t-1} \Delta z_t}{\sum_{t=1}^T z_{t-1}^2}
+\end{eqnarray}
+e
+
+
+\begin{eqnarray}
+	\hat{\tau}_{\mathrm{DF}}&=&\frac{\hat{\rho}_{\mathrm{DF}}-1}{\hat{\sigma}_{\mathrm{DF}}\left(\sum_{t=1}^T z_{t-1}^2\right)^{-1 / 2}} \label{eq:df}
+\end{eqnarray}
+
+\noindent de \eqref{eq:df} onde $\hat{\sigma}_{\mathrm{DF}}^2=T^{-1} \sum_{t=1}^T\left(\Delta z_t-\left(\hat{\rho}_{\mathrm{DF}}-1\right) z_{t-1}\right)^2 .$
+Suponha que $\left(z_t\right)_{1 \leq t \leq T}$ são dadas por \eqref{eq:df3}, então quando $\rho=1$,
+
+
+\begin{eqnarray}
+	T\left(\hat{\rho}_{\mathrm{DF}}-1\right) \stackrel{d}{\longrightarrow} \frac{W(1)^2-1}{2 \int_0^1 W(r)^2 \mathrm{~d} r}-\left(\frac{\theta}{\sigma}\right)^2 \frac{\pi}{\int_0^1 W(r)^2 \mathrm{~d} r}, \text { como } T \rightarrow \infty \\
+	\hat{\tau}_{\mathrm{DF}} \stackrel{d}{\longrightarrow}\left[1+2(\theta / \sigma)^2 \pi\right]^{-1 / 2}\left\{\frac{W(1)^2-1}{2\left(\int_0^1 W(r)^2 \mathrm{~d} r\right)^{1 / 2}}-\frac{(\theta / \sigma)^2 \pi}{\left(\int_0^1 W(r)^2 \mathrm{~d} r\right)^{1 / 2}}\right\} \\
+	\quad \operatorname{como} T \rightarrow \infty\label{eq:df2}
+\end{eqnarray}
+
+\noindent a partir da equação \eqref{eq:df2}, onde $\stackrel{d}{\longrightarrow}$ denota convergência na distribuição e onde $\left\{W(r), r \in[0,1]\right\}$ denota o movimento Browniano padrão.
+
+\subsection{Teste de Signific\^ancia}
+
+
+O teste de Friedman classifica os modelos $K$ em cada conjunto de dados em relação ao valor absoluto dos resultados dados por esses algoritmos. A classificação do algoritmo com maior desempenho é $1$ , e o com menor desempenho é classificado como $\mathrm{K}$. Em seguida, o valor da estatística com base em todas as classificações é calculado como mostrado em equações \eqref{ff} e \eqref{fx} com $r_{e u}^j$ sendo a classificação do desempenho do j-ésimo algoritmo no i-ésimo conjunto de dados. Essa estatística obedece à distribuição do quiquadrado com $\mathrm{K}-1$ graus de liberdade \cite{Liu2022}.
+
+\begin{eqnarray}
+	\chi_F^2 & =&\frac{12 N}{K(K+1)}\left[\sum_{j=1}^K R_j^2-\frac{K(K+1)^2}{4}\right] \label{ff}\\
+	R_j & =&\frac{1}{N} \sum_{i=1}^N r_{e i l}^j \label{fx}
+\end{eqnarray}
+
+
+
+\begin{eqnarray}
+	F_F&=&\dfrac{(N-1) \chi_F^2}{N(K-1) \chi_F^2}\label{fx1}
+\end{eqnarray}
+
+As estatísticas FF mostrados na equação \eqref{fx1} obedecem à distribuição F com graus de liberdade $K-1$ e $(K-1)$ $(N-1)$. Verificando-se a tabela de distribuição $F$, pode-se obter o valor crítico abaixo do nível de significância especificado (geralmente $\alpha = 0,05$ ou $0,01$). Ao comparar esse valor crítico com o valor calculado com a equação \eqref{fx1}, a hipótese nula é rejeitada se o valor estatístico $F_F$ é maior que o valor crítico, indicando que há diferenças significativas entre os algoritmos $K$. Em seguida, pode-se realizar um procedimento post hoc para analisar melhor se o algoritmo de controle é significativamente melhor do que cada algoritmo de referência nos experimentos. Ao contrário, se o valor for menor ou igual ao valor crítico, a hipótese nula é aceita, indicando que não há diferenças significativas entre os algoritmos $K$.
+
+
+Adicionalmente, utilizou-se o valor crítico CD (do inglês \textit{Critical Difference}) para determinar se dois classificadores eram significativamente diferentes entre si. O CD foi calculado conforme a fórmula mencionada anteriormente:
+
+\begin{equation}
+	CD = q_\alpha \sqrt{\frac{k(k+1)}{6N}}
+\end{equation}
+
+\noindent na equação do CD, $q_\alpha$ representa o valor crítico obtido da Tabela \ref{tb:nemeyi} de teste de Nemenyi, $k$ é o número de classificadores e $N$ é o número total de amostras \cite{Liu2022}.
 

@@ -23,7 +23,7 @@ A Tabela \ref{tb:nemeyi} apresenta os resultados do teste de Nemenyi, um método
 		\textbf{8}                           & 0,001                          & 0,157                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 1,000                          \\ \bottomrule
 	\end{tabular}
 	
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+
 \end{table}
 
 
@@ -34,20 +34,17 @@ O valor crítico CD foi utilizado para determinar se dois classificadores eram s
 Os resultados da pesquisa indicaram a existência de evidências estatísticas que sugerem a superioridade de pelo menos um modelo em relação aos demais. Além disso, a análise de comparação significativa entre os modelos revelou pares de classificadores que apresentam diferenças estatisticamente significativas em seus desempenhos. Essas informações são valiosas para a seleção e avaliação dos modelos de classificação, permitindo uma compreensão mais precisa das diferenças de desempenho entre os classificadores avaliados no estudo.
 
 
-\noindent\textbf{Modelo com menor valor em cada métrica}:
-	
+\noindent\textbf{Modelo com menor valor em cada métrica:}	
 Primeiramente, os diversos modelos de previsão de séries temporais foram avaliados para um horizonte de previsão de 30 dias. Para cada métrica (\textbf{sMAPE}, \textbf{MAE} e \textbf{RRMSE}), identificou-se o modelo que apresentou o menor valor.
 A métrica \textbf{sMAPE} apontou que o modelo \textbf{RNN} obteve o menor valor.
 Quanto à métrica \textbf{MAE}, novamente o modelo \textbf{RNN} demonstrou o menor valor.
 A métrica \textbf{RRMSE} também indicou que o modelo \textbf{RNN} teve o menor valor.
 
 
-\noindent\textbf{Evidências estatísticas de que pelo menos um modelo é superior}:
-
+\noindent\textbf{Evidências estatísticas de que pelo menos um modelo é superior:}
 Para validar estatisticamente as diferenças entre os modelos, foi realizado um teste estatístico denominado \textbf{Teste de Friedman}. Esse teste avalia o desempenho dos modelos em todas as métricas simultaneamente. O resultado do teste de Friedman revelou \textbf{evidências estatísticas} que pelo menos um dos modelos apresenta superioridade estatística em relação aos demais, considerando um nível de significância de $0.05$.
 	
-\noindent\textbf{Comparação significativa entre modelos - Teste de Nemenyi}:
-	
+\noindent\textbf{Comparação significativa entre modelos - Teste de Nemenyi:}	
 A fim de determinar quais modelos apresentam diferenças estatisticamente significativas entre si, foi conduzido o \textbf{teste de comparações múltiplas de Nemenyi}. Esse teste avalia todos os pares possíveis de modelos e identifica quais deles possuem diferenças estatisticamente significativas. Os resultados indicaram \textbf{diferenças estatisticamente significativas} entre vários pares de modelos. Especificamente:
 
 O modelo \textbf{RNN} apresentou diferenças significativas em relação aos modelos \textbf{LSTM} e \textbf{GRU}.

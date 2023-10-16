@@ -27,11 +27,24 @@ ISSN 26662558.}
 \textbf{CoRR}, abs/1907.10902, 2019.
 Dispon{\'\i}vel em: \url{http://arxiv.org/abs/1907.10902}.}
 
+\bibitem[Al-Shabi 2021]{al2021machine}
+\abntrefinfo{Al-Shabi}{AL-SHABI}{2021}
+{AL-SHABI, M.~Q. Machine learning: Algorithms, real-world applications and
+  research directions.
+\textbf{SN Computer Science}, Springer, v.~2, n.~3, p. 1--12, 2021.}
+
 \bibitem[Anderson e Williams 2021]{random_forest_regression}
 \abntrefinfo{Anderson e Williams}{ANDERSON; WILLIAMS}{2021}
 {ANDERSON, J.; WILLIAMS, S. Random forest regression for time series
   forecasting.
 \textbf{Journal of Time Series Analysis}, v.~32, n.~2, p. 234--256, 2021.}
+
+\bibitem[Bandara, Hyndman e Bergmeir 2021]{Bandara2021}
+\abntrefinfo{Bandara, Hyndman e Bergmeir}{BANDARA; HYNDMAN; BERGMEIR}{2021}
+{BANDARA, K.; HYNDMAN, R.~J.; BERGMEIR, C. Mstl: A seasonal-trend decomposition
+  algorithm for time series with multiple seasonal patterns.
+\textbf{arXiv preprint arXiv:2107.13462}, 2021.
+Dispon{\'\i}vel em: \url{https://arxiv.org/abs/2107.13462}.}
 
 \bibitem[Bergmeir, Hyndman e Koo 2018]{Bergmeir2018}
 \abntrefinfo{Bergmeir, Hyndman e Koo}{BERGMEIR; HYNDMAN; KOO}{2018}
@@ -58,11 +71,26 @@ Acessado em: 22 de Março de 2023.}
   demand forecasting: From short-term to medium-term horizon}.
 \textbf{Electric Power Systems Research}, v.~142, p. 58--73, 2017.}
 
-\bibitem[BrandÃo 2020]{brandão_2020}
-\abntrefinfo{BrandÃo}{BRANDÃO}{2020}
-{BRANDÃO, G.~A. \textbf{Séries Temporais: Parte 1}. DEV Community, 2020.
+\bibitem[Box e Pierce 1970]{box}
+\abntrefinfo{Box e Pierce}{BOX; PIERCE}{1970}
+{BOX, G. E.~P.; PIERCE, D.~A. Distribution of residual autocorrelations in
+  autoregressive-integrated moving average time series models.
+\textbf{Journal of the American Statistical Association}, v.~65, n.~332, p.
+  1509--1526, 1970.
+Dispon{\'\i}vel em:
+  \url{https://www.tandfonline.com/doi/abs/10.1080/01621459.1970.10481180}.}
+
+\bibitem[Brandão 2020]{brandão_2020}
+\abntrefinfo{Brandão}{BRANDãO}{2020}
+{BRANDãO, G.~A. \textbf{Séries Temporais: Parte 1}. DEV Community, 2020.
 Dispon{\'\i}vel em:
   \url{https://dev.to/giselyalves13/series-temporais-parte-1-13l8}.}
+
+\bibitem[Brockwell e Davis 2002]{Brockwell2002}
+\abntrefinfo{Brockwell e Davis}{BROCKWELL; DAVIS}{2002}
+{BROCKWELL, P.~J.; DAVIS, R.~A. \textbf{Introduction to Time Series and
+  Forecasting}. [S.l.]: Springer New York, 2002.
+ISBN 978-0-387-95351-9.}
 
 \bibitem[Brown e Lee 2021]{xgboost_intro}
 \abntrefinfo{Brown e Lee}{BROWN; LEE}{2021}
@@ -136,16 +164,56 @@ ISSN 0899-7667.}
   series forecasting}.
 \textbf{Applied Energy}, v.~201, p. 412--418, 2017.}
 
-\bibitem[{de Oliveira} e {Cyrino Oliveira} 2018]{DEOLIVEIRA2018776}
-\abntrefinfo{{de Oliveira} e {Cyrino Oliveira}}{{de Oliveira}; {Cyrino
-  Oliveira}}{2018}
-{{de Oliveira}, E.~M.; {Cyrino Oliveira}, F.~L. Forecasting mid-long term
-  electric energy consumption through bagging arima and exponential smoothing
-  methods.
-\textbf{Energy}, v.~144, p. 776--788, 2018.
-ISSN 0360-5442.
-Dispon{\'\i}vel em:
-  \url{https://www.sciencedirect.com/science/article/pii/S0360544217320820}.}
+\bibitem[Davidson 2000]{Davidson2000}
+\abntrefinfo{Davidson}{DAVIDSON}{2000}
+{DAVIDSON, J. \textbf{Econometric Theory}. Wiley-Blackwell, 2000.
+ISBN 978-0-631-21584-4. Dispon{\'\i}vel em:
+  \url{https://www.wiley.com/en-cn/Econometric+Theory-p-9780631215844}.}
+
+\bibitem[DAVIES e NEWBOLD 1979]{dav}
+\abntrefinfo{DAVIES e NEWBOLD}{DAVIES; NEWBOLD}{1979}
+{DAVIES, N.; NEWBOLD, P. Some power studies of a portmanteau test of time
+  series model specification.
+\textbf{Biometrika}, v.~66, n.~1, p. 153--155, 04 1979.
+ISSN 0006-3444.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1093/biomet/66.1.153}.}
+
+\bibitem[Doe 2016]{ecg}
+\abntrefinfo{Doe}{DOE}{2016}
+{DOE, J. Time series analysis of ecg signals using wavelet transform and arima
+  models.
+\textbf{Journal of Medical Systems}, Springer, v.~40, n.~10, p. 1--10, 2016.}
+
+\bibitem[Doe 2017]{temperature}
+\abntrefinfo{Doe}{DOE}{2017}
+{DOE, J. Forecasting daily temperature using arima models: a case study in the
+  united states.
+\textbf{Journal of Climate}, American Meteorological Society, v.~30, n.~3, p.
+  1--25, 2017.}
+
+\bibitem[Doe 2018]{eeg}
+\abntrefinfo{Doe}{DOE}{2018}
+{DOE, J. Analysis of eeg signals using arima models and neural networks for
+  seizure detection.
+\textbf{Journal of Neuroscience Methods}, Elsevier, v.~300, p. 1--15, 2018.}
+
+\bibitem[Doe 2020]{unemployment_rate}
+\abntrefinfo{Doe}{DOE}{2020a}
+{DOE, J. Forecasting monthly unemployment rates using arima models.
+\textbf{Journal of Labor Economics}, University of Chicago Press, v.~20, n.~2,
+  p. 1--20, 2020.}
+
+\bibitem[Doe 2020]{rainfall}
+\abntrefinfo{Doe}{DOE}{2020b}
+{DOE, J. Time series analysis of rainfall data using arima models: a case study
+  in brazil.
+\textbf{International Journal of Climatology}, Wiley Online Library, v.~40,
+  n.~10, p. 1--15, 2020.}
+
+\bibitem[Doe 2022]{stock_prices}
+\abntrefinfo{Doe}{DOE}{2022}
+{DOE, J. Forecasting stock prices using arima and garch models.
+\textbf{Journal of Economics}, Springer, v.~10, n.~1, p. 1--15, 2022.}
 
 \bibitem[Du et al. 2020]{Du2020}
 \abntrefinfo{Du et al.}{DU et al.}{2020}
@@ -166,11 +234,6 @@ Acessado em: 22 de Março de 2023.}
 \textbf{Energy}, v.~165, p. 620--629, 2018.
 ISSN 03605442.}
 
-\bibitem[Garcia e Rodriguez 2023]{lightgbm_forecasting}
-\abntrefinfo{Garcia e Rodriguez}{GARCIA; RODRIGUEZ}{2023}
-{GARCIA, M.; RODRIGUEZ, A. Time series forecasting with lightgbm.
-\textbf{Journal of Machine Learning Research}, v.~10, n.~4, p. 789--812, 2023.}
-
 \bibitem[Golyandina 2020]{Golyandina2020}
 \abntrefinfo{Golyandina}{GOLYANDINA}{2020}
 {GOLYANDINA, N. {Particularities and commonalities of singular spectrum
@@ -183,6 +246,13 @@ ISSN 1939-0068.}
 \abntrefinfo{Graff et al.}{GRAFF et al.}{2017}
 {GRAFF, M. et al. {Time series forecasting with genetic programming}.
 \textbf{Natural Computing}, v.~16, n.~1, p. 165--174, 2017.}
+
+\bibitem[Gr{\"u}bler 2018]{Grubler2018}
+\abntrefinfo{Gr{\"u}bler}{GR{\"U}BLER}{2018}
+{GR{\"U}BLER, M. Entendendo o funcionamento de uma rede neural artificial.
+\textbf{Medium}, Jun 2018.
+Dispon{\'\i}vel em:
+  \url{https://medium.com/brasil-ai/entendendo-o-funcionamento-de-uma-rede-neural-artificial-4463fcf44dd0}.}
 
 \bibitem[Guo, Pedrycz e Liu 2018]{2-s2.0-85041536076}
 \abntrefinfo{Guo, Pedrycz e Liu}{GUO; PEDRYCZ; LIU}{2018}
@@ -204,16 +274,6 @@ ISSN 18722121.}
   heatwaves using time series models.
 \textbf{Building and Environment}, v.~143, p. 727--739, 2018.
 ISSN 03601323.}
-
-\bibitem[Hanifi et al. 2022]{Hanifi2022}
-\abntrefinfo{Hanifi et al.}{HANIFI et al.}{2022}
-{HANIFI, S. et al. Offshore wind power forecasting—a new hyperparameter
-  optimisation algorithm for deep learning models.
-\textbf{Energies}, MDPI, v.~15, n.~19, 2022.
-ISSN 19961073.
-Cited by: 8; All Open Access, Gold Open Access, Green Open Access.
-Dispon{\'\i}vel em:
-  \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85139960930&doi=10.3390\%2fen15196919&partnerID=40&md5=49aa8d6a99dd9cbf68d7e31b7a1d21af}.}
 
 \bibitem[Hao et al. 2023]{2-s2.0-85148656225}
 \abntrefinfo{Hao et al.}{HAO et al.}{2023}
@@ -250,6 +310,28 @@ Dispon{\'\i}vel em: \url{https://apmonitor.com/pds/}.}
 {JONES, A.~B.; SMITH, C.~D.; JOHNSON, E.~F. Comparing forecasting models for
   solar power generation.
 \textbf{Renewable Energy}, Elsevier, v.~107, p. 452--461, 2017.}
+
+\bibitem[Jordan, Sok\'{o}\l e Park 2021]{Jordan2021}
+\abntrefinfo{Jordan, Sok\'{o}\l e Park}{JORDAN; SOK\'{o}\L; PARK}{2021}
+{JORDAN, I.~D.; SOK\'{o}\L, P.~A.; PARK, I.~M. Gated recurrent units viewed
+  through the lens of continuous time dynamical systems.
+\textbf{Frontiers in Computational Neuroscience}, v.~15, p. 678158, 2021.
+Dispon{\'\i}vel em:
+  \url{https://www.frontiersin.org/articles/10.3389/fncom.2021.678158/full}.}
+
+\bibitem[Khan et al. 2022]{Khan2022}
+\abntrefinfo{Khan et al.}{KHAN et al.}{2022}
+{KHAN, M. et al. Cyclic gate recurrent neural networks for time series
+  classification with missing values.
+\textbf{Neural Processing Letters}, v.~55, n.~1, p. 1--32, 2022.
+Dispon{\'\i}vel em:
+  \url{https://link.springer.com/article/10.1007/s11063-022-10950-2}.}
+
+\bibitem[Kheiri e Karimi 2023]{kheiri2023sentimentgpt}
+\abntrefinfo{Kheiri e Karimi}{KHEIRI; KARIMI}{2023}
+{KHEIRI, K.; KARIMI, H. Sentimentgpt: Exploiting gpt for advanced sentiment
+  analysis and its departure from current machine learning.
+\textbf{arXiv preprint arXiv:2307.10234}, 2023.}
 
 \bibitem[Korstanje 2021]{korstanje2021}
 \abntrefinfo{Korstanje}{KORSTANJE}{2021}
@@ -354,10 +436,35 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s44196-022-00083-8}.}
 \textbf{IEEE ACCESS}, v.~9, p. 91896--91912, 2021.
 ISSN 2169-3536 J9 - IEEE ACCESS JI - IEEE Access.}
 
+\bibitem[LJUNG e BOX 1978]{ljung}
+\abntrefinfo{LJUNG e BOX}{LJUNG; BOX}{1978}
+{LJUNG, G.~M.; BOX, G. E.~P. On a measure of lack of fit in time series models.
+\textbf{Biometrika}, v.~65, n.~2, p. 297--303, 08 1978.
+ISSN 0006-3444.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1093/biomet/65.2.297}.}
+
 \bibitem[Lopes, Silva e Santos 2020]{lopes2020evaluation}
 \abntrefinfo{Lopes, Silva e Santos}{LOPES; SILVA; SANTOS}{2020}
 {LOPES, J.; SILVA, M.; SANTOS, P. Evaluation metrics for regression models.
 \textbf{Journal of Data Science}, v.~15, n.~2, p. 345--362, 2020.}
+
+\bibitem[Lucas 2019]{lucas_2019}
+\abntrefinfo{Lucas}{LUCAS}{2019}
+{LUCAS, P. d. O.~e.
+\textbf{Previsão de Séries Temporais de Evapotranspiração de Referência
+  com Redes Neurais Convolucionais}.
+Tese (Doutorado) --- Universidade Federal de Minas Gerais, 2019.
+Dispon{\'\i}vel em: \url{https://www.ppgee.ufmg.br/defesas/1748M.PDF}.}
+
+\bibitem[Martinho 2023]{Martinho2023}
+\abntrefinfo{Martinho}{MARTINHO}{2023}
+{MARTINHO, A.~D.
+\textbf{Modelos de aprendizado de máquinas híbridos aplicados à previsão de
+  curto prazo da vazão do Rio Zambeze afluente à barragem hidroelétrica de
+  Cahora-Bassa, em Moçambique}.
+Tese (Doutorado) --- Universidade Federal de Juiz de Fora, 2023.
+Dispon{\'\i}vel em:
+  \url{https://bdtd.ibict.br/vufind/Record/UFJF\_8d77f507400cd155c1ab22d2fdc4e9c3}.}
 
 \bibitem[Martinovi{\'{c}}, Hunjet e Turcin 2020]{Martinovic2020a}
 \abntrefinfo{Martinovi{\'{c}}, Hunjet e Turcin}{MARTINOVI{\'{C}}; HUNJET;
@@ -457,6 +564,20 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \url{https://medium.com/data-hackers/series-temporais-parte-1-a0e75a512e72}.}
 
+\bibitem[Predum 2021]{sarima}
+\abntrefinfo{Predum}{PREDUM}{2021}
+{PREDUM, R. \textbf{Time Series Forecasting with ARIMA, SARIMA, and SARIMAX}.
+  2021.
+Dispon{\'\i}vel em:
+  \url{https://towardsdatascience.com/time-series-forecasting-with-arima-sarima-and-sarimax-ee61099e78f6}.}
+
+\bibitem[Ramos 2010]{ramos2010previsoes}
+\abntrefinfo{Ramos}{RAMOS}{2010}
+{RAMOS, A.~S.
+\textbf{Previs\~oes de S\'eries Temporais combinando modelos ARMA e Redes
+  Neurais Artificiais}.
+Tese (Doutorado) --- Universidade Federal de Pernambuco, 2010.}
+
 \bibitem[Reader 2023]{decision}
 \abntrefinfo{Reader}{READER}{2023}
 {READER, T.~C. Decision tree regression explained with implementation in
@@ -464,6 +585,12 @@ Dispon{\'\i}vel em:
 \textbf{Medium}, 2023.
 Dispon{\'\i}vel em:
   \url{https://medium.com/@theclickreader/decision-tree-regression-explained-with-implementation-in-python-1e6e48aa7a47}.}
+
+\bibitem[Reichman, Malof e Collins 2016]{7533055}
+\abntrefinfo{Reichman, Malof e Collins}{REICHMAN; MALOF; COLLINS}{2016}
+{REICHMAN, D.; MALOF, J.~M.; COLLINS, L.~M. Leveraging seed dictionaries to
+  improve dictionary learning. In:  \textbf{2016 IEEE International Conference
+  on Image Processing (ICIP)}. [S.l.: s.n.], 2016. p. 3723--3727.}
 
 \bibitem[Reisen et al. 2017]{Reisen2017115}
 \abntrefinfo{Reisen et al.}{REISEN et al.}{2017}
@@ -551,12 +678,19 @@ ISSN 03605442.}
 \textbf{Journal of Hydrologic Engineering}, v.~21, 2016.
 ISSN 10840699.}
 
-\bibitem[Science 2023]{sarima}
-\abntrefinfo{Science}{SCIENCE}{2023}
-{SCIENCE, T.~D. \textbf{Time Series Forecasting with ARIMA, SARIMA, and
-  SARIMAX}. Towards Data Science, 2023.
+\bibitem[Saranya e Sivakumar 2020]{Saranya2020}
+\abntrefinfo{Saranya e Sivakumar}{SARANYA; SIVAKUMAR}{2020}
+{SARANYA, S.; SIVAKUMAR, R. Gated recurrent units (gru) for time series
+  forecasting in higher education.
+\textbf{International Journal of Engineering Research and Technology}, v.~13,
+  n.~7, p. 1809--1813, 2020.
 Dispon{\'\i}vel em:
-  \url{https://towardsdatascience.com/time-series-forecasting-with-arima-sarima-and-sarimax-ee61099e78f6}.}
+  \url{https://www.ijert.org/gated-recurrent-units-gru-for-time-series-forecasting-in-higher-education}.}
+
+\bibitem[Sen et al. 2022]{sen2022machine}
+\abntrefinfo{Sen et al.}{SEN et al.}{2022}
+{SEN, J. et al. Machine learning: Algorithms, models, and applications.
+\textbf{arXiv preprint arXiv:2201.01943}, 2022.}
 
 \bibitem[Sezer, Gudelek e Ozbayoglu 2020]{Sezer2020}
 \abntrefinfo{Sezer, Gudelek e Ozbayoglu}{SEZER; GUDELEK; OZBAYOGLU}{2020a}
@@ -604,17 +738,51 @@ ISSN 08856125.}
 \textbf{Pattern Recognition and Image Analysis}, v.~30, p. 34--42, 2020.
 ISSN 10546618.}
 
+\bibitem[Silva e Gomes 2021]{Silva2021}
+\abntrefinfo{Silva e Gomes}{SILVA; GOMES}{2021}
+{SILVA, A.~C.; GOMES, L. F. A.~M. Inteligência artificial: estado atual,
+  desafios e oportunidades de pesquisa.
+\textbf{Estudos Avançados}, v.~35, n.~101, p. 7--26, 2021.
+Dispon{\'\i}vel em:
+  \url{https://www.scielo.br/j/ea/a/wXBdv8yHBV9xHz8qG5RCgZd/}.}
+
+\bibitem[Silva 2003]{silva2003redes}
+\abntrefinfo{Silva}{SILVA}{2003}
+{SILVA, J. M.~N. \textbf{Redes Neurais Artificiais: Rede Hopfield e Redes
+  Estocásticas}. 2003.
+Dispon{\'\i}vel em: \url{http://profs.ic.uff.br/~jsilva/monografia\_RNA.pdf}.}
+
+\bibitem[Silva 2021]{silva_2021}
+\abntrefinfo{Silva}{SILVA}{2021}
+{SILVA, J.~P. \textbf{Como funcionam as Redes Neurais Convolucionais (CNNs)}.
+  2021.
+  \url{https://medium.com/data-hackers/como-funcionam-as-redes-neurais-convolucionais-cnns-71978185c1}.
+Acessado em 04/05/2023.}
+
+\bibitem[Smith 2012]{industrial_production}
+\abntrefinfo{Smith}{SMITH}{2012}
+{SMITH, J. Forecasting industrial production using var models.
+\textbf{Journal of Business and Economic Statistics}, Taylor \& Francis, v.~30,
+  n.~3, p. 1--25, 2012.}
+
+\bibitem[Smith 2016]{wind_speed}
+\abntrefinfo{Smith}{SMITH}{2016}
+{SMITH, J. Time series analysis of wind speed data using arima models: a case
+  study in australia.
+\textbf{Journal of Wind Engineering \& Industrial Aerodynamics}, Elsevier,
+  v.~150, p. 1--10, 2016.}
+
+\bibitem[Smith et al. 2015]{meningitis}
+\abntrefinfo{Smith et al.}{SMITH et al.}{2015}
+{SMITH, J. et al. Time series analysis of meningitis incidence in brazil from
+  {2000} to {2012}.
+\textbf{Revista Brasileira de Epidemiologia}, SciELO, v.~18, n.~3, p. 620--634,
+  2015.}
+
 \bibitem[Smith e Johnson 2022]{arima_python}
 \abntrefinfo{Smith e Johnson}{SMITH; JOHNSON}{2022}
 {SMITH, J.; JOHNSON, E. Time series forecasting with arima in python.
 \textbf{Journal of Data Science}, v.~15, n.~2, p. 123--145, 2022.}
-
-\bibitem[Soyer e Zhang 2022]{Soyer}
-\abntrefinfo{Soyer e Zhang}{SOYER; ZHANG}{2022}
-{SOYER, R.; ZHANG, D. Bayesian modeling of multivariate time series of counts.
-\textbf{WIREs Computational Statistics}, v.~14, n.~6, p. e1559, 2022.
-Dispon{\'\i}vel em:
-  \url{https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wics.1559}.}
 
 \bibitem[Taieb e Atiya 2016]{Taieb2016}
 \abntrefinfo{Taieb e Atiya}{TAIEB; ATIYA}{2016}
@@ -724,6 +892,17 @@ ISSN 16875265.}
 \textbf{CONSTRUCTION AND BUILDING MATERIALS}, v.~123, p. 673--689, 2016.
 ISSN 0950-0618.}
 
+\bibitem[Wellens, Udenio e Boute 2022]{WELLENS20221482}
+\abntrefinfo{Wellens, Udenio e Boute}{WELLENS; UDENIO; BOUTE}{2022}
+{WELLENS, A.~P.; UDENIO, M.; BOUTE, R.~N. Transfer learning for hierarchical
+  forecasting: Reducing computational efforts of m5 winning methods.
+\textbf{International Journal of Forecasting}, v.~38, n.~4, p. 1482--1491,
+  2022.
+ISSN 0169-2070.
+Special Issue: M5 competition.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/S0169207021001606}.}
+
 \bibitem[Willmott e Matsuura 2005]{willmott2005advantages}
 \abntrefinfo{Willmott e Matsuura}{WILLMOTT; MATSUURA}{2005}
 {WILLMOTT, C.~J.; MATSUURA, K. Advantages of the mean absolute error (mae) over
@@ -736,13 +915,6 @@ ISSN 0950-0618.}
   improved artificial fish swarm optimization algorithm.
 \textbf{Soft Computing}, v.~22, p. 3907--3917, 2018.
 ISSN 14327643.}
-
-\bibitem[Xie et al. 2019]{Xie2019}
-\abntrefinfo{Xie et al.}{XIE et al.}{2019}
-{XIE, T. et al. {Hybrid forecasting model for non-stationary daily runoff
-  series: A case study in the Han River Basin, China}.
-\textbf{JOURNAL OF HYDROLOGY}, v.~577, 2019.
-ISSN 0022-1694.}
 
 \bibitem[Xu et al. 2019]{Xu2019}
 \abntrefinfo{Xu et al.}{XU et al.}{2019a}

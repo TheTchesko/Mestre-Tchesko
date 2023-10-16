@@ -23,20 +23,20 @@ Os modelos de rede neural, como RNN, ANN, CNN, GRU, LSTM e Transformer, não for
 
 \begin{figure}[H]
 	\centering
-	\caption{Comparação dos modelos AR e ARX}
+	\caption{Comparação dos modelos AR e ARX \label{fig:1-ar} \label{fig:1-arx}}
 	\begin{subfigure}{1\textwidth}
 			\includegraphics[width=\linewidth]{Modelos/Figuras/AR}
-			\caption{Modelo AR(7)}
-			\label{fig:1-ar}	
+			
+				
 		\end{subfigure}
 	
 	\begin{subfigure}{1\textwidth}
 			\includegraphics[width=\linewidth]{Modelos/Figuras/ARX}
-			\caption{ARX (7)}
-			\label{fig:1-arx}	
+			
+				
 		\end{subfigure}
 	
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+	
 \end{figure}
 
 
@@ -48,7 +48,7 @@ Os modelos de rede neural, como RNN, ANN, CNN, GRU, LSTM e Transformer, não for
 	\label{fig:1-ma}
 	\includegraphics[width=1\linewidth]{Modelos/Figuras/MA}
 	
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+	
 \end{figure}
 
 
@@ -61,7 +61,7 @@ Os modelos de rede neural, como RNN, ANN, CNN, GRU, LSTM e Transformer, não for
 	\label{fig:1-arma}
 	\includegraphics[width=1\linewidth]{Modelos/Figuras/ARMA}
 	
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+
 \end{figure}
 
 
@@ -72,7 +72,7 @@ Os modelos de rede neural, como RNN, ANN, CNN, GRU, LSTM e Transformer, não for
 	\label{fig:1-arima}
 	\includegraphics[width=1\linewidth]{Modelos/Figuras/ARIMA}
 	
-	Fonte: Elaboração própria a partir de dados da SANEPAR (2018 a 2020)
+	
 \end{figure}
 
 
@@ -84,7 +84,7 @@ Os modelos de rede neural, como RNN, ANN, CNN, GRU, LSTM e Transformer, não for
 	\label{fig:1-sarima}
 	\includegraphics[width=1\linewidth]{Modelos/Figuras/SARIMA}
 	
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+
 \end{figure}
 
 
@@ -94,19 +94,18 @@ Os modelos de rede neural, como RNN, ANN, CNN, GRU, LSTM e Transformer, não for
 	\caption{Comparação entre ARIMAX e SARIMAX}
 	\begin{subfigure}{1\textwidth}
 			\includegraphics[width=\linewidth]{Modelos/Figuras/ARIMAX}
-			\caption{ARIMAX $(7,1,7)$}
+			
 			\label{fig:1-arimax}
 		\end{subfigure}
 	\hfill
 	
 	\begin{subfigure}{1\textwidth}
 			\includegraphics[width=\linewidth]{Modelos/Figuras/SARIMAX}
-			\caption{SARIMAX $(7,1,7) (2,1,1)_{12}$}
+			
 			\label{fig:1-sarimax}	
 		\end{subfigure}
 
-		
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+
 \end{figure}
 
 
@@ -119,7 +118,7 @@ Os modelos de rede neural, como RNN, ANN, CNN, GRU, LSTM e Transformer, não for
 	\caption{Previsões do modelo Prophet para o reservatório LT01}\label{fig:prophet1}
 	\includegraphics[width=1\linewidth]{Apendices/Figuras/modelagem-24h/prophet1}
 	
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+
 \end{figure}
 
 
@@ -130,7 +129,7 @@ Os modelos de rede neural, como RNN, ANN, CNN, GRU, LSTM e Transformer, não for
 	\label{fig:lr-lt01-m3}
 	\includegraphics[width=0.82\linewidth]{"Modelos/Figuras/LR LT01 (m³)"}
 	
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+
 \end{figure}
 
 
@@ -143,7 +142,7 @@ Os modelos de rede neural, como RNN, ANN, CNN, GRU, LSTM e Transformer, não for
 	\label{fig:1-regressao-linear}
 	\includegraphics[width=1\linewidth]{Modelos/Figuras/regressão-linear}
 	
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+
 \end{figure}
 
 
@@ -154,7 +153,7 @@ Os modelos de rede neural, como RNN, ANN, CNN, GRU, LSTM e Transformer, não for
 	\caption{Regressor de \'Arvore de Decis\~ao }\label{fig:decision-tree-regressor}
 	\includegraphics[width=1\linewidth]{Apendices/Figuras/modelagem-24h/Decision-Tree-Regressor}
 	
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+
 \end{figure}
 
 
@@ -165,7 +164,7 @@ Os modelos de rede neural, como RNN, ANN, CNN, GRU, LSTM e Transformer, não for
 	\label{fig:1-regressao-rfa}
 	\includegraphics[width=1\linewidth]{Modelos/Figuras/regressão-rfa}
 	
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+
 \end{figure}
 
 
@@ -174,19 +173,19 @@ Os modelos de rede neural, como RNN, ANN, CNN, GRU, LSTM e Transformer, não for
 
 \begin{figure}[H]
 	\centering
-	\caption{A performance da regressão utilizando XGBoost e LightGBM é comparada}
+	\caption{A performance da regressão utilizando XGBoost e LightGBM }
 	\label{fig:1-xgb-regressao}
 	
 	\begin{subfigure}{1\textwidth}
 			\includegraphics[width=\linewidth]{Modelos/Figuras/xgb-regressão}
-			\caption{Regressão XGBoost}	\label{fig:xgb}
+			
 		\end{subfigure}\hfill
 	\begin{subfigure}{1\textwidth}
 			\includegraphics[width=\linewidth]{Modelos/Figuras/lgbm-regressão}
-			\caption{Regressão LightGBM}\label{fig:lgb}	
+			
 		\end{subfigure}
 	
-	\fonte{Elaboração própria a partir de dados da SANEPAR (2018 a 2020)}
+
 
 \end{figure}	
 

@@ -1,15 +1,15 @@
 \subsection{Contexto da Pesquisa} \label{subsec:contexto}
-A necessidade de desenvolvimento do planejamento estratégico no mundo corporativo e no dia-a-dia torna a análise de séries temporais e previsões valiosas ferramentas para apoiar o processo de tomada de decisão a curto, médio e longo prazo. Devido às não linearidades, sazonalidade, tendência e ciclicidade nos dados temporais, o desenvolvimento de modelos de previsão eficientes é uma tarefa desafiadora \cite{mateus}.
+Torna a análise de séries temporais e previsões valiosas ferramentas para apoiar o processo de tomada de decisão a curto, médio e longo prazo. Devido às não linearidades, sazonalidade, tendência e que podem ocorrer em séries temporais de abastimento de água nos dados temporais, o desenvolvimento de modelos de previsão eficientes é uma tarefa desafiadora \cite{mateus}.
 
-No conjunto de dados da SANEPAR, há um volume significativo no consumo de água e, com as interrupções que a cidade tem enfrentado, é necessário analisar os dados para compreender melhor os padrões de interrupção no abastecimento e os picos de consumo ao longo das horas e dias.
+Na Figura \ref{fig:paradigma-ml}, são mostradas as etapas de como deve ocorrer a análise de dados e a seleção dos modelos. Essa seleção pode ser feita de forma que se tenha que escolher o que deve ser previsto na variável. Feito isso, temos a primeira etapa que será dos dados, depois que cada um foi identificado com seus rótulos de entrada e saída. Os dados não podem conter \textbf{NaN} (do inglês \textit{not a number}) ou dados ausentes, o que evita falsos positivos. 
 
-Nesta dissertação, será realizada uma revisão sistemática de modelos preditivos para avaliar o melhor modelo que pode ser utilizado e como ele pode ser validado para prever a escassez de água. Essas análises serão feitas utilizando a linguagem de programação \textit{Python}.
+Fazendo isso, os dados podem ser visualizados para garantir que estejam bem carregados e que estejam em um tamanho tolerável. Isso é chamado de avaliação dos dados. Com os dados limpos e bem carregados, sem falsos positivos, a divisão dos dados pode ser feita. 
 
-A abordagem deste trabalho consiste em explorar o conceito de séries temporais e sua aplicação no campo do aprendizado de máquina. Os dados de séries temporais referem-se a dados coletados e armazenados ao longo do tempo, permitindo que observadores identifiquem anomalias nos dados.
+A otimização dos dados para os modelos pode ser realizada de várias formas, como o uso do Optuna para cada modelo pré-listado, reduzindo assim o tempo de processamento. Outra abordagem é aplicar a média nos dados quando eles são coletados de hora em hora, como é o nosso caso, e usá-los como conjuntos de treinamento, teste e validação. 
 
-É importante destacar que a análise de médias pode ser enganosa se não forem excluídos os valores discrepantes, também conhecidos como ``\textit{outliers}''. Esses valores discrepantes podem levar a resultados extremamente altos ou baixos que não refletem a realidade.
-Aprendizado de máquina várias áreas, conforme ilustrado na Figura \ref{fig:paradigma-ml}. Serão explorados os diferentes componentes do aprendizado de máquina e como eles podem ser aplicados em diversos contextos.
- 
+A validação é comum em conjuntos de dados muito grandes para permitir que os modelos trabalhem mais com os dados, proporcionando resultados mais precisos. Após essa etapa, na escolha dos modelos, há a possibilidade de escolher o modelo de série temporal, se o modelo é de classificação, agrupamento ou regressão. Após listar os modelos, cada um deles deve ser avaliado em métricas para verificar a veracidade de cada um.
+
+
 \begin{figure}[H]
 	\centering
 	\caption{Paradigma de aprendizado de máquina}
@@ -23,9 +23,9 @@ Aprendizado de máquina várias áreas, conforme ilustrado na Figura \ref{fig:pa
 \subsubsection{Motiva\c c\~ao da Pesquisa} \label{subsubsec:motivacao}
  
  
-A motivação desta pesquisa é baseada na situação enfrentada por Curitiba e região metropolitana, conforme apontado por \cite{vasconcelos_2020}. A região passou por um rodízio de abastecimento de água, com períodos de 36 horas com abastecimento de água seguidos por 36 horas sem abastecimento de água. A média geral dos reservatórios na região estava em torno de $27,96\%$ de sua capacidade. Além disso, a quantidade de chuva nos anos anteriores, de $2020$, foi de $1.704 \ mm$, superando a média anual de precipitação de $1.490 \ mm$.
+A motivação desta pesquisa é baseada na situação enfrentada por Curitiba e região metropolitana, conforme apontado por \cite{vasconcelos_2020}. A região passou por um rodízio de abastecimento de água, com períodos de 36 horas com abastecimento de água seguidos por 36 horas sem abastecimento de água. A média geral dos reservatórios na região estava em torno de $27,96\%$ de sua capacidade. Além disso, a quantidade de chuva nos anos anteriores, de $2020$, foi de $1.704$ mm, superando a média anual de precipitação de $1.490$ mm.
  	
-Diante dessa situação, a pesquisa tem como abordagem principal a a previsão do abastecimento de água, que pode ser associada a condições de seca ou do COVID-19. A partir dos dados coletados pela SANEPAR, é possível realizar uma análise mais detalhada, com o objetivo de prever e evitar a ocorrência de escassez de água, que foi registrada como uma anomalia em $2020$. Com o retorno das chuvas, houve um aumento nos níveis dos reservatórios, o que torna essencial a análise e previsão dos dados para um melhor planejamento e gerenciamento do abastecimento de água na região.
+Diante dessa situação, a pesquisa tem como abordagem principal a previsão do abastecimento de água, que pode ser associada a condições de seca ou decorrentes das consequência da COVID-19. A partir dos dados coletados pela SANEPAR, é possível realizar uma análise detalhada, com o objetivo de prever e evitar a ocorrência de escassez de água, que foi registrada como uma anomalia em $2020$. 
     
      
     
