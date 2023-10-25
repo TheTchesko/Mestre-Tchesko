@@ -1,17 +1,20 @@
 \babel@toc {brazil}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {brazil}{}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Cruzamento de palavras-chave por meio da aplicação de filtros de área}}{31}{table.caption.10}%
-\contentsline {table}{\numberline {2}{\ignorespaces Resumo dos dados}}{31}{table.caption.11}%
-\contentsline {table}{\numberline {3}{\ignorespaces Fator de impacto}}{32}{table.caption.12}%
-\contentsline {table}{\numberline {4}{\ignorespaces Os autores que mais publicam em relação ao tema de pesquisa}}{34}{table.caption.13}%
-\contentsline {table}{\numberline {5}{\ignorespaces Países com maior número de publicações}}{34}{table.caption.14}%
-\contentsline {table}{\numberline {6}{\ignorespaces Modelos baseado na literatura e nos artigos}}{37}{table.caption.15}%
-\contentsline {table}{\numberline {7}{\ignorespaces Descrição estatística dos dados com o filtro aplicado das 18h às 21h}}{85}{table.caption.43}%
-\contentsline {table}{\numberline {8}{\ignorespaces Teste Nemenyi}}{93}{table.caption.51}%
-\contentsline {table}{\numberline {9}{\ignorespaces Demanda de água}}{101}{table.caption.56}%
-\contentsline {table}{\numberline {10}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {treino}}}{117}{table.caption.58}%
-\contentsline {table}{\numberline {11}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {teste}}}{118}{table.caption.59}%
-\contentsline {table}{\numberline {12}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {validação}}}{119}{table.caption.60}%
-\contentsline {table}{\numberline {13}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {inteiro}}}{120}{table.caption.61}%
-\contentsline {table}{\numberline {14}{\ignorespaces Comparação dos modelos Ljung Box: Modelos ARIMA com defasagem de 10 para previsão de longo prazo na demanda de água}}{121}{table.caption.62}%
+\contentsline {table}{\numberline {1}{\ignorespaces Cruzamento de palavras-chave por meio da aplicação de filtros de área}}{30}{table.caption.8}%
+\contentsline {table}{\numberline {2}{\ignorespaces Resumo dos dados}}{30}{table.caption.9}%
+\contentsline {table}{\numberline {3}{\ignorespaces Fator de impacto}}{31}{table.caption.10}%
+\contentsline {table}{\numberline {4}{\ignorespaces Os autores que mais publicam em relação ao tema de pesquisa}}{33}{table.caption.11}%
+\contentsline {table}{\numberline {5}{\ignorespaces Países com maior número de publicações}}{33}{table.caption.12}%
+\contentsline {table}{\numberline {6}{\ignorespaces Modelos baseado na literatura e nos artigos}}{35}{table.caption.13}%
+\contentsline {table}{\numberline {7}{\ignorespaces Parâmetros utilizados nos modelos AR, ARX, MA, ARMA, ARIMA, ARIMAX, SARIMA e SARIMAX obtidos pelo ``autoARIMA'' do Python.}}{72}{table.caption.26}%
+\contentsline {table}{\numberline {8}{\ignorespaces Hiperparâmetros dos modelos}}{78}{table.caption.38}%
+\contentsline {table}{\numberline {9}{\ignorespaces Resumo dos Hiperparâmetros dos Modelos de Redes Neurais}}{79}{table.caption.39}%
+\contentsline {table}{\numberline {10}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {treino}}}{82}{table.caption.42}%
+\contentsline {table}{\numberline {11}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {teste}}}{83}{table.caption.43}%
+\contentsline {table}{\numberline {12}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {validação}}}{84}{table.caption.44}%
+\contentsline {table}{\numberline {13}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {inteiro}}}{85}{table.caption.45}%
+\contentsline {table}{\numberline {14}{\ignorespaces Comparação dos modelos Ljung Box: Modelos ARIMA com defasagem de 10 para previsão de longo prazo na demanda de água}}{86}{table.caption.46}%
+\contentsline {table}{\numberline {15}{\ignorespaces Descrição estatística dos dados com o filtro aplicado das 18h às 21h}}{89}{table.caption.48}%
+\contentsline {table}{\numberline {16}{\ignorespaces Teste Nemenyi}}{96}{table.caption.56}%
+\contentsline {table}{\numberline {17}{\ignorespaces Métricas de Avaliação dos Modelos.}}{97}{table.caption.57}%

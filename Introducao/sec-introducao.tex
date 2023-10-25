@@ -18,21 +18,20 @@ O uso da IA vem trazendo muitos benefícios, tais como: melhorias nos serviços 
 A IA também tem impactos negativos. Perda de vagas de trabalho é um desses impactos negativos. Vagas de empregos menos qualificados que aumentam as desigualdades sociais. Serão necessários planejamento e ações de governo para minimizar os impactos negativos da IA \cite{Silva2021}.
 
 As séries temporais são caracterizadas como processos estocásticos regidos por leis probabilísticas.
-Série estacionária com média é aquela que contém a média, variância e autocorrelação constantes ao longo do tempo, como mostrado na primeira série da Figura \ref{fig:serie}. Média constante ao longo do tempo, neste caso, indica que a série mantém sua média inalterada, como mostrado na Figura \ref{fig:serie} com a legenda de série não estacionária. Variância dependente do tempo é o segundo caso da série não estacionária, indicando que a variância dessa série se altera ao longo do tempo. Covariância dependente do tempo: a covariância é uma medida estatística que indica como duas variáveis mudam juntas.
+Série estacionária com média é aquela que contém a média, variância e autocorrelação constantes ao longo do tempo.
 
-Com $Y(t)$ representando os dados fictícios e Tempo  $(t)$ representando a linha do tempo na Figura \ref{fig:serie}.
 
-\input{Revisao/exemplo serie}
 
-\input{Revisao/estocatico}
+%\input{Revisao/exemplo serie}
+
+%\input{Revisao/estocatico}
 
 A previsão da demanda de água ao longo do tempo é essencial para um planejamento sustentável e eficiente do abastecimento hídrico para o âmbito urbano como é o caso da cidade de Curitiba no estado do Paraná. Neste estudo, adotou-se alguns modelos de previsão da área de aprendizado de máquina e modelo clássico ARIMA (do inglês \textit{Auto-Regressive Integrated Moving Average}), para fazer previsões diárias da demanda de água ao longo do tempo.
 
 
-Este capítulo apresenta modelos de aprendizado de máquina (do inglês \textit{Machine learning}) serem aplicados na previsão de séries temporais com dados coletados pela SANEPAR (Companhia de Saneamento do Paraná). Cada modelo tem suas particularidades, mas os modelos de aprendizado de máquina têm como ser otimizados da mesma forma que os modelos clássicos do tipo ARIMA, RNN (do inglês \textit{Recurrent Neural Network}). Os dados coletados pela SANEPAR usados para previsão referem-se ao abastecimento de água no bairro Alto durante o período de 2018 a 2020.
+Este capítulo apresenta modelos de aprendizado de máquina (do inglês \textit{Machine learning}) serem aplicados na previsão de séries temporais com dados coletados pela SANEPAR (Companhia de Saneamento do Paraná). Cada modelo tem suas particularidades, mas os modelos de aprendizado de máquina têm como ser otimizados da mesma forma que os modelos clássicos do tipo ARIMA, RNN (do inglês \textit{Recurrent Neural Network}). Os dados coletados pela SANEPAR usados para previsão referem-se ao abastecimento de água no bairro Alto durante o período de 2018 a 2019.
 
 Em termos da análise de séries temporais e tomada de decisão, são explorados modelos para aplicação considerando a variável \textbf{LT01} que é o nível do reservatório do tanque da SANEPAR.
-
 Nesta dissertação, busca-se desenvolver previsões de séries temporais confiáveis para o abastecimento de água no Bairro Alto em Curitiba, capital do estado do Paraná. Na aplicação dos modelos de previsão, espera-se obter compreensões para auxiliar na tomada de decisões estratégicas e no planejamento eficiente do abastecimento hídrico.
 
 \input{Introducao/subsec-contexto}

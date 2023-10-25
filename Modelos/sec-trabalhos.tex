@@ -1,56 +1,56 @@
-
-
-\subsection{Explora\c c\~ao de Caso}\label{subsec:estudo-de-caso-base}
-
-
-A previsão da demanda de água é uma preocupação fundamental para muitas organizações e autoridades responsáveis pelo abastecimento de água. A análise de séries temporais é uma abordagem comumente usada para prever padrões futuros com base em dados históricos. Neste estudo de caso, será explorado como a análise de séries temporais pode ser aplicada para prever a demanda de água ao longo do tempo.
-
-\noindent\textbf{Ajuste do modelo:}
-ao ajustar o modelo para a base de dados, foi feita uma alteração na ordem do modelo sugerido pelo \textbf{pmdarima}. A escolha foi trocar o modelo SARIMAX$(1,1,1)(2,1,0,12)$ para SARIMAX$(7,1,7)(2,1,0,12)$. Essa decisão foi tomada com base na observação de um ajuste preciso aos dados, evidenciado pela redução nos resíduos e uma melhor captura das características da série temporal. Além disso, considerando o conhecimento do problema e as características específicas dos dados, foi identificado que padrões complexos requeriam ordens altas para serem adequadamente capturados. Dessa forma, foi realizado um processo iterativo de experimentação e avaliação para determinar o modelo SARIMAX$(7,1,7)(2,1,0,12)$ como o adequado para a base de dados em questão. É importante ressaltar que o desempenho do novo modelo será avaliado por meio de diagnósticos adicionais e análise dos resultados obtidos.
-
-Os modelos RNN, LSTM e GRU foram ajustados minuciosamente por meio da técnica de otimização de hiperparâmetros do Optuna, permitindo uma exploração adaptativa e eficiente do espaço de configurações. Essa abordagem exclusiva do Optuna resultou em modelos sequenciais com aprimoramento notável na capacidade preditiva. Parâmetros vitais, como taxa de aprendizado, tamanho da camada oculta e número de unidades, foram otimizados de forma eficaz através do Optuna \cite{DBLP}.
-
-O RFR apresentou melhorias notáveis após o ajuste com o Optuna. A otimização realizada pelo Optuna permitiu identificar uma combinação de hiperparâmetros ideal para o RFR, resultando em um significativo aprimoramento no desempenho preditivo desse modelo.
-Considerando que o modelo LR não demonstrou melhorias significativas, uma decisão foi tomada para substituí-lo pelo modelo \textit{Decision Tree Regressor}. Este último foi ajustado empregando o Optuna, buscando encontrar a configuração de hiperparâmetros ideal para o modelo de árvore de decisão. Essa decisão foi respaldada pelo fato de que o Optuna havia demonstrado ser uma ferramenta eficaz para otimização de hiperparâmetros, como evidenciado pelas melhorias observadas no RFR e em outros modelos \cite{DBLP}.
-
-Dessa forma, os modelos RNN, LSTM, GRU, XGBRegressor, LGBMRegressor e o Decision Tree Regressor foram todos otimizados com sucesso utilizando o Optuna, resultando em previsões robustas e confiáveis. No entanto, os modelos Transformer e Prophet mantiveram suas configurações originais devido à ausência de melhorias substanciais após tentativas de otimização com o Optuna.
-
-O \textbf{Optuna} é uma biblioteca de otimização de hiperparâmetros em Python avançada e eficaz em comparação com outras técnicas amplamente utilizadas, como o GridSearchCV, BayesSearchCV e RandomizedSearchCV. Enquanto essas abordagens tradicionais têm suas vantagens, o Optuna leva a otimização de hiperparâmetros a um nível superior.
-Existem geralmente dois tipos de métodos de amostragem: a amostragem relacional, que explora as correlações entre os parâmetros, e a amostragem independente, que recolhe amostras de cada parâmetro de forma independente. A amostragem independente não é necessariamente uma opção ingênua, porque alguns algoritmos de amostragem como o TPE A eficácia em termos de custos da amostragem relacional e independente depende do ambiente e da tarefa. O Optuna apresenta ambos, e pode lidar com vários métodos de amostragem independente independentes, incluindo TPE, bem como métodos de amostragem relacional como o CMA-ES. No entanto, há que ter algumas palavras de precaução para a implementação da amostragem relacional num definido por execução \cite{DBLP}.
-
-
-\subsubsection{Estudo de Caso 1}
-
-\noindent\textbf{Adequação da Pressão e Vazão em uma Rede de Distribuição de Água}
-
-\eqref{q1} Adequação da pressão atual para atender à demanda diária: Neste estudo de caso, o modelo SARIMAX  foi utilizado para avaliar a adequação da pressão atual em uma rede de distribuição de água, considerando a demanda diária \cite{2-s2.0-85099424908}. O objetivo foi prever a pressão na rede com base em dados históricos, permitindo que fosse realizada uma análise crítica da capacidade do sistema em atender às necessidades dos consumidores.
-
-\eqref{q2} Volume mínimo de água no reservatório para evitar o acionamento das bombas: Para determinar o volume mínimo de água necessário no reservatório para evitar o acionamento das bombas durante o horário de pico, foi empregado um modelo Decision Tree Regressor  \cite{2-s2.0-85054695177}. Este modelo ajudou a identificar regras e padrões que guiam a tomada de decisão sobre o nível de armazenamento ideal.
-
-\eqref{q3} Vazão ótima para atender à demanda diária: O estudo também buscou encontrar a vazão ótima para atender à demanda diária. Para isso, utilizou-se o modelo XGBRegressor  para otimizar a vazão na rede de distribuição, considerando as flutuações na demanda ao longo do dia \cite{2-s2.0-85130441623}.
-
-\subsubsection{Estudo de Caso 2}
-
-\noindent\textbf{Impacto do Acionamento das Bombas durante o Horário de Pico em uma Rede de Distribuição de Água}
-
-\eqref{q5} Impacto do acionamento das bombas durante o horário de pico: Neste segundo estudo de caso, analisou-se o impacto do acionamento das bombas durante o horário de pico em uma rede de distribuição de água.
-
-\ref{q5}\eqref{q5:a} Nível ideal no reservatório e variação das vazões nos horários críticos: Utilizou-se o modelo ARIMA  \cite{2-s2.0-85069459067} para prever o nível ideal no reservatório e analisar as variações das vazões nos horários críticos, levando em consideração as diferentes estações do ano.
-
-\ref{q5}\eqref{q5:b} Tendência, padrão e sazonalidade nos dados do Bairro Alto: Para identificar tendências, padrões e sazonalidades nos dados de três anos do Bairro Alto, empregou-se o modelo de decomposição STL, reconhecido por sua eficácia na modelagem de séries temporais com essas características.
-
-\ref{q5}\eqref{q5:c} Identificação dos horários de maior demanda: A identificação dos horários de maior demanda entre as 18h e as 21h foi realizada com o uso da RNN (P) \cite{2-s2.0-85067419084}.
-
-\ref{q5}\eqref{q5:d} Tendência, padrão e sazonalidade nos dados do Bairro Alto: Para identificar tendências, padrões e sazonalidades nos dados de três anos do Bairro Alto, empregou-se o modelo decomposição STL, reconhecido por sua eficácia na modelagem de séries temporais com essas características. Volume de armazenamento no reservatório para evitar o acionamento das bombas: Determinar a quantidade de água a ser armazenada previamente no reservatório para evitar o acionamento das bombas durante o horário de pico envolveu o modelo LGBMRegressor .
-
-\ref{q5}\eqref{q5:e} Tendência, Padrão e Sazonalidade nos Dados do Bairro Alto: Para identificar tendências, padrões e sazonalidades nos dados de três anos do Bairro Alto, empregou-se o modelo STL, reconhecido por sua eficácia na modelagem de séries temporais com essas características. Detecção de anomalias na rede com base no histórico): Para detectar anomalias na rede com base no histórico de vazão e pressão, utilizou-se novamente o modelo ARX \cite{2-s2.0-85051469381}.
-
-
-
-
-
-
-
-
-
-
+%
+%
+%\subsection{Explora\c c\~ao de Caso}\label{subsec:estudo-de-caso-base}
+%
+%
+%A previsão da demanda de água é uma preocupação fundamental para muitas organizações e autoridades responsáveis pelo abastecimento de água. A análise de séries temporais é uma abordagem comumente usada para prever padrões futuros com base em dados históricos. Neste estudo de caso, será explorado como a análise de séries temporais pode ser aplicada para prever a demanda de água ao longo do tempo.
+%
+%\noindent\textbf{Ajuste do modelo:}
+%ao ajustar o modelo para a base de dados, foi feita uma alteração na ordem do modelo sugerido pelo \textbf{pmdarima}. A escolha foi trocar o modelo SARIMAX$(1,1,1)(2,1,0,12)$ para SARIMAX$(7,1,7)(2,1,0,12)$. Essa decisão foi tomada com base na observação de um ajuste preciso aos dados, evidenciado pela redução nos resíduos e uma melhor captura das características da série temporal. Além disso, considerando o conhecimento do problema e as características específicas dos dados, foi identificado que padrões complexos requeriam ordens altas para serem adequadamente capturados. Dessa forma, foi realizado um processo iterativo de experimentação e avaliação para determinar o modelo SARIMAX$(7,1,7)(2,1,0,12)$ como o adequado para a base de dados em questão. É importante ressaltar que o desempenho do novo modelo será avaliado por meio de diagnósticos adicionais e análise dos resultados obtidos.
+%
+%Os modelos RNN, LSTM e GRU foram ajustados minuciosamente por meio da técnica de otimização de hiperparâmetros do Optuna, permitindo uma exploração adaptativa e eficiente do espaço de configurações. Essa abordagem exclusiva do Optuna resultou em modelos sequenciais com aprimoramento notável na capacidade preditiva. Parâmetros vitais, como taxa de aprendizado, tamanho da camada oculta e número de unidades, foram otimizados de forma eficaz através do Optuna \cite{DBLP}.
+%
+%O RFR apresentou melhorias notáveis após o ajuste com o Optuna. A otimização realizada pelo Optuna permitiu identificar uma combinação de hiperparâmetros ideal para o RFR, resultando em um significativo aprimoramento no desempenho preditivo desse modelo.
+%Considerando que o modelo LR não demonstrou melhorias significativas, uma decisão foi tomada para substituí-lo pelo modelo \textit{Decision Tree Regressor}. Este último foi ajustado empregando o Optuna, buscando encontrar a configuração de hiperparâmetros ideal para o modelo de árvore de decisão. Essa decisão foi respaldada pelo fato de que o Optuna havia demonstrado ser uma ferramenta eficaz para otimização de hiperparâmetros, como evidenciado pelas melhorias observadas no RFR e em outros modelos \cite{DBLP}.
+%
+%Dessa forma, os modelos RNN, LSTM, GRU, XGBRegressor, LGBMRegressor e o Decision Tree Regressor foram todos otimizados com sucesso utilizando o Optuna, resultando em previsões robustas e confiáveis. No entanto, os modelos Transformer e Prophet mantiveram suas configurações originais devido à ausência de melhorias substanciais após tentativas de otimização com o Optuna.
+%
+%O \textbf{Optuna} é uma biblioteca de otimização de hiperparâmetros em Python avançada e eficaz em comparação com outras técnicas amplamente utilizadas, como o GridSearchCV, BayesSearchCV e RandomizedSearchCV. Enquanto essas abordagens tradicionais têm suas vantagens, o Optuna leva a otimização de hiperparâmetros a um nível superior.
+%Existem geralmente dois tipos de métodos de amostragem: a amostragem relacional, que explora as correlações entre os parâmetros, e a amostragem independente, que recolhe amostras de cada parâmetro de forma independente. A amostragem independente não é necessariamente uma opção ingênua, porque alguns algoritmos de amostragem como o TPE A eficácia em termos de custos da amostragem relacional e independente depende do ambiente e da tarefa. O Optuna apresenta ambos, e pode lidar com vários métodos de amostragem independente independentes, incluindo TPE, bem como métodos de amostragem relacional como o CMA-ES. No entanto, há que ter algumas palavras de precaução para a implementação da amostragem relacional num definido por execução \cite{DBLP}.
+%
+%
+%\subsubsection{Estudo de Caso 1}
+%
+%\noindent\textbf{Adequação da Pressão e Vazão em uma Rede de Distribuição de Água}
+%
+%\eqref{q1} Adequação da pressão atual para atender à demanda diária: Neste estudo de caso, o modelo SARIMAX  foi utilizado para avaliar a adequação da pressão atual em uma rede de distribuição de água, considerando a demanda diária \cite{2-s2.0-85099424908}. O objetivo foi prever a pressão na rede com base em dados históricos, permitindo que fosse realizada uma análise crítica da capacidade do sistema em atender às necessidades dos consumidores.
+%
+%\eqref{q2} Volume mínimo de água no reservatório para evitar o acionamento das bombas: Para determinar o volume mínimo de água necessário no reservatório para evitar o acionamento das bombas durante o horário de pico, foi empregado um modelo Decision Tree Regressor  \cite{2-s2.0-85054695177}. Este modelo ajudou a identificar regras e padrões que guiam a tomada de decisão sobre o nível de armazenamento ideal.
+%
+%\eqref{q3} Vazão ótima para atender à demanda diária: O estudo também buscou encontrar a vazão ótima para atender à demanda diária. Para isso, utilizou-se o modelo XGBRegressor  para otimizar a vazão na rede de distribuição, considerando as flutuações na demanda ao longo do dia \cite{2-s2.0-85130441623}.
+%
+%\subsubsection{Estudo de Caso 2}
+%
+%\noindent\textbf{Impacto do Acionamento das Bombas durante o Horário de Pico em uma Rede de Distribuição de Água}
+%
+%\eqref{q5} Impacto do acionamento das bombas durante o horário de pico: Neste segundo estudo de caso, analisou-se o impacto do acionamento das bombas durante o horário de pico em uma rede de distribuição de água.
+%
+%\ref{q5}\eqref{q5:a} Nível ideal no reservatório e variação das vazões nos horários críticos: Utilizou-se o modelo ARIMA  \cite{2-s2.0-85069459067} para prever o nível ideal no reservatório e analisar as variações das vazões nos horários críticos, levando em consideração as diferentes estações do ano.
+%
+%\ref{q5}\eqref{q5:b} Tendência, padrão e sazonalidade nos dados do Bairro Alto: Para identificar tendências, padrões e sazonalidades nos dados de três anos do Bairro Alto, empregou-se o modelo de decomposição STL, reconhecido por sua eficácia na modelagem de séries temporais com essas características.
+%
+%\ref{q5}\eqref{q5:c} Identificação dos horários de maior demanda: A identificação dos horários de maior demanda entre as 18h e as 21h foi realizada com o uso da RNN (P) \cite{2-s2.0-85067419084}.
+%
+%\ref{q5}\eqref{q5:d} Tendência, padrão e sazonalidade nos dados do Bairro Alto: Para identificar tendências, padrões e sazonalidades nos dados de três anos do Bairro Alto, empregou-se o modelo decomposição STL, reconhecido por sua eficácia na modelagem de séries temporais com essas características. Volume de armazenamento no reservatório para evitar o acionamento das bombas: Determinar a quantidade de água a ser armazenada previamente no reservatório para evitar o acionamento das bombas durante o horário de pico envolveu o modelo LGBMRegressor .
+%
+%\ref{q5}\eqref{q5:e} Tendência, Padrão e Sazonalidade nos Dados do Bairro Alto: Para identificar tendências, padrões e sazonalidades nos dados de três anos do Bairro Alto, empregou-se o modelo STL, reconhecido por sua eficácia na modelagem de séries temporais com essas características. Detecção de anomalias na rede com base no histórico): Para detectar anomalias na rede com base no histórico de vazão e pressão, utilizou-se novamente o modelo ARX \cite{2-s2.0-85051469381}.
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%

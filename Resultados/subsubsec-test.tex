@@ -31,7 +31,44 @@ No contexto do estudo, os resultados da análise comparativa revelaram diferenç
 
 O valor crítico CD foi utilizado para determinar se dois classificadores eram significativamente diferentes entre si. Esse valor é calculado com base no valor crítico obtido da Tabela \ref{tb:nemeyi} de teste de Nemenyi, o número de classificadores e o número total de amostras. O valor CD é uma métrica que auxilia na interpretação das diferenças entre os classificadores, ajudando a identificar quais pares de classificadores apresentam diferenças estatisticamente significativas.
 
-Os resultados da pesquisa indicaram a existência de evidências estatísticas que sugerem a superioridade de pelo menos um modelo em relação aos demais. Além disso, a análise de comparação significativa entre os modelos revelou pares de classificadores que apresentam diferenças estatisticamente significativas em seus desempenhos. Essas informações são valiosas para a seleção e avaliação dos modelos de classificação, permitindo uma compreensão mais precisa das diferenças de desempenho entre os classificadores avaliados no estudo.
+Os resultados da pesquisa indicaram a existência de evidências estatísticas que sugerem a superioridade de pelo menos um modelo em relação aos demais. Além disso, a análise de comparação significativa entre os modelos revelou pares de classificadores que apresentam diferenças estatisticamente significativas em seus desempenhos. Essas informações são valiosas para a seleção e avaliação dos modelos de classificação, permitindo uma compreensão mais precisa das diferenças de desempenho entre os classificadores avaliados no estudo. Na Tabela \ref{tab:metrics} é mostrado como cada modelos foi comparado entre si em 30 passos à frente.
+
+\begin{table}[H]
+	\centering
+	\caption{Métricas de Avaliação dos Modelos.}
+	\label{tab:metrics}
+	\small
+	
+	\begin{tabular}{cccc}
+		\hline
+		
+		\textbf{Modelo} & \textbf{sMAPE} & \textbf{MAE} & \textbf{RRMSE} \\
+		\hline
+		Prophet & 8,45 & 0,308 & 0,389 \\
+		Transformer & 9,46 & 0,323 & 0,177 \\
+		ANN & 9,80 & 0,336 & 0,190 \\
+		CNN & 9,80 & 0,336 & 0,190 \\
+		RNN & 0,057 & 0,002 & 0,001 \\
+		LSTM & 33,19 & 1,377 & 3,302 \\
+		GRU & 92,89 & 6,109 & 1,832 \\
+		AR & 5,40 & 0,367 & 0,137 \\
+		ARX & 6,68 & 0,447 & 0,169 \\
+		MA & 5,36 & 0,364 & 0,137 \\
+		ARMA & 5,66 & 0,385 & 0,143 \\
+		ARIMA & 5,56 & 0,377 & 0,141 \\
+		SARIMA & 5,93 & 0,404 & 0,149 \\
+		ARIMAX & 6,63 & 0,443 & 0,168 \\
+		SARIMAX & 6,67 & 0,446 & 0,169 \\
+		Decision Tree Regressor & 5,36 & 0,467 & 0,123 \\
+		Random Forest Regressor & 8,69 & 0,642 & 0,218 \\
+		XGBRegressor & 8,84 & 0,655 & 0,221 \\
+		LGBMRegressor & 9,99 & 0,754 & 0,246 \\
+		\hline
+	\end{tabular}
+	
+\end{table}
+
+
 
 
 \noindent\textbf{Modelo com menor valor em cada métrica:}	

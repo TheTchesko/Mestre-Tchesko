@@ -5,22 +5,24 @@ O objetivo desta dissertação de mestrado é desenvolver séries temporais para
 Serão avaliados diversos modelos de regressão, com destaque para os modelos de redes neurais e o Prophet. É importante mencionar que serão enfatizados os modelos de \textit{gradient boosting}, redes neurais artificiais, além do ARIMA e suas variações mais contemporâneas. Na mesma visão, foi realizadas análises de anomalias nas séries temporais avaliadas do Bairro Alto em Curitiba, buscando compreender as causas subjacentes a essas ocorrências.
     
     
-    \subsubsection{Objetivos Espec\'ificos e Quest\~ao de Pesquisa} \label{subsubsec:obespec}
+\subsubsection{Objetivos Espec\'ificos} \label{subsubsec:obespec}
     
-Neste estudo, busca-se identificar e compreender possíveis anomalias nos dados, para que assim tome a melhor decisão, bem como investigar as causas dessas ocorrências. Entre os objetivos específicos está responder às perguntas de pesquisa relacionadas a essas questões.
-
-\begin{enumerate}[start=1, label={\textbf{Q} \arabic*}]
-	\item \label{q1} Qual é a adequação da pressão atual para atender à demanda diária?
-	\item \label{q2} Qual é o volume mínimo de água necessário no reservatório para evitar o acionamento das bombas durante o horário de pico? 
-	\item \label{q3} Qual é a vazão ótima para atender à demanda diária?
-	\item \label{q4} Como encontrar o ponto de equilíbrio entre a demanda e a vazão?
-	\item \label{q5} Qual é o impacto do acionamento das bombas durante o horário de pico?
-	 
-	\begin{enumerate}[label=\alph*]
-	\item \label{q5:a} Qual é o nível ideal no reservatório para evitar a ativação das bombas da SANEPAR durante o período de maior demanda, das 18h às 21h, sem comprometer o abastecimento de água para a população?  
-	\item \label{q5:b} Existe tendência, padrão, sazonalidade para os dados destes três anos do Bairro Alto?
-	\item \label{q5:c} Identificar quais os horários de maior demanda de abastecimento de água das $18$ às $21$?
-	\item \label{q5:d} Quanto deve-se armazenar previamente no reservatório para não acionar as bombas no horário de pico?
-	\item \label{q5:e} Se a vazão cresce e a pressão decresce existe uma ANOMALIA na rede de abastecimento de água (com base no histórico).	
-	\end{enumerate}
-\end{enumerate}
+O objetivo específico é comparar modelos de séries temporais e técnicas de otimização no Optuna. A análise se concentrará no desempenho de diferentes modelos de séries temporais em termos de precisão, eficiência e capacidade de prever padrões em conjuntos de dados específicos. Além disso, serão exploradas e implementadas estratégias de otimização no Optuna para melhorar os hiperparâmetros desses modelos. O foco principal será identificar qual combinação de modelo de série temporal e configurações de otimização proporciona os melhores resultados, com o objetivo de aprimorar a precisão das previsões e otimizar o processo de modelagem.
+    
+%Neste estudo, busca-se identificar e compreender possíveis anomalias nos dados, para que assim tome a melhor decisão, bem como investigar as causas dessas ocorrências. Entre os objetivos específicos está responder às perguntas de pesquisa relacionadas a essas questões.
+%
+%\begin{enumerate}[start=1, label={\textbf{Q} \arabic*}]
+%	\item \label{q1} Qual é a adequação da pressão atual para atender à demanda diária?
+%	\item \label{q2} Qual é o volume mínimo de água necessário no reservatório para evitar o acionamento das bombas durante o horário de pico? 
+%	\item \label{q3} Qual é a vazão ótima para atender à demanda diária?
+%	\item \label{q4} Como encontrar o ponto de equilíbrio entre a demanda e a vazão?
+%	\item \label{q5} Qual é o impacto do acionamento das bombas durante o horário de pico?
+%	 
+%	\begin{enumerate}[label=\alph*]
+%	\item \label{q5:a} Qual é o nível ideal no reservatório para evitar a ativação das bombas da SANEPAR durante o período de maior demanda, das 18h às 21h, sem comprometer o abastecimento de água para a população?  
+%	\item \label{q5:b} Existe tendência, padrão, sazonalidade para os dados destes três anos do Bairro Alto?
+%	\item \label{q5:c} Identificar quais os horários de maior demanda de abastecimento de água das $18$ às $21$?
+%	\item \label{q5:d} Quanto deve-se armazenar previamente no reservatório para não acionar as bombas no horário de pico?
+%	\item \label{q5:e} Se a vazão cresce e a pressão decresce existe uma ANOMALIA na rede de abastecimento de água (com base no histórico).	
+%	\end{enumerate}
+%\end{enumerate}
