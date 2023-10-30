@@ -109,5 +109,31 @@ Nesse modelo, são consideradas variáveis exógenas, ou seja, são utilizados d
 	d_t=c+\sum_{n=1}^p \alpha_n d_{t-n}+\sum_{n=1}^q \theta_n \epsilon_{t-n}+\sum_{n=1}^r \beta_n x_{n_t}+\sum_{n=1}^P \phi_n d_{t-s n}+\sum_{n=1}^Q \eta_n \epsilon_{t-s n}+\epsilon_t \label{eq:sarmax}
 \end{eqnarray}
 
+$p$: Ordem de autorregressão de tendência (ACF)-$p$ é o número de termos autorregressivos (parte AR). Permite incorporar o efeito de valores passados em nosso modelo. Intuitivamente, isso seria semelhante a afirmar que é provável que esteja quente amanhã se tiver sido quente nos últimos 3 dias.
 
+$d$: Diferença de tendência ordem-d é o número de diferenças não sazonais necessárias para estacionariedade. Intuitivamente, isso seria semelhante a afirmar que é provável que seja a mesma temperatura amanhã se a diferença de temperatura nos últimos três dias tiver sido muito pequena.
+
+$q$: Ordem da média móvel de tendência. (PCAF)-$q$ é o número de erros de previsão defasados na equação de previsão (parte MA). Isso nos permite definir o erro do nosso modelo como uma combinação linear dos valores de erro observados em momentos anteriores no passado.
+
+Elementos sazonais em SARIMAX:
+P: Ordem autorregressiva sazonal,
+D: Ordem das diferenças sazonais,
+P: Ordem de média móvel sazonal,
+M: O número de etapas de tempo para um único período sazonal.
+M é igual à defasagem ACF com o valor mais alto (normalmente em uma defasagem alta).
+$D=1$ se a série tiver um padrão sazonal estável ao longo do tempo,
+$D=0$ se a série tiver um padrão sazonal instável ao longo do tempo,
+$P\geq1$ se a FAC for positiva na defasagem S, senão $P=0$,
+$Q\geq1$ se a ACF for negativa na defasagem S, caso contrário $Q=0$,
+$X$ variável exógena.
+Na Figura \ref{fig:sarimaxmap} é mostrado como o modelo SARIMAX se comporta.
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Significado do modelo SARIMAX}
+	\label{fig:sarimaxmap}
+	\includegraphics[width=\linewidth]{Modelos/Figuras/sarimax_map}
+	
+\end{figure}
 
