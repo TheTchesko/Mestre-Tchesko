@@ -55,7 +55,7 @@ Nesse primeiro momento, foram obtidos $2.555$ modelos, dos quais $83$ atingiram 
 A Tabela \ref{tb1} apresenta as palavras-chave utilizadas em cada base de dados, juntamente com o número de artigos encontrados inicialmente. No entanto, é importante ressaltar que esses dados ainda não foram processados para remover duplicatas. Após a utilização do software ScientoPy \cite{scientopy} para eliminar artigos repetidos, foram selecionados $308$ artigos únicos. Esses artigos representam a quantidade lida nesta RSL e são considerados relevantes para esta pesquisa.
 
 
-\begin{table}[H]
+\begin{table}[tb]
 	\centering
 	\caption{Cruzamento de palavras-chave por meio da aplicação de filtros de área}\label{tb1}
 	\begin{tabular}{@{}cp{2cm}cp{2cm}cp{1.5cm}cp{2cm}c@{}}
@@ -75,7 +75,7 @@ A Tabela \ref{tb1} apresenta as palavras-chave utilizadas em cada base de dados,
 
 Na Tabela \ref{tab:resumo}, os dados coletados na RSL realizada no software ScientoPy \citeonline{scientopy} são apresentados. Nessa tabela, é exibida a quantidade de artigos coletados nas bases Scopus e WoS. Apesar de um volume considerável, nem todos os artigos foram lidos integralmente, uma vez que muitos deles não se relacionavam diretamente com o objeto de pesquisa. Consequentemente, ao longo da condução da RSL, esses artigos foram excluídos.
 
-\begin{table}[H]
+\begin{table}[tb]
 	\centering
 	\caption{Resumo dos dados}
 	\label{tab:resumo}
@@ -106,7 +106,7 @@ Na Tabela \ref{tab:resumo}, os dados coletados na RSL realizada no software Scie
 
 A Tabela \ref{tb2} apresenta os periódicos que mais publicaram artigos sobre o tema em questão. Todas os periódicos listadas, incluindo aquelas com um alto fator de impacto, como a categoria \textbf{Q1}, apresentam uma correlação significativa com as áreas de \textbf{informática, engenharia e matemática}.
 
-\begin{table}[H]
+\begin{table}[tb]
 	\centering
 	\caption{Fator de impacto}\label{tb2}
 	\begin{tabular}{@{}cp{3cm}p{3cm}c@{}}
@@ -162,7 +162,7 @@ Tabela \ref{tb:autor} para visualizar de forma mais clara os autores publicou so
 
 Na Tabela \ref{tb:autor} apresenta a taxa de crescimento médio (AGR), documentos médios por ano (ADY) e percentagem de documentos nos últimos anos (PDLY) período: 2021 - 2023.
 
-\begin{table}[H]
+\begin{table}[b]
 	\centering
 	\caption{Os autores que mais publicam em relação ao tema de pesquisa}\label{tb:autor}
 	\begin{tabular}{ccccccc}
@@ -188,7 +188,7 @@ Na Tabela \ref{tb:autor} apresenta a taxa de crescimento médio (AGR), documento
 
 A Tabela \ref{tb:pais}, que apresenta os países com maior número de publicações sobre o tema de saneamento básico, ordenados de forma decrescente. Os principais países que se destacam nessa análise são os seguintes: China, com $179$ publicações, Estados Unidos da América com $74$ publicações, Índia com $61$ publicações, Brasil com $49$ publicações, Espanha com $40$ publicações, Reino Unido com $40$ publicações, Austrália com $31$ publicações, Itália com $26$ publicações, Canadá com $25$, Irã com $20$ publicações.
 
-\begin{table}[H]
+\begin{table}[tb]
 	\centering
 	\caption{Países com maior número de publicações}\label{tb:pais}
 	\begin{tabular}{ccccccc}
@@ -215,7 +215,6 @@ A Tabela \ref{tb:pais}, que apresenta os países com maior número de publicaç�
 
 Foi realizada uma investigação dos artigos na RSL. Esses artigos retratam alguns dos métodos utilizados em 
 \citeonline{Taieb2016, Ursu2016, Wang2016, Graff2017, Tyralis2017, Boroojeni2017, Coelho2017, Chou2018, Bergmeir2018, Rossi2018, Ahmad2018, Chou2018a, Chen2018, Sadaei2019, Yang2019a, Buyuksahin2019, CarvalhoJr.2019, Liu2019, Shih2019a, Moon2019, Yang2019a, Xu2019, Golyandina2020, Martinovic2020a, Salgotra2020, Vlachas2020, Kulshreshtha2020, Samanta2020, Shen2020, Sezer2020, Du2020, Li2020,  Kumar2021, Lara-Benitez2021, Tan2021, Liu2021}.
-
 Esses artigos abordam diferentes métodos usados pelos autores para previsão de séries temporais e análise não-linear dessas previsões. Eles representam contribuições significativas para o avanço do conhecimento e aplicação prática das séries temporais, sobre abordagens eficazes nesse campo. Ao incluir esses estudos influentes na análise, obtém-se uma visão abrangente dos métodos e técnicas  relevantes na previsão de séries temporais.
 
 No estudo conduzido por \citeonline{Xu2019}, um modelo híbrido foi proposto, combinando o modelo linear AR e LR com o modelo não-linear ARIMA e o modelo DBN (do inglês \textit{Dynamic Bayesian Network}). Essa abordagem permitiu capturar tanto os comportamentos lineares quanto os não-lineares de uma série temporal. Por outro lado, \citeonline{Li2020} comparou o desempenho de previsão da abordagem MAELS (Modelo Alternativo de Estação Livre Série Temporal) com outros modelos de aprendizado de máquina de última geração, como ANN, CNN, RNN, LSTM, GRU, Transformer, Prophet, ARIMA e SVM-VAR (do inglês \textit{Support Vector Machine Variable Regression}). As abordagens ANN, CNN, RNN, GRU, Transformer e LSTM são capazes de lidar com dados multivariados de entrada e saída, enquanto o ARIMA utiliza informações passadas para prever o futuro com base em características como autocorrelação e médias móveis. Na Tabela \ref{tb:mode} é mostrado quantos artigos são relacionados em cada modelo que é utilizado neste trabalho e um artigo de cada modelo.
@@ -246,7 +245,7 @@ No estudo conduzido por \citeonline{Xu2019}, um modelo híbrido foi proposto, co
 %
 %Cada estudo de caso abordou questões específicas relacionadas ao sistema de abastecimento de água e utilizou modelos apropriados para cada tarefa. Isso permitiu uma análise detalhada das diferentes facetas do problema.
 
-\begin{table}[H]
+\begin{table}[htb]
 	\centering
 	\caption{Modelos baseado na literatura e nos artigos}\label{tb:mode}
 	\begin{tabular}{ccccccc}
@@ -282,7 +281,6 @@ No estudo conduzido por \citeonline{Xu2019}, um modelo híbrido foi proposto, co
 
 Dessa forma, por meio dessa revisão sistemática e análise de conteúdo.
 Além desses modelos mencionados, também será utilizada a versão atualizada do ARIMA nesta dissertação. Os modelos SARIMA e SARIMAX também serão comparados para determinar qual deles é o mais adequado. Além disso, serão empregados os modelos Light GBM e XGBoost. Os modelos de aprendizado profundo, como a RNN, ainda são considerados os melhores modelos para séries temporais no tema de saneamento básico que está sendo abordado.
-
 Quanto a modelos, tais como RNN, CNN, ANN, LSTM, Transformer, GRU, Light GBM, XGBoost, RFR, DTR e LR, não fossem encontrados na literatura relacionados a  saneamento básico. 
 Embora existam várias ramificações do modelo ARIMA, o modelo desenvolvido pelo Facebook, conhecido como Prophet, sobressai como uma opção superior em comparação com os demais. O Prophet é um modelo mais recente que simplifica significativamente muitas das tarefas que são necessárias ao lidar com o ARIMA. Enquanto o Prophet foi criado em 2017, o modelo ARIMA tem relatos de ter sido desenvolvido na década de 1960. Essa diferença temporal destaca a evolução e a modernização do campo de modelagem de séries temporais ao longo das décadas \cite{ramos2010previsoes}.
 

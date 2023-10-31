@@ -4,64 +4,60 @@
 \contentsline {section}{\numberline {1}Introdu{\c c}{\~a}o}{16}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Contexto da Pesquisa}{17}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}Motiva\c c\~ao da Pesquisa}{19}{subsubsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.2}Objetivo Geral}{20}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2}Objetivo Geral}{19}{subsection.1.2}%
 \contentsline {subsubsection}{\numberline {1.2.1}Objetivos Espec\'ificos}{20}{subsubsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.3}Procedimentos Metodol{\'o}gicos}{20}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Etapas da Pesquisa}{21}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.1}Etapas da Pesquisa}{20}{subsubsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.4}Justificativa da Pesquisa}{23}{subsection.1.4}%
 \contentsline {subsubsection}{\numberline {1.4.1}Contribui\c c\~oes}{23}{subsubsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.5}Estrutura da Disserta\c c\~ao}{25}{subsection.1.5}%
-\contentsline {section}{\numberline {2}Revis\~ao da Literatura}{27}{section.2}%
-\contentsline {section}{\numberline {3}Fundamentos dos Modelos de Previs\~ao de S\'eries Temporais}{37}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Descri\c c\~ao do Problema}{37}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Modelos de S\'eries Temporais Univariados}{38}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Componente Autorregressivo}{38}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}M\'edia M\'ovel}{40}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Modelos ARMA e ARIMA}{41}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}Modelos de S\'erie Temporal Multivariada}{42}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Modelos de Aprendizado de M\'aquina}{43}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Prophet}{44}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Regress\~ao Linear (LR)}{44}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}\'Arvore de Decis\~ao }{45}{subsubsection.3.4.3}%
-\contentsline {subsubsection}{\numberline {3.4.4}Floresta Aleat\'oria }{48}{subsubsection.3.4.4}%
-\contentsline {subsubsection}{\numberline {3.4.5}Gradient Boosting}{49}{subsubsection.3.4.5}%
-\contentsline {subsubsection}{\numberline {3.4.6}Gradiente de Boosting (Refor\c co)}{50}{subsubsection.3.4.6}%
-\contentsline {subsection}{\numberline {3.5}Redes Neurais Artificiais }{53}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}Rede Neural Recorrente}{53}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Compreendendo Redes de Mem\'oria de Curto e Longo Prazo (LSTM)}{55}{subsubsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.3}GRU (Unidade Recorrente Fechada)}{56}{subsubsection.3.5.3}%
-\contentsline {subsubsection}{\numberline {3.5.4}An\'alise dos Modelos RNN, LSTM e GRU}{58}{subsubsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.6}Aprendizado Profundo (DL)}{59}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}Explorando o Transformer: Al\'em dos Bits e Bytes}{60}{subsubsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.2}Rede Neural Artificial (ANN)}{61}{subsubsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.7}Rede Neural Convolucional (CNN)}{63}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}M\'etricas de Avalia\c c\~ao de Modelos}{65}{subsection.3.8}%
-\contentsline {subsubsection}{\numberline {3.8.1}Erro Quadr\'atico M\'edio Raiz (RMSE)}{65}{subsubsection.3.8.1}%
-\contentsline {subsubsection}{\numberline {3.8.2}Raiz do Erro M\'edio Quadr\'atico Relativo (RRMSE)}{65}{subsubsection.3.8.2}%
-\contentsline {subsubsection}{\numberline {3.8.3}Erro Absoluto M\'edio (MAE)}{65}{subsubsection.3.8.3}%
-\contentsline {subsubsection}{\numberline {3.8.4}Erro Percentual Absoluto M\'edio (MAPE)}{66}{subsubsection.3.8.4}%
-\contentsline {subsubsection}{\numberline {3.8.5}Erro Percentual Absoluto M\'edio Sim\'etrico (sMAPE)}{66}{subsubsection.3.8.5}%
-\contentsline {subsection}{\numberline {3.9}Teste de Ljung-Box}{66}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}Correla\c c\~ao de Pearson}{68}{subsection.3.10}%
-\contentsline {subsection}{\numberline {3.11}Decomposi\c c\~ao STL}{69}{subsection.3.11}%
-\contentsline {subsection}{\numberline {3.12}Dickey-Fuller (DF)}{69}{subsection.3.12}%
-\contentsline {subsection}{\numberline {3.13}Teste de Signific\^ancia}{70}{subsection.3.13}%
-\contentsline {section}{\numberline {4}Resultados Preliminares}{72}{section.4}%
-\contentsline {subsection}{\numberline {4.1}An\'alise dos Resultados dos Modelos de Previs\~ao}{72}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}An\'alise Explorat\'oria dos Dados (EDA)}{88}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}M\'ultiplas Entradas e Sa\'ida \'Unica (MISO)}{90}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}Decomposi\c c\~ao STL}{90}{subsubsection.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.1.4}Separa\c c\~ao dos Dados}{95}{subsubsection.4.1.4}%
-\contentsline {subsubsection}{\numberline {4.1.5}Modelagem e Sele\c c\~ao do Modelo}{95}{subsubsection.4.1.5}%
-\contentsline {subsubsection}{\numberline {4.1.6}Horizonte}{96}{subsubsection.4.1.6}%
-\contentsline {subsubsection}{\numberline {4.1.7}Previs\~ao e Avalia\c c\~ao}{96}{subsubsection.4.1.7}%
-\contentsline {subsubsection}{\numberline {4.1.8}Teste de Signific\^ancia}{97}{subsubsection.4.1.8}%
-\contentsline {subsubsection}{\numberline {4.1.9}Compara\c c\~ao dos Modelos}{99}{subsubsection.4.1.9}%
-\contentsline {section}{\numberline {5}Conclus\~oes}{103}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Limita\c c\~oes da Pesquisa}{103}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Propostas Futuras}{104}{subsection.5.2}%
-\contentsline {section}{Refer\^encias}{105}{subsection.5.2}%
-\contentsline {section}{\numberline {A}Ap\^endice - Modelos AR, ARX e MA }{116}{appendix.A}%
-\contentsline {section}{\numberline {B}Ap\^endice - Modelos ARMA e ARIMA }{117}{appendix.B}%
-\contentsline {section}{\numberline {C}Ap\^endice - Modelos ARIMAX, SARIMA e SARIMAX }{118}{appendix.C}%
-\contentsline {section}{\numberline {D}Ap\^endice - Modelos RNN e Prophet }{120}{appendix.D}%
+\contentsline {subsection}{\numberline {1.5}Estrutura da Disserta\c c\~ao}{24}{subsection.1.5}%
+\contentsline {section}{\numberline {2}Revis\~ao da Literatura}{26}{section.2}%
+\contentsline {section}{\numberline {3}Fundamentos dos Modelos de Previs\~ao de S\'eries Temporais}{34}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Descri\c c\~ao do Problema}{34}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Modelos de S\'eries Temporais Univariados}{35}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Componente Autorregressivo}{35}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}M\'edia M\'ovel}{37}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Modelos ARMA e ARIMA}{38}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Modelos de S\'erie Temporal Multivariada}{39}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Modelos de Aprendizado de M\'aquina}{40}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Prophet}{41}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Regress\~ao Linear (LR)}{41}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}\'Arvore de Decis\~ao }{42}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}Floresta Aleat\'oria }{45}{subsubsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.5}Gradient Boosting}{46}{subsubsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {3.4.6}Gradiente de Boosting (Refor\c co)}{47}{subsubsection.3.4.6}%
+\contentsline {subsection}{\numberline {3.5}Redes Neurais Artificiais }{50}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Rede Neural Recorrente}{50}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Compreendendo Redes de Mem\'oria de Curto e Longo Prazo (LSTM)}{52}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}GRU (Unidade Recorrente Fechada)}{53}{subsubsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.4}An\'alise dos Modelos RNN, LSTM e GRU}{55}{subsubsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.6}Aprendizado Profundo (DL)}{56}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Explorando o Transformer: Al\'em dos Bits e Bytes}{57}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Rede Neural Artificial (ANN)}{58}{subsubsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.7}Rede Neural Convolucional (CNN)}{60}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}M\'etricas de Avalia\c c\~ao de Modelos}{62}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}Erro Quadr\'atico M\'edio Raiz (RMSE)}{62}{subsubsection.3.8.1}%
+\contentsline {subsubsection}{\numberline {3.8.2}Raiz do Erro M\'edio Quadr\'atico Relativo (RRMSE)}{62}{subsubsection.3.8.2}%
+\contentsline {subsubsection}{\numberline {3.8.3}Erro Absoluto M\'edio (MAE)}{62}{subsubsection.3.8.3}%
+\contentsline {subsubsection}{\numberline {3.8.4}Erro Percentual Absoluto M\'edio (MAPE)}{63}{subsubsection.3.8.4}%
+\contentsline {subsubsection}{\numberline {3.8.5}Erro Percentual Absoluto M\'edio Sim\'etrico (sMAPE)}{63}{subsubsection.3.8.5}%
+\contentsline {subsection}{\numberline {3.9}Teste de Ljung-Box}{63}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Correla\c c\~ao de Pearson}{65}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}Decomposi\c c\~ao STL}{66}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}Dickey-Fuller (DF)}{66}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}Teste de Signific\^ancia}{67}{subsection.3.13}%
+\contentsline {section}{\numberline {4}Resultados Preliminares}{69}{section.4}%
+\contentsline {subsection}{\numberline {4.1}An\'alise dos Resultados dos Modelos de Previs\~ao}{69}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}An\'alise Explorat\'oria dos Dados (EDA)}{82}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}M\'ultiplas Entradas e Sa\'ida \'Unica (MISO)}{84}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Decomposi\c c\~ao STL}{84}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Separa\c c\~ao dos Dados}{88}{subsubsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.5}Modelagem e Sele\c c\~ao do Modelo}{89}{subsubsection.4.1.5}%
+\contentsline {subsubsection}{\numberline {4.1.6}Horizonte}{89}{subsubsection.4.1.6}%
+\contentsline {subsubsection}{\numberline {4.1.7}Previs\~ao e Avalia\c c\~ao}{90}{subsubsection.4.1.7}%
+\contentsline {subsubsection}{\numberline {4.1.8}Teste de Signific\^ancia}{90}{subsubsection.4.1.8}%
+\contentsline {subsubsection}{\numberline {4.1.9}Compara\c c\~ao dos Modelos}{92}{subsubsection.4.1.9}%
+\contentsline {section}{\numberline {5}Conclus\~oes}{97}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Limita\c c\~oes da Pesquisa}{97}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Propostas Futuras}{98}{subsection.5.2}%
+\contentsline {section}{Refer\^encias}{99}{subsection.5.2}%

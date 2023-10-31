@@ -5,7 +5,7 @@
 
 Através da decomposição, é possível analisar se a série apresenta tendência, sazonalidade e resíduos. Ao observar as Figuras \ref{fig:stl-aditiva} e \ref{fig:stl}, é evidente que os dados exibem ambos os padrões. Isso indica que a série é estacionária, como confirmado pelo seguinte teste.
 
-\begin{figure}[H]
+\begin{figure}[!htb]
 	\centering
 	\caption{Decomposição STL aditiva dos dados coletados}
 	\label{fig:stl-aditiva}
@@ -14,7 +14,7 @@ Através da decomposição, é possível analisar se a série apresenta tendênc
 	
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[!htb]
 	\centering
 	\caption{Decomposição STL multiplicativa dos dados coletados}
 	\label{fig:stl}
@@ -37,7 +37,7 @@ Valor crítico ($10\%$): $-2,57$;
 Com base na forte evidência contra a hipótese nula, podemos rejeitar a hipótese nula. A Figura \ref{fig:hist}, podemos notar um aumento na demanda durante essas horas durante o ano de 2019.
 	
 	
-	\begin{figure}[H]
+	\begin{figure}[!htb]
 		\centering
 		\caption{Violino no nível do reservatório}
 		\label{fig:hist}
@@ -53,7 +53,7 @@ Conforme mencionado na subseção \ref{subsubsec:motivacao}, as anomalias climá
 A Figura \ref{fig:ft03} ilustra como a vazão pode ser afetada pelo nível do tanque. É interessante observar que a vazão de recalque tem um impacto mais significativo no nível do tanque em comparação com as outras vazões. Isso ocorre porque a vazão de recalque está associada à injeção de água diretamente no tanque por meio da bomba localizada próxima à base do tanque. Por outro lado, as demais vazões apresentam alguns valores ausentes, o que limita sua influência na análise geral.	
 	
 	
-	\begin{figure}[H]
+	\begin{figure}[!htb]
 		\centering
 		\caption{Violino da vazão de recalque}
 		\label{fig:ft03}
@@ -73,7 +73,7 @@ O valor-p de $0,0005$, por sua vez, está associado ao teste ADF. O valor-p é u
 
 Na Figura \ref{fig:acfa}, pode-se observar a diferença entre a autocorrelação (ACF) exibida na Figura \ref{fig:acfa} e a autocorrelação parcial (PACF) exibida na Figura \ref{fig:pacf}. A autocorrelação é uma medida da correlação entre os valores da série temporal em diferentes defasagens, levando em consideração tanto a correlação direta quanto a correlação indireta. Por outro lado, a autocorrelação parcial mede apenas a correlação direta entre os valores, desconsiderando a influência das defasagens intermediárias. Essas análises são úteis para identificar padrões e relações de dependência entre os valores da série temporal, fornecendo informações importantes para a modelagem e previsão desses dados.
 
-\begin{figure}[H]
+\begin{figure}[!htb]
 	\centering
 	\caption{Autocorrelação}\label{fig:acfa}
 	\includegraphics[width=0.9\linewidth]{Resultados/Figuras/acf} 
@@ -82,7 +82,7 @@ Na Figura \ref{fig:acfa}, pode-se observar a diferença entre a autocorrelação
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}[!htb]
 	\centering
 	\caption{Autocorrelação parcial}\label{fig:pacf}
 	\includegraphics[width=0.9\linewidth]{Resultados/Figuras/pacf}

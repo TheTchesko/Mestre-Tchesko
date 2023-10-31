@@ -48,7 +48,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
-Reallocating 'field_info' (item size: 4) to 14660 items.
+Reallocating 'field_info' (item size: 4) to 13901 items.
 Database file #1: abntex2-options.bib
 Database file #2: Bibliografia/Dissert2.bib
 Warning--entry type for "sarima" isn't style-file defined
@@ -138,45 +138,45 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 140 entries,
+You've used 129 entries,
             6714 wiz_defined-function locations,
-            2083 strings with 40207 characters,
-and the built_in function-call counts, 176812 in all, are:
-= -- 17858
-> -- 4736
-< -- 3358
-+ -- 4825
-- -- 1402
-* -- 12177
-:= -- 21979
-add.period$ -- 524
-call.type$ -- 140
-change.case$ -- 1593
-chr.to.int$ -- 439
-cite$ -- 138
-duplicate$ -- 14803
-empty$ -- 8167
-format.name$ -- 6746
-if$ -- 37212
+            2025 strings with 38349 characters,
+and the built_in function-call counts, 164296 in all, are:
+= -- 16699
+> -- 4334
+< -- 3174
++ -- 4515
+- -- 1283
+* -- 11281
+:= -- 20409
+add.period$ -- 488
+call.type$ -- 129
+change.case$ -- 1466
+chr.to.int$ -- 407
+cite$ -- 127
+duplicate$ -- 13880
+empty$ -- 7499
+format.name$ -- 6181
+if$ -- 34488
 int.to.chr$ -- 10
 int.to.str$ -- 0
-missing$ -- 2475
-newline$ -- 778
-num.names$ -- 690
-pop$ -- 3098
+missing$ -- 2276
+newline$ -- 724
+num.names$ -- 635
+pop$ -- 2830
 preamble$ -- 1
-purify$ -- 587
+purify$ -- 540
 quote$ -- 0
-skip$ -- 15115
+skip$ -- 14157
 stack$ -- 1
-substring$ -- 8231
-swap$ -- 6061
-text.length$ -- 270
+substring$ -- 7700
+swap$ -- 5674
+text.length$ -- 251
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 13
 warning$ -- 0
-while$ -- 1086
+while$ -- 1002
 width$ -- 0
-write$ -- 2299
+write$ -- 2122
 (There were 19 error messages)

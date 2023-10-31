@@ -20,13 +20,6 @@ ISSN 0378-7788.}
   827--832, 2020.
 ISSN 26662558.}
 
-\bibitem[Akiba et al. 2019]{DBLP}
-\abntrefinfo{Akiba et al.}{AKIBA et al.}{2019}
-{AKIBA, T. et al. Optuna: {A} next-generation hyperparameter optimization
-  framework.
-\textbf{CoRR}, abs/1907.10902, 2019.
-Dispon{\'\i}vel em: \url{http://arxiv.org/abs/1907.10902}.}
-
 \bibitem[Al-Shabi 2021]{al2021machine}
 \abntrefinfo{Al-Shabi}{AL-SHABI}{2021}
 {AL-SHABI, M.~Q. Machine learning: Algorithms, real-world applications and
@@ -79,12 +72,6 @@ Acessado em: 22 de Março de 2023.}
   1509--1526, 1970.
 Dispon{\'\i}vel em:
   \url{https://www.tandfonline.com/doi/abs/10.1080/01621459.1970.10481180}.}
-
-\bibitem[Brandão 2020]{brandão_2020}
-\abntrefinfo{Brandão}{BRANDãO}{2020}
-{BRANDãO, G.~A. \textbf{Séries Temporais: Parte 1}. DEV Community, 2020.
-Dispon{\'\i}vel em:
-  \url{https://dev.to/giselyalves13/series-temporais-parte-1-13l8}.}
 
 \bibitem[Brockwell e Davis 2002]{Brockwell2002}
 \abntrefinfo{Brockwell e Davis}{BROCKWELL; DAVIS}{2002}
@@ -294,23 +281,6 @@ Acessado em: 22 de Março de 2023.}
 [Online; accessed 21-September-2023].
 Dispon{\'\i}vel em: \url{https://apmonitor.com/pds/}.}
 
-\bibitem[Hyndman e Koehler 2006]{hyndman2006effect}
-\abntrefinfo{Hyndman e Koehler}{HYNDMAN; KOEHLER}{2006}
-{HYNDMAN, R.~J.; KOEHLER, A.~B. Effect of question formats on item endorsement
-  rates in web surveys.
-\textbf{International Journal of Forecasting}, v.~22, n.~4, p. 679--688, 2006.}
-
-\bibitem[Jadon, Patil e Jadon 2022]{jadon2022comprehensive}
-\abntrefinfo{Jadon, Patil e Jadon}{JADON; PATIL; JADON}{2022}
-{JADON, A.; PATIL, A.; JADON, S. \textbf{A Comprehensive Survey of Regression
-  Based Loss Functions for Time Series Forecasting}. 2022.}
-
-\bibitem[Jones, Smith e Johnson 2017]{jones2017}
-\abntrefinfo{Jones, Smith e Johnson}{JONES; SMITH; JOHNSON}{2017}
-{JONES, A.~B.; SMITH, C.~D.; JOHNSON, E.~F. Comparing forecasting models for
-  solar power generation.
-\textbf{Renewable Energy}, Elsevier, v.~107, p. 452--461, 2017.}
-
 \bibitem[Jordan, Sok\'{o}\l e Park 2021]{Jordan2021}
 \abntrefinfo{Jordan, Sok\'{o}\l e Park}{JORDAN; SOK\'{o}\L; PARK}{2021}
 {JORDAN, I.~D.; SOK\'{o}\L, P.~A.; PARK, I.~M. Gated recurrent units viewed
@@ -443,11 +413,6 @@ ISSN 2169-3536 J9 - IEEE ACCESS JI - IEEE Access.}
 ISSN 0006-3444.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1093/biomet/65.2.297}.}
 
-\bibitem[Lopes, Silva e Santos 2020]{lopes2020evaluation}
-\abntrefinfo{Lopes, Silva e Santos}{LOPES; SILVA; SANTOS}{2020}
-{LOPES, J.; SILVA, M.; SANTOS, P. Evaluation metrics for regression models.
-\textbf{Journal of Data Science}, v.~15, n.~2, p. 345--362, 2020.}
-
 \bibitem[Lucas 2019]{lucas_2019}
 \abntrefinfo{Lucas}{LUCAS}{2019}
 {LUCAS, P. d. O.~e.
@@ -504,12 +469,6 @@ ISSN 00104825.}
   memristor-based reservoir computing system}.
 \textbf{Nature Electronics}, v.~2, n.~10, p. 480--487, 2019.}
 
-\bibitem[Nguyen 2020]{nguyen2020toxicological}
-\abntrefinfo{Nguyen}{NGUYEN}{2020}
-{NGUYEN, A.~K. \textbf{Toxicological and Materials Evaluation of Photopolymers
-  for Use in Additively Manufactured Medical Devices}. [S.l.]: North Carolina
-  State University, 2020.}
-
 \bibitem[O'Donncha et al. 2022]{2-s2.0-85130875471}
 \abntrefinfo{O'Donncha et al.}{O'DONNCHA et al.}{2022}
 {O'DONNCHA, F. et al. A spatio-temporal lstm model to forecast across multiple
@@ -542,13 +501,6 @@ Cited By 296.
 Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-84992151859&doi=10.1016\%2fj.rse.2016.10.010&partnerID=40&md5=09efc79bab8e893b97fd21cb4844b98d}.}
 
-\bibitem[Peng et al. 2017]{peng2017effective}
-\abntrefinfo{Peng et al.}{PENG et al.}{2017}
-{PENG, Z. et al. An effective method for inventory forecasting based on online
-  machine learning.
-\textbf{Industrial Management \& Data Systems}, Emerald Publishing Limited,
-  v.~117, n.~4, p. 704--718, 2017.}
-
 \bibitem[Petropoulos et al. 2022]{PETROPOULOS2022705}
 \abntrefinfo{Petropoulos et al.}{PETROPOULOS et al.}{2022}
 {PETROPOULOS, F. et al. Forecasting: theory and practice.
@@ -556,13 +508,6 @@ Dispon{\'\i}vel em:
 ISSN 0169-2070.
 Dispon{\'\i}vel em:
   \url{https://www.sciencedirect.com/science/article/pii/S0169207021001758}.}
-
-\bibitem[Pinheiro 2022]{pinheiro_2022}
-\abntrefinfo{Pinheiro}{PINHEIRO}{2022}
-{PINHEIRO, N.~M. \textbf{Introdução a Series Temporais — Parte 1}. Data
-  Hackers, 2022.
-Dispon{\'\i}vel em:
-  \url{https://medium.com/data-hackers/series-temporais-parte-1-a0e75a512e72}.}
 
 \bibitem[Predum 2021]{sarima}
 \abntrefinfo{Predum}{PREDUM}{2021}
@@ -903,12 +848,6 @@ Special Issue: M5 competition.
 Dispon{\'\i}vel em:
   \url{https://www.sciencedirect.com/science/article/pii/S0169207021001606}.}
 
-\bibitem[Willmott e Matsuura 2005]{willmott2005advantages}
-\abntrefinfo{Willmott e Matsuura}{WILLMOTT; MATSUURA}{2005}
-{WILLMOTT, C.~J.; MATSUURA, K. Advantages of the mean absolute error (mae) over
-  the root mean square error (rmse) in assessing average model performance.
-\textbf{Climate Research}, Inter-Research, v.~30, n.~1, p. 79--82, 2005.}
-
 \bibitem[Xian et al. 2018]{2-s2.0-85018469706}
 \abntrefinfo{Xian et al.}{XIAN et al.}{2018}
 {XIAN, S. et al. A novel fuzzy time series forecasting method based on the
@@ -958,13 +897,5 @@ ISBN 9781509023509. Cited By 5; Conference of 5th International Conference on
 {ZHANG, E. \textbf{Recurrent Neural Network is All You Need}. 2021.
   \url{https://medium.com/mcgill-mma-intro-to-ai/recurrent-neural-network-is-all-you-need-f576782c5d2}.
 Acessado em: 22 de Março de 2023.}
-
-\bibitem[Zhang, Xu e Shen 2016]{zhang2016}
-\abntrefinfo{Zhang, Xu e Shen}{ZHANG; XU; SHEN}{2016}
-{ZHANG, H.; XU, J.; SHEN, J. Evaluation and comparison of forecasting
-  performance of three typical crop models for winter wheat in the north china
-  plain.
-\textbf{Agricultural and Forest Meteorology}, Elsevier, v. 228-229, p.
-  276--286, 2016.}
 
 \end{thebibliography}

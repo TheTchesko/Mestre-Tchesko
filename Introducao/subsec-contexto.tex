@@ -3,14 +3,7 @@ Torna a análise de séries temporais e previsões valiosas ferramentas para apo
 
 Na Figura \ref{fig:paradigma-ml}, são mostradas as etapas de como deve ocorrer a análise de dados e a seleção dos modelos. Essa seleção pode ser feita de forma que se tenha que escolher o que deve ser previsto na variável. Feito isso, temos a primeira etapa que será dos dados, depois que cada um foi identificado com seus rótulos de entrada e saída. Os dados não podem conter \textbf{NaN} (do inglês \textit{not a number}) ou dados ausentes, o que evita falsos positivos. 
 
-Fazendo isso, os dados podem ser visualizados para garantir que estejam bem carregados e que estejam em um tamanho tolerável. Isso é chamado de avaliação dos dados. Com os dados limpos e bem carregados, sem falsos positivos, a divisão dos dados pode ser feita. 
-
-A otimização dos dados para os modelos pode ser realizada de várias formas, como o uso do Optuna para cada modelo pré-listado, reduzindo assim o tempo de processamento. Outra abordagem é aplicar a média nos dados quando eles são coletados de hora em hora, como é o nosso caso, e usá-los como conjuntos de treinamento, teste e validação. 
-
-A validação é comum em conjuntos de dados muito grandes para permitir que os modelos trabalhem mais com os dados, proporcionando resultados mais precisos. Após essa etapa, na escolha dos modelos, há a possibilidade de escolher o modelo de série temporal, se o modelo é de classificação, agrupamento ou regressão. Após listar os modelos, cada um deles deve ser avaliado em métricas para verificar a veracidade de cada um.
-
-
-\begin{figure}[H]
+\begin{figure}[!htb]
 	\centering
 	\caption{Paradigma de aprendizado de máquina}
 	\includegraphics[width=\linewidth]{Introducao/Figuras/paradigma-ml}
@@ -18,6 +11,15 @@ A validação é comum em conjuntos de dados muito grandes para permitir que os 
 	\fonte{Adaptado de \cite{apmonitor}}
 	\label{fig:paradigma-ml}
 \end{figure}
+
+Fazendo isso, os dados podem ser visualizados para garantir que estejam bem carregados e que estejam em um tamanho tolerável. Isso é chamado de avaliação dos dados. Com os dados limpos e bem carregados, sem falsos positivos, a divisão dos dados pode ser feita. 
+
+A otimização dos dados para os modelos pode ser realizada de várias formas, como o uso do Optuna para cada modelo pré-listado, reduzindo assim o tempo de processamento. Outra abordagem é aplicar a média nos dados quando eles são coletados de hora em hora, como é o nosso caso, e usá-los como conjuntos de treinamento, teste e validação. 
+
+A validação é comum em conjuntos de dados muito grandes para permitir que os modelos trabalhem mais com os dados, proporcionando resultados mais precisos. Após essa etapa, na escolha dos modelos, há a possibilidade de escolher o modelo de série temporal, se o modelo é de classificação, agrupamento ou regressão. Após listar os modelos, cada um deles deve ser avaliado em métricas para verificar a veracidade de cada um.
+
+
+
   
       
 \subsubsection{Motiva\c c\~ao da Pesquisa} \label{subsubsec:motivacao}

@@ -12,12 +12,12 @@ Todos os modelos de ARIMA e seus antecessores são obtidos pelo método da bibli
 Na Tabela \ref{tab:autoarima_params} é exibido como cada modelo ficou.
 
 
-\begin{table}[htpb]
+\begin{table}[tb]
 	\centering
 	\caption{Parâmetros utilizados nos modelos AR, ARX, MA, ARMA, ARIMA, ARIMAX, SARIMA e SARIMAX obtidos pelo ``autoARIMA'' do Python.}
 	\label{tab:autoarima_params}
 	\small
-	\begin{tabular}{cp{9cm}p{1.9cm}}
+	\begin{tabular}{cp{9cm}p{2cm}}
 		\hline
 		\textbf{Modelo} & \textbf{Parâmetros Utilizados} & \textbf{Método de Estimação} \\
 		\hline
@@ -179,7 +179,7 @@ Na Figura \ref{fig:1-xgb-regressao}, são apresentados os modelos XGBoost e Ligh
 
 
 
-\begin{table}[H]
+\begin{table}[tb]
 	\centering
 	\caption{Hiperparâmetros dos modelos}
 	\label{tab:hiperparametros}
@@ -198,7 +198,7 @@ Na Figura \ref{fig:1-xgb-regressao}, são apresentados os modelos XGBoost e Ligh
 
 Os modelos de rede neural, como RNN, ANN, CNN, GRU, LSTM e Transformer, obtidos na otimização do Optuna do Python, tiveram seus hiperparâmetros melhorados, conforme exibido na Tabela \ref{tab:hyperparameters_summary}. Esses modelos, por serem modelos de rede neural, são melhores para otimizar do que os outros. Estão detalhados nas Tabelas \ref{tb:apd-trn} à \ref{tb:apd-int}. Os parâmetros do modelo RNN é mostrado no Apêndice \ref{sec:arimaxsarimasarimax24}, onde uma comparação com os horizontes de previsão escolhidos é apresentada na Figura \ref{fig:rnn}.
 
-\begin{table}[H]
+\begin{table}[tb]
 	\centering
 	\caption{Resumo dos Hiperparâmetros dos Modelos de Redes Neurais}
 	\label{tab:hyperparameters_summary}
@@ -247,7 +247,7 @@ Os rótulos dos modelos foram incluídos nas tabelas, o que permite uma identifi
 
 $(p = 7,d = 1,q = 7) (P = 2,D = 1,Q = 1)_{M = 12}$ Média 24h
  
-\begin{table}[H]
+\begin{table}[!htb]
 	\begin{tabular}{cl}
 			\textbf{A} & AR                      \\
 			\textbf{B} & ARX                     \\
@@ -402,97 +402,3 @@ $(p = 7,d = 1,q = 7) (P = 2,D = 1,Q = 1)_{M = 12}$ Média 24h
 %\section{Ap\^endice - Compara\c c\~ao dos Modelos de Previs\~ao com o M\'etodo Ljung-Box}\label{sec:comtb18}
 
 
-\begin{table}[H]
-	\centering		
-	\caption{Comparação dos modelos Ljung Box: Modelos ARIMA com defasagem de 10 para previsão de longo prazo na demanda de água}
-	
-	\begin{subtable}{0.45\linewidth}
-			\centering
-			\caption{\textbf{Treinamento}} \label{tb:lbtrn}
-			\begin{tabular}{@{}ccc@{}}
-					\toprule
-					\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Valor \\ De p\end{tabular}} \\
-					& & \\
-					& & \\
-					& & \\
-					& & \\ \midrule
-					A & 7,125 & 0,072 \\
-					B & \textbf{6,297} & 0,790 \\
-					C & 34,340 & \textbf{0} \\
-					D & 11,603 & 0,313 \\
-					E & 13,011 & 0,223 \\
-					F & 10,165 & 0,426 \\
-					G & 30,360 & \textbf{0,001} \\
-					H & 11,634 & 0,310 \\ \bottomrule
-				\end{tabular}
-		\end{subtable}
-	\hfill
-	\begin{subtable}{0.45\linewidth}
-			\centering
-			\caption{\textbf{Teste}} \label{tb:lbtst}
-			\begin{tabular}{@{}ccc@{}}
-					\toprule
-					\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Valor \\ De p\end{tabular}} \\
-					& & \\
-					& & \\
-					& & \\
-					& & \\ \midrule
-					A & 7,795 & 0,649 \\
-					B & \textbf{0,857} & 1 \\
-					C & 7,886 & \textbf{0,64} \\
-					D & 19,344 & \textbf{0,036} \\
-					E & 9,499 & 0,485 \\
-					F & 3,567 & 0,965 \\
-					G & \textbf{0,597} & \textbf{1} \\
-					H & 3,717 & 0,959 \\ \bottomrule
-				\end{tabular}
-		\end{subtable}
-	
-	\vspace{1em}
-	
-	\begin{subtable}{0.45\linewidth}
-			\centering
-			\caption{\textbf{Validação}} \label{tb:lbvld}
-			\begin{tabular}{@{}ccc@{}}
-					\toprule
-					\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Valor \\ De p\end{tabular}} \\
-					& & \\
-					& & \\
-					& & \\
-					& & \\ \midrule
-					A & 2,428 & 0,992 \\
-					B & 7,468 & \textbf{0,681} \\
-					C & 1,387 & 0,999 \\
-					D & 5,416 & 0,862 \\
-					E & 4,038 & 0,946 \\
-					F & 4,447 & 0,925 \\
-					G & \textbf{0,021} & \textbf{1} \\
-					H & 0,044 & 1 \\ \bottomrule
-				\end{tabular}
-		\end{subtable}
-	\hfill
-	\begin{subtable}{0.45\linewidth}
-			\centering
-			\caption{\textbf{Inteiro}} \label{tb:lbcm}
-			\begin{tabular}{@{}ccc@{}}
-					\toprule
-					\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Valor \\ De p\end{tabular}} \\
-					& & \\
-					& & \\
-					& & \\
-					& & \\ \midrule
-					A & \textbf{4,262} & 0,161 \\
-					B & \textbf{4,703} & 0,91 \\
-					C & 30,713 & \textbf{0,001} \\
-					D & 40,49 & \textbf{0} \\
-					E & 40,49 & \textbf{0} \\
-					F & 40,49 & \textbf{0} \\
-					G & 60,913 & \textbf{0} \\
-					H & \textbf{5,827} & 0,83 \\ \bottomrule
-				\end{tabular}
-		\end{subtable}
-	
-	
-	\vspace{0.5cm}
-
-\end{table}
