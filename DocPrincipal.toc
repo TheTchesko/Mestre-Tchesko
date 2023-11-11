@@ -43,7 +43,7 @@
 \contentsline {subsubsection}{\numberline {3.8.5}Erro Percentual Absoluto M\'edio Sim\'etrico (sMAPE)}{61}{subsubsection.3.8.5}%
 \contentsline {subsection}{\numberline {3.9}Teste de Ljung-Box}{61}{subsection.3.9}%
 \contentsline {subsection}{\numberline {3.10}Correla\c c\~ao de Pearson}{63}{subsection.3.10}%
-\contentsline {subsection}{\numberline {3.11}Decomposi\c c\~ao STL}{63}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.11}Decomposi\c c\~ao STL}{64}{subsection.3.11}%
 \contentsline {subsection}{\numberline {3.12}Dickey-Fuller (DF)}{64}{subsection.3.12}%
 \contentsline {subsection}{\numberline {3.13}Teste de Signific\^ancia}{65}{subsection.3.13}%
 \contentsline {section}{\numberline {4}Resultados Preliminares}{67}{section.4}%
@@ -60,3 +60,4 @@
 \contentsline {section}{\numberline {5}Conclus\~oes}{95}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Limita\c c\~oes da Pesquisa}{95}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Propostas Futuras}{96}{subsection.5.2}%
+\contentsline {section}{Refer\^encias}{97}{subsection.5.2}%
