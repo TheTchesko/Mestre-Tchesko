@@ -170,3 +170,24 @@
 
 
 \usepackage{makecell}
+
+
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{icomma}
+
+\usepackage{icomma}
+\def\mycomma{\futurelet\hmmac\mycommabehavior}
+\def\mycommabehavior{\ifx,\hmmac\expandafter\mycommaelse\else\expandafter\mycommado\fi}
+\def\mycommaelse{\ifmmode\comma\else,\fi\space}
+\def\mycommado#1{\ifmmode\comma\else,#1\fi\space}
+
+
+\usepackage{array}
+
+\usepackage{multirow}
+\usepackage{caption}
+
+% Configuração para usar a vírgula como separador decimal
+\sisetup{output-decimal-marker={,}}

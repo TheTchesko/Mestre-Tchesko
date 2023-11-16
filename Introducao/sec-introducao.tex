@@ -5,10 +5,11 @@
 \section{Introdu{\c c}{\~a}o} \label{sec:int}
 
 
-\textcolor{red}{(Contexto)} No âmbito da demanda d'água, desempenha-se um papel crucial nesse contexto. A água está presente em todos os aspectos do cotidiano, sendo essencial tanto para atividades básicas, como o banho, quanto para o consumo. A compreensão da importância desse recurso é vital, uma vez que ele influencia diretamente a qualidade de vida em várias esferas.
+%\textcolor{red}{(Contexto)}
+No âmbito da demanda d'água, desempenha-se um papel crucial nesse contexto. A água está presente em todos os aspectos do cotidiano, sendo essencial tanto para atividades básicas, como o banho, quanto para o consumo. A compreensão da importância desse recurso é vital, uma vez que ele influencia diretamente a qualidade de vida em várias esferas.
 Existem três tipos principais de Aprendizado de Máquina: Supervisionado, Não Supervisionado e por Reforço. No Aprendizado Supervisionado, é necessário apresentar a resposta desejada para cada exemplo. No Aprendizado Não Supervisionado, os exemplos são fornecidos sem rótulos, sendo agrupados por similaridades. No Aprendizado por Reforço, o algoritmo recebe sinais de reforço, sem a resposta correta, e determina a eficácia de suas hipóteses \cite{Silva2021}.
 
-Nesse caso, os modelos mais usados nessa dissertação são os modelos de aprendizado de máquina supervisionados. Esses modelos para série temporal são usados na literatura.
+Nesse caso, os modelos usados nessa dissertação são os modelos de aprendizado de máquina supervisionados. Esses modelos para série temporal são usados na literatura.
 As séries temporais são caracterizadas como processos estocásticos regidos por leis probabilísticas.
 Série estacionária com média é aquela que contém a média, variância e autocorrelação constantes ao longo do tempo.
 
@@ -17,14 +18,16 @@ Série estacionária com média é aquela que contém a média, variância e aut
 %\input{Revisao/exemplo serie}
 
 %\input{Revisao/estocatico}
-\textcolor{red}{(Problema)} A abordagem desse estudo envolve o problema de abastecimento d'água que afetou a cidade de Curitiba no Bairro Alto entre os anos de 2018 e 2020. Durante esse período, os habitantes enfrentaram a escassez de água, sendo necessário implementar rodízios, alternando períodos com e sem fornecimento. Os dados utilizados foram coletados pela companhia de saneamento do Paraná (SANEPAR).
+%\textcolor{red}{(Problema)} 
+A abordagem desse estudo envolve o problema de abastecimento d'água que afetou a cidade de Curitiba no Bairro Alto entre os anos de 2018 e 2020. Durante esse período, os habitantes enfrentaram a escassez de água, sendo necessário implementar rodízios, alternando períodos com e sem fornecimento. Os dados utilizados foram coletados pela companhia de saneamento do Paraná (SANEPAR).
 
 
-\textcolor{red}{(Solução)} A previsão da demanda de água ao longo do tempo é essencial para um planejamento sustentável e eficiente do abastecimento hídrico, especialmente no contexto urbano, como é o caso da cidade de Curitiba, no estado do Paraná. Neste estudo, adotou-se alguns modelos de previsão da área de aprendizado de máquina e o modelo clássico ARIMA (\textit{Auto-Regressive Integrated Moving Average}) para realizar previsões diárias da demanda de água ao longo do tempo.
+%\textcolor{red}{(Solução)} 
+A previsão da demanda de água ao longo do tempo é essencial para um planejamento sustentável e eficiente do abastecimento hídrico, especialmente no contexto urbano, como é o caso da cidade de Curitiba, no estado do Paraná. Neste estudo, adotou-se alguns modelos de previsão da área de aprendizado de máquina e o modelo clássico ARIMA (\textit{Auto-Regressive Integrated Moving Average}) para realizar previsões diárias da demanda de água ao longo do tempo.
 
 Os modelos de aprendizado de máquina foram aplicados na previsão de séries temporais com dados coletados pela SANEPAR. Cada modelo tem suas particularidades, mas os modelos de aprendizado de máquina podem ser otimizados da mesma forma que os modelos clássicos do tipo ARIMA e RNN (\textit{Recurrent Neural Network}). Os dados coletados pela SANEPAR, utilizados para previsão, referem-se ao abastecimento d'água no Bairro Alto durante o período de 2018 a 2019.
 
-\textcolor{red}{(Outros detalhes)} 
+%\textcolor{red}{(Outros detalhes)} 
 Por meio da utilização de métodos e modelos de séries temporais, realiza-se a previsão do nível do reservatório (LT01), incorporando diversos modelos nesse processo. Dentre esses modelos, incluem-se os clássicos, como ARIMA e suas variantes, tais como AR (do inglês \textit{Auto-Regressive}), ARX (do inglês \textit{Auto-Regressive with Exogenous input}), MA (do inglês\textit{Moving Average}), ARMA (do inglês \textit{Auto-Regressive Moving Average}), SARIMA (do inglês \textit{Seasonal Auto-Regressive Integrated Moving Average}), ARIMAX (do inglês \textit{Auto-Regressive Integrated Moving Average with Exogenous input}), SARIMAX (do inglês \textit{Seasonal Auto-Regressive Integrated Moving Average with Exogenous input}), Prophet, além dos modelos de aprendizado de máquina, como árvore de decisão, floresta aleatória, XGBoost (do inglês \textit{Extreme Gradient Boosting}), Light GBM (do inglês \textit{Light Gradient Boosting Machine}), e redes neurais como LSTM  (do inglês \textit{Long Short-Term Memory}), GRU (do inglês \textit{Gated Recurrent Unit}), RNN, Transformer, CNN (do inglês \textit{Convolutional Neural Network}), ANN (do inglês \textit{Artificial Neural Network}). A diversidade de abordagens busca otimizar a precisão das previsões, destacando a abrangência e sofisticação desse trabalho.
 
 

@@ -1,6 +1,5 @@
-\subsubsection{Teste de Signific\^ancia}
-
-Na etapa \ref{etp:8}, realizou-se o teste de Friedman e o teste de Nemenyi para comparar as classificações médias entre os diversos classificadores. O teste de Nemenyi é uma ferramenta de comparação múltipla frequentemente empregada após a aplicação de testes não paramétricos com três ou mais fatores.
+\textbf{Teste de signific\^ancia}
+na etapa \ref{etp:8}, realizou-se o teste de Friedman e o teste de Nemenyi para comparar as classificações médias entre os diversos classificadores. O teste de Nemenyi é uma ferramenta de comparação múltipla frequentemente empregada após a aplicação de testes não paramétricos com três ou mais fatores.
 
 A matriz de comparação entre os classificadores, apresentada na Tabela \ref{tb:nemeyi}, exibe os valores de comparação múltipla de Nemenyi, onde as entradas evidenciam as diferenças significativas entre os pares de classificadores.
 
@@ -11,31 +10,30 @@ A Tabela \ref{tb:nemeyi} apresenta os resultados do teste de Nemenyi, um método
 	\caption{Teste Nemenyi}\label{tb:nemeyi}
 	\begin{tabular}{@{}clllllllll@{}}
 		\toprule
-		\multicolumn{1}{l}{\textbf{Nemenyi}} & \multicolumn{1}{c}{\textbf{0}} & \multicolumn{1}{c}{\textbf{1}} & \multicolumn{1}{c}{\textbf{2}} & \multicolumn{1}{c}{\textbf{3}} & \multicolumn{1}{c}{\textbf{4}} & \multicolumn{1}{c}{\textbf{5}} & \multicolumn{1}{c}{\textbf{6}} & \multicolumn{1}{c}{\textbf{7}} & \multicolumn{1}{c}{\textbf{8}} \\ \midrule
-		\textbf{0}                           & 1,000                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          \\
-		\textbf{1}                           & 0,001                          & 1,000                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,157                          \\
-		\textbf{2}                           & 0,001                          & 0,001                          & 1,000                          & 0,847                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          \\
-		\textbf{3}                           & 0,001                          & 0,001                          & 0,847                          & 1,000                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          \\
-		\textbf{4}                           & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 1,000                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          \\
-		\textbf{5}                           & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 1,000                          & 0,001                          & 0,001                          & 0,001                          \\
-		\textbf{6}                           & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 1,000                          & 0,001                          & 0,001                          \\
-		\textbf{7}                           & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 1,000                          & 0,001                          \\
-		\textbf{8}                           & 0,001                          & 0,157                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 1,000                          \\ \bottomrule
+		\multicolumn{1}{l}{\textbf{Nemenyi}} & \multicolumn{1}{c}{\textbf{B1}} & \multicolumn{1}{c}{\textbf{B2}} & \multicolumn{1}{c}{\textbf{B3}} & \multicolumn{1}{c}{\textbf{LT01}} & \multicolumn{1}{c}{\textbf{FT01}} & \multicolumn{1}{c}{\textbf{FT02}} & \multicolumn{1}{c}{\textbf{FT03}} & \multicolumn{1}{c}{\textbf{PT01}} & \multicolumn{1}{c}{\textbf{PT02}} \\ \midrule
+		\textbf{B1}                         & 1.000                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          \\
+		\textbf{B2}                         & 0.001                          & 1.000                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          \\
+		\textbf{B3}                         & 0.001                          & 0.001                          & 1.000                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          \\
+		\textbf{LT01}                       & 0.001                          & 0.001                          & 0.001                          & 1.000                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          \\
+		\textbf{FT01}                       & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 1.000                          & 0.001                          & 0.131                          & 0.001                          & 0.001                          \\
+		\textbf{FT02}                       & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 1.000                          & 0.001                          & 0.001                          & 0.001                          \\
+		\textbf{FT03}                       & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.131                          & 0.001                          & 1.000                          & 0.001                          & 0.001                          \\
+		\textbf{PT01}                       & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 1.000                          & 0.001                          \\
+		\textbf{PT02}                       & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 1.000                          \\ \bottomrule
 	\end{tabular}
-	
-
 \end{table}
+
 
 
 No contexto do estudo, os resultados da análise comparativa revelaram diferenças estatisticamente significativas entre vários pares de classificadores, como indicado pelas entradas da tabela. Isso sugere que pelo menos um modelo é considerado estatisticamente superior aos demais, com base nas comparações realizadas.
 
 O valor crítico CD foi utilizado para determinar se dois classificadores eram significativamente diferentes entre si. Esse valor é calculado com base no valor crítico obtido da Tabela \ref{tb:nemeyi} de teste de Nemenyi, o número de classificadores e o número total de amostras. O valor CD é uma métrica que auxilia na interpretação das diferenças entre os classificadores, ajudando a identificar quais pares de classificadores apresentam diferenças estatisticamente significativas.
 
-Os resultados da pesquisa indicaram a existência de evidências estatísticas que sugerem a superioridade de pelo menos um modelo em relação aos demais. Além disso, a análise de comparação significativa entre os modelos revelou pares de classificadores que apresentam diferenças estatisticamente significativas em seus desempenhos. Essas informações são valiosas para a seleção e avaliação dos modelos de classificação, permitindo uma compreensão mais precisa das diferenças de desempenho entre os classificadores avaliados no estudo. Na Tabela \ref{tab:metrics} é mostrado como cada modelos foi comparado entre si em 30 passos à frente.
+Os resultados da pesquisa indicaram a existência de evidências estatísticas que sugerem a superioridade de pelo menos um modelo em relação aos demais. Além disso, a análise de comparação significativa entre os modelos revelou pares de classificadores que apresentam diferenças estatisticamente significativas em seus desempenhos. Essas informações são valiosas para a seleção e avaliação dos modelos de classificação, permitindo uma compreensão mais precisa das diferenças de desempenho entre os classificadores avaliados no estudo. Na Tabela \ref{tab:metrics} é mostrado como cada modelos foi comparado entre si em 24 passos à frente.
 
 \begin{table}[!htb]
 	\centering
-	\caption{Métricas de Avaliação dos Modelos}
+	\caption{Métricas de avaliação dos modelos}
 	\label{tab:metrics}
 	\small
 	
@@ -44,35 +42,34 @@ Os resultados da pesquisa indicaram a existência de evidências estatísticas q
 		
 		\textbf{Modelo} & \textbf{sMAPE} & \textbf{MAE} & \textbf{RRMSE} \\
 		\hline
-		Prophet & 8,45 & 0,308 & 0,389 \\
-		Transformer & 9,46 & 0,323 & 0,177 \\
-		ANN & 9,80 & 0,336 & 0,190 \\
-		CNN & 9,80 & 0,336 & 0,190 \\
-		RNN & 0,057 & 0,002 & 0,001 \\
-		LSTM & 33,19 & 1,377 & 3,302 \\
-		GRU & 92,89 & 6,109 & 1,832 \\
-		AR & 5,40 & 0,367 & 0,137 \\
-		ARX & 6,68 & 0,447 & 0,169 \\
-		MA & 5,36 & 0,364 & 0,137 \\
-		ARMA & 5,66 & 0,385 & 0,143 \\
-		ARIMA & 5,56 & 0,377 & 0,141 \\
-		SARIMA & 5,93 & 0,404 & 0,149 \\
-		ARIMAX & 6,63 & 0,443 & 0,168 \\
-		SARIMAX & 6,67 & 0,446 & 0,169 \\
-		Decision Tree Regressor & 5,36 & 0,467 & 0,123 \\
-		Random Forest Regressor & 8,69 & 0,642 & 0,218 \\
-		XGBRegressor & 8,84 & 0,655 & 0,221 \\
-		LGBMRegressor & 9,99 & 0,754 & 0,246 \\
+		Prophet & 25,67 & 0,844 & 0,975 \\
+		Transformer & 16,39 & 0,544 & 0,324 \\
+		ANN & 26,22 & 0,980 & 0,531 \\
+		CNN & 26,22 & 0,980 & 0,531 \\
+		\textbf{RNN} & \textbf{0,235} & \textbf{0,008} & \textbf{0,003} \\
+		LSTM & 73,75 & 4,010 & 6,068 \\
+		GRU & 103,57 & 7,443 & 2,485 \\
+		AR & 6,66 & 0,428 & 0,169 \\
+		ARX & 6,79 & 0,434 & 0,173 \\
+		MA & 6,57 & 0,423 & 0,166 \\
+		ARMA & 6,66 & 0,428 & 0,169 \\
+		ARIMA & 6,60 & 0,424 & 0,167 \\
+		SARIMA & 6,71 & 0,432 & 0,170 \\
+		ARIMAX & 6,82 & 0,436 & 0,173 \\
+		SARIMAX & 6,80 & 0,435 & 0,173 \\
+		DTR & 6,77 & 0,577 & 0,158 \\
+		RFR & 12,09 & 0,886 & 0,316 \\
+		XGBRegressor & 12,41 & 0,916 & 0,323 \\
+		LGBMRegressor & 12,21 & 0,897 & 0,319 \\
 		\hline
 	\end{tabular}
-	
 \end{table}
 
 
 
 
 \noindent\textbf{Modelo com menor valor em cada métrica:}	
-Primeiramente, os diversos modelos de previsão de séries temporais foram avaliados para um horizonte de previsão de 30 dias. Para cada métrica (\textbf{sMAPE}, \textbf{MAE} e \textbf{RRMSE}), identificou-se o modelo que apresentou o menor valor.
+Primeiramente, os diversos modelos de previsão de séries temporais foram avaliados para um horizonte de previsão de um dia. Para cada métrica (\textbf{sMAPE}, \textbf{MAE} e \textbf{RRMSE}), identificou-se o modelo que apresentou o menor valor.
 A métrica \textbf{sMAPE} apontou que o modelo \textbf{RNN} obteve o menor valor.
 Quanto à métrica \textbf{MAE}, novamente o modelo \textbf{RNN} demonstrou o menor valor.
 A métrica \textbf{RRMSE} também indicou que o modelo \textbf{RNN} teve o menor valor.
@@ -87,6 +84,6 @@ A fim de determinar quais modelos apresentam diferenças estatisticamente signif
 O modelo \textbf{RNN} apresentou diferenças significativas em relação aos modelos \textbf{LSTM} e \textbf{GRU}.
 O modelo \textbf{LSTM} apresentou diferenças significativas em relação ao modelo \textbf{RNN}.
 O modelo \textbf{GRU} exibiu diferenças significativas em relação ao modelo \textbf{RNN}.
-Com base na análise estatística de Friedman e no teste de comparações múltiplas de Nemenyi, conclui-se que o modelo \textbf{RNN} apresenta o melhor desempenho geral em relação às métricas consideradas (\textbf{sMAPE}, \textbf{MAE} e \textbf{RRMSE}) para um horizonte de previsão de 30 dias, utilizando os dados completos.
+Com base na análise estatística de Friedman e no teste de comparações múltiplas de Nemenyi, conclui-se que o modelo \textbf{RNN} apresenta o melhor desempenho geral em relação às métricas consideradas (\textbf{sMAPE}, \textbf{MAE} e \textbf{RRMSE}) para um horizonte de previsão de um dia, utilizando os dados completos.
 
 

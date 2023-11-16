@@ -1,3 +1,138 @@
-\subsubsection{Horizonte}
+\textbf{Validação e ajuste do modelo}
+na etapa \ref{etp:6}, o horizonte de previsão foi personalizado com base no método recursivo de previsão de série temporal e na previsão do nível do tanque LT01. Foram selecionados os seguintes passos para a previsão à frente: uma hora, seis horas, doze horas e um dia. Essa escolha do horizonte de previsão foi feita levando em consideração a estratégia recursiva e os objetivos específicos do estudo. Identifica-se que essa janela de tempo proporciona uma análise mais adequada e comparável entre os modelos utilizados.
 
-Na etapa \ref{etp:6}, o horizonte de previsão foi personalizado com base no método recursivo de previsão de série temporal e na previsão do nível do tanque LT01. Foram selecionados os seguintes passos para a previsão à frente: um dia, uma semana, duas semanas e um mês. Essa escolha do horizonte de previsão foi feita levando em consideração a estratégia recursiva e os objetivos específicos do estudo. Identifica-se que essa janela de tempo proporciona uma análise mais adequada e comparável entre os modelos utilizados.
+Foram utilizados os parâmetros obtidos pelo autoARIMA, que são $(p = 7, d = 0, q = 0) (P = 2, D = 1, Q = 1)_{M = 12}$, mas foram ajustados para obter um melhor resultado, sendo $(p = 7, d = 1, q = 7) (P = 2, D = 1, Q = 1)_{M = 12}$. Na Tabela \ref{tab:autoarima_params}, são exibidos todos os modelos obtidos por esse método do ``autoARIMA'' e ajustados para que obtenham o melhor resultado.
+\(p\): Ordem do componente AR (\textit{Auto-Regressivo}),
+\(d\): Número de diferenciações não sazonais,
+\(q\): Ordem do componente MA (\textit{Média Móvel}),
+\(P\): Ordem do componente AR sazonal,
+\(D\): Número de diferenciações sazonais,
+\(Q\): Ordem do componente MA sazonal,
+\(M\): Período sazonal (número de observações em um ciclo sazonal).
+Na Tabela \ref{tb:resltsar} mostra como a biblioteca do Python autoARIMA obteve os resultados dos parâmetros, exibindo o STD e os intervalos de confiança nos quais o modelo alcançou o melhor desempenho. O leve ajuste realizado não altera significativamente os parâmetros obtidos nesta biblioteca, permitindo que cada modelo seja trabalhado de maneira eficiente.
+
+\begin{table}[!htb]
+	\centering
+	\caption{Parâmetros utilizados nos modelos ARIMA e seus antecessores obtidos pelo ``autoARIMA'' do Python.}
+	\label{tab:autoarima_params}
+	\small
+	\begin{tabular}{
+			>{\centering\arraybackslash}p{5.5cm}
+			>{\centering\arraybackslash}p{6cm}
+			>{\centering\arraybackslash}p{3cm}
+		}
+		\toprule
+		\textbf{Modelo} & \textbf{Parâmetros Utilizados} & \textbf{Método de Estimação} \\
+		\midrule
+		AR(p) & \( p = 7 \) & AutoARIMA \\
+		ARX(p) & \( p = 7 \) & AutoARIMA \\
+		MA(q) & \( q = 7 \) & AutoARIMA  \\
+		ARMA(p, q) & \( p = 7 \), \( q = 7 \) & AutoARIMA  \\
+		ARIMA(p, d, q) & \( p = 7 \), \( d = 1 \), \( q = 7 \) & AutoARIMA  \\
+		ARIMAX(p, d, q) & \( p = 7 \), \( d = 1 \), \( q = 7 \) & AutoARIMA  \\
+		SARIMA(p, d, q)(P, D, Q) & \( p = 7 \), \( d = 1 \), \( q = 7 \), \( P = 2 \), \( D = 1 \), \( Q = 1 \), \( M = 12 \) & AutoARIMA  \\
+		SARIMAX(p, d, q)(P, D, Q, M) & \( p = 7 \), \( d = 1 \), \( q = 7 \), \( P = 2 \), \( D = 1 \), \( Q = 1 \), \( M = 12 \) & AutoARIMA  \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
+
+\begin{table}[!htb]
+	\centering
+	\caption{SARIMAX$(7, 0, 0)\times(2, 1, [1], 12)$ Results} \label{tb:resltsar}
+	\begin{tabular}{
+			l
+			S[table-format=1.4]
+			S[table-format=1.4]
+			S[table-format=3.3]
+			S[table-format=1.3]
+			S[table-format=1.3]
+			S[table-format=1.3]
+		}
+		\toprule
+		& {Coef} & {STD Err} & {z} & {P$>|z|$} & {[0,025} & {0,975]} \\
+		\midrule
+		Intercept & 0,0003 & 0,000 & 1,053 & 0,292 & -0,000 & 0,001 \\
+		ar.L1 & 1,6149 & 0,011 & 141,865 & 0,000 & 1,593 & 1,637 \\
+		ar.L2 & -0,8879 & 0,021 & -42,045 & 0,000 & -0,929 & -0,847 \\
+		ar.L3 & 0,3167 & 0,024 & 13,033 & 0,000 & 0,269 & 0,364 \\
+		ar.L4 & -0,1056 & 0,027 & -3,961 & 0,000 & -0,158 & -0,053 \\
+		ar.L5 & -0,1099 & 0,028 & -3,928 & 0,000 & -0,165 & -0,055 \\
+		ar.L6 & 0,1431 & 0,027 & 5,368 & 0,000 & 0,091 & 0,195 \\
+		ar.L7 & -0,0673 & 0,015 & -4,583 & 0,000 & -0,096 & -0,039 \\
+		ar.S.L12 & -0,1222 & 0,016 & -7,705 & 0,000 & -0,153 & -0,091 \\
+		ar.S.L24 & 0,1692 & 0,014 & 12,244 & 0,000 & 0,142 & 0,196 \\
+		ma.S.L12 & -0,8728 & 0,012 & -74,569 & 0,000 & -0,896 & -0,850 \\
+		sigma2 & 0,0157 & 0,000 & 60,022 & 0,000 & 0,015 & 0,016 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
+Para os modelos de gradiente \textit{boosting} e redes neurais artificiais, os hiperparâmetros foram otimizados usando a biblioteca Optuna do Python. Nesse contexto, são empregadas técnicas bayesianas, especificamente o algoritmo TPE, visando uma otimização mais eficiente.
+
+Os modelos XGBoost e LightGBM tem como parâmetros e hiperparâmetros mostrado na Tabela \ref{tab:hiperparametros} a otimização dos paramétrios dos modelos XGBoost, LightGBM, RFR e DTR. Esses modelos, devido à sua semelhança, exibem tempos de desempenho próximos um do outro. 
+
+
+
+\begin{table}[!htb]
+	\centering
+	\caption{Hiperparâmetros dos modelos}
+	\label{tab:hiperparametros}
+	\begin{tabular}{
+			>{\centering\arraybackslash}p{2.2cm}
+			>{\centering\arraybackslash}p{2.8cm}
+			>{\centering\arraybackslash}p{1.9cm}
+			>{\centering\arraybackslash}p{1.9cm}
+			>{\centering\arraybackslash}p{1.9cm}
+			>{\centering\arraybackslash}p{1.9cm}
+			>{\centering\arraybackslash}p{1.9cm}
+		}
+		\toprule
+		\textbf{Modelo} & \textbf{Estimadores} & \textbf{Profund. Máxima} & \textbf{Min. Amostras Divisão} & \textbf{Min. Amostras por Folha} & \textbf{Máx. Recursos} & \textbf{Taxa de Aprendizado} \\
+		\midrule
+		XGB Regressor & 503 & 5 & 7 & 2 & ``sqrt'' & 0,034 \\
+		LGBM Regressor & 820 & 10 & 3 & 5 & ``auto'' & 0,014 \\
+		Random Forest Regressor & 135 & 10 & 4 & 2 & None & N/A \\
+		Decision Tree Regressor & N/A & 229 & 32 & 20 & None & N/A \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
+
+Os modelos de rede neural artificial, como RNN, ANN, CNN, GRU, LSTM e Transformer, obtidos na otimização do Optuna do Python, tiveram seus hiperparâmetros melhorados, conforme exibido na Tabela \ref{tab:hyperparameters_summary}. Esses modelos, por serem modelos de rede neural artificial, são melhores para otimizar do que os outros. 
+
+\begin{table}[!htb]
+	\centering
+	\caption{Resumo dos Hiperparâmetros dos Modelos de Redes Neurais}
+	\label{tab:hyperparameters_summary}
+	\small
+	\begin{tabular}{
+			>{\centering\arraybackslash}p{1.8cm}
+			>{\centering\arraybackslash}p{2cm}
+			>{\centering\arraybackslash}p{2cm}
+			>{\centering\arraybackslash}p{2cm}
+			>{\centering\arraybackslash}p{2cm}
+			>{\centering\arraybackslash}p{1.5cm}
+			>{\centering\arraybackslash}p{2.5cm}
+		}
+		\toprule
+		\textbf{Modelo} & \textbf{Unidades/ Layers} & \textbf{Heads/ Dimensões} & \textbf{Tamanho do Batch} & \textbf{Épocas} & \textbf{Dropout/ Learning Rate} & \textbf{Outros Parâmetros} \\
+		\midrule
+		LSTM & 128 & -- & 32 & 77 & -- & -- \\
+		
+		GRU & -- & -- & 32 & 50 & -- & -- \\
+		
+		Transformers & -- & 8 heads, 217; 433 & -- & 50 & -- & 2 camadas \\
+		
+		RNN & 79 & -- & 16 & 50 & 0,0008612 & -- \\
+		
+		CNN & -- & -- & 61 & 10 & 0,2799; 0,00052 & Kernel: 7, Densas: 1, Verbosidade: 1 \\
+		
+		ANN & 125 & -- & 27 & 96 & 0,4135, 0,0004057 & Densas: 1, Verbosidade: 0 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+

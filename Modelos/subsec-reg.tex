@@ -2,15 +2,14 @@
 
 Os modelos para séries temporais têm sido amplamente reconhecidos e utilizados na literatura atual, especialmente aqueles baseados em métodos de gradiente. 
 
-Esses modelos são valorizados por sua capacidade de capturar relações complexas e não lineares nos dados, permitindo previsões mais precisas e eficientes. Sua popularidade reflete o reconhecimento da eficácia desses modelos em abordar uma ampla gama de problemas de previsão de séries temporais em diferentes áreas de estudo \cite{al2021machine, sen2022machine, kheiri2023sentimentgpt}.
-
+Esses modelos são valorizados por sua capacidade de capturar relações complexas e não lineares nos dados, permitindo previsões eficientes. Sua popularidade reflete o reconhecimento da eficácia desses modelos em abordar uma ampla gama de problemas de previsão de séries temporais em diferentes áreas de estudo \cite{al2021machine, sen2022machine, kheiri2023sentimentgpt}.
 A seguir são mencionados alguns dos modelos avaliados nessa dissertação.
 
 
 \subsubsection{Prophet}
 
 
-O Prophet é um modelo de previsão de séries temporais desenvolvido pelo Facebook. Foi projetado para simplificar a previsão de séries temporais que apresentam padrões sazonais, tendências e feriados. O Prophet é útil para usuários que desejam realizar previsões precisas sem requerer um profundo conhecimento em estatística ou aprendizado de máquina.
+O Prophet é um modelo de previsão de séries temporais desenvolvido pelo Facebook. Foi projetado para simplificar a previsão de séries temporais que apresentam padrões sazonais, tendências e feriados. O Prophet é útil para usuários que desejam realizar previsões sem requerer um profundo conhecimento em estatística ou aprendizado de máquina.
 
 O modelo se baseia em uma abordagem aditiva que desagrega a série temporal em vários componentes individuais, como tendência de longo prazo, sazonalidade semanal e anual, e efeitos de feriados. Esses componentes são combinados para formar uma previsão geral.
 A equação básica do modelo Prophet pode ser representada da seguinte forma:
@@ -19,12 +18,12 @@ A equação básica do modelo Prophet pode ser representada da seguinte forma:
 	 p(t) &=& g(t) + s(t) + h(t) + \varepsilon_t 
 \end{eqnarray}
 
-\noindent onde, \( p(t) \) é o valor da série temporal no tempo \( t \), que se deseja prever; \( g(t) \) representa a tendência de longo prazo da série; \( s(t) \) representa os componentes sazonais, que podem incluir padrões semanais e anuais; \( h(t) \) é a representação dos efeitos de feriados ou eventos especiais.
+\noindent onde \( p(t) \) é o valor da série temporal no tempo \( t \), que se deseja prever, \( g(t) \) representa a tendência de longo prazo da série, \( s(t) \) representa os componentes sazonais, que podem incluir padrões semanais e anuais, \( h(t) \) é a representação dos efeitos de feriados ou eventos especiais.
 
 
 O modelo Prophet ajusta esses componentes aos dados históricos de séries temporais para criar uma previsão futura. Ele utiliza um procedimento de ajuste automático para estimar os parâmetros desses componentes com base nos dados fornecidos. A abordagem aditiva do Prophet permite que os padrões sazonais, tendências e feriados sejam capturados separadamente e, em seguida, somados para gerar uma previsão global \cite{2-s2.0-85092514286}.
 
-Lembrando que essa é uma perspectiva simplificada da equação do Prophet. O modelo em sua totalidade incorpora uma gama de ajustes e considerações destinados a aprimorar a precisão das previsões, incluindo o tratamento de incertezas, a seleção automática de sazonalidades relevantes e outras otimizações. 
+%Lembrando que essa é uma perspectiva simplificada da equação do Prophet. O modelo em sua totalidade incorpora uma gama de ajustes e considerações destinados a aprimorar a precisão das previsões, incluindo o tratamento de incertezas, a seleção automática de sazonalidades relevantes e outras otimizações. 
 
 
 
@@ -55,7 +54,7 @@ $\left(X^T X\right)^{-1}$ representa a inversa da matriz resultante da multiplic
 $X^T y$ denota o produto matricial de $X^T$ com $y$, resultando em um vetor;
 $\hat{\beta}=\left(X^T X\right)^{-1} X^T y$ representa a multiplicação da inversa de $X^T X \operatorname{com} X^T y$, resultando no vetor de coeficientes estimados $\hat{\beta}$ que minimiza a soma dos quadrados dos resíduos.
 
-A equação \eqref{eq:ols} mencionada, conhecida como \textbf{OLS} , é amplamente utilizada na regressão linear \citeonline{korstanje2021}. Esse método é conhecido por ser rápido de ajustar, pois requer apenas cálculos matriciais para estimar os coeficientes $\beta$. No entanto, ele é mais adequado para processos lineares e pode ser menos adequado para modelos complexos que envolvam relações não-lineares. Portanto, é importante considerar suas limitações ao aplicar a regressão linear em contextos mais complexos.
+A equação \eqref{eq:ols} mencionada, conhecida como \textbf{OLS} , é amplamente utilizada na regressão linear \cite{korstanje2021}. Esse método é conhecido por ser rápido de ajustar, pois requer apenas cálculos matriciais para estimar os coeficientes $\beta$. No entanto, ele é mais adequado para processos lineares e pode ser menos adequado para modelos complexos que envolvam relações não-lineares.
 
 
 \subsubsection{\'Arvore de Decis\~ao }
@@ -68,47 +67,47 @@ Na Figura \ref{fig:decison} trás \textbf{Nó raiz} isso representa o nó mais a
 \textbf{Nó de decisão} eles são os nós que são divididos em sub-nós, ou seja, esse nó que é dividido é chamado de nó de decisão.
 \textbf{Nó Folha / Terminal} os nós que não se dividem são chamados de nós Folha ou Terminal. Esses nós são geralmente o resultado final da árvore.
 \textbf{Ramo / Subárvore} uma subseção de toda a árvore é chamada de galho ou subárvore.
-\textbf{Nó pai e filho} um nó, que é dividido em sub-nós é chamado de um nó pai de sub-nós, enquanto sub-nós são o filho do nó pai. Na figura acima, o nó de decisão é o pai dos nós terminais (filho).
+\textbf{Nó pai e filho} um nó, que é dividido em sub-nós é chamado de um nó pai de sub-nós, enquanto sub-nós são o filho do nó pai. Na Figura \ref{fig:decison}, o nó de decisão é o pai dos nós terminais (filho).
 \textbf{Poda} a remoção de sub-nós de um nó de decisão é chamada de poda. A poda costuma ser feita em árvores de decisão para evitar o \textit{overfitting}  \cite{decision}.
 
 \begin{figure}[H]
 	\centering
 	\caption{Fluxograma da árvore de decisão}
 	\label{fig:decison}
-	\includegraphics[width=\linewidth]{Modelos/Figuras/decison}
+	\includegraphics[width=0.7\linewidth]{Modelos/Figuras/decison}
 	
 	\fonte{Adaptado de \citeonline{decision}}
 \end{figure}
 
 
 
-\noindent\textbf{Vantagens: }
-De fácil intuição e interpretação, sendo facilmente visualizá-las (quando não são muito profundas).
-Requerem pouco esforço na preparação dos dados, métodos baseados em árvores normalmente não requerem normalização dos dados, codificação e variáveis fictício. Além disso, conseguem lidar com valores faltantes, categóricos e numéricos.
-Complexidade logarítmica na etapa de predição.
-São capazes de lidar com problemas com múltiplos rótulos.
-Relações não-lineares entre parâmetros não afetam o desempenho da árvore \cite{remigio2023arvores}.
+%\noindent\textbf{Vantagens: }
+%De fácil intuição e interpretação, sendo facilmente visualizá-las (quando não são muito profundas).
+%Requerem pouco esforço na preparação dos dados, métodos baseados em árvores normalmente não requerem normalização dos dados, codificação e variáveis fictício. Além disso, conseguem lidar com valores faltantes, categóricos e numéricos.
+%Complexidade logarítmica na etapa de predição.
+%São capazes de lidar com problemas com múltiplos rótulos.
+%Relações não-lineares entre parâmetros não afetam o desempenho da árvore \cite{remigio2023arvores}.
+%
+%
+%\noindent\textbf{Desvantagens: }
+%Árvore de decisão até sua profundidade máxima pode decorar o conjunto de treino (\textit{overfitting}), o que pode degradar seu poder preditivo quando aplicado a novos dados. Isso pode ser mitigado ``podando'' a árvore de decisão ao atribuir uma profundidade máxima ou uma quantidade máxima de folhas.
+%São modelos de alta variância, pequenas variações nos dados de treino podem resultar em árvores completamente distintas. Isso pode ser evitado ao treinar várias árvores distintas e agregar suas predições.
+%O algoritmo de construção da árvore de decisão é ganancioso, ou seja, não garante a construção da melhor estrutura para o dados de treino em questão. Esse problema também pode ser mitigado ao treinarmos várias árvores distintas e agregar suas predições \cite{remigio2023arvores}.
 
 
-\noindent\textbf{Desvantagens: }
-Árvore de decisão até sua profundidade máxima pode decorar o conjunto de treino (\textit{overfitting}), o que pode degradar seu poder preditivo quando aplicado a novos dados. Isso pode ser mitigado ``podando'' a árvore de decisão ao atribuir uma profundidade máxima ou uma quantidade máxima de folhas.
-São modelos de alta variância, pequenas variações nos dados de treino podem resultar em árvores completamente distintas. Isso pode ser evitado ao treinar várias árvores distintas e agregar suas predições.
-O algoritmo de construção da árvore de decisão é ganancioso, ou seja, não garante a construção da melhor estrutura para o dados de treino em questão. Esse problema também pode ser mitigado ao treinarmos várias árvores distintas e agregar suas predições \cite{remigio2023arvores}.
+%Na Figura \ref{fig:arvore-de-decisao}, é demonstrado como o processo é representado por meio de uma árvore de decisão, em relação ao mapa mental. 
+%As árvores de decisão, quando aplicadas a séries temporais relacionadas ao abastecimento de água, ajudam a prever padrões, detectar problemas, otimizar operações e apoiar a tomada de decisões específicas, como o funcionamento da variável LT01, para garantir um fornecimento confiável e eficiente de água.
 
+%Na Figura \ref{fig:arvore-de-decisao}, o mapa é um diagrama de árvore de decisão que ajuda a visualizar a probabilidade de diferentes resultados baseados em diferentes decisões. Cada nó de decisão (círculo azul) tem três possíveis resultados: alta probabilidade, probabilidade média e baixa probabilidade. Cada resultado tem um nó de desfecho (triângulo laranja) que mostra o resultado final. Os nós são conectados por setas pretas que indicam o fluxo do processo. Esse tipo de diagrama é usado para apoiar a tomada de decisões em diversas áreas, como pesquisa operacional, análise de decisão e aprendizado de máquina.
 
-Na Figura \ref{fig:arvore-de-decisao}, é demonstrado como o processo é representado por meio de uma árvore de decisão, em relação ao mapa mental. 
-As árvores de decisão, quando aplicadas a séries temporais relacionadas ao abastecimento de água, ajudam a prever padrões, detectar problemas, otimizar operações e apoiar a tomada de decisões específicas, como o funcionamento da variável LT01, para garantir um fornecimento confiável e eficiente de água.
-
-Na Figura \ref{fig:arvore-de-decisao}, o mapa é um diagrama de árvore de decisão que ajuda a visualizar a probabilidade de diferentes resultados baseados em diferentes decisões. Cada nó de decisão (círculo azul) tem três possíveis resultados: alta probabilidade, probabilidade média e baixa probabilidade. Cada resultado tem um nó de desfecho (triângulo laranja) que mostra o resultado final. Os nós são conectados por setas pretas que indicam o fluxo do processo. Esse tipo de diagrama é usado para apoiar a tomada de decisões em diversas áreas, como pesquisa operacional, análise de decisão e aprendizado de máquina.
-
-\begin{figure}[H]
-	\centering
-	\caption{Árvore de decisão mapa mental}
-	\label{fig:arvore-de-decisao}
-	\includegraphics[width=\linewidth]{"Apendices/Figuras/modelagem-24h/Árvore de decisão"}
-	
-
-\end{figure}
+%\begin{figure}[H]
+%	\centering
+%	\caption{Árvore de decisão mapa mental}
+%	\label{fig:arvore-de-decisao}
+%	\includegraphics[width=0.7\linewidth]{"Apendices/Figuras/modelagem-24h/Árvore de decisão"}
+%	
+%
+%\end{figure}
 
 A árvore de decisão pode ser uma opção melhor em comparação ao modelo de regressão linear. Ela tem a capacidade de otimizar os parâmetros para trabalhar com horizontes de tempo longos.
 
@@ -118,8 +117,8 @@ Observa-se da Figura \ref{fig:decison} que repetir exatamente a mesma árvore de
 
 Cada árvore em um modelo de RFR (Floresta Aleatória de Regressão)  é construída por meio de um algoritmo de aprendizado individual que divide o conjunto de variáveis de entrada em subconjuntos, com base em um teste de valor de atributo, como o coeficiente de Gini. Ao contrário das árvores de decisão clássicas, as árvores de RFR são construídas sem poda e selecionam aleatoriamente um subconjunto de variáveis de entrada em cada nó. Atualmente, o número de variáveis utilizadas para dividir um nó em uma RFR (denotado por $m$) corresponde à raiz quadrada do número total de variáveis de entrada. Essa abordagem ajuda a aumentar a diversidade das árvores e aprimorar o desempenho do modelo \cite{Pelletier2016156}. Na Figura \ref{fig:rf}, o esquema do modelo RFR ilustra como as árvores funcionam.
 Na construção da próxima árvore, os dois processos anteriores se repetirão, levando à criação de uma nova árvore. Provavelmente, essa árvore será diferente da primeira, pois tanto na seleção das amostras quanto na seleção das variáveis, o processo ocorre de maneira aleatória.
-Pode-se construir quantas árvores forem desejadas, e quanto mais árvores forem criadas, melhores serão os resultados do modelo, até certo ponto. No entanto, após um certo número de árvores, uma nova adição não resultará em uma melhora significativa no desempenho do modelo.
-É importante lembrar que, à medida que mais árvores são criadas, aumenta-se o tempo necessário para construir o modelo.
+%Pode-se construir quantas árvores forem desejadas, e quanto mais árvores forem criadas, melhores serão os resultados do modelo, até certo ponto. No entanto, após um certo número de árvores, uma nova adição não resultará em uma melhora significativa no desempenho do modelo.
+%É importante lembrar que, à medida que mais árvores são criadas, aumenta-se o tempo necessário para construir o modelo.
 
 \begin{figure}[H]
 	\centering
@@ -133,11 +132,11 @@ Pode-se construir quantas árvores forem desejadas, e quanto mais árvores forem
 
 \subsubsection{Gradient Boosting}\label{subsubsec:lgbxgb}
 
-O aumento de gradiente (do inglês \textit{gradient boosting}) é um método que combina vários modelos de árvore de decisão para realizar previsões. Cada uma dessas árvores de decisão é única, pois a diversidade é um elemento importante nesse processo. A diversidade é alcançada através de um processo chamado boosting, que é uma abordagem iterativa. O boosting adiciona modelos fracos ao conjunto de forma inteligente, dando mais peso aos pontos de dados que ainda não foram bem previstos. 
+O aumento de gradiente (do inglês \textit{gradient boosting}) é um método que combina vários modelos de árvore de decisão para realizar previsões. Cada uma dessas árvores de decisão é única, pois a diversidade é um elemento importante nesse processo. A diversidade é alcançada através de um processo chamado \textit{boosting}, que é uma abordagem iterativa. O \textit{boosting} adiciona modelos fracos ao conjunto de forma inteligente, dando mais peso aos pontos de dados que ainda não foram bem previstos. 
 
-O processo de boosting melhora o conjunto ao focar nas partes dos dados que ainda não são compreendidas. A Figura \ref{fig:xgboos} apresenta uma visão esquemática desse processo. À medida que novos modelos fracos são adicionados, todos os modelos fracos intermediários são mantidos. O modelo final é uma combinação de todos esses modelos fracos, resultando em um ensemble que oferece uma melhor capacidade de previsão do que um único modelo.
+O processo de \textit{boosting} melhora o conjunto ao focar nas partes dos dados que ainda não são compreendidas. A Figura \ref{fig:xgboos} apresenta uma visão esquemática desse processo. À medida que novos modelos fracos são adicionados, todos os modelos fracos intermediários são mantidos. O modelo final é uma combinação de todos esses modelos fracos, resultando em um ensemble que oferece uma melhor capacidade de previsão do que um único modelo.
 
-O boosting é apenas um dos métodos de ensemble utilizados em conjunto com o bagging. O bagging também é um método que utiliza múltiplos modelos de árvore de decisão, porém, em vez de adicionar os modelos de forma iterativa, cada modelo é treinado independentemente em subconjuntos aleatórios dos dados de treinamento. Ambos os métodos, boosting e bagging, têm como objetivo melhorar o desempenho do modelo combinando as previsões de múltiplos modelos individuais.
+O \textit{boosting} é apenas um dos métodos de ensemble utilizados em conjunto com o \textit{bagging}. O \textit{bagging} também é um método que utiliza múltiplos modelos de árvore de decisão, porém, em vez de adicionar os modelos de forma iterativa, cada modelo é treinado independentemente em subconjuntos aleatórios dos dados de treinamento. Ambos os métodos, \textit{boosting} e \textit{bagging}, têm como objetivo melhorar o desempenho do modelo combinando as previsões de múltiplos modelos individuais.
 
 
 \begin{figure}[H]
@@ -151,39 +150,34 @@ O boosting é apenas um dos métodos de ensemble utilizados em conjunto com o ba
 
 
 
-\subsubsection{Gradiente de Boosting (Refor\c co)} \label{subsubsec:boosting}
-
-O processo iterativo utilizado no aumento de gradiente, como descrito por \citeonline{korstanje2021}, recebe esse nome por um motivo. O termo ``gradiente'' refere-se a um campo vetorial de derivadas parciais que apontam na direção da inclinação acentuada. Em termos simples, o gradiente pode ser comparado à inclinação em uma estrada. Se a inclinação é acentuada, isso indica que a estrada está subindo ou descendo abruptamente. Analogamente, nos métodos de otimização, o gradiente indica a rapidez com que uma função está aumentando ou diminuindo em um ponto específico. Quanto maior o gradiente, mais íngreme é a inclinação da função nesse ponto. Em problemas de otimização, é crucial que ele compreenda esse gradiente para encontrar os mínimos ou máximos da função de forma eficiente. Para calcular os gradientes, são realizadas derivadas ou derivadas parciais de uma função.
-
-No aumento de gradiente, ao adicionar árvores adicionais ao modelo, o objetivo é incorporar uma árvore que explique melhor a variação que ainda não foi explicada pelas árvores anteriores. Dessa forma, a nova árvore tem como objetivo ajustar-se aos erros ou resíduos deixados pelas árvores anteriores em explicar a variação nos dados.
-
-\noindent\textbf{Algoritmos de \textit{boosting} de gradiente:}
-O \textbf{XGBoost} é um dos algoritmos de aprendizado de máquina mais utilizados \cite{korstanje2021}. É uma forma rápida de obter bom desempenho.
-
-O \textbf{LightGBM} é outro algoritmo de aumento de gradiente que é importante conhecer. Atualmente, é um pouco menos difundido que o XGBoost, mas está ganhando popularidade rapidamente. A vantagem esperada do LightGBM em relação ao XGBoost é um ganho de velocidade e uma utilização mais eficiente de memória \cite{korstanje2021}.
+%\subsubsection{Gradiente de Boosting (Refor\c co)} \label{subsubsec:boosting}
+%
+%O processo iterativo utilizado no aumento de gradiente, como descrito por \citeonline{korstanje2021}, recebe esse nome por um motivo. O termo ``gradiente'' refere-se a um campo vetorial de derivadas parciais que apontam na direção da inclinação acentuada. Em termos simples, o gradiente pode ser comparado à inclinação em uma estrada. Se a inclinação é acentuada, isso indica que a estrada está subindo ou descendo abruptamente. Analogamente, nos métodos de otimização, o gradiente indica a rapidez com que uma função está aumentando ou diminuindo em um ponto específico. Quanto maior o gradiente, mais íngreme é a inclinação da função nesse ponto. Em problemas de otimização, é crucial que ele compreenda esse gradiente para encontrar os mínimos ou máximos da função de forma eficiente. Para calcular os gradientes, são realizadas derivadas ou derivadas parciais de uma função.
+%
+%No aumento de gradiente, ao adicionar árvores adicionais ao modelo, o objetivo é incorporar uma árvore que explique melhor a variação que ainda não foi explicada pelas árvores anteriores. Dessa forma, a nova árvore tem como objetivo ajustar-se aos erros ou resíduos deixados pelas árvores anteriores em explicar a variação nos dados.
+%
+%\noindent\textbf{Algoritmos de \textit{boosting} de gradiente:}
+%O \textbf{XGBoost} é um dos algoritmos de aprendizado de máquina mais utilizados \cite{korstanje2021}. É uma forma rápida de obter bom desempenho.
+%
+%O \textbf{LightGBM} é outro algoritmo de aumento de gradiente que é importante conhecer. Atualmente, é um pouco menos difundido que o XGBoost, mas está ganhando popularidade rapidamente. A vantagem esperada do LightGBM em relação ao XGBoost é um ganho de velocidade e uma utilização mais eficiente de memória \cite{korstanje2021}.
 
 
 \noindent\textbf{A diferen\c ca entre XGBoost e LightGBM:}
-
-Uma diferença fundamental reside na maneira como esses algoritmos identificam as melhores divisões entre os nós das árvores de decisão individuais. É crucial lembrar que uma divisão em uma árvore de decisão ocorre quando a árvore precisa encontrar a separação que mais melhora o desempenho do modelo.
-A abordagem intuitiva e simples para encontrar a melhor divisão é iterar por todas as possibilidades e selecionar a melhor. No entanto, essa abordagem é computacionalmente custosa, e algoritmos mais recentes apresentam alternativas mais eficientes.
-
 Uma alternativa proposta pelo XGBoost é a segmentação baseada em histograma. Nesse caso, em vez de iterar por todas as partições possíveis, o modelo constrói um histograma para cada variável e utiliza-os para encontrar a melhor divisão geral entre as variáveis.
 O LightGBM, desenvolvido pela Microsoft, adota uma abordagem mais eficiente para a definição das divisões. Essa abordagem é conhecida como amostragem GOSS (do inglês \textit{Gradient-Based One-Side Sample}). O GOSS calcula o gradiente para cada ponto de dados e utiliza-o para filtrar os pontos de dados com gradientes baixos. Afinal, os pontos de dados com gradientes baixos já são bem compreendidos, enquanto aqueles com gradientes altos precisam ser melhor aprendidos.
 
 O LightGBM também utiliza uma abordagem chamada Exclusive EFB (do inglês \textit{Feature Bundling}), que acelera a seleção de variáveis correlacionadas. Outra diferença é que o modelo LightGBM é adequado para o crescimento de folhas (do inglês \textit{leaf-wise growth}), enquanto o XGBoost cultiva as árvores em níveis. Essa diferença pode ser visualizada na Figura \ref{fig:xgboost}.
-Essa diferença teoricamente favorece o LightGBM em termos de precisão, mas também apresenta um maior risco de sobre-ajuste (do inglês \textit{overfitting}) quando há poucos dados disponíveis. Portanto, é importante que a pessoa considere essas distinções ao escolher entre os dois algoritmos de aumento de gradiente.
+Essa diferença teoricamente favorece o LightGBM em termos de precisão, mas também apresenta um maior risco de sobre-ajuste (do inglês \textit{overfitting}) quando há poucos dados disponíveis. 
 
-Observar a diferença na Figura \ref{fig:xgboost}. Essa diferença é um recurso que teoricamente favoreceria o LightGBM em termos de precisão; no entanto, há um risco maior de \textit{overfitting} no caso de poucos dados disponíveis.
 Na Figura \ref{fig:xgboost}, é possível visualizar como cada modelo é ajustado durante o processo de crescimento de árvore em folhas e em níveis. Essa representação gráfica oferece uma compreensão visual das diferenças entre os dois métodos. A Figura \ref{fig:xgboost}, apresenta um diagrama que ilustra o crescimento de uma árvore em termos de níveis e folhas. O diagrama possui duas partes.
 
-Na parte superior, é observado que a cada nível, o número de folhas aumenta em uma unidade. Por exemplo, uma árvore com dois níveis tem duas folhas em cada nível, e uma árvore com três níveis tem três folhas em cada nível.
-Na parte inferior, é possível perceber que a cada nível, o número de folhas dobra. Por exemplo, uma árvore com dois níveis tem duas folhas em cada nível, e uma árvore com três níveis tem seis folhas no terceiro nível.
+%Na parte superior, é observado que a cada nível, o número de folhas aumenta em uma unidade. Por exemplo, uma árvore com dois níveis tem duas folhas em cada nível, e uma árvore com três níveis tem três folhas em cada nível.
+%Na parte inferior, é possível perceber que a cada nível, o número de folhas dobra. Por exemplo, uma árvore com dois níveis tem duas folhas em cada nível, e uma árvore com três níveis tem seis folhas no terceiro nível.
+%
+%O diagrama também mostra que as árvores são representadas por círculos, com as folhas sendo círculos menores e os níveis sendo círculos maiores. As árvores são coloridas de azul, verde e amarelo.
+%O texto na Figura \ref{fig:xgboost} indica ``Crescimento em termos de nível'' e ``Crescimento em função''. Isso significa que a Figura \ref{fig:xgboost}  demonstra como o crescimento da árvore depende do número de níveis e do número de folhas.
 
-O diagrama também mostra que as árvores são representadas por círculos, com as folhas sendo círculos menores e os níveis sendo círculos maiores. As árvores são coloridas de azul, verde e amarelo.
-O texto na Figura \ref{fig:xgboost} indica ``Crescimento em termos de nível'' e ``Crescimento em função''. Isso significa que a Figura \ref{fig:xgboost}  demonstra como o crescimento da árvore depende do número de níveis e do número de folhas.
-
-\begin{figure}[H]
+\begin{figure}[!htb]
 	\centering
 	\caption{Compara-se o crescimento em folha com o crescimento em nível}
 	\label{fig:xgboost}
@@ -194,53 +188,52 @@ O texto na Figura \ref{fig:xgboost} indica ``Crescimento em termos de nível'' e
 
 
 No crescimento de árvore em folhas, como no LightGBM, novas folhas são adicionadas à árvore de forma iterativa, visando maximizar a redução do erro de treinamento. Isso significa que as árvores são expandidas adicionando folhas, uma a uma, até que o critério de parada seja alcançado.
-Por outro lado, no crescimento em níveis, como no XGBoost, as árvores são expandidas em profundidade de forma simultânea em todos os níveis. Ou seja, em cada nível, todas as folhas são expandidas ao mesmo tempo, resultando em um crescimento mais uniforme da árvore.
+No crescimento em níveis, como no XGBoost, as árvores são expandidas em profundidade de forma simultânea em todos os níveis. Ou seja, em cada nível, todas as folhas são expandidas ao mesmo tempo, resultando em um crescimento mais uniforme da árvore.
+Essa distinção no modo de crescimento das árvores pode afetar o comportamento e o desempenho do modelo. 
 
-Essa distinção no modo de crescimento das árvores pode afetar o comportamento e o desempenho do modelo. Portanto, compreender essa diferença é importante ao escolher entre esses algoritmos de aumento de gradiente.
 
+\subsection{Redes Neurais Artificiais}
 
-\subsection{Redes Neurais Artificiais }
-
-Uma rede neural é um modelo de processamento de informações inspirado pelo funcionamento do cérebro humano. Consiste em um conjunto interconectado de unidades de processamento, conhecidas como neurônios artificiais, que trabalham em conjunto para realizar tarefas de aprendizado a partir de dados. Assim como os neurônios no cérebro estão interligados por sinapses, os neurônios artificiais são conectados por conexões ponderadas. Essas conexões permitem que a rede neural analise padrões complexos nos dados, reconhecendo relações e características importantes para executar tarefas como classificação, previsão, reconhecimento de padrões e muito mais. Conforme a rede é exposta a exemplos e informações, ela ajusta suas conexões para melhorar seu desempenho, tornando-a capaz de generalizar e lidar com novos dados \cite{silva2003redes}.
+Uma rede neural é um modelo de processamento de informações inspirado pelo funcionamento do cérebro humano. Consiste em um conjunto interconectado de unidades de processamento, conhecidas como neurônios artificiais, que trabalham em conjunto para realizar tarefas de aprendizado a partir de dados. Assim como os neurônios no cérebro estão interligados por sinapses, os neurônios artificiais são conectados por conexões ponderadas. Essas conexões permitem que a rede neural analise padrões complexos nos dados, reconhecendo relações e características importantes para executar tarefas como classificação, previsão, reconhecimento de padrões. Conforme a rede é exposta a exemplos e informações, ela ajusta suas conexões para melhorar seu desempenho, tornando-a capaz de generalizar e lidar com novos dados \cite{silva2003redes}.
 
 \subsubsection{Rede Neural Recorrente}
 
 
-Uma Rede Neural Recorrente é um tipo de arquitetura de rede neural que pode ser utilizada para lidar com dados sequenciais ou temporais. Ao contrário das redes neurais convencionais, onde as entradas e saídas são tratadas como dados independentes, as RNNs levam em consideração a ordem e a relação entre os elementos em uma sequência, tornando-as ideais para lidar com dados como séries temporais, texto e áudio.
+Uma Rede Neural Recorrente é um tipo de arquitetura de rede neural que pode ser utilizada para lidar com dados sequenciais ou temporais. Ao contrário das redes neurais convencionais, onde as entradas e saídas são tratadas como dados independentes, as RNNs levam em consideração a ordem e a relação entre os elementos em uma sequência, tornando-as ideais para lidar com dados como séries temporais.
 
 A característica principal das RNNs é que elas contêm laços em sua estrutura, permitindo que informações anteriores influenciem o processamento de informações subsequentes. Isso significa que a saída em um determinado passo de tempo não depende apenas da entrada atual, mas também das entradas anteriores na sequência.
 
 
 \begin{eqnarray}
-	h_t &=& f(W_{hh} \cdot h_{t-1} + W_{xh} \cdot x_t + b_h)
+	h_t &=& f(W_{hh} \cdot h_{t-1} + W_{xh} \cdot x_t + b_h)\label{eq:rnn}
 \end{eqnarray}
 
 \noindent onde \( h_t \) é o estado oculto (ou saída) no tempo \( t \), \( h_{t-1} \) é o estado oculto anterior no tempo \( t-1 \), \( x_t \) é a entrada no tempo \( t \), \( W_{hh} \) é a matriz de pesos que controla a influência do estado oculto anterior, \( W_{xh} \) é a matriz de pesos que controla a influência da entrada, \( b_h \) é o vetor de viés, \( f \) é uma função de ativação, frequentemente a função tangente hiperbólica ($\operatorname{tanh}$) ou a função sigmoide \cite{lstm}.
 
 
-Essa equação representa a propagação do estado oculto ao longo do tempo em uma RNN. A cada novo passo de tempo, a RNN considera a entrada atual \( x_t \) e o estado oculto anterior \( h_{t-1} \), calculando o novo estado oculto \( h_t \) usando as matrizes de pesos e a função de ativação.
-No entanto, as RNNs tradicionais podem enfrentar dificuldades em capturar dependências de longo prazo, devido ao problema de dissipação do gradiente. Para lidar com isso, surgiram variações mais avançadas, como LSTM (do inglês \textit{Long Short-Term Memory})  e GRU (do inglês \textit{Gated Recurrent Units}), que incorporam mecanismos de aprendizado de esquecimento e controle de informação, permitindo que informações relevantes sejam mantidas por períodos mais longos de tempo.
+Essa equação \eqref{eq:rnn} representa a propagação do estado oculto ao longo do tempo em uma RNN. A cada novo passo de tempo, a RNN considera a entrada atual \( x_t \) e o estado oculto anterior \( h_{t-1} \), calculando o novo estado oculto \( h_t \) usando as matrizes de pesos e a função de ativação.
+No entanto, as RNNs tradicionais podem enfrentar dificuldades em capturar dependências de longo prazo, devido ao problema de dissipação do gradiente. Para lidar com isso, surgiram variações avançadas, como LSTM (do inglês \textit{Long Short-Term Memory})  e GRU (do inglês \textit{Gated Recurrent Units}), que incorporam mecanismos de aprendizado de esquecimento e controle de informação, permitindo que informações relevantes sejam mantidas por períodos mais longos de tempo.
 
 Como pode ser visto na Figura \ref{fig:rnn1}, a grande diferença no bloco RNN é que há um laço de reações. Enquanto cada entrada de uma rede totalmente conectada é completamente independente, as entradas de uma RNN têm uma relação de realimentação entre si. Isso faz com que ele seja capaz de capturar padrões em dados sequenciais de uma maneira que redes neurais tradicionais não conseguem.
-A Figura \ref{fig:rnn1} mostra um diagrama de uma RNN. Na representação, a camada de entrada é rotulada como ``Camada de entrada'' e consiste em três círculos laranjas rotulados como ``$x$''. As camadas ocultas são identificadas como ``Camadas Ocultas'' e compõem-se de seis círculos rosas rotulados como ``$h$''. A camada de saída é designada como ``Camada de Saída'' e possui dois círculos azuis rotulados como ``$y$''. As conexões entre as camadas são estabelecidas por linhas pretas. Além disso, o diagrama inclui uma versão simplificada da RNN no lado direito, indicada como ``Rede Neural Recorrente'', composta por três círculos laranjas rotulados como ``A'', ``B'' e ``C''.
-Uma Rede Neural Recorrente é um tipo de rede neural capaz de processar sequências de dados, como texto, áudio ou vídeo. Ela tem a capacidade de reter informações do passado e utilizá-las para influenciar as saídas futuras. É empregada em tarefas como reconhecimento de fala, tradução automática, geração de texto, entre outras, e nesse caso para prever o nível do tanque.
+%A Figura \ref{fig:rnn1} mostra um diagrama de uma RNN. Na representação, a camada de entrada é rotulada como ``Camada de entrada'' e consiste em três círculos laranjas rotulados como ``$x$''. As camadas ocultas são identificadas como ``Camadas Ocultas'' e compõem-se de seis círculos rosas rotulados como ``$h$''. A camada de saída é designada como ``Camada de Saída'' e possui dois círculos azuis rotulados como ``$y$''. As conexões entre as camadas são estabelecidas por linhas pretas. Além disso, o diagrama inclui uma versão simplificada da RNN no lado direito, indicada como ``Rede Neural Recorrente'', composta por três círculos laranjas rotulados como ``A'', ``B'' e ``C''.
+%Uma Rede Neural Recorrente é um tipo de rede neural capaz de processar sequências de dados, como texto, áudio ou vídeo. Ela tem a capacidade de reter informações do passado e utilizá-las para influenciar as saídas futuras. É empregada em tarefas como reconhecimento de fala, tradução automática, geração de texto, entre outras, e nesse caso para prever o nível do tanque.
 
 
 
-\begin{figure}[H]
+\begin{figure}[!htb]
 	\centering
 	\caption{RNN - \textit{recurrent neural network}}
 	\label{fig:rnn1}
-	\includegraphics[width=1\linewidth]{Apendices/Figuras/modelagem-24h/rnn1}
+	\includegraphics[width=\linewidth]{Apendices/Figuras/modelagem-24h/rnn1}
 	
-	\fonte{Adaptado de \citeonline{Zhang2021}}
+	\fonte{Adaptado de \cite{Zhang2021}}
 \end{figure}
 
 \subsubsection{Compreendendo Redes de Mem\'oria de Curto e Longo Prazo (LSTM)}
 
 As LSTMs são uma evolução das RNNs, projetadas para superar desafios na captura de dependências de longo prazo em sequências de dados. Diferentemente das RNNs convencionais, as LSTMs têm a capacidade de manter informações relevantes por longos períodos, tornando-as especialmente eficazes em tarefas que envolvem padrões complexos e dependências temporais distantes \cite{Zhang2021}.
 
-Uma das principais inovações das LSTMs é a introdução de unidades de memória chamadas ``células'', que possuem três componentes principais: uma porta de entrada (do inglês\textit{input gate}), uma porta de esquecimento (do inglês \textit{forget gate}) e uma porta de saída (do inglês \textit{output gate}). Essas portas permitem que as LSTMs controlem o fluxo de informações através da célula, decidindo quais informações devem ser mantidas, esquecidas ou passadas para a saída \cite{Zhang2021}.
+Uma das principais inovações das LSTMs é a introdução de unidades de memória chamadas células, que possuem três componentes principais: uma porta de entrada (do inglês\textit{input gate}), uma porta de esquecimento (do inglês \textit{forget gate}) e uma porta de saída (do inglês \textit{output gate}). Essas portas permitem que as LSTMs controlem o fluxo de informações através da célula, decidindo quais informações devem ser mantidas, esquecidas ou passadas para a saída \cite{Zhang2021}.
 
 
 
@@ -254,7 +247,7 @@ Uma das principais inovações das LSTMs é a introdução de unidades de memór
 \end{eqnarray}
 
 
-\noindent onde, \(x_t\) é a entrada no tempo \(t\), \(h_{t-1}\) é o estado oculto anterior no tempo \(t-1\), \(f_t\) é o valor da porta de esquecimento, \(i_t\) é o valor da porta de entrada, \(\tilde{C}_t\) é o candidato a novo estado de memória, \(C_t\) é o novo estado de memória, \(o_t\) é o valor da porta de saída, \(h_t\) é o novo estado oculto (saída) no tempo \(t\), \(\sigma\) é a função de ativação sigmoide, \(\odot\) representa a multiplicação elemento a elemento.
+\noindent onde \(x_t\) é a entrada no tempo \(t\), \(h_{t-1}\) é o estado oculto anterior no tempo \(t-1\), \(f_t\) é o valor da porta de esquecimento, \(i_t\) é o valor da porta de entrada, \(\tilde{C}_t\) é o candidato a novo estado de memória, \(C_t\) é o novo estado de memória, \(o_t\) é o valor da porta de saída, \(h_t\) é o novo estado oculto (saída) no tempo \(t\), \(\sigma\) é a função de ativação sigmoide, \(\odot\) representa a multiplicação elemento a elemento.
 
 Essa estrutura permite que as LSTMs controlem o fluxo de informações e aprendam a armazenar ou descartar informações relevantes para diferentes tarefas. As portas de entrada, esquecimento e saída funcionam como mecanismos de controle, permitindo que as LSTMs aprendam a manter informações importantes, esquecer informações desnecessárias e gerar saídas precisas ao longo de sequências temporais.
 
@@ -296,7 +289,7 @@ nessas equações \eqref{eq:gru}, \eqref{eq:gru1}, \eqref{eq:gru2} e \eqref{eq:g
 
 
 
-O GRU controla como as informações são atualizadas e propagadas ao longo do tempo, permitindo a captura de dependências de longo prazo em sequências de dados. Isso o torna uma escolha popular para tarefas que envolvem processamento de linguagem natural, como tradução automática, geração de texto, entre outras.
+%O GRU controla como as informações são atualizadas e propagadas ao longo do tempo, permitindo a captura de dependências de longo prazo em sequências de dados. Isso o torna uma escolha popular para tarefas que envolvem processamento de linguagem natural, como tradução automática, geração de texto, entre outras.
 
 
 Foi inventada uma camada RNN mais avançada, designada GRU. A célula GRU possui mais parâmetros, conforme mostrado na Figura \ref{fig:gru}. Isso demonstra que há uma passagem extra dentro da célula, permitindo que um parâmetro adicional seja estimado. Isso ajuda a aprendizagem das tendências a longo prazo.
@@ -321,13 +314,13 @@ As GRUs, as LSTMs e as RNNs são variações das arquiteturas de redes neurais, 
 Enquanto as RNNs tradicionais têm uma tendência a sofrer com o desvanecimento do gradiente ao longo do tempo, as LSTMs e GRUs foram desenvolvidas para superar essa limitação. As LSTMs introduzem células de memória e portas de controle que permitem armazenar e atualizar informações relevantes ao longo das etapas temporais, sendo especialmente adequadas para capturar relações de dependência de longo prazo. As GRUs, por sua vez, simplificam a arquitetura das LSTMs, utilizando portas de atualização e reset para permitir o fluxo de informações e controle sobre o estado oculto.
 Na Figura \ref{fig:rnn-vs-lstm-vs-gru-1024x308}, há um esquema que ilustra as arquiteturas das RNNs, LSTMs e GRUs, permitindo uma visualização das diferenças entre essas abordagens.
 
-Na Figura \ref{fig:rnn-vs-lstm-vs-gru-1024x308}, representa um diagrama de três tipos de RNNs: uma RNN regular, uma LSTM e uma GRU. Esses tipos de redes são capazes de processar dados sequenciais, como textos, áudios ou vídeos, levando em conta a ordem cronológica dos elementos. A  Figura \ref{fig:rnn-vs-lstm-vs-gru-1024x308} é dividida em três seções, uma para cada tipo de rede. Cada seção tem uma cor de fundo diferente: a seção RNN é verde, a seção LSTM é rosa e a seção GRU é azul. Cada seção possui um diagrama da arquitetura da rede, com nós representando neurônios e arestas representando conexões entre neurônios. A seção RNN tem um único neurônio recorrente, a seção LSTM tem vários neurônios recorrentes com conexões adicionais que formam portões e células de memória, e a seção GRU tem dois portões que controlam o fluxo de informação na memória oculta da rede. Os portões são representados por formas coloridas: o portão de reinicialização é azul, o portão de atualização é vermelho e o portão de saída é verde. O diagrama está rotulado em inglês, com ``\textit{Reset Gate}'' (Portão de Reinicialização), ``\textit{Update Gate}'' (Portão de Atualização) e ``\textit{Output Gate}'' (Portão de Saída). 
+Na Figura \ref{fig:rnn-vs-lstm-vs-gru-1024x308}, representa um diagrama de três tipos de RNNs: uma RNN regular, uma LSTM e uma GRU. Esses tipos de redes são capazes de processar dados sequenciais. A  Figura \ref{fig:rnn-vs-lstm-vs-gru-1024x308} é dividida em três seções, uma para cada tipo de rede. Cada seção tem uma cor de fundo diferente: a seção RNN é verde, a seção LSTM é rosa e a seção GRU é azul. Cada seção possui um diagrama da arquitetura da rede, com nós representando neurônios e arestas representando conexões entre neurônios. A seção RNN tem um único neurônio recorrente, a seção LSTM tem vários neurônios recorrentes com conexões adicionais que formam portões e células de memória, e a seção GRU tem dois portões que controlam o fluxo de informação na memória oculta da rede. Os portões são representados por formas coloridas: o portão de reinicialização é azul, o portão de atualização é vermelho e o portão de saída é verde. O diagrama está rotulado em inglês, com ``\textit{Reset Gate}'' (Portão de Reinicialização), ``\textit{Update Gate}'' (Portão de Atualização) e ``\textit{Output Gate}'' (Portão de Saída). 
 
-\begin{figure}[H]
+\begin{figure}[!htb]
 	\centering
 	\caption{RNN vs LSTM vs GRU}
 	\label{fig:rnn-vs-lstm-vs-gru-1024x308}
-	\includegraphics[width=1\linewidth]{Apendices/Figuras/modelagem-24h/RNN-vs-LSTM-vs-GRU-1024x308}
+	\includegraphics[width=\linewidth]{Apendices/Figuras/modelagem-24h/RNN-vs-LSTM-vs-GRU-1024x308}
 	
 	\fonte{Adaptado de \citeonline{Hasan2020}}
 \end{figure}
@@ -339,13 +332,13 @@ A observação direta dessas arquiteturas em ação na Figura \ref{fig:rnn-vs-ls
 
 As LSTMs e GRUs oferecem soluções mais sofisticadas em relação às RNNs tradicionais, apresentando mecanismos que permitem capturar dependências de longo prazo de maneira mais eficaz.
 
-\subsection{Aprendizado Profundo (DL)}
+\subsection{Aprendizado Profundo}
 
 Em relação ao abastecimento de água, os modelos de séries temporais no aprendizado profundo (DL do inglês \textit{deep learning}) permitem análises detalhadas das tendências de consumo, disponibilidade e gestão dos recursos hídricos ao longo do tempo. Esses modelos também são úteis para monitorar a qualidade da água, identificando padrões de contaminação e contribuindo para a manutenção dos padrões de potabilidade. 
 
 \subsubsection{Explorando o Transformer: Al\'em dos Bits e Bytes}
 
-A arquitetura de rede neural Transformer representa um avanço significativo no campo do processamento de linguagem natural e tarefas relacionadas. Foi introduzida por \cite{vaswani2017attention} e revolucionou a maneira como as redes neurais lidam com sequências de dados, superando limitações anteriores, como a dependência sequencial e a complexidade computacional. A abordagem do Transformer se destaca por sua capacidade de processar simultaneamente todas as posições de uma sequência, tornando-o altamente paralelizável e eficiente.
+A arquitetura de rede neural Transformer representa um avanço significativo nas  tarefas relacionadas. Foi introduzida por \cite{vaswani2017attention} e revolucionou a maneira como as redes neurais lidam com sequências de dados, superando limitações anteriores, como a dependência sequencial e a complexidade computacional. A abordagem do Transformer se destaca por sua capacidade de processar simultaneamente todas as posições de uma sequência, tornando-o altamente paralelizável e eficiente.
 
 A equação \eqref{eq:soft} fundamental do Transformer é a autoatencão, também conhecida como mecanismo de atenção. A atenção é um conceito-chave que permite que a rede neural ``preste atenção'' a diferentes partes da entrada em graus variados, capturando relações contextuais e semânticas. A equação da autoatencão é calculada ao dividir a sequência de entrada em três representações lineares: consultas ($Q$), chaves ($K$) e valores ($V$). A matriz de atenção é obtida multiplicando as consultas pelas chaves transpostas e aplicando uma função de softmax aos resultados, ponderando os valores de acordo com a importância atribuída pela atenção. A saída final é uma combinação linear dos valores ponderados pela matriz de atenção.
 
@@ -353,20 +346,20 @@ A equação \eqref{eq:soft} fundamental do Transformer é a autoatencão, també
 	\operatorname{Attention}(Q, K, V)=\operatorname{softmax}\left(\frac{Q K^{\mathrm{T}}}{\sqrt{d_k}}\right) V \label{eq:soft}
 \end{eqnarray}
 
-\noindent na equação \eqref{eq:soft}, embora simplificada, serve como base para a arquitetura do Transformer e é repetida várias vezes em diferentes camadas. Isso permite que a rede aprenda representações ricas e contextuais das sequências de entrada. A estrutura de múltiplas cabeças de atenção, presente no Transformer, aprimora a capacidade da rede em capturar diferentes tipos de relações e padrões nas sequências. Em suma, o modelo Transformer revolucionou o processamento de sequências, proporcionando melhorias notáveis em tarefas como tradução automática, resumo de texto, geração de linguagem natural e muito mais. Na Figura \ref{fig:transformer} tem o esquema de como a rede neural Transformer é abordada.
+\noindent na equação \eqref{eq:soft}, embora simplificada, serve como base para a arquitetura do Transformer e é repetida várias vezes em diferentes camadas. Isso permite que a rede aprenda representações ricas e contextuais das sequências de entrada. A estrutura de múltiplas cabeças de atenção, presente no Transformer, aprimora a capacidade da rede em capturar diferentes tipos de relações e padrões nas sequências. Em suma, o modelo Transformer revolucionou o processamento de sequências, proporcionando melhorias notáveis em tarefas de séries temporais. Na Figura \ref{fig:transformer} tem o esquema de como a rede neural Transformer é abordada.
 
-\begin{figure}[H]
+\begin{figure}[!htb]
 	\centering
 	\caption{Arquitetura do Transformer}
 	\label{fig:transformer}
-	\includegraphics[width=1\linewidth]{Apendices/Figuras/modelagem-24h/Transformer}
+	\includegraphics[width=0.7\linewidth]{Apendices/Figuras/modelagem-24h/Transformer}
 	
 	\fonte{Adaptado de \citeonline{Esposito2021}}
 \end{figure}
 
-\subsubsection{Rede Neural Artificial (ANN)}
+\subsubsection{Rede Neural Artificial}
 
-ANN pode ser definida como uma estrutura complexa interligada por elementos de processamento simples (neurônios), que possuem a capacidade de realizar operações como cálculos em paralelo, para processamento de dados e representação de conhecimento. Com a introdução de algoritmos de treinamento como a retropropagação do erro, que permite a realização de um treinamento posterior para aperfeiçoar os resultados do modelo \cite{Grubler2018}.
+ANN pode ser definida como uma estrutura complexa interligada por elementos de processamento simples (neurônios), que possuem a capacidade de realizar operações como cálculos em paralelo, para processamento de dados e representação de conhecimento. Com a introdução de algoritmos de treinamento como a retropropagação (do inglês \textit{backpropagation}) do erro, que permite a realização de um treinamento posterior para aperfeiçoar os resultados do modelo \cite{Grubler2018}.
 
 \noindent\textbf{Multilayer Perceptron:}
 Com o intuito de lidar com os problemas não linearmente separáveis, foram adicionadas camadas de neurônio ocultas no modelo de \textit{Rosenblatt}, formando então a Rede Neural Artificial Multilayer Perceptron (MLP).
@@ -378,7 +371,7 @@ Os nós são conectados por linhas pretas representando as conexões entre os n�
 O diagrama está rotulado em português com ``Camada de Entrada'' para a camada de entrada, ``Camada Oculta'' para a camada oculta e ``Camada de Saída'' para a camada de saída.
 Um modelo ANN pode aprender padrões e relações nos dados de entrada e produzir uma saída desejada, como uma classificação ou uma previsão. O modelo aprende ajustando os pesos das conexões através de um processo chamado treinamento, que envolve comparar a saída do modelo com a saída esperada e minimizar o erro.
 
-\begin{figure}[H]
+\begin{figure}[!htb]
 	\centering
 	\caption{Modelo de uma Rede Neural Artificial MLP}
 	\includegraphics[width=0.5\linewidth]{Apendices/Figuras/modelagem-24h/ann}
@@ -400,7 +393,7 @@ O modelo de Rede Neural Artificial MLP é dado pela equação \eqref{eq:ann}:
 	v_j=\sum_{i=0}^m w_i y_i+b\label{eq:ann}
 \end{eqnarray}
 
-\noindent o funcionamento geral de uma rede MLP está representada na figura acima. Cada neurônio recebe todos os valores das entradas, representadas pelo símbolo $y$, que são multiplicadas pelos pesos sinápticos simbolizados pelo $w$ e somadas entre si junto com uma constante chamada de polarização ou bias, representada pelo símbolo $b$.
+\noindent o funcionamento geral de uma rede MLP está representada na Figura \ref{fig:ann}. Cada neurônio recebe todos os valores das entradas, representadas pelo símbolo $y$, que são multiplicadas pelos pesos sinápticos simbolizados pelo $w$ e somadas entre si junto com uma constante chamada de polarização ou bias, representada pelo símbolo $b$.
 
 A Figura \ref{fig:ann1} é um diagrama de um modelo ANN com múltiplas camadas e perceptrons, que são unidades de processamento simples que podem aprender padrões lineares nos dados.
 O diagrama consiste de duas camadas de perceptrons, uma com dois círculos rosa e outra com três círculos azuis. Os perceptrons são conectados por linhas pretas representando os pesos, que são os valores numéricos que ajustam a força da conexão entre os perceptrons.
@@ -408,10 +401,10 @@ Os pesos são rotulados com ``$w_0$'' e ``$w_1$'', indicando os valores dos peso
 O diagrama está rotulado em português com ``Camada de Entrada'' para a primeira camada de perceptrons, ``Camada Oculta'' para a segunda camada de perceptrons, e ``Camada de Saída'' para o único círculo azul que representa a saída final do modelo.
 Um modelo ANN com múltiplas camadas e perceptrons pode aprender padrões não lineares nos dados, usando funções de ativação não lineares nos perceptrons. O modelo é treinado usando o método de retropropagação, que consiste em ajustar os pesos das conexões de acordo com o erro entre a saída esperada e a saída obtida pelo modelo.
 
-\begin{figure}[H]
+\begin{figure}[!htb]
 	\centering
 	\caption{A equação da figura realiza o somatório ponderado entre as sinapses de cada neurônio}
-	\includegraphics[width=0.5\linewidth]{Apendices/Figuras/modelagem-24h/ann1}
+	\includegraphics[width=0.4\linewidth]{Apendices/Figuras/modelagem-24h/ann1}
 	
 	\label{fig:ann1}
 	
@@ -421,11 +414,11 @@ Um modelo ANN com múltiplas camadas e perceptrons pode aprender padrões não l
 
 
 
-\subsection{Rede Neural Convolucional (CNN)}
+\subsection{Rede Neural Convolucional}
 
 As Redes Neurais Convolucionais (CNN) ou Redes Convolucionais são um tipo de rede neural que utiliza a operação de convolução em vez da multiplicação por matrizes em ao menos uma de suas camadas.
 
-Esse tipo de rede é efetiva em aplicações \cite{7533055} em que os dados são dispostos de forma que a relação de vizinhança entre os elementos é relevante, como no caso de imagens que são representadas por matrizes bidimensionais de pixels, ou no caso de séries temporais ou dados de áudio, que são sequências unidimensionais de dados amostrados em intervalos de tempo regulares \cite{silva_2021}.
+Esse tipo de rede é efetiva em aplicações \cite{7533055} em que os dados são dispostos de forma que a relação de vizinhança entre os elementos é relevante, no caso de séries temporais, que são sequências unidimensionais de dados amostrados em intervalos de tempo regulares \cite{silva_2021}.
 
 
 A camada convolucional tem como objetivo extrair as características mais importantes da entrada. Dessa forma, sua saída é um mapa de características obtido a partir da convolução da entrada com um \textit{kernel} aprendido, seguido da aplicação de uma função de ativação não linear \cite{lucas_2019}. Os mapas de características completos são obtidos pela Equação \eqref{cnn}:
@@ -434,16 +427,15 @@ A camada convolucional tem como objetivo extrair as características mais import
 	Z_{i, j, k}^L&=&W_k^L \cdot X_{i, j}^L+b_k^L\label{cnn}
 \end{eqnarray}
 
-\noindent onde,
+\noindent onde
 $Z_{i, j, k}^L$ é o mapa de características obtido pela convolução do k-ésimo filtro da \textit{L-ésima} camada com a célula de entrada centrada na localização $(i, j)$.
 $W_k^L$ vetor de pesos do \textit{k-ésimo} filtro da \textit{L-ésima} camada.
 $b_k^L$ termo de polarização do k-ésimo filtro da L-ésima camada.
 $X_{i, j}^L$ é a célula de entrada centrada na localização $(i,j)$ da $L-$ésima camada.
-A profundidade dos mapas de características é dada pelo número de \textit{kernels} (ou
-filtros) de convolução. Observe na Figura \ref{fig:cnn} que a $1^{\mathrm{a}}$
+A profundidade dos mapas de características é dada pelo número de \textit{kernels} (ou filtros) de convolução. Observe na Figura \ref{fig:cnn} que a $1^{\mathrm{a}}$
 camada de convolução com 6 \textit{kernel} gera uma saída de profundidade 6. Isso porque, cada \textit{kernel} possui pesos diferentes para extrair diferentes características da entrada \cite{lucas_2019}.
 
-\begin{figure}[H]
+\begin{figure}[!htb]
 	\centering
 	\caption{Modelo de uma Rede Neural Convolucional}
 	\includegraphics[width=1\linewidth]{Apendices/Figuras/modelagem-24h/cnn}
@@ -455,7 +447,7 @@ camada de convolução com 6 \textit{kernel} gera uma saída de profundidade 6. 
 
 Uma vantagem das camadas de convolução é o compartilhamento do vetor de pesos para toda a circunvolução na construção de um mapa de características, pois reduz o número de parâmetros na rede, resultando em treinamento e previsões mais eficientes
 \cite{lucas_2019}.
-A largura e a altura desses mapas são definidas pelo tamanho do \textit{kernel} e do \textit{stride} (passo da circunvolução) Equação \eqref{cnn1}. Voltando à Figura \ref{fig:cnn}, a $1^{\mathrm{a}}$ camada convolucional gera uma saída $28 \times 28$, pois $\left(\frac{32-5}{1}\right)+1=28$.
+A largura e a altura desses mapas são definidas pelo tamanho do \textit{kernel} e do \textit{stride} (passo da circunvolução) Equação \eqref{cnn1}. Voltando à Figura \ref{fig:cnn}, a $1^{\mathrm{a}}$ camada convolucional gera uma saída $28 \times 28$, pois $\left(\dfrac{32-5}{1}\right)+1=28$.
 
 \begin{eqnarray}
 	T_{\text {map }}&=&\left(\dfrac{I-F}{S+1}\right)\label{cnn1}

@@ -199,6 +199,12 @@ ISSN 18722121.}
 \textbf{Building and Environment}, v.~143, p. 727--739, 2018.
 ISSN 03601323.}
 
+\bibitem[Géron 2017]{geron2017hands_on}
+\abntrefinfo{Géron}{GéRON}{2017}
+{GéRON, A. \textbf{Hands-On Machine Learning with Scikit-Learn and
+  TensorFlow}. 2nd. ed. O'Reilly Media, 2017. Dispon{\'\i}vel em:
+  \url{https://www.oreilly.com/library/view/hands-on-machine-learning/9781491962282/}.}
+
 \bibitem[Hao et al. 2023]{2-s2.0-85148656225}
 \abntrefinfo{Hao et al.}{HAO et al.}{2023}
 {HAO, J. et al. A bi-level ensemble learning approach to complex time series
@@ -342,16 +348,6 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1093/biomet/65.2.297}.}
 Tese (Doutorado) --- Universidade Federal de Minas Gerais, 2019.
 Dispon{\'\i}vel em: \url{https://www.ppgee.ufmg.br/defesas/1748M.PDF}.}
 
-\bibitem[Martinho 2023]{Martinho2023}
-\abntrefinfo{Martinho}{MARTINHO}{2023}
-{MARTINHO, A.~D.
-\textbf{Modelos de aprendizado de máquinas híbridos aplicados à previsão de
-  curto prazo da vazão do Rio Zambeze afluente à barragem hidroelétrica de
-  Cahora-Bassa, em Moçambique}.
-Tese (Doutorado) --- Universidade Federal de Juiz de Fora, 2023.
-Dispon{\'\i}vel em:
-  \url{https://bdtd.ibict.br/vufind/Record/UFJF\_8d77f507400cd155c1ab22d2fdc4e9c3}.}
-
 \bibitem[Martinovi{\'{c}}, Hunjet e Turcin 2020]{Martinovic2020a}
 \abntrefinfo{Martinovi{\'{c}}, Hunjet e Turcin}{MARTINOVI{\'{C}}; HUNJET;
   TURCIN}{2020}
@@ -444,6 +440,13 @@ Dispon{\'\i}vel em:
   Neurais Artificiais}.
 Tese (Doutorado) --- Universidade Federal de Pernambuco, 2010.}
 
+\bibitem[Raschka 2015]{raschka2015practical}
+\abntrefinfo{Raschka}{RASCHKA}{2015}
+{RASCHKA, S. A practical guide to machine learning in python.
+\textbf{Machine Learning with Python}, 2015.
+Dispon{\'\i}vel em:
+  \url{https://sebastianraschka.com/pdf/books/machine\_learning\_with\_python/mlwp.pdf}.}
+
 \bibitem[Reader 2023]{decision}
 \abntrefinfo{Reader}{READER}{2023}
 {READER, T.~C. Decision tree regression explained with implementation in
@@ -466,12 +469,6 @@ Dispon{\'\i}vel em:
 Cited By 1.
 Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-84986317325&doi=10.1007\%2fs00184-016-0594-8&partnerID=40&md5=c83f82d0c372e22d5970aff448f05411}.}
-
-\bibitem[Remigio 2023]{remigio2023arvores}
-\abntrefinfo{Remigio}{REMIGIO}{2023}
-{REMIGIO, M. \textbf{Árvores de decisão (Decision Trees)}. 2023.
-Dispon{\'\i}vel em:
-  \url{https://medium.com/@msremigio/\%C3\%A1rvores-de-decis\%C3\%A3o-decision-trees-4cb6857671b3}.}
 
 \bibitem[Ribeiro et al. 2021]{mateus}
 \abntrefinfo{Ribeiro et al.}{RIBEIRO et al.}{2021}
@@ -766,16 +763,6 @@ ISSN 13430130.}
 {YANG, W. et al. {Hybrid wind energy forecasting and analysis system based on
   divide and conquer scheme: A case study in China}.
 \textbf{Journal of Cleaner Production}, v.~222, p. 942--959, 2019.}
-
-\bibitem[Yu 2016]{Yu2016}
-\abntrefinfo{Yu}{YU}{2016}
-{YU, C. Research of time series air quality data based on exploratory data
-  analysis and representation. In:  . Institute of Electrical and Electronics
-  Engineers Inc., 2016.
-ISBN 9781509023509. Cited By 5; Conference of 5th International Conference on
-  Agro-Geoinformatics, Agro-Geoinformatics 2016 ; Conference Date: 18 July 2016
-  Through 20 July 2016; Conference Code:124077. Dispon{\'\i}vel em:
-  \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-84994079422&doi=10.1109\%2fAgro-Geoinformatics.2016.7577697&partnerID=40&md5=fef861624a35632bf2d84acf63986bbe}.}
 
 \bibitem[Zhang 2021]{Zhang2021}
 \abntrefinfo{Zhang}{ZHANG}{2021}
