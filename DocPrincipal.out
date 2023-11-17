@@ -22,7 +22,7 @@
 \BOOKMARK [2][-]{subsection.3.3}{Modelos de S\351rie Temporal Multivariada}{section.3}% 22
 \BOOKMARK [2][-]{subsection.3.4}{Modelos de Aprendizado de M\341quina}{section.3}% 23
 \BOOKMARK [3][-]{subsubsection.3.4.1}{Prophet}{subsection.3.4}% 24
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Regress\343o Linear \(LR\)}{subsection.3.4}% 25
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Regress\343o Linear}{subsection.3.4}% 25
 \BOOKMARK [3][-]{subsubsection.3.4.3}{\301rvore de Decis\343o }{subsection.3.4}% 26
 \BOOKMARK [3][-]{subsubsection.3.4.4}{Floresta Aleat\363ria }{subsection.3.4}% 27
 \BOOKMARK [3][-]{subsubsection.3.4.5}{Gradient Boosting}{subsection.3.4}% 28

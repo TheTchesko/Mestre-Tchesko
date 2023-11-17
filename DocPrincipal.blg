@@ -35,8 +35,6 @@ Reallocating 'name_of_file' (item size: 1) to 34 items.
 A level-1 auxiliary file: Bibliografia/sec-bibliografia.aux
 Reallocating 'name_of_file' (item size: 1) to 16 items.
 Reallocating 'name_of_file' (item size: 1) to 22 items.
-Reallocating 'name_of_file' (item size: 1) to 28 items.
-A level-1 auxiliary file: Apendices/sec-apendices.aux
 Reallocating 'name_of_file' (item size: 1) to 12 items.
 The style file: abntex2-alf.bst
 Reallocating 'singl_function' (item size: 4) to 100 items.
@@ -140,7 +138,7 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 +---------------------------------------------------------+
 You've used 110 entries,
             6714 wiz_defined-function locations,
-            1918 strings with 34505 characters,
+            1917 strings with 34478 characters,
 and the built_in function-call counts, 144162 in all, are:
 = -- 14849
 > -- 3787
