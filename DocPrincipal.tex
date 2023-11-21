@@ -1,8 +1,5 @@
 
-%% COMPLETAR OS DADOS NO ARQUIVO DE INFORMAÇÕES
-
-%% PREAMBULO
-\include{Packages/preambulo}
+\input{Packages/preambulo}
 
 %% INFORMAÇÕES DO DOCUMENTO
 \include{Packages/info}
@@ -29,6 +26,7 @@
 %\includepdf{Pretextuais/ficha.pdf}
 
 %% FOLHA DE APROVAÇÃO
+
 \include{Pretextuais/folha_aprovacao} %% NÃO ASSINADA
 %\includepdf{Pretextuais/folha_aprovacao1.pdf} %% ASSINADA
 
@@ -57,10 +55,7 @@
 
 \include{Pretextuais/listas}
 
-
-
 %% Lista de abreviaturas e siglas (opcional)
-
 
 \include{Pretextuais/lista-simbolos}
 
@@ -74,27 +69,22 @@
 %% ELEMENTOS TEXTUAIS
 
 
-
 %% INTRODUÇÃO
 
-\include{Introducao/sec-introducao}
-
-
+\input{Introducao/sec-introducao}
 
 %% REFERENCIAL
 
-\include{Revisao/sec-revisao}
+\input{Revisao/sec-revisao}
 
-\include{Modelos/sec-modelos}
-
-
-
+\input{Modelos/sec-modelos}
 
 %% RESULTADOS
-\include{Resultados/sec-resultados}
+\input{Resultados/sec-resultados}
 
 %% CONCLUSÕES
 \include{Conclusoes/sec-conclusoes}
+
 
 
 %-----------------------------------------------------------------
@@ -103,7 +93,8 @@
 %% BIBLIOGRAFIA
 \include{Bibliografia/sec-bibliografia}
 
-%% APÊNDICES
+
+%% APÊNDICES (opcional)
 %\include{Apendices/sec-apendices}
 
 %-----------------------------------------------------------------

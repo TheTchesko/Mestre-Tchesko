@@ -1,23 +1,23 @@
 \babel@toc {brazil}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {brazil}{}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Cruzamento de palavras-chave por meio da aplicação de filtros de área}}{27}{table.caption.8}%
-\contentsline {table}{\numberline {2}{\ignorespaces Resumo dos dados}}{27}{table.caption.9}%
-\contentsline {table}{\numberline {3}{\ignorespaces Fator de impacto}}{28}{table.caption.10}%
-\contentsline {table}{\numberline {4}{\ignorespaces Os autores que mais publicam em relação ao tema de pesquisa}}{29}{table.caption.11}%
-\contentsline {table}{\numberline {5}{\ignorespaces Países com maior número de publicações}}{30}{table.caption.12}%
-\contentsline {table}{\numberline {6}{\ignorespaces Modelos baseado na literatura e nos artigos}}{31}{table.caption.13}%
-\contentsline {table}{\numberline {7}{\ignorespaces Descrição estatística dos dados com o filtro aplicado das 18h às 21h}}{62}{table.caption.28}%
-\contentsline {table}{\numberline {8}{\ignorespaces Teste de Dickey-Fuller Aumentado}}{63}{table.caption.29}%
-\contentsline {table}{\numberline {9}{\ignorespaces Parâmetros utilizados nos modelos ARIMA e seus antecessores obtidos pelo ``autoARIMA'' do Python.}}{68}{table.caption.36}%
-\contentsline {table}{\numberline {10}{\ignorespaces SARIMAX$(7, 0, 0)\times (2, 1, [1], 12)$ Results}}{68}{table.caption.37}%
-\contentsline {table}{\numberline {11}{\ignorespaces Hiperparâmetros dos modelos}}{69}{table.caption.38}%
-\contentsline {table}{\numberline {12}{\ignorespaces Resumo dos Hiperparâmetros dos Modelos de Redes Neurais}}{69}{table.caption.39}%
-\contentsline {table}{\numberline {13}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {treino}}}{73}{table.caption.46}%
-\contentsline {table}{\numberline {14}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {teste}}}{74}{table.caption.47}%
-\contentsline {table}{\numberline {15}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {validação}}}{75}{table.caption.48}%
-\contentsline {table}{\numberline {16}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {inteiro}}}{76}{table.caption.49}%
-\contentsline {table}{\numberline {17}{\ignorespaces Teste Nemenyi}}{77}{table.caption.50}%
-\contentsline {table}{\numberline {18}{\ignorespaces Métricas de avaliação dos modelos}}{78}{table.caption.51}%
-\contentsline {table}{\numberline {19}{\ignorespaces Comparação dos modelos Ljung Box: Modelos ARIMA com defasagem de 10 para previsão de longo prazo na demanda de água}}{82}{table.caption.56}%
-\contentsline {table}{\numberline {20}{\ignorespaces Demanda de água}}{84}{table.caption.58}%
+\contentsline {table}{\numberline {1}{\ignorespaces Combinação de palavras-chave aplicando filtros.}}{26}{table.caption.5}%
+\contentsline {table}{\numberline {2}{\ignorespaces Resumo dos artigos obtidos com a RSL nas bases Scopus e WoS.}}{27}{table.caption.6}%
+\contentsline {table}{\numberline {3}{\ignorespaces Classificação dos principais periódicos obtidos na RSL.}}{27}{table.caption.7}%
+\contentsline {table}{\numberline {4}{\ignorespaces Total de publicações dos principais autores obtidos na RSL.}}{29}{table.caption.8}%
+\contentsline {table}{\numberline {5}{\ignorespaces Total de publicações dos principais países obtidos na RSL.}}{29}{table.caption.9}%
+\contentsline {table}{\numberline {6}{\ignorespaces Principais modelos de previsão obtidos na RSL.}}{31}{table.caption.10}%
+\contentsline {table}{\numberline {7}{\ignorespaces Descrição estatística dos dados de 2018 a 2019}}{56}{table.caption.21}%
+\contentsline {table}{\numberline {8}{\ignorespaces Teste de Dickey-Fuller Aumentado}}{57}{table.caption.24}%
+\contentsline {table}{\numberline {9}{\ignorespaces Parâmetros utilizados nos modelos ARIMA e seus antecessores obtidos pelo ``autoARIMA'' do Python.}}{63}{table.caption.31}%
+\contentsline {table}{\numberline {10}{\ignorespaces SARIMAX$(7, 0, 0)\times (2, 1, [1], 12)$ Results}}{63}{table.caption.32}%
+\contentsline {table}{\numberline {11}{\ignorespaces Hiperparâmetros dos modelos}}{64}{table.caption.33}%
+\contentsline {table}{\numberline {12}{\ignorespaces Resumo dos Hiperparâmetros dos Modelos de Redes Neurais}}{64}{table.caption.34}%
+\contentsline {table}{\numberline {13}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {treino}}}{68}{table.caption.41}%
+\contentsline {table}{\numberline {14}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {teste}}}{69}{table.caption.42}%
+\contentsline {table}{\numberline {15}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {validação}}}{70}{table.caption.43}%
+\contentsline {table}{\numberline {16}{\ignorespaces Comparação dos modelos de previsão com as métricas de desempenho \textbf {inteiro}}}{71}{table.caption.44}%
+\contentsline {table}{\numberline {17}{\ignorespaces Teste Nemenyi}}{72}{table.caption.45}%
+\contentsline {table}{\numberline {18}{\ignorespaces Métricas de avaliação dos modelos}}{73}{table.caption.46}%
+\contentsline {table}{\numberline {19}{\ignorespaces Comparação dos modelos Ljung Box: Modelos ARIMA com defasagem de 10 para previsão de longo prazo na demanda de água}}{77}{table.caption.51}%
+\contentsline {table}{\numberline {20}{\ignorespaces Demanda de água}}{79}{table.caption.53}%

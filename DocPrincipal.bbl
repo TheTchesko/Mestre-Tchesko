@@ -5,6 +5,11 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Agiakloglou e Newbold 1992]{Agiakloglou}
+\abntrefinfo{Agiakloglou e Newbold}{AGIAKLOGLOU; NEWBOLD}{1992}
+{AGIAKLOGLOU, C.; NEWBOLD, P. Empirical evidence on dickey-fuller-type tests.
+\textbf{Journal of Time Series Analysis}, v.~13, n.~6, p. 471--483, 1992.}
+
 \bibitem[Ahmad et al. 2018]{Ahmad2018}
 \abntrefinfo{Ahmad et al.}{AHMAD et al.}{2018}
 {AHMAD, T. et al. {A comprehensive overview on the data driven and large scale
@@ -12,19 +17,30 @@
 \textbf{ENERGY AND BUILDINGS}, v.~165, p. 301--320, 2018.
 ISSN 0378-7788.}
 
-\bibitem[Aijaz e Agarwal 2020]{2-s2.0-85096470870}
-\abntrefinfo{Aijaz e Agarwal}{AIJAZ; AGARWAL}{2020}
-{AIJAZ, I.; AGARWAL, P. A study on time series forecasting using hybridization
-  of time series models and neural networks.
-\textbf{Recent Advances in Computer Science and Communications}, v.~13, p.
-  827--832, 2020.
-ISSN 26662558.}
-
 \bibitem[Al-Shabi 2021]{al2021machine}
 \abntrefinfo{Al-Shabi}{AL-SHABI}{2021}
 {AL-SHABI, M.~Q. Machine learning: Algorithms, real-world applications and
   research directions.
 \textbf{SN Computer Science}, Springer, v.~2, n.~3, p. 1--12, 2021.}
+
+\bibitem[Ali et al. 2023]{ALI2023731}
+\abntrefinfo{Ali et al.}{ALI et al.}{2023}
+{ALI, M. et al. Ensemble robust local mean decomposition integrated with random
+  forest for short-term significant wave height forecasting.
+\textbf{Renewable Energy}, v.~205, p. 731--746, 2023.}
+
+\bibitem[Aseeri 2023]{ASEERI2023101984}
+\abntrefinfo{Aseeri}{ASEERI}{2023}
+{ASEERI, A.~O. Effective rnn-based forecasting methodology design for improving
+  short-term power load forecasts: Application to large-scale power-grid time
+  series.
+\textbf{Journal of Computational Science}, v.~68, p. 101984, 2023.}
+
+\bibitem[Babu e Reddy 2014]{BABU201427}
+\abntrefinfo{Babu e Reddy}{BABU; REDDY}{2014}
+{BABU, C.~N.; REDDY, B.~E. A moving-average filter based hybrid arima–ann
+  model for forecasting time series data.
+\textbf{Applied Soft Computing}, v.~23, p. 27--38, 2014.}
 
 \bibitem[Bandara, Hyndman e Bergmeir 2021]{Bandara2021}
 \abntrefinfo{Bandara, Hyndman e Bergmeir}{BANDARA; HYNDMAN; BERGMEIR}{2021}
@@ -32,6 +48,18 @@ ISSN 26662558.}
   algorithm for time series with multiple seasonal patterns.
 \textbf{arXiv preprint arXiv:2107.13462}, 2021.
 Dispon{\'\i}vel em: \url{https://arxiv.org/abs/2107.13462}.}
+
+\bibitem[Barnes, Krishen e Hu 2023]{BARNES2023139587}
+\abntrefinfo{Barnes, Krishen e Hu}{BARNES; KRISHEN; HU}{2023}
+{BARNES, J.~L.; KRISHEN, A.~S.; HU, H. fen. Public tap water perceptions and
+  potable reuse acceptance: A cognitive dissonance theoretical understanding.
+\textbf{Journal of Cleaner Production}, v.~429, p. 139587, 2023.}
+
+\bibitem[Berglund, Skarbek e Kanta 2023]{BERGLUND2023104739}
+\abntrefinfo{Berglund, Skarbek e Kanta}{BERGLUND; SKARBEK; KANTA}{2023}
+{BERGLUND, E.~Z.; SKARBEK, M.; KANTA, L. A sociotechnical framework to
+  characterize tipping points in water supply systems.
+\textbf{Sustainable Cities and Society}, v.~97, p. 104739, 2023.}
 
 \bibitem[Bergmeir, Hyndman e Koo 2018]{Bergmeir2018}
 \abntrefinfo{Bergmeir, Hyndman e Koo}{BERGMEIR; HYNDMAN; KOO}{2018}
@@ -44,13 +72,6 @@ Dispon{\'\i}vel em: \url{https://arxiv.org/abs/2107.13462}.}
 {BHANGU, K.; SANDHU, J.; SAPRA, L. Time series analysis of covid-19 cases.
 \textbf{World Journal of Engineering}, v.~19, p. 40--48, 2022.
 ISSN 17085284.}
-
-\bibitem[Book 2023]{DeepLearningBook2023}
-\abntrefinfo{Book}{BOOK}{2023}
-{BOOK, D.~L. \textbf{Arquitetura de Redes Neurais: Gated Recurrent Unit (GRU)}.
-  2023.
-  \url{https://www.deeplearningbook.com.br/arquitetura-de-redes-neurais-gated-recurrent-unit-gru/}.
-Acessado em: 22 de Março de 2023.}
 
 \bibitem[Boroojeni et al. 2017]{Boroojeni2017}
 \abntrefinfo{Boroojeni et al.}{BOROOJENI et al.}{2017}
@@ -73,6 +94,12 @@ Dispon{\'\i}vel em:
   Forecasting}. [S.l.]: Springer New York, 2002.
 ISBN 978-0-387-95351-9.}
 
+\bibitem[Bueechi et al. 2023]{BUEECHI2023109596}
+\abntrefinfo{Bueechi et al.}{BUEECHI et al.}{2023}
+{BUEECHI, E. et al. Crop yield anomaly forecasting in the pannonian basin using
+  gradient boosting and its performance in years of severe drought.
+\textbf{Agricultural and Forest Meteorology}, v.~340, p. 109596, 2023.}
+
 \bibitem[Buyuksahin e Ertekin 2019]{2-s2.0-85069459067}
 \abntrefinfo{Buyuksahin e Ertekin}{BUYUKSAHIN; ERTEKIN}{2019a}
 {BUYUKSAHIN, U.; ERTEKIN. Improving forecasting accuracy of time series data
@@ -86,6 +113,12 @@ ISSN 09252312.}
   using a new ARIMA-ANN hybrid method and empirical mode decomposition}.
 \textbf{Neurocomputing}, v.~361, p. 151--163, 2019.}
 
+\bibitem[Candelieri et al. 2019]{CANDELIERI2019202}
+\abntrefinfo{Candelieri et al.}{CANDELIERI et al.}{2019}
+{CANDELIERI, A. et al. Tuning hyperparameters of a svm-based water demand
+  forecasting system through parallel global optimization.
+\textbf{Computers \& Operations Research}, v.~106, p. 202--209, 2019.}
+
 \bibitem[{Carvalho Jr.} e {Costa Jr.} 2019]{CarvalhoJr.2019}
 \abntrefinfo{{Carvalho Jr.} e {Costa Jr.}}{{Carvalho Jr.}; {Costa Jr.}}{2019}
 {{Carvalho Jr.}, J.~G.; {Costa Jr.}, C.~T. {Non-iterative procedure
@@ -97,6 +130,20 @@ ISSN 09252312.}
 ISSN 15684946 (ISSN).
 Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85064441622&doi=10.1016\%2Fj.asoc.2019.03.059&partnerID=40&md5=84d0bd291cc451de280dc9ed77524736}.}
+
+\bibitem[{Cesar de Lima Nogueira} et al. 2023]{CESARDELIMANOGUEIRA2023128066}
+\abntrefinfo{{Cesar de Lima Nogueira} et al.}{{Cesar de Lima Nogueira} et
+  al.}{2023}
+{{Cesar de Lima Nogueira}, S. et al. Prediction of the nox and co2 emissions
+  from an experimental dual fuel engine using optimized random forest combined
+  with feature engineering.
+\textbf{Energy}, v.~280, p. 128066, 2023.}
+
+\bibitem[Chen et al. 2023]{CHEN2023121710}
+\abntrefinfo{Chen et al.}{CHEN et al.}{2023}
+{CHEN, M. et al. The predictive management in campus heating system based on
+  deep reinforcement learning and probabilistic heat demands forecasting.
+\textbf{Applied Energy}, v.~350, p. 121710, 2023.}
 
 \bibitem[Chen et al. 2018]{Chen2018}
 \abntrefinfo{Chen et al.}{CHEN et al.}{2018}
@@ -139,17 +186,28 @@ ISBN 978-0-631-21584-4. Dispon{\'\i}vel em:
 ISSN 0006-3444.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1093/biomet/66.1.153}.}
 
+\bibitem[Dong et al. 2023]{DONG2023105579}
+\abntrefinfo{Dong et al.}{DONG et al.}{2023}
+{DONG, J. et al. Enhancing short-term forecasting of daily precipitation using
+  numerical weather prediction bias correcting with xgboost in different
+  regions of china.
+\textbf{Engineering Applications of Artificial Intelligence}, v.~117, p.
+  105579, 2023.}
+
+\bibitem[{dos Santos Coelho}, {Hultmann Ayala} e {Cocco Mariani}
+  2024]{DOSSANTOSCOELHO2024129366}
+\abntrefinfo{{dos Santos Coelho}, {Hultmann Ayala} e {Cocco Mariani}}{{dos
+  Santos Coelho}; {Hultmann Ayala}; {Cocco Mariani}}{2024}
+{{dos Santos Coelho}, L.; {Hultmann Ayala}, H.~V.; {Cocco Mariani}, V. Co and
+  nox emissions prediction in gas turbine using a novel modeling pipeline based
+  on the combination of deep forest regressor and feature engineering.
+\textbf{Fuel}, v.~355, p. 129366, 2024.}
+
 \bibitem[Du et al. 2020]{Du2020}
 \abntrefinfo{Du et al.}{DU et al.}{2020}
 {DU, S. et al. {Multivariate time series forecasting via attention-based
   encoder–decoder framework}.
 \textbf{Neurocomputing}, v.~388, p. 269--279, 2020.}
-
-\bibitem[Esposito 2021]{Esposito2021}
-\abntrefinfo{Esposito}{ESPOSITO}{2021}
-{ESPOSITO, P. \textbf{Análise de sentimento usando LSTM no PyTorch}. 2021.
-  \url{https://medium.com/turing-talks/an%C3%A1lise-de-sentimento-usando-lstm-no-pytorch-d90f001eb9d7}.
-Acessado em: 22 de Março de 2023.}
 
 \bibitem[Fouilloy et al. 2018]{2-s2.0-85054695177}
 \abntrefinfo{Fouilloy et al.}{FOUILLOY et al.}{2018}
@@ -157,6 +215,13 @@ Acessado em: 22 de Março de 2023.}
   Forecasting models selection method depending on weather variability.
 \textbf{Energy}, v.~165, p. 620--629, 2018.
 ISSN 03605442.}
+
+\bibitem[Gifford e Bayrak 2023]{GIFFORD2023100296}
+\abntrefinfo{Gifford e Bayrak}{GIFFORD; BAYRAK}{2023}
+{GIFFORD, M.; BAYRAK, T. A predictive analytics model for forecasting outcomes
+  in the national football league games using decision tree and logistic
+  regression.
+\textbf{Decision Analytics Journal}, v.~8, p. 100296, 2023.}
 
 \bibitem[Golyandina 2020]{Golyandina2020}
 \abntrefinfo{Golyandina}{GOLYANDINA}{2020}
@@ -185,13 +250,6 @@ Dispon{\'\i}vel em:
 \textbf{IEEE Transactions on Fuzzy Systems}, v.~26, p. 2807--2817, 2018.
 ISSN 10636706.}
 
-\bibitem[Gupta, Singh e Jain 2020]{2-s2.0-85097173237}
-\abntrefinfo{Gupta, Singh e Jain}{GUPTA; SINGH; JAIN}{2020}
-{GUPTA, S.; SINGH, S.; JAIN, P. Time series forecasting to improve predictive
-  modelling in public maternal healthcare data.
-\textbf{Recent Patents on Engineering}, v.~14, p. 422--439, 2020.
-ISSN 18722121.}
-
 \bibitem[Gustin, McLeod e Lomas 2018]{2-s2.0-85051469381}
 \abntrefinfo{Gustin, McLeod e Lomas}{GUSTIN; MCLEOD; LOMAS}{2018}
 {GUSTIN, M.; MCLEOD, R.; LOMAS, K. Forecasting indoor temperatures during
@@ -212,17 +270,12 @@ ISSN 03601323.}
 \textbf{Journal of Forecasting}, v.~42, p. 1385--1406, 2023.
 ISSN 02776693.}
 
-\bibitem[Hasan 2020]{Hasan2020}
-\abntrefinfo{Hasan}{HASAN}{2020}
-{HASAN, S. \textbf{Recurrent Neural Network and it’s variants}. 2020.
-  \url{https://medium.com/analytics-vidhya/recurrent-neural-network-and-its-variants-de75f9ee063}.
-Acessado em: 22 de Março de 2023.}
-
-\bibitem[Hedengren 2023]{apmonitor}
-\abntrefinfo{Hedengren}{HEDENGREN}{2023}
-{HEDENGREN, J.~D. \textbf{Machine Learning for Engineers - APMonitor}. 2023.
-[Online; accessed 21-September-2023].
-Dispon{\'\i}vel em: \url{https://apmonitor.com/pds/}.}
+\bibitem[Ji e Ahn 2023]{JI2023129928}
+\abntrefinfo{Ji e Ahn}{JI; AHN}{2023}
+{JI, S.; AHN, K.-H. Temperature change-informed future multisite streamflow
+  generation to support water supply vulnerability assessments under climate
+  change.
+\textbf{Journal of Hydrology}, v.~624, p. 129928, 2023.}
 
 \bibitem[Jordan, Sok\'{o}\l e Park 2021]{Jordan2021}
 \abntrefinfo{Jordan, Sok\'{o}\l e Park}{JORDAN; SOK\'{o}\L; PARK}{2021}
@@ -246,10 +299,23 @@ Dispon{\'\i}vel em:
   analysis and its departure from current machine learning.
 \textbf{arXiv preprint arXiv:2307.10234}, 2023.}
 
+\bibitem[Koebele et al. 2022]{10.2166/wp.2022.071}
+\abntrefinfo{Koebele et al.}{KOEBELE et al.}{2022}
+{KOEBELE, E.~A. et al. {A role for water markets in enhancing water security in
+  the western United States?: Lessons from the Walker River Basin}.
+\textbf{Water Policy}, v.~24, n.~11, p. 1757--1771, 2022.}
+
 \bibitem[Korstanje 2021]{korstanje2021}
 \abntrefinfo{Korstanje}{KORSTANJE}{2021}
 {KORSTANJE, J. \textbf{Advanced Forecasting with Python}. [S.l.]: Springer,
   2021.}
+
+\bibitem[Kothona et al. 2023]{KOTHONA2023101149}
+\abntrefinfo{Kothona et al.}{KOTHONA et al.}{2023}
+{KOTHONA, D. et al. Deep learning forecasting tool facilitating the
+  participation of photovoltaic systems into day-ahead and intra-day
+  electricity markets.
+\textbf{Sustainable Energy, Grids and Networks}, v.~36, p. 101149, 2023.}
 
 \bibitem[Kulshreshtha e Vijayalakshmi 2020]{Kulshreshtha2020}
 \abntrefinfo{Kulshreshtha e Vijayalakshmi}{KULSHRESHTHA; VIJAYALAKSHMI}{2020a}
@@ -319,6 +385,12 @@ ISSN 0306-2619.}
   2022.
 ISSN 08848173.}
 
+\bibitem[Liu e Fu 2023]{LIU2023128730}
+\abntrefinfo{Liu e Fu}{LIU; FU}{2023}
+{LIU, J.; FU, Y. Renewable energy forecasting: A self-supervised learning-based
+  transformer variant.
+\textbf{Energy}, v.~284, p. 128730, 2023.}
+
 \bibitem[Liu e Xu 2022]{Liu2022}
 \abntrefinfo{Liu e Xu}{LIU; XU}{2022}
 {LIU, J.; XU, Y. T-friedman test: A new statistical test for multiple
@@ -386,12 +458,25 @@ ISSN 00104825.}
   memristor-based reservoir computing system}.
 \textbf{Nature Electronics}, v.~2, n.~10, p. 480--487, 2019.}
 
+\bibitem[Nasiri e Ebadzadeh 2023]{NASIRI2023110867}
+\abntrefinfo{Nasiri e Ebadzadeh}{NASIRI; EBADZADEH}{2023}
+{NASIRI, H.; EBADZADEH, M.~M. Multi-step-ahead stock price prediction using
+  recurrent fuzzy neural network and variational mode decomposition.
+\textbf{Applied Soft Computing}, v.~148, p. 110867, 2023.}
+
 \bibitem[O'Donncha et al. 2022]{2-s2.0-85130875471}
 \abntrefinfo{O'Donncha et al.}{O'DONNCHA et al.}{2022}
 {O'DONNCHA, F. et al. A spatio-temporal lstm model to forecast across multiple
   temporal and spatial scales.
 \textbf{Ecological Informatics}, v.~69, 2022.
 ISSN 15749541.}
+
+\bibitem[Oliveira, Steffen e Cheung 2017]{OLIVEIRA2017177}
+\abntrefinfo{Oliveira, Steffen e Cheung}{OLIVEIRA; STEFFEN; CHEUNG}{2017}
+{OLIVEIRA, P.~J.; STEFFEN, J.~L.; CHEUNG, P. Parameter estimation of seasonal
+  arima models for water demand forecasting using the harmony search algorithm.
+\textbf{Procedia Engineering}, v.~186, p. 177--185, 2017.
+XVIII International Conference on Water Distribution Systems, WDSA2016.}
 
 \bibitem[Pawłowski et al. 2022]{PAWLOWSKI202298}
 \abntrefinfo{Pawłowski et al.}{PAWłOWSKI et al.}{2022}
@@ -433,12 +518,26 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \url{https://towardsdatascience.com/time-series-forecasting-with-arima-sarima-and-sarimax-ee61099e78f6}.}
 
+\bibitem[Qin et al. 2023]{QIN2023543}
+\abntrefinfo{Qin et al.}{QIN et al.}{2023}
+{QIN, Y. et al. Spatio-temporal hierarchical mlp network for traffic
+  forecasting.
+\textbf{Information Sciences}, v.~632, p. 543--554, 2023.}
+
 \bibitem[Ramos 2010]{ramos2010previsoes}
 \abntrefinfo{Ramos}{RAMOS}{2010}
 {RAMOS, A.~S.
 \textbf{Previs\~oes de S\'eries Temporais combinando modelos ARMA e Redes
   Neurais Artificiais}.
 Tese (Doutorado) --- Universidade Federal de Pernambuco, 2010.}
+
+\bibitem[Rao, Zhao e Deng 2020]{RAO2020107851}
+\abntrefinfo{Rao, Zhao e Deng}{RAO; ZHAO; DENG}{2020}
+{RAO, X.; ZHAO, H.; DENG, Q. Artificial-neural-network (ann) based proxy model
+  for performances forecast and inverse project design of water huff-n-puff
+  technology.
+\textbf{Journal of Petroleum Science and Engineering}, v.~195, p. 107851,
+  2020.}
 
 \bibitem[Raschka 2015]{raschka2015practical}
 \abntrefinfo{Raschka}{RASCHKA}{2015}
@@ -469,6 +568,12 @@ Dispon{\'\i}vel em:
 Cited By 1.
 Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-84986317325&doi=10.1007\%2fs00184-016-0594-8&partnerID=40&md5=c83f82d0c372e22d5970aff448f05411}.}
+
+\bibitem[Ribeiro et al. 2023]{RIBEIRO2023112982}
+\abntrefinfo{Ribeiro et al.}{RIBEIRO et al.}{2023}
+{RIBEIRO, M. H. D.~M. et al. Cooperative ensemble learning model improves
+  electric short-term load forecasting.
+\textbf{Chaos, Solitons \& Fractals}, v.~166, p. 112982, 2023.}
 
 \bibitem[Ribeiro et al. 2021]{mateus}
 \abntrefinfo{Ribeiro et al.}{RIBEIRO et al.}{2021}
@@ -510,6 +615,13 @@ ISSN 0941-0643.}
 ISSN 1588-2861.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s11192-019-03213-w}.}
 
+\bibitem[Sabzipour et al. 2023]{SABZIPOUR2023130380}
+\abntrefinfo{Sabzipour et al.}{SABZIPOUR et al.}{2023}
+{SABZIPOUR, B. et al. Comparing a long short-term memory (lstm) neural network
+  with a physically-based hydrological model for streamflow forecasting over a
+  canadian catchment.
+\textbf{Journal of Hydrology}, v.~627, p. 130380, 2023.}
+
 \bibitem[Sadaei et al. 2019]{2-s2.0-85063200888}
 \abntrefinfo{Sadaei et al.}{SADAEI et al.}{2019a}
 {SADAEI, H. et al. Short-term load forecasting by using a combined method of
@@ -550,6 +662,13 @@ ISSN 10840699.}
 Dispon{\'\i}vel em:
   \url{https://www.ijert.org/gated-recurrent-units-gru-for-time-series-forecasting-in-higher-education}.}
 
+\bibitem[Seman et al. 2023]{SEMAN2023109269}
+\abntrefinfo{Seman et al.}{SEMAN et al.}{2023}
+{SEMAN, L.~O. et al. Ensemble learning methods using the hodrick–prescott
+  filter for fault forecasting in insulators of the electrical power grids.
+\textbf{International Journal of Electrical Power \& Energy Systems}, v.~152,
+  p. 109269, 2023.}
+
 \bibitem[Sen et al. 2022]{sen2022machine}
 \abntrefinfo{Sen et al.}{SEN et al.}{2022}
 {SEN, J. et al. Machine learning: Algorithms, models, and applications.
@@ -581,6 +700,13 @@ ISSN 09252312.}
 {SHEN, Z. et al. {A novel time series forecasting model with deep learning}.
 \textbf{Neurocomputing}, v.~396, p. 302--313, 2020.}
 
+\bibitem[Shi et al. 2023]{SHI2023110022}
+\abntrefinfo{Shi et al.}{SHI et al.}{2023}
+{SHI, M. et al. Ensemble regression based on polynomial regression-based
+  decision tree and its application in the in-situ data of tunnel boring
+  machine.
+\textbf{Mechanical Systems and Signal Processing}, v.~188, p. 110022, 2023.}
+
 \bibitem[Shih, Sun e Lee 2019]{2-s2.0-85067419084}
 \abntrefinfo{Shih, Sun e Lee}{SHIH; SUN; LEE}{2019a}
 {SHIH, S.-Y.; SUN, F.-K.; LEE, H.-Y. Temporal pattern attention for
@@ -594,12 +720,12 @@ ISSN 08856125.}
   multivariate time series forecasting}.
 \textbf{Machine Learning}, v.~108, n.~8-9, p. 1421--1441, 2019.}
 
-\bibitem[Sholtanyuk 2020]{2-s2.0-85082955699}
-\abntrefinfo{Sholtanyuk}{SHOLTANYUK}{2020}
-{SHOLTANYUK, S. Comparative analysis of neural networking and regression models
-  for time series forecasting.
-\textbf{Pattern Recognition and Image Analysis}, v.~30, p. 34--42, 2020.
-ISSN 10546618.}
+\bibitem[Siegel et al. 2020]{SIEGEL2020103481}
+\abntrefinfo{Siegel et al.}{SIEGEL et al.}{2020}
+{SIEGEL, J.~E. et al. Safe energy savings through context-aware hot water
+  demand prediction.
+\textbf{Engineering Applications of Artificial Intelligence}, v.~90, p. 103481,
+  2020.}
 
 \bibitem[Silva e Gomes 2021]{Silva2021}
 \abntrefinfo{Silva e Gomes}{SILVA; GOMES}{2021}
@@ -609,18 +735,31 @@ ISSN 10546618.}
 Dispon{\'\i}vel em:
   \url{https://www.scielo.br/j/ea/a/wXBdv8yHBV9xHz8qG5RCgZd/}.}
 
-\bibitem[Silva 2003]{silva2003redes}
-\abntrefinfo{Silva}{SILVA}{2003}
-{SILVA, J. M.~N. \textbf{Redes Neurais Artificiais: Rede Hopfield e Redes
-  Estocásticas}. 2003.
-Dispon{\'\i}vel em: \url{http://profs.ic.uff.br/~jsilva/monografia\_RNA.pdf}.}
-
 \bibitem[Silva 2021]{silva_2021}
 \abntrefinfo{Silva}{SILVA}{2021}
 {SILVA, J.~P. \textbf{Como funcionam as Redes Neurais Convolucionais (CNNs)}.
   2021.
   \url{https://medium.com/data-hackers/como-funcionam-as-redes-neurais-convolucionais-cnns-71978185c1}.
 Acessado em 04/05/2023.}
+
+\bibitem[{Singh Kushwah} et al. 2022]{SINGHKUSHWAH20223571}
+\abntrefinfo{{Singh Kushwah} et al.}{{Singh Kushwah} et al.}{2022}
+{{Singh Kushwah}, J. et al. Comparative study of regressor and classifier with
+  decision tree using modern tools.
+\textbf{Materials Today: Proceedings}, v.~56, p. 3571--3576, 2022.
+First International Conference on Design and Materials.}
+
+\bibitem[Stefenon et al. 2023]{en16031371}
+\abntrefinfo{Stefenon et al.}{STEFENON et al.}{2023}
+{STEFENON, S.~F. et al. Aggregating prophet and seasonal trend decomposition
+  for time series forecasting of italian electricity spot prices.
+\textbf{Energies}, v.~16, n.~3, 2023.}
+
+\bibitem[Sun, Liu e Sima 2020]{SUN2020101084}
+\abntrefinfo{Sun, Liu e Sima}{SUN; LIU; SIMA}{2020}
+{SUN, X.; LIU, M.; SIMA, Z. A novel cryptocurrency price trend forecasting
+  model based on lightgbm.
+\textbf{Finance Research Letters}, v.~32, p. 101084, 2020.}
 
 \bibitem[Taieb e Atiya 2016]{Taieb2016}
 \abntrefinfo{Taieb e Atiya}{TAIEB; ATIYA}{2016}
@@ -669,6 +808,14 @@ Dispon{\'\i}vel em:
 {TRENBERTH, K.~E. Signal versus noise in the southern oscillation.
 \textbf{Monthly Weather Review}, v.~112, n.~2, p. 326--332, 1984.}
 
+\bibitem[Tsatsou, Frantzeskaki e Malamis 2023]{TSATSOU2023136325}
+\abntrefinfo{Tsatsou, Frantzeskaki e Malamis}{TSATSOU; FRANTZESKAKI;
+  MALAMIS}{2023}
+{TSATSOU, A.; FRANTZESKAKI, N.; MALAMIS, S. Nature-based solutions for circular
+  urban water systems: A scoping literature review and a proposal for urban
+  design and planning.
+\textbf{Journal of Cleaner Production}, v.~394, p. 136325, 2023.}
+
 \bibitem[Tyralis e Papacharalampous 2017]{Tyralis2017}
 \abntrefinfo{Tyralis e Papacharalampous}{TYRALIS; PAPACHARALAMPOUS}{2017a}
 {TYRALIS, H.; PAPACHARALAMPOUS, G. {Variable selection in time series
@@ -681,6 +828,13 @@ Dispon{\'\i}vel em:
   forecasting using random forests.
 \textbf{Algorithms}, v.~10, 2017.
 ISSN 19994893.}
+
+\bibitem[Uc-Castillo et al. 2023]{UCCASTILLO2023105788}
+\abntrefinfo{Uc-Castillo et al.}{UC-CASTILLO et al.}{2023}
+{UC-CASTILLO, J.~L. et al. A systematic review and meta-analysis of groundwater
+  level forecasting with machine learning techniques: Current status and future
+  directions.
+\textbf{Environmental Modelling \& Software}, v.~168, p. 105788, 2023.}
 
 \bibitem[Ursu e Pereau 2016]{Ursu2016}
 \abntrefinfo{Ursu e Pereau}{URSU; PEREAU}{2016}
@@ -697,11 +851,6 @@ ISSN 1436-3240.}
 Dispon{\'\i}vel em:
   \url{https://www.brasildefato.com.br/2020/11/03/falta-d-agua-em-curitiba-e-regiao-metropolitana-nao-e-culpa-so-da-estiagem}.}
 
-\bibitem[Vaswani et al. 2017]{vaswani2017attention}
-\abntrefinfo{Vaswani et al.}{VASWANI et al.}{2017}
-{VASWANI, A. et al. Attention is all you need. In:  \textbf{Advances in Neural
-  Information Processing Systems}. [S.l.: s.n.], 2017.}
-
 \bibitem[Vidhya 2023]{arima}
 \abntrefinfo{Vidhya}{VIDHYA}{2023}
 {VIDHYA, A. \textbf{Time Series Forecasting and Analysis — ARIMA and Seasonal
@@ -717,14 +866,26 @@ Dispon{\'\i}vel em:
 \textbf{Neural Networks}, v.~126, p. 191--217, 2020.}
 
 \bibitem[Wang et al. 2016]{2-s2.0-84973369468}
-\abntrefinfo{Wang et al.}{WANG et al.}{2016a}
+\abntrefinfo{Wang et al.}{WANG et al.}{2016}
 {WANG, J. et al. Financial time series prediction using elman recurrent random
   neural networks.
 \textbf{Computational Intelligence and Neuroscience}, v.~2016, 2016.
 ISSN 16875265.}
 
+\bibitem[Wang et al. 2022]{WANG2022122747}
+\abntrefinfo{Wang et al.}{WANG et al.}{2022}
+{WANG, L. et al. Hybrid application of unsupervised and supervised learning in
+  forecasting absolute open flow potential for shale gas reservoirs.
+\textbf{Energy}, v.~243, p. 122747, 2022.}
+
+\bibitem[Wang e Ying 2023]{WANG2023116247}
+\abntrefinfo{Wang e Ying}{WANG; YING}{2023}
+{WANG, M.; YING, F. Point and interval prediction for significant wave height
+  based on lstm-gru and kde.
+\textbf{Ocean Engineering}, v.~289, p. 116247, 2023.}
+
 \bibitem[Wang et al. 2016]{Wang2016}
-\abntrefinfo{Wang et al.}{WANG et al.}{2016b}
+\abntrefinfo{Wang et al.}{WANG et al.}{2016}
 {WANG, Y. et al. {Recycling combustion ash for sustainable cement production: A
   critical review with data-mining and time-series predictive models}.
 \textbf{CONSTRUCTION AND BUILDING MATERIALS}, v.~123, p. 673--689, 2016.
@@ -736,6 +897,12 @@ ISSN 0950-0618.}
   improved artificial fish swarm optimization algorithm.
 \textbf{Soft Computing}, v.~22, p. 3907--3917, 2018.
 ISSN 14327643.}
+
+\bibitem[Xiang et al. 2018]{XIANG2018874}
+\abntrefinfo{Xiang et al.}{XIANG et al.}{2018}
+{XIANG, Y. et al. A svr–ann combined model based on ensemble emd for rainfall
+  prediction.
+\textbf{Applied Soft Computing}, v.~73, p. 874--883, 2018.}
 
 \bibitem[Xu et al. 2019]{Xu2019}
 \abntrefinfo{Xu et al.}{XU et al.}{2019a}
@@ -764,10 +931,22 @@ ISSN 13430130.}
   divide and conquer scheme: A case study in China}.
 \textbf{Journal of Cleaner Production}, v.~222, p. 942--959, 2019.}
 
+\bibitem[Ye, Zhao e Deng 2023]{YE2023407}
+\abntrefinfo{Ye, Zhao e Deng}{YE; ZHAO; DENG}{2023}
+{YE, J.; ZHAO, B.; DENG, H. Photovoltaic power prediction model using pre-train
+  and fine-tune paradigm based on lightgbm and xgboost.
+\textbf{Procedia Computer Science}, v.~224, p. 407--412, 2023.}
+
 \bibitem[Zhang 2021]{Zhang2021}
 \abntrefinfo{Zhang}{ZHANG}{2021}
 {ZHANG, E. \textbf{Recurrent Neural Network is All You Need}. 2021.
   \url{https://medium.com/mcgill-mma-intro-to-ai/recurrent-neural-network-is-all-you-need-f576782c5d2}.
 Acessado em: 22 de Março de 2023.}
+
+\bibitem[Zhao et al. 2023]{ZHAO2023114136}
+\abntrefinfo{Zhao et al.}{ZHAO et al.}{2023}
+{ZHAO, L. et al. A hybrid vmd-lstm/gru model to predict non-stationary and
+  irregular waves on the east coast of china.
+\textbf{Ocean Engineering}, v.~276, p. 114136, 2023.}
 
 \end{thebibliography}

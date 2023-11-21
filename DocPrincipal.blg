@@ -22,14 +22,6 @@ A level-1 auxiliary file: Pretextuais/listas.aux
 Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: Pretextuais/lista-simbolos.aux
 Reallocating 'name_of_file' (item size: 1) to 30 items.
-A level-1 auxiliary file: Introducao/sec-introducao.aux
-Reallocating 'name_of_file' (item size: 1) to 24 items.
-A level-1 auxiliary file: Revisao/sec-revisao.aux
-Reallocating 'name_of_file' (item size: 1) to 24 items.
-A level-1 auxiliary file: Modelos/sec-modelos.aux
-Reallocating 'name_of_file' (item size: 1) to 30 items.
-A level-1 auxiliary file: Resultados/sec-resultados.aux
-Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: Conclusoes/sec-conclusoes.aux
 Reallocating 'name_of_file' (item size: 1) to 34 items.
 A level-1 auxiliary file: Bibliografia/sec-bibliografia.aux
@@ -46,84 +38,88 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
-Reallocating 'field_info' (item size: 4) to 12590 items.
+Reallocating 'field_info' (item size: 4) to 14453 items.
 Database file #1: abntex2-options.bib
 Database file #2: Bibliografia/Dissert2.bib
+Repeated entry---line 591 of file Bibliografia/Dissert2.bib
+ : @article{UCCASTILLO2023105788
+ :                              ,
+I'm skipping whatever remains of this entry
 Warning--entry type for "sarima" isn't style-file defined
---line 739 of file Bibliografia/Dissert2.bib
-Repeated entry---line 2063 of file Bibliografia/Dissert2.bib
+--line 1345 of file Bibliografia/Dissert2.bib
+Repeated entry---line 2669 of file Bibliografia/Dissert2.bib
  : @article{2-s2.0-85048003524
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2089 of file Bibliografia/Dissert2.bib
+Repeated entry---line 2695 of file Bibliografia/Dissert2.bib
  : @article{2-s2.0-84973369468
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2443 of file Bibliografia/Dissert2.bib
+Repeated entry---line 3049 of file Bibliografia/Dissert2.bib
  : @article{2-s2.0-84964575877
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3337 of file Bibliografia/Dissert2.bib
+Repeated entry---line 3943 of file Bibliografia/Dissert2.bib
  : @article{lstm
  :              ,
 I'm skipping whatever remains of this entry
-I was expecting an "="---line 3995 of file Bibliografia/Dissert2.bib
+I was expecting an "="---line 4601 of file Bibliografia/Dissert2.bib
  :  funding_text 
  :               1={This work is funded by the French spatial agency ( CNES ) and the French mapping agency ( IGN ), and it has been carried out at CESBIO laboratory – supported by the University Paul Sabatier, CNRS (Centre National de la Recherche Scientifique), CNES, IRD (Institut de Recherche pour le Développement) – and MATIS laboratory supported by IGN.},
 I'm skipping whatever remains of this entry
-Repeated entry---line 9899 of file Bibliografia/Dissert2.bib
+Repeated entry---line 10505 of file Bibliografia/Dissert2.bib
  : @article{Zhang2021
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 11443 of file Bibliografia/Dissert2.bib
+Repeated entry---line 12049 of file Bibliografia/Dissert2.bib
  : @article{Bandara2021
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 13601 of file Bibliografia/Dissert2.bib
+Repeated entry---line 14207 of file Bibliografia/Dissert2.bib
  : @article{Li2020
  :                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 13623 of file Bibliografia/Dissert2.bib
+Repeated entry---line 14229 of file Bibliografia/Dissert2.bib
  : @article{Du2020
  :                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 13645 of file Bibliografia/Dissert2.bib
+Repeated entry---line 14251 of file Bibliografia/Dissert2.bib
  : @article{Kulshreshtha2020
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 13669 of file Bibliografia/Dissert2.bib
+Repeated entry---line 14275 of file Bibliografia/Dissert2.bib
  : @article{Samanta2020
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 13691 of file Bibliografia/Dissert2.bib
+Repeated entry---line 14297 of file Bibliografia/Dissert2.bib
  : @article{Xu2019
  :                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 13715 of file Bibliografia/Dissert2.bib
+Repeated entry---line 14321 of file Bibliografia/Dissert2.bib
  : @article{Graff2017
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 14169 of file Bibliografia/Dissert2.bib
+Repeated entry---line 14775 of file Bibliografia/Dissert2.bib
  : @article{Salgotra2020
  :                      ,
 I'm skipping whatever remains of this entry
-"}" immediately follows an entry type---line 14199 of file Bibliografia/Dissert2.bib
+"}" immediately follows an entry type---line 14805 of file Bibliografia/Dissert2.bib
  :  correspondence_address1={Salgotra, R.; Dept. of ECE, India; email: r.03dec@gmail.com
  :                                                                                      },
 I'm skipping whatever remains of this entry
-Repeated entry---line 14317 of file Bibliografia/Dissert2.bib
+Repeated entry---line 14923 of file Bibliografia/Dissert2.bib
  : @article{Shen2020
  :                  ,
 I'm skipping whatever remains of this entry
-")" immediately follows an entry type---line 14333 of file Bibliografia/Dissert2.bib
+")" immediately follows an entry type---line 14939 of file Bibliografia/Dissert2.bib
  :  affiliation={School of Artificial Intelligence, Xidian University, 47905 Xi'an, Shaanxi China (e-mail: f.shen@qq.com
  :                                                                                                                      ); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: neouma@163.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: kaiwu@stu.xidian.edu.cn)},
 I'm skipping whatever remains of this entry
-You're missing an entry type---line 14333 of file Bibliografia/Dissert2.bib
+You're missing an entry type---line 14939 of file Bibliografia/Dissert2.bib
  :  affiliation={School of Artificial Intelligence, Xidian University, 47905 Xi'an, Shaanxi China (e-mail: f.shen@qq.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: neouma@
  :                                                                                                                                                                                                                         163.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: kaiwu@stu.xidian.edu.cn)},
 I'm skipping whatever remains of this entry
-")" immediately follows an entry type---line 14333 of file Bibliografia/Dissert2.bib
+")" immediately follows an entry type---line 14939 of file Bibliografia/Dissert2.bib
  :  affiliation={School of Artificial Intelligence, Xidian University, 47905 Xi'an, Shaanxi China (e-mail: f.shen@qq.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: neouma@163.com); School of Artificial Intelligence, Xidian University, 47905 Xian, Shaanxi China (e-mail: kaiwu@stu.xidian.edu.cn
  :                                                                                                                                                                                                                                                                                                                                                   )},
 I'm skipping whatever remains of this entry
@@ -136,45 +132,45 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 110 entries,
+You've used 137 entries,
             6714 wiz_defined-function locations,
-            1917 strings with 34478 characters,
-and the built_in function-call counts, 144162 in all, are:
-= -- 14849
-> -- 3787
-< -- 2848
-+ -- 4051
-- -- 1119
-* -- 9852
-:= -- 17854
-add.period$ -- 424
-call.type$ -- 110
-change.case$ -- 1275
-chr.to.int$ -- 344
-cite$ -- 108
-duplicate$ -- 12305
-empty$ -- 6423
-format.name$ -- 5408
-if$ -- 30182
-int.to.chr$ -- 9
+            2103 strings with 41719 characters,
+and the built_in function-call counts, 170024 in all, are:
+= -- 16524
+> -- 5073
+< -- 2872
++ -- 4464
+- -- 1487
+* -- 11893
+:= -- 21104
+add.period$ -- 494
+call.type$ -- 137
+change.case$ -- 1677
+chr.to.int$ -- 471
+cite$ -- 135
+duplicate$ -- 13523
+empty$ -- 7929
+format.name$ -- 7224
+if$ -- 36439
+int.to.chr$ -- 8
 int.to.str$ -- 0
-missing$ -- 1947
-newline$ -- 623
-num.names$ -- 540
-pop$ -- 2454
+missing$ -- 2445
+newline$ -- 757
+num.names$ -- 675
+pop$ -- 3149
 preamble$ -- 1
-purify$ -- 468
+purify$ -- 607
 quote$ -- 0
-skip$ -- 12605
+skip$ -- 13950
 stack$ -- 1
-substring$ -- 6726
-swap$ -- 4996
-text.length$ -- 205
+substring$ -- 7649
+swap$ -- 5779
+text.length$ -- 271
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 10
+type$ -- 9
 warning$ -- 0
-while$ -- 844
+while$ -- 1043
 width$ -- 0
-write$ -- 1794
-(There were 19 error messages)
+write$ -- 2234
+(There were 20 error messages)

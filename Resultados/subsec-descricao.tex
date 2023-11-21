@@ -1,69 +1,50 @@
-\subsection{Descri\c c\~ao das Etapas}
 
-\textbf{An\'alise explorat\'oria dos dados (EDA)}
-a partir da \ref{etp:1}, foi realizado o EDA (do inglês \textit{Exploratory Data Analysis}) para processar os dados obtidos até o momento. A análise exploratória de dados foi promovida por John Tukey \cite{Bandara2021} como uma abordagem para explorar os dados, resumir suas principais características e formular hipóteses que possam direcionar a coleta adicional de dados e experimentos. No contexto de análises de dados, várias técnicas de EDA têm sido adotadas.
-Nessa análise da EDA, serão abordadas várias análises, como a correlação de Pearson, para iniciar e verificar quais variáveis podem ser excluídas como ruído e não têm correlação com a variável LT01. Nesse caso, as variáveis retiradas são consideradas negativas e têm pouca correlação com o LT01, as únicas variáveis que apresentam correlação negativa são B3 e FT02, mesmo sendo uma correlação negativa, essas variáveis possuem uma correlação inviável ou próxima de $0$, levando à decisão de removê-las.
+\subsection{An\'alise Explorat\'oria dos Dados}
 
-Uma análise bem feita do EDA mostra tudo que os dados podem ter. Esses dados fornecidos pela companhia SANEPAR são coletados em campo por hora, como por exemplo, a cada hora possui um valor esperado. Nisso, pode haver os famosos NaN, que representam a falta de dado coletado, como em um dia em que as bombas podem ter ido para manutenção. Esses NaNs também podem ser registrados como uma anomalia nos dados.
+Os dados foram processados usando a  análise exploratória de dados, em inglês \textit{Exploratory Data Analysis} (EDA)  \cite{Bandara2021} resumindo suas principais características, e formulando hipóteses que possam direcionar a coleta adicional de dados, se necessária. 
 
-A Figura \ref{fig:person} mostra a correlação entre as variáveis no conjunto de dados em questão. Essa imagem representa graficamente a relação entre as variáveis e é usada para evidenciar a existência de uma correlação forte no valor de $0,97$ é considerada forte entre elas, quanto mais próximo do valor $1$ a correlação é sempre forte e $0,9$ para mais ou para menos indica uma correlação muito forte, 0 a $0,3$ positivo ou negativo indica uma correlação desprezível.
+Existem dados anômalos com NaN, do inglês \textit{Not a Number} que representam a falta de dados coletados, logo tais dados foram interpolados usando os valores existentes e vizinhos a ele. 
+
+Assim como em qualquer empresa de saneamento básico e tratamento de água, é utilizado um mecanismo de acionamento automático denominado trava de segurança para evitar que o nível do tanque se aproxime de zero e haja falta de água nos locais abastecidos por esse tanque. O nível máximo que o tanque pode alcançar é de $5,26 m^3$ (equivalente a $5264.56$ litros). As bombas são ativadas em sua potência máxima para evitar que sejam acionadas quando o nível do tanque estiver dentro dessa faixa. No entanto, a bomba $1$ ainda estaria operando para completar o nível do tanque caso esteja dentro dessa faixa. 
+
+Na Tabela \ref{tb:est}, o desvio padrão é representado pela sigla STD, que corresponde à expressão em inglês \textit{STandard Deviation}. A quantidade de dados medidos hora a hora pela SANEPAR de 2018 a 2019 são de 17.522.
+
+\begin{table}[!htb]
+	\centering
+	\caption{Descrição estatística dos dados de 2018 a 2019}\label{tb:est}
+	\begin{tabular}{@{}llllllllll@{}}
+		\toprule
+		\textbf{Métricas} & \textbf{B1} & \textbf{B2} & \textbf{B3} & \textbf{LT01} & \textbf{FT01} & \textbf{FT02} & \textbf{FT03} & \textbf{PT01} & \textbf{PT02} \\ \midrule
+		\textbf{Média}    & 52,289      & 18,421      & 3,338       & 3,513         & 215,699       & 114,832       & 104,195       & 4,448         & 20,724        \\
+		\textbf{STD}      & 11,421      & 19,742      & 12,624      & 0,670         & 110,223       & 43,604        & 25,636        & 0,700         & 3,610         \\
+		\textbf{Min.}     & 0           & 0           & 0           & 0,294         & 0             & 0             & 0             & 0,842         & 0             \\
+		\textbf{25\%}     & 49,519      & 0           & 0           & 3,077         & 255,454       & 74,912        & 81,430        & 4,015         & 18,072        \\
+		\textbf{50\%}     & 57,925      & 0,050       & 0           & 3,715         & 265,357       & 122,149       & 109,911       & 4,602         & 21,791        \\
+		\textbf{75\%}     & 57,989      & 36,796      & 0           & 4,047         & 272,609       & 145,865       & 123,189       & 4,990         & 23,051        \\
+		\textbf{Max.}     & 59,988      & 59,992      & 59,988      & 4,445         & 390,683       & 400,415       & 183,900       & 5,639         & 29,008        \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+No contexto de análises de dados várias técnicas de EDA têm sido adotadas.
+Neste estudo serão abordadas várias análises entre elas correlação de Pearson, para verificar quais variáveis podem ser excluídas tais como ruídos (correlação baixa) ou altamente correlacionadas com a variável de saída do nosso estudo, que será a variável LT01, nível do tanque de armazenamento de água pela SANEPAR no Bairro Alto. Nesse caso, as variáveis removidas tem pouca correlação com a LT01, as que apresentam correlação baixa são B3 e FT02 e serão removidas.
+
+A Figura \ref{fig:person} mostra a correlação de Pearson entre as variáveis do conjunto de dados deste estudo. Essa figura representa a matriz (simétrica) da dependência/correlação entre as variáveis. Analisamos as correlações das variáveis de entrada com a variável de saída. Serão descartadas as variáveis com correlação menor que 5\% e maior que 90\%.
 
 \begin{figure}[!htb]
 	\centering
 	\caption{Correlação de Pearson}
-	\label{fig:person}
-	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/person}
-	
+	\label{fig:person}	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/person}
 	
 \end{figure}
 
-Nesse conjunto de dados que está sendo trabalhado, há uma forte correlação da variável PT01 nos modelos de LR e DTR (do inglês \textit{Decision Tree Regressor}). Esses modelos foram escolhidos para trabalhar com o LT01 como entrada e o PT01 como saída. A Figura \ref{fig:lr-lt01-m3} fornece uma representação dos coeficientes $\beta_0$ e $\beta_1$. Um aumento de $1$ na variável $x$ está associado a um aumento proporcional de $\beta_1$ na variável $y$. O valor de $\beta_0$ representa o valor de $y$ quando $x$ é igual a $0$.
+Nesse conjunto de dados que está sendo trabalhado, há uma forte correlação da variável PT01 com o LT01 conforme visto na Figura \ref{fig:lr-lt01-m3} que fornece uma representação dos coeficientes $\beta_0$ e $\beta_1$, que são os coeficientes da correlação linear entre as variáveis. Um aumento de $1$ na variável $x$ está associado a um aumento proporcional de $\beta_1$ na variável $y$. O valor de $\beta_0$ representa o valor de $y$ quando $x$ é igual a $0$.
 
 \begin{figure}[!htb]
 	\centering
-	\caption{Regressão linear LT01 vs PT01 correlação 97\%}
+	\caption{Relação entre LT01 e PT01 cuja correlação de Pearson é 97\%}
 	\label{fig:lr-lt01-m3}
 	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/LR}
-	
-	
 \end{figure}
-
-
-
-
-
-
-
-
-A Tabela \ref{tb:est}, o desvio padrão é representado pela sigla STD, que corresponde à expressão em inglês \textit{standard deviation}. Assim como em qualquer empresa de tratamento de água, é utilizado um mecanismo de acionamento automático denominado ``trava de segurança'' para evitar que o nível do tanque se aproxime de zero e haja falta de água nos locais abastecidos por esse tanque. O nível máximo que o tanque pode alcançar é de $5,26 m^3$ (equivalente a $5264.56$ litros). As bombas são ativadas em sua potência máxima para evitar que sejam acionadas quando o nível do tanque estiver dentro dessa faixa. No entanto, a bomba $1$ ainda estaria operando para completar o nível do tanque caso esteja dentro dessa faixa. Nessa Tabela \ref{tb:est}, foram filtrados os horários de pico nos quais pode ocorrer a maior demanda d'água.
-
-\begin{table}[!htb]
-	\centering
-	\caption{Descrição estatística dos dados com o filtro aplicado das 18h às 21h}\label{tb:est}
-	\begin{tabular}{@{}cccccccccc@{}}
-		\toprule
-		\multicolumn{1}{l}{\textbf{18h a 21h}} & \multicolumn{1}{c}{\textbf{B1}} & \multicolumn{1}{c}{\textbf{B2}} & \multicolumn{1}{c}{\textbf{B3}} & \multicolumn{1}{c}{\textbf{LT01}} & \multicolumn{1}{c}{\textbf{FT01}} & \multicolumn{1}{c}{\textbf{FT02}} & \multicolumn{1}{c}{\textbf{FT03}} & \multicolumn{1}{c}{\textbf{PT01}} & \multicolumn{1}{c}{\textbf{PT02}} \\ \midrule
-		\textbf{Contagem}                      & 2921                            & 2921                            & 2921                            & 2921                              & 2921                              & 2921                              & 2921                              & 2921                              & 2921                              \\
-		\textbf{Média}                         & 55,98                           & 30,60                           & 5,26                            & 3,18                              & 86,52                             & 132,87                            & 117,62                            & 4,04                              & 22,55                             \\
-		\textbf{STD}                           & 10,00                           & 15,63                           & 15,57                           & 0,67                              & 124,41                            & 18,48                             & 12,83                             & 0,71                              & 2,92                              \\
-		\textbf{Min.}                          & 0                               & 0                               & 0                               & 0,29                              & 0                                 & 0                                 & 0,03                              & 0,88                              & 0                                 \\
-		\textbf{25\%}                          & 57,99                           & 31,63                           & 0                               & 2,77                              & 0                                 & 123,40                            & 112,52                            & 3,61                              & 21,98                             \\
-		\textbf{50\%}                          & 57,99                           & 35,20                           & 0                               & 3,24                              & 0,12                              & 132,88                            & 118,18                            & 4,10                              & 22,87                             \\
-		\textbf{75\%}                          & 57,99                           & 38,17                           & 0                               & 3,71                              & 258,48                            & 142,89                            & 124,48                            & 4,59                              & 23,05                             \\
-		\textbf{Max.}                          & 59,99                           & 59,99                           & 59,99                           & 4,39                              & 370,35                            & 277,94                            & 167,78                            & 5,31                              & 28,08                             \\ \bottomrule
-	\end{tabular}
-	
-	
-\end{table}
-
-
-
-A realização da EDA consegue mostrar que os dados estão sendo coletados de maneira significativa, ao observar as correlações e possibilita trabalhar com as variáveis que apresentam correlação maior ou não negativa. Nos modelos ARIMA e seus antecessores, ele utiliza o ACF (do inglês \textit{\textit{Auto-Correlation Function}}) e o PACF (do inglês \textit{Partial Auto-correlation Function}) para analisar esses métodos. A análise destes métodos para o modelo ARIMA permite otimizar os parâmetros do modelo.
-
-O ACF é uma medida estatística utilizada para identificar a presença de correlação serial em uma série temporal. Ele calcula a autocorrelação entre os valores da série em diferentes defasagens, ou seja, a correlação entre os valores atuais e os valores passados da série. 
-
-O ACF é útil para analisar a dependência temporal dos dados e identificar padrões de sazonalidade, tendência ou outros efeitos temporais. Por meio do ACF, é possível avaliar se a série exibe autocorrelação significativa em defasagens específicas, o que pode indicar a presença de não estacionariedade ou estrutura temporal que precisa ser considerada na análise ou modelagem da série temporal.
-
 
 A estatística ADF (do inglês \textit{Augmented Dickey-Fuller}) de $-12,515$ indica a evidência de estacionariedade na série temporal. Quanto mais negativo for o valor da estatística ADF, maior é a evidência de estacionariedade nos dados.
 
@@ -163,7 +144,7 @@ A Figura \ref{fig:ft03} mostra como a vazão pode ser afetada pelo nível do tan
 
 
 \textbf{M\'ultiplas entradas e sa\'ida \'unica (MISO)}
-na etapa \ref{etp:2}, foi explorado o modelo MISO (do inglês \textit{Multiple Inputs, Single Output}) na dissertação. O modelo ARIMA, juntamente com suas variantes e extensões, foi amplamente estudado durante a pesquisa, assim como modelos regressivos que envolvem múltiplas variáveis de entrada e uma variável de saída, neste caso, a LT01. As demais variáveis foram utilizadas como suporte para melhorar o modelo do tipo ARIMAX ou modelos com variáveis exógenas. Quando aplicado sem o uso de variáveis exógenas, o modelo ARIMA apresenta apenas uma entrada, semelhante ao modelo de LR. No entanto, ao incluir variáveis exógenas, o modelo se torna MISO, permitindo uma modelagem  abrangente e considerando a interação de várias variáveis para prever a variável de interesse.
+(do inglês \textit{Multiple Inputs, Single Output}) na dissertação. O modelo ARIMA, juntamente com suas variantes e extensões, foi amplamente estudado durante a pesquisa, assim como modelos regressivos que envolvem múltiplas variáveis de entrada e uma variável de saída, neste caso, a LT01. As demais variáveis foram utilizadas como suporte para melhorar o modelo do tipo ARIMAX ou modelos com variáveis exógenas. Quando aplicado sem o uso de variáveis exógenas, o modelo ARIMA apresenta apenas uma entrada, semelhante ao modelo de LR. No entanto, ao incluir variáveis exógenas, o modelo se torna MISO, permitindo uma modelagem  abrangente e considerando a interação de várias variáveis para prever a variável de interesse.
 
 
 \textbf{Decomposi\c c\~ao STL}
@@ -187,21 +168,21 @@ através da decomposição, é possível analisar se a série apresenta tendênc
 
 
 \textbf{Separa\c c\~ao dos Dados}
-na etapa \ref{etp:4}, os dados foram divididos em conjuntos de treinamento, teste e validação. Essa prática é comum entre profissionais de aprendizado de máquina, pois permite avaliar o desempenho do modelo em conjuntos de dados diferentes \cite{raschka2015practical, geron2017hands_on}.
+os dados foram divididos em conjuntos de treinamento, teste e validação. Essa prática é comum entre profissionais de aprendizado de máquina, pois permite avaliar o desempenho do modelo em conjuntos de dados diferentes \cite{raschka2015practical, geron2017hands_on}.
 
 Quanto à divisão dos dados, foi adotada uma estratégia básica em que $70\%$ dos dados foram destinados ao conjunto de treinamento e os $30\%$ restantes foram reservados para o conjunto de teste. Dentro dos $70\%$ de treinamento, foi realizada uma subdivisão em que $80\%$ desses dados foram usados novamente para treinamento e os $20\% $ restantes foram utilizados para validação. Essa abordagem foi implementada em linguagem de programação para facilitar o processo e evitar a necessidade de recalculá-la a cada modificação do modelo.
 
 \textbf{Modelagem e sele\c c\~ao do modelo}
 a estratégia recursiva é mencionada por \citeonline{PETROPOULOS2022705} como uma abordagem eficaz na previsão de séries temporais de múltiplos passos. De acordo com o autor, essa estratégia envolve o uso de previsões anteriores como entradas para prever os próximos passos da série temporal. A abordagem recursiva tem demonstrado potencial para melhorar a acurácia das previsões de séries temporais de longo prazo.
 
-Na Etapa \ref{etp:5}, discute-se a previsão dos dados em uma janela de horizonte de previsão estendida, abrangendo diferentes períodos de tempo, como uma hora, seis horas, doze horas e um dia. Essa estratégia de previsão recorrente permite a comparação entre modelos de regressão e modelos ARIMA em diferentes horizontes temporais.
+A previsão dos dados em uma janela de horizonte de previsão estendida, abrangendo diferentes períodos de tempo, como uma hora, seis horas, doze horas e um dia. Essa estratégia de previsão recorrente permite a comparação entre modelos de regressão e modelos ARIMA em diferentes horizontes temporais.
 
 Essa abordagem é vantajosa, pois cada modelo possui suas próprias características e desempenho ao lidar com previsões de curto prazo, como um dia, e previsões de prazo mais longo, como um dia. Ao utilizar uma janela de previsão mais ampla, é possível observar e avaliar melhor as diferenças entre os modelos e analisar seu desempenho em horizontes de tempo variados.
 
 Além desses modelos, vários outros foram implementados no documento, tais como DTR, RFR, XGBRegressor, LGBMRegressor, LSTM, GRU, Prophet, RNN, Transformer, CNN e ANN, a fim de obter o melhor resultado para a previsão de séries temporais de abastecimento de água.
 
 \textbf{Validação e ajuste do modelo}
-na etapa \ref{etp:6}, o horizonte de previsão foi personalizado com base no método recursivo de previsão de série temporal e na previsão do nível do tanque LT01. Foram selecionados os seguintes passos para a previsão à frente: uma hora, seis horas, doze horas e um dia. Essa escolha do horizonte de previsão foi feita levando em consideração a estratégia recursiva e os objetivos específicos do estudo. Identifica-se que essa janela de tempo proporciona uma análise mais adequada e comparável entre os modelos utilizados.
+o horizonte de previsão foi personalizado com base no método recursivo de previsão de série temporal e na previsão do nível do tanque LT01. Foram selecionados os seguintes passos para a previsão à frente: uma hora, seis horas, doze horas e um dia. Essa escolha do horizonte de previsão foi feita levando em consideração a estratégia recursiva e os objetivos específicos do estudo. Identifica-se que essa janela de tempo proporciona uma análise mais adequada e comparável entre os modelos utilizados.
 
 Foram utilizados os parâmetros obtidos pelo autoARIMA, que são $(p = 7, d = 0, q = 0) (P = 2, D = 1, Q = 1)_{M = 12}$, mas foram ajustados para obter um melhor resultado, sendo $(p = 7, d = 1, q = 7) (P = 2, D = 1, Q = 1)_{M = 12}$. Na Tabela \ref{tab:autoarima_params}, são exibidos todos os modelos obtidos por esse método do ``autoARIMA'' e ajustados para que obtenham o melhor resultado.
 \(p\): Ordem do componente AR (\textit{Auto-Regressivo}),
@@ -243,30 +224,22 @@ Na Tabela \ref{tb:resltsar} mostra como a biblioteca do Python autoARIMA obteve 
 \begin{table}[!htb]
 	\centering
 	\caption{SARIMAX$(7, 0, 0)\times(2, 1, [1], 12)$ Results} \label{tb:resltsar}
-	\begin{tabular}{
-			l
-			S[table-format=1.4]
-			S[table-format=1.4]
-			S[table-format=3.3]
-			S[table-format=1.3]
-			S[table-format=1.3]
-			S[table-format=1.3]
-		}
+	\begin{tabular}{lllllll}
 		\toprule
-		& {Coef} & {STD Err} & {z} & {P$>|z|$} & {[0,025} & {0,975]} \\
+		\textbf{AutoARIMA} & \textbf{Coef} & \textbf{STD Err} & \textbf{z} & \textbf{P$>|z|$} & {$[0,025$} & {$0,975]$} \\
 		\midrule
-		Intercept & 0,0003 & 0,000 & 1,053 & 0,292 & -0,000 & 0,001 \\
-		ar.L1 & 1,6149 & 0,011 & 141,865 & 0,000 & 1,593 & 1,637 \\
-		ar.L2 & -0,8879 & 0,021 & -42,045 & 0,000 & -0,929 & -0,847 \\
-		ar.L3 & 0,3167 & 0,024 & 13,033 & 0,000 & 0,269 & 0,364 \\
-		ar.L4 & -0,1056 & 0,027 & -3,961 & 0,000 & -0,158 & -0,053 \\
-		ar.L5 & -0,1099 & 0,028 & -3,928 & 0,000 & -0,165 & -0,055 \\
-		ar.L6 & 0,1431 & 0,027 & 5,368 & 0,000 & 0,091 & 0,195 \\
-		ar.L7 & -0,0673 & 0,015 & -4,583 & 0,000 & -0,096 & -0,039 \\
-		ar.S.L12 & -0,1222 & 0,016 & -7,705 & 0,000 & -0,153 & -0,091 \\
-		ar.S.L24 & 0,1692 & 0,014 & 12,244 & 0,000 & 0,142 & 0,196 \\
-		ma.S.L12 & -0,8728 & 0,012 & -74,569 & 0,000 & -0,896 & -0,850 \\
-		sigma2 & 0,0157 & 0,000 & 60,022 & 0,000 & 0,015 & 0,016 \\
+		Intercept & 0,0003 & 0 & 1,053 & 0,292 & 0 & 0,001 \\
+		ar.L1 & 1,6149 & 0,011 & 141,865 & 0 & 1,593 & 1,637 \\
+		ar.L2 & $-0,8879$ & 0,021 & $-42,045$ & 0 & $-0,929$ & $-0,847$ \\
+		ar.L3 & 0,3167 & 0,024 & 13,033 & 0 & 0,269 & 0,364 \\
+		ar.L4 & $-0,1056$ & 0,027 & $-3,961$ & 0 & $-0,158$ & $-0,053$ \\
+		ar.L5 & $-0,1099$ & 0,028 & $-3,928$ & 0 & $-0,165$ & $-0,055$ \\
+		ar.L6 & 0,1431 & 0,027 & 5,368 & 0 & 0,091 & 0,195 \\
+		ar.L7 & $-0,0673$ & 0,015 & $-4,583$ & 0 & $-0,096$ & $-0,039$ \\
+		ar.S.L12 & $-0,1222$ & 0,016 & $-7,705$ & 0 & $-0,153$ & $-0,091$ \\
+		ar.S.L24 & 0,1692 & 0,014 & 12,244 & 0 & 0,142 & 0,196 \\
+		ma.S.L12 & $-0,8728$ & 0,012 & $-74,569$ & 0 & $-0,896$ & $-0,850$ \\
+		sigma2 & 0,0157 & 0 & 60,022 & 0 & 0,015 & 0,016 \\
 		\bottomrule
 	\end{tabular}
 \end{table}
@@ -340,7 +313,7 @@ Os modelos de rede neural artificial, como RNN, ANN, CNN, GRU, LSTM e Transforme
 
 
 \textbf{Previs\~ao e avalia\c c\~ao}
-a partir da etapa \ref{etp:7}, foram empregadas três métricas amplamente utilizadas na literatura para avaliar e comparar os modelos ARIMA e os modelos de regressão, conforme detalhado na seção \ref{subsec:metrica}.
+foram empregadas três métricas amplamente utilizadas na literatura para avaliar e comparar os modelos ARIMA e os modelos de regressão, conforme detalhado na seção \ref{subsec:metrica}.
 
 Na análise dos modelos desenvolvidos, observou-se que o modelo DTR obteve o melhor desempenho, tanto para previsões de curto prazo, durante as horas de pico entre 18h e 21h, quanto para outros períodos. Além disso, os modelos MA, AR, SARIMA, ARIMA, SARIMAX, ARIMAX, ARX, LGBMRegressor, XGBRegressor, RFR, RNN, ANN, CNN, GRU, LSTM, Prophet e Transformer também apresentaram resultados satisfatórios, seguindo uma ordem decrescente de desempenho.
 
@@ -348,7 +321,7 @@ No âmbito das previsões de longo prazo, abrangendo casos de um dia, os modelos
 
 Cada figura, desde a \ref{fig:1-ar-arx-ma} até a \ref{fig:prophet1}, ilustra cenários distintos de previsão e comparação entre modelos semelhantes. Os modelos Prophet e RNN, sendo este último a escolha superior, são apresentados de forma isolada. A decisão de não incluir o modelo LR na comparação baseou-se na constância observada em suas previsões a longo prazo.
 
-Ao avaliar os modelos de previsão, tanto nas tabelas quanto nas imagens, o modelo RNN destaca-se como a opção mais eficaz. No caso específico da SANEPAR, esse modelo demonstra um desempenho superior em comparação com os demais modelos de previsão adotados. partir da etapa \ref{etp:7}, três métricas amplamente utilizadas na literatura foram empregadas para avaliar e comparar os modelos ARIMA e os modelos de regressão, conforme detalhado na seção \ref{subsec:metrica}.
+Ao avaliar os modelos de previsão, tanto nas tabelas quanto nas imagens, o modelo RNN destaca-se como a opção mais eficaz. No caso específico da SANEPAR, esse modelo demonstra um desempenho superior em comparação com os demais modelos de previsão adotados. Três métricas amplamente utilizadas na literatura foram empregadas para avaliar e comparar os modelos ARIMA e os modelos de regressão, conforme detalhado na seção \ref{subsec:metrica}.
 
 Na análise dos modelos desenvolvidos, verificou-se que o modelo DTR alcançou o melhor desempenho, tanto para previsões de curto prazo, durante as horas de pico entre 18h e 21h, quanto para outros períodos. Adicionalmente, os modelos MA, AR, SARIMA, ARIMA, SARIMAX, ARIMAX, ARX, LGBMRegressor, XGBRegressor, RFR, RNN, ANN, CNN, GRU, LSTM, Prophet e Transformer também apresentaram resultados satisfatórios, seguindo uma ordem decrescente de desempenho.
 
@@ -522,7 +495,7 @@ Ao avaliar os modelos de previsão, tanto nas tabelas quanto nas imagens, o mode
 \end{landscape}
 
 \textbf{Teste de signific\^ancia}
-na etapa \ref{etp:8}, realizou-se o teste de Friedman e o teste de Nemenyi para comparar as classificações médias entre os diversos classificadores. O teste de Nemenyi é uma ferramenta de comparação múltipla frequentemente empregada após a aplicação de testes não paramétricos com três ou mais fatores.
+o teste de Friedman e o teste de Nemenyi para comparar as classificações médias entre os diversos classificadores. O teste de Nemenyi é uma ferramenta de comparação múltipla frequentemente empregada após a aplicação de testes não paramétricos com três ou mais fatores.
 
 A matriz de comparação entre os classificadores, apresentada na Tabela \ref{tb:nemeyi}, exibe os valores de comparação múltipla de Nemenyi, onde as entradas evidenciam as diferenças significativas entre os pares de classificadores.
 
@@ -531,20 +504,21 @@ A Tabela \ref{tb:nemeyi} apresenta os resultados do teste de Nemenyi, um método
 \begin{table}[!htb]
 	\centering
 	\caption{Teste Nemenyi}\label{tb:nemeyi}
-	\begin{tabular}{@{}clllllllll@{}}
+	\begin{tabular}{@{}llllllllll@{}}
 		\toprule
 		\multicolumn{1}{l}{\textbf{Nemenyi}} & \multicolumn{1}{c}{\textbf{B1}} & \multicolumn{1}{c}{\textbf{B2}} & \multicolumn{1}{c}{\textbf{B3}} & \multicolumn{1}{c}{\textbf{LT01}} & \multicolumn{1}{c}{\textbf{FT01}} & \multicolumn{1}{c}{\textbf{FT02}} & \multicolumn{1}{c}{\textbf{FT03}} & \multicolumn{1}{c}{\textbf{PT01}} & \multicolumn{1}{c}{\textbf{PT02}} \\ \midrule
-		\textbf{B1}                         & 1.000                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          \\
-		\textbf{B2}                         & 0.001                          & 1.000                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          \\
-		\textbf{B3}                         & 0.001                          & 0.001                          & 1.000                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          \\
-		\textbf{LT01}                       & 0.001                          & 0.001                          & 0.001                          & 1.000                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          \\
-		\textbf{FT01}                       & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 1.000                          & 0.001                          & 0.131                          & 0.001                          & 0.001                          \\
-		\textbf{FT02}                       & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 1.000                          & 0.001                          & 0.001                          & 0.001                          \\
-		\textbf{FT03}                       & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.131                          & 0.001                          & 1.000                          & 0.001                          & 0.001                          \\
-		\textbf{PT01}                       & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 1.000                          & 0.001                          \\
-		\textbf{PT02}                       & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 0.001                          & 1.000                          \\ \bottomrule
+		\textbf{B1}                         & 1                         & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          \\
+		\textbf{B2}                         & 0,001                          & 1                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          \\
+		\textbf{B3}                         & 0,001                          & 0,001                          & 1                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          \\
+		\textbf{LT01}                       & 0,001                          & 0,001                          & 0,001                          & 1                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          \\
+		\textbf{FT01}                       & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 1                          & 0,001                          & 0,131                          & 0,001                          & 0,001                          \\
+		\textbf{FT02}                       & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 1                          & 0,001                          & 0,001                          & 0,001                          \\
+		\textbf{FT03}                       & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,131                          & 0,001                          & 1                          & 0,001                          & 0,001                          \\
+		\textbf{PT01}                       & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 1                          & 0,001                          \\
+		\textbf{PT02}                       & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 0,001                          & 1                          \\ \bottomrule
 	\end{tabular}
 \end{table}
+
 
 
 
@@ -663,41 +637,41 @@ Como essa série não apresentou uma estacionariedade bem definida e os dados n�
 	\begin{subtable}{0.46\linewidth}
 		\centering
 		\caption{\textbf{Treinamento}} \label{tb:lbtrn}
-		\begin{tabular}{@{}ccc@{}}
+		\begin{tabular}{@{}lll@{}}
 			\toprule
-			\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Valor \\ De p\end{tabular}} \\
+			\multirow{5}{*}{\begin{tabular}[l]{@{}l@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[l]{@{}l@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[l]{@{}l@{}}Valor \\ De p\end{tabular}} \\
 			& & \\
 			& & \\
 			& & \\
 			& & \\ \midrule
-			ARX & 59,677 & \textbf{0,000} \\
+			ARX & 59,677 & \textbf{0} \\
 			AR & 52,312 & \textbf{0,265} \\
-			MA & 57,268 & \textbf{0,000} \\
+			MA & 57,268 & \textbf{0} \\
 			ARMA & \textbf{6,945} & \textbf{0,731} \\
 			ARIMA & 16,724 & 0,081 \\
-			SARIMA & 48,505 & \textbf{0,000} \\
-			ARIMAX & 89,931 & \textbf{0,000} \\
-			SARIMAX & 29,093 & \textbf{0,000} \\ \bottomrule
+			SARIMA & 48,505 & \textbf{0} \\
+			ARIMAX & 89,931 & \textbf{0} \\
+			SARIMAX & 29,093 & \textbf{0} \\ \bottomrule
 		\end{tabular}
 	\end{subtable}
 	\hfill
 	\begin{subtable}{0.46\linewidth}
 		\centering
 		\caption{\textbf{Teste}} \label{tb:lbtst}
-		\begin{tabular}{@{}ccc@{}}
+		\begin{tabular}{@{}lll@{}}
 			\toprule
-			\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Valor \\ De p\end{tabular}} \\
+			\multirow{5}{*}{\begin{tabular}[l]{@{}l@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[l]{@{}l@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[l]{@{}l@{}}Valor \\ De p\end{tabular}} \\
 			& & \\
 			& & \\
 			& & \\
 			& & \\ \midrule
-			ARX & 47,177 & \textbf{0,000} \\
+			ARX & 47,177 & \textbf{0} \\
 			AR & 49,965 & 0,444 \\
-			MA & 77,884 & \textbf{0,000} \\
+			MA & 77,884 & \textbf{0l} \\
 			ARMA & \textbf{1,545} & 0,999 \\
 			ARIMA & \textbf{5,354} & 0,866 \\
 			SARIMA & 24,663 & \textbf{0,006} \\
-			ARIMAX & 36,738 & \textbf{0,000} \\
+			ARIMAX & 36,738 & \textbf{0} \\
 			SARIMAX & 21,236 & \textbf{0,020} \\ \bottomrule
 		\end{tabular}
 	\end{subtable}
@@ -707,20 +681,20 @@ Como essa série não apresentou uma estacionariedade bem definida e os dados n�
 	\begin{subtable}{0.46\linewidth}
 		\centering
 		\caption{\textbf{Validação}} \label{tb:lbvld}
-		\begin{tabular}{@{}ccc@{}}
+		\begin{tabular}{@{}lll@{}}
 			\toprule
-			\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Valor \\ De p\end{tabular}} \\
+			\multirow{5}{*}{\begin{tabular}[l]{@{}l@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[l]{@{}l@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[l]{@{}l@{}}Valor \\ De p\end{tabular}} \\
 			& & \\
 			& & \\
 			& & \\
 			& & \\ \midrule
 			ARX & \textbf{5,108} & 0,884 \\
 			AR & 4,360 & 0,930 \\
-			MA & 46,252 & \textbf{0,000} \\
+			MA & 46,252 & \textbf{0} \\
 			ARMA & \textbf{7,515} & 0,676 \\
 			ARIMA & \textbf{7,738} & 0,654 \\
 			SARIMA & 28,998 & \textbf{0,001} \\
-			ARIMAX & \textbf{6,115} & \textbf{0,000} \\
+			ARIMAX & \textbf{6,115} & \textbf{0} \\
 			SARIMAX & \textbf{4,443} & 0,925 \\ \bottomrule
 		\end{tabular}
 	\end{subtable}
@@ -728,21 +702,21 @@ Como essa série não apresentou uma estacionariedade bem definida e os dados n�
 	\begin{subtable}{0.46\linewidth}
 		\centering
 		\caption{\textbf{Inteiro}} \label{tb:lbcm}
-		\begin{tabular}{@{}ccc@{}}
+		\begin{tabular}{@{}lll@{}}
 			\toprule
-			\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Valor \\ De p\end{tabular}} \\
+			\multirow{5}{*}{\begin{tabular}[l]{@{}l@{}}Ljung \\ Box\end{tabular}} & \multirow{5}{*}{\begin{tabular}[l]{@{}l@{}}Estatística\\ de Teste\end{tabular}} & \multirow{5}{*}{\begin{tabular}[l]{@{}l@{}}Valor \\ De p\end{tabular}} \\
 			& & \\
 			& & \\
 			& & \\
 			& & \\ \midrule
-			ARX & 48,870 & \textbf{0,000} \\
+			ARX & 48,870 & \textbf{0} \\
 			AR & 49,432 & \textbf{0,035} \\
-			MA & 57,629 & \textbf{0,000} \\
+			MA & 57,629 & \textbf{0} \\
 			ARMA & \textbf{10,053} & \textbf{0,436} \\
 			ARIMA & \textbf{10,053} & \textbf{0,436} \\
 			SARIMA & \textbf{10,053} & \textbf{0,436} \\
-			ARIMAX & 70,458 & \textbf{0,000} \\
-			SARIMAX & \textbf{2,897} & \textbf{0,000} \\ \bottomrule
+			ARIMAX & 70,458 & \textbf{0} \\
+			SARIMAX & \textbf{2,897} & \textbf{0} \\ \bottomrule
 		\end{tabular}
 	\end{subtable}
 	

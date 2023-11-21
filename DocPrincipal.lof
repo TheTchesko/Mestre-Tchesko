@@ -1,40 +1,35 @@
 \babel@toc {brazil}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {brazil}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Paradigma de aprendizado de máquina}}{18}{figure.caption.2}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Mapa das Etapas}}{20}{figure.caption.3}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Estrutura da dissertação}}{23}{figure.caption.4}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Fluxograma do problema da revisão}}{24}{figure.caption.5}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Etapas da revisão}}{25}{figure.caption.6}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Modelos de series temporais mais populares na Scopus e WoS }}{26}{figure.caption.7}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Significado do modelo SARIMAX}}{37}{figure.caption.14}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Fluxograma da árvore de decisão}}{40}{figure.caption.15}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Esquema da floresta aleatória}}{41}{figure.caption.16}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Impulsionando gradiente com XGBoost e LightGBM}}{42}{figure.caption.17}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Compara-se o crescimento em folha com o crescimento em nível}}{43}{figure.caption.18}%
-\contentsline {figure}{\numberline {12}{\ignorespaces RNN - \textit {recurrent neural network}}}{45}{figure.caption.19}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama ilustrativo do funcionamento de uma unidade recorrente gated (GRU)}}{48}{figure.caption.20}%
-\contentsline {figure}{\numberline {14}{\ignorespaces RNN vs LSTM vs GRU}}{49}{figure.caption.21}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Arquitetura do Transformer}}{50}{figure.caption.22}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Modelo de uma Rede Neural Artificial MLP}}{51}{figure.caption.23}%
-\contentsline {figure}{\numberline {17}{\ignorespaces A equação da figura realiza o somatório ponderado entre as sinapses de cada neurônio}}{52}{figure.caption.24}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Modelo de uma Rede Neural Convolucional}}{54}{figure.caption.25}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Correlação de Pearson}}{61}{figure.caption.26}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Regressão linear LT01 vs PT01 correlação 97\%}}{61}{figure.caption.27}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Autocorrelação}}{64}{figure.caption.30}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Autocorrelação parcial}}{64}{figure.caption.31}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Ruído branco}}{65}{figure.caption.32}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Violino no nível do reservatório}}{65}{figure.caption.33}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Violino da vazão de recalque}}{66}{figure.caption.34}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Decomposição STL aditiva dos dados coletados}}{66}{figure.caption.35}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Comparação dos modelos AR, ARX e MA}}{71}{figure.caption.40}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Comparação do modelos ARIMAX, SARIMA e SARIMAX}}{71}{figure.caption.41}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Comparação dos modelos ARMA e ARIMA}}{72}{figure.caption.42}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Comparação dos modelos DTR, RFR, XGBoost, Light GBM}}{72}{figure.caption.43}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Modelo RNN e os vários horizontes }}{72}{figure.caption.44}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Previsões do modelo Prophet para o reservatório LT01}}{72}{figure.caption.45}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Comparação dos modelos ARIMA}}{80}{figure.caption.52}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Comparação de modelos de regressão}}{80}{figure.caption.53}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Comparação dos modelos na métrica RRMSE}}{80}{figure.caption.54}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Comparação dos modelos nas métricas sMAPE, MAE e RRMSE}}{81}{figure.caption.55}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Demanda média das variáveis de fluxo}}{84}{figure.caption.57}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Etapas para Análise dos Dados.}}{22}{figure.caption.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Fluxograma da Revisão Sistemática da Literatura.}}{25}{figure.caption.3}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Modelos de previsão de series temporais na base de dados Scopus e WoS.}}{26}{figure.caption.4}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Elementos do modelo SARIMAX}}{35}{figure.caption.11}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Fluxograma da árvore de decisão.}}{37}{figure.caption.12}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Fluxograma da floresta aleatória.}}{39}{figure.caption.13}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Fluxograma do XGBoost}}{40}{figure.caption.14}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Comparação do crescimento em folha com o crescimento em nível}}{41}{figure.caption.15}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Modelo de uma rede neural artificial MLP}}{42}{figure.caption.16}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Fluxograma da RNN.}}{44}{figure.caption.17}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama do funcionamento de uma GRU.}}{47}{figure.caption.18}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Diferenças entre RNN, LSTM, e GRU.}}{47}{figure.caption.19}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Modelo de uma Rede Neural Convolucional.}}{49}{figure.caption.20}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Correlação de Pearson}}{56}{figure.caption.22}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Relação entre LT01 e PT01 cuja correlação de Pearson é 97\%}}{57}{figure.caption.23}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Autocorrelação}}{58}{figure.caption.25}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Autocorrelação parcial}}{59}{figure.caption.26}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Ruído branco}}{59}{figure.caption.27}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Violino no nível do reservatório}}{60}{figure.caption.28}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Violino da vazão de recalque}}{60}{figure.caption.29}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Decomposição STL aditiva dos dados coletados}}{61}{figure.caption.30}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Comparação dos modelos AR, ARX e MA}}{66}{figure.caption.35}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Comparação do modelos ARIMAX, SARIMA e SARIMAX}}{66}{figure.caption.36}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Comparação dos modelos ARMA e ARIMA}}{66}{figure.caption.37}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Comparação dos modelos DTR, RFR, XGBoost, Light GBM}}{66}{figure.caption.38}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Modelo RNN e os vários horizontes }}{67}{figure.caption.39}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Previsões do modelo Prophet para o reservatório LT01}}{67}{figure.caption.40}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Comparação dos modelos ARIMA}}{75}{figure.caption.47}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Comparação de modelos de regressão}}{75}{figure.caption.48}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Comparação dos modelos na métrica RRMSE}}{75}{figure.caption.49}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Comparação dos modelos nas métricas sMAPE, MAE e RRMSE}}{76}{figure.caption.50}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Demanda média das variáveis de fluxo}}{79}{figure.caption.52}%

@@ -1,3 +1,7 @@
+%% COMPLETAR OS DADOS NO ARQUIVO DE INFORMAÇÕES
+
+%% PREAMBULO
+%\include{Packages/preambulo}
 \documentclass[12pt, a4paper]{article} %% TIPO DO ARQUIVO
 %\documentclass[12pt, a4paper, article]{abntex2} %% TIPO DO ARQUIVO
 \usepackage[english, brazil]{babel}     %% LÍNGUA
@@ -6,7 +10,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[top=3cm, left=3cm, right=2cm, bottom=2cm]{geometry} %% MARGENS
 \usepackage{setspace}                   %% PERMITE ESPAÇO SIMPLES
-\usepackage{graphicx,amsmath,dsfont, amssymb,amsfonts}    %% GRÁFICOS, EQUAÇÕES E FONTES
+
 \setlength{\parindent}{1.25cm}          %% RECUO DE 1.25
 \usepackage{indentfirst}                %% RECUO DA PRIMEIRA LINHA
 \renewcommand{\baselinestretch}{1.3}    %% ESPAÇAMENTO 1.5
@@ -22,46 +26,46 @@
 \usepackage{tikz}                       %% PLOTAR GRÁFICOS TIKZ
 \usetikzlibrary{arrows,positioning}     %% ARCOS NO TIKZ
 \tikzset{
-    %Define standard arrow tip
-    >=stealth',
-    %Define style for boxes
-    punkt/.style={
-           rectangle,
-           rounded corners,
-           draw=black, very thick,
-           text width=6.5em,
-           minimum height=2em,
-           text centered},
-    % Define arrow style
-    pil/.style={
-           ->,
-           thick,
-           shorten <=2pt,
-           shorten >=2pt,}
+	%Define standard arrow tip
+	>=stealth',
+	%Define style for boxes
+	punkt/.style={
+		rectangle,
+		rounded corners,
+		draw=black, very thick,
+		text width=6.5em,
+		minimum height=2em,
+		text centered},
+	% Define arrow style
+	pil/.style={
+		->,
+		thick,
+		shorten <=2pt,
+		shorten >=2pt,}
 }
 %\usepackage{subfig}                  %% ATIVAR SUBFIGURAS
 %\PassOptionsToPackage{subfigure}{tocloft} %% EVITAR ERROS DE SUBFIGURAS
 %\usepackage{fixmetodonotes}             %% EVITAR ERROS DE SUBFIGURAS
 \usepackage{hyperref}                   %% HYPERLINK
 \hypersetup{
-    %bookmarks=true,         % show bookmarks bar?
-    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
-    pdftoolbar=true,        % show Acrobat’s toolbar?
-    pdfmenubar=true,        % show Acrobat’s menu?
-    pdffitwindow=false,     % window fit to page when opened
-    pdfstartview={FitH},    % fits the width of the page to the window
-    %pdftitle={My title},    % title
-    %pdfauthor={Author},     % author
-    %pdfsubject={Subject},   % subject of the document
-    %pdfcreator={Creator},   % creator of the document
-    %pdfproducer={Producer}, % producer of the document
-    %pdfkeywords={keyword1, key2, key3}, % list of keywords
-    pdfnewwindow=true,      % links in new PDF window
-    colorlinks=true,        % false: boxed links; true: colored links
-    linkcolor=black,        % color of internal links (change box color with linkbordercolor)
-    citecolor=black,        % color of links to bibliography
-    filecolor=black,        % color of file links
-    urlcolor=black          % color of external links
+	%bookmarks=true,         % show bookmarks bar?
+	unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+	pdftoolbar=true,        % show Acrobat’s toolbar?
+	pdfmenubar=true,        % show Acrobat’s menu?
+	pdffitwindow=false,     % window fit to page when opened
+	pdfstartview={FitH},    % fits the width of the page to the window
+	%pdftitle={My title},    % title
+	%pdfauthor={Author},     % author
+	%pdfsubject={Subject},   % subject of the document
+	%pdfcreator={Creator},   % creator of the document
+	%pdfproducer={Producer}, % producer of the document
+	%pdfkeywords={keyword1, key2, key3}, % list of keywords
+	pdfnewwindow=true,      % links in new PDF window
+	colorlinks=true,        % false: boxed links; true: colored links
+	linkcolor=black,        % color of internal links (change box color with linkbordercolor)
+	citecolor=black,        % color of links to bibliography
+	filecolor=black,        % color of file links
+	urlcolor=black          % color of external links
 }
 \usepackage{tocloft}                    %% PONTOS NO SUMÁRIO
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} %% PONTOS NO SUMÁRIO 
@@ -74,18 +78,18 @@
 \renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
 \renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} %% optional; useful if paragraphs are to be numbered
 \titleformat{\subsubsubsection}
-  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+{\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
 \titlespacing*{\subsubsubsection}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 \makeatletter
 \renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
-  {3.25ex \@plus1ex \@minus.2ex}%
-  {-1em}%
-  {\normalfont\normalsize\bfseries}}
+	{3.25ex \@plus1ex \@minus.2ex}%
+	{-1em}%
+	{\normalfont\normalsize\bfseries}}
 \renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}%
-  {3.25ex \@plus1ex \@minus .2ex}%
-  {-1em}%
-  {\normalfont\normalsize\bfseries}}
+	{3.25ex \@plus1ex \@minus .2ex}%
+	{-1em}%
+	{\normalfont\normalsize\bfseries}}
 \def\toclevel@subsubsubsection{4}
 \def\toclevel@paragraph{5}
 \def\toclevel@paragraph{6}
@@ -100,7 +104,7 @@
 \usepackage{xcolor} %% TABELA COM MAIS COLORIDA
 \usepackage{booktabs}
 \usepackage{pdflscape}  %% orientação da paigina
-
+\usepackage{amsmath}
 \usepackage{siunitx}
 \usepackage{ragged2e}
 
@@ -156,10 +160,10 @@
 %
 %% Defina um estilo de página personalizado para remover os números de página
 %\fancypagestyle{mystyle}{
-%	\fancyhf{} % Limpa todos os cabeçalhos e rodapés
-%	\renewcommand{\headrulewidth}{0pt} % Remove a linha horizontal no cabeçalho
-%	\fancyfoot[C]{} % Limpa o rodapé central
-%}
+	%	\fancyhf{} % Limpa todos os cabeçalhos e rodapés
+	%	\renewcommand{\headrulewidth}{0pt} % Remove a linha horizontal no cabeçalho
+	%	\fancyfoot[C]{} % Limpa o rodapé central
+	%}
 
 
 \usepackage{longtable}
@@ -189,5 +193,10 @@
 \usepackage{multirow}
 \usepackage{caption}
 
+
 % Configuração para usar a vírgula como separador decimal
 \sisetup{output-decimal-marker={,}}
+
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage{booktabs}

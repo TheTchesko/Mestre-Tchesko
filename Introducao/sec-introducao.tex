@@ -1,174 +1,112 @@
 \input{Packages/espacamento_paginacao2}
 
 
-
 \section{Introdu{\c c}{\~a}o} \label{sec:int}
 
+\subsection{Contextualiza\c c\~ao} \label{subsec:contexto}
 
+O acesso à água potável é vital para a saúde e bem-estar das pessoas, sendo um requisito fundamental para a sobrevivência e o desenvolvimento humano. A água potável é essencial para a higiene pessoal, a preparação de alimentos e a prevenção de doenças transmitidas pela água. Além disso, é um componente crucial para o funcionamento adequado de sistemas de saneamento básico. O acesso a água limpa não apenas reduz significativamente a incidência de doenças, mas também promove o crescimento econômico, a educação e a igualdade. Garantir o acesso universal à água potável não apenas salva vidas, mas também contribui para a construção de comunidades saudáveis e sustentáveis em todo o mundo.Os recursos de água potável estão tornando-se mais escassos em algumas comunidades, em parte devido à crescente procura de água potável em regiões urbanas, à pobreza de técnicas de gestão de águas residuais e as secas ou enchentes induzidas pelo clima
+\cite{10.2166/wp.2022.071}.
 
-No âmbito da demanda d'água, desempenha-se um papel crucial nesse contexto. A água está presente em todos os aspectos do cotidiano, sendo essencial tanto para atividades básicas, como o banho, quanto para o consumo. A compreensão da importância desse recurso é vital, uma vez que ele influencia diretamente a qualidade de vida em várias esferas.
-Existem três tipos principais de Aprendizado de Máquina: Supervisionado, Não Supervisionado e por Reforço. No Aprendizado Supervisionado, é necessário apresentar a resposta desejada para cada exemplo. No Aprendizado Não Supervisionado, os exemplos são fornecidos sem rótulos, sendo agrupados por similaridades. No Aprendizado por Reforço, o algoritmo recebe sinais de reforço, sem a resposta correta, e determina a eficácia de suas hipóteses \cite{Silva2021}.
+Dada a crescente escassez de água os órgãos que gerenciam tais recursos recomendam a implementação de novas iniciativas para expandir seus portfólios locais e regionais de água, incluindo a reutilização de águas residuais tratadas para fins potáveis para evitar a escassez de água, questões que poderão piorar drasticamente nas próximas décadas \cite{BARNES2023139587}. A reutilização de águas residuais tratadas (RART) para fins potáveis ajuda a aliviar o uso das águas superficiais e subterrâneas locais que estão relacionadas com preocupações de escassez. Ao reutilizar águas residuais, as comunidades tornam-se menos dependem dos recursos hídricos disponíveis localmente e operam de forma mais local, girando a economia circular da água centrada \cite{TSATSOU2023136325}. Algumas cidades conseguiram implementar este sistema RART para aumentar o abastecimento local de água potável, porém no Brasil ainda não temos isto de forma efetiva, então uma possibilidade é fazer previsão da demanda de tal forma que o abastecimento para a população não seja descontinuado. 
 
-Nesse caso, os modelos usados nessa dissertação são os modelos de aprendizado de máquina supervisionados. Esses modelos para série temporal são usados na literatura.
-As séries temporais são caracterizadas como processos estocásticos regidos por leis probabilísticas.
-Série estacionária com média é aquela que contém a média, variância e autocorrelação constantes ao longo do tempo.
+O presente estudo envolve dados de abastecimento d'água da cidade de Curitiba no Bairro Alto entre os anos de 2018 e 2020. No entanto, vale destacar, que durante o ano de 2022, os habitantes de Curitiba enfrentaram escassez de água, sendo necessário implementar rodízios, alternando períodos com e sem fornecimento de água potável. Os dados utilizados foram coletados pela companhia de saneamento do Paraná (SANEPAR). A previsão da demanda de água ao longo do tempo, o que será abordado neste estudo, é essencial para um planejamento sustentável e eficiente do abastecimento hídrico, especialmente no contexto urbano, como é o caso da cidade de Curitiba. 
 
-A abordagem desse estudo envolve o problema de abastecimento d'água que afetou a cidade de Curitiba no Bairro Alto entre os anos de 2018 e 2020. Durante esse período, os habitantes enfrentaram a escassez de água, sendo necessário implementar rodízios, alternando períodos com e sem fornecimento. Os dados utilizados foram coletados pela companhia de saneamento do Paraná (SANEPAR).
+Existem vários modelos que podem ser utilizadas para prever a demanda de água, e a escolha da abordagem dependerá da disponibilidade de dados, da complexidade do sistema e das necessidades específicas da aplicação. Entre os modelos estão: Modelos Estatísticos, tal como Regressão Linear, que pode ser usado quando há uma relação linear entre variáveis como temperatura, população, atividade econômica e consumo de água, Modelos como ARIMA (AutoRegressive Integrated Moving Average) que podem ser eficazes para prever padrões sazonais e tendências ao longo do tempo \cite{OLIVEIRA2017177}, as Redes Neurais Artificiais como Redes Neurais Recorrentes (RNN) \cite{ASEERI2023101984} e LSTM (Long Short-Term Memory) \cite{SABZIPOUR2023130380} são eficazes para lidar com dados temporais e sequenciais, capturando dependências de longo prazo e os Métodos de Aprendizado de Máquina tais como Máquinas de Vetores de Suporte (SVM) que podem ser usadas para tratar dados não lineares e complexos \cite{CANDELIERI2019202}, Random Forest (RF) \cite{ALI2023731} Gradient Boosting \cite{DONG2023105579} que são métodos de ensemble (métodos híbridos) que podem ser aplicados para prever padrões complexos, entre outros modelos. 
 
+Existem três tipos principais de Aprendizado de Máquina: Aprendizado Supervisionado, Aprendizado Não Supervisionado, e Aprendizado por Reforço. No Aprendizado Supervisionado \cite{LIU2023128730}, o algoritmo é treinado em um conjunto de dados rotulado, onde cada exemplo do conjunto de dados possui uma entrada e a saída desejada correspondente. O objetivo é aprender uma função que mapeia as entradas para as saídas, permitindo ao modelo fazer previsões ou tomar decisões em novos dados não vistos anteriormente. No Aprendizado Não Supervisionado \cite{WANG2022122747}, o algoritmo é treinado em um conjunto de dados não rotulado, e o sistema tenta aprender a estrutura e padrões presentes nos dados. O objetivo principal é explorar a estrutura intrínseca dos dados, identificando agrupamentos, associações ou padrões emergentes sem ter rótulos para orientar o processo. O Aprendizado por Reforço \cite{CHEN2023121710} envolve um agente que interage com um ambiente dinâmico. O agente toma decisões sequenciais para alcançar um objetivo específico, recebendo feedback na forma de recompensas ou penalidades. O objetivo é aprender uma política, ou seja, uma estratégia que maximize a recompensa cumulativa ao longo do tempo \cite{Silva2021}. Os modelos de Aprendizado de Máquina Supervisionados serão usados neste estudo, e optou-se pelo uso de tais modelos porque na literatura da área, geralmente são usados para previsão de séries temporais
+\cite{UCCASTILLO2023105788}. 
 
-A previsão da demanda de água ao longo do tempo é essencial para um planejamento sustentável e eficiente do abastecimento hídrico, especialmente no contexto urbano, como é o caso da cidade de Curitiba, no estado do Paraná. Neste estudo, adotou-se alguns modelos de previsão da área de aprendizado de máquina e o modelo clássico ARIMA (\textit{Auto-Regressive Integrated Moving Average}) para realizar previsões diárias da demanda de água ao longo do tempo.
+As séries temporais de abastecimento de água potável geralmente exibem características específicas devido à natureza dinâmica e sazonal do consumo de água, muitas vezes exibem padrões sazonais, com variações regulares ao longo do tempo. Isso pode ser influenciado por fatores como as estações do ano, dias da semana ou horas do dia. Pode haver tendências a longo prazo nas séries temporais, refletindo mudanças demográficas, crescimento urbano, desenvolvimento industrial ou outros fatores que afetam o consumo de água ao longo do tempo \cite{JI2023129928}. A ocorrência de eventos anômalos, como vazamentos, interrupções no fornecimento devido a situações críticas como secas, enchentes, ou situações de emergência, pode ser evidenciada em picos ou quedas abruptas nas séries temporais. Também podem estar correlacionadas com fatores externos, como eventos climáticos (por exemplo, períodos de seca ou chuvas intensas) e feriados, impactando o comportamento do consumo \cite{BERGLUND2023104739}.
 
-Os modelos de aprendizado de máquina foram aplicados na previsão de séries temporais com dados coletados pela SANEPAR. Cada modelo tem suas particularidades, mas os modelos de aprendizado de máquina podem ser otimizados da mesma forma que os modelos clássicos do tipo ARIMA e RNN (\textit{Recurrent Neural Network}). Os dados coletados pela SANEPAR, utilizados para previsão, referem-se ao abastecimento d'água no Bairro Alto durante o período de 2018 a 2019.
+O consumo de água muitas vezes segue padrões diários e semanais previsíveis, como picos de demanda durante o horário de pico diário e variações ao longo da semana \cite{SIEGEL2020103481}. Flutuações de curto prazo podem ocorrer devido a atividades específicas, eventos locais ou situações temporárias que afetam o consumo de água em um período limitado. Mudanças na infraestrutura, como expansões urbanas, construção de novos empreendimentos ou implementação de políticas de conservação, podem ser refletidas nas séries temporais. Entender essas características é fundamental para o gerenciamento eficiente do abastecimento de água, permitindo a implementação de estratégias proativas, otimização de recursos e resposta adequada a eventos inesperados. O uso de técnicas de previsão e análise de séries temporais, isto é, modelagem preditiva, pode ser valioso para entender as dinâmicas complexas \cite{UCCASTILLO2023105788}.
 
+Por meio da utilização de métodos e modelos de séries temporais, neste estudo será realizada a previsão do nível do reservatório na estação de tratamento de água no Bairro Alto em Curitiba, incorporando diversos modelos de previsão nesse processo. Dentre esses modelos, incluem-se os clássicos, como ARIMA e suas variantes, tais como AR (\textit{Auto-Regressive}), ARX (\textit{Auto-Regressive with Exogenous input}), MA (\textit{Moving Average}), ARMA (\textit{Auto-Regressive Moving Average}), SARIMA ( \textit{Seasonal Auto-Regressive Integrated Moving Average}), ARIMAX (\textit{Auto-Regressive Integrated Moving Average with Exogenous input}), SARIMAX (\textit{Seasonal Auto-Regressive Integrated Moving Average with Exogenous input}), além dos modelos de aprendizado de máquina, como árvore de decisão, floresta aleatória, Prophet, XGBoost (\textit{Extreme Gradient Boosting}), Light GBM (\textit{Light Gradient Boosting Machine}), e redes neurais como LSTM  (\textit{Long Short-Term Memory}), GRU (\textit{Gated Recurrent Unit}), Transformer, CNN (\textit{Convolutional Neural Network}). A diversidade de modelos foi utilizada buscando otimizar a precisão das previsões.
 
-Por meio da utilização de métodos e modelos de séries temporais, realiza-se a previsão do nível do reservatório (LT01), incorporando diversos modelos nesse processo. Dentre esses modelos, incluem-se os clássicos, como ARIMA e suas variantes, tais como AR (do inglês \textit{Auto-Regressive}), ARX (do inglês \textit{Auto-Regressive with Exogenous input}), MA (do inglês\textit{Moving Average}), ARMA (do inglês \textit{Auto-Regressive Moving Average}), SARIMA (do inglês \textit{Seasonal Auto-Regressive Integrated Moving Average}), ARIMAX (do inglês \textit{Auto-Regressive Integrated Moving Average with Exogenous input}), SARIMAX (do inglês \textit{Seasonal Auto-Regressive Integrated Moving Average with Exogenous input}), Prophet, além dos modelos de aprendizado de máquina, como árvore de decisão, floresta aleatória, XGBoost (do inglês \textit{Extreme Gradient Boosting}), Light GBM (do inglês \textit{Light Gradient Boosting Machine}), e redes neurais como LSTM  (do inglês \textit{Long Short-Term Memory}), GRU (do inglês \textit{Gated Recurrent Unit}), RNN, Transformer, CNN (do inglês \textit{Convolutional Neural Network}), ANN (do inglês \textit{Artificial Neural Network}). A diversidade de abordagens busca otimizar a precisão das previsões, destacando a abrangência e sofisticação desse trabalho.
+O presente estudo fundamenta-se em modelos de previsão previamente não explorados neste contexto, como GRU, LSTM, XGBOOST, LGBM, Transformer, RNN e CNN. Vários desses modelos não foram aplicados previamente na literatura para a área de demanda de água.Os modelos ARIMA e suas variantes foram aplicados nesta área, como demonstrado por \cite{2-s2.0-85069459067, 2-s2.0-85099424908}. Alguns outros modelos, apesar de suas vantagens, ainda não foram devidamente aplicados, como é o caso do modelo RNN \cite{2-s2.0-85067419084}, que se mostrará significativamente superior aos demais modelos listados ao longo deste trabalho.
 
+Torna-se evidente que a análise de séries temporais e previsões são ferramentas valiosas para apoiar o processo de tomada de decisão em curto, médio e longo prazo de previsão. Devido às não linearidades, sazonalidades e tendências que podem ocorrer, nos dados temporais de abastecimento de água, o desenvolvimento de modelos de previsão eficientes torna-se uma tarefa desafiadora \cite{mateus}.
 
-\subsection{Contexto da Pesquisa} \label{subsec:contexto}
+% Na Figura \ref{fig:paradigma-ml}, as etapas de como a análise de dados e a seleção dos modelos devem ocorrer são apresentadas. Essa escolha pode ser conduzida de modo a determinar o que deve ser previsto na variável. Feito isso, a primeira etapa envolve a preparação dos dados, garantindo que cada um tenha sido identificado com seus rótulos de entrada e saída. É imperativo que os dados não contenham \textbf{NaN} (do inglês \textit{not a number}) ou dados ausentes, evitando assim falsos positivos.
 
-Torna-se evidente que a análise de séries temporais e previsões são ferramentas valiosas para apoiar o processo de tomada de decisão em curto, médio e longo prazo. Devido às não linearidades, sazonalidades e tendências que podem ocorrer nos dados temporais de abastecimento de água, o desenvolvimento de modelos de previsão eficientes torna-se uma tarefa desafiadora \cite{mateus}.
-
-Na Figura \ref{fig:paradigma-ml}, as etapas de como a análise de dados e a seleção dos modelos devem ocorrer são apresentadas. Essa escolha pode ser conduzida de modo a determinar o que deve ser previsto na variável. Feito isso, a primeira etapa envolve a preparação dos dados, garantindo que cada um tenha sido identificado com seus rótulos de entrada e saída. É imperativo que os dados não contenham \textbf{NaN} (do inglês \textit{not a number}) ou dados ausentes, evitando assim falsos positivos.
-
-\begin{figure}[!htb]
-	\centering
-	\caption{Paradigma de aprendizado de máquina}
-	\includegraphics[width=\linewidth]{Introducao/Figuras/paradigma-ml}
+%\begin{figure}[!htb]
+%	\centering
+%	\caption{Paradigma de aprendizado de máquina}
+%	\includegraphics[width=\linewidth]{Introducao/Figuras/paradigma-ml.pdf}
 	
-	\fonte{Adaptado de \cite{apmonitor}}
-	\label{fig:paradigma-ml}
-\end{figure}
+%	\fonte{Adaptado de \cite{apmonitor}}
+%	\label{fig:paradigma-ml}
+%\end{figure}
 
-Ao realizar essa etapa, deve visualizar os dados para garantir que estejam carregados corretamente e em um tamanho tolerável, o que é conhecido como avaliação dos dados. Uma vez que os dados estejam limpos e devidamente carregados, sem falsos positivos, a divisão dos dados pode ser efetuada.
-A otimização dos dados para os modelos pode ocorrer de diversas maneiras, como a utilização da biblioteca Optuna em Python, que emprega a otimização Bayesiana para cada modelo pré-listado, reduzindo assim o tempo de processamento.
+%Ao realizar essa etapa, deve visualizar os dados para garantir que estejam carregados corretamente e em um tamanho tolerável, o que é conhecido como avaliação dos dados. Uma vez que os dados estejam limpos e devidamente carregados, sem falsos positivos, a divisão dos dados pode ser efetuada.
+% A otimização dos dados para os modelos pode ocorrer de diversas maneiras, como a utilização da biblioteca Optuna em Python, que emprega a otimização Bayesiana para cada modelo pré-listado, reduzindo assim o tempo de processamento.
 
-A validação é uma prática comum em conjuntos de dados extensos, permitindo que os modelos interajam mais eficientemente com os dados e proporcionem resultados mais precisos. Após essa etapa, na escolha dos modelos, há a possibilidade de determinar se o modelo é de série temporal, classificação, agrupamento ou regressão. Posteriormente, ao listar os modelos, cada um deles deve passar por uma avaliação com métricas específicas para verificar a precisão de seus resultados.
+%A validação é uma prática comum em conjuntos de dados extensos, permitindo que os modelos interajam mais eficientemente com os dados e proporcionem resultados mais precisos. Após essa etapa, na escolha dos modelos, há a possibilidade de determinar se o modelo é de série temporal, classificação, agrupamento ou regressão. Posteriormente, ao listar os modelos, cada um deles deve passar por uma avaliação com métricas específicas para verificar a precisão de seus resultados. 
+%
 
+\subsection{Motiva\c c\~ao} 
+\label{subsubsec:motivacao}
 
-\subsubsection{Motiva\c c\~ao da Pesquisa} \label{subsubsec:motivacao}
+Estudar e fazer previsão de séries temporais de abastecimento de água é crucial por várias razões, pois isso permite uma gestão mais eficiente e sustentável dos recursos hídricos. Porém pode-se citar alguns motivos importantes. A previsão de séries temporais ajuda a antecipar demandas futuras de água, permitindo que os gestores planejem e desenvolvam infraestruturas adequadas para atender a essas demandas. Isso é vital para garantir que a água esteja disponível em quantidade suficiente para atender às necessidades da população. Fornece \textit{insights} sobre os padrões sazonais e tendências de consumo de água. Com essas informações, os gestores podem tomar decisões informadas sobre a alocação de recursos hídricos e implementar práticas de conservação. Permitem que as autoridades otimizem as operações de abastecimento de água, ajustando a produção e a distribuição com base nas variações de demanda ao longo do tempo. Isso contribui para uma operação mais eficiente do sistema. Podem prever eventos climáticos extremos, como secas prolongadas ou inundações, para trabalhar com situações de emergência. A previsão de séries temporais ajuda a antecipar esses eventos, permitindo que medidas preventivas sejam tomadas para garantir a continuidade do abastecimento de água.
 
-A motivação desta pesquisa baseia-se na situação enfrentada por Curitiba e região metropolitana, conforme destacado por \cite{vasconcelos_2020}. A região passou por um rodízio de abastecimento de água, com períodos de 36 horas com abastecimento de água, seguidos por 36 horas sem abastecimento. A média geral dos reservatórios na região estava em torno de $27,96\%$ de sua capacidade. Além disso, a quantidade de chuva nos anos anteriores, em $2020$, foi de $1.704$ mm, superando a média anual de precipitação de $1.490$ mm.
+Assim, uma gestão eficiente baseada em previsões precisas pode resultar em economia de recursos financeiros. Isso inclui evitar investimentos desnecessários em infraestrutura e garantir que os recursos sejam alocados de maneira eficaz. Ao compreender os padrões de consumo de água, é possível implementar práticas que promovam a sustentabilidade ambiental, como a redução do desperdício de água e a promoção de fontes alternativas e renováveis. Muitas áreas possuem regulamentações que exigem o monitoramento e relatório regular do abastecimento de água. O estudo e previsão de séries temporais auxiliam as autoridades a cumprir essas normativas de maneira eficaz. A capacidade de prever variações nas condições de abastecimento de água permite uma melhor gestão de riscos, tanto em termos de disponibilidade de água quanto de eventos que possam impactar negativamente a infraestrutura.
 
-Diante dessa situação, a pesquisa tem como abordagem principal a previsão do abastecimento de água, associada a condições de seca ou decorrentes das consequências da COVID-19. A partir dos dados coletados pela SANEPAR, é possível realizar uma análise detalhada, com o objetivo de prever e evitar a ocorrência de escassez de água. 
-
-
+Em especial, a situação enfrentada por Curitiba e região metropolitana em 2020, conforme destacado por \cite{vasconcelos_2020} referente ao rodízio de abastecimento de água, com períodos de 36 horas com abastecimento de água, seguidos por 36 horas sem abastecimento mostra a necessidade de previsões mais acuradas do abastecimento de água. Naquele ano a média geral dos reservatórios na região estava em torno de $27,96\%$ de sua capacidade. A crise hídrica teve como principal gatilho a seca meteorológica e estava bastante associada a como era feito o planejamento e a gestão dos recursos hídricos. Deste modo este estudo visa contribuir para a área trazendo algumas percepções que poderão ser usadas na previsão.
 
 \subsection{Objetivo Geral} \label{subsec:objetivos}
 
-O objetivo desta dissertação de mestrado é desenvolver séries temporais para auxiliar na tomada de decisões em situações de escassez de água no Bairro Alto, em Curitiba. A ideia é utilizar modelos de séries temporais como suporte para a melhor gestão desse problema enfrentado pela cidade.
+O objetivo geral deste estudo é desenvolver e aprimorar modelos de previsão de séries temporais para a demanda de água, integrando técnicas estatísticas e de aprendizado de máquina, visando proporcionar uma gestão eficiente e sustentável dos recursos hídricos, em específico na região do Bairro Alto em Curitiba (PR, Brasil), além de contribuir para a otimização do planejamento e operação de sistemas de abastecimento, promovendo a resiliência diante de variações sazonais e eventos imprevistos.
 
-Diversos modelos de regressão serão avaliados, com foco especial em modelos de redes neurais e o Prophet. Destaca-se a ênfase em modelos de \textit{gradient boosting}, redes neurais artificiais, além do ARIMA e suas variações contemporâneas. 
+Entre os objetivos específicos do estudo estão:
+\begin{enumerate}
+	
+\item Aplicar diferentes modelos de previsão de séries temporais advindas de dados do Bairro Alto em Curitiba através da SANEPAR.
+	
+ \item Analisar a precisão, eficiência e capacidade de previsão desses modelos em conjuntos de dados específicos, através de métricas estatísticas.
+	
+\item  Explorar as estratégias de otimização baseadas em otimização bayesiana utilizando o algoritmo TPE \textit{Tree-structured Parzen Estimator}) para ajustar os hiperparâmetros dos modelos de previsão de séries temporais.
+	
+\item Identificar a combinação mais eficaz de modelo de previsão de séries temporais junto com a configuração de otimização.
+ 
+\end{enumerate}
 
+\subsection{Etapas para An\'alise dos Dados} 
+\label{subsec:metod}
 
+Com o objetivo de realizar as previsões e fazer comparações entre os modelos preditores, a pesquisa adotará um processo bem definido, bem como a seleção dos modelos a serem utilizados na Análise Exploratória de Dados (EDA). A pesquisa foi conduzida seguindo as etapas delineadas, conforme apresentado na Figura \ref{fig:etapas}.
+\noindent As etapas para análise dos dados incluem:
 
-\subsubsection{Objetivos Espec\'ificos} \label{subsubsec:obespec}
-
-
+\begin{figure}[!htb]
+	\centering
+	\caption{Etapas para Análise dos Dados.}
+	\label{fig:etapas}
+	\includegraphics[width=0.7\linewidth]{Introducao/Figuras/Etapas.pdf}
+\end{figure}
 
 \begin{enumerate}
-	\item Comparação de Modelos e Técnicas de Otimização
-	
-	Compara modelos de séries temporais.
-	Avalia técnicas de otimização baseadas em otimização bayesiana utilizando o algoritmo de TPE (do inglês  \textit{Tree-structured Parzen Estimator}).
-	
-	\item  Desempenho dos Modelos de Séries Temporais
-	
-	Avalia o desempenho dos diferentes modelos de séries temporais.
-	Analisa a precisão, eficiência e capacidade de previsão desses modelos em conjuntos de dados específicos.
-	
-	\item  Implementação de Estratégias de Otimização
-	
-	Explora estratégias de otimização baseadas em otimização bayesiana utilizando o algoritmo TPE.
-	Implementa técnicas de otimização para ajustar hiperparâmetros dos modelos de séries temporais.
-	
-	\item Identificação da Melhor Combinação de Modelo e Otimização
-	
-	Identifica a combinação mais eficaz de modelo de séries temporais e configurações de otimização.
-	Aprimora a precisão das previsões e otimiza o processo de modelagem.
-\end{enumerate}
 
-\subsection{Procedimentos Metodol{\'o}gicos} \label{subsec:metod}
-
-Com o objetivo de realizar previsões e fazer comparações entre os modelos obtidos na revisão sistemática da literatura, a pesquisa adotará um processo metodológico bem definido. Esse processo é detalhado na subseção \ref{subsubsec:etp} desta seção, onde são estabelecidas as etapas a serem seguidas. Isso inclui a definição do que será previsto, bem como a seleção dos métodos a serem utilizados na Análise Exploratória de Dados (EDA).
-
-
-\subsubsection{Etapas da Pesquisa}\label{subsubsec:etp}
-
-
-A pesquisa foi conduzida seguindo as etapas delineadas, conforme apresentado na Figura \ref{fig:etapas}.
-
-\begin{figure}[!htb]
-	\centering
-	\caption{Mapa das Etapas}
-	\label{fig:etapas}
-	\includegraphics[width=0.7\linewidth]{Introducao/Figuras/Etapas}
+\item {Análise Exploratória de Dados (EDA)}: Nesta etapa  tem-se a identificação de valores ausentes, a observação de padrões temporais e a detecção de anomalias. Gráficos de linha são comuns para visualizar a convergência dos dados \cite{Rostam2021108249}.
 	
+\item {Definição de Variáveis Preditoras e Variável Alvo (Modelo MISO)}: Na segunda etapa, as variáveis preditoras e a variável alvo para a previsão de Múltiplas Entradas e Uma Saída \textit{ Multiple Inputs Single Output} (MISO) são selecionadas. Diferentes modelos, podem incorporar variáveis exógenas na modelagem. Essas variáveis exógenas aprimoram as capacidade de previsão do modelo, especialmente quando o horizonte de previsão se estende além dos dados históricos \cite{PAWLOWSKI202298}. 
 	
-\end{figure}
-
-\noindent As etapas da pesquisa incluem:
-\begin{enumerate}[start=1, label={\textbf{Etapa} \arabic*}]
+\item {Decomposição STL}: O método de decomposição STL\textit{Seasonal and Trend Decomposition Using locally estimated scatterplot smoothing (Loess)} separa uma série temporal em três componentes: sazonalidade, tendência e resíduo. Essa decomposição permite. Decompor séries temporais em sazonal captura variações periódicas e repetitivas. Decompor séries temporais em tendência reflete a evolução geral dos dados ao longo do tempo. Já a componente de resíduo engloba as variações não explicadas pelas anteriores \cite{Bandara2021}.
 	
-	\item \label{etp:1} \textbf{Análise Exploratória de Dados (EDA)}: Nesta etapa  tem-se a identificação de valores ausentes, a observação de padrões temporais e a detecção de anomalias. Gráficos de linha são comuns para visualizar a convergência dos dados \cite{Rostam2021108249}.
+\item {Divisão dos Dados}: É prática comum dividir o conjunto de dados em conjuntos de treinamento, validação e teste para avaliar o desempenho do modelo. Essa divisão permite uma análise da capacidade de generalização dos modelos, evitando problemas de ajuste excessivo ou insuficiente. A proporção de alocação pode variar, mas uma abordagem é alocar 70\% para treinamento e validação, e os 30\% restantes para o conjunto de testes. A porção de treinamento e validação pode ser subdividida em 80\% para treinamento e 20\% para validação \cite{Tao2020}.
 	
-	\item \label{etp:2} \textbf{Definição de Variáveis Preditoras e Variável Alvo (MISO)}: Na segunda etapa, as variáveis preditoras e a variável alvo para a previsão de Múltiplas Entradas e Uma Saída (do inglês\textit{ Multiple Inputs Single Output}, MISO) são selecionadas. Diferentes modelos, podem incorporar variáveis exógenas na modelagem. Essas variáveis exógenas aprimoram as capacidade de previsão do modelo, especialmente quando o horizonte de previsão se estende além dos dados históricos \cite{PAWLOWSKI202298}. 
+\item {Modelagem e Seleção do Modelo}: Nesta etapa, diversos modelos são construídos e avaliados. Alguns modelos comumente usados para previsão de séries temporais incluem ARX, AR, MA, ARIMA, SARIMA, SARIMAX  e modelos de aprendizado de máquina como RNN, LSTM, GRU, Transformer, DTR, LR, XGBoost, Light GBM, e Prophet. A escolha do modelo baseia-se em critérios como desempenho na validação, simplicidade do modelo e interpretabilidade dos resultados.
 	
-	\item \label{etp:3} \textbf{Decomposição STL}: O método de decomposição STL (do inglês \textit{Seasonal and Trend Decomposition Using locally estimated scatterplot smoothing (Loess)}) separa uma série temporal em três componentes: sazonalidade, tendência e resíduo. Essa decomposição permite. Decompor séries temporais em sazonal captura variações periódicas e repetitivas. Decompor séries temporais em tendência reflete a evolução geral dos dados ao longo do tempo. Já a componente de resíduo engloba as variações não explicadas pelas anteriores \cite{Bandara2021}.
+\item {Validação e Ajuste do Modelo}: Durante a construção do modelo, é importante avaliar seu desempenho usando dados de validação. Neste contexto, métricas de avaliação tais como de avaliação como MAE (Erro Médio Absoluto), sMAPE (Erro Médio Percentual Absoluto Simétrico) e RRMSE (Raiz do Erro Médio Quadrático Relativo) podem ser usadas para comparar e selecionar o melhor modelo. Além disso, técnicas de ajuste como otimização de hiperparâmetros e refinamento do modelo usando dados de treinamento e validação combinados podem melhorar o desempenho de previsão de séries temporais.
 	
-	\item \label{etp:4} \textbf{Divisão dos Dados}: É prática comum dividir o conjunto de dados em conjuntos de treinamento, validação e teste para avaliar o desempenho do modelo. Essa divisão permite uma análise da capacidade de generalização dos modelos, evitando problemas de ajuste excessivo ou insuficiente. A proporção de alocação pode variar, mas uma abordagem é alocar 70\% para treinamento e validação, e os 30\% restantes para o conjunto de testes. A porção de treinamento e validação pode ser subdividida em 80\% para treinamento e 20\% para validação \cite{Tao2020}.
+\item {Previsão e Avaliação}: Com o modelo final com os dados de treinamento e validação, é possível fazer previsões para o conjunto de testes, que representa dados futuros não observados. Essas previsões são comparadas com os valores reais correspondentes para avaliar a qualidade e precisão do modelo.
 	
-	\item \label{etp:5} \textbf{Modelagem e Seleção do Modelo}: Nesta etapa, diversos modelos são construídos e avaliados. Alguns modelos comumente usados para previsão de séries temporais incluem ARX, AR, MA, ARIMA, SARIMA, SARIMAX  e modelos de aprendizado de máquina como RNN, LSTM, GRU, Transformer (Transformador), DTR (do inglês \textit{Decision tree regressor}), LR (do inglês \textit{Linear Regression}), XGBoost (do inglês \textit{eXtreme Gradient Boosting}), Light GBM além do Prophet. A escolha do modelo baseia-se em critérios como desempenho na validação, simplicidade do modelo e interpretabilidade dos resultados.
+\item {Teste de Significância}: Aplicar os modelos de previsão e fazer comparativo baseado em testes de significância estatística (\textit{Friedman e Nemenjy}).
 	
-	\item \label{etp:6} \textbf{Validação e Ajuste do Modelo}: Durante a construção do modelo, é importante avaliar seu desempenho usando dados de validação. Neste contexto, métricas de avaliação tais como de avaliação como MAE (Erro Médio Absoluto), sMAPE (Erro Médio Percentual Absoluto Simétrico) e RRMSE (Raiz do Erro Médio Quadrático Relativo) podem ser usadas para comparar e selecionar o melhor modelo. Além disso, técnicas de ajuste como otimização de hiperparâmetros e refinamento do modelo usando dados de treinamento e validação combinados podem melhorar o desempenho de previsão de séries temporais.
-	
-	\item \label{etp:7} \textbf{Previsão e Avaliação}: Com o modelo final com os dados de treinamento e validação, é possível fazer previsões para o conjunto de testes, que representa dados futuros não observados. Essas previsões são comparadas com os valores reais correspondentes para avaliar a qualidade e precisão do modelo.
-	
-	\item \label{etp:8} \textbf{Teste de Significância}: Aplicar os modelos de previsão e fazer comparativo baseado em testes de significância estatística (\textit{Friedman e Nemenjy}).
-	
-	O teste de Friedman é uma ferramenta estatística não paramétrica utilizada para comparar três ou mais grupos relacionados quando os dados não atendem aos pressupostos da ANOVA. Ele determina se há diferenças significativas entre os grupos. Se a diferença for confirmada, o teste de Nemenyi é frequentemente empregado para realizar comparações múltiplas entre grupos específicos, identificando quais pares são significativamente diferentes após a rejeição da hipótese nula no teste de Friedman. Assim, esses métodos são cruciais quando se deseja comparar múltiplos grupos sem fazer suposições sobre a distribuição dos dados.
-	
+%O teste de Friedman é uma ferramenta estatística não paramétrica utilizada para comparar três ou mais grupos relacionados quando os dados não atendem aos pressupostos da ANOVA. Ele determina se há diferenças significativas entre os grupos. Se a diferença for confirmada, o teste de Nemenyi é frequentemente empregado para realizar comparações múltiplas entre grupos específicos, identificando quais pares são significativamente diferentes após a rejeição da hipótese nula no teste de Friedman. Assim, esses métodos são cruciais quando se deseja comparar múltiplos grupos sem fazer suposições sobre a distribuição dos dados.
 	
 \end{enumerate}
 
-Cada uma dessas etapas desempenha um papel crucial na pesquisa e no processo de modelagem de séries temporais, contribuindo para a compreensão dos dados, construção e validação dos modelos.
+Cada uma dessas etapas desempenha um papel crucial na análise dos dados e no processo de modelagem das séries temporais, contribuindo para a compreensão dos dados, construção e validação dos modelos de previsão.
 
+\subsection{Estrutura do Documento} \label{subsec:estrutura}
 
-\subsection{Justificativa da Pesquisa} \label{subsec:justif}
-
-Ao longo desta dissertação, os seguintes aspectos são abordados visando a previsão e tomada de decisões.
-
-\subsubsection{Contribui\c c\~oes} \label{subsubsec:Contribuição}
-
-
-A dissertação fundamenta-se em modelos previamente não explorados neste contexto, como GRU, LSTM, XGBOOST, LGBM, Transformer, RNN, ANN e CNN. A primeira contribuição aborda a previsão da demanda de água em Curitiba, considerando elementos como consumo e consumo de energia durante picos.
-
-Vários desses modelos na literatura não foram aplicados neste tema de demanda de água, utilizando-os para comparação entre si e em relação aos modelos que já foram trabalhados nesse contexto de demanda d'água, a fim de certificar se esses modelos podem ou não ser utilizados nesse contexto.
-
-Os modelos do tipo ARIMA e suas variantes foram aplicados neste tema, como demonstrado por \cite{2-s2.0-85069459067, 2-s2.0-85099424908}. Alguns outros modelos, apesar de suas vantagens, ainda não foram devidamente aplicados, como é o caso do modelo de RNN \cite{2-s2.0-85067419084}, que se mostrou significativamente superior aos outros 19 modelos listados ao longo deste trabalho.
-
-\subsection{Estrutura da Disserta\c c\~ao} \label{subsec:estrutura}
-
-
-Essa dissertação está organizada em capítulos. Cada um abordando aspectos específicos da pesquisa. 
-O Capítulo~\ref{sec:int},  apresentou uma contextualização do estudo, destacando a motivação e os objetivos a serem alcançados. 
-
-O Capítulo~\ref{sec:refteo}, menciona uma visão geral das principais pesquisas.
-
-No Capítulo~\ref{sec:base}, são apresentados os modelos que serão utilização dos dados de séries temporais da SANEPAR, com os dados coletados.
-
-
-O Capítulo~\ref{sec:result}, apresenta os resultados obtidos ao longo da pesquisa.  Os resultados de previsão são detalhados, evidenciando análises quanto aos modelos de previsão projetados.
-
-Finalizando, o Capítulo~\ref{sec:conclusoes} apresenta os resultados da pesquisa.
-
-
-
-\begin{figure}[!htb]
-	\centering
-	\caption{Estrutura da dissertação}
-	\label{fig:estrutura}
-	\includegraphics[width=0.75\linewidth]{Introducao/Figuras/estrutura}
-	
-	
-\end{figure}
-
+Esse documento de dissertação está organizado em 6 capítulos. O Capítulo~\ref{sec:int},  apresentou contextualização, justificativa, objetivos, contribuições, e a organização do documento.  O Capítulo~\ref{sec:refteo} menciona uma visão geral das principais pesquisas na área de previsão de séries temporais aplicadas a demanda de água. No Capítulo~\ref{sec:base} são descritos os modelos de previsão que serão utilizados nos dados de séries temporais de abastecimento de água no Bairro Alto em Curitiba, dados estes fornecidos pela SANEPAR através de coletas horárias durante 3 anos consecutivos. O Capítulo~\ref{sec:result} apresenta os resultados obtidos ao longo da pesquisa com discussões. Os resultados de previsão obtidos são detalhados e a técnica de otimização e métricas estatísticas de desempenho são aplicadas e analisadas. O Capítulo~\ref{sec:conclusoes} apresenta os principais resultados da pesquisa, as limitações e delineia possíveis estudos futuros na área. 
