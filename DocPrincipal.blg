@@ -22,6 +22,14 @@ A level-1 auxiliary file: Pretextuais/listas.aux
 Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: Pretextuais/lista-simbolos.aux
 Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: Introducao/sec-introducao.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: Revisao/sec-revisao.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: Modelos/sec-modelos.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: Resultados/sec-resultados.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: Conclusoes/sec-conclusoes.aux
 Reallocating 'name_of_file' (item size: 1) to 34 items.
 A level-1 auxiliary file: Bibliografia/sec-bibliografia.aux
@@ -38,7 +46,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
-Reallocating 'field_info' (item size: 4) to 14453 items.
+Reallocating 'field_info' (item size: 4) to 14384 items.
 Database file #1: abntex2-options.bib
 Database file #2: Bibliografia/Dissert2.bib
 Repeated entry---line 591 of file Bibliografia/Dissert2.bib
@@ -132,45 +140,45 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 137 entries,
+You've used 136 entries,
             6714 wiz_defined-function locations,
-            2103 strings with 41719 characters,
-and the built_in function-call counts, 170024 in all, are:
-= -- 16524
-> -- 5073
-< -- 2872
-+ -- 4464
-- -- 1487
-* -- 11893
-:= -- 21104
-add.period$ -- 494
-call.type$ -- 137
-change.case$ -- 1677
-chr.to.int$ -- 471
-cite$ -- 135
-duplicate$ -- 13523
-empty$ -- 7929
-format.name$ -- 7224
-if$ -- 36439
+            2102 strings with 41648 characters,
+and the built_in function-call counts, 169040 in all, are:
+= -- 16454
+> -- 5031
+< -- 2869
++ -- 4448
+- -- 1475
+* -- 11815
+:= -- 20974
+add.period$ -- 490
+call.type$ -- 136
+change.case$ -- 1663
+chr.to.int$ -- 467
+cite$ -- 134
+duplicate$ -- 13476
+empty$ -- 7867
+format.name$ -- 7163
+if$ -- 36205
 int.to.chr$ -- 8
 int.to.str$ -- 0
-missing$ -- 2445
-newline$ -- 757
-num.names$ -- 675
-pop$ -- 3149
+missing$ -- 2427
+newline$ -- 751
+num.names$ -- 670
+pop$ -- 3128
 preamble$ -- 1
-purify$ -- 607
+purify$ -- 602
 quote$ -- 0
-skip$ -- 13950
+skip$ -- 13900
 stack$ -- 1
-substring$ -- 7649
-swap$ -- 5779
-text.length$ -- 271
+substring$ -- 7603
+swap$ -- 5752
+text.length$ -- 269
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 9
 warning$ -- 0
-while$ -- 1043
+while$ -- 1035
 width$ -- 0
-write$ -- 2234
+write$ -- 2217
 (There were 20 error messages)

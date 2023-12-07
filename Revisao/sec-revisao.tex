@@ -4,7 +4,7 @@ Este capítulo apresenta uma revisão sistemática  da literatura (RSL) nos tema
 
 Esta RSL aborda palavras chave como séries temporais, previsão, análise de séries temporais, abastecimento de água, e saneamento, que são palavras relevantes para esta pesquisa. 
 
-A seleção das referências foi baseada em critérios específicos tais como. Definição das bases de busca, escolha das keywords, seleção do período de busca (2016 a 2023), seleção do tipo de artigo, organização pela ordem de citações, verificação dos periódicos mais importantes (fator Q1 do Scimago e Fator de Impacto). Embora nem todas as referências obtidas tenham uma relação evidente ou mesmo acentuada com a área de aprendizado de máquina, elas contribuem como material de suporte a implementação de alguns modelos avaliados para previsão neste trabalho e podem servir como base para outros estudos.
+A seleção das referências foi baseada em critérios específicos tais como. Definição das bases de busca, escolha das \textit{keywords}, seleção do período de busca (2016 a 2023), seleção do tipo de artigo, organização pela ordem de citações, verificação dos periódicos mais importantes (fator Q1 do Scimago e Fator de Impacto). Se um periódico pertencer ao quartil Q1 do Scimago significa que tem um desempenho melhor do que pelo menos 75\% das revistas dessa mesma categoria. Embora nem todas as referências obtidas tenham uma relação evidente ou mesmo acentuada com a área de aprendizado de máquina, elas contribuem como material de suporte a implementação de alguns modelos avaliados para previsão nesta dissertação e podem servir como base para outros estudos.
 
 A Figura \ref{fig:serie-temporal} apresenta um fluxograma de como a pesquisa foi realizada, destacando a importância da escolha dos periódicos Q1 e com maior fator de impacto (F.I.), como base para esta RSL. A mesma figura apresenta uma adaptação da metodologia proposta por \citeonline{MARTINS201671} para a realização da RSL, onde primeiramente foram realizadas buscas na base Scopus e WoS (\textit{Web of Science}), selecionando referências relevantes para o tema da pesquisa.Para as duas bases de busca utilizadas foram usadas as palavras-chave ``\textit{time series forecasting}'', ``\textit{time series analysis}'', ``\textit{sanitation}'' e ``\textit{water supply}'' .
 
@@ -41,17 +41,17 @@ A Tabela \ref{tb1} apresenta as palavras-chave utilizadas em cada base de dados,
 	\centering
 	\caption{Combinação de palavras-chave aplicando filtros.}\label{tb1}
 	\begin{tabular}{@{}lp{2cm}lp{2cm}lp{1.5cm}lp{2cm}l@{}}
-			\toprule
-			Bases                  & \multicolumn{7}{l}{Palavras chaves}                              & Resultados \\ \midrule
-			\multirow{2}{*}{Scopus} & time series forecasting & AND & time series analysis &     &              &     &            & 798        \\
-			& time series forecasting & OR  & time series analysis & AND & water supply & AND & sanitation & 33         \\
-			\multirow{2}{*}{WoS}    & time series forecasting & OR  & time series analysis &     &              &     &            & 79         \\
-			& time series forecasting & OR  & time series analysis & AND & water supply & AND & sanitation & 19         \\ \hline
-			\multicolumn{8}{l}{Total}                                                                                              & 929        \\ \bottomrule
-		\end{tabular}	
+		\toprule
+		Bases                  & \multicolumn{7}{l}{Palavras chaves}                              & Resultados \\ \midrule
+		\multirow{2}{*}{Scopus} & time series forecasting & AND & time series analysis &     &              &     &            & 798        \\
+		& time series forecasting & OR  & time series analysis & AND & water supply & AND & sanitation & 33         \\
+		\multirow{2}{*}{WoS}    & time series forecasting & OR  & time series analysis &     &              &     &            & 79         \\
+		& time series forecasting & OR  & time series analysis & AND & water supply & AND & sanitation & 19         \\ \hline
+		\multicolumn{8}{l}{Total}                                                                                              & 929        \\ \bottomrule
+	\end{tabular}	
 \end{table}
 
-Na Tabela \ref{tab:resumo} são descritos os dados obtidos na RSL após a aplicação do software \textit{ScientoPy}, onde é exibida a quantidade de artigos coletados em ambas bases Scopus e WoS. Apesar do volume considerável, os artigos não foram lidos integralmente, uma vez que muitos deles não se relacionavam diretamente com o objeto de pesquisa deste estudo. Consequentemente, ao longo da condução da RSL artigos discrepantes com o estudo foram excluídos.
+Na Tabela \ref{tab:resumo} são descritos os dados obtidos na RSL após a aplicação do \textit{software} \textit{ScientoPy}, onde é exibida a quantidade de artigos coletados em ambas bases Scopus e WoS. Apesar do volume considerável, os artigos não foram lidos integralmente, uma vez que muitos deles não se relacionavam diretamente com o objeto de pesquisa deste estudo. Consequentemente, ao longo da condução da RSL artigos discrepantes com o estudo foram excluídos.
 
 \begin{table}[!htb]
 	\centering
@@ -67,14 +67,14 @@ Na Tabela \ref{tab:resumo} são descritos os dados obtidos na RSL após a aplica
 		\hline
 		Porcentagem de artigos duplicados & 87\% \\
 		Quantidade de artigos duplicados & 23 \\
-	Quantidade de artigos sem duplicados & 906 \\
+		Quantidade de artigos sem duplicados & 906 \\
 		Porcentagem de artigos duplicados removidos da base WoS & 19,4\% \\
 		Porcentagem de artigos duplicados removidos da base Scopus & 0,5\% \\
 		Quantidade de artigos duplicados com diferentes citações & 3 \\
 		Porcentagem de artigos duplicados com diferentes citações & 13\% \\
 		\hline
 	\end{tabular}
- 
+	
 \end{table}
 
 
@@ -83,9 +83,9 @@ A Tabela \ref{tb2} apresenta os periódicos onde foram publicados o maior númer
 \begin{table}[!htb]
 	\centering
 	\caption{Classificação dos principais periódicos obtidos na RSL.}\label{tb2}
-
-\begin{tabular}{llll}		
-  \toprule
+	
+	\begin{tabular}{llll}		
+		\toprule
 		Periódicos      & No. de artigos & SJR & \textit{h-index} \\\midrule
 		Neurocomputing         & 27                         & Q1                     & 143     \\
 		IEEE Access            & 18                         & Q1                     & 127     \\
@@ -95,10 +95,10 @@ A Tabela \ref{tb2} apresenta os periódicos onde foram publicados o maior númer
 	\end{tabular}
 \end{table}
 
-O software \textit{ScientoPy} obtém os principais tópicos de tendência com base na maior taxa de crescimento médio (AGR) \textit{Average Growth Rate}). A AGR é a diferença média entre o número de documentos publicados em um ano e o número de documentos publicados no ano anterior \cite{scientopy}. Indicando como o número de documentos publicados para um tópico em específico cresceu (número positivo) ou diminuiu (número negativo) em média dentro de um período de tempo. Assim, o AGR é calculado por,
+O \textit{software} \textit{ScientoPy} obtém os principais tópicos de tendência com base na maior taxa de crescimento médio \textit{Average Growth Rate} (AGR). A AGR é a diferença média entre o número de documentos publicados em um ano e o número de documentos publicados no ano anterior \cite{scientopy}. Indicando como o número de documentos publicados para um tópico em específico cresceu (número positivo) ou diminuiu (número negativo) em média dentro de um período de tempo. Assim, o AGR é calculado por,
 
 \begin{eqnarray}
-\mathrm{AGR}&=&\dfrac{\sum_{i=Y_{\mathrm{s}}}^{Y_{\mathrm{e}}} P_i-P_{i-1}}{\left(Y_{\mathrm{e}}-Y_{\mathrm{s}}\right)+1} \label{arg}
+	\mathrm{AGR}&=&\dfrac{\sum_{i=Y_{\mathrm{s}}}^{Y_{\mathrm{e}}} P_i-P_{i-1}}{\left(Y_{\mathrm{e}}-Y_{\mathrm{s}}\right)+1} \label{arg}
 \end{eqnarray}
 
 \noindent onde AGR é a taxa média de crescimento, $Y_e$ é o ano final, $Y_s$ é o ano inicial, $P_i$ é o número de publicações no ano $i$. Para o ano final $Y_e$, o \textit{ScientoPy} utiliza o ano final global por defeito configurado nas opções globais ou/em parâmetros do comando \textit{ScientoPy}. O ano de início $Y_s$ é calculado a partir do ano final $Y_e$, conforme calculado por,
@@ -107,17 +107,17 @@ O software \textit{ScientoPy} obtém os principais tópicos de tendência com ba
 	Y_{\mathrm{s}}&=&Y_{\mathrm{e}}-(\text { WindowWidth }+1)\label{arg2}
 \end{eqnarray}
 
-onde a largura da janela (\textit{Window Width}) é predefinida como 2 anos. Assim, se o ano final for 2018, o AGR é a taxa de crescimento média entre 2017 e 2018 \cite{scientopy}.
+\noindent onde a largura da janela (\textit{Window Width}) é predefinida como 2 anos. Assim, se o ano final for 2018, o AGR é a taxa de crescimento média entre 2017 e 2018 \cite{scientopy}.
 
-A média de documentos por ano (ADY) \textit{average documents per year} é um indicador absoluto que representa o número médio de documentos publicados num período de tempo para um tópico específico. O ADY é calculado por,
+A média de documentos por ano  \textit{Average Documents per Year} (ADY) é um indicador absoluto que representa o número médio de documentos publicados num período de tempo para um tópico específico. O ADY é calculado por,
 
 \begin{eqnarray}
 	\mathrm{ADY}&=&\dfrac{\sum_{i={Y_{\mathrm{s}}}(t)}^{Y_{\mathrm{e}}(t)} P_i}{\left(Y_{\mathrm{e}}(t)-Y_{\mathrm{s}}(t)\right)+1}\label{ady}
 \end{eqnarray}
 
-\noindent onde $ADY$ é a média de documentos por ano, $Y_e(t)$ é o ano final, $Y_s(t)$ é o ano inicial, calculado como descrito na equação \eqref{ady}, $Pi$ é o número de publicações no ano $i$.
+\noindent onde ADY é a média de documentos por ano, $Y_e(t)$ é o ano final, $Y_s(t)$ é o ano inicial, calculado como descrito na equação \eqref{ady}, $Pi$ é o número de publicações no ano $i$.
 
-A porcentagem de documentos nos últimos anos (PDLY) \textit{Percentage of documents in last years} é um indicador relativo que representa a percentagem do ADY em relação ao número total de documentos para um tópico específico. Desta forma, o PDLY é calculado como,
+A porcentagem de documentos nos últimos anos  \textit{Percentage of Documents in Last Years} (PDLY) é um indicador relativo que representa a percentagem do ADY em relação ao número total de documentos para um tópico específico. Desta forma, o PDLY é calculado como,
 
 \begin{eqnarray}
 	\mathrm{PDLY}&=&\dfrac{\sum_{i={Y_{\mathrm{s}}(t)}}^{Y_{\mathrm{e}}(t)} P_i}{\left(Y_{\mathrm{e}(t)}-Y_{\mathrm{s}(t)}+1\right) \cdot \mathrm{TND}} \cdot 100 \%\label{pdly}
@@ -125,7 +125,7 @@ A porcentagem de documentos nos últimos anos (PDLY) \textit{Percentage of docum
 
 \noindent onde $PDLY$ é a percentagem de documentos nos últimos anos, $Y_e(t)$ é o ano final, $Y_s$ é o ano inicial, calculado como descrito na equação \eqref{pdly}, $P_i$ é número de publicações no ano i, $TND$ é o número total de documentos.
 
-Tabela \ref{tb:autor} descreve os principais autores obtidos na RSL descrita previamente, sobre o tema em análise. Essa abordagem visa evitar a inclusão de todos os autores e destacar aqueles que tiveram uma contribuição significativa na área. Dessa forma, é possível identificar o principal autor que se destacou, fornecendo uma visão geral da distribuição da produção científica entre os pesquisadores. Na Tabela \ref{tb:autor} são descritos os valores da taxa de crescimento médio (AGR), documentos médios por ano (ADY), e porcentagem de documentos nos últimos anos (PDLY) no período de 2021 a 2023.
+Tabela \ref{tb:autor} descreve os principais autores obtidos na RSL descrita previamente, sobre o tema em análise. Essa abordagem visa evitar a inclusão de todos os autores e destacar aqueles que tiveram uma contribuição significativa na área. Dessa forma, é possível identificar o principal autor que se destacou, fornecendo uma visão geral da distribuição da produção científica entre os pesquisadores. Na Tabela \ref{tb:autor} são descritos os valores da taxa de crescimento médio AGR, documentos médios por ano ADY, e porcentagem de documentos nos últimos anos PDLY no período de 2021 a 2023.
 
 \begin{table}[!htb]
 	\centering
@@ -180,9 +180,9 @@ Foi realizada uma análise dos artigos obtidos com a RSL. Esses artigos retratam
 
 Notou-se que em tais artigos diferentes modelos de previsão de séries temporais foram utilizados. Eles representam contribuições significativas para o avanço do conhecimento e aplicação prática das séries temporais, sobre abordagens eficazes nesse campo. 
 
-Por exemplo, no estudo conduzido por \citeonline{Xu2019}, um modelo híbrido foi proposto, combinando o modelo linear AR e LR com o modelo não-linear ARIMA e o modelo (DBN) \textit{Dynamic Bayesian Network}. Essa abordagem permitiu capturar tanto os comportamentos lineares quanto os não-lineares de uma série temporal. 
+Por exemplo, no estudo conduzido por \citeonline{Xu2019}, um modelo híbrido foi proposto, combinando o modelo linear AR e LR com o modelo não-linear ARIMA e o modelo \textit{Dynamic Bayesian Network} (DBN) . Essa abordagem permitiu capturar tanto os comportamentos lineares quanto os não-lineares de uma série temporal. 
 
-Por outro lado, \citeonline{Li2020} comparou o desempenho de previsão da abordagem MAELS (Modelo Alternativo de Estação Livre Série Temporal) com outros modelos de aprendizado de máquina como CNN, RNN, LSTM, GRU, Transformer, Prophet, ARIMA e (SVM-VAR) \textit{Support Vector Machine Variable Regression}. As abordagens CNN, RNN, GRU, Transformer e LSTM foram capazes de trabalhar com dados multivariados de entrada e saída, enquanto o ARIMA utiliza informações passadas para prever o futuro com base em características como autocorrelação e médias móveis. 
+Por outro lado, \citeonline{Li2020} comparou o desempenho de previsão da abordagem MAELS (Modelo Alternativo de Estação Livre Série Temporal) com outros modelos de aprendizado de máquina como CNN, RNN, LSTM, GRU, Transformer, Prophet, ARIMA e \textit{Support Vector Machine Variable Regression} (SVM-VAR) . As abordagens CNN, RNN, GRU, Transformer e LSTM foram capazes de trabalhar com dados multivariados de entrada e saída, enquanto o ARIMA utiliza informações passadas para prever o futuro com base em características como autocorrelação e médias móveis. 
 
 Na Tabela \ref{tb:mode} é apresentada a quantidade de artigos foram obtidos pela RSL para cada modelo de previsão e também cita-se pelo menos um autor correspondente a cada modelo.
 
@@ -202,7 +202,6 @@ Na Tabela \ref{tb:mode} é apresentada a quantidade de artigos foram obtidos pel
 		LSTM & \citeonline{WOS:000529902300014} & 35 & 3,3 & 10,7 & 91,4 & 16 \\
 		RNN & \citeonline{2-s2.0-85067419084} & 20 & 0 & 4,3 & 65 & 11 \\
 		Árvores de Decisão & \citeonline{2-s2.0-85054695177} & 12 & 0,7 & 3 & 75 & 7 \\
-		Transformer & \citeonline{2-s2.0-85045193200} & 10 & 2,3 & 3 & 90 & 5 \\
 		RF & \citeonline{2-s2.0-85135210428} & 9 & 1,7 & 2,7 & 88,9 & 5 \\
 		CNN & \citeonline{WOS:000841076700002} & 8 & 1,3 & 2,7 & 100 & 4 \\
 		GRU & \citeonline{2-s2.0-85135210428} & 5 & 0 & 1,3 & 80 & 4 \\
@@ -216,14 +215,3 @@ Na Tabela \ref{tb:mode} é apresentada a quantidade de artigos foram obtidos pel
 Além dos modelos prévios, também será utilizada a versão atualizada do ARIMA nesta dissertação, bem como os modelos SARIMA e SARIMAX serão comparados para determinar qual deles é o mais adequado. Além disso, serão empregados os modelos Light GBM e XGBoost. Os modelos de aprendizado profundo, como a RNN, ainda é considerada um excelente modelo para previsão de séries temporais no tema de saneamento básico que está estudado.
 
 Embora existam várias ramificações do modelo ARIMA, o modelo desenvolvido pelo Facebook, conhecido como Prophet, sobressai como uma opção superior em comparação com os demais. O Prophet é um modelo mais recente que simplifica significativamente muitas das tarefas que são necessárias ao lidar com o ARIMA. Enquanto o Prophet foi criado em 2017, o modelo ARIMA tem relatos de ter sido desenvolvido na década de 1960. Essa diferença temporal destaca a evolução e a modernização do campo de modelagem de séries temporais ao longo das décadas \cite{ramos2010previsoes}.
-
-
-
-
-
-
-
-
-
-
-

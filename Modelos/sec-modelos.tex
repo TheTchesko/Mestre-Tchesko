@@ -4,9 +4,9 @@
  
  \subsection{Modelos Cl\'assicos de S\'eries Temporais}\label{subsec:arima}
 
-O modelo ARIMA \textit{AutoRegressive Integrated Moving Average} é um modelo estatístico utilizado para a previsão de séries temporais. Ele é composto por três componentes principais: o componente autoregressivo (AR), o componente de médias móveis (MA) e o componente de diferenciação (I), que é aplicado para tornar a série temporal estacionária. 
+O modelo ARIMA é um modelo estatístico utilizado para a previsão de séries temporais. Ele é composto por três componentes principais: o componente AR, o componente de MA e o componente de diferenciação (I), que é aplicado para tornar a série temporal estacionária. 
 
-O componente auto-regressivo do modelo ARIMA é representado por AR$(p)$, em que o parâmetro $p$ determina o número de defasagens ou atrasos (do inglês \textit{lags}) a serem usados. A equação do modelo AR$(p)$ é expressa da seguinte forma:
+O componente auto-regressivo do modelo ARIMA é representado por AR$(p)$, em que o parâmetro $p$ determina o número de defasagens ou atrasos (\textit{lags}) a serem usados. A equação do modelo AR$(p)$ é expressa da seguinte forma:
  
  \begin{eqnarray}
  	Y_t&=&c+\sum_{n=1}^{p} \alpha_n Y_{t-n} + \varepsilon_t\label{AR}
@@ -19,20 +19,20 @@ O modelo ARX é uma extensão do modelo AR, que incorpora variáveis exógenas n
  
  Se o parâmetro $p$ estiver na faixa $0 < \alpha < 1$, ocorre o fenômeno de reversão média. Isso significa que os valores da série tendem a oscilar em torno de uma média central e a regressar em direção a ela após se afastarem. Esse padrão indica uma tendência de retorno à média ao longo do tempo. Aumentar ainda mais o parâmetro $p$ no modelo AR significa considerar um número crescente de medições de tempo anteriores, cada uma multiplicada pelo seu próprio coeficiente. Isso permite levar em conta uma memória mais longa da série temporal e capturar padrões de dependência complexos ao longo do tempo. No entanto, é importante ter em mente que aumentar excessivamente o valor de $p$ pode levar a problemas de \textit{overfitting}, onde o modelo se ajusta muito bem aos dados de treinamento, mas tem um desempenho ruim na previsão de novos dados. Portanto, é necessário encontrar um equilíbrio entre a complexidade do modelo e sua capacidade de generalização.
  
-No modelo de média móvel (MA), o componente não é uma média móvel simples, mas sim uma combinação de termos de erro de previsão defasados. O parâmetro $q$ no modelo MA representa o número de termos de erro de previsão que são levados em consideração na previsão. Este componente não é uma média móvel, mas sim os atrasos no ruído branco \cite{signal}.
- Em um modelo MA(1), por exemplo, a previsão é composta por um termo constante, o produto do termo de erro de previsão anterior por um multiplicador, e o termo de erro de previsão atual. Essa abordagem baseia-se em princípios estatísticos e de probabilidade, ajustando a previsão com base em termos anteriores de erro de previsão.
+No modelo de MA, o componente não é uma média móvel simples, mas sim uma combinação de termos de erro de previsão defasados. O parâmetro $q$ no modelo MA representa o número de termos de erro de previsão que são levados em consideração na previsão. Este componente não é uma média móvel, mas sim os atrasos no ruído branco \cite{signal}.
+Em um modelo MA(1), por exemplo, a previsão é composta por um termo constante, o produto do termo de erro de previsão anterior por um multiplicador, e o termo de erro de previsão atual. Essa abordagem baseia-se em princípios estatísticos e de probabilidade, ajustando a previsão com base em termos anteriores de erro de previsão.
  
- O modelo MA é uma alternativa ao modelo AR e é usado para capturar padrões de dependência na média móvel, ou seja, a influência de erros passados na previsão atual. Ao combinar o modelo AR e o modelo MA, como no modelo ARMA, é possível obter uma modelagem mais abrangente que considera tanto a dependência autorregressiva quanto a dependência na média móvel \cite{arima}, tal que
+O modelo MA é uma alternativa ao modelo AR e é usado para capturar padrões de dependência na média móvel, ou seja, a influência de erros passados na previsão atual. Ao combinar o modelo AR e o modelo MA, como no modelo ARMA, é possível obter uma modelagem mais abrangente que considera tanto a dependência autorregressiva quanto a dependência na média móvel \cite{arima}, tal que
   
  \begin{eqnarray}
  	y_t=c+\varepsilon_t+\theta_1 \varepsilon_{t-1}+\theta_2 \varepsilon_{t-2}+\cdots+\theta_q \varepsilon_{t-q}\label{eq:ma}
  \end{eqnarray}
  
- \noindent onde $\varepsilon_t$ representa o ruído branco, esse modelo é conhecido como um modelo de média móvel MA$(q)$, em que $q$ é a ordem da média móvel. É importante ressaltar que não se observam diretamente os valores de $\varepsilon_t$, portanto, essa modelagem não se trata de uma regressão no sentido convencional.
+\noindent onde $\varepsilon_t$ representa o ruído branco, esse modelo é conhecido como um modelo de média móvel MA$(q)$, em que $q$ é a ordem da média móvel. É importante ressaltar que não se observam diretamente os valores de $\varepsilon_t$, portanto, essa modelagem não se trata de uma regressão no sentido convencional.
  
- Diferentemente de uma regressão comum em que se têm variáveis explicativas observadas, no modelo MA$(q)$, são usados os termos de ruído branco defasados para estimar e prever os valores da série temporal. O objetivo é capturar a dependência dos termos de erro passados na previsão atual \cite{arima}.
+Diferentemente de uma regressão comum em que se têm variáveis explicativas observadas, no modelo MA$(q)$, são usados os termos de ruído branco defasados para estimar e prever os valores da série temporal. O objetivo é capturar a dependência dos termos de erro passados na previsão atual \cite{arima}.
  
- O modelo ARMA é uma combinação dos modelos AR  e MA, onde o modelo AR é adicionado ao modelo MA. No modelo ARMA, é adicionada uma constante à soma dos termos autorregressivos multiplicados pelos seus coeficientes, juntamente com a soma dos termos de média móvel multiplicados pelos seus coeficientes, além do ruído branco. Essa estrutura é amplamente utilizada em diversos modelos de previsão em diferentes áreas. Esse modelo é bastante semelhante ao modelo ARIMA, pois calcula os termos, mas não inclui a diferenciação presente tanto no modelo ARMA quanto no modelo ARIMA, tal que
+O modelo ARMA é uma combinação dos modelos AR  e MA, onde o modelo AR é adicionado ao modelo MA. No modelo ARMA, é adicionada uma constante à soma dos termos autorregressivos multiplicados pelos seus coeficientes, juntamente com a soma dos termos de média móvel multiplicados pelos seus coeficientes, além do ruído branco. Essa estrutura é amplamente utilizada em diversos modelos de previsão em diferentes áreas. Esse modelo é bastante semelhante ao modelo ARIMA, pois calcula os termos, mas não inclui a diferenciação presente tanto no modelo ARMA quanto no modelo ARIMA, tal que
  
  \begin{eqnarray}
  	Y_t = \beta_2 + \omega_1\varepsilon_{t-1} + \omega_2 \varepsilon_{t-2} +\ldots+ \omega_q \varepsilon_{t-q} + \varepsilon_t \label{arima}
@@ -56,9 +56,8 @@ No modelo de média móvel (MA), o componente não é uma média móvel simples,
  	d_t=c+\sum_{n=1}^p \alpha_n d_{t-n}+\sum_{n=1}^q \theta_n \epsilon_{t-n}+\sum_{n=1}^r \beta_n x_{n_t}+\sum_{n=1}^P \phi_n d_{t-s n}+\sum_{n=1}^Q \eta_n \epsilon_{t-s n}+\epsilon_t \label{eq:sarmax}
  \end{eqnarray}
  
- \noindent onde $p$ é a ordem de autorregressão de tendência (ACF), é o número de termos autorregressivos (parte AR), permitindo incorporar o efeito de valores passados no modelo, $d$ é diferença de tendência, o número de diferenças não sazonais necessárias para estacionariedade, $q$ é a ordem da média móvel de tendência (PCAF), é o número de erros de previsão defasados na equação de previsão (parte MA). Enquanto os elementos sazonais em SARIMAX são, P é a ordem autorregressiva sazonal, D é a Ordem das diferenças sazonais,
- M é o número de etapas de tempo para um único período sazonal, M é igual à defasagem ACF com o valor mais alto (normalmente em uma defasagem alta). $D=1$ se a série tiver um padrão sazonal estável ao longo do tempo, $D=0$ se a série tiver um padrão sazonal instável ao longo do tempo, $P\geq1$ se a FAC for positiva na defasagem M, senão $P=0$, $Q\geq1$ se a ACF for negativa na defasagem M, caso contrário $Q=0$,
- e $X$ é a variável exógena. Na Figura \ref{fig:sarimaxmap} é mostrado detalhes do modelo SARIMAX.
+ \noindent onde $p$ é a ordem de autorregressão de tendência \textit{AutoCorrelation Function} (ACF), é o número de termos autorregressivos (parte AR), permitindo incorporar o efeito de valores passados no modelo, $d$ é diferença de tendência, o número de diferenças não sazonais necessárias para estacionariedade, $q$ é a ordem da média móvel de tendência \textit{Partial AutoCorrelation Function} (PCAF), é o número de erros de previsão defasados na equação de previsão (parte MA). Enquanto os elementos sazonais em SARIMAX são, P é a ordem autorregressiva sazonal, D é a Ordem das diferenças sazonais,
+ M é o número de etapas de tempo para um único período sazonal, M é igual à defasagem ACF com o valor mais alto (normalmente em uma defasagem alta). $D=1$ se a série tiver um padrão sazonal estável ao longo do tempo, $D=0$ se a série tiver um padrão sazonal instável ao longo do tempo, $P\geq1$ se a PCAF for positiva na defasagem M, senão $P=0$, $Q\geq1$ se a ACF for negativa na defasagem M, caso contrário $Q=0$, e $X$ é a variável exógena. Na Figura \ref{fig:sarimaxmap} é mostrado detalhes do modelo SARIMAX.
  
  
  \begin{figure}[H]
@@ -103,7 +102,7 @@ No modelo de média móvel (MA), o componente não é uma média móvel simples,
  	\hat{\beta}&=&\left(X^T X\right)^{-1} X^T y\label{eq:ols}
  \end{eqnarray}
  
- \noindent onde, $\hat{\beta}$ é um vetor de coeficientes estimados que minimiza a soma dos quadrados dos resíduos no método de mínimos quadrados ordinários (OLS, \textit{Ordinary Least Squares method}). Cada $\hat{\beta}_i$ representa o coeficiente estimado para a variável independente $X_i$;
+ \noindent onde, $\hat{\beta}$ é um vetor de coeficientes estimados que minimiza a soma dos quadrados dos resíduos no método de mínimos quadrados ordinários  \textit{Ordinary Least Squares method} (OLS). Cada $\hat{\beta}_i$ representa o coeficiente estimado para a variável independente $X_i$;
  $X$ é a matriz de dados independentes, onde cada coluna representa uma variável independente diferente e cada linha representa uma observação separada;
  $X^T$ denota a transposição da matriz $X$, ou seja, as linhas de $X$ tornam-se colunas de $X^T$ e vice-versa;
  $y$ é o vetor de variável dependente, que contém os valores observados que estão sendo modelados ou previstos;
@@ -132,14 +131,14 @@ No modelo de média móvel (MA), o componente não é uma média móvel simples,
   
  \subsubsection{Floresta Aleat\'oria} \label{subsubsec:rf}
  
-Dois modelos de previsão amplamente reconhecidos para criar conjuntos são \textit{bagging} e \textit{boosting}. A floresta aleatória (do inglês \textit{Random Forest}) (RF) utiliza o ensacamento para criar um conjunto de árvores de decisão, onde cada árvore é construída com uma amostra aleatória do conjunto de dados original. Isso assegura que as árvores sejam distintas e diversificadas, contribuindo para a robustez e eficácia do modelo \cite{SEMAN2023109269}.
+Dois modelos de previsão amplamente reconhecidos para criar conjuntos são \textit{bagging} e \textit{boosting}. A floresta aleatória RF utiliza o ensacamento para criar um conjunto de árvores de decisão, onde cada árvore é construída com uma amostra aleatória do conjunto de dados original. Isso assegura que as árvores sejam distintas e diversificadas, contribuindo para a robustez e eficácia do modelo \cite{SEMAN2023109269}.
  
  Cada árvore da RF é construída por meio de um algoritmo de aprendizado individual que divide o conjunto de variáveis de entrada em subconjuntos, com base em um teste de valor de atributo, como o coeficiente de Gini. Ao contrário das árvores de decisão clássicas, as árvores do modelo RF são construídas sem poda e selecionam aleatoriamente um subconjunto de variáveis de entrada em cada nó. Atualmente, o número de variáveis utilizadas para dividir um nó em uma RF, denotado por $m$, corresponde à raiz quadrada do número total de variáveis de entrada. 
  
  Essa abordagem ajuda a aumentar a diversidade das árvores e aprimorar o desempenho do modelo \cite{Pelletier2016156}. Na Figura \ref{fig:rf}, um fluxograma do modelo RF ilustra como as árvores funcionam.
  Na construção da próxima árvore, os dois processos anteriores se repetirão, levando à criação de uma nova árvore. Provavelmente, essa árvore será diferente da primeira, pois tanto na seleção das amostras quanto na seleção das variáveis, o processo ocorre de maneira aleatória.
   
- \begin{figure}[H]
+ \begin{figure}[!htb]
  	\centering
  	\caption{Fluxograma da floresta aleatória.}
  	\label{fig:rf}
@@ -188,13 +187,13 @@ A Figura \ref{fig:xgboos} apresenta uma visão esquemática do modelo XGBoost. �
 
 \subsubsection{MLP}
  
-Uma Rede Neural \textit{Multilayer Perceptron} (MLP) é um tipo de arquitetura de rede neural artificial composta por várias camadas de neurônios (ou unidades) organizados em uma estrutura de múltiplas camadas. Cada neurônio em uma camada está conectado a todos os neurônios da camada seguinte, sem formar ciclos (rede feedforward). Essa arquitetura é projetada para realizar tarefas de aprendizado supervisionado, como classificação e regressão \cite{QIN2023543}.
+Uma Rede Neural \textit{Multilayer Perceptron} (MLP) é um tipo de arquitetura de rede neural artificial composta por várias camadas de neurônios (ou unidades) organizados em uma estrutura de múltiplas camadas. Cada neurônio em uma camada está conectado a todos os neurônios da camada seguinte, sem formar ciclos (rede \textit{feedforward}). Essa arquitetura é projetada para realizar tarefas de aprendizado supervisionado, como classificação e regressão \cite{QIN2023543}.
 
  A topologia da MLP funciona como uma rede \textit{feedforward}, rede progressiva, a saída de um neurônio se conecta com outro neurônio da próxima camada, no sentido esquerda/direita, formada por um conjunto de neurônios denominados nós, como  na Figura \ref{fig:ann}. A rede possui uma camada de entrada, sem função de ativação, uma ou mais camadas ocultas e uma camada de saída. A complexidade da rede neural MLP se dá pela quantidade de camadas ocultas que houver e a quantidade de neurônios que essas camadas possuírem \cite{Grubler2018}.
  
  \begin{figure}[!htb]
  	\centering
- 	\caption{Modelo de uma rede neural artificial MLP}
+ 	\caption{Modelo de uma rede neural artificial MLP.}
  	\includegraphics[width=0.5\linewidth]{Modelos/Figuras/ann.pdf}
  	
  	\label{fig:ann}
@@ -217,7 +216,7 @@ Uma Rede Neural \textit{Multilayer Perceptron} (MLP) é um tipo de arquitetura d
  
   \subsubsection{Rede Neural Recorrente}
   
- Uma Rede Neural Recorrente (\textit{Recurrent Neural Network}, RNN) é um tipo de arquitetura de rede neural que pode ser utilizada para usar dados sequenciais ou temporais \cite{NASIRI2023110867}. Ao contrário das redes neurais convencionais, onde as entradas e saídas são tratadas como dados independentes, as RNNs levam em consideração a ordem e a relação entre os elementos em uma sequência, tornando-as ideais para lidar com dados como séries temporais.
+ Uma Rede Neural Recorrente RNN é um tipo de arquitetura de rede neural que pode ser utilizada para usar dados sequenciais ou temporais \cite{NASIRI2023110867}. Ao contrário das redes neurais convencionais, onde as entradas e saídas são tratadas como dados independentes, as RNNs levam em consideração a ordem e a relação entre os elementos em uma sequência, tornando-as ideais para lidar com dados como séries temporais.
  
  A característica principal das RNNs é que elas contêm laços em sua estrutura, permitindo que informações anteriores influenciem o processamento de informações subsequentes. Isso significa que a saída em um determinado passo de tempo não depende apenas da entrada atual, mas também das entradas anteriores na sequência.
   
@@ -229,7 +228,7 @@ Uma Rede Neural \textit{Multilayer Perceptron} (MLP) é um tipo de arquitetura d
  
  A equação representa a propagação do estado oculto ao longo do tempo em uma RNN. A cada novo passo de tempo, a RNN considera a entrada atual \( x_t \) e o estado oculto anterior \( h_{t-1} \), calculando o novo estado oculto \( h_t \) usando as matrizes de pesos e a função de ativação. 
  
-  No entanto, as RNNs tradicionais podem enfrentar dificuldades em capturar dependências de longo prazo, devido ao problema de dissipação do gradiente. Para entender isso, surgiram variações avançadas, como \textit{Long Short-Term Memory} (LSTM)  e \textit{Gated Recurrent Units} (GRU), que incorporam mecanismos de aprendizado de esquecimento e controle de informação, permitindo que informações relevantes sejam mantidas por períodos mais longos de tempo \cite{WANG2023116247}, \cite{ZHAO2023114136}.
+  No entanto, as RNNs tradicionais podem enfrentar dificuldades em capturar dependências de longo prazo, devido ao problema de dissipação do gradiente. Para entender isso, surgiram variações avançadas, como LSTM  e GRU, que incorporam mecanismos de aprendizado de esquecimento e controle de informação, permitindo que informações relevantes sejam mantidas por períodos mais longos de tempo \cite{WANG2023116247}, \cite{ZHAO2023114136}.
  
  Como pode ser visto na Figura \ref{fig:rnn1}, a grande diferença da RNN é que há um laço de reações. Enquanto cada entrada de uma rede totalmente conectada é completamente independente, as entradas de uma RNN têm uma relação de realimentação entre si. Isso faz com que ela seja capaz de capturar padrões em dados sequenciais de uma maneira que redes neurais tradicionais talvez não conseguem.
   
@@ -245,25 +244,7 @@ Uma Rede Neural \textit{Multilayer Perceptron} (MLP) é um tipo de arquitetura d
 
  Aprendizado Profundo ou \textit{Deep Learning} (DL) refere-se a um subcampo do aprendizado de máquina que envolve a construção e o treinamento de modelos de rede neural profunda. O termo profundo se refere ao uso de arquiteturas de modelos que consistem em várias camadas, conhecidas como redes neurais profundas \cite{KOTHONA2023101149}.
  
-%  \subsubsection{Explorando o Transformer: Al\'em dos Bits e Bytes}
- 
-% A arquitetura de rede neural Transformer representa um avanço significativo nas  tarefas relacionadas. Foi introduzida por \cite{vaswani2017attention} e revolucionou a maneira como as redes neurais lidam com sequências de dados, superando limitações anteriores, como a dependência sequencial e a complexidade computacional. A abordagem do Transformer se destaca por sua capacidade de processar simultaneamente todas as posições de uma sequência, tornando-o altamente paralelizável e eficiente.
- 
-% A equação \eqref{eq:soft} fundamental do Transformer é a autoatencão, também conhecida como mecanismo de atenção. A atenção é um conceito-chave que permite que a rede neural ``preste atenção'' a diferentes partes da entrada em graus variados, capturando relações contextuais e semânticas. A equação da autoatencão é calculada ao dividir a sequência de entrada em três representações lineares: consultas ($Q$), chaves ($K$) e valores ($V$). A matriz de atenção é obtida multiplicando as consultas pelas chaves transpostas e aplicando uma função de softmax aos resultados, ponderando os valores de acordo com a importância atribuída pela atenção. A saída final é uma combinação linear dos valores ponderados pela matriz de atenção.
- 
-% \begin{eqnarray}
-% 	\operatorname{Attention}(Q, K, V)=\operatorname{softmax}\left(\frac{Q K^{\mathrm{T}}}{\sqrt{d_k}}\right) V \label{eq:soft}
-% \end{eqnarray}
-%
 
-% \noindent na equação \eqref{eq:soft}, embora simplificada, serve como base para a arquitetura do Transformer e é repetida várias vezes em diferentes camadas. Isso permite que a rede aprenda representações ricas e contextuais das sequências de entrada. A estrutura de múltiplas cabeças de atenção, presente no Transformer, aprimora a capacidade da rede em capturar diferentes tipos de relações e padrões nas sequências. Em suma, o modelo Transformer revolucionou o processamento de sequências, proporcionando melhorias notáveis em tarefas de séries temporais. Na Figura \ref{fig:transformer} tem o esquema de como a rede neural Transformer é abordada.
- 
-% \begin{figure}[!htb]
-% 	\centering
-% 	\caption{Arquitetura do Transformer}
-% 	\label{fig:transformer}
-% 	\includegraphics[width=0.7\linewidth]{Modelos/Figuras/Transformer.pdf}
-% 	 \end{figure}
  
  \subsubsection{LSTM}
  
@@ -343,7 +324,7 @@ O novo estado oculto (\(h_t\)) é a combinação ponderada do estado anterior e 
  
  \subsection{Rede Neural Convolucional}
  
-As Redes Neurais Convolucionais (\textit{Convolutional Neural Networks}, CNN) são um tipo de rede neural que utiliza a operação de convolução em vez da multiplicação por matrizes em ao menos uma de suas camadas. Esse tipo de rede é efetiva em aplicações em que os dados são dispostos de forma que a relação de vizinhança entre os elementos é relevante, no caso de séries temporais, que são sequências unidimensionais de dados amostrados em intervalos de tempo regulares tem-se este tipo de característica \cite{silva_2021}, \cite{7533055} .
+As Redes Neurais Convolucionais CNN são um tipo de rede neural que utiliza a operação de convolução em vez da multiplicação por matrizes em ao menos uma de suas camadas. Esse tipo de rede é efetiva em aplicações em que os dados são dispostos de forma que a relação de vizinhança entre os elementos é relevante, no caso de séries temporais, que são sequências unidimensionais de dados amostrados em intervalos de tempo regulares tem-se este tipo de característica \cite{silva_2021}, \cite{7533055} .
  
 A camada convolucional tem como objetivo extrair as características mais importantes da entrada. Dessa forma, sua saída é um mapa de características obtido a partir da convolução da entrada com um \textit{kernel} aprendido, seguido da aplicação de uma função de ativação não linear \cite{lucas_2019}. Os mapas de características completos são obtidos por,
  
@@ -408,8 +389,7 @@ O Erro Percentual Absoluto Médio Simétrico (sMAPE) é outra métrica comumente
 
 \subsection{Correla\c c\~ao de Pearson}
 
-A correlação de Pearson é uma medida estatística que avalia a relação linear entre duas variáveis. No contexto de séries temporais, a correlação de Pearson pode ser útil para entender se existe uma relação linear entre duas séries temporais, ou entre diferentes variáveis de uma mesma sérite temporal \cite{CESARDELIMANOGUEIRA2023128066}. No entanto, é importante ter em mente algumas considerações ao aplicar a correlação de Pearson a séries temporais: (i) a correlação de Pearson é sensível a tendências e sazonalidades nas séries temporais. Se houver uma tendência ou sazonalidade em ambas as séries, a correlação pode indicar uma relação mesmo que a relação real seja mais complexa. (ii) a correlação de Pearson pressupõe uma relação linear entre as variáveis. Se a relação entre as séries temporais for não linear, a correlação de Pearson pode não capturar essa relação de maneira adequada, e (iii) a correlação de Pearson pode ser sensível a valores extremos (outliers)
- \cite{DOSSANTOSCOELHO2024129366}. Valores extremos podem distorcer a medida de correlação, tornando-a menos representativa da relação geral entre as séries.
+A correlação de Pearson é uma medida estatística que avalia a relação linear entre duas variáveis. No contexto de séries temporais, a correlação de Pearson pode ser útil para entender se existe uma relação linear entre duas séries temporais, ou entre diferentes variáveis de uma mesma sérite temporal \cite{CESARDELIMANOGUEIRA2023128066}. No entanto, é importante ter em mente algumas considerações ao aplicar a correlação de Pearson a séries temporais: ($i$) a correlação de Pearson é sensível a tendências e sazonalidades nas séries temporais. Se houver uma tendência ou sazonalidade em ambas as séries, a correlação pode indicar uma relação mesmo que a relação real seja mais complexa. ($ii$) a correlação de Pearson pressupõe uma relação linear entre as variáveis. Se a relação entre as séries temporais for não linear, a correlação de Pearson pode não capturar essa relação de maneira adequada, e ($iii$) a correlação de Pearson pode ser sensível a valores extremos (\textit{outliers}) \cite{DOSSANTOSCOELHO2024129366}. Valores extremos podem distorcer a medida de correlação, tornando-a menos representativa da relação geral entre as séries.
 
 Ao usar a correlação de Pearson para análise de séries temporais, é importante interpretar os resultados com cautela e considerar outros métodos estatísticos e gráficos para uma compreensão mais completa da relação entre as séries. A equação do coeficiente de correlação de Pearson é dada por:
  
@@ -423,7 +403,7 @@ O coeficiente de correlação de Pearson mede a força e a direção da relaçã
  
 \subsection{Decomposi\c c\~ao STL}
  
-A decomposição sazonal e de tendência utilizando o procedimento de suavização de diagramas de dispersão estimada localmente (Loess) (STL) é uma técnica amplamente utilizada para decompor séries temporais em seus componentes sazonais, de tendência e restantes \cite{RIBEIRO2023112982}. O método STL realiza a decomposição aditiva dos dados por meio de uma sequência de aplicações do Loess mais suave, onde regressões polinomiais ponderadas localmente são aplicadas em cada amostra do conjunto de dados, tendo como variáveis explicativas os valores próximos do amostra cuja resposta está sendo estimada \cite{Theodosiou20111178}.
+A decomposição STL é uma técnica amplamente utilizada para decompor séries temporais em seus componentes sazonais, de tendência e restantes \cite{RIBEIRO2023112982}. O método STL realiza a decomposição aditiva dos dados por meio de uma sequência de aplicações do Loess mais suave, onde regressões polinomiais ponderadas localmente são aplicadas em cada amostra do conjunto de dados, tendo como variáveis explicativas os valores próximos do amostra cuja resposta está sendo estimada \cite{Theodosiou20111178}.
  
 Ao aplicar a decomposição STL, a série temporal pode ser expressa como a soma dos componentes sazonais, de tendência e restantes. Essa técnica é útil para análise e modelagem de séries temporais, pois proporciona uma compreensão clara dos padrões de variação presentes nos dados.
  
@@ -436,18 +416,18 @@ A decomposição STL é formalmente definida como:
  	\end{array}\right. \label{eq:stl}
  \end{eqnarray}
 
-onde $y_t$ é o valor da série temporal no tempo $t$, $T_t$ é a componente de tendência no tempo $t$, $S_t$ é a componente de sazonalidade no tempo $t$, $R_t$ é a componente de resíduo no tempo $t$.
+\noindent onde $y_t$ é o valor da série temporal no tempo $t$, $T_t$ é a componente de tendência no tempo $t$, $S_t$ é a componente de sazonalidade no tempo $t$, $R_t$ é a componente de resíduo no tempo $t$.
 
 
 
 \subsection{Teste Dickey-Fuller}
 
-O teste Dickey-Fuller (DF) segue uma regressão linear autoregressiva (AR) de primeira ordem e testa a hipótese nula de que uma raiz unitária está presente em uma série temporal, indicando a não estacionariedade. A forma mais comum do teste Dickey-Fuller é conhecida como ADF (Augmented Dickey-Fuller), que inclui termos adicionais na regressão para trabalhar com possíveis problemas de autocorrelação
- \cite{Agiakloglou}. O procedimento geral do teste Dickey-Fuller envolve as seguintes etapas:
+O teste Dickey-Fuller (DF) segue uma regressão linear AR de primeira ordem e testa a hipótese nula de que uma raiz unitária está presente em uma série temporal, indicando a não estacionariedade. A forma mais comum do teste Dickey-Fuller é conhecida como \textit{Augmented Dickey-Fuller} (ADF) , que inclui termos adicionais na regressão para trabalhar com possíveis problemas de autocorrelação
+ \cite{Agiakloglou}. O procedimento geral do teste DF envolve as seguintes etapas:
 
-Formulação da Hipótese Nula (H0): A hipótese nula assume a presença de raízes unitárias, o que indica não estacionariedade na série temporal.
-Formulação da Hipótese Alternativa (H1): A hipótese alternativa busca rejeitar a hipótese nula, sugerindo a estacionariedade da série temporal.
-Realização do Teste: O teste Dickey-Fuller é realizado calculando uma estatística de teste. Se o valor-p associado à estatística de teste for menor que um determinado nível de significância pré-definido, a hipótese nula é rejeitada.
+Formulação da Hipótese Nula ($H_0$): A hipótese nula assume a presença de raízes unitárias, o que indica não estacionariedade na série temporal.
+Formulação da Hipótese Alternativa ($H_1$): A hipótese alternativa busca rejeitar a hipótese nula, sugerindo a estacionariedade da série temporal.
+Realização do Teste: O teste DF é realizado calculando uma estatística de teste. Se o valor de p associado à estatística de teste for menor que um determinado nível de significância pré-definido, a hipótese nula é rejeitada.
 Interpretação dos Resultados: Se a hipótese nula for rejeitada, isso sugere que a série temporal é estacionária. Caso contrário, a não estacionariedade da série temporal não pode ser descartada.
 
 De acordo com o \citeonline{Reisen2017115}, o teste DF é representado por,
@@ -455,7 +435,7 @@ De acordo com o \citeonline{Reisen2017115}, o teste DF é representado por,
 
 
 \begin{eqnarray}
-	 \Delta y(t)&=&\alpha+\beta \cdot t+\gamma \cdot y(t-1)+\delta_1 \cdot \Delta y(t-1)+\delta_2 \cdot \Delta y(t-2)+\ldots+\delta_p \\
+	 \Delta y(t)&=&\alpha+\beta \cdot t+\gamma \cdot y(t-1)+\delta_1 \cdot \Delta y(t-1)+\delta_2 \cdot \Delta y(t-2)+\ldots+\delta_p \nonumber\\ 
 	&&\Delta y(t-p)+\varepsilon(t)
 \end{eqnarray}
 
@@ -465,11 +445,11 @@ De acordo com o \citeonline{Reisen2017115}, o teste DF é representado por,
  
 A ideia do teste de Ljung-Box é verificar se as autocorrelações dos resíduos em diferentes defasagens são estatisticamente diferentes de zero. Se a estatística de teste do Ljung-Box indicar significância estatística, isso sugere que há autocorrelações remanescentes nos resíduos, indicando que o modelo não está capturando completamente a estrutura da série temporal \cite{box}, \cite{ljung}, \cite{dav}. As etapas básicas do teste de Ljung-Box:
 
-Formulação da Hipótese Nula (H0): A hipótese nula assume que não há autocorrelação nos resíduos.
-Formulação da Hipótese Alternativa (H1): A hipótese alternativa sugere que há autocorrelação nos resíduos.
+Formulação da Hipótese Nula ($H_0$): A hipótese nula assume que não há autocorrelação nos resíduos.
+Formulação da Hipótese Alternativa ($H_1$): A hipótese alternativa sugere que há autocorrelação nos resíduos.
 Cálculo da Estatística de Teste: A estatística de teste de Ljung-Box é calculada usando as autocorrelações dos resíduos em várias defasagens. A fórmula é baseada na soma dos quadrados dessas autocorrelações.
 Distribuição da Estatística de Teste: A estatística de teste é comparada a uma distribuição qui-quadrado com um número apropriado de graus de liberdade. Isso depende do número de defasagens considerado no teste.
-Decisão Estatística: Se o valor-p associado à estatística de teste for menor que um nível de significância escolhido (por exemplo, 0,05), a hipótese nula é rejeitada, indicando a presença de autocorrelação nos resíduos.
+Decisão Estatística: Se o valor de p associado à estatística de teste for menor que um nível de significância escolhido (por exemplo, $0,05$), a hipótese nula é rejeitada, indicando a presença de autocorrelação nos resíduos.
  
 A estatística de teste Box-Pierce é uma versão simplificada da estatística de Ljung-Box para a qual estudos de simulação subsequentes mostraram baixo desempenho \cite{dav}. A estatística de teste é \cite{ljung}:
  
@@ -492,12 +472,12 @@ O teste de Ljung-Box é comumente usado na modelagem de média móvel integrada 
  \end{eqnarray}
  
 \noindent e usa a mesma região crítica definida previamente.
-Estudos de simulação mostraram que a distribuição para a estatística Ljung-Box é mais próxima de um $\chi^2_{(h)}$ 6 distribuição do que é a distribuição para a estatística Box-Pierce para todos os tamanhos de amostra, incluindo os pequenos.
+Estudos de simulação mostraram que a distribuição para a estatística Ljung-Box é mais próxima de um $\chi^2_{(h)}$ $6$ distribuição do que é a distribuição para a estatística Box-Pierce para todos os tamanhos de amostra, incluindo os pequenos.
  
  
 \subsection{Teste de Signific\^ancia}
  
-O teste de Friedman classifica os modelos $K$ em cada conjunto de dados em relação ao valor absoluto dos resultados dados por esses algoritmos. A classificação do algoritmo com maior desempenho é $1$ , e o com menor desempenho é classificado como $\mathrm{K}$. Em seguida, o valor da estatística com base em todas as classificações é calculado como mostrado em equações \eqref{ff} e \eqref{fx} com $r_{e u}^j$ sendo a classificação do desempenho do $j$-ésimo algoritmo no $i$-ésimo conjunto de dados. Essa estatística obedece à distribuição do quiquadrado com $\mathrm{K}-1$ graus de liberdade \cite{Liu2022}.
+O teste de Friedman classifica os modelos $K$ em cada conjunto de dados em relação ao valor absoluto dos resultados dados por esses algoritmos. A classificação do algoritmo com maior desempenho é $1$ , e o com menor desempenho é classificado como $\mathrm{K}$. Em seguida, o valor da estatística com base em todas as classificações é calculado como mostrado em equações \eqref{ff} e \eqref{fx} com $r_{e u}^j$ sendo a classificação do desempenho do $j$-ésimo algoritmo no $i$-ésimo conjunto de dados. Essa estatística obedece à distribuição do qui-quadrado com $\mathrm{K}-1$ graus de liberdade \cite{Liu2022}.
  
  \begin{eqnarray}
  	\chi_F^2 & =&\frac{12 N}{K(K+1)}\left[\sum_{j=1}^K R_j^2-\frac{K(K+1)^2}{4}\right] \label{ff}\\
@@ -506,15 +486,15 @@ O teste de Friedman classifica os modelos $K$ em cada conjunto de dados em rela�
  \end{eqnarray}
  
  
-As estatísticas F$_F$ mostrados na equação \eqref{fx1} obedecem à distribuição F com graus de liberdade $K-1$ e $(K-1)$ $(N-1)$. Pode-se obter o valor crítico abaixo do nível de significância especificado (geralmente $\alpha = 0,05$ ou $0,01$). Ao comparar esse valor crítico com o valor calculado com a equação \eqref{fx1}, a hipótese nula é rejeitada se o valor estatístico $F_F$ é maior que o valor crítico, indicando que há diferenças significativas entre os algoritmos $K$. Em seguida, pode-se realizar um procedimento \textit{post hoc} para analisar melhor se o algoritmo de controle é significativamente melhor do que cada algoritmo de referência nos experimentos. Ao contrário, se o valor for menor ou igual ao valor crítico, a hipótese nula é aceita, indicando que não há diferenças significativas entre os algoritmos $K$.
+As estatísticas $F_F$ mostrados na equação \eqref{fx1} obedecem à distribuição F com graus de liberdade $K-1$ e $(K-1)$ $(N-1)$. Pode-se obter o valor crítico abaixo do nível de significância especificado (geralmente $\alpha = 0,05$ ou $0,01$). Ao comparar esse valor crítico com o valor calculado com a equação \eqref{fx1}, a hipótese nula é rejeitada se o valor estatístico $F_F$ é maior que o valor crítico, indicando que há diferenças significativas entre os algoritmos $K$. Em seguida, pode-se realizar um procedimento \textit{post hoc} para analisar melhor se o algoritmo de controle é significativamente melhor do que cada algoritmo de referência nos experimentos. Ao contrário, se o valor for menor ou igual ao valor crítico, a hipótese nula é aceita, indicando que não há diferenças significativas entre os algoritmos $K$.
   
 Adicionalmente, utilizou-se a \textit{Critical Difference} (CD) para determinar se dois classificadores eram significativamente diferentes entre si. O CD foi calculado conforme a fórmula mencionada anteriormente:
  
  \begin{equation}
- 	CD = q_\alpha \sqrt{\frac{k(k+1)}{6N}}
+ 	CD = q_\alpha \sqrt{\frac{K(K+1)}{6N}}
  \end{equation}
  
-\noindent na equação do CD, $q_\alpha$ representa o valor crítico obtido da Tabela \ref{tb:nemeyi} de teste de Nemenyi, $k$ é o número de classificadores e $N$ é o número total de amostras \cite{Liu2022}.
+\noindent na equação do CD, $q_\alpha$ representa o valor crítico obtido das Tabelas \ref{tb:nemenyi} e \ref{tb:nemeyirede} de teste de Nemenyi, $k$ é o número de classificadores e $N$ é o número total de amostras \cite{Liu2022}.
  
  
  
