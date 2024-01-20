@@ -1,0 +1,23 @@
+\babel@toc {brazil}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {brazil}{}\relax 
+\contentsline {table}{\numberline {1}{\ignorespaces Combinação de palavras-chave aplicando filtros.}}{26}{table.caption.5}%
+\contentsline {table}{\numberline {2}{\ignorespaces Resumo dos artigos obtidos com a RSL nas bases Scopus e WoS.}}{27}{table.caption.6}%
+\contentsline {table}{\numberline {3}{\ignorespaces Classificação dos principais periódicos obtidos na RSL.}}{27}{table.caption.7}%
+\contentsline {table}{\numberline {4}{\ignorespaces Total de publicações dos principais autores obtidos na RSL.}}{29}{table.caption.8}%
+\contentsline {table}{\numberline {5}{\ignorespaces Total de publicações dos principais países obtidos na RSL.}}{29}{table.caption.9}%
+\contentsline {table}{\numberline {6}{\ignorespaces Principais modelos de previsão obtidos na RSL.}}{30}{table.caption.10}%
+\contentsline {table}{\numberline {7}{\ignorespaces Descrição estatística dos dados do Bairro Alto em Curitiba de 2018 a 2019 disponibilizados pela SANEPAR.}}{55}{table.caption.21}%
+\contentsline {table}{\numberline {8}{\ignorespaces Teste ADF.}}{57}{table.caption.24}%
+\contentsline {table}{\numberline {9}{\ignorespaces Parâmetros para os modelos ARIMA utilizando a função autoARIMA.}}{62}{table.caption.29}%
+\contentsline {table}{\numberline {10}{\ignorespaces Hiperparâmetros otimizados dos modelos.}}{62}{table.caption.30}%
+\contentsline {table}{\numberline {11}{\ignorespaces Hiperparâmetros otimizados para RNA.}}{62}{table.caption.31}%
+\contentsline {table}{\numberline {12}{\ignorespaces Comparação dos modelos de previsão através das métricas de desempenho para dados de treino.}}{66}{table.caption.38}%
+\contentsline {table}{\numberline {13}{\ignorespaces Comparação dos modelos de previsão através das métricas de desempenho para dados de teste.}}{67}{table.caption.39}%
+\contentsline {table}{\numberline {14}{\ignorespaces Comparação dos modelos de previsão através das métricas de desempenho para dados de validação.}}{68}{table.caption.40}%
+\contentsline {table}{\numberline {15}{\ignorespaces Comparação dos modelos de previsão através das métricas de desempenho para todos dados}}{69}{table.caption.41}%
+\contentsline {table}{\numberline {16}{\ignorespaces Métricas de avaliação dos modelos com 24 passos à frente.}}{70}{table.caption.42}%
+\contentsline {table}{\numberline {17}{\ignorespaces Teste de significância Nemenyi}}{71}{table.caption.43}%
+\contentsline {table}{\numberline {18}{\ignorespaces Teste de significância Nemenyi dos modelos LSTM, GRU, RNN, CNN, MLP e Prophet.}}{72}{table.caption.44}%
+\contentsline {table}{\numberline {19}{\ignorespaces Comparação dos modelos com o teste Ljung Box modelos ARIMA com defasagem de 10 para previsão de longo prazo na demanda d'água.}}{75}{table.caption.48}%
+\contentsline {table}{\numberline {20}{\ignorespaces Demanda de água}}{77}{table.caption.50}%
