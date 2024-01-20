@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.11)  20 JAN 2024 10:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.11)  20 JAN 2024 10:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2068,11 +2068,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Revisao/Figuras/Figura2.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Revisao/Figuras/Figura2.pdf, id=600, 845.07724pt x 597.55246pt>
+<Revisao/Figuras/Figura2.pdf, id=600, 516.2286pt x 317.48611pt>
 File: Revisao/Figuras/Figura2.pdf Graphic file (type pdf)
 <use Revisao/Figuras/Figura2.pdf>
 Package pdftex.def Info: Revisao/Figuras/Figura2.pdf  used on input line 15.
-(pdftex.def)             Requested size: 318.66948pt x 225.33076pt.
+(pdftex.def)             Requested size: 318.66948pt x 195.98672pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2156,6 +2156,7 @@ Overfull \hbox (32.61128pt too wide) in paragraph at lines 193--213
  [][] 
  []
 
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2164,7 +2165,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30])
+[30]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2211,7 +2212,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/sarimax_map.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/sarimax_map.pdf, id=1812, 623.73027pt x 256.5585pt>
+<Modelos/Figuras/sarimax_map.pdf, id=1820, 623.73027pt x 256.5585pt>
 File: Modelos/Figuras/sarimax_map.pdf Graphic file (type pdf)
 <use Modelos/Figuras/sarimax_map.pdf>
 Package pdftex.def Info: Modelos/Figuras/sarimax_map.pdf  used on input line 67
@@ -2238,7 +2239,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/decison.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/decison.pdf, id=1879, 607.46951pt x 569.52777pt>
+<Modelos/Figuras/decison.pdf, id=1887, 607.46951pt x 569.52777pt>
 File: Modelos/Figuras/decison.pdf Graphic file (type pdf)
 <use Modelos/Figuras/decison.pdf>
 Package pdftex.def Info: Modelos/Figuras/decison.pdf  used on input line 126.
@@ -2264,7 +2265,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/RF.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/RF.pdf, id=1933, 1474.50874pt x 508.09827pt>
+<Modelos/Figuras/RF.pdf, id=1941, 1474.50874pt x 508.09827pt>
 File: Modelos/Figuras/RF.pdf Graphic file (type pdf)
 <use Modelos/Figuras/RF.pdf>
 Package pdftex.def Info: Modelos/Figuras/RF.pdf  used on input line 145.
@@ -2281,7 +2282,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/xgboos.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/xgboos.pdf, id=2069, 820.26451pt x 346.89601pt>
+<Modelos/Figuras/xgboos.pdf, id=2077, 820.26451pt x 346.89601pt>
 File: Modelos/Figuras/xgboos.pdf Graphic file (type pdf)
 <use Modelos/Figuras/xgboos.pdf>
 Package pdftex.def Info: Modelos/Figuras/xgboos.pdf  used on input line 162.
@@ -2298,7 +2299,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/xgboost.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/xgboost.pdf, id=2118, 925.95938pt x 772.38562pt>
+<Modelos/Figuras/xgboost.pdf, id=2126, 925.95938pt x 772.38562pt>
 File: Modelos/Figuras/xgboost.pdf Graphic file (type pdf)
 <use Modelos/Figuras/xgboost.pdf>
 Package pdftex.def Info: Modelos/Figuras/xgboost.pdf  used on input line 178.
@@ -2315,7 +2316,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/ann.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/ann.pdf, id=2180, 749.80125pt x 479.69212pt>
+<Modelos/Figuras/ann.pdf, id=2188, 749.80125pt x 479.69212pt>
 File: Modelos/Figuras/ann.pdf Graphic file (type pdf)
 <use Modelos/Figuras/ann.pdf>
 Package pdftex.def Info: Modelos/Figuras/ann.pdf  used on input line 197.
@@ -2347,7 +2348,7 @@ l.232
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/rnn1.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/rnn1.pdf, id=2258, 1750.54pt x 596.2275pt>
+<Modelos/Figuras/rnn1.pdf, id=2266, 1750.54pt x 596.2275pt>
 File: Modelos/Figuras/rnn1.pdf Graphic file (type pdf)
 <use Modelos/Figuras/rnn1.pdf>
 Package pdftex.def Info: Modelos/Figuras/rnn1.pdf  used on input line 239.
@@ -2373,7 +2374,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/gru.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/gru.pdf, id=2373, 780.9175pt x 684.75826pt>
+<Modelos/Figuras/gru.pdf, id=2381, 780.9175pt x 684.75826pt>
 File: Modelos/Figuras/gru.pdf Graphic file (type pdf)
 <use Modelos/Figuras/gru.pdf>
 Package pdftex.def Info: Modelos/Figuras/gru.pdf  used on input line 310.
@@ -2391,7 +2392,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x30
 8.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf, id=2381, 3044.37375pt x 746.1
+<Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf, id=2389, 3044.37375pt x 746.1
 8777pt>
 File: Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf Graphic file (type pdf)
 <use Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf>
@@ -2411,7 +2412,7 @@ pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/cnn.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<Modelos/Figuras/cnn.pdf, id=2549, 466.0338pt x 197.97664pt>
+<Modelos/Figuras/cnn.pdf, id=2557, 466.0338pt x 197.97664pt>
 File: Modelos/Figuras/cnn.pdf Graphic file (type pdf)
 <use Modelos/Figuras/cnn.pdf>
 Package pdftex.def Info: Modelos/Figuras/cnn.pdf  used on input line 343.
@@ -2495,12 +2496,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-<Resultados/Figuras/person.pdf, id=2700, 671.61241pt x 565.86156pt>
+<Resultados/Figuras/person.pdf, id=2708, 671.61241pt x 565.86156pt>
 File: Resultados/Figuras/person.pdf Graphic file (type pdf)
 <use Resultados/Figuras/person.pdf>
 Package pdftex.def Info: Resultados/Figuras/person.pdf  used on input line 35.
 (pdftex.def)             Requested size: 318.66948pt x 268.49345pt.
-<Resultados/Figuras/LR.pdf, id=2702, 710.77042pt x 240.40753pt>
+<Resultados/Figuras/LR.pdf, id=2710, 710.77042pt x 240.40753pt>
 File: Resultados/Figuras/LR.pdf Graphic file (type pdf)
 <use Resultados/Figuras/LR.pdf>
 Package pdftex.def Info: Resultados/Figuras/LR.pdf  used on input line 45.
@@ -2524,23 +2525,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [57 <./Resultados/Figuras/LR.pdf>]
-<Resultados/Figuras/acf.pdf, id=2767, 723.10214pt x 581.07463pt>
+<Resultados/Figuras/acf.pdf, id=2775, 723.10214pt x 581.07463pt>
 File: Resultados/Figuras/acf.pdf Graphic file (type pdf)
 <use Resultados/Figuras/acf.pdf>
 Package pdftex.def Info: Resultados/Figuras/acf.pdf  used on input line 81.
 (pdftex.def)             Requested size: 318.66948pt x 256.07262pt.
-<Resultados/Figuras/pacf.pdf, id=2768, 723.10214pt x 581.07463pt>
+<Resultados/Figuras/pacf.pdf, id=2776, 723.10214pt x 581.07463pt>
 File: Resultados/Figuras/pacf.pdf Graphic file (type pdf)
 <use Resultados/Figuras/pacf.pdf>
 Package pdftex.def Info: Resultados/Figuras/pacf.pdf  used on input line 86.
 (pdftex.def)             Requested size: 318.66948pt x 256.07262pt.
-<Resultados/Figuras/ruido-branco.pdf, id=2770, 706.83525pt x 240.29251pt>
+<Resultados/Figuras/ruido-branco.pdf, id=2778, 706.83525pt x 240.29251pt>
 File: Resultados/Figuras/ruido-branco.pdf Graphic file (type pdf)
 <use Resultados/Figuras/ruido-branco.pdf>
 Package pdftex.def Info: Resultados/Figuras/ruido-branco.pdf  used on input lin
 e 96.
 (pdftex.def)             Requested size: 455.24411pt x 154.76564pt.
-<Resultados/Figuras/STL.pdf, id=2772, 710.5239pt x 565.6124pt>
+<Resultados/Figuras/STL.pdf, id=2780, 710.5239pt x 565.6124pt>
 File: Resultados/Figuras/STL.pdf Graphic file (type pdf)
 <use Resultados/Figuras/STL.pdf>
 Package pdftex.def Info: Resultados/Figuras/STL.pdf  used on input line 105.
@@ -2591,37 +2592,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [62]
-<Resultados/Figuras/1-AR-ARX-MA.pdf, id=2940, 730.68484pt x 440.99692pt>
+<Resultados/Figuras/1-AR-ARX-MA.pdf, id=2948, 730.68484pt x 440.99692pt>
 File: Resultados/Figuras/1-AR-ARX-MA.pdf Graphic file (type pdf)
 <use Resultados/Figuras/1-AR-ARX-MA.pdf>
 Package pdftex.def Info: Resultados/Figuras/1-AR-ARX-MA.pdf  used on input line
  206.
 (pdftex.def)             Requested size: 318.66948pt x 192.33005pt.
-<Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf, id=2941, 710.77042pt x 421.014
+<Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf, id=2949, 710.77042pt x 421.014
 77pt>
 File: Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf Graphic file (type pdf)
 <use Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf>
 Package pdftex.def Info: Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf  used o
 n input line 213.
 (pdftex.def)             Requested size: 318.66948pt x 188.76108pt.
-<Resultados/Figuras/1-ARMA-ARIMA.pdf, id=2942, 710.77042pt x 421.01477pt>
+<Resultados/Figuras/1-ARMA-ARIMA.pdf, id=2950, 710.77042pt x 421.01477pt>
 File: Resultados/Figuras/1-ARMA-ARIMA.pdf Graphic file (type pdf)
 <use Resultados/Figuras/1-ARMA-ARIMA.pdf>
 Package pdftex.def Info: Resultados/Figuras/1-ARMA-ARIMA.pdf  used on input lin
 e 220.
 (pdftex.def)             Requested size: 318.66948pt x 188.76108pt.
-<Resultados/Figuras/LR-XGB-LGBM-RF.pdf, id=2943, 710.77042pt x 421.01477pt>
+<Resultados/Figuras/LR-XGB-LGBM-RF.pdf, id=2951, 710.77042pt x 421.01477pt>
 File: Resultados/Figuras/LR-XGB-LGBM-RF.pdf Graphic file (type pdf)
 <use Resultados/Figuras/LR-XGB-LGBM-RF.pdf>
 Package pdftex.def Info: Resultados/Figuras/LR-XGB-LGBM-RF.pdf  used on input l
 ine 227.
 (pdftex.def)             Requested size: 318.66948pt x 188.76108pt.
-<Resultados/Figuras/RNN.pdf, id=2944, 710.51012pt x 276.28218pt>
+<Resultados/Figuras/RNN.pdf, id=2952, 710.51012pt x 276.28218pt>
 File: Resultados/Figuras/RNN.pdf Graphic file (type pdf)
 <use Resultados/Figuras/RNN.pdf>
 Package pdftex.def Info: Resultados/Figuras/RNN.pdf  used on input line 234.
 (pdftex.def)             Requested size: 409.71692pt x 159.3163pt.
-<Resultados/Figuras/prophet1.pdf, id=2945, 710.51012pt x 276.28218pt>
+<Resultados/Figuras/prophet1.pdf, id=2953, 710.51012pt x 276.28218pt>
 File: Resultados/Figuras/prophet1.pdf Graphic file (type pdf)
 <use Resultados/Figuras/prophet1.pdf>
 Package pdftex.def Info: Resultados/Figuras/prophet1.pdf  used on input line 23
@@ -2726,20 +2727,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [72]
-<Resultados/Figuras/modelos-arima.pdf, id=3230, 710.77042pt x 240.40753pt>
+<Resultados/Figuras/modelos-arima.pdf, id=3238, 710.77042pt x 240.40753pt>
 File: Resultados/Figuras/modelos-arima.pdf Graphic file (type pdf)
 <use Resultados/Figuras/modelos-arima.pdf>
 Package pdftex.def Info: Resultados/Figuras/modelos-arima.pdf  used on input li
 ne 472.
 (pdftex.def)             Requested size: 455.24411pt x 153.98134pt.
-<Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf, id=3232, 710.77042pt x 240.58005
+<Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf, id=3240, 710.77042pt x 240.58005
 pt>
 File: Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf Graphic file (type pdf)
 <use Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf>
 Package pdftex.def Info: Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf  used on 
 input line 482.
 (pdftex.def)             Requested size: 455.24411pt x 154.09183pt.
-<Resultados/Figuras/metricas_comparacao_modelos.pdf, id=3234, 855.03123pt x 421
+<Resultados/Figuras/metricas_comparacao_modelos.pdf, id=3242, 855.03123pt x 421
 .26694pt>
 File: Resultados/Figuras/metricas_comparacao_modelos.pdf Graphic file (type pdf
 )
@@ -2777,7 +2778,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [75]
-<Resultados/Figuras/grafico-barras-demanda.pdf, id=3355, 825.96268pt x 537.601p
+<Resultados/Figuras/grafico-barras-demanda.pdf, id=3363, 825.96268pt x 537.601p
 t>
 File: Resultados/Figuras/grafico-barras-demanda.pdf Graphic file (type pdf)
 <use Resultados/Figuras/grafico-barras-demanda.pdf>
@@ -2974,9 +2975,9 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/m
 sndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
 :/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb>
-Output written on DocPrincipal.pdf (88 pages, 4175762 bytes).
+Output written on DocPrincipal.pdf (88 pages, 4124862 bytes).
 PDF statistics:
- 4268 PDF objects out of 4296 (max. 8388607)
+ 4276 PDF objects out of 4296 (max. 8388607)
  347 named destinations out of 1000 (max. 500000)
  515 words of extra memory for PDF output out of 10000 (max. 10000000)
 
