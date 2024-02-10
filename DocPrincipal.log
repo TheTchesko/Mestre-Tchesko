@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.24)  26 JAN 2024 11:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.24)  7 FEB 2024 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1580,6 +1580,17 @@ Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
 \TX@cols=\count366
 \TX@ftn=\toks56
 ))
+(C:\Users\msndo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\msndo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 
 LaTeX Warning: \include should only be used after \begin{document} on input lin
 e 5.
@@ -1707,7 +1718,7 @@ Package caption Info: End \AtBeginDocument code.
 
  (Pretextuais/capa.tex
 (Packages/espacamento_paginacao1.tex)
-<Pretextuais/pucpr.png, id=177, 737.75626pt x 340.27126pt>
+<Pretextuais/pucpr.png, id=193, 737.75626pt x 340.27126pt>
 File: Pretextuais/pucpr.png Graphic file (type png)
 <use Pretextuais/pucpr.png>
 Package pdftex.def Info: Pretextuais/pucpr.png  used on input line 4.
@@ -1728,7 +1739,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 s/pucpr.png>]
 \openout2 = `Pretextuais/folha_rosto1.aux'.
 
- (Pretextuais/folha_rosto1.tex)
+ (Pretextuais/folha_rosto1.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 12.
+
+
+(C:\Users\msndo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
+
+
+(C:\Users\msndo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1931,13 +1954,19 @@ l.60 \include{Pretextuais/lista-simbolos}
 
 
 
-] (DocPrincipal.toc
+]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 ...Estudo de Caso 2}{76}{subsubsection.4.4.2}
-                                                  % [12
+l.60 \include{Pretextuais/lista-simbolos}
+                                          [12] (DocPrincipal.toc
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.39 ...te de Signific\^ancia}{79}{subsection.4.3}
+                                                  % [13
 
 
 ])
@@ -1950,7 +1979,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.74 \include{Introducao/sec-introducao}
-                                         [13]
+                                         [14]
 \openout2 = `Introducao/sec-introducao.aux'.
 
  (Introducao/sec-introducao.tex
@@ -1995,14 +2024,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [19]
 
-pdfTeX warning: pdflatex.exe (file ./Introducao/Figuras/Etapas.pdf): PDF inclus
-ion: found PDF version <1.7>, but at most version <1.5> allowed
-<Introducao/Figuras/Etapas.pdf, id=468, 283.65976pt x 282.7564pt>
-File: Introducao/Figuras/Etapas.pdf Graphic file (type pdf)
-<use Introducao/Figuras/Etapas.pdf>
-Package pdftex.def Info: Introducao/Figuras/Etapas.pdf  used on input line 67.
-(pdftex.def)             Requested size: 318.66948pt x 317.65575pt.
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -2012,6 +2033,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [20]
 
+pdfTeX warning: pdflatex.exe (file ./Introducao/Figuras/Etapas.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<Introducao/Figuras/Etapas.pdf, id=503, 283.65976pt x 282.7564pt>
+File: Introducao/Figuras/Etapas.pdf Graphic file (type pdf)
+<use Introducao/Figuras/Etapas.pdf>
+Package pdftex.def Info: Introducao/Figuras/Etapas.pdf  used on input line 71.
+(pdftex.def)             Requested size: 318.66948pt x 317.65575pt.
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -2019,7 +2048,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21 <./Introducao/Figuras/Etapas.pdf>])
+[21 <./Introducao/Figuras/Etapas.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2028,7 +2057,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22]
+[22])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2044,7 +2073,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Revisao/Figuras/Figura2.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Revisao/Figuras/Figura2.pdf, id=593, 516.2286pt x 317.48611pt>
+<Revisao/Figuras/Figura2.pdf, id=618, 516.2286pt x 317.48611pt>
 File: Revisao/Figuras/Figura2.pdf Graphic file (type pdf)
 <use Revisao/Figuras/Figura2.pdf>
 Package pdftex.def Info: Revisao/Figuras/Figura2.pdf  used on input line 15.
@@ -2061,27 +2090,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
-]
-<Revisao/Figuras/base-wos-scopus.pdf, id=601, 1903.11pt x 1206.5075pt>
+ <./Revisao/Figuras/Figura2.pdf>]
+<Revisao/Figuras/base-wos-scopus.pdf, id=642, 1903.11pt x 1206.5075pt>
 File: Revisao/Figuras/base-wos-scopus.pdf Graphic file (type pdf)
 <use Revisao/Figuras/base-wos-scopus.pdf>
 Package pdftex.def Info: Revisao/Figuras/base-wos-scopus.pdf  used on input lin
-e 31.
+e 49.
 (pdftex.def)             Requested size: 455.24411pt x 288.61041pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
-[]|\T1/cmr/m/n/12 water
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
-[]|\T1/cmr/m/n/12 water
- []
-
-
-Overfull \hbox (24.97362pt too wide) in paragraph at lines 43--52
- [][] 
- []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2091,7 +2106,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25 <./Revisao/Figuras/Figura2.pdf>]
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]|\T1/cmr/m/n/12 water
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
+[]|\T1/cmr/m/n/12 water
+ []
+
+
+Overfull \hbox (24.97362pt too wide) in paragraph at lines 61--70
+ [][] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2128,11 +2157,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [29]
-Overfull \hbox (32.61128pt too wide) in paragraph at lines 193--213
- [][] 
- []
-
-)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2151,6 +2175,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [31]
+Overfull \hbox (26.5629pt too wide) in paragraph at lines 290--310
+ [][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[33]
 \openout2 = `Modelos/sec-modelos.aux'.
 
  (Modelos/sec-modelos.tex
@@ -2162,7 +2208,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32
+[34
 
 
 
@@ -2175,34 +2221,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[34]
-
-pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/sarimax_map.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/sarimax_map.pdf, id=1813, 623.73027pt x 256.5585pt>
-File: Modelos/Figuras/sarimax_map.pdf Graphic file (type pdf)
-<use Modelos/Figuras/sarimax_map.pdf>
-Package pdftex.def Info: Modelos/Figuras/sarimax_map.pdf  used on input line 67
-.
-(pdftex.def)             Requested size: 455.24411pt x 187.25482pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[35 <./Modelos/Figuras/sarimax_map.pdf>]
+[35]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2213,13 +2232,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [36]
 
-pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/decison.pdf): PDF inclusio
-n: found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/decison.pdf, id=1880, 607.46951pt x 569.52777pt>
-File: Modelos/Figuras/decison.pdf Graphic file (type pdf)
-<use Modelos/Figuras/decison.pdf>
-Package pdftex.def Info: Modelos/Figuras/decison.pdf  used on input line 126.
-(pdftex.def)             Requested size: 318.66948pt x 298.78061pt.
+pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/sarimax_map.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<Modelos/Figuras/sarimax_map.pdf, id=1768, 623.73027pt x 256.5585pt>
+File: Modelos/Figuras/sarimax_map.pdf Graphic file (type pdf)
+<use Modelos/Figuras/sarimax_map.pdf>
+Package pdftex.def Info: Modelos/Figuras/sarimax_map.pdf  used on input line 73
+.
+(pdftex.def)             Requested size: 455.24411pt x 187.25482pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2237,14 +2257,78 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38 <./Modelos/Figuras/decison.pdf>]
+[38 <./Modelos/Figuras/sarimax_map.pdf>]
+<Resultados/Figuras/acf.pdf, id=1817, 723.10214pt x 581.07463pt>
+File: Resultados/Figuras/acf.pdf Graphic file (type pdf)
+<use Resultados/Figuras/acf.pdf>
+Package pdftex.def Info: Resultados/Figuras/acf.pdf  used on input line 100.
+(pdftex.def)             Requested size: 273.14923pt x 219.49841pt.
+<Resultados/Figuras/pacf.pdf, id=1818, 723.10214pt x 581.07463pt>
+File: Resultados/Figuras/pacf.pdf Graphic file (type pdf)
+<use Resultados/Figuras/pacf.pdf>
+Package pdftex.def Info: Resultados/Figuras/pacf.pdf  used on input line 105.
+(pdftex.def)             Requested size: 273.14923pt x 219.49841pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[39 <./Resultados/Figuras/acf.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[40 <./Resultados/Figuras/pacf.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[41]
+
+pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/decison.pdf): PDF inclusio
+n: found PDF version <1.7>, but at most version <1.5> allowed
+<Modelos/Figuras/decison.pdf, id=1916, 607.46951pt x 569.52777pt>
+File: Modelos/Figuras/decison.pdf Graphic file (type pdf)
+<use Modelos/Figuras/decison.pdf>
+Package pdftex.def Info: Modelos/Figuras/decison.pdf  used on input line 159.
+(pdftex.def)             Requested size: 318.66948pt x 298.78061pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[42 <./Modelos/Figuras/decison.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[43]
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/RF.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/RF.pdf, id=1933, 1474.50874pt x 508.09827pt>
+<Modelos/Figuras/RF.pdf, id=1968, 1474.50874pt x 508.09827pt>
 File: Modelos/Figuras/RF.pdf Graphic file (type pdf)
 <use Modelos/Figuras/RF.pdf>
-Package pdftex.def Info: Modelos/Figuras/RF.pdf  used on input line 145.
+Package pdftex.def Info: Modelos/Figuras/RF.pdf  used on input line 194.
 (pdftex.def)             Requested size: 455.24411pt x 156.86533pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2254,14 +2338,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[39 <./Modelos/Figuras/RF.pdf>]
+[44 <./Modelos/Figuras/RF.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/xgboos.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/xgboos.pdf, id=2070, 820.26451pt x 346.89601pt>
+<Modelos/Figuras/xgboos.pdf, id=2104, 820.26451pt x 346.89601pt>
 File: Modelos/Figuras/xgboos.pdf Graphic file (type pdf)
 <use Modelos/Figuras/xgboos.pdf>
-Package pdftex.def Info: Modelos/Figuras/xgboos.pdf  used on input line 162.
+Package pdftex.def Info: Modelos/Figuras/xgboos.pdf  used on input line 217.
 (pdftex.def)             Requested size: 455.24411pt x 192.52426pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2271,90 +2355,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40 <./Modelos/Figuras/xgboos.pdf>]
+[45 <./Modelos/Figuras/xgboos.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/xgboost.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/xgboost.pdf, id=2119, 925.95938pt x 772.38562pt>
+<Modelos/Figuras/xgboost.pdf, id=2156, 925.95938pt x 772.38562pt>
 File: Modelos/Figuras/xgboost.pdf Graphic file (type pdf)
 <use Modelos/Figuras/xgboost.pdf>
-Package pdftex.def Info: Modelos/Figuras/xgboost.pdf  used on input line 178.
+Package pdftex.def Info: Modelos/Figuras/xgboost.pdf  used on input line 255.
 (pdftex.def)             Requested size: 318.66948pt x 265.81332pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[41 <./Modelos/Figuras/xgboost.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/ann.pdf): PDF inclusion: f
-ound PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/ann.pdf, id=2181, 749.80125pt x 479.69212pt>
-File: Modelos/Figuras/ann.pdf Graphic file (type pdf)
-<use Modelos/Figuras/ann.pdf>
-Package pdftex.def Info: Modelos/Figuras/ann.pdf  used on input line 197.
-(pdftex.def)             Requested size: 227.62206pt x 145.6215pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[42 <./Modelos/Figuras/ann.pdf>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[43
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.9}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.232 
-      ]
-
-pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/rnn1.pdf): PDF inclusion: 
-found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/rnn1.pdf, id=2259, 1750.54pt x 596.2275pt>
-File: Modelos/Figuras/rnn1.pdf Graphic file (type pdf)
-<use Modelos/Figuras/rnn1.pdf>
-Package pdftex.def Info: Modelos/Figuras/rnn1.pdf  used on input line 239.
-(pdftex.def)             Requested size: 455.24411pt x 155.05188pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[44 <./Modelos/Figuras/rnn1.pdf>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[45]
-
-pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/gru.pdf): PDF inclusion: f
-ound PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/gru.pdf, id=2374, 780.9175pt x 684.75826pt>
-File: Modelos/Figuras/gru.pdf Graphic file (type pdf)
-<use Modelos/Figuras/gru.pdf>
-Package pdftex.def Info: Modelos/Figuras/gru.pdf  used on input line 310.
-(pdftex.def)             Requested size: 227.62206pt x 199.58832pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2365,17 +2374,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [46]
 
-pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x30
-8.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
-ed
-<Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf, id=2382, 3044.37375pt x 746.1
-8777pt>
-File: Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf Graphic file (type pdf)
-<use Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf>
-Package pdftex.def Info: Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf  used 
-on input line 320.
-(pdftex.def)             Requested size: 455.24411pt x 111.58176pt.
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -2383,16 +2381,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[47 <./Modelos/Figuras/gru.pdf> <./Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.
-pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/cnn.pdf): PDF inclusion: f
-ound PDF version <1.6>, but at most version <1.5> allowed
-<Modelos/Figuras/cnn.pdf, id=2550, 466.0338pt x 197.97664pt>
-File: Modelos/Figuras/cnn.pdf Graphic file (type pdf)
-<use Modelos/Figuras/cnn.pdf>
-Package pdftex.def Info: Modelos/Figuras/cnn.pdf  used on input line 343.
-(pdftex.def)             Requested size: 455.24411pt x 193.39346pt.
+[47 <./Modelos/Figuras/xgboost.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2403,6 +2392,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [48]
 
+pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/ann.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Modelos/Figuras/ann.pdf, id=2236, 749.80125pt x 479.69212pt>
+File: Modelos/Figuras/ann.pdf Graphic file (type pdf)
+<use Modelos/Figuras/ann.pdf>
+Package pdftex.def Info: Modelos/Figuras/ann.pdf  used on input line 297.
+(pdftex.def)             Requested size: 227.62206pt x 145.6215pt.
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -2410,7 +2407,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[49 <./Modelos/Figuras/cnn.pdf>]
+[49
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.323  \begin{eqnarray}
+                        <./Modelos/Figuras/ann.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/rnn1.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<Modelos/Figuras/rnn1.pdf, id=2304, 1750.54pt x 596.2275pt>
+File: Modelos/Figuras/rnn1.pdf Graphic file (type pdf)
+<use Modelos/Figuras/rnn1.pdf>
+Package pdftex.def Info: Modelos/Figuras/rnn1.pdf  used on input line 339.
+(pdftex.def)             Requested size: 455.24411pt x 155.05188pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2419,7 +2430,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[50]
+[50 <./Modelos/Figuras/rnn1.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2439,26 +2450,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [52]
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[53])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[54]
-\openout2 = `Resultados/sec-resultados.aux'.
-
- (Resultados/sec-resultados.tex (Resultados/subsec-descricao.tex
+pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/gru.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Modelos/Figuras/gru.pdf, id=2425, 780.9175pt x 684.75826pt>
+File: Modelos/Figuras/gru.pdf Graphic file (type pdf)
+<use Modelos/Figuras/gru.pdf>
+Package pdftex.def Info: Modelos/Figuras/gru.pdf  used on input line 410.
+(pdftex.def)             Requested size: 227.62206pt x 199.58832pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2467,22 +2465,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[55
+[53 <./Modelos/Figuras/gru.pdf>]
 
-
-
-]
-<Resultados/Figuras/person.pdf, id=2701, 671.61241pt x 565.86156pt>
-File: Resultados/Figuras/person.pdf Graphic file (type pdf)
-<use Resultados/Figuras/person.pdf>
-Package pdftex.def Info: Resultados/Figuras/person.pdf  used on input line 35.
-(pdftex.def)             Requested size: 318.66948pt x 268.49345pt.
-<Resultados/Figuras/LR.pdf, id=2703, 710.77042pt x 240.40753pt>
-File: Resultados/Figuras/LR.pdf Graphic file (type pdf)
-<use Resultados/Figuras/LR.pdf>
-Package pdftex.def Info: Resultados/Figuras/LR.pdf  used on input line 45.
-(pdftex.def)             Requested size: 318.66948pt x 107.78621pt.
-
+pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x30
+8.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
+<Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf, id=2482, 3044.37375pt x 746.1
+8777pt>
+File: Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf Graphic file (type pdf)
+<use Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf>
+Package pdftex.def Info: Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf  used 
+on input line 420.
+(pdftex.def)             Requested size: 455.24411pt x 111.58176pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2491,7 +2485,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[56 <./Resultados/Figuras/person.pdf>]
+[54 <./Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/cnn.pdf): PDF inclusion: f
+ound PDF version <1.6>, but at most version <1.5> allowed
+<Modelos/Figuras/cnn.pdf, id=2605, 466.0338pt x 197.97664pt>
+File: Modelos/Figuras/cnn.pdf Graphic file (type pdf)
+<use Modelos/Figuras/cnn.pdf>
+Package pdftex.def Info: Modelos/Figuras/cnn.pdf  used on input line 443.
+(pdftex.def)             Requested size: 455.24411pt x 193.39346pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2500,29 +2502,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[57 <./Resultados/Figuras/LR.pdf>]
-<Resultados/Figuras/acf.pdf, id=2768, 723.10214pt x 581.07463pt>
-File: Resultados/Figuras/acf.pdf Graphic file (type pdf)
-<use Resultados/Figuras/acf.pdf>
-Package pdftex.def Info: Resultados/Figuras/acf.pdf  used on input line 81.
-(pdftex.def)             Requested size: 318.66948pt x 256.07262pt.
-<Resultados/Figuras/pacf.pdf, id=2769, 723.10214pt x 581.07463pt>
-File: Resultados/Figuras/pacf.pdf Graphic file (type pdf)
-<use Resultados/Figuras/pacf.pdf>
-Package pdftex.def Info: Resultados/Figuras/pacf.pdf  used on input line 86.
-(pdftex.def)             Requested size: 318.66948pt x 256.07262pt.
-<Resultados/Figuras/ruido-branco.pdf, id=2771, 706.83525pt x 240.29251pt>
-File: Resultados/Figuras/ruido-branco.pdf Graphic file (type pdf)
-<use Resultados/Figuras/ruido-branco.pdf>
-Package pdftex.def Info: Resultados/Figuras/ruido-branco.pdf  used on input lin
-e 96.
-(pdftex.def)             Requested size: 455.24411pt x 154.76564pt.
-<Resultados/Figuras/STL.pdf, id=2773, 710.5239pt x 565.6124pt>
-File: Resultados/Figuras/STL.pdf Graphic file (type pdf)
-<use Resultados/Figuras/STL.pdf>
-Package pdftex.def Info: Resultados/Figuras/STL.pdf  used on input line 105.
-(pdftex.def)             Requested size: 455.24411pt x 362.40495pt.
+[55 <./Modelos/Figuras/cnn.pdf>]
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[56]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[57]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2540,7 +2538,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[59 <./Resultados/Figuras/acf.pdf> <./Resultados/Figuras/pacf.pdf>]
+[59]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2549,7 +2547,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[60 <./Resultados/Figuras/ruido-branco.pdf> <./Resultados/Figuras/STL.pdf>]
+[60]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2567,44 +2565,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[62]
-<Resultados/Figuras/1-AR-ARX-MA.pdf, id=2939, 730.68484pt x 440.99692pt>
-File: Resultados/Figuras/1-AR-ARX-MA.pdf Graphic file (type pdf)
-<use Resultados/Figuras/1-AR-ARX-MA.pdf>
-Package pdftex.def Info: Resultados/Figuras/1-AR-ARX-MA.pdf  used on input line
- 206.
-(pdftex.def)             Requested size: 318.66948pt x 192.33005pt.
-<Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf, id=2940, 710.77042pt x 421.014
-77pt>
-File: Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf Graphic file (type pdf)
-<use Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf>
-Package pdftex.def Info: Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf  used o
-n input line 213.
-(pdftex.def)             Requested size: 318.66948pt x 188.76108pt.
-<Resultados/Figuras/1-ARMA-ARIMA.pdf, id=2941, 710.77042pt x 421.01477pt>
-File: Resultados/Figuras/1-ARMA-ARIMA.pdf Graphic file (type pdf)
-<use Resultados/Figuras/1-ARMA-ARIMA.pdf>
-Package pdftex.def Info: Resultados/Figuras/1-ARMA-ARIMA.pdf  used on input lin
-e 220.
-(pdftex.def)             Requested size: 318.66948pt x 188.76108pt.
-<Resultados/Figuras/LR-XGB-LGBM-RF.pdf, id=2942, 710.77042pt x 421.01477pt>
-File: Resultados/Figuras/LR-XGB-LGBM-RF.pdf Graphic file (type pdf)
-<use Resultados/Figuras/LR-XGB-LGBM-RF.pdf>
-Package pdftex.def Info: Resultados/Figuras/LR-XGB-LGBM-RF.pdf  used on input l
-ine 227.
-(pdftex.def)             Requested size: 318.66948pt x 188.76108pt.
-<Resultados/Figuras/RNN.pdf, id=2943, 710.51012pt x 276.28218pt>
-File: Resultados/Figuras/RNN.pdf Graphic file (type pdf)
-<use Resultados/Figuras/RNN.pdf>
-Package pdftex.def Info: Resultados/Figuras/RNN.pdf  used on input line 234.
-(pdftex.def)             Requested size: 409.71692pt x 159.3163pt.
-<Resultados/Figuras/prophet1.pdf, id=2944, 710.51012pt x 276.28218pt>
-File: Resultados/Figuras/prophet1.pdf Graphic file (type pdf)
-<use Resultados/Figuras/prophet1.pdf>
-Package pdftex.def Info: Resultados/Figuras/prophet1.pdf  used on input line 23
-9.
-(pdftex.def)             Requested size: 409.71692pt x 159.3163pt.
-
+[62])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2613,20 +2574,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[63 <./Resultados/Figuras/1-AR-ARX-MA.pdf>]
+[63]
+\openout2 = `Resultados/sec-resultados.aux'.
 
-LaTeX Warning: Text page 64 contains only floats.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[64 <./Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf> <./Resultados/Figuras/1-
-ARMA-ARIMA.pdf> <./Resultados/Figuras/LR-XGB-LGBM-RF.pdf>]
+ (Resultados/sec-resultados.tex (Resultados/subsec-descricao.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2635,21 +2586,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[65 <./Resultados/Figuras/RNN.pdf> <./Resultados/Figuras/prophet1.pdf>]
+[64
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[66
 
 ]
-Overfull \hbox (3.01662pt too wide) in paragraph at lines 294--310
- [][] 
- []
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[65]
+<Resultados/Figuras/person.pdf, id=2775, 671.61241pt x 565.86156pt>
+File: Resultados/Figuras/person.pdf Graphic file (type pdf)
+<use Resultados/Figuras/person.pdf>
+Package pdftex.def Info: Resultados/Figuras/person.pdf  used on input line 91.
+(pdftex.def)             Requested size: 318.66948pt x 268.49345pt.
+<Resultados/Figuras/LR.pdf, id=2777, 710.77042pt x 240.40753pt>
+File: Resultados/Figuras/LR.pdf Graphic file (type pdf)
+<use Resultados/Figuras/LR.pdf>
+Package pdftex.def Info: Resultados/Figuras/LR.pdf  used on input line 101.
+(pdftex.def)             Requested size: 318.66948pt x 107.78621pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2659,10 +2619,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[67]
-Overfull \hbox (3.01662pt too wide) in paragraph at lines 339--356
- [][] 
- []
+[66 <./Resultados/Figuras/person.pdf>]
+<Resultados/Figuras/ruido-branco.pdf, id=2810, 706.83525pt x 240.29251pt>
+File: Resultados/Figuras/ruido-branco.pdf Graphic file (type pdf)
+<use Resultados/Figuras/ruido-branco.pdf>
+Package pdftex.def Info: Resultados/Figuras/ruido-branco.pdf  used on input lin
+e 154.
+(pdftex.def)             Requested size: 455.24411pt x 154.76564pt.
+<Resultados/Figuras/STL.pdf, id=2812, 710.53326pt x 564.89027pt>
+File: Resultados/Figuras/STL.pdf Graphic file (type pdf)
+<use Resultados/Figuras/STL.pdf>
+Package pdftex.def Info: Resultados/Figuras/STL.pdf  used on input line 163.
+(pdftex.def)             Requested size: 455.24411pt x 361.92503pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2672,11 +2640,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[68]
-Overfull \hbox (3.01662pt too wide) in paragraph at lines 387--403
- [][] 
- []
+[67 <./Resultados/Figuras/LR.pdf>]
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[68 <./Resultados/Figuras/ruido-branco.pdf> <./Resultados/Figuras/STL.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2694,7 +2667,143 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[70
+[70]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[71]
+<Resultados/Figuras/1-AR-ARX-MA.pdf, id=2952, 730.68484pt x 440.99692pt>
+File: Resultados/Figuras/1-AR-ARX-MA.pdf Graphic file (type pdf)
+<use Resultados/Figuras/1-AR-ARX-MA.pdf>
+Package pdftex.def Info: Resultados/Figuras/1-AR-ARX-MA.pdf  used on input line
+ 291.
+(pdftex.def)             Requested size: 318.66948pt x 192.33005pt.
+<Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf, id=2953, 710.77042pt x 421.014
+77pt>
+File: Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf Graphic file (type pdf)
+<use Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf>
+Package pdftex.def Info: Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf  used o
+n input line 298.
+(pdftex.def)             Requested size: 318.66948pt x 188.76108pt.
+<Resultados/Figuras/1-ARMA-ARIMA.pdf, id=2954, 710.77042pt x 421.01477pt>
+File: Resultados/Figuras/1-ARMA-ARIMA.pdf Graphic file (type pdf)
+<use Resultados/Figuras/1-ARMA-ARIMA.pdf>
+Package pdftex.def Info: Resultados/Figuras/1-ARMA-ARIMA.pdf  used on input lin
+e 305.
+(pdftex.def)             Requested size: 318.66948pt x 188.76108pt.
+<Resultados/Figuras/LR-XGB-LGBM-RF.pdf, id=2955, 710.77042pt x 421.01477pt>
+File: Resultados/Figuras/LR-XGB-LGBM-RF.pdf Graphic file (type pdf)
+<use Resultados/Figuras/LR-XGB-LGBM-RF.pdf>
+Package pdftex.def Info: Resultados/Figuras/LR-XGB-LGBM-RF.pdf  used on input l
+ine 312.
+(pdftex.def)             Requested size: 318.66948pt x 188.76108pt.
+<Resultados/Figuras/RNN.pdf, id=2956, 710.51012pt x 276.28218pt>
+File: Resultados/Figuras/RNN.pdf Graphic file (type pdf)
+<use Resultados/Figuras/RNN.pdf>
+Package pdftex.def Info: Resultados/Figuras/RNN.pdf  used on input line 319.
+(pdftex.def)             Requested size: 409.71692pt x 159.3163pt.
+<Resultados/Figuras/prophet1.pdf, id=2957, 710.51012pt x 276.28218pt>
+File: Resultados/Figuras/prophet1.pdf Graphic file (type pdf)
+<use Resultados/Figuras/prophet1.pdf>
+Package pdftex.def Info: Resultados/Figuras/prophet1.pdf  used on input line 32
+4.
+(pdftex.def)             Requested size: 409.71692pt x 159.3163pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[72 <./Resultados/Figuras/1-AR-ARX-MA.pdf>]
+
+LaTeX Warning: Text page 73 contains only floats.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[73 <./Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX.pdf> <./Resultados/Figuras/1-
+ARMA-ARIMA.pdf> <./Resultados/Figuras/LR-XGB-LGBM-RF.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[74 <./Resultados/Figuras/RNN.pdf> <./Resultados/Figuras/prophet1.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[75
+
+]
+Overfull \hbox (3.01662pt too wide) in paragraph at lines 379--395
+ [][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[76]
+Overfull \hbox (3.01662pt too wide) in paragraph at lines 424--441
+ [][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[77]
+Overfull \hbox (3.01662pt too wide) in paragraph at lines 472--488
+ [][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[78]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[79
 
 ]
 
@@ -2705,7 +2814,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[71]
+[80]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2714,27 +2823,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[72]
-<Resultados/Figuras/modelos-arima.pdf, id=3230, 710.77042pt x 240.40753pt>
+[81]
+<Resultados/Figuras/modelos-arima.pdf, id=3243, 710.77042pt x 240.40753pt>
 File: Resultados/Figuras/modelos-arima.pdf Graphic file (type pdf)
 <use Resultados/Figuras/modelos-arima.pdf>
 Package pdftex.def Info: Resultados/Figuras/modelos-arima.pdf  used on input li
-ne 543.
+ne 628.
 (pdftex.def)             Requested size: 455.24411pt x 153.98134pt.
-<Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf, id=3232, 710.77042pt x 240.58005
+<Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf, id=3245, 710.77042pt x 240.58005
 pt>
 File: Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf Graphic file (type pdf)
 <use Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf>
 Package pdftex.def Info: Resultados/Figuras/violin-LR-XGB-LGBM-RF.pdf  used on 
-input line 553.
+input line 638.
 (pdftex.def)             Requested size: 455.24411pt x 154.09183pt.
-<Resultados/Figuras/metricas_comparacao_modelos.pdf, id=3234, 855.03123pt x 421
+<Resultados/Figuras/metricas_comparacao_modelos.pdf, id=3247, 855.03123pt x 421
 .26694pt>
 File: Resultados/Figuras/metricas_comparacao_modelos.pdf Graphic file (type pdf
 )
 <use Resultados/Figuras/metricas_comparacao_modelos.pdf>
 Package pdftex.def Info: Resultados/Figuras/metricas_comparacao_modelos.pdf  us
-ed on input line 563.
+ed on input line 648.
 (pdftex.def)             Requested size: 455.24411pt x 224.29889pt.
 
 
@@ -2745,7 +2854,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[73 <./Resultados/Figuras/modelos-arima.pdf> <./Resultados/Figuras/violin-LR-XG
+[82 <./Resultados/Figuras/modelos-arima.pdf> <./Resultados/Figuras/violin-LR-XG
 B-LGBM-RF.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2755,7 +2864,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[74 <./Resultados/Figuras/metricas_comparacao_modelos.pdf>])
+[83 <./Resultados/Figuras/metricas_comparacao_modelos.pdf>])
 (Resultados/subsec-aplicacao.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2765,8 +2874,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[75]
-<Resultados/Figuras/grafico-barras-demanda.pdf, id=3355, 825.96268pt x 537.601p
+[84]
+<Resultados/Figuras/grafico-barras-demanda.pdf, id=3367, 825.96268pt x 537.601p
 t>
 File: Resultados/Figuras/grafico-barras-demanda.pdf Graphic file (type pdf)
 <use Resultados/Figuras/grafico-barras-demanda.pdf>
@@ -2782,7 +2891,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[76]))
+[85]))
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2791,7 +2900,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[77 <./Resultados/Figuras/grafico-barras-demanda.pdf>]
+[86 <./Resultados/Figuras/grafico-barras-demanda.pdf>]
 \openout2 = `Conclusoes/sec-conclusoes.aux'.
 
 
@@ -2804,7 +2913,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[78
+[87
 
 
 
@@ -2820,7 +2929,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.04742pt}.
 
-[79
+[88
 
 
 
@@ -2833,7 +2942,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.04742pt}.
 
-[80]
+[89]
+Underfull \hbox (badness 1009) in paragraph at lines 222--226
+\T1/cmr/bx/n/12 tuna\T1/cmr/m/n/12 , 2020. Dis-po-ní-vel em: [][]$<[]https : / 
+/ medium . com / optuna / 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.04742pt, for example:
@@ -2842,7 +2956,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.04742pt}.
 
-[81]
+[90]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.04742pt, for example:
@@ -2851,7 +2965,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.04742pt}.
 
-[82]
+[91]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.04742pt, for example:
@@ -2860,7 +2974,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.04742pt}.
 
-[83]
+[92]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.04742pt, for example:
@@ -2869,7 +2983,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.04742pt}.
 
-[84]
+[93]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.04742pt, for example:
@@ -2878,7 +2992,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.04742pt}.
 
-[85]
+[94]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.04742pt, for example:
@@ -2887,7 +3001,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.04742pt}.
 
-[86]
+[95]))
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.04742pt, for example:
@@ -2896,25 +3010,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.04742pt}.
 
-[87]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.04742pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.04742pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.04742pt}.
-
-[88]))
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.04742pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.04742pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.04742pt}.
-
-[89] (DocPrincipal.aux (Pretextuais/capa.aux) (Pretextuais/folha_rosto1.aux)
+[96] (DocPrincipal.aux (Pretextuais/capa.aux) (Pretextuais/folha_rosto1.aux)
 (Pretextuais/folha_aprovacao.aux) (Pretextuais/dedicatoria.aux)
 (Pretextuais/agradecimentos.aux) (Pretextuais/epigrafe.aux) (Resumos/resumo.aux
 ) (Resumos/abstract.aux) (Pretextuais/listas.aux)
@@ -2927,45 +3023,47 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `DocPrincipal.out' has not changed.
-(rerunfilecheck)             Checksum: 09237854719739ED9F33D64EE6771B54;2994.
+(rerunfilecheck)             Checksum: 253E462F39BB8E63F264305F18107F60;3296.
  ) 
 Here is how much of TeX's memory you used:
- 34689 strings out of 474485
- 728436 string characters out of 5743734
- 1952528 words of memory out of 5000000
- 55879 multiletter control sequences out of 15000+600000
- 573908 words of font info for 67 fonts, out of 8000000 for 9000
+ 35139 strings out of 474485
+ 733211 string characters out of 5743734
+ 1951528 words of memory out of 5000000
+ 56305 multiletter control sequences out of 15000+600000
+ 575888 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,15n,134p,1771b,1012s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
-0800.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbi1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx1440.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecsl1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\msndo\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\msndo\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\msndo\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\msndo\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\
-msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk><C:/U
-sers/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.
+ 115i,15n,134p,2588b,1042s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecrm0800.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbi1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx1440.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecsl1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\msndo\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\msndo\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\msndo\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\msndo\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\
+msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\
+Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk
+><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mex10.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmmi10.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmmi12.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/msndo/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/msndo/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/msndo/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/msndo/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ms
+ndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/U
+sers/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmmi12.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmmi6.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/msndo/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/msndo/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/msndo/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/msndo/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/m
-sndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
-:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb>
-Output written on DocPrincipal.pdf (87 pages, 4123085 bytes).
+m/cmsy8.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb>
+Output written on DocPrincipal.pdf (95 pages, 4194814 bytes).
 PDF statistics:
- 4262 PDF objects out of 4296 (max. 8388607)
- 346 named destinations out of 1000 (max. 500000)
- 507 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4295 PDF objects out of 4296 (max. 8388607)
+ 352 named destinations out of 1000 (max. 500000)
+ 539 words of extra memory for PDF output out of 10000 (max. 10000000)
 

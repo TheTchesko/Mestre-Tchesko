@@ -1,10 +1,35 @@
+%\subsection{Descri\c c\~ao do Problema}
+%
+%A descrição do problema, centrada no abastecimento de água, é crucial. Ela apresenta variáveis-chave, como Bombas de Sucção (B1, B2 e B3), cuja frequência máxima é de $60$ Hz, Nível do Reservatório (Câmara 1) representado por LT01 (\si{m^3}), Vazão de entrada (FT01) em (\si{m^3/h}), Vazão de gravidade (FT02) em (\si{m^3/h}), Vazão de recalque (FT03) em (\si{m^3/h}), Pressão de Sucção (PT01SU) medida em metros de coluna d'água (\si{mca}) e Pressão de Recalque (PT02RBAL) também em metros de coluna d'água (\si{mca}).
+%
+%A pesquisa fará uso da variável LT01, que representa o nível do reservatório e desempenha um papel de extrema importância. A separação dos dados foi feita por hora a hora, mesmo que os dados obtidos da SANEPAR sejam de $2018$ a $2020$, sendo que o ano de $2020$ causou muitas irregularidades. É possível remover esse ano para melhor trabalhar com os dados.
+%
+%Mesmo havendo $9$ variáveis nesse conjunto de dados, poderia-se trabalhar com $1$ para previsão e as outras 8 como variáveis exógenas. No entanto, todas as variáveis podem ter correlação com o tanque, mas nem todas são necessárias, causando ruído na série temporal. Com isso em mente, foram retiradas as variáveis B3 e FT02 restando assim as variáveis de previsão com as variáveis que tiveram correlação significativa.
+%
+%A dimensão dos dados fornecidos pela SANEPAR foi de $26.306$ linhas e $9$ colunas. Essas colunas representam as variáveis listadas anteriormente, com a exclusão das duas variáveis B3 e FT02, resultando em apenas 6 variáveis no formato de variáveis exógenas e uma variável para previsão. Também é relevante observar que o ano de $2020$, devido às muitas anomalias nos dados, foi removido para mitigar a variação nos dados ao longo do tempo. Com essa abordagem, restam $17.522$ observações, com o intervalo temporal compreendido entre $2018$ e $2019$. Essa decisão foi tomada para evitar que o modelo sofra excessivamente com variações temporais.
+%
+%É crucial destacar a importância de manter as outras variáveis como exógenas durante o processo de previsão. Embora haja a possibilidade de trabalhar com apenas uma variável para previsão, ao incorporar as demais como variáveis exógenas, o modelo é enriquecido, proporcionando uma visão mais abrangente do sistema. Neste contexto, as variáveis como Bombas de Sucção, Vazões e Pressões possuem potencial impacto no nível do reservatório, e ao mantê-las como exógenas, permite-se que o modelo considere suas influências durante a previsão. Essa abordagem contribui para uma análise mais completa e realista, levando em conta as interações complexas entre as variáveis e fortalecendo a capacidade preditiva do modelo em cenários de abastecimento de água.
+
+
+
 \subsection{An\'alise Explorat\'oria dos Dados}
 
-Os dados foram processados usando a EDA  \cite{Bandara2021} resumindo suas principais características, e formulando hipóteses que possam direcionar a coleta adicional de dados, se necessária. 
 
-Existem dados anômalos \textit{Not a Number} (NAN) que representam a ausência de dados coletados, logo tais dados foram interpolados usando os valores existentes e vizinhos a ele. 
+A descrição do problema, centrada no abastecimento de água, é crucial. Apresenta variáveis-chave, como Bombas de Sucção (B1, B2 e B3), cuja frequência máxima é de $60$ Hz, Nível do Reservatório (Câmara 1) representado por LT01 (\si{m^3}), Vazão de entrada (FT01) em (\si{m^3/h}), Vazão de gravidade (FT02) em (\si{m^3/h}), Vazão de recalque (FT03) em (\si{m^3/h}), Pressão de Sucção (PT01SU) medida em metros de coluna d'água (\si{mca}) e Pressão de Recalque (PT02RBAL) também em metros de coluna d'água (\si{mca}).
 
-Assim como em qualquer empresa de saneamento básico e tratamento de água, é utilizado um mecanismo de acionamento automático denominado trava de segurança para evitar que o nível do tanque se aproxime de zero e haja falta de água nos locais abastecidos por esse tanque. O nível máximo que o tanque pode alcançar é de $5,26 m^3$ (equivalente a $5264.56$ litros). As bombas são ativadas em sua potência máxima para evitar que sejam acionadas quando o nível do tanque estiver dentro dessa faixa. No entanto, a bomba $1$ ainda estaria operando para completar o nível do tanque caso esteja dentro dessa faixa. 
+A pesquisa fará uso da variável LT01, que representa o nível do reservatório e desempenha um papel de extrema importância. A separação dos dados foi feita por hora a hora, mesmo que os dados obtidos da SANEPAR sejam de $2018$ a $2020$, sendo que o ano de $2020$ causou muitas irregularidades. É possível remover esse ano para melhor trabalhar com os dados.
+
+Mesmo havendo $9$ variáveis nesse conjunto de dados, poderia-se trabalhar com $1$ para previsão e as outras 8 como variáveis exógenas. No entanto, todas as variáveis podem ter correlação com o tanque, mas nem todas são necessárias, causando ruído na série temporal. Com isso em mente, foram retiradas as variáveis B3 e FT02 restando assim as variáveis de previsão com as variáveis que tiveram correlação significativa.
+
+A dimensão dos dados fornecidos pela SANEPAR foi de $26.306$ linhas e $9$ colunas. Essas colunas representam as variáveis listadas anteriormente, com a exclusão das duas variáveis B3 e FT02, resultando em apenas 6 variáveis no formato de variáveis exógenas e uma variável para previsão. Também é relevante observar que o ano de $2020$, devido às muitas anomalias nos dados, foi removido para mitigar a variação nos dados ao longo do tempo. Com essa abordagem, restam $17.522$ observações, com o intervalo temporal compreendido entre $2018$ e $2019$. Essa decisão foi tomada para evitar que o modelo sofra excessivamente com variações temporais.
+
+É crucial destacar a importância de manter as outras variáveis como exógenas durante o processo de previsão. Embora haja a possibilidade de trabalhar com apenas uma variável para previsão, ao incorporar as demais como variáveis exógenas, o modelo é enriquecido, proporcionando uma visão mais abrangente do sistema. Neste contexto, as variáveis como Bombas de Sucção, Vazões e Pressões possuem potencial impacto no nível do reservatório, e ao mantê-las como exógenas, permite-se que o modelo considere suas influências durante a previsão. Essa abordagem contribui para uma análise mais completa e realista, levando em conta as interações complexas entre as variáveis e fortalecendo a capacidade preditiva do modelo em cenários de abastecimento de água.
+
+Os dados foram processados usando a EDA resumindo suas principais características, e formulando hipóteses que possam direcionar a coleta adicional de dados, se necessária.
+
+Existem dados anômalos \textit{Not a Number} (NAN) que representam a ausência de dados coletados, logo tais dados foram interpolados usando os valores existentes e vizinhos a ele.
+
+Assim como em qualquer empresa de saneamento básico e tratamento de água, é utilizado um mecanismo de acionamento automático denominado trava de segurança para evitar que o nível do tanque se aproxime de zero e haja falta de água nos locais abastecidos por esse tanque. O nível máximo que o tanque pode alcançar é de $5,26 m^3$ (equivalente a $5264.56$ litros). As bombas são ativadas em sua potência máxima para evitar que sejam acionadas quando o nível do tanque estiver dentro dessa faixa. No entanto, a bomba $1$ ainda estaria operando para completar o nível do tanque caso esteja dentro dessa faixa.
 
 Na Tabela \ref{tb:est}, o desvio padrão é representado por \textit{STandard Deviation} (STD). A quantidade de dados medidos hora a hora pela SANEPAR de $2018$ a $2019$ são de $17.522$ dados.
 
@@ -18,14 +43,45 @@ Na Tabela \ref{tb:est}, o desvio padrão é representado por \textit{STandard De
 		\textbf{STD}      & 11,421      & 19,742      & 12,624      & 0,670         & 110,223       & 43,604        & 25,636        & 0,700         & 3,610         \\
 		\textbf{Min.}     & 0           & 0           & 0           & 0,294         & 0             & 0             & 0             & 0,842         & 0             \\
 		\textbf{25\%}     & 49,519      & 0           & 0           & 3,077         & 255,454       & 74,912        & 81,430        & 4,015         & 18,072        \\
-		\textbf{50\%}     & 57,925      & 0,050       & 0           & 3,715         & 265,357       & 122,149       & 109,911       & 4,602         & 21,791        \\
+		\textbf{50\%}     & 57,925      & 0,050       &
+		
+		0           & 3,715         & 265,357       & 122,149       & 109,911       & 4,602         & 21,791        \\
 		\textbf{75\%}     & 57,989      & 36,796      & 0           & 4,047         & 272,609       & 145,865       & 123,189       & 4,990         & 23,051        \\
 		\textbf{Max.}     & 59,988      & 59,992      & 59,988      & 4,445         & 390,683       & 400,415       & 183,900       & 5,639         & 29,008        \\ \bottomrule
 	\end{tabular}
 \end{table}
 
-No contexto de análises de dados várias técnicas de EDA têm sido adotadas.
-Neste estudo serão abordadas várias análises entre elas correlação de Pearson, para verificar quais variáveis podem ser excluídas tais como ruídos (correlação baixa) ou altamente correlacionadas com a variável de saída do nosso estudo, que será a variável LT01, nível do tanque de armazenamento de água pela SANEPAR no Bairro Alto. Nesse caso, as variáveis removidas tem pouca correlação com a LT01, as que apresentam correlação baixa são B3 e FT02 e serão removidas.
+No contexto das análises de dados, várias técnicas de EDA têm sido adotadas. Neste estudo, são realizadas diversas análises, incluindo a correlação de Pearson, para identificar quais variáveis podem ser excluídas devido a ruídos (correlação baixa) ou por estarem altamente correlacionadas com a variável de saída do estudo, que é a variável LT01, representando o nível do tanque de armazenamento de água pela SANEPAR no Bairro Alto. As variáveis removidas têm pouca correlação com a LT01; por exemplo, as variáveis B3 e FT02 apresentam correlação baixa e serão excluídas.
+
+O termo ``correlação baixa'' indica que há pouca relação linear entre as variáveis, sugerindo uma associação fraca entre elas. Um teste de hipótese é comumente usado para determinar se essa correlação é estatisticamente significativa. Nos testes de correlação de Pearson, se o valor-p for menor que um determinado nível de significância (como $0,05$), então a correlação é considerada estatisticamente significativa.
+
+
+%Os dados foram processados usando a EDA resumindo suas principais características, e formulando hipóteses que possam direcionar a coleta adicional de dados, se necessária. 
+%
+%Existem dados anômalos \textit{Not a Number} (NAN) que representam a ausência de dados coletados, logo tais dados foram interpolados usando os valores existentes e vizinhos a ele. 
+%
+%Assim como em qualquer empresa de saneamento básico e tratamento de água, é utilizado um mecanismo de acionamento automático denominado trava de segurança para evitar que o nível do tanque se aproxime de zero e haja falta de água nos locais abastecidos por esse tanque. O nível máximo que o tanque pode alcançar é de $5,26 m^3$ (equivalente a $5264.56$ litros). As bombas são ativadas em sua potência máxima para evitar que sejam acionadas quando o nível do tanque estiver dentro dessa faixa. No entanto, a bomba $1$ ainda estaria operando para completar o nível do tanque caso esteja dentro dessa faixa. 
+%
+%Na Tabela \ref{tb:est}, o desvio padrão é representado por \textit{STandard Deviation} (STD). A quantidade de dados medidos hora a hora pela SANEPAR de $2018$ a $2019$ são de $17.522$ dados.
+%
+%\begin{table}[!htb]
+%	\centering
+%	\caption{Descrição estatística dos dados do Bairro Alto em Curitiba de 2018 a 2019 disponibilizados pela SANEPAR.}\label{tb:est}
+%	\begin{tabular}{@{}llllllllll@{}}
+%		\toprule
+%		\text{Métricas} & \text{B1} & \text{B2} & \text{B3} & \text{LT01} & \text{FT01} & \text{FT02} & \text{FT03} & \text{PT01} & \text{PT02} \\ \midrule
+%		\textbf{Média}    & 52,289      & 18,421      & 3,338       & 3,513         & 215,699       & 114,832       & 104,195       & 4,448         & 20,724        \\
+%		\textbf{STD}      & 11,421      & 19,742      & 12,624      & 0,670         & 110,223       & 43,604        & 25,636        & 0,700         & 3,610         \\
+%		\textbf{Min.}     & 0           & 0           & 0           & 0,294         & 0             & 0             & 0             & 0,842         & 0             \\
+%		\textbf{25\%}     & 49,519      & 0           & 0           & 3,077         & 255,454       & 74,912        & 81,430        & 4,015         & 18,072        \\
+%		\textbf{50\%}     & 57,925      & 0,050       & 0           & 3,715         & 265,357       & 122,149       & 109,911       & 4,602         & 21,791        \\
+%		\textbf{75\%}     & 57,989      & 36,796      & 0           & 4,047         & 272,609       & 145,865       & 123,189       & 4,990         & 23,051        \\
+%		\textbf{Max.}     & 59,988      & 59,992      & 59,988      & 4,445         & 390,683       & 400,415       & 183,900       & 5,639         & 29,008        \\ \bottomrule
+%	\end{tabular}
+%\end{table}
+%
+%No contexto de análises de dados várias técnicas de EDA têm sido adotadas.
+%Neste estudo serão abordadas várias análises entre elas correlação de Pearson, para verificar quais variáveis podem ser excluídas tais como ruídos (correlação baixa) ou altamente correlacionadas com a variável de saída do nosso estudo, que será a variável LT01, nível do tanque de armazenamento de água pela SANEPAR no Bairro Alto. Nesse caso, as variáveis removidas tem pouca correlação com a LT01, as que apresentam correlação baixa são B3 e FT02 e serão removidas.
 
 A Figura \ref{fig:person} mostra a correlação de Pearson entre as variáveis do conjunto de dados deste estudo. Essa figura representa a matriz (simétrica) da dependência/correlação entre as variáveis. Analisamos as correlações das variáveis de entrada com a variável de saída. Serão descartadas as variáveis com correlação menor que 5\% e maior que 90\%.
 
@@ -45,8 +101,8 @@ Nesse conjunto de dados que está sendo trabalhado, há uma forte correlação d
 	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/LR}
 \end{figure}
 
-\textit{Augmented Dickey-Fuller} (ADF) de $-12,515$ indica a evidência de estacionariedade na série temporal. 
-O valor de p expresso como $2,62\times 10^{-23}$ está associado ao teste ADF. Este valor-p representa a probabilidade de obter um resultado igual ou mais extremo do que o observado, sob a suposição de que a hipótese nula seja verdadeira. No contexto do teste ADF, a hipótese nula é a presença de raiz unitária na série temporal, indicando não estacionariedade. Dado o valor de p de $2,62\times 10^{-23}$, evidencia-se uma probabilidade muito baixa, indicando forte suporte contra a hipótese nula e sugerindo que a série temporal é estacionária. Na Tabela \ref{tb:adf}, são apresentados todos os dados do teste para estacionariedade.Os resultados indicam fortes evidências contra a hipótese nula. Com um teste ADF de $-12,515 $ e um valor de p extremamente baixo de $2,62 \times 10^{-23}$, rejeita-se a hipótese nula de presença de raiz unitária. Os $44$ atrasos utilizados e as $17.477$ observações corroboram a análise estatística. Ao comparar a estatística de teste ADF com os valores críticos, observa-se que está significativamente abaixo deles em todos os níveis de significância $(1\%, 5\%, 10\%)$. Portanto, a conclusão é de que os dados não possuem raiz unitária, indicando que são estacionários.
+\textit{Augmented Dickey-Fuller} (ADF) de $-12,515$ indica a evidência de estacionariedade na série temporal do nível do tanque LT01. 
+O valor de p expresso como $2,62\times 10^{-23}$ está associado ao teste ADF. No contexto do teste ADF, a hipótese nula é a presença de raiz unitária na série temporal, indicando não estacionariedade. Dado o valor de p de $2,62\times 10^{-23}$, evidencia-se uma probabilidade muito baixa, indicando forte suporte contra a hipótese nula e sugerindo que a série temporal é estacionária. Na Tabela \ref{tb:adf}, são apresentados todos os dados do teste para estacionariedade.Os resultados indicam fortes evidências contra a hipótese nula. Com um teste ADF de $-12,515 $ e um valor de p extremamente baixo de $2,62 \times 10^{-23}$, rejeita-se a hipótese nula de presença de raiz unitária. Os $44$ atrasos utilizados e as $17.477$ observações corroboram a análise estatística. Ao comparar a estatística de teste ADF com os valores críticos, observa-se que está significativamente abaixo deles em todos os níveis de significância $(1\%, 5\%, 10\%)$. Portanto, a conclusão é de que os dados não possuem raiz unitária, indicando que são estacionários.
 
 \begin{table}[!htb]
 	\centering
@@ -64,27 +120,29 @@ O valor de p expresso como $2,62\times 10^{-23}$ está associado ao teste ADF. E
 \end{table}
 
 
-As figuras contendo os gráficos ACF e PACF são ferramentas essenciais na análise de séries temporais, especialmente ao trabalhar com modelos ARIMA. 
-
-O ACF é uma medida estatística utilizada para identificar a presença de correlação serial em uma série temporal. Ele calcula a autocorrelação entre os valores da série em diferentes defasagens, ou seja, a correlação entre os valores atuais e os valores passados da série. O ACF é útil para analisar a dependência temporal dos dados e identificar padrões de sazonalidade, tendência ou outros efeitos temporais. Por meio do ACF, é possível avaliar se a série exibe autocorrelação significativa em defasagens específicas, o que pode indicar a presença de não estacionariedade ou estrutura temporal que precisa ser considerada na análise ou modelagem da série temporal.
-
-Enquanto o ACF mede a correlação total em um determinado lag, o PACF mede a correlação apenas entre a observação atual e uma observação em um lag específico, controlando os efeitos das observações intermediárias. O gráfico PACF é especialmente útil para identificar a ordem do componente autorregressivo (AR) no modelo ARIMA. Ele ajuda a identificar os lags que têm uma influência direta na observação atual, sem a interferência de outros lags. Ao usar esses gráficos em conjunto, os analistas de séries temporais podem identificar a ordem adequada do modelo ARIMA. 
-
-A ordem do ARIMA é denotada como ($p, d, q$), onde p é a ordem do componente AR, d é a ordem de diferenciação, que representa o número de vezes que a série temporal é diferenciada para torná-la estacionária, e q é a ordem do componente de MA. Os pontos nos gráficos ACF e PACF que ultrapassam as bandas de confiança indicam lags significativos. Analisando esses gráficos, pode fazer escolhas sobre os valores de $p$, $d$, e $q$ ao ajustar um modelo ARIMA à série temporal em questão. 
-
-Na Figura \ref{fig:acfa}, pode-se observar a diferença entre ACF exibida na Figura \ref{fig:acfa} e PACF exibida na Figura \ref{fig:pacf}. A autocorrelação é uma medida da correlação entre os valores da série temporal em diferentes defasagens, levando em consideração tanto a correlação direta quanto a correlação indireta. Por outro lado, a autocorrelação parcial mede apenas a correlação direta entre os valores, desconsiderando a influência das defasagens intermediárias. Essas análises são úteis para identificar padrões e relações de dependência entre os valores da série temporal, fornecendo informações importantes para a modelagem e previsão desses dados. O intervalo de confiança padrão de $95\%$ é representado pela faixa azul nas Figuras \ref{fig:acfa} e \ref{fig:pacf}. As observações que estão fora desse intervalo são consideradas estatisticamente correlacionadas, indicando a presença de padrões ou estrutura na série temporal.
+%As Figuras contendo os gráficos ACF e PACF são ferramentas essenciais na análise de séries temporais, especialmente ao trabalhar com modelos ARIMA. 
+%
+%O ACF é uma medida estatística utilizada para identificar a presença de correlação serial em uma série temporal. Ele calcula a autocorrelação entre os valores da série em diferentes defasagens, ou seja, a correlação entre os valores atuais e os valores passados da série. O ACF é útil para analisar a dependência temporal dos dados e identificar padrões de sazonalidade, tendência ou outros efeitos temporais. Por meio do ACF, é possível avaliar se a série exibe autocorrelação significativa em defasagens específicas, o que pode indicar a presença de não estacionariedade ou estrutura temporal que precisa ser considerada na análise ou modelagem da série temporal.
+%
+%Enquanto o ACF mede a correlação total em um determinado lag, o PACF mede a correlação apenas entre a observação atual e uma observação em um lag específico, controlando os efeitos das observações intermediárias. O gráfico PACF é especialmente útil para identificar a ordem do componente autorregressivo (AR) no modelo ARIMA. Ele ajuda a identificar os lags que têm uma influência direta na observação atual, sem a interferência de outros lags. Ao usar esses gráficos em conjunto, os analistas de séries temporais podem identificar a ordem adequada do modelo ARIMA. 
+%
+%A ordem do ARIMA é denotada como ($p, d, q$), onde p é a ordem do componente AR, d é a ordem de diferenciação, que representa o número de vezes que a série temporal é diferenciada para torná-la estacionária, e q é a ordem do componente de MA. Os pontos nos gráficos ACF e PACF que ultrapassam as bandas de confiança indicam lags significativos. Analisando esses gráficos, pode fazer escolhas sobre os valores de $p$, $d$, e $q$ ao ajustar um modelo ARIMA à série temporal em questão. 
+%
+%Na Figura \ref{fig:acfa}, pode-se observar a diferença entre ACF exibida na Figura \ref{fig:acfa} e PACF exibida na Figura \ref{fig:pacf}. A autocorrelação é uma medida da correlação entre os valores da série temporal em diferentes defasagens, levando em consideração tanto a correlação direta quanto a correlação indireta. Por outro lado, a autocorrelação parcial mede apenas a correlação direta entre os valores, desconsiderando a influência das defasagens intermediárias. Essas análises são úteis para identificar padrões e relações de dependência entre os valores da série temporal, fornecendo informações importantes para a modelagem e previsão desses dados. O intervalo de confiança padrão de $95\%$ é representado pela faixa azul nas Figuras \ref{fig:acfa} e \ref{fig:pacf}. As observações que estão fora desse intervalo são consideradas estatisticamente correlacionadas, indicando a presença de padrões ou estrutura na série temporal.
+%
+%A correlação visualizada na Figura \ref{fig:acfa} é fundamental para a interpretação do teste ADF. Em uma série de ruído branco, os valores são completamente aleatórios e não apresentam correlação significativa. Portanto, quando há correlação presente na série, isso indica a existência de padrões ou dependências entre os valores, o que pode ser explorado para a modelagem e previsão da série temporal.
+%
+%\begin{figure}[!htb]
+%	\centering
+%\caption{Autocorrelação.}\label{fig:acfa}	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/acf} 
+%\end{figure}
+%
+%\begin{figure}[!htb]
+%	\centering
+%	\caption{Autocorrelação parcial.}\label{fig:pacf}	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/pacf}
+%\end{figure}
 
 A correlação visualizada na Figura \ref{fig:acfa} é fundamental para a interpretação do teste ADF. Em uma série de ruído branco, os valores são completamente aleatórios e não apresentam correlação significativa. Portanto, quando há correlação presente na série, isso indica a existência de padrões ou dependências entre os valores, o que pode ser explorado para a modelagem e previsão da série temporal.
-
-\begin{figure}[!htb]
-	\centering
-\caption{Autocorrelação.}\label{fig:acfa}	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/acf} 
-\end{figure}
-
-\begin{figure}[!htb]
-	\centering
-	\caption{Autocorrelação parcial.}\label{fig:pacf}	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/pacf}
-\end{figure}
 
 Demonstrar que uma série temporal tem ou pode ter um ruído branco também é conveniente para a análise da EDA.
 Na Figura \ref{fig:ruido-branco}, é possível observar uma série temporal que pode ser caracterizada como ruído branco, se suas variáveis forem independentes e distribuídas de forma idêntica, com média zero. Isso implica que todas as variáveis possuem a mesma variância ($\sigma^2$) e que cada valor não possui correlação com os demais valores da série.
@@ -116,6 +174,33 @@ O resíduo nos dados da série temporal é uma forma de avaliar que a série tra
 Para a previsão os dados foram divididos em conjuntos de treinamento, validação, e teste \cite{raschka2015practical, geron2017hands_on}. Quanto à divisão dos dados, foi adotada uma estratégia básica em que $70\%$ dos dados foram destinados ao conjunto de treinamento e $30\%$ restantes foram reservados para o conjunto de teste. Dentro dos $70\%$ de treinamento, foi realizada uma subdivisão em que $80\%$ desses dados foram usados novamente para treinamento e os $20\%$ restantes foram utilizados para validação. 
 
 A estratégia recursiva é mencionada por \citeonline{PETROPOULOS2022705} como uma abordagem eficaz na previsão de séries temporais de múltiplos passos. De acordo com o autor, essa estratégia envolve o uso de previsões anteriores como entradas para prever os próximos passos da série temporal. A abordagem recursiva tem demonstrado potencial para melhorar a acurácia das previsões de séries temporais de longo prazo.
+
+
+
+\begin{enumerate}
+	\item \textbf{Modelos de Séries Temporais} (\textbf{AR}, \textbf{ARIMA}, \textbf{ARIMAX}, \textbf{ARMA}, \textbf{ARX}, \textbf{MA}, \textbf{SARIMA}, \textbf{SARIMAX}, \textbf{Prophet}):
+\begin{itemize}
+	\item \textbf{Entradas:} O modelo utiliza apenas o histórico de dados do nível do reservatório (LT01).
+	\item \textbf{Variáveis Exógenas:} As outras variáveis, como vazão de entrada (FT01), vazão de recalque (FT03), pressão de sucção (PT01SU) e pressão de recalque (PT02RBAL), são consideradas como variáveis exógenas, ou seja, são fornecidas como entradas externas ao modelo.
+	\item \textbf{Configuração:} Os dados históricos do nível do reservatório são organizados em séries temporais. O modelo é ajustado de acordo com sua técnica específica para prever valores futuros com base nos padrões identificados nos dados históricos do LT01.
+
+\end{itemize}
+	\item  \textbf{Redes Neurais Recorrentes} (\textbf{RNN}, \textbf{LSTM}, \textbf{GRU}):
+\begin{itemize}
+	\item \textbf{Entradas:} A rede neural utiliza apenas o histórico de dados do nível do reservatório (LT01).
+	\item \textbf{Variáveis Exógenas:} As outras variáveis, como vazão de entrada (FT01), vazão de recalque (FT03), pressão de sucção (PT01SU) e pressão de recalque (PT02RBAL), são consideradas como variáveis exógenas.
+	\item \textbf{Configuração:} Os dados históricos do nível do reservatório são organizados em sequências temporais. A rede é treinada com camadas recorrentes para aprender padrões temporais e fazer previsões futuras.
+\end{itemize}
+
+\item  \textbf{Outros Modelos} (\textbf{CNN}, \textbf{MLP}, \textbf{DT}, \textbf{RF}, \textbf{XGBoost}, \textbf{LightGBM}):
+\begin{itemize}
+	\item \textbf{Entradas:} Esses modelos também utilizam apenas o histórico de dados do nível do reservatório (LT01).
+	\item \textbf{Variáveis Exógenas:} As outras variáveis, como vazão de entrada (FT01), vazão de recalque (FT03), pressão de sucção (PT01SU) e pressão de recalque (PT02RBAL), são consideradas como variáveis exógenas.
+	\item \textbf{Configuração:} Os dados históricos do nível do reservatório são organizados em conjuntos de treinamento. Cada modelo é treinado para aprender padrões nos dados e fazer previsões futuras, levando em consideração apenas o histórico do LT01 como variável preditora. Apenas o modelo DT utilizou o LT01 e o PT01, sendo o LT01 usado para previsão e o PT01 como variável alvo ou destino no eixo $y$.
+\end{itemize}
+\end{enumerate}
+
+
 
 MISO foi o modelo usado neste estudo. O modelo ARIMA, juntamente com suas variantes e extensões, foi amplamente estudado durante a pesquisa, assim como modelos regressivos que envolvem múltiplas variáveis de entrada e uma variável de saída, neste caso, a LT01. As demais variáveis foram utilizadas como suporte para melhorar o modelo do tipo ARIMAX, modelos com variáveis exógenas. 
 

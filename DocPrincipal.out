@@ -9,35 +9,39 @@
 \BOOKMARK [2][-]{subsection.1.4}{Estrutura do Documento}{section.1}% 9
 \BOOKMARK [1][-]{section.2}{Revis\343o da Literatura}{}% 10
 \BOOKMARK [1][-]{section.3}{Fundamentos dos Modelos de Previs\343o}{}% 11
-\BOOKMARK [2][-]{subsection.3.1}{Modelos Cl\341ssicos de S\351ries Temporais}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.2}{Modelos de Aprendizado de M\341quina}{section.3}% 13
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Prophet}{subsection.3.2}% 14
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Regress\343o Linear}{subsection.3.2}% 15
-\BOOKMARK [3][-]{subsubsection.3.2.3}{\301rvore de Decis\343o}{subsection.3.2}% 16
-\BOOKMARK [3][-]{subsubsection.3.2.4}{Floresta Aleat\363ria}{subsection.3.2}% 17
-\BOOKMARK [3][-]{subsubsection.3.2.5}{Gradient Boosting}{subsection.3.2}% 18
-\BOOKMARK [3][-]{subsubsection.3.2.6}{LightGBM}{subsection.3.2}% 19
-\BOOKMARK [2][-]{subsection.3.3}{Redes Neurais Artificiais}{section.3}% 20
-\BOOKMARK [3][-]{subsubsection.3.3.1}{MLP}{subsection.3.3}% 21
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Rede Neural Recorrente}{subsection.3.3}% 22
-\BOOKMARK [2][-]{subsection.3.4}{Aprendizado Profundo}{section.3}% 23
-\BOOKMARK [3][-]{subsubsection.3.4.1}{LSTM}{subsection.3.4}% 24
-\BOOKMARK [3][-]{subsubsection.3.4.2}{GRU}{subsection.3.4}% 25
-\BOOKMARK [2][-]{subsection.3.5}{Rede Neural Convolucional}{section.3}% 26
-\BOOKMARK [2][-]{subsection.3.6}{M\351tricas Estat\355sticas}{section.3}% 27
-\BOOKMARK [2][-]{subsection.3.7}{Correla\347\343o de Pearson}{section.3}% 28
-\BOOKMARK [2][-]{subsection.3.8}{Decomposi\347\343o STL}{section.3}% 29
-\BOOKMARK [2][-]{subsection.3.9}{Teste Dickey-Fuller}{section.3}% 30
-\BOOKMARK [2][-]{subsection.3.10}{Teste de Ljung-Box}{section.3}% 31
-\BOOKMARK [2][-]{subsection.3.11}{Teste de Signific\342ncia}{section.3}% 32
-\BOOKMARK [1][-]{section.4}{Resultados}{}% 33
-\BOOKMARK [2][-]{subsection.4.1}{An\341lise Explorat\363ria dos Dados}{section.4}% 34
-\BOOKMARK [2][-]{subsection.4.2}{Aplicando os Modelos de Previs\343o}{section.4}% 35
-\BOOKMARK [2][-]{subsection.4.3}{Teste de Signific\342ncia}{section.4}% 36
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Compara\347\343o dos Modelos}{subsection.4.3}% 37
-\BOOKMARK [2][-]{subsection.4.4}{Aplica\347\343o}{section.4}% 38
-\BOOKMARK [3][-]{subsubsection.4.4.1}{Estudo de Caso 1}{subsection.4.4}% 39
-\BOOKMARK [3][-]{subsubsection.4.4.2}{Estudo de Caso 2}{subsection.4.4}% 40
-\BOOKMARK [1][-]{section.5}{Conclus\365es}{}% 41
-\BOOKMARK [2][-]{subsection.5.1}{Propostas Futuras}{section.5}% 42
-\BOOKMARK [1][-]{subsection.5.1}{Refer\352ncias}{}% 43
+\BOOKMARK [2][-]{subsection.3.1}{Conceito de S\351ries Temporais}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.2}{Modelos Cl\341ssicos de S\351ries Temporais}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.3}{Autocorrela\347\343o e Autocorrela\347\343o Parcial}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.4}{Modelos de Aprendizado de M\341quina}{section.3}% 15
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Prophet}{subsection.3.4}% 16
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Regress\343o Linear}{subsection.3.4}% 17
+\BOOKMARK [3][-]{subsubsection.3.4.3}{\301rvore de Decis\343o}{subsection.3.4}% 18
+\BOOKMARK [3][-]{subsubsection.3.4.4}{Floresta Aleat\363ria}{subsection.3.4}% 19
+\BOOKMARK [3][-]{subsubsection.3.4.5}{Gradient Boosting}{subsection.3.4}% 20
+\BOOKMARK [3][-]{subsubsection.3.4.6}{LightGBM}{subsection.3.4}% 21
+\BOOKMARK [2][-]{subsection.3.5}{Redes Neurais Artificiais}{section.3}% 22
+\BOOKMARK [3][-]{subsubsection.3.5.1}{MLP}{subsection.3.5}% 23
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Rede Neural Recorrente}{subsection.3.5}% 24
+\BOOKMARK [2][-]{subsection.3.6}{Aprendizado Profundo}{section.3}% 25
+\BOOKMARK [3][-]{subsubsection.3.6.1}{LSTM}{subsection.3.6}% 26
+\BOOKMARK [3][-]{subsubsection.3.6.2}{GRU}{subsection.3.6}% 27
+\BOOKMARK [2][-]{subsection.3.7}{Rede Neural Convolucional}{section.3}% 28
+\BOOKMARK [2][-]{subsection.3.8}{Medidas de Desempenho}{section.3}% 29
+\BOOKMARK [2][-]{subsection.3.9}{Correla\347\343o de Pearson}{section.3}% 30
+\BOOKMARK [2][-]{subsection.3.10}{Decomposi\347\343o STL}{section.3}% 31
+\BOOKMARK [2][-]{subsection.3.11}{Teste Run}{section.3}% 32
+\BOOKMARK [2][-]{subsection.3.12}{Teste Dickey-Fuller}{section.3}% 33
+\BOOKMARK [2][-]{subsection.3.13}{Teste de Ljung-Box}{section.3}% 34
+\BOOKMARK [2][-]{subsection.3.14}{Testes de Hip\363teses}{section.3}% 35
+\BOOKMARK [2][-]{subsection.3.15}{Otimiza\347\343o}{section.3}% 36
+\BOOKMARK [1][-]{section.4}{Resultados}{}% 37
+\BOOKMARK [2][-]{subsection.4.1}{An\341lise Explorat\363ria dos Dados}{section.4}% 38
+\BOOKMARK [2][-]{subsection.4.2}{Aplicando os Modelos de Previs\343o}{section.4}% 39
+\BOOKMARK [2][-]{subsection.4.3}{Teste de Signific\342ncia}{section.4}% 40
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Compara\347\343o dos Modelos}{subsection.4.3}% 41
+\BOOKMARK [2][-]{subsection.4.4}{Aplica\347\343o}{section.4}% 42
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Estudo de Caso 1}{subsection.4.4}% 43
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Estudo de Caso 2}{subsection.4.4}% 44
+\BOOKMARK [1][-]{section.5}{Conclus\365es}{}% 45
+\BOOKMARK [2][-]{subsection.5.1}{Propostas Futuras}{section.5}% 46
+\BOOKMARK [1][-]{subsection.5.1}{Refer\352ncias}{}% 47

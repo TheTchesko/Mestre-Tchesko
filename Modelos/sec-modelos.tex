@@ -1,10 +1,15 @@
 \section{Fundamentos dos Modelos de Previs\~ao}\label{sec:base}
 
- Neste capítulo são descritos os modelos de previsão de séries temporais usados neste estudo, bem como as métricas e testes estatísticas de desempenho. 
+ Neste capítulo são descritos os modelos de previsão de séries temporais usados neste estudo, bem como as medidas de desempenho e testes de hipóteses de performance. 
+ 
+ \subsection{Conceito de S\'eries Temporais}
+ 
+Uma série temporal é uma coleção de dados ordenados no tempo, utilizados para analisar o comportamento passado e prever o comportamento futuro de uma variável de interesse. Ela pode ser univariada, se envolve apenas uma variável, ou multivariada, se envolve mais de uma variável. A série temporal pode ser contínua, se os dados são observados continuamente ao longo do tempo, ou discreta, se os dados são observados em intervalos regulares ou irregulares. Ela pode apresentar diferentes componentes, como tendência, sazonalidade, ciclos e ruído, que podem ser modelados e decompostos por diversas técnicas estatísticas. Com aplicações em diversas áreas, como economia, finanças, meteorologia, epidemiologia, entre outras, a série temporal se revela como uma ferramenta versátil e essencial na compreensão dos fenômenos temporais.
+
  
  \subsection{Modelos Cl\'assicos de S\'eries Temporais}\label{subsec:arima}
 
-O modelo ARIMA é um modelo estatístico utilizado para a previsão de séries temporais. Ele é composto por três componentes principais: o componente AR, o componente de MA e o componente de diferenciação (I), que é aplicado para tornar a série temporal estacionária. 
+O modelo ARIMA é um modelo clássico utilizado para a previsão de séries temporais. Ele é composto por três componentes principais: o componente AR, o componente de MA e o componente de diferenciação (I), que é aplicado para tornar a série temporal estacionária \cite{prabhakaran2018arima}. 
 
 O componente auto-regressivo do modelo ARIMA é representado por AR$(p)$, em que o parâmetro $p$ determina o número de defasagens ou atrasos (\textit{lags}) a serem usados. A equação do modelo AR$(p)$ é expressa da seguinte forma:
  
@@ -12,12 +17,12 @@ O componente auto-regressivo do modelo ARIMA é representado por AR$(p)$, em que
  	Y_t&=&c+\sum_{n=1}^{p} \alpha_n Y_{t-n} + \varepsilon_t\label{AR}
  \end{eqnarray}
  
-\noindent na equação \eqref{AR}, o termo $\varepsilon_t$ representa o ruído branco que é caracterizado por um sinal com média zero e variância sigma. Essa equação pode ser entendida como uma regressão múltipla, em que os valores defasados de $Y_t$ são utilizados como preditores. Esse modelo é conhecido como modelo autorregressivo de ordem $p$, ou AR$(p)$.
+\noindent na equação \eqref{AR}, o termo $\varepsilon_t$ representa o ruído branco que é caracterizado por um sinal com média zero e variância constante. Essa equação pode ser entendida como uma regressão múltipla, em que os valores defasados de $Y_t$ são utilizados como preditores. Esse modelo é conhecido como modelo autorregressivo de ordem $p$, ou AR$(p)$.
  
-O modelo ARX é uma extensão do modelo AR, que incorpora variáveis exógenas nos dados para tentar melhorar as previsões. Esse modelo também é multivariado, e foi incluído aqui para fins de comparação com o modelo AR simples, considerando a presença de variáveis exógenas. Pode-se mencionar que de acordo com o valor de $p$ tem-se alguns aspectos relevantes a citar:
- Se o parâmetro $p$ for definido como zero AR($0$), significa que não há termos autorregressivos no modelo. Nesse caso, a série temporal se comporta como um ruído branco. Com o parâmetro $p$ definido como $1$, o modelo AR leva em consideração o valor anterior da série temporal multiplicado por um coeficiente e, em seguida, adiciona ruído branco. Quando o coeficiente é igual a $0$, há apenas ruído branco, resultando em uma série de tempo completamente aleatória, sem padrões previsíveis. 
+O modelo ARX é uma extensão do modelo AR, que incorpora variáveis exógenas nos dados para tentar melhorar as previsões. Esse modelo também é multivariado, e foi incluído nesse trabalho para fins de comparação com o modelo AR simples, considerando a presença de variáveis exógenas. Pode-se mencionar que de acordo com o valor de $p$ tem-se alguns aspectos relevantes a citar:
+ Se o parâmetro $p$ for definido como zero AR($0$), significa que não há termos autorregressivos no modelo. Nesse caso, a série temporal se comporta como um ruído branco. Com o parâmetro $p$ definido como $1$, o modelo AR leva em consideração o valor anterior da série temporal multiplicado por um coeficiente e, em seguida, adiciona ruído branco. 
  
- Se o parâmetro $p$ estiver na faixa $0 < \alpha < 1$, ocorre o fenômeno de reversão média. Isso significa que os valores da série tendem a oscilar em torno de uma média central e a regressar em direção a ela após se afastarem. Esse padrão indica uma tendência de retorno à média ao longo do tempo. Aumentar ainda mais o parâmetro $p$ no modelo AR significa considerar um número crescente de medições de tempo anteriores, cada uma multiplicada pelo seu próprio coeficiente. Isso permite levar em conta uma memória mais longa da série temporal e capturar padrões de dependência complexos ao longo do tempo. No entanto, é importante ter em mente que aumentar excessivamente o valor de $p$ pode levar a problemas de \textit{overfitting}, onde o modelo se ajusta muito bem aos dados de treinamento, mas tem um desempenho ruim na previsão de novos dados. Portanto, é necessário encontrar um equilíbrio entre a complexidade do modelo e sua capacidade de generalização.
+ Se o parâmetro $p$ estiver na faixa $0 < \alpha < 1 \in \mathbb{Z}$, ocorre o fenômeno de reversão média. Isso significa que os valores da série tendem a oscilar em torno de uma média central e a regressar em direção a ela após se afastarem. Esse padrão indica uma tendência de retorno à média ao longo do tempo. Aumentar ainda mais o parâmetro $p$ no modelo AR significa considerar um número crescente de medições de tempo anteriores, cada uma multiplicada pelo seu próprio coeficiente. Isso permite levar em conta uma memória mais longa da série temporal e capturar padrões de dependência complexos ao longo do tempo. No entanto, é importante ter em mente que aumentar excessivamente o valor de $p$ pode levar a problemas de \textit{overfitting}, onde o modelo se ajusta muito bem aos dados de treinamento, mas tem um desempenho ruim na previsão de novos dados. Portanto, é necessário encontrar um equilíbrio entre a complexidade do modelo e sua capacidade de generalização.
  
 No modelo de MA, o componente não é uma média móvel simples, mas sim uma combinação de termos de erro de previsão defasados. O parâmetro $q$ no modelo MA representa o número de termos de erro de previsão que são levados em consideração na previsão. Este componente não é uma média móvel, mas sim os atrasos no ruído branco \cite{signal}.
 Em um modelo MA(1), por exemplo, a previsão é composta por um termo constante, o produto do termo de erro de previsão anterior por um multiplicador, e o termo de erro de previsão atual. Essa abordagem baseia-se em princípios estatísticos e de probabilidade, ajustando a previsão com base em termos anteriores de erro de previsão.
@@ -56,9 +61,10 @@ O modelo ARMA é uma combinação dos modelos AR  e MA, onde o modelo AR é adic
  	d_t=c+\sum_{n=1}^p \alpha_n d_{t-n}+\sum_{n=1}^q \theta_n \epsilon_{t-n}+\sum_{n=1}^r \beta_n x_{n_t}+\sum_{n=1}^P \phi_n d_{t-s n}+\sum_{n=1}^Q \eta_n \epsilon_{t-s n}+\epsilon_t \label{eq:sarmax}
  \end{eqnarray}
  
- \noindent onde $p$ é a ordem de autorregressão de tendência \textit{AutoCorrelation Function} (ACF), é o número de termos autorregressivos (parte AR), permitindo incorporar o efeito de valores passados no modelo, $d$ é diferença de tendência, o número de diferenças não sazonais necessárias para estacionariedade, $q$ é a ordem da média móvel de tendência \textit{Partial AutoCorrelation Function} (PCAF), é o número de erros de previsão defasados na equação de previsão (parte MA). Enquanto os elementos sazonais em SARIMAX são, P é a ordem autorregressiva sazonal, D é a Ordem das diferenças sazonais,
+ \noindent, onde $p$ representa a ordem de autorregressão da tendência na \textit{AutoCorrelation Function} (ACF), sendo o número de termos autorregressivos (parte AR) que incorporam o efeito de valores passados no modelo. $d$ é a diferença de tendência, indicando o número de diferenças não sazonais necessárias para atingir estacionariedade, e $q$ é a ordem da média móvel da tendência na \textit{Partial AutoCorrelation Function} (PCAF). Todas essas considerações são válidas somente se a série temporal for estacionária, é o número de erros de previsão defasados na equação de previsão (parte MA). Enquanto os elementos sazonais em SARIMAX são, P é a ordem autorregressiva sazonal, D é a Ordem das diferenças sazonais,
  M é o número de etapas de tempo para um único período sazonal, M é igual à defasagem ACF com o valor mais alto (normalmente em uma defasagem alta). $D=1$ se a série tiver um padrão sazonal estável ao longo do tempo, $D=0$ se a série tiver um padrão sazonal instável ao longo do tempo, $P\geq1$ se a PCAF for positiva na defasagem M, senão $P=0$, $Q\geq1$ se a ACF for negativa na defasagem M, caso contrário $Q=0$, e $X$ é a variável exógena. Na Figura \ref{fig:sarimaxmap} é mostrado detalhes do modelo SARIMAX.
  
+
  
  \begin{figure}[H]
  	\centering
@@ -66,6 +72,37 @@ O modelo ARMA é uma combinação dos modelos AR  e MA, onde o modelo AR é adic
  	\label{fig:sarimaxmap}
  	\includegraphics[width=\linewidth]{Modelos/Figuras/sarimax_map.pdf}
  	
+ \end{figure}
+ 
+  \subsection{Autocorrela\c c\~ao e Autocorrela\c c\~ao Parcial}
+ 
+As Figuras contendo os gráficos da Função de Autocorrelação (ACF) e da Função de Autocorrelação Parcial (PACF) são ferramentas essenciais na análise de séries temporais, especialmente ao trabalhar com modelos ARIMA. Elas são expressas da seguinte forma:
+
+\begin{eqnarray}
+	 R_k &=& \frac{\gamma_k}{\gamma_0} \\ 
+	 \phi_{kk} &=& \frac{\gamma_{kk} - \sum_{j=1}^{k-1} \phi_{k-1,j} \gamma_{k-j,k}}{\gamma_{0,k}}
+\end{eqnarray}
+
+\noindent onde $ R_k $ é a autocorrelação de ordem $ k $, $ \gamma_k $ é a função de autocovariância de ordem $ k $, $ \phi_{kk} $ é a autocorrelação parcial de ordem $ k $, $ \gamma_{kk} $ é a autocovariância de ordem $ k $, $ \gamma_{0,k} $ é a variância amostral no tempo $ k $, e $ \phi_{k-1,j} $ é a autocorrelação parcial de ordem $ j $ na equação da PACF.
+ 
+ O ACF é uma medida estatística utilizada para identificar a presença de correlação serial em uma série temporal. Ele calcula a autocorrelação entre os valores da série em diferentes defasagens, ou seja, a correlação entre os valores atuais e os valores passados da série. O ACF é útil para analisar a dependência temporal dos dados e identificar padrões de sazonalidade, tendência ou outros efeitos temporais. Por meio do ACF, é possível avaliar se a série exibe autocorrelação significativa em defasagens específicas, o que pode indicar a presença de não estacionariedade ou estrutura temporal que precisa ser considerada na análise ou modelagem da série temporal.
+ 
+ Enquanto o ACF mede a correlação total em um determinado lag, o PACF mede a correlação apenas entre a observação atual e uma observação em um lag específico, controlando os efeitos das observações intermediárias. O gráfico PACF é especialmente útil para identificar a ordem do componente autorregressivo (AR) no modelo ARIMA. Ele ajuda a identificar os lags que têm uma influência direta na observação atual, sem a interferência de outros lags. Ao usar esses gráficos em conjunto, os analistas de séries temporais podem identificar a ordem adequada do modelo ARIMA. 
+ 
+ A ordem do ARIMA é denotada como ($p, d, q$), onde p é a ordem do componente AR, d é a ordem de diferenciação, que representa o número de vezes que a série temporal é diferenciada para torná-la estacionária, e q é a ordem do componente de MA. Os pontos nos gráficos ACF e PACF que ultrapassam as bandas de confiança indicam lags significativos. Analisando esses gráficos, pode fazer escolhas sobre os valores de $p$, $d$, e $q$ ao ajustar um modelo ARIMA à série temporal em questão. 
+ 
+ Na Figura \ref{fig:acfa}, pode-se observar a diferença entre ACF exibida na Figura \ref{fig:acfa} e PACF exibida na Figura \ref{fig:pacf}. A autocorrelação é uma medida da correlação entre os valores da série temporal em diferentes defasagens, levando em consideração tanto a correlação direta quanto a correlação indireta. Por outro lado, a autocorrelação parcial mede apenas a correlação direta entre os valores, desconsiderando a influência das defasagens intermediárias. Essas análises são úteis para identificar padrões e relações de dependência entre os valores da série temporal, fornecendo informações importantes para a modelagem e previsão desses dados. O intervalo de confiança padrão de $95\%$ é representado pela faixa azul nas Figuras \ref{fig:acfa} e \ref{fig:pacf}. As observações que estão fora desse intervalo são consideradas estatisticamente correlacionadas, indicando a presença de padrões ou estrutura na série temporal.
+ 
+
+ 
+ \begin{figure}[!htb]
+ 	\centering
+ 	\caption{Autocorrelação.}\label{fig:acfa}	\includegraphics[width=0.6\linewidth]{Resultados/Figuras/acf} 
+ \end{figure}
+ 
+ \begin{figure}[!htb]
+ 	\centering
+ 	\caption{Autocorrelação parcial.}\label{fig:pacf}	\includegraphics[width=0.6\linewidth]{Resultados/Figuras/pacf}
  \end{figure}
  
  \subsection{Modelos de Aprendizado de M\'aquina}\label{subsec:reg}
@@ -80,14 +117,14 @@ O modelo ARMA é uma combinação dos modelos AR  e MA, onde o modelo AR é adic
  	p(t) &=& g(t) + s(t) + h(t) + \varepsilon_t 
  \end{eqnarray}
  
- \noindent onde \( p(t) \) é o valor da série temporal no tempo \( t \), que se deseja prever, \( g(t) \) representa a tendência de longo prazo da série, \( s(t) \) representa os componentes sazonais, que podem incluir padrões semanais e anuais, \( h(t) \) é a representação dos efeitos de feriados ou eventos especiais.
+ \noindent onde $ p(t) $ é o valor da série temporal no tempo $ t $, que se deseja prever, $ g(t) $ representa a tendência de longo prazo da série, $ s(t) $ representa os componentes sazonais, que podem incluir padrões semanais e anuais, $ h(t) $ é a representação dos efeitos de feriados ou eventos especiais.
   
  O modelo Prophet ajusta esses componentes aos dados históricos de séries temporais para criar uma previsão futura. Ele utiliza um procedimento de ajuste automático para estimar os parâmetros desses componentes com base nos dados fornecidos. A abordagem aditiva do Prophet permite que os padrões sazonais, tendências e feriados sejam capturados separadamente e, em seguida, somados para gerar uma previsão global \cite{2-s2.0-85092514286}.
  
  
  \subsubsection{Regress\~ao Linear}
  
- A regressão linear é definida da seguinte forma:
+A regressão linear é classificada como um modelo de aprendizado de máquina supervisionado. Essa classificação é baseada em sua definição, que pode ser formulada da seguinte maneira:
  
  \begin{equation}
  	y = \beta_0 + \beta_1 x_1 + \cdots + \beta_p x_p + \varepsilon \label{eq:lr}
@@ -104,11 +141,7 @@ O modelo ARMA é uma combinação dos modelos AR  e MA, onde o modelo AR é adic
  
  \noindent onde, $\hat{\beta}$ é um vetor de coeficientes estimados que minimiza a soma dos quadrados dos resíduos no método de mínimos quadrados ordinários  \textit{Ordinary Least Squares method} (OLS). Cada $\hat{\beta}_i$ representa o coeficiente estimado para a variável independente $X_i$;
  $X$ é a matriz de dados independentes, onde cada coluna representa uma variável independente diferente e cada linha representa uma observação separada;
- $X^T$ denota a transposição da matriz $X$, ou seja, as linhas de $X$ tornam-se colunas de $X^T$ e vice-versa;
- $y$ é o vetor de variável dependente, que contém os valores observados que estão sendo modelados ou previstos;
- $\left(X^T X\right)^{-1}$ representa a inversa da matriz resultante da multiplicação da transposta de $X$ por $X$. Esta é a matriz inversa de $X^T X$;
- $X^T y$ denota o produto matricial de $X^T$ com $y$, resultando em um vetor;
- $\hat{\beta}=\left(X^T X\right)^{-1} X^T y$ representa a multiplicação da inversa de $X^T X \operatorname{com} X^T y$, resultando no vetor de coeficientes estimados $\hat{\beta}$ que minimiza a soma dos quadrados dos resíduos.
+ resultando no vetor de coeficientes.
  
  
  \subsubsection{\'Arvore de Decis\~ao}
@@ -128,6 +161,22 @@ O modelo ARMA é uma combinação dos modelos AR  e MA, onde o modelo AR é adic
  \end{figure}
   
  A árvore de decisão pode ser mais robusta que modelo de regressão linear, tendo a capacidade de otimizar os parâmetros para trabalhar com horizontes de tempo mais longos. Vale destacar novamente, que a árvore de decisão representa um conjunto de regras de decisão hierárquicas, organizadas na forma de uma árvore. Cada nó na árvore representa uma decisão ou teste sobre um atributo, e cada ramo representa um possível resultado dessa decisão \cite{GIFFORD2023100296}. Observa-se analisando a Figura \ref{fig:decison} que repetir exatamente a mesma árvore de decisão várias vezes não adiciona valor significativo em comparação com o uso dessa árvore de decisão apenas uma vez. Em modelos de conjunto, é crucial que cada modelo individual apresente pequenas variações em relação aos demais.
+ 
+
+Cada nó na árvore representa uma decisão ou teste sobre um atributo, e cada ramo representa um possível resultado dessa decisão. Considerando a Figura \ref{fig:decison} como exemplo, a estrutura da árvore pode ser representada matematicamente da seguinte forma:
+ 
+ $$ F(x) = \begin{cases} 
+ 	f_1(x) & \text{se } x \text{ pertence à região do Nó 1} \\
+ 	f_2(x) & \text{se } x \text{ pertence à região do Nó 2} \\
+ 	\vdots \\
+ 	f_k(x) & \text{se } x \text{ pertence à região do Nó } k 
+ \end{cases} $$
+ 
+\noindent onde, $ F(x) $ é a função de previsão do modelo de Árvore de Decisão para a instância $ x $, $ k $ representa o número total de folhas na árvore, $ f_i(x) $ é a previsão associada à $ i $-ésima folha, determinada pela sequência de testes nos nós da árvore.
+
+Cada teste nos nós da árvore compara um atributo específico de $ x $ com um valor de corte, decidindo qual ramo da árvore seguir com base no resultado. Este processo continua até que $ x $ chegue a uma folha, e a previsão associada a essa folha é atribuída a $ F(x) $. Vale destacar que a robustez da árvore de decisão permite otimizar os parâmetros para lidar com horizontes de tempo mais longos, sendo uma alternativa mais flexível em comparação com modelos de regressão linear.
+ 
+ 
   
  \subsubsection{Floresta Aleat\'oria} \label{subsubsec:rf}
  
@@ -145,22 +194,50 @@ Dois modelos de previsão amplamente reconhecidos para criar conjuntos são \tex
  	\includegraphics[width=\linewidth]{Modelos/Figuras/RF.pdf}
  \end{figure}
  
-A utilização do modelo RF em vez do modelo árvore de decisão tem várias vantagens, e essa escolha é frequentemente motivada por considerações de desempenho, robustez e generalização.
+A opção pelo modelo RF em detrimento do modelo árvore de decisão é motivada por várias vantagens em termos de desempenho, robustez e generalização. Ele se destaca por apresentar uma redução significativa do \textit{overfitting}, garantindo uma abordagem mais estável e resistente a variações nos dados. Além disso, a capacidade do RF de lidar com um grande número de características e determinar a importância relativa de cada uma contribui para uma melhor compreensão e interpretação do conjunto de dados. Essas características fazem do RF uma escolha valiosa em contextos onde é crucial alcançar resultados mais precisos e gerais.
+
+Seja $ F(x) $ a função de previsão da Floresta Aleatória para a instância $ x $, e $ T_i(x) $ a previsão da $ i $--ésima árvore na floresta. Então, a previsão final da Floresta Aleatória é dada por:
+
+\begin{eqnarray}
+	F(x) &=& \frac{1}{N} \sum_{i=1}^{N} T_i(x) 
+\end{eqnarray}
+
+\noindent onde, $ N $ é o número total de árvores na floresta. Cada árvore $ T_i(x) $ é construída com uma amostra aleatória do conjunto de dados original, garantindo a diversidade e robustez do modelo. A previsão de cada árvore é combinada através da média, proporcionando uma abordagem de conjunto para melhorar a precisão e generalização do modelo.
  
  \subsubsection{\textit{Gradient Boosting}}\label{subsubsec:lgbxgb}
  
  O \textit{Gradient Boosting} é um modelo que combina vários modelos de árvore de decisão para realizar previsões. Cada uma dessas árvores de decisão é única, pois a diversidade é um elemento importante nesse processo. A diversidade é alcançada através de um processo chamado \textit{boosting}, que é uma abordagem iterativa, que adiciona modelos fracos ao conjunto de forma inteligente, dando peso maior aos pontos de dados que ainda não foram previstos de forma adequada \cite{BUEECHI2023109596}. 
  
 A Figura \ref{fig:xgboos} apresenta uma visão esquemática do modelo XGBoost. À medida que novos modelos fracos são adicionados, todos os modelos fracos intermediários são mantidos. O modelo final é uma combinação de todos esses modelos fracos, resultando em um ensemble que oferece uma melhor capacidade de previsão do que um único modelo.
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Fluxograma do XGBoost}
+	\label{fig:xgboos}
+	\includegraphics[width=\linewidth]{Modelos/Figuras/xgboos.pdf}
+\end{figure}
  
- O \textit{boosting} é apenas um dos métodos de ensemble utilizados em conjunto com o \textit{bagging}. O \textit{bagging} também é um método que utiliza múltiplos modelos de árvore de decisão, porém, em vez de adicionar os modelos de forma iterativa, cada modelo é treinado independentemente em subconjuntos aleatórios dos dados de treinamento. Ambos os métodos, \textit{boosting} e \textit{bagging}, têm como objetivo melhorar o desempenho do modelo combinando as previsões de múltiplos modelos individuais.
+
+ \begin{eqnarray}
+ 	 F(x) &=& \sum_{i=1}^{T} f_t(x) \label{eq:xgboost}
+ \end{eqnarray}
+
  
-  \begin{figure}[H]
- 	\centering
- 	\caption{Fluxograma do XGBoost}
- 	\label{fig:xgboos}
- 	\includegraphics[width=\linewidth]{Modelos/Figuras/xgboos.pdf}
- \end{figure}
+\noindent na equação \eqref{eq:xgboost}, $F(x)$ é a função de previsão final do modelo,  $T$ é o número total de árvores de decisão no modelo, $f_t(x)$  representa a saída da árvore de decisão $ t $ para a instância $ x $.
+ 
+ O processo de treinamento do XGBoost envolve a minimização de uma função de perda regularizada, que incorpora termos para penalizar a complexidade do modelo e reduzir o \textit{overfitting}. Isso é feito através de um processo iterativo, onde novas árvores são adicionadas ao modelo, e a cada iteração, a função de perda é otimizada. A diversidade entre as árvores é garantida pela atribuição de pesos diferentes a cada uma, considerando seus erros residuais.
+ 
+
+\begin{eqnarray}
+	 \text{Objetivo} &=& \sum_{i=1}^{n} L(y_i, \hat{y}_i) + \sum_{k=1}^{T} \Omega(f_k) \label{eq:xgboost1}
+\end{eqnarray}
+
+ 
+ \noindent na equação \eqref{eq:xgboost1}, $ L(y_i, \hat{y}_i) $ é a função de perda que mede a discrepância entre a previsão $ \hat{y}_i $ e o rótulo verdadeiro $ y_i $, $ \Omega(f_k) $ é um termo de regularização que penaliza a complexidade da $ k $--ésima árvore, a função objetivo é uma combinação da função de perda e termos de regularização.
+ 
+ Esse processo de otimização é efetuado através de técnicas como \textit{Gradient Boosting}, que ajusta os modelos fracos sequencialmente para melhorar a precisão global do modelo.
+ 
+
  
  \subsubsection{\textit{LightGBM}}
  
@@ -181,13 +258,36 @@ A Figura \ref{fig:xgboos} apresenta uma visão esquemática do modelo XGBoost. �
  
  No crescimento de árvore em folhas, no modelo LightGBM, novas folhas são adicionadas à árvore de forma iterativa, visando maximizar a redução do erro de treinamento. Isso significa que as árvores são expandidas adicionando folhas, uma a uma, até que o critério de parada seja alcançado.  No crescimento em níveis, no modelo XGBoost, as árvores são expandidas em profundidade de forma simultânea em todos os níveis. Ou seja, em cada nível, todas as folhas são expandidas ao mesmo tempo, resultando em um crescimento mais uniforme da árvore. Essa distinção no modo de crescimento das árvores pode afetar o comportamento e o desempenho do modelo. 
   
+ \noindent\textbf{XGBoost:}
+ 
+ A função de previsão do modelo XGBoost para a instância $x$ é representada por $F_{\text{XGBoost}}(x)$. Esta função é obtida através do crescimento de árvores em níveis, onde cada árvore é construída simultaneamente em profundidade em todos os níveis. Assim, a previsão final é dada por:
+ 
+ \begin{eqnarray}
+ F_{\text{XGBoost}}(x) &=& \sum_{i=1}^{N} T_i(x)
+ \end{eqnarray}
+ 
+ \noindent onde $N$ é o número total de árvores na floresta, e $T_i(x)$ representa a previsão da $i$-ésima árvore.
+ 
+\noindent\textbf{LightGBM:}
+ 
+ A função de previsão do modelo LightGBM para a instância $x$ é representada por $F_{\text{LightGBM}}(x)$. A abordagem do LightGBM inclui a amostragem \textit{Gradient-Based One-Side Sample} (GOSS) para filtrar pontos de dados com gradientes baixos, e o \textit{Exclusive Feature Bundling} (EFB) para acelerar a seleção de variáveis correlacionadas. A previsão final é dada por:
+ 
+
+\begin{eqnarray}
+	 F_{\text{LightGBM}}(x) &=& \sum_{i=1}^{N} T_i(x)
+\end{eqnarray}
+
+ 
+ \noindent onde, $N$ é o número total de árvores na floresta, e $T_i(x)$ representa a previsão da $i$-ésima árvore. No LightGBM, as árvores são cultivadas adicionando folhas iterativamente para maximizar a redução do erro de treinamento, resultando em um crescimento em folhas. Isso contrasta com o XGBoost, que expande as árvores em profundidade simultaneamente em todos os níveis, resultando em um crescimento mais uniforme da árvore.
+  
+  
  \subsection{Redes Neurais Artificiais}
  
  Uma rede neural é um modelo de processamento de informações inspirado pelo funcionamento do cérebro humano. Consiste em um conjunto interconectado de unidades de processamento, conhecidas como neurônios artificiais, que trabalham em conjunto para realizar tarefas de aprendizado a partir de dados \cite{XIANG2018874}. Assim como os neurônios no cérebro estão interligados por sinapses, os neurônios artificiais são conectados por conexões ponderadas. Essas conexões permitem que a rede neural analise padrões complexos nos dados, reconhecendo relações e características importantes para executar tarefas como classificação, previsão, reconhecimento de padrões \cite{BABU201427}. Conforme a rede é exposta a exemplos e informações, ela ajusta suas conexões para melhorar seu desempenho, tornando-a capaz de generalizar e lidar com novos dados \cite{RAO2020107851}.
 
 \subsubsection{MLP}
  
-Uma Rede Neural \textit{Multilayer Perceptron} (MLP) é um tipo de arquitetura de rede neural artificial composta por várias camadas de neurônios (ou unidades) organizados em uma estrutura de múltiplas camadas. Cada neurônio em uma camada está conectado a todos os neurônios da camada seguinte, sem formar ciclos (rede \textit{feedforward}). Essa arquitetura é projetada para realizar tarefas de aprendizado supervisionado, como classificação e regressão \cite{QIN2023543}.
+Uma Rede Neural MLP é um tipo de arquitetura de rede neural artificial composta por várias camadas de neurônios (ou unidades) organizados em uma estrutura de múltiplas camadas. Cada neurônio em uma camada está conectado a todos os neurônios da camada seguinte, sem formar ciclos (rede \textit{feedforward}). Essa arquitetura é projetada para realizar tarefas de aprendizado supervisionado, como classificação e regressão \cite{QIN2023543}.
 
  A topologia da MLP funciona como uma rede \textit{feedforward}, rede progressiva, a saída de um neurônio se conecta com outro neurônio da próxima camada, no sentido esquerda/direita, formada por um conjunto de neurônios denominados nós, como  na Figura \ref{fig:ann}. A rede possui uma camada de entrada, sem função de ativação, uma ou mais camadas ocultas e uma camada de saída. A complexidade da rede neural MLP se dá pela quantidade de camadas ocultas que houver e a quantidade de neurônios que essas camadas possuírem \cite{Grubler2018}.
  
@@ -224,9 +324,9 @@ Uma Rede Neural \textit{Multilayer Perceptron} (MLP) é um tipo de arquitetura d
  	h_t &=& f(W_{hh} \cdot h_{t-1} + W_{xh} \cdot x_t + b_h)\label{eq:rnn}
  \end{eqnarray}
  
- \noindent onde \( h_t \) é o estado oculto (ou saída) no tempo \( t \), \( h_{t-1} \) é o estado oculto anterior no tempo \( t-1 \), \( x_t \) é a entrada no tempo \( t \), \( W_{hh} \) é a matriz de pesos que controla a influência do estado oculto anterior, \( W_{xh} \) é a matriz de pesos que controla a influência da entrada, \( b_h \) é o vetor de viés, \( f \) é uma função de ativação, frequentemente a função tangente hiperbólica ($\operatorname{tanh}$) ou a função sigmoide \cite{lstm}.
+ \noindent onde $ h_t $ é o estado oculto (ou saída) no tempo $ t $, $ h_{t-1} $ é o estado oculto anterior no tempo $ t-1 $, $ x_t $ é a entrada no tempo $ t $, $ W_{hh} $ é a matriz de pesos que controla a influência do estado oculto anterior, $ W_{xh} $ é a matriz de pesos que controla a influência da entrada, $ b_h $ é o vetor de viés, $ f $ é uma função de ativação, frequentemente a função tangente hiperbólica ($\operatorname{tanh}$) ou a função sigmoide \cite{lstm}.
  
- A equação representa a propagação do estado oculto ao longo do tempo em uma RNN. A cada novo passo de tempo, a RNN considera a entrada atual \( x_t \) e o estado oculto anterior \( h_{t-1} \), calculando o novo estado oculto \( h_t \) usando as matrizes de pesos e a função de ativação. 
+ A equação representa a propagação do estado oculto ao longo do tempo em uma RNN. A cada novo passo de tempo, a RNN considera a entrada atual $ x_t $ e o estado oculto anterior $ h_{t-1} $, calculando o novo estado oculto $ h_t $ usando as matrizes de pesos e a função de ativação. 
  
   No entanto, as RNNs tradicionais podem enfrentar dificuldades em capturar dependências de longo prazo, devido ao problema de dissipação do gradiente. Para entender isso, surgiram variações avançadas, como LSTM  e GRU, que incorporam mecanismos de aprendizado de esquecimento e controle de informação, permitindo que informações relevantes sejam mantidas por períodos mais longos de tempo \cite{WANG2023116247}, \cite{ZHAO2023114136}.
  
@@ -261,7 +361,7 @@ Uma Rede Neural \textit{Multilayer Perceptron} (MLP) é um tipo de arquitetura d
  	h_t &=& o_t \odot \tanh(C_t)
  \end{eqnarray}
  
-\noindent onde \(x_t\) é a entrada no tempo \(t\), \(h_{t-1}\) é o estado oculto anterior no tempo \(t-1\), \(f_t\) é o valor da porta de esquecimento, \(i_t\) é o valor da porta de entrada, \(\tilde{C}_t\) é o candidato a novo estado de memória, \(C_t\) é o novo estado de memória, \(o_t\) é o valor da porta de saída, \(h_t\) é o novo estado oculto (saída) no tempo \(t\), \(\sigma\) é a função de ativação sigmoide, \(\odot\) representa a multiplicação elemento a elemento.
+\noindent onde $x_t$ é a entrada no tempo $t$, $h_{t-1}$ é o estado oculto anterior no tempo $t-1$, $f_t$ é o valor da porta de esquecimento, $i_t$ é o valor da porta de entrada, $\tilde{C}_t$ é o candidato a novo estado de memória, $C_t$ é o novo estado de memória, $o_t$ é o valor da porta de saída, $h_t$ é o novo estado oculto (saída) no tempo $t$, $\sigma$ é a função de ativação sigmoide, $\odot$ representa a multiplicação elemento a elemento.
  
  Essa estrutura permite que as LSTMs controlem o fluxo de informações e aprendam a armazenar ou descartar informações relevantes para diferentes tarefas. As portas de entrada, esquecimento e saída funcionam como mecanismos de controle, permitindo que as LSTMs aprendam a manter informações importantes, esquecer informações desnecessárias e gerar saídas precisas ao longo de sequências temporais.
  
@@ -274,26 +374,26 @@ A estrutura da GRU inclui dois portões principais: o portão de atualização (
  
  \eqref{eq:gru}, \eqref{eq:gru1}, \eqref{eq:gru2} e \eqref{eq:gru3}:
  
-\( h_t \) representa o estado oculto na etapa de tempo \( t \), \( h_{t-1} \) é o estado oculto na etapa de tempo anterior \( t-1 \), \( x_t \) é a entrada na etapa de tempo \( t \), \( r_t \) é o valor do portão de reinicialização na etapa \( t \), \( z_t \) é o valor do portão de atualização na etapa \( t \), \( \odot \) denota a multiplicação elemento a elemento, \( \sigma \) é a função sigmoid, que retorna valores entre $0$ e $1$, \( \tanh \) é a função tangente hiperbólica, que retorna valores entre $-1$ e $1$, \( W_r, W_z\ e\ W_h \) são matrizes de pesos que o modelo aprende durante o treinamento.
+$ h_t $ representa o estado oculto na etapa de tempo $ t $, $ h_{t-1} $ é o estado oculto na etapa de tempo anterior $ t-1 $, $ x_t $ é a entrada na etapa de tempo $ t $, $ r_t $ é o valor do portão de reinicialização na etapa $ t $, $ z_t $ é o valor do portão de atualização na etapa $ t $, $ \odot $ denota a multiplicação elemento a elemento, $ \sigma $ é a função sigmoid, que retorna valores entre $0$ e $1$, $ \tanh $ é a função tangente hiperbólica, que retorna valores entre $-1$ e $1$, $ W_r, W_z\ e\ W_h $ são matrizes de pesos que o modelo aprende durante o treinamento.
  
-O portão de reinicialização (\(r_t\)) controla a quantidade de informação do passado a ser esquecida, dada por:
+O portão de reinicialização ($r_t$) controla a quantidade de informação do passado a ser esquecida, dada por:
  	
  	\begin{eqnarray}
  		r_t &=& \sigma(W_r \cdot [h_{t-1}, x_t])\label{eq:gru}
  	\end{eqnarray} 
  	
-O portão de atualização (\(z_t\)) controla a quantidade de informação do passado a ser passada para o próximo estado, como:
+O portão de atualização ($z_t$) controla a quantidade de informação do passado a ser passada para o próximo estado, como:
  	\begin{eqnarray}
  		z_t &=& \sigma(W_z \cdot [h_{t-1}, x_t])\label{eq:gru1}
  	\end{eqnarray}
  
-A ativação do candidato (\(h\widetilde{_t}\)), candidato a novo estado oculto calculado por:
+A ativação do candidato ($h\widetilde{_t}$), candidato a novo estado oculto calculado por:
  	
  	\begin{eqnarray}
  		h\widetilde{_t} &=& \tanh\left(W_h \cdot [r_t \odot h_{t-1}, x_t]\right)\label{eq:gru2}
  	\end{eqnarray}
  	
-O novo estado oculto (\(h_t\)) é a combinação ponderada do estado anterior e do novo candidato, dado por:
+O novo estado oculto ($h_t$) é a combinação ponderada do estado anterior e do novo candidato, dado por:
  
  	\begin{eqnarray}
  		h_t &=& (1 - z_t) \odot h_{t-1} + z_t \odot h\widetilde{_t}\label{eq:gru3}
@@ -357,9 +457,9 @@ A largura e a altura desses mapas são definidas pelo tamanho do \textit{kernel}
  $F$ é a altura ou largura do \textit{kernel} de convolução,
  $S$ é o tamanho do \textit{stride}.
  
- \subsection{M\'etricas Estat\'isticas}\label{subsec:metrica}
+ \subsection{Medidas de Desempenho}\label{subsec:metrica}
  
-As métricas estatísticas são utilizadas na análise de previsão de séries temporais para avaliar se o modelo preditor possui um desempenho adequado e/ou superior. Quanto menor for o erro da maior parte das métricas, melhor será o desempenho do modelo aplicados.
+As métricas estatísticas são utilizadas na análise de previsão de séries temporais para avaliar se o modelo preditor possui um desempenho adequado e/ou superior. Quanto menor for o erro da maioria das métricas, melhor será o desempenho do modelo aplicado.
  
 A Raiz do Erro Médio Quadrático Relativo (RRMSE) é uma variante do erro quadrático médio (RMSE) sendo calculado por,
  
@@ -367,10 +467,10 @@ A Raiz do Erro Médio Quadrático Relativo (RRMSE) é uma variante do erro quadr
  	R R M S E&=&\dfrac{\sqrt{\frac{1}{n} \sum_{i=1}^n\left(y_i-\hat{y}_i\right)^2}}{\sum_{i=1}^n\left(\hat{y}_i\right)^2}
  \end{eqnarray}
  
- \noindent onde \(n\) número total de observações ou amostras no conjunto de dados,
- \(y_i\) valor real da observação \(i\),
- \(\hat{y}_i\) valor previsto ou estimado da observação \(i\) pelo modelo,
- \(\sum_{i=1}^{n}\) soma sobre todas as observações no conjunto de dados.
+ \noindent onde $n$ número total de observações ou amostras no conjunto de dados,
+ $y_i$ valor real da observação $i$,
+ $\hat{y}_i$ valor previsto ou estimado da observação $i$ pelo modelo,
+ $\sum_{i=1}^{n}$ soma sobre todas as observações no conjunto de dados.
  
 O Erro Absoluto Médio (MAE) é utilizado como uma métrica para avaliar o desempenho de modelos de previsão. Em vez de calcular a média das diferenças entre os valores reais e previstos, o MAE calcula a média dos valores absolutos dessas diferenças, garantindo que os erros positivos e negativos não se anulem, calculada por,
  
@@ -405,7 +505,7 @@ O coeficiente de correlação de Pearson mede a força e a direção da relaçã
  
 A decomposição STL é uma técnica amplamente utilizada para decompor séries temporais em seus componentes sazonais, de tendência e restantes \cite{RIBEIRO2023112982}. O método STL realiza a decomposição aditiva dos dados por meio de uma sequência de aplicações do Loess mais suave, onde regressões polinomiais ponderadas localmente são aplicadas em cada amostra do conjunto de dados, tendo como variáveis explicativas os valores próximos do amostra cuja resposta está sendo estimada \cite{Theodosiou20111178}.
  
-Ao aplicar a decomposição STL, a série temporal pode ser expressa como a soma dos componentes sazonais, de tendência e restantes. Essa técnica é útil para análise e modelagem de séries temporais, pois proporciona uma compreensão clara dos padrões de variação presentes nos dados.
+Ao aplicar a decomposição STL, a série temporal pode ser expressa como a soma dos componentes sazonais, de tendência e restantes. Essa técnica se revela valiosa para análise e modelagem de séries temporais, fornecendo uma compreensão clara dos padrões de variação presentes nos dados. Este método prepara o terreno para uma abordagem mais refinada na aplicação de modelos, permitindo uma interpretação mais precisa e uma melhor adaptação aos padrões intrínsecos dos dados ao utilizar o ARIMA ou SARIMA em sua análise \cite{RIBEIRO2023112982}.
  
 A decomposição STL é formalmente definida como:
  
@@ -417,6 +517,42 @@ A decomposição STL é formalmente definida como:
  \end{eqnarray}
 
 \noindent onde $y_t$ é o valor da série temporal no tempo $t$, $T_t$ é a componente de tendência no tempo $t$, $S_t$ é a componente de sazonalidade no tempo $t$, $R_t$ é a componente de resíduo no tempo $t$.
+
+\subsection{Teste Run}
+
+O teste de Run, também conhecido como teste de sequências de \textit{Wald-Wolfowitz}, verifica se uma série de dados foi gerada aleatoriamente \cite{PAIVA}.
+
+As hipóteses são:
+$$
+\left\{\begin{array}{l}
+	H_0: \text { a sequência foi gerada aleatoriamente (sem tendência) } \\
+	H_1: \text { a sequência não foi gerada aleatoriamente (possui uma tendência). }
+\end{array}\right.
+$$
+
+A estatística $T_1$ utiliza os valores acima e abaixo da mediana. Primeiramente, considera-se $N$ como o número de observações em uma série. Em seguida, esses valores são ordenados e o símbolo $A$ é atribuído quando o valor da observação é maior ou igual à mediana, $A \geq m$, e o símbolo $B$ se o valor for menor que a mediana, $B<m$.
+
+O número total de observações é $N=\left(n_1\right.$ pontos $\left.\mathrm{A}\right)+\left(n_2\right.$ pontos B $)$, com a estatística $T_1$ igual ao número de sequências ou número de execuções.
+
+O valor de $T_1$ é obtido contando o número de sequências iguais, ou seja, o número de oscilações no conjunto de dados entre os valores $A$ e $B$. Por exemplo, suponha que o número de observações seja igual a 20. Entre essas observações, os primeiros 5 valores eram iguais a $A$, os próximos 6 eram iguais a $B$ e os outros valores eram iguais a $A$ novamente. Então, 3 sequências $(A B A)$ foram obtidas, ou seja, o número de sequências (ou execuções) é igual a 3.
+
+Conforme \citeonline{PAIVA}, no caso de poucas sequências em relação à série, a hipótese nula $H_0$ é rejeitada. Para valores de $n_1$ ou $n_2>20$, a distribuição normal é utilizada sob $H_0$, ou seja, $T_1 \sim N\left(\mu, \sigma^2\right)$, onde
+
+\begin{eqnarray}
+	\mu&=&\dfrac{2 n_1 n_2}{N}+1, \\
+	\nonumber\\
+	 \sigma&=&\sqrt{\dfrac{2 n_1 n_2\left(2 n_1 n_2-N\right)}{N^2(N-1)}} 
+\end{eqnarray}
+
+
+Através dos cálculos de $\mu$ e $\sigma$, pode-se encontrar o valor da estatística $\mathrm{Z}$ dada por:
+
+\begin{eqnarray}
+	Z&=&\frac{T_1-\mu}{\sigma}
+\end{eqnarray}
+
+
+Analisando o valor de $Z$, $H_0$ é rejeitada se $|Z|>Z_{\frac{a}{2}}$, sendo $\alpha$ o nível de significância adotado.
 
 
 
@@ -475,7 +611,7 @@ O teste de Ljung-Box é comumente usado na modelagem de média móvel integrada 
 Estudos de simulação mostraram que a distribuição para a estatística Ljung-Box é mais próxima de um $\chi^2_{(h)}$ $6$ distribuição do que é a distribuição para a estatística Box-Pierce para todos os tamanhos de amostra, incluindo os pequenos.
  
  
-\subsection{Teste de Signific\^ancia}
+\subsection{Testes de Hip\'oteses}
  
 O teste de Friedman classifica os modelos $K$ em cada conjunto de dados em relação ao valor absoluto dos resultados dados por esses algoritmos. A classificação do algoritmo com maior desempenho é $1$ , e o com menor desempenho é classificado como $\mathrm{K}$. Em seguida, o valor da estatística com base em todas as classificações é calculado como mostrado em equações \eqref{ff} e \eqref{fx} com $r_{e u}^j$ sendo a classificação do desempenho do $j$-ésimo algoritmo no $i$-ésimo conjunto de dados. Essa estatística obedece à distribuição do qui-quadrado com $\mathrm{K}-1$ graus de liberdade \cite{Liu2022}.
  
@@ -486,18 +622,32 @@ O teste de Friedman classifica os modelos $K$ em cada conjunto de dados em rela�
  \end{eqnarray}
  
  
-As estatísticas $F_F$ mostrados na equação \eqref{fx1} obedecem à distribuição F com graus de liberdade $K-1$ e $(K-1)$ $(N-1)$. Pode-se obter o valor crítico abaixo do nível de significância especificado (geralmente $\alpha = 0,05$ ou $0,01$). Ao comparar esse valor crítico com o valor calculado com a equação \eqref{fx1}, a hipótese nula é rejeitada se o valor estatístico $F_F$ é maior que o valor crítico, indicando que há diferenças significativas entre os algoritmos $K$. Em seguida, pode-se realizar um procedimento \textit{post hoc} para analisar melhor se o algoritmo de controle é significativamente melhor do que cada algoritmo de referência nos experimentos. Ao contrário, se o valor for menor ou igual ao valor crítico, a hipótese nula é aceita, indicando que não há diferenças significativas entre os algoritmos $K$.
+As estatísticas $F_F$ mostrados na equação \eqref{fx1} obedecem à distribuição F com graus de liberdade $K-1$ e $(K-1)$ $(N-1)$. Pode-se obter o valor crítico abaixo do nível de significância especificado (geralmente $\alpha = 0,05$ ou $0,01$). Ao comparar esse valor crítico com o valor calculado com a equação \eqref{fx1}, a hipótese nula é rejeitada se o valor estatístico $F_F$ é maior que o valor crítico, indicando que há diferenças significativas entre os algoritmos $K$. Em seguida, pode-se realizar um procedimento \textit{post hoc} para analisar se o desempenho do algoritmo de controle é significativamente superior ao de cada algoritmo de referência nos experimentos. Ao contrário, se o valor for menor ou igual ao valor crítico, a hipótese nula é aceita, indicando que não há diferenças significativas entre os algoritmos $K$.
   
-Adicionalmente, utilizou-se a \textit{Critical Difference} (CD) para determinar se dois classificadores eram significativamente diferentes entre si. O CD foi calculado conforme a fórmula mencionada anteriormente:
- 
- \begin{equation}
- 	CD = q_\alpha \sqrt{\frac{K(K+1)}{6N}}
- \end{equation}
- 
-\noindent na equação do CD, $q_\alpha$ representa o valor crítico obtido das Tabelas \ref{tb:nemenyi} e \ref{tb:nemeyirede} de teste de Nemenyi, $k$ é o número de classificadores e $N$ é o número total de amostras \cite{Liu2022}.
- 
- 
- 
+Adicionalmente, foi empregada a \textit{Critical Difference} (CD) para avaliar se dois regressores eram significativamente distintos entre si. O CD foi calculado de acordo com a fórmula mencionada anteriormente:
 
+\begin{equation}
+	CD = q_\alpha \sqrt{\frac{K(K+1)}{6N}}
+\end{equation}
 
+\noindent Na equação do CD, $q_\alpha$ representa o valor crítico obtido das Tabelas \ref{tb:nemenyi} e \ref{tb:nemeyirede} de teste de Nemenyi, $k$ é o número de regressores, e $N$ é o número total de amostras \cite{Liu2022}.
+ 
+ 
+ \subsection{Otimiza\c c\~ao}
+ 
+A utilização do \textit{Tree-structured Parzen Estimator} (TPE) na otimização de hiperparâmetros é crucial para melhorar o desempenho dos modelos. Integrado à biblioteca Optuna, ele desempenha um papel vital ao guiar a busca eficiente por conjuntos ideais de hiperparâmetros durante a otimização automática \cite{tpe}.
 
+Ao dividir o espaço de busca, o TPE destaca-se ao identificar áreas promissoras para exploração, direcionando a análise de maneira inteligente e eficiente. Essa capacidade de focar em regiões promissoras contribui significativamente para a melhoria do desempenho do modelo.
+
+No contexto da demanda de água, a otimização de modelos é essencial para prever e gerenciar eficientemente o consumo de água. A correlação aqui reside na importância de ajustar os hiperparâmetros do modelo para otimizar sua precisão na previsão da demanda de água. O TPE, ao guiar a busca por configurações ideais, contribui para modelos mais precisos e adaptáveis \cite{tpe}.
+
+A equação fundamental do TPE, ao maximizar a probabilidade de melhoria, reflete o compromisso em encontrar conjuntos ótimos de hiperparâmetros. Essa abordagem probabilística, aplicada à otimização, permite ajustes dinâmicos ao longo do tempo, garantindo que o modelo se adapte às mudanças nas demandas da previsão de água.
+
+$$ P(x \mid y) = \begin{cases} 
+	p(x), & \text{se } y > y^* \\
+	q(x), & \text{se } y \leq y^*
+\end{cases} $$
+
+\noindent onde $ x $ representa um conjunto de hiperparâmetros, $ y $ é o valor da função objetivo associado a esses hiperparâmetros, $ y^* $ é o valor de referência para a melhoria, $ p(x) $ é a probabilidade de $ x $ ser um conjunto bom de hiperparâmetros, $ q(x) $ é a probabilidade de $ x $ ser um conjunto ruim de hiperparâmetros.
+
+Assim, ao considerar a otimização de hiperparâmetros com o TPE, não apenas aprimoramos a eficiência dos modelos, mas também fortalecemos sua capacidade de contribuir para soluções mais precisas e adaptáveis em domínios cruciais, como o gerenciamento da demanda de água.

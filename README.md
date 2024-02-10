@@ -6,7 +6,7 @@
 
 # Mestre-Tchesko - Repositório da Dissertação
 
-<p align="center">🎓📚 Repositório da dissertação de Franchesco, realizada no período de 2021 a 2023. 📚🎓</p>
+<p align="center">🎓📚 Repositório da dissertação de Franchesco, realizada no período de 2021 a 2024. 📚🎓</p>
 
 ## Índice
 - [Introdução](#introdução)
