@@ -1,4 +1,4 @@
-<!-- Exemplo de README.md com elementos HTML e emojis -->
+<!-- Exemplo de README.md com elementos HTML, emojis e efeito de animação -->
 
 <div align="center">
   <img alt="Mestre-Tchesko Logo" src="logo.png" width="300px">
@@ -11,11 +11,11 @@
 <h2 align="center">Índice</h2>
 
 <ul>
-  <li><a href="#introdução">Introdução</a></li>
-  <li><a href="#objetivos">Objetivos</a></li>
-  <li><a href="#conteúdo-do-repositório">Conteúdo do Repositório</a></li>
-  <li><a href="#como-reproduzir-o-projeto">Como Reproduzir o Projeto</a></li>
-  <li><a href="#contato">Contato</a></li>
+  <li><a href="#introdução" style="transition: color 0.3s ease;">Introdução</a></li>
+  <li><a href="#objetivos" style="transition: color 0.3s ease;">Objetivos</a></li>
+  <li><a href="#conteúdo-do-repositório" style="transition: color 0.3s ease;">Conteúdo do Repositório</a></li>
+  <li><a href="#como-reproduzir-o-projeto" style="transition: color 0.3s ease;">Como Reproduzir o Projeto</a></li>
+  <li><a href="#contato" style="transition: color 0.3s ease;">Contato</a></li>
 </ul>
 
 <h2 align="center">Introdução</h2>
