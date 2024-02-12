@@ -7,11 +7,11 @@
 \contentsline {table}{\numberline {4}{\ignorespaces Total de publicações dos principais autores obtidos na RSL.}}{29}{table.caption.8}%
 \contentsline {table}{\numberline {5}{\ignorespaces Total de publicações dos principais países obtidos na RSL.}}{30}{table.caption.9}%
 \contentsline {table}{\numberline {6}{\ignorespaces Principais modelos de previsão obtidos na RSL.}}{33}{table.caption.10}%
-\contentsline {table}{\numberline {7}{\ignorespaces Descrição estatística dos dados do Bairro Alto em Curitiba de 2018 a 2019 disponibilizados pela SANEPAR.}}{65}{table.caption.23}%
-\contentsline {table}{\numberline {8}{\ignorespaces Teste ADF.}}{67}{table.caption.26}%
+\contentsline {table}{\numberline {7}{\ignorespaces Descrição estatística dos dados do Bairro Alto em Curitiba de 2018 a 2019 disponibilizados pela SANEPAR.}}{64}{table.caption.21}%
+\contentsline {table}{\numberline {8}{\ignorespaces Teste ADF.}}{66}{table.caption.24}%
 \contentsline {table}{\numberline {9}{\ignorespaces Parâmetros para os modelos ARIMA utilizando a função autoARIMA.}}{71}{table.caption.29}%
 \contentsline {table}{\numberline {10}{\ignorespaces Hiperparâmetros otimizados dos modelos.}}{71}{table.caption.30}%
-\contentsline {table}{\numberline {11}{\ignorespaces Hiperparâmetros otimizados para RNA.}}{72}{table.caption.31}%
+\contentsline {table}{\numberline {11}{\ignorespaces Hiperparâmetros otimizados para RNA.}}{71}{table.caption.31}%
 \contentsline {table}{\numberline {12}{\ignorespaces Comparação dos modelos de previsão através das métricas de desempenho para dados de treino.}}{75}{table.caption.38}%
 \contentsline {table}{\numberline {13}{\ignorespaces Comparação dos modelos de previsão através das métricas de desempenho para dados de validação.}}{76}{table.caption.39}%
 \contentsline {table}{\numberline {14}{\ignorespaces Comparação dos modelos de previsão através das métricas de desempenho para dados de teste.}}{77}{table.caption.40}%

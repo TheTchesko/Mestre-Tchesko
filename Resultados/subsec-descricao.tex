@@ -120,6 +120,21 @@ O valor de p expresso como $2,62\times 10^{-23}$ está associado ao teste ADF. N
 \end{table}
 
 
+Na Figura \ref{fig:acfa}, observa-se a distinção entre ACF, apresentada na Figura \ref{fig:acfa}, e PACF, mostrada na Figura \ref{fig:pacf}. A autocorrelação é uma métrica que indica a relação entre os valores de uma série temporal em diferentes defasagens, capturando tanto correlações diretas quanto indiretas. Por sua vez, a autocorrelação parcial mensura apenas a correlação direta entre os valores, ignorando a influência de defasagens intermediárias. Essas análises são cruciais para detectar padrões e dependências entre os valores da série temporal, o que é essencial para a modelagem e previsão desses dados.
+
+O intervalo de confiança padrão de $95\%$, destacado pela faixa azul nas Figuras \ref{fig:acfa} e \ref{fig:pacf}, serve como referência crítica. Observações fora desse intervalo indicam correlações estatisticamente significativas, sugerindo a presença de padrões ou estrutura na série temporal.
+
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Autocorrelação.}\label{fig:acfa}	\includegraphics[width=0.6\linewidth]{Resultados/Figuras/acf} 
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Autocorrelação parcial.}\label{fig:pacf}	\includegraphics[width=0.6\linewidth]{Resultados/Figuras/pacf}
+\end{figure}
+
 %As Figuras contendo os gráficos ACF e PACF são ferramentas essenciais na análise de séries temporais, especialmente ao trabalhar com modelos ARIMA. 
 %
 %O ACF é uma medida estatística utilizada para identificar a presença de correlação serial em uma série temporal. Ele calcula a autocorrelação entre os valores da série em diferentes defasagens, ou seja, a correlação entre os valores atuais e os valores passados da série. O ACF é útil para analisar a dependência temporal dos dados e identificar padrões de sazonalidade, tendência ou outros efeitos temporais. Por meio do ACF, é possível avaliar se a série exibe autocorrelação significativa em defasagens específicas, o que pode indicar a presença de não estacionariedade ou estrutura temporal que precisa ser considerada na análise ou modelagem da série temporal.
@@ -176,33 +191,20 @@ Para a previsão os dados foram divididos em conjuntos de treinamento, validaç�
 A estratégia recursiva é mencionada por \citeonline{PETROPOULOS2022705} como uma abordagem eficaz na previsão de séries temporais de múltiplos passos. De acordo com o autor, essa estratégia envolve o uso de previsões anteriores como entradas para prever os próximos passos da série temporal. A abordagem recursiva tem demonstrado potencial para melhorar a acurácia das previsões de séries temporais de longo prazo.
 
 
+\noindent\textbf{Modelos de Séries Temporais} (\textbf{AR}, \textbf{ARIMA}, \textbf{ARIMAX}, \textbf{ARMA}, \textbf{ARX}, \textbf{MA}, \textbf{SARIMA}, \textbf{SARIMAX}, \textbf{Prophet}):
 
-\begin{enumerate}
-	\item \textbf{Modelos de Séries Temporais} (\textbf{AR}, \textbf{ARIMA}, \textbf{ARIMAX}, \textbf{ARMA}, \textbf{ARX}, \textbf{MA}, \textbf{SARIMA}, \textbf{SARIMAX}, \textbf{Prophet}):
-\begin{itemize}
-	\item \textbf{Entradas:} O modelo utiliza apenas o histórico de dados do nível do reservatório (LT01).
-	\item \textbf{Variáveis Exógenas:} As outras variáveis, como vazão de entrada (FT01), vazão de recalque (FT03), pressão de sucção (PT01SU) e pressão de recalque (PT02RBAL), são consideradas como variáveis exógenas, ou seja, são fornecidas como entradas externas ao modelo.
-	\item \textbf{Configuração:} Os dados históricos do nível do reservatório são organizados em séries temporais. O modelo é ajustado de acordo com sua técnica específica para prever valores futuros com base nos padrões identificados nos dados históricos do LT01.
+Para todos os modelos dessa categoria, as características de entrada e variáveis exógenas são semelhantes. Ele utiliza apenas o histórico de dados do LT01 como entrada e considera outras variáveis, como FT01, FT03, PT01, PT02, B1 e B2, como variáveis exógenas. A configuração consiste em organizar os dados históricos do nível do reservatório em séries temporais e ajustar cada modelo de acordo com sua técnica específica para prever valores futuros com base nos padrões identificados nos dados históricos do LT01.
 
-\end{itemize}
-	\item  \textbf{Redes Neurais Recorrentes} (\textbf{RNN}, \textbf{LSTM}, \textbf{GRU}):
-\begin{itemize}
-	\item \textbf{Entradas:} A rede neural utiliza apenas o histórico de dados do nível do reservatório (LT01).
-	\item \textbf{Variáveis Exógenas:} As outras variáveis, como vazão de entrada (FT01), vazão de recalque (FT03), pressão de sucção (PT01SU) e pressão de recalque (PT02RBAL), são consideradas como variáveis exógenas.
-	\item \textbf{Configuração:} Os dados históricos do nível do reservatório são organizados em sequências temporais. A rede é treinada com camadas recorrentes para aprender padrões temporais e fazer previsões futuras.
-\end{itemize}
+\noindent\textbf{Redes Neurais Recorrentes} (\textbf{RNN}, \textbf{LSTM}, \textbf{GRU}):
 
-\item  \textbf{Outros Modelos} (\textbf{CNN}, \textbf{MLP}, \textbf{DT}, \textbf{RF}, \textbf{XGBoost}, \textbf{LightGBM}):
-\begin{itemize}
-	\item \textbf{Entradas:} Esses modelos também utilizam apenas o histórico de dados do nível do reservatório (LT01).
-	\item \textbf{Variáveis Exógenas:} As outras variáveis, como vazão de entrada (FT01), vazão de recalque (FT03), pressão de sucção (PT01SU) e pressão de recalque (PT02RBAL), são consideradas como variáveis exógenas.
-	\item \textbf{Configuração:} Os dados históricos do nível do reservatório são organizados em conjuntos de treinamento. Cada modelo é treinado para aprender padrões nos dados e fazer previsões futuras, levando em consideração apenas o histórico do LT01 como variável preditora. Apenas o modelo DT utilizou o LT01 e o PT01, sendo o LT01 usado para previsão e o PT01 como variável alvo ou destino no eixo $y$.
-\end{itemize}
-\end{enumerate}
+Assim como nos modelos de séries temporais, as entradas e variáveis exógenas dessas redes neurais são as mesmas mencionadas anteriormente. Ele também utiliza apenas o histórico de dados do LT01 como entrada e considera outras variáveis como exógenas. No entanto, a configuração difere, pois os dados históricos do nível do reservatório são organizados em sequências temporais, e a rede é treinada com camadas recorrentes para aprender padrões temporais e fazer previsões futuras.
+
+\noindent\textbf{Outros Modelos} (\textbf{CNN}, \textbf{MLP}, \textbf{DT}, \textbf{RF}, \textbf{XGBoost}, \textbf{LightGBM}):
+
+Similarmente aos modelos anteriores, esses modelos também compartilham as mesmas entradas e variáveis exógenas. Ele utiliza apenas o histórico de dados do LT01 como entrada e considera outras variáveis como exógenas. A configuração, no entanto, varia dependendo do modelo. Os dados históricos do nível do reservatório são organizados em conjuntos de treinamento para cada modelo, e cada um é treinado para aprender padrões nos dados e fazer previsões futuras. Uma exceção é o modelo DT, que utiliza o LT01 para previsão e o PT01 como variável alvo no eixo $y$.
 
 
-
-MISO foi o modelo usado neste estudo. O modelo ARIMA, juntamente com suas variantes e extensões, foi amplamente estudado durante a pesquisa, assim como modelos regressivos que envolvem múltiplas variáveis de entrada e uma variável de saída, neste caso, a LT01. As demais variáveis foram utilizadas como suporte para melhorar o modelo do tipo ARIMAX, modelos com variáveis exógenas. 
+O MISO foi o modelo usado neste estudo. O modelo ARIMA, juntamente com suas variantes e extensões, foi amplamente estudado durante a pesquisa, assim como modelos regressivos que envolvem múltiplas variáveis de entrada e uma variável de saída, neste caso, a LT01. As demais variáveis, como FT01, FT03, PT01, PT02, B1 e B2, foram utilizadas como suporte para melhorar o modelo do tipo ARIMAX, modelos com variáveis exógenas.
 
 Quando aplicado sem o uso de variáveis exógenas, o modelo ARIMA apresenta apenas uma entrada, semelhante ao modelo de \textit{Linear Regression}. No entanto, ao incluir variáveis exógenas, o modelo se torna MISO, permitindo uma modelagem  abrangente e considerando a correlação das várias para prever a variável de interesse, LT01.
 
@@ -210,9 +212,10 @@ A previsão dos dados foi feita com diferentes horizontes de previsão como $1$ 
 
 Além desses modelos de previsão, vários outros modelos foram utilizados no estudo, tais como DT, RF, XGBoost, LightGBM, MLP, LSTM, GRU, Prophet, RNN, e CNN, a fim de obter o melhor resultado para a previsão de séries temporais de abastecimento de água.
 
-Foram utilizados os parâmetros obtidos pelo autoARIMA que são $(p = 7, d = 0, q = 0) (P = 2, D = 1, Q = 1)_{M = 12}$, que foram ajustados para obter um melhor resultado, sendo $(p = 7, d = 1, q = 7) (P = 2, D = 1, Q = 1)_{M = 12}$. 
+%Foram utilizados os parâmetros obtidos pelo autoARIMA que são $(p = 7, d = 0, q = 0) (P = 2, D = 1, Q = 1)_{M = 12}$, que foram ajustados para obter um melhor resultado, sendo $(p = 7, d = 1, q = 7) (P = 2, D = 1, Q = 1)_{M = 12}$. 
 
-Na Tabela \ref{tab:autoarima_params} são exibidos todos os valores obtidos pela função autoARIMA e ajustados para que obtenham o melhor resultado para $p$ que é a ordem do componente AR, $d$ que é o número de diferenciações não sazonais, $q$ que é a ordem do componente MA, $P$ que é a ordem do componente AR sazonal, $D$ que é o número de diferenciações sazonais, $Q$ que é a ordem do componente MA sazonal, $M$ que é o período sazonal (número de observações em um ciclo sazonal).
+Na Tabela \ref{tab:autoarima_params} são exibidos todos os valores obtidos pela biblioteca do \textit{Python} autoARIMA, resultantes para $p$, que representa a ordem do componente AR; $d$, que indica o número de diferenciações não sazonais; $q$, que denota a ordem do componente MA; $P$, que corresponde à ordem do componente AR sazonal; $D$, que representa o número de diferenciações sazonais; $Q$, que indica a ordem do componente MA sazonal; e $M$, que representa o período sazonal (o número de observações em um ciclo sazonal).
+
 
 \begin{table}[!htb]
 	\centering
@@ -223,19 +226,19 @@ Na Tabela \ref{tab:autoarima_params} são exibidos todos os valores obtidos pela
 	\toprule
 	\text{Modelos} & \text{Parâmetros}   \\
 	\midrule
-		AR(p) & \( p = 7 \)  \\
-		ARX(p) & \( p = 7 \) \\
-		MA(q) & \( q = 7 \)   \\
-		ARMA(p, q) & \( p = 7 \), \( q = 7 \)  \\
-		ARIMA(p, d, q) & \( p = 7 \), \( d = 1 \), \( q = 7 \)  \\
-		ARIMAX(p, d, q) & \( p = 7 \), \( d = 1 \), \( q = 7 \)  \\
-		SARIMA(p, d, q)(P, D, Q) & \( p = 7 \), \( d = 1 \), \( q = 7 \), \( P = 2 \), \( D = 1 \), \( Q = 1 \) \\
-		SARIMAX(p, d, q)(P, D, Q, M) & \( p = 7 \), \( d = 1 \), \( q = 7 \), \( P = 2 \), \( D = 1 \), \( Q = 1 \), \( M = 12 \)\\
+		AR(p) & $ p = 3 $  \\
+		ARX(p) & $ p = 3 $ \\
+		MA(q) & $ q = 3 $   \\
+		ARMA(p, q) & $ p = 3 $, $ q = 3 $  \\
+		ARIMA(p, d, q) & $ p = 3 $, $ d = 1 $, $ q = 3 $  \\
+		ARIMAX(p, d, q) & $ p = 3 $, $ d = 1 $, $ q = 3 $  \\
+		SARIMA(p, d, q)(P, D, Q) & $ p = 3 $, $ d = 1 $, $ q = 3 $, $ P = 0 $, $ D = 1 $, $ Q = 2 $ \\
+		SARIMAX(p, d, q)(P, D, Q, M) & $ p = 3 $, $ d = 1 $, $ q = 3 $, $ P = 0 $, $ D = 1 $, $ Q = 2 $, $ M = 4 $\\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
-Os hiperparâmetros dos modelos foram otimizados usando a biblioteca Optuna do Python. Nesse contexto, foram empregadas técnicas bayesianas, especificamente o algoritmo TPE visando uma otimização mais eficiente.
+Os hiperparâmetros dos modelos foram otimizados usando a biblioteca Optuna do \textit{Python}. Nesse contexto, foram empregadas técnicas bayesianas, especificamente o algoritmo TPE visando uma otimização mais eficiente.
 
 Na Tabela \ref{tab:hiperparametros} são descritos os hiperparâmetros dos modelos XGBoost, LightGBM, RF, e DT, onde NE é o número de estimadores, PM é a profundidade máxima, MAD é o mínimo de amostras por divisão, MAF é o mínimo de amostras por folha, e TA é a taxa de aprendizado. 
 
@@ -247,15 +250,16 @@ Na Tabela \ref{tab:hiperparametros} são descritos os hiperparâmetros dos model
 		\toprule
 		\text{Modelo} & \text{Estimadores} & \text{PM} & \text{MAD} & \text{MAF} & \text{TA} \\
 		\midrule
-		XGBoost & 503 & 5 & 7 & 2  & 0,034 \\
-		LightGBM & 820 & 10 & 3 & 5 & 0,014 \\
-		RF & 135 & 10 & 4 & 2 & N/A \\
-		DT & N/A & 229 & 32 & 20 & N/A \\
+			DT & N/A & 976 & 14 & 14 & N/A \\
+			LightGBM & 419 & 18 & 8 & 13 & 0,021 \\
+			RF & 477 & 18 & 4 & 11 & N/A \\
+			XGBoost & 1752 & 4 & 23 & 24  & 0,014 \\	
 		\bottomrule
 	\end{tabular}
 \end{table}
 
-Os hiperparâmetros dos modelos de rede neural artificial, como RNN, MLP, CNN, GRU, e LSTM obtidos pela otimização do Optuna são exibidos na Tabela \ref{tab:hyperparameters_summary}. CNN usou kernel 7 e densas 1, enquanto MLP usou densas 1.
+
+Os hiperparâmetros dos modelos de rede neural artificial (RNA), como RNN, MLP, CNN, GRU e LSTM, obtidos através da otimização TPE da biblioteca Optuna em Python, são exibidos na Tabela \ref{tab:hyperparameters_summary}. CNN utilizou um kernel de tamanho 5 e uma camada densa, enquanto MLP utilizou uma única camada densa.
 
 \begin{table}[!htb]
 	\centering
@@ -267,44 +271,38 @@ Os hiperparâmetros dos modelos de rede neural artificial, como RNN, MLP, CNN, G
 		\text{Modelo} & \text{Layers} & \text{Tamanho} & \text{No. Épocas} & \text{Dropout/} \\
 		&&\text{do Batch}&& \text{Learning Rate}\\
 		\midrule
-		LSTM & 128 & 32 & 77 & -- \\
-		GRU & -- & 32 & 50 & --  \\
-		RNN & 79 & 16 & 50 & 0,0008612 \\
-		CNN & -- & 61 & 10 & 0,2799; 0,00052 \\
-		MLP & 125 & 27 & 96 & 0,4135, 0,0004057 \\
+		CNN & 4 & 13 & 100 & 0,24; 0,00067 \\
+		GRU & 2 & 16 & 69 & -- ; 0,01  \\
+		LSTM & 4 & 32 & 122 & 0,2 ; 0,01 \\
+		MLP & 3 & 32 & 65 & 0,218, 0,00030 \\
+		RNN & 4 & 16 & 50 & 0,2 ; 0,01 \\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
-\subsection{Aplicando os Modelos de Previs\~ao}
 
-Foram empregadas três métricas estatísticas para avaliar e comparar o desempenho dos modelos de previsão.
+
+\subsection{Aplicando os Modelos de Previs\~ao}
 
 Na análise dos modelos desenvolvidos, observou-se que o modelo RNN obteve o melhor desempenho, tanto para previsões de curto prazo, durante as horas de pico entre 18h e 21h, quanto para outros períodos. Além disso, os modelos MA, AR, SARIMA, ARIMA, SARIMAX, ARIMAX, ARX, LightGBM, XGBoost, RF, RNN, MLP, CNN, GRU, LSTM, e Prophet também apresentaram resultados satisfatórios, seguindo uma ordem decrescente de desempenho.
 
-Uma observação recorrente foi a superioridade dos modelos que incorporam variáveis exógenas em termos de capacidade de previsão, evidenciada nas Figuras \ref{fig:1-ar-arx-ma} a \ref{fig:prophet1} e nas Tabelas \ref{tb:apd-trn} a \ref{tb:apd-int}, onde os valores menores foram destacados em \textbf{negrito}. O modelo RNN destacou-se tanto nos conjuntos de treinamento quanto na avaliação global, consolidando-se como o modelo mais eficaz nas previsões realizadas. Desde a \ref{fig:1-ar-arx-ma} a \ref{fig:prophet1} são ilustrados cenários distintos de previsão e comparação entre os modelos RNN e Prophet, respectivamente, sendo o primeiro a escolha mais adequada. 
+Uma observação recorrente foi a superioridade dos modelos que incorporam variáveis exógenas em termos de capacidade de previsão, evidenciada nas Figuras \ref{fig:1-ar-arx-ma} a \ref{fig:prophet1} e nas Tabelas \ref{tb:apd-trn} a \ref{tb:apd-int}, onde os valores menores foram destacados em \textbf{negrito}. O modelo DT destacou-se como o melhor em termos de eficácia nas previsões realizadas, seguido pelo modelo Prophet. Desde a \ref{fig:1-ar-arx-ma} a \ref{fig:prophet1} são ilustrados cenários distintos de previsão e comparação entre os modelos DT e Prophet, respectivamente, sendo o primeiro a escolha mais adequada. As Figuras são exibidas com um corte temporal da data 2019/12/01, 2020/01/02.
 
 \begin{figure}[!htb]
 	\centering
-	\caption{Comparação dos modelos de previsão AR, ARX e MA 1 passo à frente.}
+	\caption{Comparação dos modelos de previsão AR, ARX, MA e ARMA 24 passo à frente.}
 	\label{fig:1-ar-arx-ma}
-	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/1-AR-ARX-MA}
+	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/ARX-AR-MA-ARMA-24}
 	
 \end{figure}
 \begin{figure}[!htb]
 	\centering
-	\caption{Comparação dos modelos de previsão ARIMAX, SARIMA e SARIMAX 1 passo à frente.}
+	\caption{Comparação dos modelos de previsão ARIMA, ARIMAX, SARIMA e SARIMAX 24 passo à frente.}
 	\label{fig:1-arimax-sarima-sarimax}
-	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/1-ARIMAX-SARIMA-SARIMAX}
+	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/ARIMA-SARIMA-ARIMAX-SARIMAX-24}
 	
 \end{figure}
-\begin{figure}[!htb]
-	\centering
-	\caption{Comparação dos modelos de previsão ARMA e ARIMA 1 passo à frente.}
-	\label{fig:1-arma-arima}
-	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/1-ARMA-ARIMA}
-	
-\end{figure}
+
 \begin{figure}[!htb]
 	\centering
 	\caption{Comparação dos modelos DT, RF, XGBoost e LightGBM 1 passo à frente.}
@@ -312,16 +310,25 @@ Uma observação recorrente foi a superioridade dos modelos que incorporam vari�
 	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/LR-XGB-LGBM-RF}
 	
 \end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Modelo de previsão CNN para vários horizontes de previsão.}
+	\label{fig:1-arma-arima}
+	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/CNN}
+	
+\end{figure}
+
 \begin{figure}[!htb]
 	\centering
 	\caption{Modelo de previsão RNN para vários horizontes de previsão.}
 	\label{fig:rnn}
-	\includegraphics[width=0.9\linewidth]{Resultados/Figuras/RNN}
+	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/RNN}
 \end{figure}
 \begin{figure}[!htb]
 	\centering
 	\caption{Previsões do modelo Prophet 24 passos à frente}\label{fig:prophet1}
-	\includegraphics[width=0.9\linewidth]{Resultados/Figuras/prophet1}	
+	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/prophet}	
 \end{figure}
 
 \begin{landscape}

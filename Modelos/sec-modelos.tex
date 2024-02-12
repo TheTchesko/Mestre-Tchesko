@@ -76,7 +76,7 @@ O modelo ARMA é uma combinação dos modelos AR  e MA, onde o modelo AR é adic
  
   \subsection{Autocorrela\c c\~ao e Autocorrela\c c\~ao Parcial}
  
-As Figuras contendo os gráficos da Função de Autocorrelação (ACF) e da Função de Autocorrelação Parcial (PACF) são ferramentas essenciais na análise de séries temporais, especialmente ao trabalhar com modelos ARIMA. Elas são expressas da seguinte forma:
+A representação gráfica da Função de Autocorrelação (ACF) e da Função de Autocorrelação Parcial (PACF) é uma ferramenta essencial na análise de séries temporais, especialmente ao trabalhar com modelos ARIMA. Ela é expressa da seguinte forma:
 
 \begin{eqnarray}
 	 R_k &=& \frac{\gamma_k}{\gamma_0} \\ 
@@ -91,19 +91,19 @@ As Figuras contendo os gráficos da Função de Autocorrelação (ACF) e da Fun�
  
  A ordem do ARIMA é denotada como ($p, d, q$), onde p é a ordem do componente AR, d é a ordem de diferenciação, que representa o número de vezes que a série temporal é diferenciada para torná-la estacionária, e q é a ordem do componente de MA. Os pontos nos gráficos ACF e PACF que ultrapassam as bandas de confiança indicam lags significativos. Analisando esses gráficos, pode fazer escolhas sobre os valores de $p$, $d$, e $q$ ao ajustar um modelo ARIMA à série temporal em questão. 
  
- Na Figura \ref{fig:acfa}, pode-se observar a diferença entre ACF exibida na Figura \ref{fig:acfa} e PACF exibida na Figura \ref{fig:pacf}. A autocorrelação é uma medida da correlação entre os valores da série temporal em diferentes defasagens, levando em consideração tanto a correlação direta quanto a correlação indireta. Por outro lado, a autocorrelação parcial mede apenas a correlação direta entre os valores, desconsiderando a influência das defasagens intermediárias. Essas análises são úteis para identificar padrões e relações de dependência entre os valores da série temporal, fornecendo informações importantes para a modelagem e previsão desses dados. O intervalo de confiança padrão de $95\%$ é representado pela faixa azul nas Figuras \ref{fig:acfa} e \ref{fig:pacf}. As observações que estão fora desse intervalo são consideradas estatisticamente correlacionadas, indicando a presença de padrões ou estrutura na série temporal.
- 
-
- 
- \begin{figure}[!htb]
- 	\centering
- 	\caption{Autocorrelação.}\label{fig:acfa}	\includegraphics[width=0.6\linewidth]{Resultados/Figuras/acf} 
- \end{figure}
- 
- \begin{figure}[!htb]
- 	\centering
- 	\caption{Autocorrelação parcial.}\label{fig:pacf}	\includegraphics[width=0.6\linewidth]{Resultados/Figuras/pacf}
- \end{figure}
+% Na Figura \ref{fig:acfa}, pode-se observar a diferença entre ACF exibida na Figura \ref{fig:acfa} e PACF exibida na Figura \ref{fig:pacf}. A autocorrelação é uma medida da correlação entre os valores da série temporal em diferentes defasagens, levando em consideração tanto a correlação direta quanto a correlação indireta. Por outro lado, a autocorrelação parcial mede apenas a correlação direta entre os valores, desconsiderando a influência das defasagens intermediárias. Essas análises são úteis para identificar padrões e relações de dependência entre os valores da série temporal, fornecendo informações importantes para a modelagem e previsão desses dados. O intervalo de confiança padrão de $95\%$ é representado pela faixa azul nas Figuras \ref{fig:acfa} e \ref{fig:pacf}. As observações que estão fora desse intervalo são consideradas estatisticamente correlacionadas, indicando a presença de padrões ou estrutura na série temporal.
+% 
+%
+% 
+% \begin{figure}[!htb]
+% 	\centering
+% 	\caption{Autocorrelação.}\label{fig:acfa}	\includegraphics[width=0.6\linewidth]{Resultados/Figuras/acf} 
+% \end{figure}
+% 
+% \begin{figure}[!htb]
+% 	\centering
+% 	\caption{Autocorrelação parcial.}\label{fig:pacf}	\includegraphics[width=0.6\linewidth]{Resultados/Figuras/pacf}
+% \end{figure}
  
  \subsection{Modelos de Aprendizado de M\'aquina}\label{subsec:reg}
  

@@ -11,31 +11,31 @@
 \contentsline {subsection}{\numberline {3.1}Conceito de S\'eries Temporais}{34}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Modelos Cl\'assicos de S\'eries Temporais}{34}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Autocorrela\c c\~ao e Autocorrela\c c\~ao Parcial}{38}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Modelos de Aprendizado de M\'aquina}{40}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Prophet}{40}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Regress\~ao Linear}{41}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}\'Arvore de Decis\~ao}{42}{subsubsection.3.4.3}%
-\contentsline {subsubsection}{\numberline {3.4.4}Floresta Aleat\'oria}{43}{subsubsection.3.4.4}%
-\contentsline {subsubsection}{\numberline {3.4.5}\textit {Gradient Boosting}}{45}{subsubsection.3.4.5}%
-\contentsline {subsubsection}{\numberline {3.4.6}\textit {LightGBM}}{46}{subsubsection.3.4.6}%
-\contentsline {subsection}{\numberline {3.5}Redes Neurais Artificiais}{48}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}MLP}{48}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Rede Neural Recorrente}{49}{subsubsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.6}Aprendizado Profundo}{51}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}LSTM}{51}{subsubsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.2}GRU}{52}{subsubsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.7}Rede Neural Convolucional}{54}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Medidas de Desempenho}{56}{subsection.3.8}%
-\contentsline {subsection}{\numberline {3.9}Correla\c c\~ao de Pearson}{57}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}Decomposi\c c\~ao STL}{57}{subsection.3.10}%
-\contentsline {subsection}{\numberline {3.11}Teste Run}{58}{subsection.3.11}%
-\contentsline {subsection}{\numberline {3.12}Teste Dickey-Fuller}{59}{subsection.3.12}%
-\contentsline {subsection}{\numberline {3.13}Teste de Ljung-Box}{60}{subsection.3.13}%
-\contentsline {subsection}{\numberline {3.14}Testes de Hip\'oteses}{61}{subsection.3.14}%
-\contentsline {subsection}{\numberline {3.15}Otimiza\c c\~ao}{62}{subsection.3.15}%
-\contentsline {section}{\numberline {4}Resultados}{64}{section.4}%
-\contentsline {subsection}{\numberline {4.1}An\'alise Explorat\'oria dos Dados}{64}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Aplicando os Modelos de Previs\~ao}{72}{subsection.4.2}%
+\contentsline {subsection}{\numberline {3.4}Modelos de Aprendizado de M\'aquina}{39}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Prophet}{39}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Regress\~ao Linear}{40}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}\'Arvore de Decis\~ao}{40}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}Floresta Aleat\'oria}{42}{subsubsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.5}\textit {Gradient Boosting}}{44}{subsubsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {3.4.6}\textit {LightGBM}}{45}{subsubsection.3.4.6}%
+\contentsline {subsection}{\numberline {3.5}Redes Neurais Artificiais}{47}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}MLP}{47}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Rede Neural Recorrente}{48}{subsubsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.6}Aprendizado Profundo}{50}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}LSTM}{50}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}GRU}{51}{subsubsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.7}Rede Neural Convolucional}{53}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Medidas de Desempenho}{55}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Correla\c c\~ao de Pearson}{56}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Decomposi\c c\~ao STL}{56}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}Teste Run}{57}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}Teste Dickey-Fuller}{58}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}Teste de Ljung-Box}{59}{subsection.3.13}%
+\contentsline {subsection}{\numberline {3.14}Testes de Hip\'oteses}{60}{subsection.3.14}%
+\contentsline {subsection}{\numberline {3.15}Otimiza\c c\~ao}{61}{subsection.3.15}%
+\contentsline {section}{\numberline {4}Resultados}{63}{section.4}%
+\contentsline {subsection}{\numberline {4.1}An\'alise Explorat\'oria dos Dados}{63}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Aplicando os Modelos de Previs\~ao}{71}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Teste de Signific\^ancia}{79}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}Compara\c c\~ao dos Modelos}{81}{subsubsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.4}Aplica\c c\~ao}{84}{subsection.4.4}%
