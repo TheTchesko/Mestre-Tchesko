@@ -68,7 +68,7 @@ O modelo ARMA é uma combinação dos modelos AR  e MA, onde o modelo AR é adic
  
  \begin{figure}[H]
  	\centering
- 	\caption{Elementos do modelo SARIMAX}
+ 	\caption{Elementos do modelo SARIMAX.}
  	\label{fig:sarimaxmap}
  	\includegraphics[width=\linewidth]{Modelos/Figuras/sarimax_map.pdf}
  	
@@ -204,7 +204,7 @@ Seja $ F(x) $ a função de previsão da Floresta Aleatória para a instância $
 
 \noindent onde, $ N $ é o número total de árvores na floresta. Cada árvore $ T_i(x) $ é construída com uma amostra aleatória do conjunto de dados original, garantindo a diversidade e robustez do modelo. A previsão de cada árvore é combinada através da média, proporcionando uma abordagem de conjunto para melhorar a precisão e generalização do modelo.
  
- \subsubsection{\textit{Gradient Boosting}}\label{subsubsec:lgbxgb}
+ \subsubsection{Gradient Boosting}\label{subsubsec:lgbxgb}
  
  O \textit{Gradient Boosting} é um modelo que combina vários modelos de árvore de decisão para realizar previsões. Cada uma dessas árvores de decisão é única, pois a diversidade é um elemento importante nesse processo. A diversidade é alcançada através de um processo chamado \textit{boosting}, que é uma abordagem iterativa, que adiciona modelos fracos ao conjunto de forma inteligente, dando peso maior aos pontos de dados que ainda não foram previstos de forma adequada \cite{BUEECHI2023109596}. 
  
@@ -212,7 +212,7 @@ A Figura \ref{fig:xgboos} apresenta uma visão esquemática do modelo XGBoost. �
 
 \begin{figure}[!htb]
 	\centering
-	\caption{Fluxograma do XGBoost}
+	\caption{Fluxograma do XGBoost.}
 	\label{fig:xgboos}
 	\includegraphics[width=\linewidth]{Modelos/Figuras/xgboos.pdf}
 \end{figure}
@@ -239,7 +239,7 @@ A Figura \ref{fig:xgboos} apresenta uma visão esquemática do modelo XGBoost. �
  
 
  
- \subsubsection{\textit{LightGBM}}
+ \subsubsection{LightGBM}
  
  Uma alternativa proposta pelo XGBoost é a segmentação baseada em histograma. Nesse caso, em vez de iterar por todas as partições possíveis, o modelo constrói um histograma para cada variável e utiliza-os para encontrar a melhor divisão geral entre as variáveis. O LightGBM, desenvolvido pela Microsoft, adota uma abordagem mais eficiente para a definição das divisões. Essa abordagem é conhecida como amostragem \textit{Gradient-Based One-Side Sample} (GOSS). O GOSS calcula o gradiente para cada ponto de dados e utiliza-o para filtrar os pontos de dados com gradientes baixos \cite{SUN2020101084}. 
  
@@ -250,7 +250,7 @@ A Figura \ref{fig:xgboos} apresenta uma visão esquemática do modelo XGBoost. �
  
  \begin{figure}[!htb]
  	\centering
- 	\caption{Comparação do crescimento em folha com o crescimento em nível}
+ 	\caption{Comparação do crescimento em folha com o crescimento em nível.}
  	\label{fig:xgboost}
  	\includegraphics[width=0.7\linewidth]{Modelos/Figuras/xgboost.pdf}
  \end{figure}
@@ -258,8 +258,7 @@ A Figura \ref{fig:xgboos} apresenta uma visão esquemática do modelo XGBoost. �
  
  No crescimento de árvore em folhas, no modelo LightGBM, novas folhas são adicionadas à árvore de forma iterativa, visando maximizar a redução do erro de treinamento. Isso significa que as árvores são expandidas adicionando folhas, uma a uma, até que o critério de parada seja alcançado.  No crescimento em níveis, no modelo XGBoost, as árvores são expandidas em profundidade de forma simultânea em todos os níveis. Ou seja, em cada nível, todas as folhas são expandidas ao mesmo tempo, resultando em um crescimento mais uniforme da árvore. Essa distinção no modo de crescimento das árvores pode afetar o comportamento e o desempenho do modelo. 
   
- \noindent\textbf{XGBoost:}
- 
+ \noindent\textbf{XGBoost:} 
  A função de previsão do modelo XGBoost para a instância $x$ é representada por $F_{\text{XGBoost}}(x)$. Esta função é obtida através do crescimento de árvores em níveis, onde cada árvore é construída simultaneamente em profundidade em todos os níveis. Assim, a previsão final é dada por:
  
  \begin{eqnarray}
@@ -268,8 +267,7 @@ A Figura \ref{fig:xgboos} apresenta uma visão esquemática do modelo XGBoost. �
  
  \noindent onde $N$ é o número total de árvores na floresta, e $T_i(x)$ representa a previsão da $i$-ésima árvore.
  
-\noindent\textbf{LightGBM:}
- 
+\noindent\textbf{LightGBM:} 
  A função de previsão do modelo LightGBM para a instância $x$ é representada por $F_{\text{LightGBM}}(x)$. A abordagem do LightGBM inclui a amostragem \textit{Gradient-Based One-Side Sample} (GOSS) para filtrar pontos de dados com gradientes baixos, e o \textit{Exclusive Feature Bundling} (EFB) para acelerar a seleção de variáveis correlacionadas. A previsão final é dada por:
  
 
@@ -630,7 +628,7 @@ Adicionalmente, foi empregada a \textit{Critical Difference} (CD) para avaliar s
 	CD = q_\alpha \sqrt{\frac{K(K+1)}{6N}}
 \end{equation}
 
-\noindent Na equação do CD, $q_\alpha$ representa o valor crítico obtido das Tabelas \ref{tb:nemenyi} e \ref{tb:nemeyirede} de teste de Nemenyi, $k$ é o número de regressores, e $N$ é o número total de amostras \cite{Liu2022}.
+\noindent Na equação do CD, $q_\alpha$ representa o valor crítico obtido das Tabelas \ref{tb:nemenyi} a \ref{tb:nemenyi2} de teste de Nemenyi, $k$ é o número de regressores, e $N$ é o número total de amostras \cite{Liu2022}.
  
  
  \subsection{Otimiza\c c\~ao}
@@ -639,9 +637,9 @@ A utilização do \textit{Tree-structured Parzen Estimator} (TPE) na otimizaçã
 
 Ao dividir o espaço de busca, o TPE destaca-se ao identificar áreas promissoras para exploração, direcionando a análise de maneira inteligente e eficiente. Essa capacidade de focar em regiões promissoras contribui significativamente para a melhoria do desempenho do modelo.
 
-No contexto da demanda de água, a otimização de modelos é essencial para prever e gerenciar eficientemente o consumo de água. A correlação aqui reside na importância de ajustar os hiperparâmetros do modelo para otimizar sua precisão na previsão da demanda de água. O TPE, ao guiar a busca por configurações ideais, contribui para modelos mais precisos e adaptáveis \cite{tpe}.
+No contexto da demanda d'água, a otimização de modelos é essencial para prever e gerenciar eficientemente o consumo d'água. A correlação aqui reside na importância de ajustar os hiperparâmetros do modelo para otimizar sua precisão na previsão da demanda d'água. O TPE, ao guiar a busca por configurações ideais, contribui para modelos mais precisos e adaptáveis \cite{tpe}.
 
-A equação fundamental do TPE, ao maximizar a probabilidade de melhoria, reflete o compromisso em encontrar conjuntos ótimos de hiperparâmetros. Essa abordagem probabilística, aplicada à otimização, permite ajustes dinâmicos ao longo do tempo, garantindo que o modelo se adapte às mudanças nas demandas da previsão de água.
+A equação fundamental do TPE, ao maximizar a probabilidade de melhoria, reflete o compromisso em encontrar conjuntos ótimos de hiperparâmetros. Essa abordagem probabilística, aplicada à otimização, permite ajustes dinâmicos ao longo do tempo, garantindo que o modelo se adapte às mudanças nas demandas da previsão d'água.
 
 $$ P(x \mid y) = \begin{cases} 
 	p(x), & \text{se } y > y^* \\
@@ -650,4 +648,4 @@ $$ P(x \mid y) = \begin{cases}
 
 \noindent onde $ x $ representa um conjunto de hiperparâmetros, $ y $ é o valor da função objetivo associado a esses hiperparâmetros, $ y^* $ é o valor de referência para a melhoria, $ p(x) $ é a probabilidade de $ x $ ser um conjunto bom de hiperparâmetros, $ q(x) $ é a probabilidade de $ x $ ser um conjunto ruim de hiperparâmetros.
 
-Assim, ao considerar a otimização de hiperparâmetros com o TPE, não apenas aprimoramos a eficiência dos modelos, mas também fortalecemos sua capacidade de contribuir para soluções mais precisas e adaptáveis em domínios cruciais, como o gerenciamento da demanda de água.
+Assim, ao considerar a otimização de hiperparâmetros com o TPE, não apenas aprimoramos a eficiência dos modelos, mas também fortalecemos sua capacidade de contribuir para soluções mais precisas e adaptáveis em domínios cruciais, como o gerenciamento da demanda d'água.

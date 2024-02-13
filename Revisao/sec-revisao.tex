@@ -1,8 +1,8 @@
 \section{Revis\~ao da Literatura}\label{sec:refteo}
 
-Este capítulo apresenta uma revisão sistemática  da literatura (RSL) nos temas relacionados a previsão de séries temporais e aplicações em hidrologia e mais especificamente em abastecimento de água. A revisão bibliográfica realizada consiste em uma análise abrangente e crítica das principais fontes de literatura. As informações extraídas da literatura são fundamentais para embasar a fundamentação teórica, a metodologia e a análise dos resultados deste estudo.
+Este capítulo apresenta uma revisão sistemática  da literatura (RSL) nos temas relacionados a previsão de séries temporais e aplicações em hidrologia e mais especificamente em abastecimento d'água. A revisão bibliográfica realizada consiste em uma análise abrangente e crítica das principais fontes de literatura. As informações extraídas da literatura são fundamentais para embasar a fundamentação teórica, a metodologia e a análise dos resultados deste estudo.
 
-%Esta RSL aborda palavras chave como séries temporais, previsão, análise de séries temporais, abastecimento de água, e saneamento, que são palavras relevantes para esta pesquisa. 
+%Esta RSL aborda palavras chave como séries temporais, previsão, análise de séries temporais, abastecimento d'água, e saneamento, que são palavras relevantes para esta pesquisa. 
 
 A seleção das referências foi baseada em critérios específicos tais como. Definição das bases de busca, escolha das \textit{keywords}, seleção do período de busca ($2016$ a $2024$), seleção do tipo de artigo, organização pela ordem de citações, verificação dos periódicos mais importantes (fator Q1 do Scimago e Fator de Impacto (F.I.)). Se um periódico pertencer ao quartil Q1 do Scimago significa que tem um desempenho melhor do que pelo menos $75$\% das revistas dessa mesma categoria. Embora nem todas as referências obtidas tenham uma relação evidente ou mesmo acentuada com a área de aprendizado de máquina, elas contribuem como material de suporte a implementação de alguns modelos avaliados para previsão nesta dissertação e podem servir como base para outros estudos.
 
@@ -17,7 +17,7 @@ A Figura \ref{fig:serie-temporal} apresenta um fluxograma de como a pesquisa foi
 
 Na etapa seguinte, foi realizada uma avaliação preliminar de cada artigo obtido.
 
-\textbf{Critérios de Inclusão}:
+\noindent\textbf{Critérios de Inclusão}:
 
 \begin{enumerate}
 	\item Idioma: Os artigos considerados devem estar escritos em inglês.
@@ -25,12 +25,12 @@ Na etapa seguinte, foi realizada uma avaliação preliminar de cada artigo obtid
 	\item Base de Dados: Artigos provenientes de bases de dados como Scopus e WoS são considerados.
 \end{enumerate}
 
-\textbf{Critérios de Exclusão}:
+\noindent\textbf{Critérios de Exclusão}:
 
 \begin{enumerate}
-	\item Filtro Anual: de 2016 a 2024.
+	\item Filtro Anual: de $2016$ a $2024$.
 	\item Duplicatas: Artigos duplicados serão removidos durante o processo de revisão.
-	\item Número Elevado de Artigos: Diante da quantidade significativa de artigos encontrados, optou-se por realizar uma análise preliminar sem a aplicação de filtros anuais para otimizar o processo de busca. Na base de dados Scopus, por exemplo, existiam 831 artigos, enquanto na base de dados WoS, foram encontrados 98 artigos, totalizando 929 artigos.
+	\item Número Elevado de Artigos: Diante da quantidade significativa de artigos encontrados, optou-se por realizar uma análise preliminar sem a aplicação de filtros anuais para otimizar o processo de busca. Na base de dados Scopus, por exemplo, existiam $831$ artigos, enquanto na base de dados WoS, foram encontrados 98 artigos, totalizando $929$ artigos.
 	\item Outras Restrições: Nenhuma restrição adicional foi aplicada nessa etapa, mantendo a avaliação inicial ampla para facilitar a tomada de decisões subsequentes.
 \end{enumerate}
 
@@ -53,7 +53,7 @@ A Figura \ref{fig:scopus-09-08} mostra os modelos de previsão usados com frequ�
 
 Nesse primeiro momento, foram obtidos $2.555$ modelos, dos quais $83$ modelos são dispostos na Figura \ref{fig:scopus-09-08}. É importante destacar que as palavras-chave utilizadas foram \textit{time series forecasting} ou \textit{time series analysis} e \textit{water supply} e \textit{sanitation} em ambas as bases de dados. Os modelos apresentados na Figura \ref{fig:scopus-09-08} têm como base para as escolhas os modelos mais utilizados na literatura. Com essa visão mais geral, é possível ter um ponto de partida para a escolha dos modelos.
 
-A Tabela \ref{tb1} apresenta as palavras-chave utilizadas em cada base de dados, juntamente com o número de artigos obtidos. No entanto, é importante ressaltar que esses dados ainda não foram processados para remover dados duplicados. Após, foi utilizado o software \textit{ScientoPy} para eliminar artigos repetidos, foram selecionados então $308$ artigos. Esses artigos foram analisados na RSL e são considerados relevantes para este estudo. Na primeira análise das bases de dados, foram relacionadas duas palavras-chave importantes, que são \textit{time series forecasting} e \textit{time series analysis}, apenas para ter a dimensão dos dados que estão sendo trabalhados tanto na Scopus quanto na WoS. Cada uma retornou valores distintos, e ao relacionar as mesmas palavras-chave com \textit{OR} no lugar de \textit{AND}, ou uma ou a outra, correlacionando com as outras duas palavras \textit{water supply} e \textit{sanitation}, relacionadas com saneamento e abastecimento de água, o resultado dessa relação entre essas palavras é exibido na Tabela \ref{tb1}.
+A Tabela \ref{tb1} apresenta as palavras-chave utilizadas em cada base de dados, juntamente com o número de artigos obtidos. No entanto, é importante ressaltar que esses dados ainda não foram processados para remover dados duplicados. Após, foi utilizado o software \textit{ScientoPy} para eliminar artigos repetidos, foram selecionados então $308$ artigos. Esses artigos foram analisados na RSL e são considerados relevantes para este estudo. Na primeira análise das bases de dados, foram relacionadas duas palavras-chave importantes, que são \textit{time series forecasting} e \textit{time series analysis}, apenas para ter a dimensão dos dados que estão sendo trabalhados tanto na Scopus quanto na WoS. Cada uma retornou valores distintos, e ao relacionar as mesmas palavras-chave com \textit{OR} no lugar de \textit{AND}, ou uma ou a outra, correlacionando com as outras duas palavras \textit{water supply} e \textit{sanitation}, relacionadas com saneamento e abastecimento d'água, o resultado dessa relação entre essas palavras é exibido na Tabela \ref{tb1}.
 
 \begin{table}[!htb]
 	\centering
@@ -193,15 +193,15 @@ A Tabela \ref{tb:pais} apresenta os países com maior número de artigos obtidos
 
 
 
-%O artigo de \citeonline{Ursu2016} ressalta a relevância do modelo ARIMA na área de previsão e demanda de água, constituindo o foco central desta dissertação. No entanto, vale questionar a extensão da aplicabilidade desse modelo em cenários mais complexos e dinâmicos, levando em consideração os desafios emergentes na gestão de recursos hídricos.
+%O artigo de \citeonline{Ursu2016} ressalta a relevância do modelo ARIMA na área de previsão e demanda d'água, constituindo o foco central desta dissertação. No entanto, vale questionar a extensão da aplicabilidade desse modelo em cenários mais complexos e dinâmicos, levando em consideração os desafios emergentes na gestão de recursos hídricos.
 %
 %Ao explorar a abordagem de \citeonline{Graff2017}, que combina o modelo ARIMA com programação genética para otimizar o ajuste do modelo GP em conjunto com a suavização exponencial, é preciso analisar criticamente a eficácia dessa estratégia. Será que a incorporação de técnicas mais avançadas realmente contribui para uma melhoria substancial na precisão das previsões, ou há um risco de complexidade desnecessária?
 %
-%A observação de \citeonline{Tyralis2017} sobre o desempenho destacado dos modelos ARMA e RF em séries temporais de curto prazo levanta questões sobre a generalização desses resultados para diferentes contextos e horizontes de previsão. É crucial avaliar criticamente a robustez desses modelos em face de condições variáveis e demandas específicas de diferentes sistemas de abastecimento de água.
+%A observação de \citeonline{Tyralis2017} sobre o desempenho destacado dos modelos ARMA e RF em séries temporais de curto prazo levanta questões sobre a generalização desses resultados para diferentes contextos e horizontes de previsão. É crucial avaliar criticamente a robustez desses modelos em face de condições variáveis e demandas específicas de diferentes sistemas de abastecimento d'água.
 %
 %O método proposto, que modela ciclos não sazonais e sazonais separadamente, parece uma abordagem promissora. Contudo, uma análise crítica se faz necessária para avaliar se a simplificação dessa abordagem não sacrifica a capacidade de capturar nuances complexas nos dados de carga, especialmente em ambientes onde fatores externos podem desempenhar um papel significativo.
 %
-%Os modelos de aprendizado de máquina simples, como ANN, SVM e CART, mencionados por \citeonline{Chou2018}, oferecem uma alternativa interessante, mas é preciso questionar até que ponto essas abordagens são suficientes para lidar com a complexidade inerente às séries temporais de demanda de água. Será que a simplicidade desses modelos compromete a precisão em cenários mais desafiadores?
+%Os modelos de aprendizado de máquina simples, como ANN, SVM e CART, mencionados por \citeonline{Chou2018}, oferecem uma alternativa interessante, mas é preciso questionar até que ponto essas abordagens são suficientes para lidar com a complexidade inerente às séries temporais de demanda d'água. Será que a simplicidade desses modelos compromete a precisão em cenários mais desafiadores?
 %
 %A diversidade de modelos baseados em dados destacada por \citeonline{Ahmad2018} levanta a questão da seleção adequada para diferentes contextos. A crítica aqui se concentra em entender se a escolha do modelo é guiada por uma compreensão profunda do problema específico em análise ou se há uma tendência a aplicar abordagens genéricas sem considerar as nuances do sistema.
 %
@@ -225,9 +225,9 @@ A Tabela \ref{tb:pais} apresenta os países com maior número de artigos obtidos
 %
 %O autor examina modelos comumente utilizados para previsão de séries temporais, como ARIMA, \textit{Generalized Autoregressive Conditional Heteroskedasticity} (GARCH), \textit{Hidden Markov Model} (HMM), SVM, RF, ANN e RNN. A análise busca identificar características dos dados associadas a cada modelo, tais como linearidade, estacionariedade, volatilidade e tamanho do conjunto de dados \cite{Tan2021}.
 
-O artigo de \citeonline{Ursu2016} destaca a importância do modelo ARIMA na previsão e demanda de água, porém, é pertinente questionar até que ponto esse modelo pode ser aplicado eficazmente em cenários mais complexos e dinâmicos, especialmente diante dos desafios emergentes na gestão dos recursos hídricos.
+O artigo de \citeonline{Ursu2016} destaca a importância do modelo ARIMA na previsão e demanda d'água, porém, é pertinente questionar até que ponto esse modelo pode ser aplicado eficazmente em cenários mais complexos e dinâmicos, especialmente diante dos desafios emergentes na gestão dos recursos hídricos.
 
-\textbf{Ponto Positivo:} O modelo ARIMA é reconhecido como valioso na previsão e demanda de água, proporcionando uma base sólida para abordar desafios relacionados à oferta hídrica.
+\textbf{Ponto Positivo:} O modelo ARIMA é reconhecido como valioso na previsão e demanda d'água, proporcionando uma base sólida para abordar desafios relacionados à oferta hídrica.
 
 \textbf{Ponto Negativo:} A limitação do ARIMA em cenários complexos e dinâmicos pode comprometer sua eficácia em situações que exigem considerações mais abrangentes.
 
@@ -237,7 +237,7 @@ A estratégia proposta por \citeonline{Graff2017}, ao combinar o modelo ARIMA co
 
 \textbf{Ponto Negativo:} A introdução de técnicas avançadas pode aumentar a complexidade do modelo, tornando-o menos acessível ou interpretável para usuários não especializados.
 
-As observações de \citeonline{Tyralis2017} sobre o desempenho destacado dos modelos ARMA e RF em séries temporais de curto prazo levantam questões sobre a generalização desses resultados para diferentes contextos e horizontes de previsão. É fundamental avaliar criticamente a robustez desses modelos em face de condições variáveis e demandas específicas de diferentes sistemas de abastecimento de água.
+As observações de \citeonline{Tyralis2017} sobre o desempenho destacado dos modelos ARMA e RF em séries temporais de curto prazo levantam questões sobre a generalização desses resultados para diferentes contextos e horizontes de previsão. É fundamental avaliar criticamente a robustez desses modelos em face de condições variáveis e demandas específicas de diferentes sistemas de abastecimento d'água.
 
 \textbf{Ponto Positivo:} Os modelos ARMA e RF demonstraram desempenho destacado em séries temporais de curto prazo, indicando sua aplicabilidade em cenários de alta volatilidade.
 
@@ -249,7 +249,7 @@ O método proposto, que modela ciclos não sazonais e sazonais separadamente, pa
 
 \textbf{Ponto Negativo:} A simplificação pode resultar na perda de informações importantes, especialmente em ambientes onde fatores externos influenciam significativamente os padrões de carga.
 
-Os modelos de aprendizado de máquina simples, como ANN, SVM e CART, mencionados por \citeonline{Chou2018}, oferecem uma alternativa interessante. Contudo, é preciso questionar até que ponto essas abordagens são suficientes para lidar com a complexidade inerente às séries temporais de demanda de água. Será que a simplicidade desses modelos compromete a precisão em cenários mais desafiadores?
+Os modelos de aprendizado de máquina simples, como ANN, SVM e CART, mencionados por \citeonline{Chou2018}, oferecem uma alternativa interessante. Contudo, é preciso questionar até que ponto essas abordagens são suficientes para lidar com a complexidade inerente às séries temporais de demanda d'água. Será que a simplicidade desses modelos compromete a precisão em cenários mais desafiadores?
 
 \textbf{Ponto Positivo:} Modelos de aprendizado de máquina simples são acessíveis e eficazes para muitos casos, proporcionando uma solução prática.
 
@@ -291,19 +291,19 @@ Na Tabela \ref{tb:mode} é apresentada a quantidade de artigos foram obtidos pel
 		\toprule
 		Modelos & Autores & No. & AGR & ADY & PDLY & \textit{h-index} \\
 		\midrule
-		ARX & \citeonline{2-s2.0-85051469381} & 3 & 0 & 0,7 & 66,7 & 2 \\	
-		ARMA & \citeonline{2-s2.0-85038637324} & 7 & 0,3 & 0,7 & 28,6 & 6 \\
 		ARIMA & \citeonline{2-s2.0-85069459067} & 84 & 1,7 & 16,7 & 59,5 & 27 \\
-		SARIMA & \citeonline{2-s2.0-85128561644} & 5 & 1 & 1,7 & 100 & 4 \\
-		SARIMAX & \citeonline{2-s2.0-85099424908} & 2 & 0,3 & 0,7 & 100 & 2 \\	
-		LSTM & \citeonline{WOS:000529902300014} & 35 & 3,3 & 10,7 & 91,4 & 16 \\
-		RNN & \citeonline{2-s2.0-85067419084} & 20 & 0 & 4,3 & 65 & 11 \\
+		ARMA & \citeonline{2-s2.0-85038637324} & 7 & 0,3 & 0,7 & 28,6 & 6 \\
 		Árvores de Decisão & \citeonline{2-s2.0-85054695177} & 12 & 0,7 & 3 & 75 & 7 \\
-		RF & \citeonline{2-s2.0-85135210428} & 9 & 1,7 & 2,7 & 88,9 & 5 \\
+		ARX & \citeonline{2-s2.0-85051469381} & 3 & 0 & 0,7 & 66,7 & 2 \\	
 		CNN & \citeonline{WOS:000841076700002} & 8 & 1,3 & 2,7 & 100 & 4 \\
 		GRU & \citeonline{2-s2.0-85135210428} & 5 & 0 & 1,3 & 80 & 4 \\
 		LR & \citeonline{2-s2.0-85125426780} & 3 & 0 & 0,7 & 66,7 & 3 \\
+		LSTM & \citeonline{WOS:000529902300014} & 35 & 3,3 & 10,7 & 91,4 & 16 \\
 		Prophet & \citeonline{2-s2.0-85092514286} & 3 & 0,3 & 1 & 100 & 3 \\
+		RF & \citeonline{2-s2.0-85135210428} & 9 & 1,7 & 2,7 & 88,9 & 5 \\
+		RNN & \citeonline{2-s2.0-85067419084} & 20 & 0 & 4,3 & 65 & 11 \\
+		SARIMA & \citeonline{2-s2.0-85128561644} & 5 & 1 & 1,7 & 100 & 4 \\
+		SARIMAX & \citeonline{2-s2.0-85099424908} & 2 & 0,3 & 0,7 & 100 & 2 \\	
 		XGBoost & \citeonline{2-s2.0-85130441623} & 1 & 0,3 & 0,3 & 100 & 0 \\
 		\bottomrule
 	\end{tabular}

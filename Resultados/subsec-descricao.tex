@@ -1,6 +1,6 @@
 %\subsection{Descri\c c\~ao do Problema}
 %
-%A descrição do problema, centrada no abastecimento de água, é crucial. Ela apresenta variáveis-chave, como Bombas de Sucção (B1, B2 e B3), cuja frequência máxima é de $60$ Hz, Nível do Reservatório (Câmara 1) representado por LT01 (\si{m^3}), Vazão de entrada (FT01) em (\si{m^3/h}), Vazão de gravidade (FT02) em (\si{m^3/h}), Vazão de recalque (FT03) em (\si{m^3/h}), Pressão de Sucção (PT01SU) medida em metros de coluna d'água (\si{mca}) e Pressão de Recalque (PT02RBAL) também em metros de coluna d'água (\si{mca}).
+%A descrição do problema, centrada no abastecimento d'água, é crucial. Ela apresenta variáveis-chave, como Bombas de Sucção (B1, B2 e B3), cuja frequência máxima é de $60$ Hz, Nível do Reservatório (Câmara 1) representado por LT01 (\si{m^3}), Vazão de entrada (FT01) em (\si{m^3/h}), Vazão de gravidade (FT02) em (\si{m^3/h}), Vazão de recalque (FT03) em (\si{m^3/h}), Pressão de Sucção (PT01SU) medida em metros de coluna d'água (\si{mca}) e Pressão de Recalque (PT02RBAL) também em metros de coluna d'água (\si{mca}).
 %
 %A pesquisa fará uso da variável LT01, que representa o nível do reservatório e desempenha um papel de extrema importância. A separação dos dados foi feita por hora a hora, mesmo que os dados obtidos da SANEPAR sejam de $2018$ a $2020$, sendo que o ano de $2020$ causou muitas irregularidades. É possível remover esse ano para melhor trabalhar com os dados.
 %
@@ -8,14 +8,14 @@
 %
 %A dimensão dos dados fornecidos pela SANEPAR foi de $26.306$ linhas e $9$ colunas. Essas colunas representam as variáveis listadas anteriormente, com a exclusão das duas variáveis B3 e FT02, resultando em apenas 6 variáveis no formato de variáveis exógenas e uma variável para previsão. Também é relevante observar que o ano de $2020$, devido às muitas anomalias nos dados, foi removido para mitigar a variação nos dados ao longo do tempo. Com essa abordagem, restam $17.522$ observações, com o intervalo temporal compreendido entre $2018$ e $2019$. Essa decisão foi tomada para evitar que o modelo sofra excessivamente com variações temporais.
 %
-%É crucial destacar a importância de manter as outras variáveis como exógenas durante o processo de previsão. Embora haja a possibilidade de trabalhar com apenas uma variável para previsão, ao incorporar as demais como variáveis exógenas, o modelo é enriquecido, proporcionando uma visão mais abrangente do sistema. Neste contexto, as variáveis como Bombas de Sucção, Vazões e Pressões possuem potencial impacto no nível do reservatório, e ao mantê-las como exógenas, permite-se que o modelo considere suas influências durante a previsão. Essa abordagem contribui para uma análise mais completa e realista, levando em conta as interações complexas entre as variáveis e fortalecendo a capacidade preditiva do modelo em cenários de abastecimento de água.
+%É crucial destacar a importância de manter as outras variáveis como exógenas durante o processo de previsão. Embora haja a possibilidade de trabalhar com apenas uma variável para previsão, ao incorporar as demais como variáveis exógenas, o modelo é enriquecido, proporcionando uma visão mais abrangente do sistema. Neste contexto, as variáveis como Bombas de Sucção, Vazões e Pressões possuem potencial impacto no nível do reservatório, e ao mantê-las como exógenas, permite-se que o modelo considere suas influências durante a previsão. Essa abordagem contribui para uma análise mais completa e realista, levando em conta as interações complexas entre as variáveis e fortalecendo a capacidade preditiva do modelo em cenários de abastecimento d'água.
 
 
 
 \subsection{An\'alise Explorat\'oria dos Dados}
 
 
-A descrição do problema, centrada no abastecimento de água, é crucial. Apresenta variáveis-chave, como Bombas de Sucção (B1, B2 e B3), cuja frequência máxima é de $60$ Hz, Nível do Reservatório (Câmara 1) representado por LT01 (\si{m^3}), Vazão de entrada (FT01) em (\si{m^3/h}), Vazão de gravidade (FT02) em (\si{m^3/h}), Vazão de recalque (FT03) em (\si{m^3/h}), Pressão de Sucção (PT01SU) medida em metros de coluna d'água (\si{mca}) e Pressão de Recalque (PT02RBAL) também em metros de coluna d'água (\si{mca}).
+A descrição do problema, centrada no abastecimento d'água, é crucial. Apresenta variáveis-chave, como Bombas de Sucção (B1, B2 e B3), cuja frequência máxima é de $60$ Hz, Nível do Reservatório (Câmara 1) representado por LT01 (\si{m^3}), Vazão de entrada (FT01) em (\si{m^3/h}), Vazão de gravidade (FT02) em (\si{m^3/h}), Vazão de recalque (FT03) em (\si{m^3/h}), Pressão de Sucção (PT01SU) medida em metros de coluna d'água (\si{mca}) e Pressão de Recalque (PT02RBAL) também em metros de coluna d'água (\si{mca}).
 
 A pesquisa fará uso da variável LT01, que representa o nível do reservatório e desempenha um papel de extrema importância. A separação dos dados foi feita por hora a hora, mesmo que os dados obtidos da SANEPAR sejam de $2018$ a $2020$, sendo que o ano de $2020$ causou muitas irregularidades. É possível remover esse ano para melhor trabalhar com os dados.
 
@@ -23,13 +23,13 @@ Mesmo havendo $9$ variáveis nesse conjunto de dados, poderia-se trabalhar com $
 
 A dimensão dos dados fornecidos pela SANEPAR foi de $26.306$ linhas e $9$ colunas. Essas colunas representam as variáveis listadas anteriormente, com a exclusão das duas variáveis B3 e FT02, resultando em apenas 6 variáveis no formato de variáveis exógenas e uma variável para previsão. Também é relevante observar que o ano de $2020$, devido às muitas anomalias nos dados, foi removido para mitigar a variação nos dados ao longo do tempo. Com essa abordagem, restam $17.522$ observações, com o intervalo temporal compreendido entre $2018$ e $2019$. Essa decisão foi tomada para evitar que o modelo sofra excessivamente com variações temporais.
 
-É crucial destacar a importância de manter as outras variáveis como exógenas durante o processo de previsão. Embora haja a possibilidade de trabalhar com apenas uma variável para previsão, ao incorporar as demais como variáveis exógenas, o modelo é enriquecido, proporcionando uma visão mais abrangente do sistema. Neste contexto, as variáveis como Bombas de Sucção, Vazões e Pressões possuem potencial impacto no nível do reservatório, e ao mantê-las como exógenas, permite-se que o modelo considere suas influências durante a previsão. Essa abordagem contribui para uma análise mais completa e realista, levando em conta as interações complexas entre as variáveis e fortalecendo a capacidade preditiva do modelo em cenários de abastecimento de água.
+É crucial destacar a importância de manter as outras variáveis como exógenas durante o processo de previsão. Embora haja a possibilidade de trabalhar com apenas uma variável para previsão, ao incorporar as demais como variáveis exógenas, o modelo é enriquecido, proporcionando uma visão mais abrangente do sistema. Neste contexto, as variáveis como Bombas de Sucção, Vazões e Pressões possuem potencial impacto no nível do reservatório, e ao mantê-las como exógenas, permite-se que o modelo considere suas influências durante a previsão. Essa abordagem contribui para uma análise mais completa e realista, levando em conta as interações complexas entre as variáveis e fortalecendo a capacidade preditiva do modelo em cenários de abastecimento d'água.
 
 Os dados foram processados usando a EDA resumindo suas principais características, e formulando hipóteses que possam direcionar a coleta adicional de dados, se necessária.
 
 Existem dados anômalos \textit{Not a Number} (NAN) que representam a ausência de dados coletados, logo tais dados foram interpolados usando os valores existentes e vizinhos a ele.
 
-Assim como em qualquer empresa de saneamento básico e tratamento de água, é utilizado um mecanismo de acionamento automático denominado trava de segurança para evitar que o nível do tanque se aproxime de zero e haja falta de água nos locais abastecidos por esse tanque. O nível máximo que o tanque pode alcançar é de $5,26 m^3$ (equivalente a $5264.56$ litros). As bombas são ativadas em sua potência máxima para evitar que sejam acionadas quando o nível do tanque estiver dentro dessa faixa. No entanto, a bomba $1$ ainda estaria operando para completar o nível do tanque caso esteja dentro dessa faixa.
+Assim como em qualquer empresa de saneamento básico e tratamento d'água, é utilizado um mecanismo de acionamento automático denominado trava de segurança para evitar que o nível do tanque se aproxime de zero e haja falta d'água nos locais abastecidos por esse tanque. O nível máximo que o tanque pode alcançar é de $5,26 m^3$ (equivalente a $5264.56$ litros). As bombas são ativadas em sua potência máxima para evitar que sejam acionadas quando o nível do tanque estiver dentro dessa faixa. No entanto, a bomba $1$ ainda estaria operando para completar o nível do tanque caso esteja dentro dessa faixa.
 
 Na Tabela \ref{tb:est}, o desvio padrão é representado por \textit{STandard Deviation} (STD). A quantidade de dados medidos hora a hora pela SANEPAR de $2018$ a $2019$ são de $17.522$ dados.
 
@@ -51,7 +51,7 @@ Na Tabela \ref{tb:est}, o desvio padrão é representado por \textit{STandard De
 	\end{tabular}
 \end{table}
 
-No contexto das análises de dados, várias técnicas de EDA têm sido adotadas. Neste estudo, são realizadas diversas análises, incluindo a correlação de Pearson, para identificar quais variáveis podem ser excluídas devido a ruídos (correlação baixa) ou por estarem altamente correlacionadas com a variável de saída do estudo, que é a variável LT01, representando o nível do tanque de armazenamento de água pela SANEPAR no Bairro Alto. As variáveis removidas têm pouca correlação com a LT01; por exemplo, as variáveis B3 e FT02 apresentam correlação baixa e serão excluídas.
+No contexto das análises de dados, várias técnicas de EDA têm sido adotadas. Neste estudo, são realizadas diversas análises, incluindo a correlação de Pearson, para identificar quais variáveis podem ser excluídas devido a ruídos (correlação baixa) ou por estarem altamente correlacionadas com a variável de saída do estudo, que é a variável LT01, representando o nível do tanque de armazenamento d'água pela SANEPAR no Bairro Alto. As variáveis removidas têm pouca correlação com a LT01; por exemplo, as variáveis B3 e FT02 apresentam correlação baixa e serão excluídas.
 
 O termo ``correlação baixa'' indica que há pouca relação linear entre as variáveis, sugerindo uma associação fraca entre elas. Um teste de hipótese é comumente usado para determinar se essa correlação é estatisticamente significativa. Nos testes de correlação de Pearson, se o valor-p for menor que um determinado nível de significância (como $0,05$), então a correlação é considerada estatisticamente significativa.
 
@@ -60,7 +60,7 @@ O termo ``correlação baixa'' indica que há pouca relação linear entre as va
 %
 %Existem dados anômalos \textit{Not a Number} (NAN) que representam a ausência de dados coletados, logo tais dados foram interpolados usando os valores existentes e vizinhos a ele. 
 %
-%Assim como em qualquer empresa de saneamento básico e tratamento de água, é utilizado um mecanismo de acionamento automático denominado trava de segurança para evitar que o nível do tanque se aproxime de zero e haja falta de água nos locais abastecidos por esse tanque. O nível máximo que o tanque pode alcançar é de $5,26 m^3$ (equivalente a $5264.56$ litros). As bombas são ativadas em sua potência máxima para evitar que sejam acionadas quando o nível do tanque estiver dentro dessa faixa. No entanto, a bomba $1$ ainda estaria operando para completar o nível do tanque caso esteja dentro dessa faixa. 
+%Assim como em qualquer empresa de saneamento básico e tratamento d'água, é utilizado um mecanismo de acionamento automático denominado trava de segurança para evitar que o nível do tanque se aproxime de zero e haja falta d'água nos locais abastecidos por esse tanque. O nível máximo que o tanque pode alcançar é de $5,26 m^3$ (equivalente a $5264.56$ litros). As bombas são ativadas em sua potência máxima para evitar que sejam acionadas quando o nível do tanque estiver dentro dessa faixa. No entanto, a bomba $1$ ainda estaria operando para completar o nível do tanque caso esteja dentro dessa faixa. 
 %
 %Na Tabela \ref{tb:est}, o desvio padrão é representado por \textit{STandard Deviation} (STD). A quantidade de dados medidos hora a hora pela SANEPAR de $2018$ a $2019$ são de $17.522$ dados.
 %
@@ -81,7 +81,7 @@ O termo ``correlação baixa'' indica que há pouca relação linear entre as va
 %\end{table}
 %
 %No contexto de análises de dados várias técnicas de EDA têm sido adotadas.
-%Neste estudo serão abordadas várias análises entre elas correlação de Pearson, para verificar quais variáveis podem ser excluídas tais como ruídos (correlação baixa) ou altamente correlacionadas com a variável de saída do nosso estudo, que será a variável LT01, nível do tanque de armazenamento de água pela SANEPAR no Bairro Alto. Nesse caso, as variáveis removidas tem pouca correlação com a LT01, as que apresentam correlação baixa são B3 e FT02 e serão removidas.
+%Neste estudo serão abordadas várias análises entre elas correlação de Pearson, para verificar quais variáveis podem ser excluídas tais como ruídos (correlação baixa) ou altamente correlacionadas com a variável de saída do nosso estudo, que será a variável LT01, nível do tanque de armazenamento d'água pela SANEPAR no Bairro Alto. Nesse caso, as variáveis removidas tem pouca correlação com a LT01, as que apresentam correlação baixa são B3 e FT02 e serão removidas.
 
 A Figura \ref{fig:person} mostra a correlação de Pearson entre as variáveis do conjunto de dados deste estudo. Essa figura representa a matriz (simétrica) da dependência/correlação entre as variáveis. Analisamos as correlações das variáveis de entrada com a variável de saída. Serão descartadas as variáveis com correlação menor que 5\% e maior que 90\%.
 
@@ -96,7 +96,7 @@ Nesse conjunto de dados que está sendo trabalhado, há uma forte correlação d
 
 \begin{figure}[!htb]
 	\centering
-	\caption{Relação entre LT01 e PT01 cuja correlação de Pearson é 97\%}
+	\caption{Relação entre LT01 e PT01 cuja correlação de Pearson é 97\%.}
 	\label{fig:lr-lt01-m3}
 	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/LR}
 \end{figure}
@@ -210,7 +210,7 @@ Quando aplicado sem o uso de variáveis exógenas, o modelo ARIMA apresenta apen
 
 A previsão dos dados foi feita com diferentes horizontes de previsão como $1$ hora, $6$ horas, $12$ horas, e $24$ horas. Essas estratégias de previsão permitem a comparação entre os modelos de regressão e modelos ARIMA em diferentes horizontes temporais.
 
-Além desses modelos de previsão, vários outros modelos foram utilizados no estudo, tais como DT, RF, XGBoost, LightGBM, MLP, LSTM, GRU, Prophet, RNN, e CNN, a fim de obter o melhor resultado para a previsão de séries temporais de abastecimento de água.
+Além desses modelos de previsão, vários outros modelos foram utilizados no estudo, tais como DT, RF, XGBoost, LightGBM, MLP, LSTM, GRU, Prophet, RNN, e CNN, a fim de obter o melhor resultado para a previsão de séries temporais de abastecimento d'água.
 
 %Foram utilizados os parâmetros obtidos pelo autoARIMA que são $(p = 7, d = 0, q = 0) (P = 2, D = 1, Q = 1)_{M = 12}$, que foram ajustados para obter um melhor resultado, sendo $(p = 7, d = 1, q = 7) (P = 2, D = 1, Q = 1)_{M = 12}$. 
 
@@ -313,9 +313,17 @@ Uma observação recorrente foi a superioridade dos modelos que incorporam vari�
 
 \begin{figure}[!htb]
 	\centering
-	\caption{Modelo de previsão CNN para vários horizontes de previsão.}
-	\label{fig:1-arma-arima}
-	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/CNN}
+	\caption{Modelo de previsão GRU para vários horizontes de previsão.}
+	\label{fig:gru1}
+	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/GRU}
+	
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Modelo de previsão LSTM para vários horizontes de previsão.}
+	\label{fig:lstm}
+	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/LSTM}
 	
 \end{figure}
 
@@ -327,7 +335,7 @@ Uma observação recorrente foi a superioridade dos modelos que incorporam vari�
 \end{figure}
 \begin{figure}[!htb]
 	\centering
-	\caption{Previsões do modelo Prophet 24 passos à frente}\label{fig:prophet1}
+	\caption{Previsões do modelo Prophet para vários horizontes de previsão.}\label{fig:prophet1}
 	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/prophet}	
 \end{figure}
 
@@ -339,18 +347,18 @@ Uma observação recorrente foi a superioridade dos modelos que incorporam vari�
 \begin{tabular}{llllllllllllllllllll}
 \toprule
 Horizontes                         & Métricas & A     & B     & C     & D     & E     & F     & G              & H      & I     & J     & K     & L     & M     & N     & O     & P     & Q     & R     \\ \midrule
-\multirow{3}{*}{1 hora à frente}   & SMAPE    & 7,81  & 7,85  & 7,83  & 7,79  & 8,01  & 18,77 & \textbf{7,69}  & 35,89  & 24,60 & 18,55 & 8,37  & 18,77 & 21,27 & 18,38 & 23,36 & 8,03  & 7,79  & 19,56 \\
+\multirow{3}{*}{1 hora à frente}   & SMAPE (\%)    & 7,81  & 7,85  & 7,83  & 7,79  & 8,01  & 18,77 & \textbf{7,69}  & 35,89  & 24,60 & 18,55 & 8,37  & 18,77 & 21,27 & 18,38 & 23,36 & 8,03  & 7,79  & 19,56 \\
 & MAE      & 0,25  & 0,25  & 0,25  & 0,25  & 0,25  & 0,10  & 0,35           & 1,44   & 0,93  & 0,65  & 0,27  & 0,10  & 0,77  & 0,64  & 0,87  & 0,26  & 0,25  & 0,69  \\
-& RRMSE    & 0,09  & 0,09  & 0,10  & 0,09  & 0,10  & 0,42  & 0,21           & 0,65   & 1,36  & 0,21  & 0,10  & 0,42  & 0,77  & 0,21  & 1,28  & 0,10  & 0,10  & 0,22  \\ \hline
-\multirow{3}{*}{6 horas à frente}  & SMAPE    & 19,99 & 19,93 & 20,10 & 20,01 & 20,08 & 20,37 & \textbf{13,94} & 83,75  & 58,21 & 18,55 & 18,34 & 20,37 & 33,71 & 24,25 & 50,20 & 20,12 & 20,13 & 26,23 \\
+& RRMSE (\%)    & 0,09  & 0,09  & 0,10  & 0,09  & 0,10  & 0,42  & 0,21           & 0,65   & 1,36  & 0,21  & 0,10  & 0,42  & 0,77  & 0,21  & 1,28  & 0,10  & 0,10  & 0,22  \\ \hline
+\multirow{3}{*}{6 horas à frente}  & SMAPE (\%)    & 19,99 & 19,93 & 20,10 & 20,01 & 20,08 & 20,37 & \textbf{13,94} & 83,75  & 58,21 & 18,55 & 18,34 & 20,37 & 33,71 & 24,25 & 50,20 & 20,12 & 20,13 & 26,23 \\
 & MAE      & 0,64  & 0,64  & 0,64  & 0,64  & 0,64  & 0,20  & 0,59           & 4,94   & 2,77  & 0,65  & 0,60  & 0,20  & 1,12  & 0,88  & 2,25  & 0,64  & 0,64  & 0,97  \\
-& RRMSE    & 0,23  & 0,23  & 0,23  & 0,23  & 0,23  & 0,44  & \textbf{0,16}  & 1,70   & 4,15  & 0,21  & 0,21  & 0,44  & 1,15  & 0,32  & 3,42  & 0,23  & 0,23  & 0,34  \\ \hline
-\multirow{3}{*}{12 horas à frente} & SMAPE    & 23,23 & 23,03 & 23,31 & 23,23 & 23,14 & 19,04 & \textbf{13,94} & 98,06  & 60,06 & 18,55 & 21,31 & 19,04 & 24,62 & 24,22 & 51,28 & 23,37 & 23,38 & 26,26 \\
+& RRMSE (\%)    & 0,23  & 0,23  & 0,23  & 0,23  & 0,23  & 0,44  & \textbf{0,16}  & 1,70   & 4,15  & 0,21  & 0,21  & 0,44  & 1,15  & 0,32  & 3,42  & 0,23  & 0,23  & 0,34  \\ \hline
+\multirow{3}{*}{12 horas à frente} & SMAPE (\%)    & 23,23 & 23,03 & 23,31 & 23,23 & 23,14 & 19,04 & \textbf{13,94} & 98,06  & 60,06 & 18,55 & 21,31 & 19,04 & 24,62 & 24,22 & 51,28 & 23,37 & 23,38 & 26,26 \\
 & MAE      & 0,75  & 0,75  & 0,75  & 0,75  & 0,75  & 0,12  & 0,59           & 6,62   & 2,91  & 0,65  & 0,70  & 0,12  & 0,83  & 0,88  & 2,32  & 0,76  & 0,76  & 0,97  \\
-& RRMSE    & 0,27  & 0,26  & 0,27  & 0,27  & 0,26  & 0,42  & \textbf{0,16}  & 2,23   & 4,36  & 0,21  & 0,25  & 0,42  & 0,91  & 0,32  & 3,53  & 0,27  & 0,27  & 0,34  \\ \hline
-\multirow{3}{*}{24 horas à frente} & SMAPE    & 13,53 & 13,37 & 13,69 & 13,53 & 13,70 & 19,63 & 13,94          & 104,82 & 60,10 & 18,55 & 12,90 & 19,63 & 6,55  & 24,25 & 51,13 & 13,77 & 13,70 & 26,75 \\
+& RRMSE (\%)    & 0,27  & 0,26  & 0,27  & 0,27  & 0,26  & 0,42  & \textbf{0,16}  & 2,23   & 4,36  & 0,21  & 0,25  & 0,42  & 0,91  & 0,32  & 3,53  & 0,27  & 0,27  & 0,34  \\ \hline
+\multirow{3}{*}{24 horas à frente} & SMAPE (\%)    & 13,53 & 13,37 & 13,69 & 13,53 & 13,70 & 19,63 & 13,94          & 104,82 & 60,10 & 18,55 & 12,90 & 19,63 & 6,55  & 24,25 & 51,13 & 13,77 & 13,70 & 26,75 \\
 & MAE      & 0,43  & 0,43  & 0,44  & 0,43  & 0,44  & 0,16  & 0,59           & 7,59   & 2,91  & 0,65  & 0,42  & 0,16  & 0,23  & 0,88  & 2,31  & 0,44  & 0,44  & 1,00  \\
-& RRMSE    & 0,17  & 0,17  & 0,17  & 0,17  & 0,17  & 0,43  & 0,16           & 2,53   & 4,37  & 0,21  & 0,16  & 0,43  & 0,29  & 0,32  & 3,52  & 0,17  & 0,17  & 0,35  \\ \cmidrule(l){1-20} 
+& RRMSE (\%)    & 0,17  & 0,17  & 0,17  & 0,17  & 0,17  & 0,43  & 0,16           & 2,53   & 4,37  & 0,21  & 0,16  & 0,43  & 0,29  & 0,32  & 3,52  & 0,17  & 0,17  & 0,35  \\ \cmidrule(l){1-20} 
 
 \end{tabular}
 	
@@ -386,18 +394,18 @@ Horizontes                         & Métricas & A     & B     & C     & D     &
 	\begin{tabular}{llllllllllllllllllll}
 		\toprule
 		Horizontes                         & Métricas & A     & B             & C     & D     & E     & F     & G              & H      & I     & J     & K     & L     & M              & N     & O     & P     & Q     & R     \\ \midrule
-		\multirow{3}{*}{1 hora à frente}   & SMAPE    & 7,88  & \textbf{7,66} & 8,31  & 7,87  & 8,29  & 20,52 & \textbf{8,51}  & 15,84  & 23,63 & 16,76 & 8,20  & 20,52 & 18,22          & 16,64 & 22,26 & 7,88  & 8,31  & 17,81 \\
+		\multirow{3}{*}{1 hora à frente}   & SMAPE (\%)    & 7,88  & \textbf{7,66} & 8,31  & 7,87  & 8,29  & 20,52 & \textbf{8,51}  & 15,84  & 23,63 & 16,76 & 8,20  & 20,52 & 18,22          & 16,64 & 22,26 & 7,88  & 8,31  & 17,81 \\
 		& MAE      & 0,26  & \textbf{0,25} & 0,27  & 0,26  & 0,27  & 1,88  & 0,39           & 0,54   & 0,92  & 0,60  & 0,27  & 1,88  & 0,50           & 0,60  & 0,86  & 0,26  & 0,27  & 0,65  \\
-		& RRMSE    & 0,09  & \textbf{0,09} & 0,10  & 0,09  & 0,10  & 0,50  & 0,18           & 0,33   & 1,50  & 0,19  & 0,09  & 0,50  & 0,50           & 0,19  & 1,40  & 0,09  & 0,10  & 0,20  \\ \hline
-		\multirow{3}{*}{6 horas à frente}  & SMAPE    & 19,39 & 19,92         & 19,91 & 19,47 & 19,89 & 18,90 & \textbf{12,66} & 72,77  & 55,41 & 16,76 & 17,81 & 18,90 & \textbf{29,73} & 21,03 & 47,27 & 19,32 & 19,89 & 22,81 \\
+		& RRMSE (\%)    & 0,09  & \textbf{0,09} & 0,10  & 0,09  & 0,10  & 0,50  & 0,18           & 0,33   & 1,50  & 0,19  & 0,09  & 0,50  & 0,50           & 0,19  & 1,40  & 0,09  & 0,10  & 0,20  \\ \hline
+		\multirow{3}{*}{6 horas à frente}  & SMAPE (\%)    & 19,39 & 19,92         & 19,91 & 19,47 & 19,89 & 18,90 & \textbf{12,66} & 72,77  & 55,41 & 16,76 & 17,81 & 18,90 & \textbf{29,73} & 21,03 & 47,27 & 19,32 & 19,89 & 22,81 \\
 		& MAE      & 0,64  & 0,66          & 0,66  & 0,65  & 0,66  & 1,80  & \textbf{0,56}  & 4,04   & 2,68  & 0,60  & 0,60  & 1,80  & \textbf{0,93}  & 0,78  & 2,15  & 0,64  & 0,66  & 0,86  \\
-		& RRMSE    & 0,23  & 0,23          & 0,23  & 0,23  & 0,23  & 0,48  & \textbf{0,14}  & 1,42   & 4,43  & 0,19  & 0,21  & 0,48  & 1,05           & 0,28  & 3,61  & 0,23  & 0,23  & 0,30  \\ \hline
-		\multirow{3}{*}{12 horas à frente} & SMAPE    & 22,16 & 23,05         & 22,46 & 22,18 & 22,47 & 19,62 & \textbf{12,66} & 93,58  & 57,15 & 16,76 & 20,40 & 19,62 & 23,91          & 20,99 & 48,28 & 22,29 & 22,45 & 22,82 \\
+		& RRMSE (\%)    & 0,23  & 0,23          & 0,23  & 0,23  & 0,23  & 0,48  & \textbf{0,14}  & 1,42   & 4,43  & 0,19  & 0,21  & 0,48  & 1,05           & 0,28  & 3,61  & 0,23  & 0,23  & 0,30  \\ \hline
+		\multirow{3}{*}{12 horas à frente} & SMAPE (\%)    & 22,16 & 23,05         & 22,46 & 22,18 & 22,47 & 19,62 & \textbf{12,66} & 93,58  & 57,15 & 16,76 & 20,40 & 19,62 & 23,91          & 20,99 & 48,28 & 22,29 & 22,45 & 22,82 \\
 		& MAE      & 0,74  & 0,77          & 0,75  & 0,74  & 0,75  & 1,83  & \textbf{0,56}  & 6,25   & 2,80  & 0,60  & 0,69  & 1,83  & \textbf{0,80}  & 0,78  & 2,22  & 0,75  & 0,75  & 0,86  \\
-		& RRMSE    & 0,26  & 0,27          & 0,26  & 0,26  & 0,26  & 0,49  & \textbf{0,14}  & 2,09   & 4,64  & 0,19  & 0,24  & 0,49  & 0,97           & 0,28  & 3,72  & 0,26  & 0,26  & 0,29  \\ \hline
-		\multirow{3}{*}{24 horas à frente} & SMAPE    & 12,32 & 12,85         & 12,70 & 12,29 & 12,70 & 17,69 & 12,66          & 102,11 & 57,20 & 16,76 & 11,65 & 17,69 & \textbf{5,05}  & 21,02 & 48,12 & 12,54 & 12,70 & 22,81 \\
+		& RRMSE (\%)    & 0,26  & 0,27          & 0,26  & 0,26  & 0,26  & 0,49  & \textbf{0,14}  & 2,09   & 4,64  & 0,19  & 0,24  & 0,49  & 0,97           & 0,28  & 3,72  & 0,26  & 0,26  & 0,29  \\ \hline
+		\multirow{3}{*}{24 horas à frente} & SMAPE (\%)    & 12,32 & 12,85         & 12,70 & 12,29 & 12,70 & 17,69 & 12,66          & 102,11 & 57,20 & 16,76 & 11,65 & 17,69 & \textbf{5,05}  & 21,02 & 48,12 & 12,54 & 12,70 & 22,81 \\
 		& MAE      & 0,41  & 0,42          & 0,42  & 0,40  & 0,41  & 1,74  & 0,56           & 7,42   & 2,81  & 0,60  & 0,39  & 1,74  & \textbf{0,17}  & 0,78  & 2,21  & 0,41  & 0,41  & 0,86  \\
-		& RRMSE    & 0,16  & 0,17          & 0,16  & 0,16  & 0,16  & 0,46  & \textbf{0,14}  & 2,44   & 4,65  & 0,19  & 0,15  & 0,46  & 0,19           & 0,28  & 3,71  & 0,16  & 0,16  & 0,30  \\ \cmidrule(l){1-20} 	
+		& RRMSE (\%)    & 0,16  & 0,17          & 0,16  & 0,16  & 0,16  & 0,46  & \textbf{0,14}  & 2,44   & 4,65  & 0,19  & 0,15  & 0,46  & 0,19           & 0,28  & 3,71  & 0,16  & 0,16  & 0,30  \\ \cmidrule(l){1-20} 	
 	\end{tabular}
 	
 	
@@ -431,18 +439,18 @@ Horizontes                         & Métricas & A     & B     & C     & D     &
 \begin{tabular}{llllllllllllllllllll}
 \toprule
 Horizontes                         & Métricas & A     & B     & C     & D     & E     & F     & G              & H      & I     & J     & K     & L     & M              & N     & O     & P     & Q     & R     \\ \midrule
-\multirow{3}{*}{1 hora à frente}   & SMAPE    & 8,16  & 8,12  & 8,53  & 8,16  & 8,56  & 19,57 & \textbf{6,90}  & 29,44  & 25,55 & 20,80 & 8,53  & 19,57 & 14,02          & 20,70 & 24,51 & 7,99  & 8,51  & 21,81 \\
+\multirow{3}{*}{1 hora à frente}   & SMAPE (\%)    & 8,16  & 8,12  & 8,53  & 8,16  & 8,56  & 19,57 & \textbf{6,90}  & 29,44  & 25,55 & 20,80 & 8,53  & 19,57 & 14,02          & 20,70 & 24,51 & 7,99  & 8,51  & 21,81 \\
 & MAE      & 0,25  & 0,25  & 0,26  & 0,25  & 0,26  & 0,45  & 0,31           & 1,08   & 0,94  & 0,72  & 0,26  & 0,45  & 0,46           & 0,71  & 0,89  & 0,25  & 0,26  & 0,76  \\
-& RRMSE    & 0,10  & 0,10  & 0,10  & 0,10  & 0,10  & 0,42  & 0,20           & 0,56   & 1,36  & 0,23  & 0,10  & 0,42  & 0,46           & 0,23  & 1,29  & 0,10  & 0,10  & 0,24  \\ \hline
-\multirow{3}{*}{6 horas à frente}  & SMAPE    & 21,80 & 21,75 & 22,19 & 21,82 & 22,23 & 22,08 & \textbf{13,58} & 83,96  & 60,90 & 20,80 & 19,96 & 22,08 & \textbf{7,16}  & 27,31 & 53,00 & 22,09 & 22,17 & 29,34 \\
+& RRMSE (\%)    & 0,10  & 0,10  & 0,10  & 0,10  & 0,10  & 0,42  & 0,20           & 0,56   & 1,36  & 0,23  & 0,10  & 0,42  & 0,46           & 0,23  & 1,29  & 0,10  & 0,10  & 0,24  \\ \hline
+\multirow{3}{*}{6 horas à frente}  & SMAPE (\%)    & 21,80 & 21,75 & 22,19 & 21,82 & 22,23 & 22,08 & \textbf{13,58} & 83,96  & 60,90 & 20,80 & 19,96 & 22,08 & \textbf{7,16}  & 27,31 & 53,00 & 22,09 & 22,17 & 29,34 \\
 & MAE      & 0,68  & 0,68  & 0,69  & 0,68  & 0,69  & 0,62  & 0,57           & 4,80   & 2,87  & 0,72  & 0,63  & 0,62  & \textbf{0,25}  & 0,98  & 2,35  & 0,69  & 0,69  & 1,08  \\
-& RRMSE    & 0,25  & 0,25  & 0,25  & 0,25  & 0,25  & 0,47  & \textbf{0,16}  & 1,72   & 4,22  & 0,23  & 0,23  & 0,47  & 0,28           & 0,35  & 3,51  & 0,25  & 0,25  & 0,38  \\ \hline
-\multirow{3}{*}{12 horas à frente} & SMAPE    & 25,41 & 25,38 & 25,53 & 25,42 & 25,54 & 24,14 & \textbf{13,58} & 99,75  & 62,83 & 20,80 & 23,31 & 24,14 & 14,61          & 27,28 & 54,14 & 26,07 & 25,54 & 29,38 \\
+& RRMSE (\%)    & 0,25  & 0,25  & 0,25  & 0,25  & 0,25  & 0,47  & \textbf{0,16}  & 1,72   & 4,22  & 0,23  & 0,23  & 0,47  & 0,28           & 0,35  & 3,51  & 0,25  & 0,25  & 0,38  \\ \hline
+\multirow{3}{*}{12 horas à frente} & SMAPE (\%)    & 25,41 & 25,38 & 25,53 & 25,42 & 25,54 & 24,14 & \textbf{13,58} & 99,75  & 62,83 & 20,80 & 23,31 & 24,14 & 14,61          & 27,28 & 54,14 & 26,07 & 25,54 & 29,38 \\
 & MAE      & 0,80  & 0,80  & 0,81  & 0,80  & 0,81  & 0,73  & 0,57           & 6,64   & 3,01  & 0,72  & 0,74  & 0,73  & \textbf{0,54}  & 0,98  & 2,42  & 0,82  & 0,81  & 1,08  \\
-& RRMSE    & 0,29  & 0,29  & 0,29  & 0,29  & 0,29  & 0,49  & \textbf{0,16}  & 2,31   & 4,44  & 0,23  & 0,27  & 0,49  & 0,59           & 0,35  & 3,62  & 0,30  & 0,29  & 0,38  \\ \hline
-\multirow{3}{*}{24 horas à frente} & SMAPE    & 14,59 & 14,56 & 14,86 & 14,59 & 14,89 & 23,90 & 13,58          & 106,86 & 62,88 & 20,80 & 13,71 & 23,90 & \textbf{13,41} & 27,30 & 54,00 & 14,99 & 14,84 & 29,91 \\
+& RRMSE (\%)    & 0,29  & 0,29  & 0,29  & 0,29  & 0,29  & 0,49  & \textbf{0,16}  & 2,31   & 4,44  & 0,23  & 0,27  & 0,49  & 0,59           & 0,35  & 3,62  & 0,30  & 0,29  & 0,38  \\ \hline
+\multirow{3}{*}{24 horas à frente} & SMAPE (\%)    & 14,59 & 14,56 & 14,86 & 14,59 & 14,89 & 23,90 & 13,58          & 106,86 & 62,88 & 20,80 & 13,71 & 23,90 & \textbf{13,41} & 27,30 & 54,00 & 14,99 & 14,84 & 29,91 \\
 & MAE      & 0,46  & 0,45  & 0,46  & 0,46  & 0,46  & 0,72  & 0,57           & 7,67   & 3,01  & 0,72  & 0,43  & 0,72  & \textbf{0,43}  & 0,98  & 2,41  & 0,47  & 0,46  & 1,10  \\
-& RRMSE    & 0,18  & 0,18  & 0,18  & 0,18  & 0,18  & 0,49  & \textbf{0,16}  & 2,64   & 4,45  & 0,23  & 0,17  & 0,49  & 0,56           & 0,35  & 3,61  & 0,18  & 0,18  & 0,38  \\ \cmidrule(l){1-20} 
+& RRMSE (\%)    & 0,18  & 0,18  & 0,18  & 0,18  & 0,18  & 0,49  & \textbf{0,16}  & 2,64   & 4,45  & 0,23  & 0,17  & 0,49  & 0,56           & 0,35  & 3,61  & 0,18  & 0,18  & 0,38  \\ \cmidrule(l){1-20} 
 
 \end{tabular}
 	
@@ -475,22 +483,22 @@ Horizontes                         & Métricas & A     & B     & C     & D     &
 	\begin{table}[!htb]
 		\centering
 		\setlength{\tabcolsep}{2pt} % Reduzir o espaçamento entre as colunas
-		\caption{Comparação dos modelos de previsão através das métricas de desempenho para todos dados}\label{tb:apd-int}
+		\caption{Comparação dos modelos de previsão através das métricas de desempenho para todos dados.}\label{tb:apd-int}
 	\begin{tabular}{llllllllllllllllllll}
 	\toprule
 	Horizontes                         & Métricas & A             & B             & C     & D     & E     & F     & G              & H      & I     & J     & K             & L     & M              & N     & O     & P     & Q     & R     \\ \midrule
-	\multirow{3}{*}{1 hora à frente}   & SMAPE    & 7,87          & 7,90 & 8,03  & 7,88  & 8,29  & 18,20 & \textbf{7,83}  & 17,37  & 24,44 & 18,33 & 8,36          & 18,20 & 18,22          & 18,18 & 23,19 & 8,05  & 7,99  & 19,35 \\
+	\multirow{3}{*}{1 hora à frente}   & SMAPE (\%)    & 7,87          & 7,90 & 8,03  & 7,88  & 8,29  & 18,20 & \textbf{7,83}  & 17,37  & 24,44 & 18,33 & 8,36          & 18,20 & 18,22          & 18,18 & 23,19 & 8,05  & 7,99  & 19,35 \\
 	& MAE      & \textbf{0,25} & 0,25 & 0,26  & 0,25  & 0,27  & 1,61  & 0,36           & 0,58   & 0,93  & 0,64  & 0,27          & 1,61  & 0,50           & 0,64  & 0,87  & 0,26  & 0,26  & 0,69  \\
-	& RRMSE    & \textbf{0,09} & 0,09 & 0,10  & 0,09  & 0,10  & 0,43  & 0,20           & 0,31   & 1,39  & 0,21  & 0,10          & 0,43  & 0,50           & 0,20  & 1,31  & 0,10  & 0,10  & 0,21  \\ \hline
-	\multirow{3}{*}{6 horas à frente}  & SMAPE    & 20,08         & 20,03         & 20,29 & 20,12 & 20,32 & 19,82 & \textbf{13,50} & 74,59  & 57,75 & 23,86 & 18,43         & 19,82 & \textbf{29,73} & 23,71 & 49,71 & 19,92 & 20,31 & 25,64 \\
+	& RRMSE (\%)    & \textbf{0,09} & 0,09 & 0,10  & 0,09  & 0,10  & 0,43  & 0,20           & 0,31   & 1,39  & 0,21  & 0,10          & 0,43  & 0,50           & 0,20  & 1,31  & 0,10  & 0,10  & 0,21  \\ \hline
+	\multirow{3}{*}{6 horas à frente}  & SMAPE (\%)    & 20,08         & 20,03         & 20,29 & 20,12 & 20,32 & 19,82 & \textbf{13,50} & 74,59  & 57,75 & 23,86 & 18,43         & 19,82 & \textbf{29,73} & 23,71 & 49,71 & 19,92 & 20,31 & 25,64 \\
 	& MAE      & 0,65          & 0,65          & 0,65  & 0,65  & 0,66  & 1,71  & \textbf{0,58}  & 4,08   & 2,76  & 0,87  & 0,60          & 1,71  & \textbf{0,93}  & 0,87  & 2,23  & 0,64  & 0,65  & 0,95  \\
-	& RRMSE    & 0,23          & 0,23          & 0,23  & 0,23  & 0,23  & 0,45  & \textbf{0,16}  & 1,45   & 4,22  & 0,31  & 0,21          & 0,45  & 1,05           & 0,31  & 3,47  & 0,23  & 0,23  & 0,33  \\ \hline
-	\multirow{3}{*}{12 horas à frente} & SMAPE    & 23,24         & 23,13         & 23,36 & 23,23 & 23,27 & 18,47 & \textbf{13,50} & 95,48  & 59,57 & 23,93 & 21,34         & 18,47 & 23,91          & 23,68 & 50,78 & 23,15 & 23,42 & 25,66 \\
+	& RRMSE (\%)    & 0,23          & 0,23          & 0,23  & 0,23  & 0,23  & 0,45  & \textbf{0,16}  & 1,45   & 4,22  & 0,31  & 0,21          & 0,45  & 1,05           & 0,31  & 3,47  & 0,23  & 0,23  & 0,33  \\ \hline
+	\multirow{3}{*}{12 horas à frente} & SMAPE (\%)    & 23,24         & 23,13         & 23,36 & 23,23 & 23,27 & 18,47 & \textbf{13,50} & 95,48  & 59,57 & 23,93 & 21,34         & 18,47 & 23,91          & 23,68 & 50,78 & 23,15 & 23,42 & 25,66 \\
 	& MAE      & 0,76          & 0,75          & 0,76  & 0,76  & 0,76  & 1,63  & \textbf{0,58}  & 6,32   & 2,89  & 0,88  & 0,70          & 1,63  & \textbf{0,80}  & 0,86  & 2,30  & 0,75  & 0,76  & 0,95  \\
-	& RRMSE    & 0,27          & 0,27          & 0,27  & 0,27  & 0,27  & 0,43  & \textbf{0,16}  & 2,14   & 4,43  & 0,31  & 0,25          & 0,43  & 0,97           & 0,31  & 3,58  & 0,27  & 0,27  & 0,33  \\ \hline
-	\multirow{3}{*}{24 horas à frente} & SMAPE    & 13,32         & 13,22         & 13,57 & 13,29 & 13,63 & 19,08 & 13,50          & 103,98 & 59,62 & 24,07 & 12,65         & 19,08 & \textbf{5,05}  & 23,71 & 50,63 & 13,51 & 13,57 & 26,17 \\
+	& RRMSE (\%)    & 0,27          & 0,27          & 0,27  & 0,27  & 0,27  & 0,43  & \textbf{0,16}  & 2,14   & 4,43  & 0,31  & 0,25          & 0,43  & 0,97           & 0,31  & 3,58  & 0,27  & 0,27  & 0,33  \\ \hline
+	\multirow{3}{*}{24 horas à frente} & SMAPE (\%)    & 13,32         & 13,22         & 13,57 & 13,29 & 13,63 & 19,08 & 13,50          & 103,98 & 59,62 & 24,07 & 12,65         & 19,08 & \textbf{5,05}  & 23,71 & 50,63 & 13,51 & 13,57 & 26,17 \\
 	& MAE      & 0,43          & 0,42          & 0,43  & 0,43  & 0,44  & 1,67  & 0,58           & 7,51   & 2,89  & 0,88  & 0,41          & 1,67  & \textbf{0,17}  & 0,87  & 2,29  & 0,43  & 0,43  & 0,98  \\
-	& RRMSE    & 0,17          & 0,17          & 0,17  & 0,17  & 0,17  & 0,44  & \textbf{0,16}  & 2,50   & 4,43  & 0,32  & \textbf{0,16} & 0,44  & 0,19           & 0,31  & 3,57  & 0,17  & 0,17  & 0,34  \\ \cmidrule(l){1-20} 	
+	& RRMSE (\%)    & 0,17          & 0,17          & 0,17  & 0,17  & 0,17  & 0,44  & \textbf{0,16}  & 2,50   & 4,43  & 0,32  & \textbf{0,16} & 0,44  & 0,19           & 0,31  & 3,57  & 0,17  & 0,17  & 0,34  \\ \cmidrule(l){1-20} 	
 	\end{tabular}
 
 		
@@ -516,7 +524,7 @@ Horizontes                         & Métricas & A     & B     & C     & D     &
 	\end{table}
 \end{landscape}
 
-Na Tabela \ref{tab:metrics} são mostrados os valores das métricas estatísticas para todos os modelos de previsão para 24 passos à frente (1 dia) usando todos os dados.
+Na Tabela \ref{tab:metrics} são mostrados os valores das métricas estatísticas para todos os modelos de previsão para 24 passos à frente (1 dia) usando dados de teste.
 
 \begin{table}[!htb]
 	\centering
@@ -527,7 +535,7 @@ Na Tabela \ref{tab:metrics} são mostrados os valores das métricas estatística
 	
 	\begin{tabular}{llll}
 		\toprule
-		\multicolumn{1}{c}{\textbf{Modelo}} & \multicolumn{1}{c}{\textbf{SMAPE}} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RRMSE}} \\ \midrule
+		\multicolumn{1}{c}{\textbf{Modelo}} & \multicolumn{1}{c}{\textbf{SMAPE} (\%)} & \multicolumn{1}{c}{\textbf{MAE}} & \multicolumn{1}{c}{\textbf{RRMSE} (\%)} \\ \midrule
 		\textbf{Prophet }                            & \textbf{5,050}                              & \textbf{0,169 }                           & 0,191                              \\
 		MLP                                 & 19,076                             & 1,668                            & 0,444                              \\
 		CNN                                 & 19,076                             & 1,668                            & 0,444                              \\
@@ -550,7 +558,7 @@ Na Tabela \ref{tab:metrics} são mostrados os valores das métricas estatística
 	\end{tabular}
 \end{table}
 
-Na tabela prévia os diversos modelos de previsão de séries temporais foram avaliados para horizonte de previsão de $24$ horas. Para cada métrica sMAPE, MAE, e RRMSE, identificou-se o modelo que apresentou o menor valor. A métrica sMAPE apontou que o modelo RNN obteve o menor valor. Quanto à métrica MAE, novamente o modelo RNN demonstrou o menor valor e com a métrica RRMSE também.
+Na tabela anterior, os diversos modelos de previsão de séries temporais foram avaliados para um horizonte de previsão de 24 horas. Para cada métrica SMAPE, MAE e RRMSE, identificou-se o modelo que apresentou o menor valor. A métrica SMAPE indicou que o modelo Prophet obteve o menor valor. Quanto à métrica MAE, novamente o modelo Prophet demonstrou o menor valor, e com a métrica RRMSE, o modelo MA demonstrou o menor valor da métrica.
 
 Para validar estatisticamente as diferenças entre os modelos, foi realizado um teste estatístico denominado Teste de Friedman. Esse teste avalia o desempenho dos modelos em todas as métricas simultaneamente. O resultado do teste de Friedman revelou evidências estatísticas que pelo menos um dos modelos apresenta superioridade estatística em relação aos demais, considerando um nível de significância de $0.05$.
 
@@ -562,61 +570,200 @@ O teste de Friedman e o teste de Nemenyi são usados para comparar os modelos de
 
 Usando os resultados obtidos na Tabela \ref{tb:nemenyi} para calcular o teste de Nemenyi, em comparação aos modelos que foram previstos, no teste Nemenyi. Nesse teste, em comparação com os modelos, calcula-se entre as métricas estatísticas qual desses modelos contém o menor valor de p. Dentro de todos os modelos de previsão, o RNN foi o modelo que obteve o menor valor registrado nas métricas estatísticas.
 
-O teste de Friedman, com um valor de estatística de teste de $105.016$ e um valor de p $0$, indica que existem evidências estatísticas sugerindo que, pelo menos, um dos modelos (ou todos) apresenta um desempenho significativamente diferente dos demais. O valor extremamente baixo de p, próximo de zero, sugere que as diferenças observadas não são simplesmente devido ao acaso. Portanto, há uma diferença estatisticamente significativa entre os grupos testados.
+O teste de Friedman para o erro SMAPE, com um valor de estatística de teste e um valor de p de $7,29 \times 10^{-28}$, e para o erro MAE um valor de p de $4,78 \times 10^{-26}$, e para o erro RRMSE um valor de p de $1,23 \times 10^{-40}$ indica que há evidências estatísticas sugerindo que, pelo menos, um dos modelos (ou todos) apresenta um desempenho significativamente diferente dos demais. O valor extremamente baixo de p, próximo de zero, sugere que as diferenças observadas não são simplesmente devidas ao acaso. Portanto, há uma diferença estatisticamente significativa entre os grupos testados.
 
-No contexto do estudo, os resultados da análise comparativa revelaram diferenças estatisticamente significativas entre vários pares de modelos, conforme indicado pelas entradas da Tabela \ref{tb:nemenyi}. Isso sugere que pelo menos um modelo é considerado estatisticamente superior aos demais, com base nas comparações realizadas. Por exemplo, o modelo que tem o menor valor de p entre esses modelos é o da coluna C (MA) na linha L (RF), com um valor de $0,097$, o que significa que os dois modelos têm diferença estatisticamente significativa.
+%No contexto do estudo, os resultados da análise comparativa revelaram diferenças estatisticamente significativas entre vários pares de modelos, conforme indicado pelas entradas da Tabela \ref{tb:nemenyi}. Isso sugere que pelo menos um modelo é considerado estatisticamente superior aos demais, com base nas comparações realizadas. Por exemplo, o modelo que tem o menor valor de p entre esses modelos é o da coluna C (MA) na linha L (RF), com um valor de $0,097$, o que significa que os dois modelos têm diferença estatisticamente significativa.
+
+Na análise das tabelas, são identificadas diferenças significativas entre os modelos. Por exemplo, na Tabela \ref{tb:nemenyi}, há valores baixos na linha DT (G) nas colunas GRU (H), LSTM (I) e RNN (O), indicando diferenças críticas entre esses modelos. Na Tabela \ref{tb:nemenyi1}, os valores na interseção da linha DT (G) com as colunas GRU (H) e RNN (O) são estatisticamente significativos. Na Tabela \ref{tb:nemenyi2}, os valores entre a linha CNN (F) e a coluna DT (G) são baixos, ressaltando outra diferença relevante. Esses resultados evidenciam a necessidade de uma análise minuciosa para determinar o modelo mais adequado.
+
+Ao analisar as tabelas, fica evidente que o modelo DT se destaca como tendo desempenho superior em comparação com os outros modelos. Isso é corroborado pelos valores baixos nas interseções da linha DT (G) com as colunas GRU (H), RNN (O) e LSTM (I) na Tabela \ref{tb:nemenyi}, bem como pelos valores significativos na Tabela \ref{tb:nemenyi1}. Portanto, o modelo DT parece ser a escolha mais promissora para os propósitos da análise.
+
+%Ao analisar a Tabela \ref{tb:nemenyi}, nota-se uma diferença significativa entre os modelos. Por exemplo, os valores na interseção da linha DT (G) e coluna GRU (H) são $0$, o que indica uma diferença particularmente crítica entre esses modelos. Da mesma forma, os valores na interseção da linha DT (G) e coluna RNN (O) e coluna LSTM (I) também são muito baixos, evidenciando outra diferença de importância crítica entre esses modelos. Essas disparidades ressaltam a necessidade de uma análise minuciosa das diferenças estatísticas entre os modelos para determinar qual deles demonstra o desempenho mais apropriado para os propósitos da análise.
+%
+%Ao analisar a Tabela \ref{tb:nemenyi1}, observa-se que há diferenças significativas entre os modelos. Por exemplo, os valores na interseção da linha DT (G) e coluna GRU (H) são $0,012$, indicando uma diferença estatisticamente significativa entre esses modelos. Da mesma forma, os valores na interseção da linha DT (G) e coluna RNN (O) também são baixos, sugerindo uma diferença estatisticamente significativa entre esses modelos. Esses achados ressaltam a importância de examinar minuciosamente as diferenças estatísticas entre os modelos para determinar qual deles oferece o desempenho mais adequado para os propósitos da análise.
+%
+%
+%A análise a Tabela \ref{tb:nemenyi2} revela diferenças significativas entre os modelos. Por exemplo, os valores na interseção da linha CNN (F) e coluna DT (G) são $0,023$, indicando uma diferença estatisticamente significativa entre esses modelos. Da mesma forma, os valores na interseção da linha DT (G) e coluna GRU (H) também são baixos, sugerindo outra diferença estatisticamente significativa. Esses resultados enfatizam a importância de uma avaliação criteriosa das diferenças estatísticas entre os modelos para determinar qual deles oferece o desempenho mais adequado para os propósitos da análise.
 
 
-
-\begin{table}[!htb]
-	\caption{Teste de significância Nemenyi}\label{tb:nemenyi}
+\begin{landscape}
+	\begin{table}[!htb]
+	\caption{Teste de significância Nemenyi na métrica SMAPE.}\label{tb:nemenyi}
 	\centering
-	\small
+
 	\setlength{\tabcolsep}{4pt} % Reduzir o espaçamento entre as colunas
-\begin{tabular}{@{}lllllllllllll@{}}
-	\toprule
-	\textbf{Modelo} & \textbf{A} & \textbf{B} & \textbf{C}     & \textbf{D} & \textbf{E} & \textbf{F} & \textbf{G} & \textbf{H} & \textbf{I} & \textbf{J} & \textbf{K} & \textbf{L} \\ \midrule
-	\textbf{A}       & 1          & 0,9        & 0,9            & 0,9        & 0,9        & 0,9        & 0,9        & 0,9        & 0,9        & 0,9        & 0,9        & 0,877      \\
-	\textbf{B}       & 0,9        & 1          & 0,9            & 0,9        & 0,9        & 0,9        & 0,9        & 0,9        & 0,693      & 0,693      & 0,9        & 0,442      \\
-	\textbf{C}       & 0,9        & 0,9        & 1              & 0,9        & 0,785      & 0,9        & 0,9        & 0,9        & 0,253      & 0,253      & 0,816      & 0,097      \\
-	\textbf{D}       & 0,9        & 0,9        & 0,9            & 1          & 0,9        & 0,9        & 0,9        & 0,9        & 0,754      & 0,754      & 0,9        & 0,508      \\
-	\textbf{E}       & 0,9        & 0,9        & 0,785          & 0,9        & 1          & 0,877      & 0,9        & 0,9        & 0,9        & 0,9        & 0,9        & 0,9        \\
-	\textbf{F}       & 0,9        & 0,9        & 0,9            & 0,9        & 0,877      & 1          & 0,9        & 0,9        & 0,340      & 0,340      & 0,9        & 0,143      \\
-	\textbf{G}       & 0,9        & 0,9        & 0,9            & 0,9        & 0,9        & 0,9        & 1          & 0,9        & 0,9        & 0,9        & 0,9        & 0,877      \\
-	\textbf{H}       & 0,9        & 0,9        & 0,9            & 0,9        & 0,9        & 0,9        & 0,9        & 1          & 0,9        & 0,9        & 0,9        & 0,877      \\
-	\textbf{I}       & 0,9        & 0,693      & 0,253          & 0,754      & 0,9        & 0,340      & 0,9        & 0,9        & 1          & 0,9        & 0,9        & 0,9        \\
-	\textbf{J}       & 0,9        & 0,693      & 0,253          & 0,754      & 0,9        & 0,340      & 0,9        & 0,9        & 0,9        & 1          & 0,9        & 0,9        \\
-	\textbf{K}       & 0,9        & 0,9        & 0,816          & 0,9        & 0,9        & 0,9        & 0,9        & 0,9        & 0,9        & 0,9        & 1          & 0,9        \\
-	\textbf{L}       & 0,877      & 0,442      & \textbf{0,097} & 0,508      & 0,9        & 0,143      & 0,877      & 0,877      & 0,9        & 0,9        & 0,9        & 1          \\ \bottomrule
+\begin{tabular}{@{}lllllllllllllllllll@{}}
+\toprule
+Modelo & A     & B     & C     & D     & E     & F     & G     & H     & I     & J     & K     & L     & M     & N     & O     & P     & Q     & R     \\ \midrule
+A      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,092 & 0,070 & 1     & 1     & 1     & 1     & 0,976 & 0,185 & 1     & 1     & 0,846 \\
+B      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,093 & 0,071 & 1     & 1     & 1     & 1     & 0,977 & 0,186 & 1     & 1     & 0,847 \\
+C      & 1     & 1     & 1     & 1     & 1     & 1     & 0,999 & 0,158 & 0,124 & 1     & 1     & 1     & 1     & 0,991 & 0,285 & 1     & 1     & 0,918 \\
+D      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,094 & 0,071 & 1     & 1     & 1     & 1     & 0,977 & 0,187 & 1     & 1     & 0,848 \\
+E      & 1     & 1     & 1     & 1     & 1     & 1     & 0,999 & 0,164 & 0,129 & 1     & 1     & 1     & 1     & 0,992 & 0,294 & 1     & 1     & 0,922 \\
+F      & 1     & 1     & 1     & 1     & 1     & 1     & 0,971 & 0,456 & 0,394 & 1     & 1     & 1     & 1     & 1     & 0,636 & 1     & 1     & 0,993 \\
+G      & 1     & 1     & 0,999 & 1,000 & 0,999 & 0,971 & 1     & 0     & 0     & 0,940 & 1     & 0,971 & 0,989 & 0,204 & 0     & 0,999 & 0,999 & 0,051 \\
+H      & 0,092 & 0,093 & 0,158 & 0,094 & 0,164 & 0,456 & 0     & 1     & 1     & 0,575 & 0,030 & 0,456 & 0,326 & 0,997 & 1     & 0,122 & 0,158 & 1     \\
+I      & 0,070 & 0,071 & 0,124 & 0,071 & 0,129 & 0,394 & 0     & 1     & 1     & 0,511 & 0,021 & 0,394 & 0,272 & 0,995 & 1     & 0,095 & 0,125 & 1     \\
+J      & 1     & 1     & 1     & 1     & 1     & 1     & 0,940 & 0,575 & 0,511 & 1     & 1     & 1     & 1     & 1     & 0,744 & 1     & 1     & 0,998 \\
+K      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,030 & 0,021 & 1     & 1     & 1     & 1     & 0,903 & 0,071 & 1     & 1     & 0,651 \\
+L      & 1     & 1     & 1     & 1     & 1     & 1     & 0,971 & 0,456 & 0,394 & 1     & 1     & 1     & 1     & 1     & 0,636 & 1     & 1     & 0,993 \\
+M      & 1     & 1     & 1     & 1     & 1     & 1     & 0,989 & 0,326 & 0,272 & 1     & 1     & 1     & 1     & 0,999 & 0,499 & 1     & 1     & 0,979 \\
+N      & 0,976 & 0,977 & 0,991 & 0,977 & 0,992 & 1     & 0,204 & 0,997 & 0,995 & 1     & 0,903 & 1     & 0,999 & 1     & 1     & 0,986 & 0,992 & 1     \\
+O      & 0,185 & 0,186 & 0,285 & 0,187 & 0,294 & 0,636 & 0     & 1     & 1     & 0,744 & 0,071 & 0,636 & 0,499 & 1     & 1     & 0,232 & 0,286 & 1     \\
+P      & 1     & 1     & 1     & 1     & 1     & 1     & 0,999 & 0,122 & 0,095 & 1     & 1     & 1     & 1     & 0,986 & 0,232 & 1     & 1     & 0,886 \\
+Q      & 1     & 1     & 1     & 1     & 1     & 1     & 0,999 & 0,158 & 0,125 & 1     & 1     & 1     & 1     & 0,992 & 0,286 & 1     & 1     & 0,918 \\
+R      & 0,846 & 0,847 & 0,918 & 0,848 & 0,922 & 0,993 & 0,051 & 1     & 1     & 0,998 & 0,651 & 0,993 & 0,979 & 1     & 1     & 0,886 & 0,918 & 1     \\ \bottomrule
 \end{tabular}
+	\vspace{2mm}
 	
-	AR - A,	ARX	- B, MA	- C,ARMA - D, ARIMA - E, SARIMA - F, SARIMAX - G, ARIMAX	- H, DT	- I, XGBoost - J, LightGBM - K, RF - L.
+	\captionsetup{justification=centering} % Centralizar a legenda
+	A -- AR,
+	B -- ARIMA,
+	C -- ARIMAX,
+	D -- ARMA,
+	E -- ARX,
+	F -- CNN,
+	G -- DT,
+	H -- GRU,
+	I -- LSTM,
+	J -- LigthGBM,
+	K -- MA,
+	L -- MLP,
+	M -- Prophet,
+	N -- RF,
+	O -- RNN,
+	P -- SARIMA,
+	Q -- SARIMAX,
+	R -- XGBoost.
 	
 \end{table}
 
-
-O valor crítico CD foi utilizado para determinar se dois modelos eram significativamente diferentes entre si. Esse valor é calculado com base no valor crítico obtido da Tabela \ref{tb:nemenyi} de teste de Nemenyi, o número de modelos e o número total de amostras. O valor CD é uma métrica que auxilia na interpretação das diferenças entre os modelos, ajudando a identificar quais pares de modelos apresentam diferenças estatisticamente significativas.
-
-Os resultados da pesquisa indicam a existência de evidências estatísticas que sugerem a superioridade de pelo menos um modelo em relação aos demais. A análise de comparação significativa entre os modelos revelou pares de modelos que apresentam diferenças estatisticamente significativas em seus desempenhos, conforme exibido na Tabela \ref{tb:nemenyi}, onde cada valor com três casas decimais após a vírgula representa modelos que têm significância estatística entre si.
-
-Na Tabela \ref{tb:nemeyirede} é determinado quais modelos apresentam diferenças estatisticamente significativas entre si, foi conduzido o teste de comparações múltiplas de Nemenyi. Esse teste avalia todos os pares possíveis de modelos e identifica quais deles possuem diferenças estatisticamente significativas. O modelo RNN apresentou o menor erro nas métricas mas em questão de diferenças significativas ao analisar em relação aos modelos LSTM, GRU e os demais, não demonstra tanta diferença em comparação com os modelos que foi calculado entre eles, sendo o valor critico do RNN o mais baixo foi relacionado com o modelo CNN.
-
-No teste de Friedman, a estatística de teste mostrou um valor de $19,117$, enquanto o valor de p foi calculado como $0,0018$. Devido a esses valores baixos, o resultado da correlação desse teste não indica tanta evidência estatística.
-
-\begin{table}[!htb]
-	\caption{Teste de significância Nemenyi dos modelos LSTM, GRU, RNN, CNN, MLP e Prophet.}\label{tb:nemeyirede}
+	\begin{table}[!htb]
+	\caption{Teste de significância Nemenyi na métrica MAE.}\label{tb:nemenyi1}
 	\centering
-\begin{tabular}{@{}lllllll@{}}
-	\toprule
-	\textbf{Modelo} & \textbf{LSTM} & \textbf{GRU} & \textbf{RNN} & \textbf{CNN} & \textbf{MLP} & \textbf{Prophet} \\ \midrule
-	\textbf{LSTM}    & 1             & 0,9          & 0,170        & 0,9          & 0,9          & 0,170            \\
-	\textbf{GRU}     & 0,9           & 1            & 0,170        & 0,9          & 0,9          & 0,170            \\
-	\textbf{RNN}     & 0,170         & 0,170        & 1            & 0,352        & 0,170        & 0,9              \\
-	\textbf{CNN}     & 0,9           & 0,9          & 0,352        & 1            & 0,9          & 0,352            \\
-	\textbf{MLP}     & 0,9           & 0,9          & 0,170        & 0,9          & 1            & 0,170            \\
-	\textbf{Prophet} & 0,170         & 0,170        & 0,9          & 0,352        & 0,170        & 1                \\ \bottomrule
+
+	\setlength{\tabcolsep}{4pt} % Reduzir o espaçamento entre as colunas
+\begin{tabular}{@{}lllllllllllllllllll@{}}
+\toprule
+Modelo & A     & B     & C     & D     & E     & F     & G     & H     & I     & J     & K     & L     & M     & N     & O     & P     & Q     & R     \\ \midrule
+A      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,054 & 0,036 & 1     & 1     & 1     & 1     & 0,947 & 0,102 & 1     & 1     & 0,736 \\
+B      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,059 & 0,039 & 1     & 1     & 1     & 1     & 0,952 & 0,109 & 1     & 1     & 0,750 \\
+C      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,093 & 0,065 & 1     & 1     & 1     & 1     & 0,975 & 0,162 & 1     & 1     & 0,829 \\
+D      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,058 & 0,039 & 1     & 1     & 1     & 1     & 0,951 & 0,108 & 1     & 1     & 0,748 \\
+E      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,101 & 0,071 & 1     & 1     & 1     & 1     & 0,978 & 0,175 & 1     & 1     & 0,843 \\
+F      & 1     & 1     & 1     & 1     & 1     & 1     & 0,999 & 0,752 & 0,679 & 1     & 1     & 1     & 1     & 1,000 & 0,855 & 1     & 1     & 1     \\
+G      & 1     & 1     & 1     & 1     & 1     & 0,999 & 1     & 0,012 & 0,008 & 0,999 & 1     & 0,999 & 1     & 0,803 & 0,027 & 1     & 1     & 0,467 \\
+H      & 0,054 & 0,059 & 0,093 & 0,058 & 0,101 & 0,752 & 0,012 & 1     & 1     & 0,732 & 0,022 & 0,752 & 0,217 & 0,997 & 1,000 & 0,062 & 0,093 & 1     \\
+I      & 0,036 & 0,039 & 0,065 & 0,039 & 0,071 & 0,679 & 0,008 & 1     & 1     & 0,657 & 0,014 & 0,679 & 0,163 & 0,995 & 1,000 & 0,042 & 0,064 & 1     \\
+J      & 1     & 1     & 1     & 1     & 1     & 1     & 0,999 & 0,732 & 0,657 & 1     & 1     & 1     & 1     & 1     & 0,840 & 1     & 1     & 0,999 \\
+K      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,022 & 0,014 & 1     & 1     & 1     & 1     & 0,870 & 0,046 & 1     & 1     & 0,570 \\
+L      & 1     & 1     & 1     & 1     & 1     & 1     & 0,999 & 0,752 & 0,679 & 1     & 1     & 1     & 1     & 1     & 0,855 & 1     & 1     & 1     \\
+M      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,217 & 0,163 & 1     & 1     & 1     & 1     & 0,996 & 0,331 & 1     & 1     & 0,942 \\
+N      & 0,947 & 0,952 & 0,975 & 0,951 & 0,978 & 1     & 0,803 & 0,997 & 0,995 & 1     & 0,870 & 1,000 & 0,996 & 1     & 0,999 & 0,955 & 0,975 & 1     \\
+O      & 0,102 & 0,109 & 0,162 & 0,108 & 0,175 & 0,855 & 0,027 & 1,000 & 1,000 & 0,840 & 0,046 & 0,855 & 0,331 & 0,999 & 1     & 0,114 & 0,162 & 1     \\
+P      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,062 & 0,042 & 1     & 1     & 1     & 1     & 0,955 & 0,114 & 1     & 1     & 0,759 \\
+Q      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,093 & 0,064 & 1     & 1     & 1     & 1     & 0,975 & 0,162 & 1     & 1     & 0,828 \\
+R      & 0,736 & 0,750 & 0,829 & 0,748 & 0,843 & 1     & 0,467 & 1,000 & 1,000 & 0,999 & 0,570 & 1     & 0,942 & 1     & 1     & 0,759 & 0,828 & 1     \\ \bottomrule
 \end{tabular}
+	\vspace{2mm}
+	
+	\captionsetup{justification=centering} % Centralizar a legenda
+	A -- AR,
+	B -- ARIMA,
+	C -- ARIMAX,
+	D -- ARMA,
+	E -- ARX,
+	F -- CNN,
+	G -- DT,
+	H -- GRU,
+	I -- LSTM,
+	J -- LigthGBM,
+	K -- MA,
+	L -- MLP,
+	M -- Prophet,
+	N -- RF,
+	O -- RNN,
+	P -- SARIMA,
+	Q -- SARIMAX,
+	R -- XGBoost.
+	
 \end{table}
+
+	\begin{table}[!htb]
+	\caption{Teste de significância Nemenyi na métrica RRMSE.}\label{tb:nemenyi2}
+	\centering
+
+	\setlength{\tabcolsep}{4pt} % Reduzir o espaçamento entre as colunas
+\begin{tabular}{@{}lllllllllllllllllll@{}}
+\toprule
+Modelo & A     & B     & C     & D     & E     & F     & G     & H     & I     & J     & K     & L     & M     & N     & O     & P     & Q     & R     \\ \midrule
+A      & 1     & 1     & 1     & 1     & 1     & 0,306 & 1     & 0,028 & 0,001 & 1     & 1     & 0,306 & 0,414 & 0,993 & 0,003 & 1     & 1     & 0,975 \\
+B      & 1     & 1     & 1     & 1     & 1     & 0,314 & 1     & 0,029 & 0,001 & 1     & 1     & 0,314 & 0,423 & 0,994 & 0,003 & 1     & 1     & 0,976 \\
+C      & 1     & 1     & 1     & 1     & 1     & 0,413 & 1     & 0,050 & 0,002 & 1     & 1     & 0,413 & 0,529 & 0,998 & 0,007 & 1     & 1     & 0,989 \\
+D      & 1     & 1     & 1     & 1     & 1     & 0,314 & 1     & 0,029 & 0,001 & 1     & 1     & 0,314 & 0,423 & 0,994 & 0,003 & 1     & 1     & 0,976 \\
+E      & 1     & 1     & 1     & 1     & 1     & 0,405 & 1     & 0,048 & 0,002 & 1     & 1     & 0,405 & 0,521 & 0,998 & 0,007 & 1     & 1     & 0,989 \\
+F      & 0,306 & 0,314 & 0,413 & 0,314 & 0,405 & 1     & 0,023 & 1     & 0,999 & 0,778 & 0,133 & 1     & 1     & 1     & 1     & 0,342 & 0,412 & 1     \\
+G      & 1     & 1     & 1     & 1     & 1     & 0,023 & 1     & 0     & 0     & 0,999 & 1     & 0,023 & 0,043 & 0,759 & 0     & 1     & 1     & 0,600 \\
+H      & 0,028 & 0,029 & 0,050 & 0,029 & 0,048 & 1     & 0     & 1     & 1     & 0,231 & 0,006 & 1     & 1     & 0,938 & 1     & 0,034 & 0,050 & 0,979 \\
+I      & 0,001 & 0,001 & 0,002 & 0,001 & 0,002 & 0,999 & 0     & 1     & 1     & 0,022 & 0     & 0,999 & 0,998 & 0,535 & 1     & 0,001 & 0,002 & 0,703 \\
+J      & 1     & 1     & 1     & 1     & 1     & 0,778 & 0,999 & 0,231 & 0,022 & 1     & 1     & 0,778 & 0,860 & 1,000 & 0,057 & 1     & 1     & 1     \\
+K      & 1     & 1     & 1     & 1     & 1     & 0,133 & 1     & 0,006 & 0     & 1     & 1     & 0,133 & 0,203 & 0,958 & 0,001 & 1     & 1     & 0,894 \\
+L      & 0,306 & 0,314 & 0,413 & 0,314 & 0,405 & 1     & 0,023 & 1     & 0,999 & 0,778 & 0,133 & 1     & 1     & 1     & 1     & 0,342 & 0,412 & 1     \\
+M      & 0,414 & 0,423 & 0,529 & 0,423 & 0,521 & 1     & 0,043 & 1     & 0,998 & 0,860 & 0,203 & 1     & 1     & 1     & 1     & 0,454 & 0,528 & 1     \\
+N      & 0,993 & 0,994 & 0,998 & 0,994 & 0,998 & 1     & 0,759 & 0,938 & 0,535 & 1     & 0,958 & 1     & 1     & 1     & 0,715 & 0,995 & 0,998 & 1     \\
+O      & 0,003 & 0,003 & 0,007 & 0,003 & 0,007 & 1     & 0     & 1     & 1     & 0,057 & 0,001 & 1     & 1     & 0,715 & 1     & 0,004 & 0,007 & 0,848 \\
+P      & 1     & 1     & 1     & 1     & 1     & 0,342 & 1     & 0,034 & 0,001 & 1     & 1     & 0,342 & 0,454 & 0,995 & 0,004 & 1     & 1     & 0,981 \\
+Q      & 1     & 1     & 1     & 1     & 1     & 0,412 & 1     & 0,050 & 0,002 & 1     & 1     & 0,412 & 0,528 & 0,998 & 0,007 & 1     & 1     & 0,989 \\
+R      & 0,975 & 0,976 & 0,989 & 0,976 & 0,989 & 1     & 0,600 & 0,979 & 0,703 & 1     & 0,894 & 1     & 1     & 1     & 0,848 & 0,981 & 0,989 & 1     \\ \bottomrule
+\end{tabular}
+	\vspace{2mm}
+	
+	\captionsetup{justification=centering} % Centralizar a legenda
+	A -- AR,
+	B -- ARIMA,
+	C -- ARIMAX,
+	D -- ARMA,
+	E -- ARX,
+	F -- CNN,
+	G -- DT,
+	H -- GRU,
+	I -- LSTM,
+	J -- LigthGBM,
+	K -- MA,
+	L -- MLP,
+	M -- Prophet,
+	N -- RF,
+	O -- RNN,
+	P -- SARIMA,
+	Q -- SARIMAX,
+	R -- XGBoost.
+	
+\end{table}
+
+\end{landscape}
+
+O valor crítico CD foi utilizado para determinar se dois modelos eram significativamente diferentes entre si. Esse valor é calculado com base no valor crítico obtido das Tabelas \ref{tb:nemenyi} a \ref{tb:nemenyi2} de teste de Nemenyi, o número de modelos e o número total de amostras. O valor CD é uma métrica que auxilia na interpretação das diferenças entre os modelos, ajudando a identificar quais pares de modelos apresentam diferenças estatisticamente significativas.
+
+Os resultados da pesquisa indicam a existência de evidências estatísticas que sugerem a superioridade de pelo menos um modelo em relação aos demais. A análise de comparação significativa entre os modelos revelou pares de modelos que apresentam diferenças estatisticamente significativas em seus desempenhos, conforme exibido nas Tabelas \ref{tb:nemenyi} a \ref{tb:nemenyi2}, onde cada valor com três casas decimais após a vírgula representa modelos que têm significância estatística entre si.
+
+%Na Tabela \ref{tb:nemeyirede} é determinado quais modelos apresentam diferenças estatisticamente significativas entre si, foi conduzido o teste de comparações múltiplas de Nemenyi. Esse teste avalia todos os pares possíveis de modelos e identifica quais deles possuem diferenças estatisticamente significativas. O modelo RNN apresentou o menor erro nas métricas mas em questão de diferenças significativas ao analisar em relação aos modelos LSTM, GRU e os demais, não demonstra tanta diferença em comparação com os modelos que foi calculado entre eles, sendo o valor critico do RNN o mais baixo foi relacionado com o modelo CNN.
+%
+%No teste de Friedman, a estatística de teste mostrou um valor de $19,117$, enquanto o valor de p foi calculado como $0,0018$. Devido a esses valores baixos, o resultado da correlação desse teste não indica tanta evidência estatística.
+%
+%\begin{table}[!htb]
+%	\caption{Teste de significância Nemenyi dos modelos LSTM, GRU, RNN, CNN, MLP e Prophet.}\label{tb:nemeyirede}
+%	\centering
+%\begin{tabular}{@{}lllllll@{}}
+%	\toprule
+%	\textbf{Modelo} & \textbf{LSTM} & \textbf{GRU} & \textbf{RNN} & \textbf{CNN} & \textbf{MLP} & \textbf{Prophet} \\ \midrule
+%	\textbf{LSTM}    & 1             & 0,9          & 0,170        & 0,9          & 0,9          & 0,170            \\
+%	\textbf{GRU}     & 0,9           & 1            & 0,170        & 0,9          & 0,9          & 0,170            \\
+%	\textbf{RNN}     & 0,170         & 0,170        & 1            & 0,352        & 0,170        & 0,9              \\
+%	\textbf{CNN}     & 0,9           & 0,9          & 0,352        & 1            & 0,9          & 0,352            \\
+%	\textbf{MLP}     & 0,9           & 0,9          & 0,170        & 0,9          & 1            & 0,170            \\
+%	\textbf{Prophet} & 0,170         & 0,170        & 0,9          & 0,352        & 0,170        & 1                \\ \bottomrule
+%\end{tabular}
+%\end{table}
 
 
 
@@ -624,42 +771,89 @@ No teste de Friedman, a estatística de teste mostrou um valor de $19,117$, enqu
 
 \subsubsection{Compara\c c\~ao dos Modelos}
 
-Com o objetivo de obter uma análise mais aprofundada do desempenho de cada modelo, foi realizada uma comparação por meio de um gráfico de violino e de barra. Dessa forma, pôde-se observar qual dos modelos apresentava o melhor desempenho.
+Com o objetivo de obter uma análise mais aprofundada do desempenho de cada modelo, foi realizada uma comparação por meio de um gráfico de barra. Dessa forma, pôde-se observar qual dos modelos apresentava o melhor desempenho.
 
-Ao examinar os modelos representados nas Figuras \ref{fig:modelos-arima} e \ref{fig:violin-lr-xgb-lgbm-rf}, identifico os modelos que se destacam em relação à natureza dos dados. Na Figura \ref{fig:basic_comparar}, que compara os modelos ARIMA e XGBoost com outros, torna-se evidente que os modelos ARIMA como AR, ARX, MA, ARMA, ARIMAX e SARIMAX demonstram um desempenho sólido. Os modelos baseados em gradientes e regressão, como o XGBoost, exibem resultados comparáveis, as redes neurais com o modelo Prophet, é importante destacar que os modelos de redes neurais, incluindo RNN, LSTM, GRU, MLP e CNN, foram avaliados em conjunto com o modelo Prophet. A análise das métricas demonstrou que o modelo RNN se sobressai como o vencedor entre as métricas avaliadas. Essa conclusão é respaldada pelas evidências de que pelo menos um modelo é superior aos demais. Os modelos com valores de valor de p abaixo de $0,05$ foram realçados em \textbf{negrito} para enfatizar sua significância. Beneficiando-se da otimização por meio do Optuna, uma abordagem de bayesiana usando o metodo TPE.
+Ao examinar os modelos representados nas Figuras \ref{fig:modelos-arima1} a \ref{fig:modelos-red2} identificou os modelos que se destacam em relação à natureza dos dados. Nessas Figuras compara os modelos ARIMA e XGBoost com outros, torna-se evidente que os modelos ARIMA como AR, ARX, MA, ARMA, ARIMAX e SARIMAX demonstram um desempenho sólido. Os modelos baseados em gradientes e regressão, como o XGBoost, exibem resultados comparáveis, as redes neurais com o modelo Prophet, é importante destacar que os modelos de redes neurais, incluindo RNN, LSTM, GRU, MLP e CNN, foram avaliados em conjunto com o modelo Prophet. A análise das métricas demonstrou que o modelo DT se sobressai como o vencedor entre as métricas avaliadas. Essa conclusão é respaldada pelas evidências de que pelo menos um modelo é superior aos demais. Os modelos com valores de valor de p abaixo de $0,05$ foram realçados em \textbf{negrito} para enfatizar sua significância. Beneficiando-se da otimização por meio do Optuna, uma abordagem de bayesiana usando o método TPE.
 
 
-\begin{figure}[!htb]
+
+\begin{figure}[H]
 	\centering
-	\caption{Comparação dos modelos ARIMA.}\label{fig:modelos-arima}
-	\includegraphics[width=\linewidth]{Resultados/Figuras/modelos-arima}
+	\caption{Comparação dos modelos AR, ARX, MA, ARIMA, SARIMA, ARIMAX, SARIMAX, DT, RF, XGBoost, LightGBM em vários horizontes na métrica SMAPE.}\label{fig:modelos-arima1}
+	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/smape_comparar_basic}
 	
 	
 \end{figure}
 
-Na Figura \ref{fig:violin-lr-xgb-lgbm-rf}, é feita uma comparação entre os modelos de gradiente e regressor. Esses modelos, por serem mais robustos e utilizar técnicas de otimização mais avançadas, mostram-se superiores aos modelos comparados. O modelo XGBoost, em particular, é identificado como superior em relação aos outros modelos na análise.
-
-\begin{figure}[!htb]
+\begin{figure}[H]
 	\centering
-	\caption{Comparação de modelos de regressão}\label{fig:violin-lr-xgb-lgbm-rf}
-	\includegraphics[width=\linewidth]{Resultados/Figuras/violin-LR-XGB-LGBM-RF}
+	\caption{Comparação dos modelos AR, ARX, MA, ARIMA, SARIMA, ARIMAX, SARIMAX, DT, RF, XGBoost, LightGBM em vários horizontes na métrica MAE.}\label{fig:modelos-arima}
+	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/mae_comparar_basic}
+	
 	
 \end{figure}
 
-Na Figura \ref{fig:basic_comparar}, nota-se que todos os modelos trabalhados aqui, exceto o modelo LR, foram comparados em relação às métricas de desempenho. Mesmo sendo muito robustos, esses modelos não conseguiram obter um resultado tão bom quanto o RNN.
-
-
-\begin{figure}[!htb]
+\begin{figure}[H]
 	\centering
-	\caption{Comparação dos modelos nas métricas sMAPE, MAE e RRMSE\label{fig:basic_comparar}}
-	\includegraphics[width=\linewidth]{Resultados/Figuras/metricas_comparacao_modelos}
+	\caption{Comparação dos modelos AR, ARX, MA, ARIMA, SARIMA, ARIMAX, SARIMAX, DT, RF, XGBoost, LightGBM em vários horizontes na métrica RRMSE.}\label{fig:modelos-arima2}
+	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/rrmse_comparar_basic}
+	
+	
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\caption{Comparação dos modelos Prophet, MLP, CNN, RNN, LSTM, GRU em vários horizontes na métrica SMAPE.}\label{fig:modelos-red1}
+	\includegraphics[width=0.9\linewidth]{Resultados/Figuras/smape_comparar}
+	
+	
 \end{figure}
 
 
 
-A avaliação da eficácia dos modelos ARIMA em previsões de longo prazo emprega o teste de Ljung-Box, conforme detalhado nas Tabelas \ref{tb:lbtrn} a \ref{tb:lbcm} ilustram a acurácia dos modelos ARIMA ao longo do tempo, com valores menores sendo destacados em \textbf{negrito}. Modelos como ARX, ARIMAX e SARIMAX, que incorporam variáveis exógenas, demonstram um desempenho superior nesse contexto. Esses modelos não lineares apresentam uma capacidade de previsão robusta em horizontes temporais mais longos, diferenciando-se positivamente dos outros modelos ARIMA. Na Figura \ref{fig:modelos-arima}, são selecionados os modelos ARIMA e seus antecessores. Esses modelos têm suas limitações, tanto para horizontes de previsão de curto prazo quanto para horizontes de longo prazo. Nessa comparação no gráfico de violino, são combinados vários outros gráficos em um só, como o gráfico de barras e o \textit{boxplot}. Esse gráfico pode fornecer várias informações, mas o objetivo aqui é identificar apenas o melhor modelo entre os modelos ARIMA.
+\begin{figure}[H]
+	\centering
+	\caption{Comparação dos modelos Prophet, MLP, CNN, RNN, LSTM, GRU em vários horizontes na métrica MAE.}\label{fig:modelos-red}
+	\includegraphics[width=0.9\linewidth]{Resultados/Figuras/mae_comparar}
+	
+	
+\end{figure}
 
-Como essa série não apresentou uma estacionariedade bem definida e os dados não a tornaram estacionária, os modelos que não têm sazonalidade mostraram-se superiores, tais como AR, MA, ARX, ARMA, ARIMA e ARIMAX. O modelo ARIMAX demonstrou ser bastante robusto para este caso, mas mesmo assim, modelos mais básicos como AR e MA ainda apresentaram resultados melhores.
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Comparação dos modelos Prophet, MLP, CNN, RNN, LSTM, GRU em vários horizontes na métrica RRMSE.}\label{fig:modelos-red2}
+	\includegraphics[width=0.9\linewidth]{Resultados/Figuras/rrmse_comparar}
+	
+	
+\end{figure}
+
+
+
+%Na Figura \ref{fig:violin-lr-xgb-lgbm-rf}, é feita uma comparação entre os modelos de gradiente e regressor. Esses modelos, por serem mais robustos e utilizar técnicas de otimização mais avançadas, mostram-se superiores aos modelos comparados. O modelo XGBoost, em particular, é identificado como superior em relação aos outros modelos na análise.
+
+%\begin{figure}[!htb]
+%	\centering
+%	\caption{Comparação de modelos de regressão}\label{fig:violin-lr-xgb-lgbm-rf}
+%	\includegraphics[width=\linewidth]{Resultados/Figuras/violin-LR-XGB-LGBM-RF}
+%	
+%\end{figure}
+
+%Na Figura \ref{fig:basic_comparar}, nota-se que todos os modelos trabalhados aqui, exceto o modelo LR, foram comparados em relação às métricas de desempenho. Mesmo sendo muito robustos, esses modelos não conseguiram obter um resultado tão bom quanto o RNN.
+
+
+%\begin{figure}[!htb]
+%	\centering
+%	\caption{Comparação dos modelos nas métricas sMAPE, MAE e RRMSE\label{fig:basic_comparar}}
+%	\includegraphics[width=\linewidth]{Resultados/Figuras/metricas_comparacao_modelos}
+%\end{figure}
+
+
+
+A avaliação da eficácia dos modelos ARIMA em previsões de longo prazo emprega o teste de Ljung-Box, conforme detalhado nas Tabelas \ref{tb:lbtrn} a \ref{tb:lbcm} ilustram a acurácia dos modelos ARIMA ao longo do tempo, com valores menores sendo destacados em \textbf{negrito}. Modelos como ARX, ARIMAX e SARIMAX, que incorporam variáveis exógenas, demonstram um desempenho superior nesse contexto. Esses modelos não lineares apresentam uma capacidade de previsão robusta em horizontes temporais mais longos, diferenciando-se positivamente dos outros modelos ARIMA. Nas Figuras \ref{fig:modelos-arima1} a \ref{fig:modelos-arima2}, são selecionados os modelos ARIMA e seus antecessores. Esses modelos têm suas limitações, tanto para horizontes de previsão de curto prazo quanto para horizontes de longo prazo. Esse gráfico pode fornecer várias informações, mas o objetivo aqui é identificar apenas o melhor modelo entre os modelos ARIMA.
+
+Como essa série não apresentou uma estacionariedade bem definida e os dados não a tornaram estacionária, os modelos que não têm sazonalidade mostraram-se superiores, tais como AR, MA, ARX, ARMA, ARIMA e ARIMAX. O modelo ARIMAX demonstrou ser bastante robusto para este caso, mas mesmo assim, modelos mais básicos como AR, ARMA e ARIMA ainda apresentaram resultados melhores.
 
 \begin{table}[H]
 	\centering		
@@ -667,80 +861,80 @@ Como essa série não apresentou uma estacionariedade bem definida e os dados n�
 	
 	\begin{subtable}{0.49\linewidth}
 		\centering
-		\caption{\textbf{Treinamento}} \label{tb:lbtrn}
+		\caption{\textbf{Treinamento.}} \label{tb:lbtrn}
 		\begin{tabular}{@{}lll@{}}
 			\toprule
 			Ljung  & Estatística  & Valor \\
 			Box & de Teste& de p\\\midrule
-			ARX & 59,677 & 0 \\
-			AR & 52,312 & 0,265 \\
-			MA & 57,268 & 0 \\
-			ARMA & 6,945 & 0,731 \\
-			ARIMA & \textbf{16,724} & \textbf{0,081} \\
-			SARIMA & 48,505 & 0 \\
-			ARIMAX & 89,931 & 0 \\
-			SARIMAX & 29,093 & 0 \\ \bottomrule
+			ARX & 86,332 & 0           \\
+			AR  & 84,118 & 0            \\
+			MA  & 87,940 & 0             \\
+			ARMA & 26,204 & 0,003         \\
+			ARIMA & \textbf{21,4} &\textbf{0,018}  \\
+			SARIMA & 97,735 & 0 \\
+			ARIMAX & 42,151 & 0   \\
+			SARIMAX  & 47,310 & 0                    \\ \bottomrule
 		\end{tabular}
 	\end{subtable}
 	\hfill
 	\begin{subtable}{0.49\linewidth}
 		\centering
-		\caption{\textbf{Teste}} \label{tb:lbtst}
+		\caption{\textbf{Validação.}} \label{tb:lbvld}
 		\begin{tabular}{@{}lll@{}}
 			\toprule
 			Ljung  & Estatística  & Valor \\
 			Box & de Teste& de p\\\midrule
-			ARX & 47,177 & 0 \\
-			AR & 49,965 & 0,444 \\
-			MA & 77,884 & 0 \\
-			ARMA & 1,545 & 0,999 \\
-			ARIMA & 5,354 & 0,866 \\
-			SARIMA & \textbf{24,663} & \textbf{0,006} \\
-			ARIMAX & 36,738 & 0 \\
-			SARIMAX & 21,236 & 0,020 \\ \bottomrule
+			ARX       & 6,514                         & 0,770               \\
+			AR        & \textbf{0,764}              & \textbf{0,376}     \\
+			MA        & 76,952                        & 0                   \\
+			ARMA      & 4,900                         & 0,898               \\
+			ARIMA     & 11,025                        & 0,356               \\
+			SARIMA    & 68,136                        & 0                   \\
+			ARIMAX    & 10,809                        & 0,373               \\
+			SARIMAX   & 13,287                        & 0                   \\ \bottomrule
 		\end{tabular}
 	\end{subtable}
-	
-	\vspace{0.5cm}
-	
+			
+			\hfill
+			
 	\begin{subtable}{0.49\linewidth}
 		\centering
-		\caption{\textbf{Validação}} \label{tb:lbvld}
+		\caption{\textbf{Teste.}} \label{tb:lbtst}
 		\begin{tabular}{@{}lll@{}}
 			\toprule
 			Ljung  & Estatística  & Valor \\
 			Box & de Teste& de p\\\midrule
-			ARX & 5,108 & 0,884 \\
-			AR & 4,360 & 0,930 \\
-			MA & 46,252 & 0 \\
-			ARMA & 7,515 & 0,676 \\
-			ARIMA & 7,738 & 0,654 \\
-			SARIMA & \textbf{28,998} & \textbf{0,001} \\
-			ARIMAX & 6,115 & 0 \\
-			SARIMAX & 4,443 & 0,925 \\ \bottomrule
+			ARX & 36,884 & 0 \\
+			AR & 36,799 & 0 \\
+			MA & 71,945 & 0 \\
+			ARMA & \textbf{9,706} & \textbf{0,467} \\
+			ARIMA & 60,289 & 0 \\
+			SARIMA & 70,992 & 0 \\
+			ARIMAX & 48,435 & 0   \\
+			SARIMAX & 45,749 & 0 \\ \bottomrule
 		\end{tabular}
-	\end{subtable}
-	\hfill
+	\end{subtable}	
+\hfill	
 	\begin{subtable}{0.49\linewidth}
 		\centering
-		\caption{\textbf{Inteiro}} \label{tb:lbcm}
+		\caption{\textbf{Inteiro.}} \label{tb:lbcm}
 		\begin{tabular}{@{}lll@{}}
 			\toprule
 			Ljung  & Estatística  & Valor \\
 			Box & de Teste& de p\\\midrule
-			ARX &48,870 & 0 \\
-			AR & \textbf{49,432} & \textbf{0,035} \\
-			MA & 57,629 & 0 \\
-			ARMA & 10,053 & 0,436 \\
-			ARIMA & 10,053 & 0,436 \\
-			SARIMA & 10,053 & 0,436 \\
-			ARIMAX & 70,458 & 0 \\
-			SARIMAX & 2,897 & 0 \\ \bottomrule
+			ARX       & 22,944                        & 0                   \\
+			AR        & \textbf{22,715}               & \textbf{0}          \\
+			MA        & 5725,300                      & 0                   \\
+			ARMA      & 72,446                        & 0                   \\
+			ARIMA     & 72,446                        & 0                   \\
+			SARIMA    & 72,446                        & 0                   \\
+			ARIMAX    & 84,362                        & 0                   \\
+			SARIMAX   & 23,537                        & 0                   \\ \bottomrule
 		\end{tabular}
 	\end{subtable}
 	
 	
-	\vspace{0.5cm}
+%	\vspace{0.5cm}
 	
 \end{table}
 
