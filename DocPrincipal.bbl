@@ -582,18 +582,18 @@ ISSN 09252312.}
   machine.
 \textbf{Mechanical Systems and Signal Processing}, v.~188, p. 110022, 2023.}
 
-\bibitem[Shih, Sun e Lee 2019]{2-s2.0-85067419084}
+\bibitem[Shih, Sun e Lee 2019]{Shih2019a}
 \abntrefinfo{Shih, Sun e Lee}{SHIH; SUN; LEE}{2019a}
+{SHIH, S.-Y.; SUN, F.-K.; LEE, H.-Y. {Temporal pattern attention for
+  multivariate time series forecasting}.
+\textbf{Machine Learning}, v.~108, n.~8-9, p. 1421--1441, 2019.}
+
+\bibitem[Shih, Sun e Lee 2019]{2-s2.0-85067419084}
+\abntrefinfo{Shih, Sun e Lee}{SHIH; SUN; LEE}{2019b}
 {SHIH, S.-Y.; SUN, F.-K.; LEE, H.-Y. Temporal pattern attention for
   multivariate time series forecasting.
 \textbf{Machine Learning}, v.~108, p. 1421--1441, 2019.
 ISSN 08856125.}
-
-\bibitem[Shih, Sun e Lee 2019]{Shih2019a}
-\abntrefinfo{Shih, Sun e Lee}{SHIH; SUN; LEE}{2019b}
-{SHIH, S.-Y.; SUN, F.-K.; LEE, H.-Y. {Temporal pattern attention for
-  multivariate time series forecasting}.
-\textbf{Machine Learning}, v.~108, n.~8-9, p. 1421--1441, 2019.}
 
 \bibitem[Siegel et al. 2020]{SIEGEL2020103481}
 \abntrefinfo{Siegel et al.}{SIEGEL et al.}{2020}

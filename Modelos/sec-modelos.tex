@@ -6,6 +6,24 @@
  
 Uma série temporal é uma coleção de dados ordenados no tempo, utilizados para analisar o comportamento passado e prever o comportamento futuro de uma variável de interesse. Ela pode ser univariada, se envolve apenas uma variável, ou multivariada, se envolve mais de uma variável. A série temporal pode ser contínua, se os dados são observados continuamente ao longo do tempo, ou discreta, se os dados são observados em intervalos regulares ou irregulares. Ela pode apresentar diferentes componentes, como tendência, sazonalidade, ciclos e ruído, que podem ser modelados e decompostos por diversas técnicas estatísticas. Com aplicações em diversas áreas, como economia, finanças, meteorologia, epidemiologia, entre outras, a série temporal se revela como uma ferramenta versátil e essencial na compreensão dos fenômenos temporais.
 
+\subsection{Estrat\'egia Recursiva de Previs\~ao Multipassos}
+
+Segundo \citeonline{mateus} diversas estratégias para previsões de vários passos à frente em séries temporais. Explora-se a eficácia das abordagens recursiva e direta, bem como a combinação destas com o uso de Múltiplas Entradas e Múltiplas Saídas (MIMO). Embora a estratégia recursiva ofereça flexibilidade no modelo de previsão, sua propensão a erros acumulativos pode ser um obstáculo significativo. Por outro lado, a estratégia direta, embora evite a acumulação de erros de previsão, pode exigir mais recursos computacionais devido à necessidade de ajustar um modelo para cada horizonte de previsão.
+
+Comparativos entre as estratégias têm produzido resultados contraditórios quanto à sua precisão. Além disso, é fundamental considerar o custo computacional ao escolher a abordagem de previsão mais adequada. A escolha entre as estratégias pode depender do contexto específico, com a estratégia recursiva sendo preferível em situações onde os recursos computacionais são limitados, enquanto a estratégia direta pode ser mais apropriada para séries temporais mais longas ou quando se busca uma minimização de viés.
+A equação de previsão recursiva pode ser expressa como:
+
+
+\begin{equation}
+	\hat{y}_{t+h}= \begin{cases}f\left[y_t, y_{t-1}, \ldots, y_{t-n_y+1}\right] & \text { se } h=1 \\ f\left[\hat{y}_{t+h-1}, \ldots, \hat{y}_{t+1}, y_t, \ldots, y_{t+h-n_y}\right] & \text { se } h \in\left[2, \ldots, n_y\right] \\ f\left[\hat{y}_{t+h-1}, \ldots, \hat{y}_{t+h-n_y}\right] & \text { se } h \in\left[n_y+1, \ldots, H\right]\end{cases} \label{eq:re}
+\end{equation}
+
+\noindent onde $\hat{y}{t+h}$ é o valor previsto no tempo $t$ e horizonte de previsão até $h, y{t+h-n_y}$ e $\hat{y}_{t+h-n_y}$ são os casos observados e previstos anteriormente com defasagens em $n_y=1, \ldots, n$. Quando variáveis exógenas relacionadas à variável de entrada são adotadas, um vetor $\boldsymbol{x}$ de variáveis exógenas deve ser considerado e incorporado na equação \eqref{eq:re}, com defasagens de acordo com o horizonte de previsão desejado.
+
+Quanto à estratégia recursiva, a fraqueza está relacionada aos erros acumulativos conforme a expansão do horizonte de previsão. Além disso, é possível observar que para o $h$-ésimo horizonte de previsão, existem $n_y-(h-1)$ valores observados, e $h-1$ valores previstos são usados como entradas no caso de $h-1<n_y$. Caso contrário, o conjunto de entradas é composto apenas pelos valores previstos, reduzindo a precisão da previsão. A Figura 6 ilustra a estratégia recursiva quando quatro defasagens são usadas como entradas do modelo no horizonte de previsão de 3 passos à frente.
+
+
+
  
  \subsection{Modelos Cl\'assicos de S\'eries Temporais}\label{subsec:arima}
 
@@ -61,7 +79,7 @@ O modelo ARMA é uma combinação dos modelos AR  e MA, onde o modelo AR é adic
  	d_t=c+\sum_{n=1}^p \alpha_n d_{t-n}+\sum_{n=1}^q \theta_n \epsilon_{t-n}+\sum_{n=1}^r \beta_n x_{n_t}+\sum_{n=1}^P \phi_n d_{t-s n}+\sum_{n=1}^Q \eta_n \epsilon_{t-s n}+\epsilon_t \label{eq:sarmax}
  \end{eqnarray}
  
- \noindent, onde $p$ representa a ordem de autorregressão da tendência na \textit{AutoCorrelation Function} (ACF), sendo o número de termos autorregressivos (parte AR) que incorporam o efeito de valores passados no modelo. $d$ é a diferença de tendência, indicando o número de diferenças não sazonais necessárias para atingir estacionariedade, e $q$ é a ordem da média móvel da tendência na \textit{Partial AutoCorrelation Function} (PCAF). Todas essas considerações são válidas somente se a série temporal for estacionária, é o número de erros de previsão defasados na equação de previsão (parte MA). Enquanto os elementos sazonais em SARIMAX são, P é a ordem autorregressiva sazonal, D é a Ordem das diferenças sazonais,
+ \noindent onde $p$ representa a ordem de autorregressão da tendência na \textit{AutoCorrelation Function} (ACF), sendo o número de termos autorregressivos (parte AR) que incorporam o efeito de valores passados no modelo. $d$ é a diferença de tendência, indicando o número de diferenças não sazonais necessárias para atingir estacionariedade, e $q$ é a ordem da média móvel da tendência na \textit{Partial AutoCorrelation Function} (PCAF). Todas essas considerações são válidas somente se a série temporal for estacionária, é o número de erros de previsão defasados na equação de previsão (parte MA). Enquanto os elementos sazonais em SARIMAX são, P é a ordem autorregressiva sazonal, D é a Ordem das diferenças sazonais,
  M é o número de etapas de tempo para um único período sazonal, M é igual à defasagem ACF com o valor mais alto (normalmente em uma defasagem alta). $D=1$ se a série tiver um padrão sazonal estável ao longo do tempo, $D=0$ se a série tiver um padrão sazonal instável ao longo do tempo, $P\geq1$ se a PCAF for positiva na defasagem M, senão $P=0$, $Q\geq1$ se a ACF for negativa na defasagem M, caso contrário $Q=0$, e $X$ é a variável exógena. Na Figura \ref{fig:sarimaxmap} é mostrado detalhes do modelo SARIMAX.
  
 
@@ -74,36 +92,7 @@ O modelo ARMA é uma combinação dos modelos AR  e MA, onde o modelo AR é adic
  	
  \end{figure}
  
-  \subsection{Autocorrela\c c\~ao e Autocorrela\c c\~ao Parcial}
- 
-A representação gráfica da Função de Autocorrelação (ACF) e da Função de Autocorrelação Parcial (PACF) é uma ferramenta essencial na análise de séries temporais, especialmente ao trabalhar com modelos ARIMA. Ela é expressa da seguinte forma:
 
-\begin{eqnarray}
-	 R_k &=& \frac{\gamma_k}{\gamma_0} \\ 
-	 \phi_{kk} &=& \frac{\gamma_{kk} - \sum_{j=1}^{k-1} \phi_{k-1,j} \gamma_{k-j,k}}{\gamma_{0,k}}
-\end{eqnarray}
-
-\noindent onde $ R_k $ é a autocorrelação de ordem $ k $, $ \gamma_k $ é a função de autocovariância de ordem $ k $, $ \phi_{kk} $ é a autocorrelação parcial de ordem $ k $, $ \gamma_{kk} $ é a autocovariância de ordem $ k $, $ \gamma_{0,k} $ é a variância amostral no tempo $ k $, e $ \phi_{k-1,j} $ é a autocorrelação parcial de ordem $ j $ na equação da PACF.
- 
- O ACF é uma medida estatística utilizada para identificar a presença de correlação serial em uma série temporal. Ele calcula a autocorrelação entre os valores da série em diferentes defasagens, ou seja, a correlação entre os valores atuais e os valores passados da série. O ACF é útil para analisar a dependência temporal dos dados e identificar padrões de sazonalidade, tendência ou outros efeitos temporais. Por meio do ACF, é possível avaliar se a série exibe autocorrelação significativa em defasagens específicas, o que pode indicar a presença de não estacionariedade ou estrutura temporal que precisa ser considerada na análise ou modelagem da série temporal.
- 
- Enquanto o ACF mede a correlação total em um determinado lag, o PACF mede a correlação apenas entre a observação atual e uma observação em um lag específico, controlando os efeitos das observações intermediárias. O gráfico PACF é especialmente útil para identificar a ordem do componente autorregressivo (AR) no modelo ARIMA. Ele ajuda a identificar os lags que têm uma influência direta na observação atual, sem a interferência de outros lags. Ao usar esses gráficos em conjunto, os analistas de séries temporais podem identificar a ordem adequada do modelo ARIMA. 
- 
- A ordem do ARIMA é denotada como ($p, d, q$), onde p é a ordem do componente AR, d é a ordem de diferenciação, que representa o número de vezes que a série temporal é diferenciada para torná-la estacionária, e q é a ordem do componente de MA. Os pontos nos gráficos ACF e PACF que ultrapassam as bandas de confiança indicam lags significativos. Analisando esses gráficos, pode fazer escolhas sobre os valores de $p$, $d$, e $q$ ao ajustar um modelo ARIMA à série temporal em questão. 
- 
-% Na Figura \ref{fig:acfa}, pode-se observar a diferença entre ACF exibida na Figura \ref{fig:acfa} e PACF exibida na Figura \ref{fig:pacf}. A autocorrelação é uma medida da correlação entre os valores da série temporal em diferentes defasagens, levando em consideração tanto a correlação direta quanto a correlação indireta. Por outro lado, a autocorrelação parcial mede apenas a correlação direta entre os valores, desconsiderando a influência das defasagens intermediárias. Essas análises são úteis para identificar padrões e relações de dependência entre os valores da série temporal, fornecendo informações importantes para a modelagem e previsão desses dados. O intervalo de confiança padrão de $95\%$ é representado pela faixa azul nas Figuras \ref{fig:acfa} e \ref{fig:pacf}. As observações que estão fora desse intervalo são consideradas estatisticamente correlacionadas, indicando a presença de padrões ou estrutura na série temporal.
-% 
-%
-% 
-% \begin{figure}[!htb]
-% 	\centering
-% 	\caption{Autocorrelação.}\label{fig:acfa}	\includegraphics[width=0.6\linewidth]{Resultados/Figuras/acf} 
-% \end{figure}
-% 
-% \begin{figure}[!htb]
-% 	\centering
-% 	\caption{Autocorrelação parcial.}\label{fig:pacf}	\includegraphics[width=0.6\linewidth]{Resultados/Figuras/pacf}
-% \end{figure}
  
  \subsection{Modelos de Aprendizado de M\'aquina}\label{subsec:reg}
  
@@ -165,14 +154,14 @@ A regressão linear é classificada como um modelo de aprendizado de máquina su
 
 Cada nó na árvore representa uma decisão ou teste sobre um atributo, e cada ramo representa um possível resultado dessa decisão. Considerando a Figura \ref{fig:decison} como exemplo, a estrutura da árvore pode ser representada matematicamente da seguinte forma:
  
- $$ F(x) = \begin{cases} 
+ $$ F_{\text{DT}}(x) = \begin{cases} 
  	f_1(x) & \text{se } x \text{ pertence à região do Nó 1} \\
  	f_2(x) & \text{se } x \text{ pertence à região do Nó 2} \\
  	\vdots \\
  	f_k(x) & \text{se } x \text{ pertence à região do Nó } k 
  \end{cases} $$
  
-\noindent onde, $ F(x) $ é a função de previsão do modelo de Árvore de Decisão para a instância $ x $, $ k $ representa o número total de folhas na árvore, $ f_i(x) $ é a previsão associada à $ i $-ésima folha, determinada pela sequência de testes nos nós da árvore.
+\noindent onde, $ F_{\text{DT}}(x) $ é a função de previsão do modelo de Árvore de Decisão para a instância $ x $, $ k $ representa o número total de folhas na árvore, $ f_i(x) $ é a previsão associada à $ i $-ésima folha, determinada pela sequência de testes nos nós da árvore.
 
 Cada teste nos nós da árvore compara um atributo específico de $ x $ com um valor de corte, decidindo qual ramo da árvore seguir com base no resultado. Este processo continua até que $ x $ chegue a uma folha, e a previsão associada a essa folha é atribuída a $ F(x) $. Vale destacar que a robustez da árvore de decisão permite otimizar os parâmetros para lidar com horizontes de tempo mais longos, sendo uma alternativa mais flexível em comparação com modelos de regressão linear.
  
@@ -196,10 +185,10 @@ Dois modelos de previsão amplamente reconhecidos para criar conjuntos são \tex
  
 A opção pelo modelo RF em detrimento do modelo árvore de decisão é motivada por várias vantagens em termos de desempenho, robustez e generalização. Ele se destaca por apresentar uma redução significativa do \textit{overfitting}, garantindo uma abordagem mais estável e resistente a variações nos dados. Além disso, a capacidade do RF de lidar com um grande número de características e determinar a importância relativa de cada uma contribui para uma melhor compreensão e interpretação do conjunto de dados. Essas características fazem do RF uma escolha valiosa em contextos onde é crucial alcançar resultados mais precisos e gerais.
 
-Seja $ F(x) $ a função de previsão da Floresta Aleatória para a instância $ x $, e $ T_i(x) $ a previsão da $ i $--ésima árvore na floresta. Então, a previsão final da Floresta Aleatória é dada por:
+Seja $ F_{\text{RF}}(x) $ a função de previsão da Floresta Aleatória para a instância $ x $, e $ T_i(x) $ a previsão da $ i $--ésima árvore na floresta. Então, a previsão final da Floresta Aleatória é dada por:
 
 \begin{eqnarray}
-	F(x) &=& \frac{1}{N} \sum_{i=1}^{N} T_i(x) 
+	F_{\text{RF}}(x) &=& \frac{1}{N} \sum_{i=1}^{N} T_i(x) 
 \end{eqnarray}
 
 \noindent onde, $ N $ é o número total de árvores na floresta. Cada árvore $ T_i(x) $ é construída com uma amostra aleatória do conjunto de dados original, garantindo a diversidade e robustez do modelo. A previsão de cada árvore é combinada através da média, proporcionando uma abordagem de conjunto para melhorar a precisão e generalização do modelo.
@@ -219,11 +208,11 @@ A Figura \ref{fig:xgboos} apresenta uma visão esquemática do modelo XGBoost. �
  
 
  \begin{eqnarray}
- 	 F(x) &=& \sum_{i=1}^{T} f_t(x) \label{eq:xgboost}
+ 	 G(x) &=& \sum_{i=1}^{T} f_t(x) \label{eq:xgboost}
  \end{eqnarray}
 
  
-\noindent na equação \eqref{eq:xgboost}, $F(x)$ é a função de previsão final do modelo,  $T$ é o número total de árvores de decisão no modelo, $f_t(x)$  representa a saída da árvore de decisão $ t $ para a instância $ x $.
+\noindent na equação \eqref{eq:xgboost}, $G(x)$ é a função de previsão final do modelo,  $T$ é o número total de árvores de decisão no modelo, $f_t(x)$  representa a saída da árvore de decisão $ t $ para a instância $ x $.
  
  O processo de treinamento do XGBoost envolve a minimização de uma função de perda regularizada, que incorpora termos para penalizar a complexidade do modelo e reduzir o \textit{overfitting}. Isso é feito através de um processo iterativo, onde novas árvores são adicionadas ao modelo, e a cada iteração, a função de perda é otimizada. A diversidade entre as árvores é garantida pela atribuição de pesos diferentes a cada uma, considerando seus erros residuais.
  
@@ -455,9 +444,95 @@ A largura e a altura desses mapas são definidas pelo tamanho do \textit{kernel}
  $F$ é a altura ou largura do \textit{kernel} de convolução,
  $S$ é o tamanho do \textit{stride}.
  
- \subsection{Medidas de Desempenho}\label{subsec:metrica}
+ \subsection{Abordagem de Otimiza\c c\~ao}
  
-As métricas estatísticas são utilizadas na análise de previsão de séries temporais para avaliar se o modelo preditor possui um desempenho adequado e/ou superior. Quanto menor for o erro da maioria das métricas, melhor será o desempenho do modelo aplicado.
+ A utilização do \textit{Tree-structured Parzen Estimator} (TPE) na otimização de hiperparâmetros é crucial para melhorar o desempenho dos modelos. Integrado à biblioteca Optuna do Python, ele desempenha um papel vital ao guiar a busca eficiente por conjuntos ideais de hiperparâmetros durante a otimização automática \cite{tpe}.
+ 
+ Ao dividir o espaço de busca, o TPE destaca-se ao identificar áreas promissoras para exploração, direcionando a análise de maneira inteligente e eficiente. Essa capacidade de focar em regiões promissoras contribui significativamente para a melhoria do desempenho do modelo.
+ 
+ No contexto da demanda d'água, a otimização de modelos é essencial para prever e gerenciar eficientemente o consumo d'água. A correlação aqui reside na importância de ajustar os hiperparâmetros do modelo para otimizar sua precisão na previsão da demanda d'água. O TPE, ao guiar a busca por configurações ideais, contribui para modelos mais precisos e adaptáveis \cite{tpe}.
+ 
+ A equação fundamental do TPE, ao maximizar a probabilidade de melhoria, reflete o compromisso em encontrar conjuntos ótimos de hiperparâmetros. Essa abordagem probabilística, aplicada à otimização, permite ajustes dinâmicos ao longo do tempo, garantindo que o modelo se adapte às mudanças nas demandas da previsão d'água.
+ 
+ \begin{equation}
+ 	P(x \mid y) = \begin{cases} 
+ 	p(x), & \text{se } y > y^* \\
+ 	q(x), & \text{se } y \leq y^*
+ \end{cases} 
+ \end{equation}
+ 
+ \noindent onde $ x $ representa um conjunto de hiperparâmetros, $ y $ é o valor da função objetivo associado a esses hiperparâmetros, $ y^* $ é o valor de referência para a melhoria, $ p(x) $ é a probabilidade de $ x $ ser um conjunto bom de hiperparâmetros, $ q(x) $ é a probabilidade de $ x $ ser um conjunto ruim de hiperparâmetros.
+ 
+ Assim, ao considerar a otimização de hiperparâmetros com o TPE, não apenas aprimoramos a eficiência dos modelos, mas também fortalecemos sua capacidade de contribuir para soluções mais precisas e adaptáveis em domínios cruciais, como o gerenciamento da demanda d'água.
+ 
+ \subsection{Decomposi\c c\~ao STL}
+ 
+ A decomposição STL é uma técnica amplamente utilizada para decompor séries temporais em seus componentes sazonais, de tendência e restantes \cite{RIBEIRO2023112982}. O método STL realiza a decomposição aditiva dos dados por meio de uma sequência de aplicações do Loess mais suave, onde regressões polinomiais ponderadas localmente são aplicadas em cada amostra do conjunto de dados, tendo como variáveis explicativas os valores próximos do amostra cuja resposta está sendo estimada \cite{Theodosiou20111178}.
+ 
+ Ao aplicar a decomposição STL, a série temporal pode ser expressa como a soma dos componentes sazonais, de tendência e restantes. Essa técnica se revela valiosa para análise e modelagem de séries temporais, fornecendo uma compreensão clara dos padrões de variação presentes nos dados. Este método prepara o terreno para uma abordagem mais refinada na aplicação de modelos, permitindo uma interpretação mais precisa e uma melhor adaptação aos padrões intrínsecos dos dados ao utilizar o ARIMA ou SARIMA em sua análise \cite{RIBEIRO2023112982}.
+ 
+ A decomposição STL é formalmente definida como:
+ 
+ \begin{eqnarray}
+ 	s_t=f\left(S_t, T_t, R_t\right)&=&\left\{\begin{array}{l}
+ 		y_t=S_t+T_t+R_t \quad \text { modelo aditivo } \\
+ 		y_t=S_t T_t R_t \quad \text { modelo multiplicativo }
+ 	\end{array}\right. \label{eq:stl}
+ \end{eqnarray}
+ 
+ \noindent onde $s_t$ é o valor da série temporal no tempo $t$, $T_t$ é a componente de tendência no tempo $t$, $S_t$ é a componente de sazonalidade no tempo $t$, $R_t$ é a componente de resíduo no tempo $t$.
+ 
+ \subsection{Abordagens de Correla\c c\~oes}
+ 
+ A correlação é uma medida estatística que descreve a relação entre duas variáveis. Ela indica o grau e a direção da associação entre essas variáveis. Quando duas variáveis estão correlacionadas, significa que elas variam juntas de alguma maneira específica. A correlação pode ser positiva, quando as variáveis aumentam ou diminuem juntas, ou negativa, quando uma variável aumenta enquanto a outra diminui. Por exemplo, se houver uma correlação positiva entre o número de horas de estudo e as notas em um exame, isso significa que, em geral, quanto mais uma pessoa estuda, mais alta é sua nota. A correlação pode ser quantificada através de coeficientes de correlação.
+ 
+ \subsubsection{Autocorrela\c c\~ao e Autocorrela\c c\~ao Parcial}
+ 
+ A representação gráfica da Função de Autocorrelação (ACF) e da Função de Autocorrelação Parcial (PACF) é uma ferramenta essencial na análise de séries temporais, especialmente ao trabalhar com modelos ARIMA. Ela é expressa da seguinte forma:
+ 
+ \begin{eqnarray}
+ 	R_k &=& \frac{\gamma_k}{\gamma_0} \\ 
+ 	\phi_{kk} &=& \frac{\gamma_{kk} - \sum_{j=1}^{k-1} \phi_{k-1,j} \gamma_{k-j,k}}{\gamma_{0,k}}
+ \end{eqnarray}
+ 
+ \noindent onde $ R_k $ é a autocorrelação de ordem $ k $, $ \gamma_k $ é a função de autocovariância de ordem $ k $, $ \phi_{kk} $ é a autocorrelação parcial de ordem $ k $, $ \gamma_{kk} $ é a autocovariância de ordem $ k $, $ \gamma_{0,k} $ é a variância amostral no tempo $ k $, e $ \phi_{k-1,j} $ é a autocorrelação parcial de ordem $ j $ na equação da PACF.
+ 
+ O ACF é uma medida estatística utilizada para identificar a presença de correlação serial em uma série temporal. Ele calcula a autocorrelação entre os valores da série em diferentes defasagens, ou seja, a correlação entre os valores atuais e os valores passados da série. O ACF é útil para analisar a dependência temporal dos dados e identificar padrões de sazonalidade, tendência ou outros efeitos temporais. Por meio do ACF, é possível avaliar se a série exibe autocorrelação significativa em defasagens específicas, o que pode indicar a presença de não estacionariedade ou estrutura temporal que precisa ser considerada na análise ou modelagem da série temporal.
+ 
+ Enquanto o ACF mede a correlação total em um determinado lag, o PACF mede a correlação apenas entre a observação atual e uma observação em um lag específico, controlando os efeitos das observações intermediárias. O gráfico PACF é especialmente útil para identificar a ordem do componente autorregressivo (AR) no modelo ARIMA. Ele ajuda a identificar os lags que têm uma influência direta na observação atual, sem a interferência de outros lags. Ao usar esses gráficos em conjunto, os analistas de séries temporais podem identificar a ordem adequada do modelo ARIMA. 
+ 
+ A ordem do ARIMA é denotada como ($p, d, q$), onde p é a ordem do componente AR, d é a ordem de diferenciação, que representa o número de vezes que a série temporal é diferenciada para torná-la estacionária, e q é a ordem do componente de MA. Os pontos nos gráficos ACF e PACF que ultrapassam as bandas de confiança indicam lags significativos. Analisando esses gráficos, pode fazer escolhas sobre os valores de $p$, $d$, e $q$ ao ajustar um modelo ARIMA à série temporal em questão. 
+ 
+ \subsubsection{Correla\c c\~ao de Pearson}
+ 
+ A correlação de Pearson é uma medida estatística que avalia a relação linear entre duas variáveis. No contexto de séries temporais, a correlação de Pearson pode ser útil para entender se existe uma relação linear entre duas séries temporais, ou entre diferentes variáveis de uma mesma série temporal \cite{CESARDELIMANOGUEIRA2023128066}. No entanto, é importante ter em mente algumas considerações ao aplicar a correlação de Pearson a séries temporais: 
+ 
+ ($i$) a correlação de Pearson é sensível a tendências e sazonalidades nas séries temporais. Se houver uma tendência ou sazonalidade em ambas as séries, a correlação pode indicar uma relação mesmo que a relação real seja mais complexa. 
+ 
+ ($ii$) a correlação de Pearson pressupõe uma relação linear entre as variáveis. Se a relação entre as séries temporais for não linear, a correlação de Pearson pode não capturar essa relação de maneira adequada, e 
+ 
+ ($iii$) a correlação de Pearson pode ser sensível a valores extremos (\textit{outliers}) \cite{DOSSANTOSCOELHO2024129366}. Valores extremos podem distorcer a medida de correlação, tornando-a menos representativa da relação geral entre as séries.
+ 
+ Ao usar a correlação de Pearson para análise de séries temporais, é importante interpretar os resultados com cautela e considerar outros métodos estatísticos e gráficos para uma compreensão mais completa da relação entre as séries. A equação do coeficiente de correlação de Pearson é dada por:
+ 
+ \begin{equation}
+ 	r=\frac{\sum\left(x_i-\bar{x}\right)\left(y_i-\bar{y}\right)}{\sqrt{\left(\sum\left(x_i-\bar{x}\right)^2\right)\left(\sum\left(y_i-\bar{y}\right)^2\right)}}
+ \end{equation}
+ 
+ \noindent onde $x_i$ e $y_i$ representam os valores das variáveis $X$ e $Y$, respectivamente. $\bar{x}$ e $\bar{y}$ são as médias dos valores $x_i$ e $y_i$. 
+ 
+ O coeficiente de correlação de Pearson mede a força e a direção da relação linear entre as variáveis $X$ e $Y$. Valores próximos a 1 indicam uma correlação positiva forte, valores próximos a $-1$ indicam uma correlação negativa forte, e valores próximos a $0$ indicam  ausência de correlação entre as variáveis.
+ 
+ As métricas estatísticas são utilizadas na análise de previsão de séries temporais para avaliar se o modelo preditor possui um desempenho adequado e/ou superior. Quanto menor for o erro da maioria das métricas, melhor será o desempenho do modelo aplicado.
+
+ 
+ \subsection{Medidas de Desempenho}\label{subsec:metrica}
+
+Medidas de desempenho são métricas quantitativas utilizadas para avaliar a qualidade ou eficácia de um modelo, algoritmo, sistema ou processo em relação a um determinado objetivo ou critério. Elas fornecem uma maneira de quantificar o quão bem uma determinada entidade realiza uma tarefa específica, seja ela prever valores futuros, classificar dados, otimizar processos ou tomar decisões.
+
+
+
+
  
 A Raiz do Erro Médio Quadrático Relativo (RRMSE) é uma variante do erro quadrático médio (RMSE) sendo calculado por,
  
@@ -470,6 +545,7 @@ A Raiz do Erro Médio Quadrático Relativo (RRMSE) é uma variante do erro quadr
  $\hat{y}_i$ valor previsto ou estimado da observação $i$ pelo modelo,
  $\sum_{i=1}^{n}$ soma sobre todas as observações no conjunto de dados.
  
+
 O Erro Absoluto Médio (MAE) é utilizado como uma métrica para avaliar o desempenho de modelos de previsão. Em vez de calcular a média das diferenças entre os valores reais e previstos, o MAE calcula a média dos valores absolutos dessas diferenças, garantindo que os erros positivos e negativos não se anulem, calculada por,
  
  \begin{eqnarray}
@@ -478,55 +554,31 @@ O Erro Absoluto Médio (MAE) é utilizado como uma métrica para avaliar o desem
  
  \noindent sua interpretação é similar ao RRMSE, em que o erro é expresso na mesma escala ou ordem de grandeza da variável estudada.
  
-O Erro Percentual Absoluto Médio Simétrico (sMAPE) é outra métrica comumente utilizada para avaliar a precisão de modelos de previsão. O sMAPE é expresso como uma porcentagem, facilitando a compreensão da precisão relativa do modelo. O sMAPE é adequado para trabalhar com valores nulos nos dados, pois a divisão por zero é evitada no cálculo da métrica. O sMAPE é sensível a valores extremos nos dados. Se houver valores discrepantes que não representem a tendência geral, eles podem influenciar significativamente a métrica. Seu cálculo é dado por,
+
+ 
+O Erro Percentual Absoluto Médio Simétrico (SMAPE) é outra métrica comumente utilizada para avaliar a precisão de modelos de previsão. O SMAPE é expresso como uma porcentagem, facilitando a compreensão da precisão relativa do modelo. O SMAPE é adequado para trabalhar com valores nulos nos dados, pois a divisão por zero é evitada no cálculo da métrica. O SMAPE é sensível a valores extremos nos dados. Se houver valores discrepantes que não representem a tendência geral, eles podem influenciar significativamente a métrica. Seu cálculo é dado por,
   
  \begin{eqnarray}
- 	sMAPE &=& \dfrac{1}{n} \sum_{i=1}^{n} \dfrac{2|y_i - \hat{y}_i|}{(|y_i| + |\hat{y}_i|)} \times 100\label{eq:smape}
+ 	SMAPE &=& \dfrac{1}{n} \sum_{i=1}^{n} \dfrac{2|y_i - \hat{y}_i|}{(|y_i| + |\hat{y}_i|)} \times 100\label{eq:smape}
  \end{eqnarray}
  
 
-\subsection{Correla\c c\~ao de Pearson}
+\subsection{Testes de Hip\'oteses}
 
-A correlação de Pearson é uma medida estatística que avalia a relação linear entre duas variáveis. No contexto de séries temporais, a correlação de Pearson pode ser útil para entender se existe uma relação linear entre duas séries temporais, ou entre diferentes variáveis de uma mesma sérite temporal \cite{CESARDELIMANOGUEIRA2023128066}. No entanto, é importante ter em mente algumas considerações ao aplicar a correlação de Pearson a séries temporais: ($i$) a correlação de Pearson é sensível a tendências e sazonalidades nas séries temporais. Se houver uma tendência ou sazonalidade em ambas as séries, a correlação pode indicar uma relação mesmo que a relação real seja mais complexa. ($ii$) a correlação de Pearson pressupõe uma relação linear entre as variáveis. Se a relação entre as séries temporais for não linear, a correlação de Pearson pode não capturar essa relação de maneira adequada, e ($iii$) a correlação de Pearson pode ser sensível a valores extremos (\textit{outliers}) \cite{DOSSANTOSCOELHO2024129366}. Valores extremos podem distorcer a medida de correlação, tornando-a menos representativa da relação geral entre as séries.
+Um teste de hipótese é uma técnica estatística utilizada para avaliar a validade de uma afirmação sobre uma população com base em amostras de dados. Em geral, o teste de hipótese envolve a formulação de duas hipóteses: a hipótese nula ($H_0$), que geralmente afirma que não há efeito ou diferença entre as populações, e a hipótese alternativa ($H_1$), que contradiz a hipótese nula e geralmente afirma que existe um efeito ou diferença.
 
-Ao usar a correlação de Pearson para análise de séries temporais, é importante interpretar os resultados com cautela e considerar outros métodos estatísticos e gráficos para uma compreensão mais completa da relação entre as séries. A equação do coeficiente de correlação de Pearson é dada por:
- 
- \begin{equation}
- 	r=\frac{\sum\left(x_i-\bar{x}\right)\left(y_i-\bar{y}\right)}{\sqrt{\left(\sum\left(x_i-\bar{x}\right)^2\right)\left(\sum\left(y_i-\bar{y}\right)^2\right)}}
- \end{equation}
- 
- \noindent onde $x_i$ e $y_i$ representam os valores das variáveis $X$ e $Y$, respectivamente. $\bar{x}$ e $\bar{y}$ são as médias dos valores $x_i$ e $y_i$. 
- 
-O coeficiente de correlação de Pearson mede a força e a direção da relação linear entre as variáveis $X$ e $Y$. Valores próximos a 1 indicam uma correlação positiva forte, valores próximos a $-1$ indicam uma correlação negativa forte, e valores próximos a $0$ indicam  ausência de correlação entre as variáveis.
- 
-\subsection{Decomposi\c c\~ao STL}
- 
-A decomposição STL é uma técnica amplamente utilizada para decompor séries temporais em seus componentes sazonais, de tendência e restantes \cite{RIBEIRO2023112982}. O método STL realiza a decomposição aditiva dos dados por meio de uma sequência de aplicações do Loess mais suave, onde regressões polinomiais ponderadas localmente são aplicadas em cada amostra do conjunto de dados, tendo como variáveis explicativas os valores próximos do amostra cuja resposta está sendo estimada \cite{Theodosiou20111178}.
- 
-Ao aplicar a decomposição STL, a série temporal pode ser expressa como a soma dos componentes sazonais, de tendência e restantes. Essa técnica se revela valiosa para análise e modelagem de séries temporais, fornecendo uma compreensão clara dos padrões de variação presentes nos dados. Este método prepara o terreno para uma abordagem mais refinada na aplicação de modelos, permitindo uma interpretação mais precisa e uma melhor adaptação aos padrões intrínsecos dos dados ao utilizar o ARIMA ou SARIMA em sua análise \cite{RIBEIRO2023112982}.
- 
-A decomposição STL é formalmente definida como:
- 
- \begin{eqnarray}
- 	y_t=f\left(S_t, T_t, R_t\right)&=&\left\{\begin{array}{l}
- 		y_t=S_t+T_t+R_t \quad \text { modelo aditivo } \\
- 		y_t=S_t T_t R_t \quad \text { modelo multiplicativo }
- 	\end{array}\right. \label{eq:stl}
- \end{eqnarray}
-
-\noindent onde $y_t$ é o valor da série temporal no tempo $t$, $T_t$ é a componente de tendência no tempo $t$, $S_t$ é a componente de sazonalidade no tempo $t$, $R_t$ é a componente de resíduo no tempo $t$.
-
-\subsection{Teste Run}
+\subsubsection{Teste Run}
 
 O teste de Run, também conhecido como teste de sequências de \textit{Wald-Wolfowitz}, verifica se uma série de dados foi gerada aleatoriamente \cite{PAIVA}.
 
 As hipóteses são:
-$$
-\left\{\begin{array}{l}
+
+\begin{equation}
+	\left\{\begin{array}{l}
 	H_0: \text { a sequência foi gerada aleatoriamente (sem tendência) } \\
 	H_1: \text { a sequência não foi gerada aleatoriamente (possui uma tendência). }
 \end{array}\right.
-$$
+\end{equation}
 
 A estatística $T_1$ utiliza os valores acima e abaixo da mediana. Primeiramente, considera-se $N$ como o número de observações em uma série. Em seguida, esses valores são ordenados e o símbolo $A$ é atribuído quando o valor da observação é maior ou igual à mediana, $A \geq m$, e o símbolo $B$ se o valor for menor que a mediana, $B<m$.
 
@@ -554,7 +606,7 @@ Analisando o valor de $Z$, $H_0$ é rejeitada se $|Z|>Z_{\frac{a}{2}}$, sendo $\
 
 
 
-\subsection{Teste Dickey-Fuller}
+\subsubsection{Teste Dickey-Fuller}
 
 O teste Dickey-Fuller (DF) segue uma regressão linear AR de primeira ordem e testa a hipótese nula de que uma raiz unitária está presente em uma série temporal, indicando a não estacionariedade. A forma mais comum do teste Dickey-Fuller é conhecida como \textit{Augmented Dickey-Fuller} (ADF) , que inclui termos adicionais na regressão para trabalhar com possíveis problemas de autocorrelação
  \cite{Agiakloglou}. O procedimento geral do teste DF envolve as seguintes etapas:
@@ -575,7 +627,7 @@ De acordo com o \citeonline{Reisen2017115}, o teste DF é representado por,
 
 \noindent onde $\Delta y(t)$ é a diferença entre os valores consecutivos da série temporal no tempo $t$, $y(t-1)$ é o valor da série temporal no tempo anterior, $t$ é uma variável de tendência temporal, $\alpha, \beta, \gamma$ são parâmetros a serem estimados, $\delta_1, \delta_2, \ldots, \delta_p$ são os coeficientes associados às diferenças defasadas, $\varepsilon(t)$ é o termo de erro.
  
- \subsection{Teste de Ljung-Box}
+ \subsubsection{Teste de Ljung-Box}
  
 A ideia do teste de Ljung-Box é verificar se as autocorrelações dos resíduos em diferentes defasagens são estatisticamente diferentes de zero. Se a estatística de teste do Ljung-Box indicar significância estatística, isso sugere que há autocorrelações remanescentes nos resíduos, indicando que o modelo não está capturando completamente a estrutura da série temporal \cite{box}, \cite{ljung}, \cite{dav}. As etapas básicas do teste de Ljung-Box:
 
@@ -609,7 +661,7 @@ O teste de Ljung-Box é comumente usado na modelagem de média móvel integrada 
 Estudos de simulação mostraram que a distribuição para a estatística Ljung-Box é mais próxima de um $\chi^2_{(h)}$ $6$ distribuição do que é a distribuição para a estatística Box-Pierce para todos os tamanhos de amostra, incluindo os pequenos.
  
  
-\subsection{Testes de Hip\'oteses}
+\subsubsection{Testes de Friedman e Nemenyi}
  
 O teste de Friedman classifica os modelos $K$ em cada conjunto de dados em relação ao valor absoluto dos resultados dados por esses algoritmos. A classificação do algoritmo com maior desempenho é $1$ , e o com menor desempenho é classificado como $\mathrm{K}$. Em seguida, o valor da estatística com base em todas as classificações é calculado como mostrado em equações \eqref{ff} e \eqref{fx} com $r_{e u}^j$ sendo a classificação do desempenho do $j$-ésimo algoritmo no $i$-ésimo conjunto de dados. Essa estatística obedece à distribuição do qui-quadrado com $\mathrm{K}-1$ graus de liberdade \cite{Liu2022}.
  
@@ -631,21 +683,4 @@ Adicionalmente, foi empregada a \textit{Critical Difference} (CD) para avaliar s
 \noindent Na equação do CD, $q_\alpha$ representa o valor crítico obtido das Tabelas \ref{tb:nemenyi} a \ref{tb:nemenyi2} de teste de Nemenyi, $k$ é o número de regressores, e $N$ é o número total de amostras \cite{Liu2022}.
  
  
- \subsection{Otimiza\c c\~ao}
  
-A utilização do \textit{Tree-structured Parzen Estimator} (TPE) na otimização de hiperparâmetros é crucial para melhorar o desempenho dos modelos. Integrado à biblioteca Optuna, ele desempenha um papel vital ao guiar a busca eficiente por conjuntos ideais de hiperparâmetros durante a otimização automática \cite{tpe}.
-
-Ao dividir o espaço de busca, o TPE destaca-se ao identificar áreas promissoras para exploração, direcionando a análise de maneira inteligente e eficiente. Essa capacidade de focar em regiões promissoras contribui significativamente para a melhoria do desempenho do modelo.
-
-No contexto da demanda d'água, a otimização de modelos é essencial para prever e gerenciar eficientemente o consumo d'água. A correlação aqui reside na importância de ajustar os hiperparâmetros do modelo para otimizar sua precisão na previsão da demanda d'água. O TPE, ao guiar a busca por configurações ideais, contribui para modelos mais precisos e adaptáveis \cite{tpe}.
-
-A equação fundamental do TPE, ao maximizar a probabilidade de melhoria, reflete o compromisso em encontrar conjuntos ótimos de hiperparâmetros. Essa abordagem probabilística, aplicada à otimização, permite ajustes dinâmicos ao longo do tempo, garantindo que o modelo se adapte às mudanças nas demandas da previsão d'água.
-
-$$ P(x \mid y) = \begin{cases} 
-	p(x), & \text{se } y > y^* \\
-	q(x), & \text{se } y \leq y^*
-\end{cases} $$
-
-\noindent onde $ x $ representa um conjunto de hiperparâmetros, $ y $ é o valor da função objetivo associado a esses hiperparâmetros, $ y^* $ é o valor de referência para a melhoria, $ p(x) $ é a probabilidade de $ x $ ser um conjunto bom de hiperparâmetros, $ q(x) $ é a probabilidade de $ x $ ser um conjunto ruim de hiperparâmetros.
-
-Assim, ao considerar a otimização de hiperparâmetros com o TPE, não apenas aprimoramos a eficiência dos modelos, mas também fortalecemos sua capacidade de contribuir para soluções mais precisas e adaptáveis em domínios cruciais, como o gerenciamento da demanda d'água.

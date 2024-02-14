@@ -2,11 +2,10 @@
 
 Este capítulo apresenta uma revisão sistemática  da literatura (RSL) nos temas relacionados a previsão de séries temporais e aplicações em hidrologia e mais especificamente em abastecimento d'água. A revisão bibliográfica realizada consiste em uma análise abrangente e crítica das principais fontes de literatura. As informações extraídas da literatura são fundamentais para embasar a fundamentação teórica, a metodologia e a análise dos resultados deste estudo.
 
-%Esta RSL aborda palavras chave como séries temporais, previsão, análise de séries temporais, abastecimento d'água, e saneamento, que são palavras relevantes para esta pesquisa. 
 
-A seleção das referências foi baseada em critérios específicos tais como. Definição das bases de busca, escolha das \textit{keywords}, seleção do período de busca ($2016$ a $2024$), seleção do tipo de artigo, organização pela ordem de citações, verificação dos periódicos mais importantes (fator Q1 do Scimago e Fator de Impacto (F.I.)). Se um periódico pertencer ao quartil Q1 do Scimago significa que tem um desempenho melhor do que pelo menos $75$\% das revistas dessa mesma categoria. Embora nem todas as referências obtidas tenham uma relação evidente ou mesmo acentuada com a área de aprendizado de máquina, elas contribuem como material de suporte a implementação de alguns modelos avaliados para previsão nesta dissertação e podem servir como base para outros estudos.
+A seleção das referências foi baseada em critérios específicos tais como. Definição das bases de busca, escolha das \textit{keywords}, seleção do período de busca ($2016$ a $2024$), seleção do tipo de artigo, organização pela ordem de citações, verificação dos periódicos mais importantes (fator Q1 do Scimago e Fator de Impacto (FI)). Se um periódico pertencer ao quartil Q1 do Scimago significa que tem um desempenho melhor do que pelo menos $75$\% das revistas dessa mesma categoria. Embora nem todas as referências obtidas tenham uma relação evidente ou mesmo acentuada com a área de aprendizado de máquina, elas contribuem como material de suporte a implementação de alguns modelos avaliados para previsão nesta dissertação e podem servir como base para outros estudos.
 
-A Figura \ref{fig:serie-temporal} apresenta um fluxograma de como a pesquisa foi realizada, destacando a importância da escolha dos periódicos Q1 e com maior fator de impacto, como base para esta RSL. A mesma figura apresenta uma adaptação da metodologia proposta por \citeonline{MARTINS201671} para a realização da RSL, onde primeiramente foram realizadas buscas na base Scopus e WoS (\textit{Web of Science}), selecionando referências relevantes para o tema da pesquisa. Para as duas bases de busca utilizadas foram usadas as palavras-chave ``\textit{time series forecasting}'', ``\textit{time series analysis}'', ``\textit{sanitation}'' e ``\textit{water supply}'' .
+A Figura \ref{fig:serie-temporal} apresenta um fluxograma de como a pesquisa foi realizada, destacando a importância da escolha dos periódicos Q1 e com maior fator de impacto, como base para esta RSL. A mesma figura apresenta uma adaptação da metodologia proposta por \citeonline{MARTINS201671} para a realização da RSL, onde primeiramente foram realizadas buscas na base Scopus e \textit{Web of Science} (WoS), selecionando referências relevantes para o tema da pesquisa. Para as duas bases de busca utilizadas foram usadas as palavras-chave ``\textit{time series forecasting}'', ``\textit{time series analysis}'', ``\textit{sanitation}'' e ``\textit{water supply}'' .
 
 \begin{figure}[!htb]
 	\centering
@@ -31,13 +30,12 @@ Na etapa seguinte, foi realizada uma avaliação preliminar de cada artigo obtid
 	\item Filtro Anual: de $2016$ a $2024$.
 	\item Duplicatas: Artigos duplicados serão removidos durante o processo de revisão.
 	\item Número Elevado de Artigos: Diante da quantidade significativa de artigos encontrados, optou-se por realizar uma análise preliminar sem a aplicação de filtros anuais para otimizar o processo de busca. Na base de dados Scopus, por exemplo, existiam $831$ artigos, enquanto na base de dados WoS, foram encontrados 98 artigos, totalizando $929$ artigos.
-	\item Outras Restrições: Nenhuma restrição adicional foi aplicada nessa etapa, mantendo a avaliação inicial ampla para facilitar a tomada de decisões subsequentes.
 \end{enumerate}
 
 
-Levando em consideração a diferença entre essa estimativa apresentada na Tabela \ref{tab:resumo} e a quantidade de artigos restantes após a remoção de duplicatas, tem-se menos de 929 artigos para análise. É válido lembrar que, ao remover as duplicatas, o número diminuiu ainda mais, chegando a 906 artigos.
+Levando em consideração a diferença entre essa estimativa apresentada na Tabela \ref{tab:resumo} e a quantidade de artigos restantes após a remoção de duplicatas, tem-se menos de $929$ artigos para análise. É válido lembrar que, ao remover as duplicatas, o número diminuiu ainda mais, chegando a 906 artigos.
 
-Na etapa final, foi realizada uma análise dos conteúdos dos artigos selecionados, levando em consideração as áreas de especialização. Como esta revisão está inserida no contexto de um programa de mestrado em Engenharia de Produção e Sistemas, vale a pena analisar a relação dos artigos obtidos com áreas afins como Matemática. Assim, as áreas mais relevantes para a pesquisa foram Informática, Engenharia e Matemática, representando 50\% das publicações. 
+Na etapa final, foi realizada uma análise dos conteúdos dos artigos selecionados, levando em consideração as áreas de especialização. Como esta revisão está inserida no contexto de um programa de mestrado em Engenharia de Produção e Sistemas, vale a pena analisar a relação dos artigos obtidos com áreas afins como Matemática. Assim, as áreas mais relevantes para a pesquisa foram Informática, Engenharia e Matemática, representando $50\%$ das publicações. 
 
 São apresentados os resultados da RSL, utilizando um \textit{software} VOSviewer de cada base de dados utilizada no trabalho. 
 A Figura \ref{fig:scopus-09-08} mostra os modelos de previsão usados com frequência em conjunto com ``\textit{time series}'' nos artigos obtidos nas bases de dados Scopus e WoS. 
@@ -141,7 +139,7 @@ A porcentagem de documentos nos últimos anos  \textit{Percentage of Documents i
 	\mathrm{PDLY}&=&\dfrac{\sum_{i={Y_{\mathrm{s}}(t)}}^{Y_{\mathrm{e}}(t)} P_i}{\left(Y_{\mathrm{e}(t)}-Y_{\mathrm{s}(t)}+1\right) \cdot \mathrm{TND}} \cdot 100 \%\label{pdly}
 \end{eqnarray}
 
-\noindent onde $PDLY$ é a percentagem de documentos nos últimos anos, $Y_e(t)$ é o ano final, $Y_s$ é o ano inicial, calculado como descrito na equação \eqref{pdly}, $P_i$ é número de publicações no ano i, $TND$ é o número total de documentos.
+\noindent onde $PDLY$ é a percentagem de documentos nos últimos anos, $Y_e(t)$ é o ano final, $Y_s$ é o ano inicial, calculado como descrito na equação \eqref{pdly}, $P_i$ é número de publicações no ano $i$, $TND$ é o número total de documentos.
 
 Tabela \ref{tb:autor} descreve os principais autores obtidos na RSL descrita previamente, sobre o tema em análise. Essa abordagem visa evitar a inclusão de todos os autores e destacar aqueles que tiveram uma contribuição significativa na área. Dessa forma, é possível identificar o principal autor que se destacou, fornecendo uma visão geral da distribuição da produção científica entre os pesquisadores. Na Tabela \ref{tb:autor} são descritos os valores da taxa de crescimento médio AGR, documentos médios por ano ADY, e porcentagem de documentos nos últimos anos PDLY no período de 2021 a 2023.
 
@@ -227,57 +225,57 @@ A Tabela \ref{tb:pais} apresenta os países com maior número de artigos obtidos
 
 O artigo de \citeonline{Ursu2016} destaca a importância do modelo ARIMA na previsão e demanda d'água, porém, é pertinente questionar até que ponto esse modelo pode ser aplicado eficazmente em cenários mais complexos e dinâmicos, especialmente diante dos desafios emergentes na gestão dos recursos hídricos.
 
-\textbf{Ponto Positivo:} O modelo ARIMA é reconhecido como valioso na previsão e demanda d'água, proporcionando uma base sólida para abordar desafios relacionados à oferta hídrica.
+O modelo ARIMA é reconhecido como valioso na previsão e demanda d'água, proporcionando uma base sólida para abordar desafios relacionados à oferta hídrica.
 
-\textbf{Ponto Negativo:} A limitação do ARIMA em cenários complexos e dinâmicos pode comprometer sua eficácia em situações que exigem considerações mais abrangentes.
+A limitação do ARIMA em cenários complexos e dinâmicos pode comprometer sua eficácia em situações que exigem considerações mais abrangentes.
 
 A estratégia proposta por \citeonline{Graff2017}, ao combinar o modelo ARIMA com programação genética para otimizar o ajuste do modelo GP junto à suavização exponencial, demanda uma análise crítica. Será que a introdução de técnicas mais avançadas realmente contribui para melhorias substanciais na precisão das previsões, ou há o risco de introduzir complexidade desnecessária?
 
-\textbf{Ponto Positivo:} A combinação de ARIMA com programação genética oferece uma abordagem inovadora, potencialmente melhorando a adaptação do modelo a padrões complexos nos dados.
+A combinação de ARIMA com programação genética oferece uma abordagem inovadora, potencialmente melhorando a adaptação do modelo a padrões complexos nos dados.
 
-\textbf{Ponto Negativo:} A introdução de técnicas avançadas pode aumentar a complexidade do modelo, tornando-o menos acessível ou interpretável para usuários não especializados.
+A introdução de técnicas avançadas pode aumentar a complexidade do modelo, tornando-o menos acessível ou interpretável para usuários não especializados.
 
 As observações de \citeonline{Tyralis2017} sobre o desempenho destacado dos modelos ARMA e RF em séries temporais de curto prazo levantam questões sobre a generalização desses resultados para diferentes contextos e horizontes de previsão. É fundamental avaliar criticamente a robustez desses modelos em face de condições variáveis e demandas específicas de diferentes sistemas de abastecimento d'água.
 
-\textbf{Ponto Positivo:} Os modelos ARMA e RF demonstraram desempenho destacado em séries temporais de curto prazo, indicando sua aplicabilidade em cenários de alta volatilidade.
+Os modelos ARMA e RF demonstraram desempenho destacado em séries temporais de curto prazo, indicando sua aplicabilidade em cenários de alta volatilidade.
 
-\textbf{Ponto Negativo:} A generalização desses resultados para diferentes contextos pode ser limitada, especialmente em situações que exigem previsões de longo prazo ou considerações mais complexas.
+A generalização desses resultados para diferentes contextos pode ser limitada, especialmente em situações que exigem previsões de longo prazo ou considerações mais complexas.
 
 O método proposto, que modela ciclos não sazonais e sazonais separadamente, parece promissor. No entanto, uma análise crítica se faz necessária para avaliar se a simplificação dessa abordagem não compromete a capacidade de capturar nuances complexas nos dados de carga, especialmente em ambientes onde fatores externos podem desempenhar um papel significativo.
 
-\textbf{Ponto Positivo:} A abordagem de modelagem separada para ciclos não sazonais e sazonais oferece uma estrutura clara, permitindo a consideração específica de diferentes padrões nos dados.
+A abordagem de modelagem separada para ciclos não sazonais e sazonais oferece uma estrutura clara, permitindo a consideração específica de diferentes padrões nos dados.
 
-\textbf{Ponto Negativo:} A simplificação pode resultar na perda de informações importantes, especialmente em ambientes onde fatores externos influenciam significativamente os padrões de carga.
+A simplificação pode resultar na perda de informações importantes, especialmente em ambientes onde fatores externos influenciam significativamente os padrões de carga.
 
 Os modelos de aprendizado de máquina simples, como ANN, SVM e CART, mencionados por \citeonline{Chou2018}, oferecem uma alternativa interessante. Contudo, é preciso questionar até que ponto essas abordagens são suficientes para lidar com a complexidade inerente às séries temporais de demanda d'água. Será que a simplicidade desses modelos compromete a precisão em cenários mais desafiadores?
 
-\textbf{Ponto Positivo:} Modelos de aprendizado de máquina simples são acessíveis e eficazes para muitos casos, proporcionando uma solução prática.
+Modelos de aprendizado de máquina simples são acessíveis e eficazes para muitos casos, proporcionando uma solução prática.
 
-\textbf{Ponto Negativo:} Em cenários altamente complexos, a simplicidade desses modelos pode limitar sua capacidade de capturar padrões intricados nos dados.
+Em cenários altamente complexos, a simplicidade desses modelos pode limitar sua capacidade de capturar padrões intricados nos dados.
 
 A diversidade de modelos baseados em dados destacada por \citeonline{Ahmad2018} levanta a questão da seleção adequada para diferentes contextos. A crítica aqui se concentra em entender se a escolha do modelo é guiada por uma compreensão profunda do problema específico em análise ou se há uma tendência a aplicar abordagens genéricas sem considerar as nuances do sistema.
 
-\textbf{Ponto Positivo:} A diversidade de modelos oferece flexibilidade na escolha da abordagem mais adequada para contextos específicos.
+A diversidade de modelos oferece flexibilidade na escolha da abordagem mais adequada para contextos específicos.
 
-\textbf{Ponto Negativo:} A seleção inadequada, sem uma compreensão aprofundada do problema, pode resultar em escolhas subótimas, comprometendo a precisão das previsões.
+A seleção inadequada, sem uma compreensão aprofundada do problema, pode resultar em escolhas subótimas, comprometendo a precisão das previsões.
 
 A combinação de RNNs com outras técnicas de aprendizagem profunda, como CNN, conforme mencionado por \citeonline{Chen2018}, é uma estratégia intrigante. Contudo, a crítica necessária é em relação à necessidade de uma grande quantidade de dados de treinamento e parâmetros. Isso levanta a questão da viabilidade prática desses modelos em cenários onde dados abundantes podem não estar prontamente disponíveis.
 
-\textbf{Ponto Positivo:} A combinação de RNNs com outras técnicas de aprendizagem profunda oferece uma abordagem holística para capturar dependências temporais complexas.
+A combinação de RNNs com outras técnicas de aprendizagem profunda oferece uma abordagem holística para capturar dependências temporais complexas.
 
-\textbf{Ponto Negativo:} A necessidade de grandes volumes de dados e parâmetros pode limitar a aplicabilidade prática desses modelos em situações com recursos limitados.
+A necessidade de grandes volumes de dados e parâmetros pode limitar a aplicabilidade prática desses modelos em situações com recursos limitados.
 
 A transformação de séries temporais em imagens proposta por \citeonline{Sadaei2019} oferece uma perspectiva única. No entanto, a crítica se volta para a aplicabilidade e interpretabilidade dessa abordagem. Como as imagens refletem efetivamente as complexidades das séries temporais e como os resultados são interpretados em termos práticos são questionamentos importantes.
 
-\textbf{Ponto Positivo:} A transformação de séries temporais em imagens pode proporcionar uma representação visual intuitiva dos padrões nos dados.
+A transformação de séries temporais em imagens pode proporcionar uma representação visual intuitiva dos padrões nos dados.
 
-\textbf{Ponto Negativo:} A interpretabilidade das imagens e a relação direta com os padrões nas séries temporais precisam ser cuidadosamente avaliadas para garantir a eficácia dessa abordagem.
+A interpretabilidade das imagens e a relação direta com os padrões nas séries temporais precisam ser cuidadosamente avaliadas para garantir a eficácia dessa abordagem.
 
 A abordagem de \citeonline{Shih2019a}, ao combinar RNN, LSTM e CNN para modelar séries temporais, suscita dúvidas sobre sua eficácia. A fusão dessas técnicas complexas pode gerar uma estrutura computacionalmente intensiva, sem garantia clara de melhorias nas previsões. A introdução de pesos de atenção e o vetor de contexto adicionam incerteza ao processo, comprometendo a interpretabilidade dos resultados.
 
-\textbf{Ponto Positivo:} A combinação de RNN, LSTM e CNN oferece uma abordagem abrangente para modelar diferentes aspectos das séries temporais.
+A combinação de RNN, LSTM e CNN oferece uma abordagem abrangente para modelar diferentes aspectos das séries temporais.
 
-\textbf{Ponto Negativo:} A complexidade computacional, juntamente com a incerteza introduzida pelos pesos de atenção, pode dificultar a interpretação clara dos resultados.
+A complexidade computacional, juntamente com a incerteza introduzida pelos pesos de atenção, pode dificultar a interpretação clara dos resultados.
 
 Em resumo, a análise crítica dos modelos de previsão de séries temporais destaca a necessidade de uma abordagem equilibrada. Cada modelo apresenta vantagens e desvantagens, e a escolha deve ser orientada pelos requisitos específicos de cada situação. É crucial considerar a aplicabilidade prática, a interpretabilidade dos resultados e a capacidade de lidar com a complexidade inerente aos dados de demanda d'água.
 

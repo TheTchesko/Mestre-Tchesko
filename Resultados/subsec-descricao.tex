@@ -1,17 +1,3 @@
-%\subsection{Descri\c c\~ao do Problema}
-%
-%A descrição do problema, centrada no abastecimento d'água, é crucial. Ela apresenta variáveis-chave, como Bombas de Sucção (B1, B2 e B3), cuja frequência máxima é de $60$ Hz, Nível do Reservatório (Câmara 1) representado por LT01 (\si{m^3}), Vazão de entrada (FT01) em (\si{m^3/h}), Vazão de gravidade (FT02) em (\si{m^3/h}), Vazão de recalque (FT03) em (\si{m^3/h}), Pressão de Sucção (PT01SU) medida em metros de coluna d'água (\si{mca}) e Pressão de Recalque (PT02RBAL) também em metros de coluna d'água (\si{mca}).
-%
-%A pesquisa fará uso da variável LT01, que representa o nível do reservatório e desempenha um papel de extrema importância. A separação dos dados foi feita por hora a hora, mesmo que os dados obtidos da SANEPAR sejam de $2018$ a $2020$, sendo que o ano de $2020$ causou muitas irregularidades. É possível remover esse ano para melhor trabalhar com os dados.
-%
-%Mesmo havendo $9$ variáveis nesse conjunto de dados, poderia-se trabalhar com $1$ para previsão e as outras 8 como variáveis exógenas. No entanto, todas as variáveis podem ter correlação com o tanque, mas nem todas são necessárias, causando ruído na série temporal. Com isso em mente, foram retiradas as variáveis B3 e FT02 restando assim as variáveis de previsão com as variáveis que tiveram correlação significativa.
-%
-%A dimensão dos dados fornecidos pela SANEPAR foi de $26.306$ linhas e $9$ colunas. Essas colunas representam as variáveis listadas anteriormente, com a exclusão das duas variáveis B3 e FT02, resultando em apenas 6 variáveis no formato de variáveis exógenas e uma variável para previsão. Também é relevante observar que o ano de $2020$, devido às muitas anomalias nos dados, foi removido para mitigar a variação nos dados ao longo do tempo. Com essa abordagem, restam $17.522$ observações, com o intervalo temporal compreendido entre $2018$ e $2019$. Essa decisão foi tomada para evitar que o modelo sofra excessivamente com variações temporais.
-%
-%É crucial destacar a importância de manter as outras variáveis como exógenas durante o processo de previsão. Embora haja a possibilidade de trabalhar com apenas uma variável para previsão, ao incorporar as demais como variáveis exógenas, o modelo é enriquecido, proporcionando uma visão mais abrangente do sistema. Neste contexto, as variáveis como Bombas de Sucção, Vazões e Pressões possuem potencial impacto no nível do reservatório, e ao mantê-las como exógenas, permite-se que o modelo considere suas influências durante a previsão. Essa abordagem contribui para uma análise mais completa e realista, levando em conta as interações complexas entre as variáveis e fortalecendo a capacidade preditiva do modelo em cenários de abastecimento d'água.
-
-
-
 \subsection{An\'alise Explorat\'oria dos Dados}
 
 
@@ -21,15 +7,14 @@ A pesquisa fará uso da variável LT01, que representa o nível do reservatório
 
 Mesmo havendo $9$ variáveis nesse conjunto de dados, poderia-se trabalhar com $1$ para previsão e as outras 8 como variáveis exógenas. No entanto, todas as variáveis podem ter correlação com o tanque, mas nem todas são necessárias, causando ruído na série temporal. Com isso em mente, foram retiradas as variáveis B3 e FT02 restando assim as variáveis de previsão com as variáveis que tiveram correlação significativa.
 
-A dimensão dos dados fornecidos pela SANEPAR foi de $26.306$ linhas e $9$ colunas. Essas colunas representam as variáveis listadas anteriormente, com a exclusão das duas variáveis B3 e FT02, resultando em apenas 6 variáveis no formato de variáveis exógenas e uma variável para previsão. Também é relevante observar que o ano de $2020$, devido às muitas anomalias nos dados, foi removido para mitigar a variação nos dados ao longo do tempo. Com essa abordagem, restam $17.522$ observações, com o intervalo temporal compreendido entre $2018$ e $2019$. Essa decisão foi tomada para evitar que o modelo sofra excessivamente com variações temporais.
+Resultando em apenas 6 variáveis no formato de variáveis exógenas e uma variável para previsão. Com essa abordagem, restam $17.522$ observações, com o intervalo temporal compreendido entre $2018$ e $2019$. Essa decisão foi tomada para evitar que o modelo sofra excessivamente com variações temporais.
 
 É crucial destacar a importância de manter as outras variáveis como exógenas durante o processo de previsão. Embora haja a possibilidade de trabalhar com apenas uma variável para previsão, ao incorporar as demais como variáveis exógenas, o modelo é enriquecido, proporcionando uma visão mais abrangente do sistema. Neste contexto, as variáveis como Bombas de Sucção, Vazões e Pressões possuem potencial impacto no nível do reservatório, e ao mantê-las como exógenas, permite-se que o modelo considere suas influências durante a previsão. Essa abordagem contribui para uma análise mais completa e realista, levando em conta as interações complexas entre as variáveis e fortalecendo a capacidade preditiva do modelo em cenários de abastecimento d'água.
 
 Os dados foram processados usando a EDA resumindo suas principais características, e formulando hipóteses que possam direcionar a coleta adicional de dados, se necessária.
-
 Existem dados anômalos \textit{Not a Number} (NAN) que representam a ausência de dados coletados, logo tais dados foram interpolados usando os valores existentes e vizinhos a ele.
 
-Assim como em qualquer empresa de saneamento básico e tratamento d'água, é utilizado um mecanismo de acionamento automático denominado trava de segurança para evitar que o nível do tanque se aproxime de zero e haja falta d'água nos locais abastecidos por esse tanque. O nível máximo que o tanque pode alcançar é de $5,26 m^3$ (equivalente a $5264.56$ litros). As bombas são ativadas em sua potência máxima para evitar que sejam acionadas quando o nível do tanque estiver dentro dessa faixa. No entanto, a bomba $1$ ainda estaria operando para completar o nível do tanque caso esteja dentro dessa faixa.
+Assim como em qualquer empresa de saneamento básico e tratamento d'água, é utilizado um mecanismo de acionamento automático denominado trava de segurança para evitar que o nível do tanque se aproxime de zero e haja falta d'água nos locais abastecidos por esse tanque. O nível máximo que o tanque pode alcançar é de $5,26 $ \si{m^3} (equivalente a $5264.56$ litros). As bombas são ativadas em sua potência máxima para evitar que sejam acionadas quando o nível do tanque estiver dentro dessa faixa. No entanto, a bomba $1$ ainda estaria operando para completar o nível do tanque caso esteja dentro dessa faixa.
 
 Na Tabela \ref{tb:est}, o desvio padrão é representado por \textit{STandard Deviation} (STD). A quantidade de dados medidos hora a hora pela SANEPAR de $2018$ a $2019$ são de $17.522$ dados.
 
@@ -51,123 +36,6 @@ Na Tabela \ref{tb:est}, o desvio padrão é representado por \textit{STandard De
 	\end{tabular}
 \end{table}
 
-No contexto das análises de dados, várias técnicas de EDA têm sido adotadas. Neste estudo, são realizadas diversas análises, incluindo a correlação de Pearson, para identificar quais variáveis podem ser excluídas devido a ruídos (correlação baixa) ou por estarem altamente correlacionadas com a variável de saída do estudo, que é a variável LT01, representando o nível do tanque de armazenamento d'água pela SANEPAR no Bairro Alto. As variáveis removidas têm pouca correlação com a LT01; por exemplo, as variáveis B3 e FT02 apresentam correlação baixa e serão excluídas.
-
-O termo ``correlação baixa'' indica que há pouca relação linear entre as variáveis, sugerindo uma associação fraca entre elas. Um teste de hipótese é comumente usado para determinar se essa correlação é estatisticamente significativa. Nos testes de correlação de Pearson, se o valor-p for menor que um determinado nível de significância (como $0,05$), então a correlação é considerada estatisticamente significativa.
-
-
-%Os dados foram processados usando a EDA resumindo suas principais características, e formulando hipóteses que possam direcionar a coleta adicional de dados, se necessária. 
-%
-%Existem dados anômalos \textit{Not a Number} (NAN) que representam a ausência de dados coletados, logo tais dados foram interpolados usando os valores existentes e vizinhos a ele. 
-%
-%Assim como em qualquer empresa de saneamento básico e tratamento d'água, é utilizado um mecanismo de acionamento automático denominado trava de segurança para evitar que o nível do tanque se aproxime de zero e haja falta d'água nos locais abastecidos por esse tanque. O nível máximo que o tanque pode alcançar é de $5,26 m^3$ (equivalente a $5264.56$ litros). As bombas são ativadas em sua potência máxima para evitar que sejam acionadas quando o nível do tanque estiver dentro dessa faixa. No entanto, a bomba $1$ ainda estaria operando para completar o nível do tanque caso esteja dentro dessa faixa. 
-%
-%Na Tabela \ref{tb:est}, o desvio padrão é representado por \textit{STandard Deviation} (STD). A quantidade de dados medidos hora a hora pela SANEPAR de $2018$ a $2019$ são de $17.522$ dados.
-%
-%\begin{table}[!htb]
-%	\centering
-%	\caption{Descrição estatística dos dados do Bairro Alto em Curitiba de 2018 a 2019 disponibilizados pela SANEPAR.}\label{tb:est}
-%	\begin{tabular}{@{}llllllllll@{}}
-%		\toprule
-%		\text{Métricas} & \text{B1} & \text{B2} & \text{B3} & \text{LT01} & \text{FT01} & \text{FT02} & \text{FT03} & \text{PT01} & \text{PT02} \\ \midrule
-%		\textbf{Média}    & 52,289      & 18,421      & 3,338       & 3,513         & 215,699       & 114,832       & 104,195       & 4,448         & 20,724        \\
-%		\textbf{STD}      & 11,421      & 19,742      & 12,624      & 0,670         & 110,223       & 43,604        & 25,636        & 0,700         & 3,610         \\
-%		\textbf{Min.}     & 0           & 0           & 0           & 0,294         & 0             & 0             & 0             & 0,842         & 0             \\
-%		\textbf{25\%}     & 49,519      & 0           & 0           & 3,077         & 255,454       & 74,912        & 81,430        & 4,015         & 18,072        \\
-%		\textbf{50\%}     & 57,925      & 0,050       & 0           & 3,715         & 265,357       & 122,149       & 109,911       & 4,602         & 21,791        \\
-%		\textbf{75\%}     & 57,989      & 36,796      & 0           & 4,047         & 272,609       & 145,865       & 123,189       & 4,990         & 23,051        \\
-%		\textbf{Max.}     & 59,988      & 59,992      & 59,988      & 4,445         & 390,683       & 400,415       & 183,900       & 5,639         & 29,008        \\ \bottomrule
-%	\end{tabular}
-%\end{table}
-%
-%No contexto de análises de dados várias técnicas de EDA têm sido adotadas.
-%Neste estudo serão abordadas várias análises entre elas correlação de Pearson, para verificar quais variáveis podem ser excluídas tais como ruídos (correlação baixa) ou altamente correlacionadas com a variável de saída do nosso estudo, que será a variável LT01, nível do tanque de armazenamento d'água pela SANEPAR no Bairro Alto. Nesse caso, as variáveis removidas tem pouca correlação com a LT01, as que apresentam correlação baixa são B3 e FT02 e serão removidas.
-
-A Figura \ref{fig:person} mostra a correlação de Pearson entre as variáveis do conjunto de dados deste estudo. Essa figura representa a matriz (simétrica) da dependência/correlação entre as variáveis. Analisamos as correlações das variáveis de entrada com a variável de saída. Serão descartadas as variáveis com correlação menor que 5\% e maior que 90\%.
-
-\begin{figure}[!htb]
-	\centering
-	\caption{Correlação de Pearson.}
-	\label{fig:person}	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/person}
-		
-\end{figure}
-
-Nesse conjunto de dados que está sendo trabalhado, há uma forte correlação da variável PT01 com o LT01 conforme visto na Figura \ref{fig:lr-lt01-m3} que fornece uma representação dos coeficientes $\beta_0$ e $\beta_1$, que são os coeficientes da correlação linear entre as variáveis. Um aumento de $1$ na variável $x$ está associado a um aumento proporcional de $\beta_1$ na variável $y$. O valor de $\beta_0$ representa o valor de $y$ quando $x$ é igual a $0$.
-
-\begin{figure}[!htb]
-	\centering
-	\caption{Relação entre LT01 e PT01 cuja correlação de Pearson é 97\%.}
-	\label{fig:lr-lt01-m3}
-	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/LR}
-\end{figure}
-
-\textit{Augmented Dickey-Fuller} (ADF) de $-12,515$ indica a evidência de estacionariedade na série temporal do nível do tanque LT01. 
-O valor de p expresso como $2,62\times 10^{-23}$ está associado ao teste ADF. No contexto do teste ADF, a hipótese nula é a presença de raiz unitária na série temporal, indicando não estacionariedade. Dado o valor de p de $2,62\times 10^{-23}$, evidencia-se uma probabilidade muito baixa, indicando forte suporte contra a hipótese nula e sugerindo que a série temporal é estacionária. Na Tabela \ref{tb:adf}, são apresentados todos os dados do teste para estacionariedade.Os resultados indicam fortes evidências contra a hipótese nula. Com um teste ADF de $-12,515 $ e um valor de p extremamente baixo de $2,62 \times 10^{-23}$, rejeita-se a hipótese nula de presença de raiz unitária. Os $44$ atrasos utilizados e as $17.477$ observações corroboram a análise estatística. Ao comparar a estatística de teste ADF com os valores críticos, observa-se que está significativamente abaixo deles em todos os níveis de significância $(1\%, 5\%, 10\%)$. Portanto, a conclusão é de que os dados não possuem raiz unitária, indicando que são estacionários.
-
-\begin{table}[!htb]
-	\centering
-	\caption{Teste ADF.}\label{tb:adf}
-	\begin{tabular}{ll}
-		\hline
-		Valor de p & $2,62 \times 10^{-23}$ \\
-		Atrasos utilizados & $44$ \\
-		Número de observações & $17.477$ \\
-		Valor crítico $(1\%)$ & $-3,431$ \\
-		Valor crítico $(5\%)$ & $-2,862$ \\
-		Valor crítico $(10\%)$ & $-2,567$ \\
-		\hline
-	\end{tabular}
-\end{table}
-
-
-Na Figura \ref{fig:acfa}, observa-se a distinção entre ACF, apresentada na Figura \ref{fig:acfa}, e PACF, mostrada na Figura \ref{fig:pacf}. A autocorrelação é uma métrica que indica a relação entre os valores de uma série temporal em diferentes defasagens, capturando tanto correlações diretas quanto indiretas. Por sua vez, a autocorrelação parcial mensura apenas a correlação direta entre os valores, ignorando a influência de defasagens intermediárias. Essas análises são cruciais para detectar padrões e dependências entre os valores da série temporal, o que é essencial para a modelagem e previsão desses dados.
-
-O intervalo de confiança padrão de $95\%$, destacado pela faixa azul nas Figuras \ref{fig:acfa} e \ref{fig:pacf}, serve como referência crítica. Observações fora desse intervalo indicam correlações estatisticamente significativas, sugerindo a presença de padrões ou estrutura na série temporal.
-
-
-\begin{figure}[!htb]
-	\centering
-	\caption{Autocorrelação.}\label{fig:acfa}	\includegraphics[width=0.6\linewidth]{Resultados/Figuras/acf} 
-\end{figure}
-
-\begin{figure}[!htb]
-	\centering
-	\caption{Autocorrelação parcial.}\label{fig:pacf}	\includegraphics[width=0.6\linewidth]{Resultados/Figuras/pacf}
-\end{figure}
-
-%As Figuras contendo os gráficos ACF e PACF são ferramentas essenciais na análise de séries temporais, especialmente ao trabalhar com modelos ARIMA. 
-%
-%O ACF é uma medida estatística utilizada para identificar a presença de correlação serial em uma série temporal. Ele calcula a autocorrelação entre os valores da série em diferentes defasagens, ou seja, a correlação entre os valores atuais e os valores passados da série. O ACF é útil para analisar a dependência temporal dos dados e identificar padrões de sazonalidade, tendência ou outros efeitos temporais. Por meio do ACF, é possível avaliar se a série exibe autocorrelação significativa em defasagens específicas, o que pode indicar a presença de não estacionariedade ou estrutura temporal que precisa ser considerada na análise ou modelagem da série temporal.
-%
-%Enquanto o ACF mede a correlação total em um determinado lag, o PACF mede a correlação apenas entre a observação atual e uma observação em um lag específico, controlando os efeitos das observações intermediárias. O gráfico PACF é especialmente útil para identificar a ordem do componente autorregressivo (AR) no modelo ARIMA. Ele ajuda a identificar os lags que têm uma influência direta na observação atual, sem a interferência de outros lags. Ao usar esses gráficos em conjunto, os analistas de séries temporais podem identificar a ordem adequada do modelo ARIMA. 
-%
-%A ordem do ARIMA é denotada como ($p, d, q$), onde p é a ordem do componente AR, d é a ordem de diferenciação, que representa o número de vezes que a série temporal é diferenciada para torná-la estacionária, e q é a ordem do componente de MA. Os pontos nos gráficos ACF e PACF que ultrapassam as bandas de confiança indicam lags significativos. Analisando esses gráficos, pode fazer escolhas sobre os valores de $p$, $d$, e $q$ ao ajustar um modelo ARIMA à série temporal em questão. 
-%
-%Na Figura \ref{fig:acfa}, pode-se observar a diferença entre ACF exibida na Figura \ref{fig:acfa} e PACF exibida na Figura \ref{fig:pacf}. A autocorrelação é uma medida da correlação entre os valores da série temporal em diferentes defasagens, levando em consideração tanto a correlação direta quanto a correlação indireta. Por outro lado, a autocorrelação parcial mede apenas a correlação direta entre os valores, desconsiderando a influência das defasagens intermediárias. Essas análises são úteis para identificar padrões e relações de dependência entre os valores da série temporal, fornecendo informações importantes para a modelagem e previsão desses dados. O intervalo de confiança padrão de $95\%$ é representado pela faixa azul nas Figuras \ref{fig:acfa} e \ref{fig:pacf}. As observações que estão fora desse intervalo são consideradas estatisticamente correlacionadas, indicando a presença de padrões ou estrutura na série temporal.
-%
-%A correlação visualizada na Figura \ref{fig:acfa} é fundamental para a interpretação do teste ADF. Em uma série de ruído branco, os valores são completamente aleatórios e não apresentam correlação significativa. Portanto, quando há correlação presente na série, isso indica a existência de padrões ou dependências entre os valores, o que pode ser explorado para a modelagem e previsão da série temporal.
-%
-%\begin{figure}[!htb]
-%	\centering
-%\caption{Autocorrelação.}\label{fig:acfa}	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/acf} 
-%\end{figure}
-%
-%\begin{figure}[!htb]
-%	\centering
-%	\caption{Autocorrelação parcial.}\label{fig:pacf}	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/pacf}
-%\end{figure}
-
-A correlação visualizada na Figura \ref{fig:acfa} é fundamental para a interpretação do teste ADF. Em uma série de ruído branco, os valores são completamente aleatórios e não apresentam correlação significativa. Portanto, quando há correlação presente na série, isso indica a existência de padrões ou dependências entre os valores, o que pode ser explorado para a modelagem e previsão da série temporal.
-
-Demonstrar que uma série temporal tem ou pode ter um ruído branco também é conveniente para a análise da EDA.
-Na Figura \ref{fig:ruido-branco}, é possível observar uma série temporal que pode ser caracterizada como ruído branco, se suas variáveis forem independentes e distribuídas de forma idêntica, com média zero. Isso implica que todas as variáveis possuem a mesma variância ($\sigma^2$) e que cada valor não possui correlação com os demais valores da série.
-
-\begin{figure}[!htb]
-	\centering
-	\caption{Ruído branco.}
-	\label{fig:ruido-branco}
-	\includegraphics[width=\linewidth]{Resultados/Figuras/ruido-branco}
-\end{figure}
 
 Com a decomposição STL é possível analisar se a série apresenta tendência, sazonalidade e ruídos. Ao observar a Figura \ref{fig:stl}, é evidente que os dados exibem ambos os padrões. 
 
@@ -185,6 +53,75 @@ A tendência dos dados reflete como a série se comporta ao longo prazo, se ela 
 
 O resíduo nos dados da série temporal é uma forma de avaliar que a série trabalhada possui várias irregularidades, levando aos resíduos que ajudam a verificar a verdadeira essência dos dados. Como esses dados foi coletado por hora ele tem muita oscilação, trazendo muitos ruídos ao longo da análise.
 
+A Figura \ref{fig:person} mostra a correlação de Pearson entre as variáveis do conjunto de dados deste estudo. Essa figura representa a matriz (simétrica) da dependência/correlação entre as variáveis. Analisamos as correlações das variáveis de entrada com a variável de saída. Serão descartadas as variáveis com correlação menor que 5\% e maior que 90\%.
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Correlação de Pearson.}
+	\label{fig:person}	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/person}
+		
+\end{figure}
+
+No contexto das análises de dados, várias técnicas de EDA têm sido adotadas. Neste estudo, são realizadas diversas análises, incluindo a correlação de Pearson, para identificar quais variáveis podem ser excluídas devido a ruídos (correlação baixa) ou por estarem altamente correlacionadas com a variável de saída do estudo, que é a variável LT01, representando o nível do tanque de armazenamento d'água pela SANEPAR no Bairro Alto. As variáveis removidas têm pouca correlação com a LT01; por exemplo, as variáveis B3 e FT02 apresentam correlação baixa e serão excluídas.
+
+O termo ``correlação baixa'' indica que há pouca relação linear entre as variáveis, sugerindo uma associação fraca entre elas. Um teste de hipótese é comumente usado para determinar se essa correlação é estatisticamente significativa. Nos testes de correlação de Pearson, se o valor-p for menor que um determinado nível de significância (como $0,05$), então a correlação é considerada estatisticamente significativa.
+
+Nesse conjunto de dados que está sendo trabalhado, há uma forte correlação da variável PT01 com o LT01 conforme visto na Figura \ref{fig:lr-lt01-m3} que fornece uma representação dos coeficientes $\beta_0$ e $\beta_1$, que são os coeficientes da correlação linear entre as variáveis. Um aumento de $1$ na variável $x$ está associado a um aumento proporcional de $\beta_1$ na variável $y$. O valor de $\beta_0$ representa o valor de $y$ quando $x$ é igual a $0$.
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Relação entre LT01 e PT01 cuja correlação de Pearson é 97\%.}
+	\label{fig:lr-lt01-m3}
+	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/LR}
+\end{figure}
+
+
+Na Figura \ref{fig:acfa}, observa-se a distinção entre ACF, apresentada na Figura \ref{fig:acfa}, e PACF, mostrada na Figura \ref{fig:pacf}. A autocorrelação é uma métrica que indica a relação entre os valores de uma série temporal em diferentes defasagens, capturando tanto correlações diretas quanto indiretas. Por sua vez, a autocorrelação parcial mensura apenas a correlação direta entre os valores, ignorando a influência de defasagens intermediárias. Essas análises são cruciais para detectar padrões e dependências entre os valores da série temporal, o que é essencial para a modelagem e previsão desses dados.
+
+O intervalo de confiança padrão de $95\%$, destacado pela faixa azul nas Figuras \ref{fig:acfa} e \ref{fig:pacf}, serve como referência crítica. Observações fora desse intervalo indicam correlações estatisticamente significativas, sugerindo a presença de padrões ou estrutura na série temporal.
+
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Autocorrelação.}\label{fig:acfa}	\includegraphics[width=0.6\linewidth]{Resultados/Figuras/acf} 
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Autocorrelação parcial.}\label{fig:pacf}	\includegraphics[width=0.6\linewidth]{Resultados/Figuras/pacf}
+\end{figure}
+
+
+A correlação visualizada na Figura \ref{fig:acfa} é fundamental para a interpretação do teste ADF. Em uma série de ruído branco, os valores são completamente aleatórios e não apresentam correlação significativa. Portanto, quando há correlação presente na série, isso indica a existência de padrões ou dependências entre os valores, o que pode ser explorado para a modelagem e previsão da série temporal.
+
+Demonstrar que uma série temporal tem ou pode ter um ruído branco também é conveniente para a análise da EDA.
+Na Figura \ref{fig:ruido-branco}, é possível observar uma série temporal que pode ser caracterizada como ruído branco, se suas variáveis forem independentes e distribuídas de forma idêntica, com média zero. Isso implica que todas as variáveis possuem a mesma variância ($\sigma^2$) e que cada valor não possui correlação com os demais valores da série.
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Ruído branco.}
+	\label{fig:ruido-branco}
+	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/ruido-branco}
+\end{figure}
+
+
+ADF de $-12,515$ indica a evidência de estacionariedade na série temporal do nível do tanque LT01. 
+O valor de p expresso como $2,62\times 10^{-23}$ está associado ao teste ADF. No contexto do teste ADF, a hipótese nula é a presença de raiz unitária na série temporal, indicando não estacionariedade. Dado o valor de p de $2,62\times 10^{-23}$, evidencia-se uma probabilidade muito baixa, indicando forte suporte contra a hipótese nula e sugerindo que a série temporal é estacionária. Na Tabela \ref{tb:adf}, são apresentados todos os dados do teste para estacionariedade.Os resultados indicam fortes evidências contra a hipótese nula. Com um teste ADF de $-12,515 $ e um valor de p extremamente baixo de $2,62 \times 10^{-23}$, rejeita-se a hipótese nula de presença de raiz unitária. Os $44$ atrasos utilizados e as $17.477$ observações corroboram a análise estatística. Ao comparar a estatística de teste ADF com os valores críticos, observa-se que está significativamente abaixo deles em todos os níveis de significância $(1\%, 5\%, 10\%)$. Portanto, a conclusão é de que os dados não possuem raiz unitária, indicando que são estacionários.
+
+\begin{table}[!htb]
+	\centering
+	\caption{Teste ADF.}\label{tb:adf}
+	\begin{tabular}{ll}
+		\hline
+		Valor de p & $2,62 \times 10^{-23}$ \\
+		Atrasos utilizados & $44$ \\
+		Número de observações & $17.477$ \\
+		Valor crítico $(1\%)$ & $-3,431$ \\
+		Valor crítico $(5\%)$ & $-2,862$ \\
+		Valor crítico $(10\%)$ & $-2,567$ \\
+		\hline
+	\end{tabular}
+\end{table}
 
 Para a previsão os dados foram divididos em conjuntos de treinamento, validação, e teste \cite{raschka2015practical, geron2017hands_on}. Quanto à divisão dos dados, foi adotada uma estratégia básica em que $70\%$ dos dados foram destinados ao conjunto de treinamento e $30\%$ restantes foram reservados para o conjunto de teste. Dentro dos $70\%$ de treinamento, foi realizada uma subdivisão em que $80\%$ desses dados foram usados novamente para treinamento e os $20\%$ restantes foram utilizados para validação. 
 
@@ -206,13 +143,12 @@ Similarmente aos modelos anteriores, esses modelos também compartilham as mesma
 
 O MISO foi o modelo usado neste estudo. O modelo ARIMA, juntamente com suas variantes e extensões, foi amplamente estudado durante a pesquisa, assim como modelos regressivos que envolvem múltiplas variáveis de entrada e uma variável de saída, neste caso, a LT01. As demais variáveis, como FT01, FT03, PT01, PT02, B1 e B2, foram utilizadas como suporte para melhorar o modelo do tipo ARIMAX, modelos com variáveis exógenas.
 
-Quando aplicado sem o uso de variáveis exógenas, o modelo ARIMA apresenta apenas uma entrada, semelhante ao modelo de \textit{Linear Regression}. No entanto, ao incluir variáveis exógenas, o modelo se torna MISO, permitindo uma modelagem  abrangente e considerando a correlação das várias para prever a variável de interesse, LT01.
+Quando aplicado sem o uso de variáveis exógenas, o modelo ARIMA apresenta apenas uma entrada, semelhante ao modelo de regressão linear. No entanto, ao incluir variáveis exógenas, o modelo se torna MISO, permitindo uma modelagem  abrangente e considerando a correlação das várias para prever a variável de interesse, LT01.
 
 A previsão dos dados foi feita com diferentes horizontes de previsão como $1$ hora, $6$ horas, $12$ horas, e $24$ horas. Essas estratégias de previsão permitem a comparação entre os modelos de regressão e modelos ARIMA em diferentes horizontes temporais.
 
 Além desses modelos de previsão, vários outros modelos foram utilizados no estudo, tais como DT, RF, XGBoost, LightGBM, MLP, LSTM, GRU, Prophet, RNN, e CNN, a fim de obter o melhor resultado para a previsão de séries temporais de abastecimento d'água.
 
-%Foram utilizados os parâmetros obtidos pelo autoARIMA que são $(p = 7, d = 0, q = 0) (P = 2, D = 1, Q = 1)_{M = 12}$, que foram ajustados para obter um melhor resultado, sendo $(p = 7, d = 1, q = 7) (P = 2, D = 1, Q = 1)_{M = 12}$. 
 
 Na Tabela \ref{tab:autoarima_params} são exibidos todos os valores obtidos pela biblioteca do \textit{Python} autoARIMA, resultantes para $p$, que representa a ordem do componente AR; $d$, que indica o número de diferenciações não sazonais; $q$, que denota a ordem do componente MA; $P$, que corresponde à ordem do componente AR sazonal; $D$, que representa o número de diferenciações sazonais; $Q$, que indica a ordem do componente MA sazonal; e $M$, que representa o período sazonal (o número de observações em um ciclo sazonal).
 
@@ -284,9 +220,10 @@ Os hiperparâmetros dos modelos de rede neural artificial (RNA), como RNN, MLP, 
 
 \subsection{Aplicando os Modelos de Previs\~ao}
 
-Na análise dos modelos desenvolvidos, observou-se que o modelo RNN obteve o melhor desempenho, tanto para previsões de curto prazo, durante as horas de pico entre 18h e 21h, quanto para outros períodos. Além disso, os modelos MA, AR, SARIMA, ARIMA, SARIMAX, ARIMAX, ARX, LightGBM, XGBoost, RF, RNN, MLP, CNN, GRU, LSTM, e Prophet também apresentaram resultados satisfatórios, seguindo uma ordem decrescente de desempenho.
+Na análise dos modelos desenvolvidos, observou-se que o modelo DT obteve o melhor desempenho, tanto para previsões de curto prazo, durante as horas de pico entre 18h e 21h, quanto para outros períodos. Além disso, o Prophet foi o segundo modelo que mais apresento resultados satisfatório em previsão de longo prazo.
 
 Uma observação recorrente foi a superioridade dos modelos que incorporam variáveis exógenas em termos de capacidade de previsão, evidenciada nas Figuras \ref{fig:1-ar-arx-ma} a \ref{fig:prophet1} e nas Tabelas \ref{tb:apd-trn} a \ref{tb:apd-int}, onde os valores menores foram destacados em \textbf{negrito}. O modelo DT destacou-se como o melhor em termos de eficácia nas previsões realizadas, seguido pelo modelo Prophet. Desde a \ref{fig:1-ar-arx-ma} a \ref{fig:prophet1} são ilustrados cenários distintos de previsão e comparação entre os modelos DT e Prophet, respectivamente, sendo o primeiro a escolha mais adequada. As Figuras são exibidas com um corte temporal da data 2019/12/01, 2020/01/02.
+
 
 \begin{figure}[!htb]
 	\centering
@@ -338,6 +275,9 @@ Uma observação recorrente foi a superioridade dos modelos que incorporam vari�
 	\caption{Previsões do modelo Prophet para vários horizontes de previsão.}\label{fig:prophet1}
 	\includegraphics[width=0.7\linewidth]{Resultados/Figuras/prophet}	
 \end{figure}
+
+
+
 
 \begin{landscape}
 \begin{table}[!htb]
@@ -564,7 +504,7 @@ Para validar estatisticamente as diferenças entre os modelos, foi realizado um 
 
 
 
-\subsection{Teste de Signific\^ancia}
+\subsection{Teste de Hip\'otese}
 
 O teste de Friedman e o teste de Nemenyi são usados para comparar os modelos de previsão. O teste de Nemenyi é uma ferramenta de comparação múltipla frequentemente empregada após a aplicação de testes não paramétricos com três ou mais fatores.
 
@@ -572,18 +512,12 @@ Usando os resultados obtidos na Tabela \ref{tb:nemenyi} para calcular o teste de
 
 O teste de Friedman para o erro SMAPE, com um valor de estatística de teste e um valor de p de $7,29 \times 10^{-28}$, e para o erro MAE um valor de p de $4,78 \times 10^{-26}$, e para o erro RRMSE um valor de p de $1,23 \times 10^{-40}$ indica que há evidências estatísticas sugerindo que, pelo menos, um dos modelos (ou todos) apresenta um desempenho significativamente diferente dos demais. O valor extremamente baixo de p, próximo de zero, sugere que as diferenças observadas não são simplesmente devidas ao acaso. Portanto, há uma diferença estatisticamente significativa entre os grupos testados.
 
-%No contexto do estudo, os resultados da análise comparativa revelaram diferenças estatisticamente significativas entre vários pares de modelos, conforme indicado pelas entradas da Tabela \ref{tb:nemenyi}. Isso sugere que pelo menos um modelo é considerado estatisticamente superior aos demais, com base nas comparações realizadas. Por exemplo, o modelo que tem o menor valor de p entre esses modelos é o da coluna C (MA) na linha L (RF), com um valor de $0,097$, o que significa que os dois modelos têm diferença estatisticamente significativa.
 
 Na análise das tabelas, são identificadas diferenças significativas entre os modelos. Por exemplo, na Tabela \ref{tb:nemenyi}, há valores baixos na linha DT (G) nas colunas GRU (H), LSTM (I) e RNN (O), indicando diferenças críticas entre esses modelos. Na Tabela \ref{tb:nemenyi1}, os valores na interseção da linha DT (G) com as colunas GRU (H) e RNN (O) são estatisticamente significativos. Na Tabela \ref{tb:nemenyi2}, os valores entre a linha CNN (F) e a coluna DT (G) são baixos, ressaltando outra diferença relevante. Esses resultados evidenciam a necessidade de uma análise minuciosa para determinar o modelo mais adequado.
 
 Ao analisar as tabelas, fica evidente que o modelo DT se destaca como tendo desempenho superior em comparação com os outros modelos. Isso é corroborado pelos valores baixos nas interseções da linha DT (G) com as colunas GRU (H), RNN (O) e LSTM (I) na Tabela \ref{tb:nemenyi}, bem como pelos valores significativos na Tabela \ref{tb:nemenyi1}. Portanto, o modelo DT parece ser a escolha mais promissora para os propósitos da análise.
 
-%Ao analisar a Tabela \ref{tb:nemenyi}, nota-se uma diferença significativa entre os modelos. Por exemplo, os valores na interseção da linha DT (G) e coluna GRU (H) são $0$, o que indica uma diferença particularmente crítica entre esses modelos. Da mesma forma, os valores na interseção da linha DT (G) e coluna RNN (O) e coluna LSTM (I) também são muito baixos, evidenciando outra diferença de importância crítica entre esses modelos. Essas disparidades ressaltam a necessidade de uma análise minuciosa das diferenças estatísticas entre os modelos para determinar qual deles demonstra o desempenho mais apropriado para os propósitos da análise.
-%
-%Ao analisar a Tabela \ref{tb:nemenyi1}, observa-se que há diferenças significativas entre os modelos. Por exemplo, os valores na interseção da linha DT (G) e coluna GRU (H) são $0,012$, indicando uma diferença estatisticamente significativa entre esses modelos. Da mesma forma, os valores na interseção da linha DT (G) e coluna RNN (O) também são baixos, sugerindo uma diferença estatisticamente significativa entre esses modelos. Esses achados ressaltam a importância de examinar minuciosamente as diferenças estatísticas entre os modelos para determinar qual deles oferece o desempenho mais adequado para os propósitos da análise.
-%
-%
-%A análise a Tabela \ref{tb:nemenyi2} revela diferenças significativas entre os modelos. Por exemplo, os valores na interseção da linha CNN (F) e coluna DT (G) são $0,023$, indicando uma diferença estatisticamente significativa entre esses modelos. Da mesma forma, os valores na interseção da linha DT (G) e coluna GRU (H) também são baixos, sugerindo outra diferença estatisticamente significativa. Esses resultados enfatizam a importância de uma avaliação criteriosa das diferenças estatísticas entre os modelos para determinar qual deles oferece o desempenho mais adequado para os propósitos da análise.
+
 
 
 \begin{landscape}
@@ -594,14 +528,14 @@ Ao analisar as tabelas, fica evidente que o modelo DT se destaca como tendo dese
 	\setlength{\tabcolsep}{4pt} % Reduzir o espaçamento entre as colunas
 \begin{tabular}{@{}lllllllllllllllllll@{}}
 \toprule
-Modelo & A     & B     & C     & D     & E     & F     & G     & H     & I     & J     & K     & L     & M     & N     & O     & P     & Q     & R     \\ \midrule
+Modelo & A     & B     & C     & D     & E     & F     & G     & \textbf{H }    & \textbf{I}     & J     & K     & L     & M     & N     & \textbf{O}     & P     & Q     & R     \\ \midrule
 A      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,092 & 0,070 & 1     & 1     & 1     & 1     & 0,976 & 0,185 & 1     & 1     & 0,846 \\
 B      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,093 & 0,071 & 1     & 1     & 1     & 1     & 0,977 & 0,186 & 1     & 1     & 0,847 \\
 C      & 1     & 1     & 1     & 1     & 1     & 1     & 0,999 & 0,158 & 0,124 & 1     & 1     & 1     & 1     & 0,991 & 0,285 & 1     & 1     & 0,918 \\
 D      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,094 & 0,071 & 1     & 1     & 1     & 1     & 0,977 & 0,187 & 1     & 1     & 0,848 \\
 E      & 1     & 1     & 1     & 1     & 1     & 1     & 0,999 & 0,164 & 0,129 & 1     & 1     & 1     & 1     & 0,992 & 0,294 & 1     & 1     & 0,922 \\
-F      & 1     & 1     & 1     & 1     & 1     & 1     & 0,971 & 0,456 & 0,394 & 1     & 1     & 1     & 1     & 1     & 0,636 & 1     & 1     & 0,993 \\
-G      & 1     & 1     & 0,999 & 1,000 & 0,999 & 0,971 & 1     & 0     & 0     & 0,940 & 1     & 0,971 & 0,989 & 0,204 & 0     & 0,999 & 0,999 & 0,051 \\
+F      & 1     & 1     & 1     & 1     & 1     & 1     & 0,971 & 0,456 & 0,394 & 1     & 1     & 1     & 1     & 1     & 0,636 & 1     & 1     & 0,993 \\\hline
+\textbf{G}      & 1     & 1     & 0,999 & 1,000 & 0,999 & 0,971 & 1     & \textbf{0}     & \textbf{0}     & 0,940 & 1     & 0,971 & 0,989 & 0,204 & \textbf{0}     & 0,999 & 0,999 & 0,051 \\ \hline
 H      & 0,092 & 0,093 & 0,158 & 0,094 & 0,164 & 0,456 & 0     & 1     & 1     & 0,575 & 0,030 & 0,456 & 0,326 & 0,997 & 1     & 0,122 & 0,158 & 1     \\
 I      & 0,070 & 0,071 & 0,124 & 0,071 & 0,129 & 0,394 & 0     & 1     & 1     & 0,511 & 0,021 & 0,394 & 0,272 & 0,995 & 1     & 0,095 & 0,125 & 1     \\
 J      & 1     & 1     & 1     & 1     & 1     & 1     & 0,940 & 0,575 & 0,511 & 1     & 1     & 1     & 1     & 1     & 0,744 & 1     & 1     & 0,998 \\
@@ -623,15 +557,15 @@ R      & 0,846 & 0,847 & 0,918 & 0,848 & 0,922 & 0,993 & 0,051 & 1     & 1     &
 	D -- ARMA,
 	E -- ARX,
 	F -- CNN,
-	G -- DT,
-	H -- GRU,
-	I -- LSTM,
+	\textbf{G -- DT},
+	\textbf{H -- GRU},
+	\textbf{I -- LSTM},
 	J -- LigthGBM,
 	K -- MA,
 	L -- MLP,
 	M -- Prophet,
 	N -- RF,
-	O -- RNN,
+	\textbf{O -- RNN},
 	P -- SARIMA,
 	Q -- SARIMAX,
 	R -- XGBoost.
@@ -645,14 +579,14 @@ R      & 0,846 & 0,847 & 0,918 & 0,848 & 0,922 & 0,993 & 0,051 & 1     & 1     &
 	\setlength{\tabcolsep}{4pt} % Reduzir o espaçamento entre as colunas
 \begin{tabular}{@{}lllllllllllllllllll@{}}
 \toprule
-Modelo & A     & B     & C     & D     & E     & F     & G     & H     & I     & J     & K     & L     & M     & N     & O     & P     & Q     & R     \\ \midrule
+Modelo & A     & B     & C     & D     & E     & F     & G     & \textbf{H }    & I    & J     & K     & L     & M     & N     & \textbf{O}     & P     & Q     & R     \\ \midrule
 A      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,054 & 0,036 & 1     & 1     & 1     & 1     & 0,947 & 0,102 & 1     & 1     & 0,736 \\
 B      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,059 & 0,039 & 1     & 1     & 1     & 1     & 0,952 & 0,109 & 1     & 1     & 0,750 \\
 C      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,093 & 0,065 & 1     & 1     & 1     & 1     & 0,975 & 0,162 & 1     & 1     & 0,829 \\
 D      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,058 & 0,039 & 1     & 1     & 1     & 1     & 0,951 & 0,108 & 1     & 1     & 0,748 \\
 E      & 1     & 1     & 1     & 1     & 1     & 1     & 1     & 0,101 & 0,071 & 1     & 1     & 1     & 1     & 0,978 & 0,175 & 1     & 1     & 0,843 \\
-F      & 1     & 1     & 1     & 1     & 1     & 1     & 0,999 & 0,752 & 0,679 & 1     & 1     & 1     & 1     & 1,000 & 0,855 & 1     & 1     & 1     \\
-G      & 1     & 1     & 1     & 1     & 1     & 0,999 & 1     & 0,012 & 0,008 & 0,999 & 1     & 0,999 & 1     & 0,803 & 0,027 & 1     & 1     & 0,467 \\
+F      & 1     & 1     & 1     & 1     & 1     & 1     & 0,999 & 0,752 & 0,679 & 1     & 1     & 1     & 1     & 1,000 & 0,855 & 1     & 1     & 1     \\ \hline
+\textbf{G}      & 1     & 1     & 1     & 1     & 1     & 0,999 & 1     & \textbf{0,012} & 0,008 & 0,999 & 1     & 0,999 & 1     & 0,803 & \textbf{0,027} & 1     & 1     & 0,467 \\ \hline
 H      & 0,054 & 0,059 & 0,093 & 0,058 & 0,101 & 0,752 & 0,012 & 1     & 1     & 0,732 & 0,022 & 0,752 & 0,217 & 0,997 & 1,000 & 0,062 & 0,093 & 1     \\
 I      & 0,036 & 0,039 & 0,065 & 0,039 & 0,071 & 0,679 & 0,008 & 1     & 1     & 0,657 & 0,014 & 0,679 & 0,163 & 0,995 & 1,000 & 0,042 & 0,064 & 1     \\
 J      & 1     & 1     & 1     & 1     & 1     & 1     & 0,999 & 0,732 & 0,657 & 1     & 1     & 1     & 1     & 1     & 0,840 & 1     & 1     & 0,999 \\
@@ -674,15 +608,15 @@ R      & 0,736 & 0,750 & 0,829 & 0,748 & 0,843 & 1     & 0,467 & 1,000 & 1,000 &
 	D -- ARMA,
 	E -- ARX,
 	F -- CNN,
-	G -- DT,
-	H -- GRU,
+	\textbf{G -- DT},
+	\textbf{H -- GRU},
 	I -- LSTM,
 	J -- LigthGBM,
 	K -- MA,
 	L -- MLP,
 	M -- Prophet,
 	N -- RF,
-	O -- RNN,
+	\textbf{O -- RNN},
 	P -- SARIMA,
 	Q -- SARIMAX,
 	R -- XGBoost.
@@ -696,13 +630,13 @@ R      & 0,736 & 0,750 & 0,829 & 0,748 & 0,843 & 1     & 0,467 & 1,000 & 1,000 &
 	\setlength{\tabcolsep}{4pt} % Reduzir o espaçamento entre as colunas
 \begin{tabular}{@{}lllllllllllllllllll@{}}
 \toprule
-Modelo & A     & B     & C     & D     & E     & F     & G     & H     & I     & J     & K     & L     & M     & N     & O     & P     & Q     & R     \\ \midrule
+Modelo & A     & B     & C     & D     & E     & F     & \textbf{G}     & H     & I     & J     & K     & L     & M     & N     & O     & P     & Q     & R     \\ \midrule
 A      & 1     & 1     & 1     & 1     & 1     & 0,306 & 1     & 0,028 & 0,001 & 1     & 1     & 0,306 & 0,414 & 0,993 & 0,003 & 1     & 1     & 0,975 \\
 B      & 1     & 1     & 1     & 1     & 1     & 0,314 & 1     & 0,029 & 0,001 & 1     & 1     & 0,314 & 0,423 & 0,994 & 0,003 & 1     & 1     & 0,976 \\
 C      & 1     & 1     & 1     & 1     & 1     & 0,413 & 1     & 0,050 & 0,002 & 1     & 1     & 0,413 & 0,529 & 0,998 & 0,007 & 1     & 1     & 0,989 \\
 D      & 1     & 1     & 1     & 1     & 1     & 0,314 & 1     & 0,029 & 0,001 & 1     & 1     & 0,314 & 0,423 & 0,994 & 0,003 & 1     & 1     & 0,976 \\
-E      & 1     & 1     & 1     & 1     & 1     & 0,405 & 1     & 0,048 & 0,002 & 1     & 1     & 0,405 & 0,521 & 0,998 & 0,007 & 1     & 1     & 0,989 \\
-F      & 0,306 & 0,314 & 0,413 & 0,314 & 0,405 & 1     & 0,023 & 1     & 0,999 & 0,778 & 0,133 & 1     & 1     & 1     & 1     & 0,342 & 0,412 & 1     \\
+E      & 1     & 1     & 1     & 1     & 1     & 0,405 & 1     & 0,048 & 0,002 & 1     & 1     & 0,405 & 0,521 & 0,998 & 0,007 & 1     & 1     & 0,989 \\ \hline
+\textbf{F}      & 0,306 & 0,314 & 0,413 & 0,314 & 0,405 & 1     & \textbf{0,023} & 1     & 0,999 & 0,778 & 0,133 & 1     & 1     & 1     & 1     & 0,342 & 0,412 & 1     \\ \hline
 G      & 1     & 1     & 1     & 1     & 1     & 0,023 & 1     & 0     & 0     & 0,999 & 1     & 0,023 & 0,043 & 0,759 & 0     & 1     & 1     & 0,600 \\
 H      & 0,028 & 0,029 & 0,050 & 0,029 & 0,048 & 1     & 0     & 1     & 1     & 0,231 & 0,006 & 1     & 1     & 0,938 & 1     & 0,034 & 0,050 & 0,979 \\
 I      & 0,001 & 0,001 & 0,002 & 0,001 & 0,002 & 0,999 & 0     & 1     & 1     & 0,022 & 0     & 0,999 & 0,998 & 0,535 & 1     & 0,001 & 0,002 & 0,703 \\
@@ -724,8 +658,8 @@ R      & 0,975 & 0,976 & 0,989 & 0,976 & 0,989 & 1     & 0,600 & 0,979 & 0,703 &
 	C -- ARIMAX,
 	D -- ARMA,
 	E -- ARX,
-	F -- CNN,
-	G -- DT,
+	\textbf{F -- CNN},
+	\textbf{G -- DT},
 	H -- GRU,
 	I -- LSTM,
 	J -- LigthGBM,
@@ -745,29 +679,6 @@ R      & 0,975 & 0,976 & 0,989 & 0,976 & 0,989 & 1     & 0,600 & 0,979 & 0,703 &
 O valor crítico CD foi utilizado para determinar se dois modelos eram significativamente diferentes entre si. Esse valor é calculado com base no valor crítico obtido das Tabelas \ref{tb:nemenyi} a \ref{tb:nemenyi2} de teste de Nemenyi, o número de modelos e o número total de amostras. O valor CD é uma métrica que auxilia na interpretação das diferenças entre os modelos, ajudando a identificar quais pares de modelos apresentam diferenças estatisticamente significativas.
 
 Os resultados da pesquisa indicam a existência de evidências estatísticas que sugerem a superioridade de pelo menos um modelo em relação aos demais. A análise de comparação significativa entre os modelos revelou pares de modelos que apresentam diferenças estatisticamente significativas em seus desempenhos, conforme exibido nas Tabelas \ref{tb:nemenyi} a \ref{tb:nemenyi2}, onde cada valor com três casas decimais após a vírgula representa modelos que têm significância estatística entre si.
-
-%Na Tabela \ref{tb:nemeyirede} é determinado quais modelos apresentam diferenças estatisticamente significativas entre si, foi conduzido o teste de comparações múltiplas de Nemenyi. Esse teste avalia todos os pares possíveis de modelos e identifica quais deles possuem diferenças estatisticamente significativas. O modelo RNN apresentou o menor erro nas métricas mas em questão de diferenças significativas ao analisar em relação aos modelos LSTM, GRU e os demais, não demonstra tanta diferença em comparação com os modelos que foi calculado entre eles, sendo o valor critico do RNN o mais baixo foi relacionado com o modelo CNN.
-%
-%No teste de Friedman, a estatística de teste mostrou um valor de $19,117$, enquanto o valor de p foi calculado como $0,0018$. Devido a esses valores baixos, o resultado da correlação desse teste não indica tanta evidência estatística.
-%
-%\begin{table}[!htb]
-%	\caption{Teste de significância Nemenyi dos modelos LSTM, GRU, RNN, CNN, MLP e Prophet.}\label{tb:nemeyirede}
-%	\centering
-%\begin{tabular}{@{}lllllll@{}}
-%	\toprule
-%	\textbf{Modelo} & \textbf{LSTM} & \textbf{GRU} & \textbf{RNN} & \textbf{CNN} & \textbf{MLP} & \textbf{Prophet} \\ \midrule
-%	\textbf{LSTM}    & 1             & 0,9          & 0,170        & 0,9          & 0,9          & 0,170            \\
-%	\textbf{GRU}     & 0,9           & 1            & 0,170        & 0,9          & 0,9          & 0,170            \\
-%	\textbf{RNN}     & 0,170         & 0,170        & 1            & 0,352        & 0,170        & 0,9              \\
-%	\textbf{CNN}     & 0,9           & 0,9          & 0,352        & 1            & 0,9          & 0,352            \\
-%	\textbf{MLP}     & 0,9           & 0,9          & 0,170        & 0,9          & 1            & 0,170            \\
-%	\textbf{Prophet} & 0,170         & 0,170        & 0,9          & 0,352        & 0,170        & 1                \\ \bottomrule
-%\end{tabular}
-%\end{table}
-
-
-
-
 
 \subsubsection{Compara\c c\~ao dos Modelos}
 
@@ -828,28 +739,6 @@ Ao examinar os modelos representados nas Figuras \ref{fig:modelos-arima1} a \ref
 	
 	
 \end{figure}
-
-
-
-%Na Figura \ref{fig:violin-lr-xgb-lgbm-rf}, é feita uma comparação entre os modelos de gradiente e regressor. Esses modelos, por serem mais robustos e utilizar técnicas de otimização mais avançadas, mostram-se superiores aos modelos comparados. O modelo XGBoost, em particular, é identificado como superior em relação aos outros modelos na análise.
-
-%\begin{figure}[!htb]
-%	\centering
-%	\caption{Comparação de modelos de regressão}\label{fig:violin-lr-xgb-lgbm-rf}
-%	\includegraphics[width=\linewidth]{Resultados/Figuras/violin-LR-XGB-LGBM-RF}
-%	
-%\end{figure}
-
-%Na Figura \ref{fig:basic_comparar}, nota-se que todos os modelos trabalhados aqui, exceto o modelo LR, foram comparados em relação às métricas de desempenho. Mesmo sendo muito robustos, esses modelos não conseguiram obter um resultado tão bom quanto o RNN.
-
-
-%\begin{figure}[!htb]
-%	\centering
-%	\caption{Comparação dos modelos nas métricas sMAPE, MAE e RRMSE\label{fig:basic_comparar}}
-%	\includegraphics[width=\linewidth]{Resultados/Figuras/metricas_comparacao_modelos}
-%\end{figure}
-
-
 
 A avaliação da eficácia dos modelos ARIMA em previsões de longo prazo emprega o teste de Ljung-Box, conforme detalhado nas Tabelas \ref{tb:lbtrn} a \ref{tb:lbcm} ilustram a acurácia dos modelos ARIMA ao longo do tempo, com valores menores sendo destacados em \textbf{negrito}. Modelos como ARX, ARIMAX e SARIMAX, que incorporam variáveis exógenas, demonstram um desempenho superior nesse contexto. Esses modelos não lineares apresentam uma capacidade de previsão robusta em horizontes temporais mais longos, diferenciando-se positivamente dos outros modelos ARIMA. Nas Figuras \ref{fig:modelos-arima1} a \ref{fig:modelos-arima2}, são selecionados os modelos ARIMA e seus antecessores. Esses modelos têm suas limitações, tanto para horizontes de previsão de curto prazo quanto para horizontes de longo prazo. Esse gráfico pode fornecer várias informações, mas o objetivo aqui é identificar apenas o melhor modelo entre os modelos ARIMA.
 
