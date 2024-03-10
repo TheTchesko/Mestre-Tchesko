@@ -3,7 +3,7 @@
 Este capítulo apresenta uma revisão sistemática  da literatura (RSL) nos temas relacionados a previsão de séries temporais e aplicações em hidrologia e mais especificamente em abastecimento d'água. A revisão bibliográfica realizada consiste em uma análise abrangente e crítica das principais fontes de literatura. As informações extraídas da literatura são fundamentais para embasar a fundamentação teórica, a metodologia e a análise dos resultados deste estudo.
 
 
-A seleção das referências foi baseada em critérios específicos tais como. Definição das bases de busca, escolha das \textit{keywords}, seleção do período de busca ($2016$ a $2024$), seleção do tipo de artigo, organização pela ordem de citações, verificação dos periódicos mais importantes (fator Q1 do Scimago e Fator de Impacto (FI)). Se um periódico pertencer ao quartil Q1 do Scimago significa que tem um desempenho melhor do que pelo menos $75$\% das revistas dessa mesma categoria. Embora nem todas as referências obtidas tenham uma relação evidente ou mesmo acentuada com a área de aprendizado de máquina, elas contribuem como material de suporte a implementação de alguns modelos avaliados para previsão nesta dissertação e podem servir como base para outros estudos.
+A seleção das referências foi baseada em critérios específicos tais como. Definição das bases de busca, escolha das \textit{keywords}, seleção do período de busca ($2016$ a $2024$), seleção do tipo de artigo, organização pela ordem de citações, verificação dos periódicos mais importantes (fator Q1 do Scimago e Fator de Impacto (FI)). Se um periódico pertencer ao quartil Q1 do \textit{Scimago Journal Rank} (SJR) significa que tem um desempenho melhor do que pelo menos $75$\% das revistas dessa mesma categoria. Embora nem todas as referências obtidas tenham uma relação evidente com a área de aprendizado de máquina, elas contribuem como material de suporte a implementação de alguns modelos avaliados para previsão nesta dissertação e podem servir como base para outros estudos.
 
 A Figura \ref{fig:serie-temporal} apresenta um fluxograma de como a pesquisa foi realizada, destacando a importância da escolha dos periódicos Q1 e com maior fator de impacto, como base para esta RSL. A mesma figura apresenta uma adaptação da metodologia proposta por \citeonline{MARTINS201671} para a realização da RSL, onde primeiramente foram realizadas buscas na base Scopus e \textit{Web of Science} (WoS), selecionando referências relevantes para o tema da pesquisa. Para as duas bases de busca utilizadas foram usadas as palavras-chave ``\textit{time series forecasting}'', ``\textit{time series analysis}'', ``\textit{sanitation}'' e ``\textit{water supply}'' .
 
@@ -35,7 +35,7 @@ Na etapa seguinte, foi realizada uma avaliação preliminar de cada artigo obtid
 
 Levando em consideração a diferença entre essa estimativa apresentada na Tabela \ref{tab:resumo} e a quantidade de artigos restantes após a remoção de duplicatas, tem-se menos de $929$ artigos para análise. É válido lembrar que, ao remover as duplicatas, o número diminuiu ainda mais, chegando a 906 artigos.
 
-Na etapa final, foi realizada uma análise dos conteúdos dos artigos selecionados, levando em consideração as áreas de especialização. Como esta revisão está inserida no contexto de um programa de mestrado em Engenharia de Produção e Sistemas, vale a pena analisar a relação dos artigos obtidos com áreas afins como Matemática. Assim, as áreas mais relevantes para a pesquisa foram Informática, Engenharia e Matemática, representando $50\%$ das publicações. 
+Na etapa final, foi realizada uma análise dos conteúdos dos artigos selecionados, levando em consideração as áreas de especialização. Como esta revisão está inserida no contexto de um programa de mestrado em Engenharia de Produção e Sistemas, vale a pena analisar a relação dos artigos obtidos com áreas afins tais como Matemática. Assim, as áreas mais relevantes para a pesquisa foram Informática, Engenharia e Matemática, representando $50\%$ das publicações. 
 
 São apresentados os resultados da RSL, utilizando um \textit{software} VOSviewer de cada base de dados utilizada no trabalho. 
 A Figura \ref{fig:scopus-09-08} mostra os modelos de previsão usados com frequência em conjunto com ``\textit{time series}'' nos artigos obtidos nas bases de dados Scopus e WoS. 
@@ -67,7 +67,7 @@ A Tabela \ref{tb1} apresenta as palavras-chave utilizadas em cada base de dados,
 	\end{tabular}	
 \end{table}
 
-Na Tabela \ref{tab:resumo} são descritos os dados obtidos na RSL após a aplicação do \textit{software} \textit{ScientoPy}, onde é exibida a quantidade de artigos coletados em ambas bases Scopus e WoS. Apesar do volume considerável, os artigos não foram lidos integralmente, uma vez que muitos deles não se relacionavam diretamente com o objeto de pesquisa deste estudo. Consequentemente, ao longo da condução da RSL artigos discrepantes com o estudo foram excluídos.
+Na Tabela \ref{tab:resumo} são mencionados os dados obtidos na RSL após a aplicação do \textit{software} \textit{ScientoPy}, onde é exibida a quantidade de artigos coletados em ambas bases Scopus e WoS. Apesar do volume considerável, os artigos não foram lidos integralmente, uma vez que muitos deles não se relacionavam diretamente com o objeto de pesquisa deste estudo. Consequentemente, ao longo da condução da RSL artigos discrepantes com o estudo foram excluídos.
 
 \begin{table}[!htb]
 	\centering
@@ -94,7 +94,7 @@ Na Tabela \ref{tab:resumo} são descritos os dados obtidos na RSL após a aplica
 \end{table}
 
 
-A Tabela \ref{tb2} apresenta os periódicos onde foram publicados o maior número de artigos com as combinações utilizadas na RSL para o tema de estudo em questão. Todos os periódicos são listadas em ordem decrescente pela quantidade de publicações obtidas, incluindo a métrica do \textit{Scimago Journal Rank} (SJR) que avalia a importância relativa de periódicos científicos com base em sua influência e prestígio na comunidade acadêmica. Ele é calculado usando algoritmos complexos que levam em consideração a qualidade das citações recebidas por um periódico. Neste estudo a RSL procurou basear-se em periódicos classificados como Q1 e Q2, bem como o \textit{h-index}.
+A Tabela \ref{tb2} apresenta os periódicos onde foram publicados o maior número de artigos com as combinações utilizadas na RSL para o tema de estudo em questão. Todos os periódicos são listadas em ordem decrescente pela quantidade de publicações obtidas, incluindo a métrica do SJR que avalia a importância relativa de periódicos científicos com base em sua influência e prestígio na comunidade acadêmica. Ele é calculado usando algoritmos que levam em consideração a qualidade das citações recebidas por um periódico. Neste estudo a RSL procurou basear-se em periódicos classificados como Q1 e Q2, bem como o \textit{h-index}.
 
 \begin{table}[!htb]
 	\centering
@@ -141,7 +141,7 @@ A porcentagem de documentos nos últimos anos  \textit{Percentage of Documents i
 
 \noindent onde $PDLY$ é a percentagem de documentos nos últimos anos, $Y_e(t)$ é o ano final, $Y_s$ é o ano inicial, calculado como descrito na equação \eqref{pdly}, $P_i$ é número de publicações no ano $i$, $TND$ é o número total de documentos.
 
-Tabela \ref{tb:autor} descreve os principais autores obtidos na RSL descrita previamente, sobre o tema em análise. Essa abordagem visa evitar a inclusão de todos os autores e destacar aqueles que tiveram uma contribuição significativa na área. Dessa forma, é possível identificar o principal autor que se destacou, fornecendo uma visão geral da distribuição da produção científica entre os pesquisadores. Na Tabela \ref{tb:autor} são descritos os valores da taxa de crescimento médio AGR, documentos médios por ano ADY, e porcentagem de documentos nos últimos anos PDLY no período de 2021 a 2023.
+Tabela \ref{tb:autor} descreve os principais autores obtidos na RSL descrita previamente, sobre o tema em análise. Essa abordagem visa evitar a inclusão de todos os autores e destacar aqueles que tiveram uma contribuição significativa na área. Dessa forma, é possível identificar o principal autor que se destacou, fornecendo uma visão geral da distribuição da produção científica entre os pesquisadores. Na Tabela \ref{tb:autor} são descritos os valores da taxa de crescimento médio AGR, documentos médios por ano ADY a porcentagem de documentos nos últimos anos PDLY no período de 2021 a 2023.
 
 \begin{table}[!htb]
 	\centering

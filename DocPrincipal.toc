@@ -16,8 +16,8 @@
 \contentsline {subsubsection}{\numberline {3.4.2}Regress\~ao Linear}{40}{subsubsection.3.4.2}%
 \contentsline {subsubsection}{\numberline {3.4.3}\'Arvore de Decis\~ao}{40}{subsubsection.3.4.3}%
 \contentsline {subsubsection}{\numberline {3.4.4}Floresta Aleat\'oria}{42}{subsubsection.3.4.4}%
-\contentsline {subsubsection}{\numberline {3.4.5}Gradient Boosting}{44}{subsubsection.3.4.5}%
-\contentsline {subsubsection}{\numberline {3.4.6}LightGBM}{45}{subsubsection.3.4.6}%
+\contentsline {subsubsection}{\numberline {3.4.5}\textit {Gradient Boosting}}{44}{subsubsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {3.4.6}\textit {LightGBM}}{45}{subsubsection.3.4.6}%
 \contentsline {subsection}{\numberline {3.5}Redes Neurais Artificiais}{47}{subsection.3.5}%
 \contentsline {subsubsection}{\numberline {3.5.1}MLP}{47}{subsubsection.3.5.1}%
 \contentsline {subsubsection}{\numberline {3.5.2}Rede Neural Recorrente}{48}{subsubsection.3.5.2}%

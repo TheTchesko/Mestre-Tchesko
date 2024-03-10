@@ -7,7 +7,7 @@ A pesquisa fará uso da variável LT01, que representa o nível do reservatório
 
 Mesmo havendo $9$ variáveis nesse conjunto de dados, poderia-se trabalhar com $1$ para previsão e as outras 8 como variáveis exógenas. No entanto, todas as variáveis podem ter correlação com o tanque, mas nem todas são necessárias, causando ruído na série temporal. Com isso em mente, foram retiradas as variáveis B3 e FT02 restando assim as variáveis de previsão com as variáveis que tiveram correlação significativa.
 
-Resultando em apenas 6 variáveis no formato de variáveis exógenas e uma variável para previsão. Com essa abordagem, restam $17.522$ observações, com o intervalo temporal compreendido entre $2018$ e $2019$. Essa decisão foi tomada para evitar que o modelo sofra excessivamente com variações temporais.
+Neste caso, avalia-se 6 variáveis no formato de variáveis exógenas e uma variável para previsão. Com essa abordagem, restam $17.522$ observações, com o intervalo temporal compreendido entre $2018$ e $2019$. Essa decisão foi tomada para evitar que o modelo sofra excessivamente com variações temporais.
 
 É crucial destacar a importância de manter as outras variáveis como exógenas durante o processo de previsão. Embora haja a possibilidade de trabalhar com apenas uma variável para previsão, ao incorporar as demais como variáveis exógenas, o modelo é enriquecido, proporcionando uma visão mais abrangente do sistema. Neste contexto, as variáveis como Bombas de Sucção, Vazões e Pressões possuem potencial impacto no nível do reservatório, e ao mantê-las como exógenas, permite-se que o modelo considere suas influências durante a previsão. Essa abordagem contribui para uma análise mais completa e realista, levando em conta as interações complexas entre as variáveis e fortalecendo a capacidade preditiva do modelo em cenários de abastecimento d'água.
 
@@ -76,7 +76,7 @@ Nesse conjunto de dados que está sendo trabalhado, há uma forte correlação d
 \end{figure}
 
 
-Na Figura \ref{fig:acfa}, observa-se a distinção entre ACF, apresentada na Figura \ref{fig:acfa}, e PACF, mostrada na Figura \ref{fig:pacf}. A autocorrelação é uma métrica que indica a relação entre os valores de uma série temporal em diferentes defasagens, capturando tanto correlações diretas quanto indiretas. Por sua vez, a autocorrelação parcial mensura apenas a correlação direta entre os valores, ignorando a influência de defasagens intermediárias. Essas análises são cruciais para detectar padrões e dependências entre os valores da série temporal, o que é essencial para a modelagem e previsão desses dados.
+Na Figura \ref{fig:acfa}, observa-se a distinção entre ACF, e PACF, mostrada na Figura \ref{fig:pacf}. A autocorrelação é uma métrica que indica a relação entre os valores de uma série temporal em diferentes defasagens, capturando tanto correlações diretas quanto indiretas. Por sua vez, a autocorrelação parcial mensura apenas a correlação direta entre os valores, ignorando a influência de defasagens intermediárias. Essas análises são cruciais para detectar padrões e dependências entre os valores da série temporal, o que é essencial para a modelagem e previsão desses dados.
 
 O intervalo de confiança padrão de $95\%$, destacado pela faixa azul nas Figuras \ref{fig:acfa} e \ref{fig:pacf}, serve como referência crítica. Observações fora desse intervalo indicam correlações estatisticamente significativas, sugerindo a presença de padrões ou estrutura na série temporal.
 
@@ -105,7 +105,7 @@ Na Figura \ref{fig:ruido-branco}, é possível observar uma série temporal que 
 \end{figure}
 
 
-ADF de $-12,515$ indica a evidência de estacionariedade na série temporal do nível do tanque LT01. 
+Um valor de ADF de $-12,515$ indica a evidência de estacionariedade na série temporal do nível do tanque LT01. 
 O valor de p expresso como $2,62\times 10^{-23}$ está associado ao teste ADF. No contexto do teste ADF, a hipótese nula é a presença de raiz unitária na série temporal, indicando não estacionariedade. Dado o valor de p de $2,62\times 10^{-23}$, evidencia-se uma probabilidade muito baixa, indicando forte suporte contra a hipótese nula e sugerindo que a série temporal é estacionária. Na Tabela \ref{tb:adf}, são apresentados todos os dados do teste para estacionariedade.Os resultados indicam fortes evidências contra a hipótese nula. Com um teste ADF de $-12,515 $ e um valor de p extremamente baixo de $2,62 \times 10^{-23}$, rejeita-se a hipótese nula de presença de raiz unitária. Os $44$ atrasos utilizados e as $17.477$ observações corroboram a análise estatística. Ao comparar a estatística de teste ADF com os valores críticos, observa-se que está significativamente abaixo deles em todos os níveis de significância $(1\%, 5\%, 10\%)$. Portanto, a conclusão é de que os dados não possuem raiz unitária, indicando que são estacionários.
 
 \begin{table}[!htb]
@@ -740,9 +740,9 @@ Ao examinar os modelos representados nas Figuras \ref{fig:modelos-arima1} a \ref
 	
 \end{figure}
 
-A avaliação da eficácia dos modelos ARIMA em previsões de longo prazo emprega o teste de Ljung-Box, conforme detalhado nas Tabelas \ref{tb:lbtrn} a \ref{tb:lbcm} ilustram a acurácia dos modelos ARIMA ao longo do tempo, com valores menores sendo destacados em \textbf{negrito}. Modelos como ARX, ARIMAX e SARIMAX, que incorporam variáveis exógenas, demonstram um desempenho superior nesse contexto. Esses modelos não lineares apresentam uma capacidade de previsão robusta em horizontes temporais mais longos, diferenciando-se positivamente dos outros modelos ARIMA. Nas Figuras \ref{fig:modelos-arima1} a \ref{fig:modelos-arima2}, são selecionados os modelos ARIMA e seus antecessores. Esses modelos têm suas limitações, tanto para horizontes de previsão de curto prazo quanto para horizontes de longo prazo. Esse gráfico pode fornecer várias informações, mas o objetivo aqui é identificar apenas o melhor modelo entre os modelos ARIMA.
+A avaliação da eficácia dos modelos ARIMA em previsões de longo prazo emprega o teste de Ljung-Box, conforme detalhado nas Tabelas \ref{tb:lbtrn} a \ref{tb:lbcm} ilustram a acurácia dos modelos ARIMA ao longo do tempo, com valores menores sendo destacados em \textbf{negrito}. Modelos tais como ARX, ARIMAX e SARIMAX, que incorporam variáveis exógenas, demonstram um desempenho superior nesse contexto. Esses modelos não lineares apresentam uma capacidade de previsão robusta em horizontes temporais mais longos, diferenciando-se positivamente dos outros modelos ARIMA. Nas Figuras \ref{fig:modelos-arima1} a \ref{fig:modelos-arima2}, são selecionados os modelos ARIMA e seus antecessores. Esses modelos têm suas limitações, tanto para horizontes de previsão de curto prazo quanto para horizontes de longo prazo. Esse gráfico pode fornecer várias informações, mas o objetivo aqui é identificar apenas o melhor modelo entre os modelos ARIMA.
 
-Como essa série não apresentou uma estacionariedade bem definida e os dados não a tornaram estacionária, os modelos que não têm sazonalidade mostraram-se superiores, tais como AR, MA, ARX, ARMA, ARIMA e ARIMAX. O modelo ARIMAX demonstrou ser bastante robusto para este caso, mas mesmo assim, modelos mais básicos como AR, ARMA e ARIMA ainda apresentaram resultados melhores.
+Como essa série não apresentou uma estacionariedade bem definida e os dados não a tornaram estacionária, os modelos que não têm sazonalidade mostraram-se superiores, tais como AR, MA, ARX, ARMA, ARIMA e ARIMAX. O modelo ARIMAX demonstrou ser robusto para este caso, mas mesmo assim, modelos mais básicos como AR, ARMA e ARIMA ainda apresentaram resultados melhores.
 
 \begin{table}[H]
 	\centering		

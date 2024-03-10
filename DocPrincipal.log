@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.28)  1 MAR 2024 13:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.28)  10 MAR 2024 11:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1596,7 +1596,7 @@ LaTeX Warning: \include should only be used after \begin{document} on input lin
 e 5.
 
 (Packages/info.tex) (DocPrincipal.aux (Pretextuais/capa.aux)
-(Pretextuais/folha_rosto1.aux) (Pretextuais/folha_aprovacao.aux)
+(Pretextuais/folha_rosto2.aux) (Pretextuais/folha_aprovacao.aux)
 (Pretextuais/dedicatoria.aux) (Pretextuais/agradecimentos.aux)
 (Pretextuais/epigrafe.aux) (Resumos/resumo.aux) (Resumos/abstract.aux)
 (Pretextuais/listas.aux) (Pretextuais/lista-simbolos.aux)
@@ -1737,9 +1737,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 {C:/Users/msndo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Pretextuai
 s/pucpr.png>]
-\openout2 = `Pretextuais/folha_rosto1.aux'.
+\openout2 = `Pretextuais/folha_rosto2.aux'.
 
- (Pretextuais/folha_rosto1.tex
+ (Pretextuais/folha_rosto2.tex
 LaTeX Font Info:    Trying to load font information for U+msa on input line 12.
 
 
@@ -1765,8 +1765,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22 \include{Pretextuais/folha_rosto1}
-                                        %% QUALIFICAÇÃO [2
+l.23 \include{Pretextuais/folha_rosto2}
+                                        %% DISSERTAÇÃO [2
 
 
 
@@ -2041,7 +2041,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Introducao/Figuras/Etapas.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<Introducao/Figuras/Etapas.pdf, id=544, 250.63637pt x 284.96461pt>
+<Introducao/Figuras/Etapas.pdf, id=542, 250.63637pt x 284.96461pt>
 File: Introducao/Figuras/Etapas.pdf Graphic file (type pdf)
 <use Introducao/Figuras/Etapas.pdf>
 Package pdftex.def Info: Introducao/Figuras/Etapas.pdf  used on input line 71.
@@ -2079,7 +2079,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Revisao/Figuras/Figura2.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Revisao/Figuras/Figura2.pdf, id=659, 472.86664pt x 273.22076pt>
+<Revisao/Figuras/Figura2.pdf, id=658, 472.86664pt x 273.22076pt>
 File: Revisao/Figuras/Figura2.pdf Graphic file (type pdf)
 <use Revisao/Figuras/Figura2.pdf>
 Package pdftex.def Info: Revisao/Figuras/Figura2.pdf  used on input line 14.
@@ -2097,7 +2097,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
  <./Revisao/Figuras/Figura2.pdf>]
-<Revisao/Figuras/base-wos-scopus.pdf, id=683, 1903.11pt x 1206.5075pt>
+<Revisao/Figuras/base-wos-scopus.pdf, id=682, 1903.11pt x 1206.5075pt>
 File: Revisao/Figuras/base-wos-scopus.pdf Graphic file (type pdf)
 <use Revisao/Figuras/base-wos-scopus.pdf>
 Package pdftex.def Info: Revisao/Figuras/base-wos-scopus.pdf  used on input lin
@@ -2249,7 +2249,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/sarimax_map.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/sarimax_map.pdf, id=1818, 623.73027pt x 256.5585pt>
+<Modelos/Figuras/sarimax_map.pdf, id=1817, 623.73027pt x 256.5585pt>
 File: Modelos/Figuras/sarimax_map.pdf Graphic file (type pdf)
 <use Modelos/Figuras/sarimax_map.pdf>
 Package pdftex.def Info: Modelos/Figuras/sarimax_map.pdf  used on input line 91
@@ -2285,7 +2285,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/decison.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/decison.pdf, id=1892, 607.46951pt x 569.52777pt>
+<Modelos/Figuras/decison.pdf, id=1891, 607.46951pt x 569.52777pt>
 File: Modelos/Figuras/decison.pdf Graphic file (type pdf)
 <use Modelos/Figuras/decison.pdf>
 Package pdftex.def Info: Modelos/Figuras/decison.pdf  used on input line 148.
@@ -2311,7 +2311,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/RF.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/RF.pdf, id=1945, 1474.50874pt x 508.09827pt>
+<Modelos/Figuras/RF.pdf, id=1944, 1474.50874pt x 508.09827pt>
 File: Modelos/Figuras/RF.pdf Graphic file (type pdf)
 <use Modelos/Figuras/RF.pdf>
 Package pdftex.def Info: Modelos/Figuras/RF.pdf  used on input line 183.
@@ -2328,7 +2328,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/xgboos.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/xgboos.pdf, id=2081, 820.26451pt x 346.89601pt>
+<Modelos/Figuras/xgboos.pdf, id=2080, 820.26451pt x 346.89601pt>
 File: Modelos/Figuras/xgboos.pdf Graphic file (type pdf)
 <use Modelos/Figuras/xgboos.pdf>
 Package pdftex.def Info: Modelos/Figuras/xgboos.pdf  used on input line 206.
@@ -2345,7 +2345,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/xgboost.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/xgboost.pdf, id=2132, 925.95938pt x 772.38562pt>
+<Modelos/Figuras/xgboost.pdf, id=2130, 925.95938pt x 772.38562pt>
 File: Modelos/Figuras/xgboost.pdf Graphic file (type pdf)
 <use Modelos/Figuras/xgboost.pdf>
 Package pdftex.def Info: Modelos/Figuras/xgboost.pdf  used on input line 244.
@@ -2371,7 +2371,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/ann.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/ann.pdf, id=2202, 749.80125pt x 479.69212pt>
+<Modelos/Figuras/ann.pdf, id=2200, 749.80125pt x 479.69212pt>
 File: Modelos/Figuras/ann.pdf Graphic file (type pdf)
 <use Modelos/Figuras/ann.pdf>
 Package pdftex.def Info: Modelos/Figuras/ann.pdf  used on input line 284.
@@ -2403,7 +2403,7 @@ l.315
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/rnn1.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/rnn1.pdf, id=2280, 1750.54pt x 596.2275pt>
+<Modelos/Figuras/rnn1.pdf, id=2278, 1750.54pt x 596.2275pt>
 File: Modelos/Figuras/rnn1.pdf Graphic file (type pdf)
 <use Modelos/Figuras/rnn1.pdf>
 Package pdftex.def Info: Modelos/Figuras/rnn1.pdf  used on input line 326.
@@ -2438,10 +2438,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/gru.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/gru.pdf, id=2400, 780.9175pt x 684.75826pt>
+<Modelos/Figuras/gru.pdf, id=2394, 780.9175pt x 684.75826pt>
 File: Modelos/Figuras/gru.pdf Graphic file (type pdf)
 <use Modelos/Figuras/gru.pdf>
-Package pdftex.def Info: Modelos/Figuras/gru.pdf  used on input line 397.
+Package pdftex.def Info: Modelos/Figuras/gru.pdf  used on input line 394.
 (pdftex.def)             Requested size: 227.62206pt x 199.58832pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2456,12 +2456,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x30
 8.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf, id=2457, 3044.37375pt x 746.1
+<Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf, id=2451, 3044.37375pt x 746.1
 8777pt>
 File: Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf Graphic file (type pdf)
 <use Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf>
 Package pdftex.def Info: Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf  used 
-on input line 407.
+on input line 404.
 (pdftex.def)             Requested size: 455.24411pt x 111.58176pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2475,10 +2475,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/cnn.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<Modelos/Figuras/cnn.pdf, id=2581, 466.0338pt x 197.97664pt>
+<Modelos/Figuras/cnn.pdf, id=2575, 466.0338pt x 197.97664pt>
 File: Modelos/Figuras/cnn.pdf Graphic file (type pdf)
 <use Modelos/Figuras/cnn.pdf>
-Package pdftex.def Info: Modelos/Figuras/cnn.pdf  used on input line 430.
+Package pdftex.def Info: Modelos/Figuras/cnn.pdf  used on input line 427.
 (pdftex.def)             Requested size: 455.24411pt x 193.39346pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2586,7 +2586,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-<Resultados/Figuras/STL.pdf, id=2754, 710.53326pt x 564.89027pt>
+<Resultados/Figuras/STL.pdf, id=2746, 710.53326pt x 564.89027pt>
 File: Resultados/Figuras/STL.pdf Graphic file (type pdf)
 <use Resultados/Figuras/STL.pdf>
 Package pdftex.def Info: Resultados/Figuras/STL.pdf  used on input line 46.
@@ -2601,7 +2601,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [65]
-<Resultados/Figuras/person.pdf, id=2761, 671.61241pt x 565.86156pt>
+<Resultados/Figuras/person.pdf, id=2753, 671.61241pt x 565.86156pt>
 File: Resultados/Figuras/person.pdf Graphic file (type pdf)
 <use Resultados/Figuras/person.pdf>
 Package pdftex.def Info: Resultados/Figuras/person.pdf  used on input line 61.
@@ -2616,7 +2616,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [66 <./Resultados/Figuras/STL.pdf>]
-<Resultados/Figuras/LR.pdf, id=2812, 710.77042pt x 240.40753pt>
+<Resultados/Figuras/LR.pdf, id=2804, 710.77042pt x 240.40753pt>
 File: Resultados/Figuras/LR.pdf Graphic file (type pdf)
 <use Resultados/Figuras/LR.pdf>
 Package pdftex.def Info: Resultados/Figuras/LR.pdf  used on input line 75.
@@ -2631,17 +2631,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [67 <./Resultados/Figuras/person.pdf> <./Resultados/Figuras/LR.pdf>]
-<Resultados/Figuras/acf.pdf, id=2871, 723.10214pt x 581.07463pt>
+<Resultados/Figuras/acf.pdf, id=2862, 723.10214pt x 581.07463pt>
 File: Resultados/Figuras/acf.pdf Graphic file (type pdf)
 <use Resultados/Figuras/acf.pdf>
 Package pdftex.def Info: Resultados/Figuras/acf.pdf  used on input line 86.
 (pdftex.def)             Requested size: 273.14923pt x 219.49841pt.
-<Resultados/Figuras/pacf.pdf, id=2872, 723.10214pt x 581.07463pt>
+<Resultados/Figuras/pacf.pdf, id=2863, 723.10214pt x 581.07463pt>
 File: Resultados/Figuras/pacf.pdf Graphic file (type pdf)
 <use Resultados/Figuras/pacf.pdf>
 Package pdftex.def Info: Resultados/Figuras/pacf.pdf  used on input line 91.
 (pdftex.def)             Requested size: 273.14923pt x 219.49841pt.
-<Resultados/Figuras/ruido-branco.pdf, id=2875, 706.83525pt x 348.69751pt>
+<Resultados/Figuras/ruido-branco.pdf, id=2866, 706.83525pt x 348.69751pt>
 File: Resultados/Figuras/ruido-branco.pdf Graphic file (type pdf)
 <use Resultados/Figuras/ruido-branco.pdf>
 Package pdftex.def Info: Resultados/Figuras/ruido-branco.pdf  used on input lin
@@ -2693,13 +2693,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [72]
-<Resultados/Figuras/ARX-AR-MA-ARMA-24.pdf, id=2999, 710.79218pt x 421.1601pt>
+<Resultados/Figuras/ARX-AR-MA-ARMA-24.pdf, id=2990, 710.79218pt x 421.1601pt>
 File: Resultados/Figuras/ARX-AR-MA-ARMA-24.pdf Graphic file (type pdf)
 <use Resultados/Figuras/ARX-AR-MA-ARMA-24.pdf>
 Package pdftex.def Info: Resultados/Figuras/ARX-AR-MA-ARMA-24.pdf  used on inpu
 t line 232.
 (pdftex.def)             Requested size: 318.66948pt x 188.81981pt.
-<Resultados/Figuras/ARIMA-SARIMA-ARIMAX-SARIMAX-24.pdf, id=3000, 710.79218pt x 
+<Resultados/Figuras/ARIMA-SARIMA-ARIMAX-SARIMAX-24.pdf, id=2991, 710.79218pt x 
 421.54434pt>
 File: Resultados/Figuras/ARIMA-SARIMA-ARIMAX-SARIMAX-24.pdf Graphic file (type 
 pdf)
@@ -2707,28 +2707,28 @@ pdf)
 Package pdftex.def Info: Resultados/Figuras/ARIMA-SARIMA-ARIMAX-SARIMAX-24.pdf 
  used on input line 239.
 (pdftex.def)             Requested size: 318.66948pt x 188.99208pt.
-<Resultados/Figuras/LR-XGB-LGBM-RF.pdf, id=3001, 710.77042pt x 421.01477pt>
+<Resultados/Figuras/LR-XGB-LGBM-RF.pdf, id=2992, 710.77042pt x 421.01477pt>
 File: Resultados/Figuras/LR-XGB-LGBM-RF.pdf Graphic file (type pdf)
 <use Resultados/Figuras/LR-XGB-LGBM-RF.pdf>
 Package pdftex.def Info: Resultados/Figuras/LR-XGB-LGBM-RF.pdf  used on input l
 ine 247.
 (pdftex.def)             Requested size: 318.66948pt x 188.76108pt.
-<Resultados/Figuras/GRU.pdf, id=3002, 619.99745pt x 321.031pt>
+<Resultados/Figuras/GRU.pdf, id=2993, 619.99745pt x 321.031pt>
 File: Resultados/Figuras/GRU.pdf Graphic file (type pdf)
 <use Resultados/Figuras/GRU.pdf>
 Package pdftex.def Info: Resultados/Figuras/GRU.pdf  used on input line 255.
 (pdftex.def)             Requested size: 318.66948pt x 165.01195pt.
-<Resultados/Figuras/LSTM.pdf, id=3003, 619.99745pt x 321.031pt>
+<Resultados/Figuras/LSTM.pdf, id=2994, 619.99745pt x 321.031pt>
 File: Resultados/Figuras/LSTM.pdf Graphic file (type pdf)
 <use Resultados/Figuras/LSTM.pdf>
 Package pdftex.def Info: Resultados/Figuras/LSTM.pdf  used on input line 263.
 (pdftex.def)             Requested size: 318.66948pt x 165.01195pt.
-<Resultados/Figuras/RNN.pdf, id=3004, 619.99745pt x 321.031pt>
+<Resultados/Figuras/RNN.pdf, id=2995, 619.99745pt x 321.031pt>
 File: Resultados/Figuras/RNN.pdf Graphic file (type pdf)
 <use Resultados/Figuras/RNN.pdf>
 Package pdftex.def Info: Resultados/Figuras/RNN.pdf  used on input line 271.
 (pdftex.def)             Requested size: 318.66948pt x 165.01195pt.
-<Resultados/Figuras/prophet.pdf, id=3005, 707.33191pt x 348.69751pt>
+<Resultados/Figuras/prophet.pdf, id=2996, 707.33191pt x 348.69751pt>
 File: Resultados/Figuras/prophet.pdf Graphic file (type pdf)
 <use Resultados/Figuras/prophet.pdf>
 Package pdftex.def Info: Resultados/Figuras/prophet.pdf  used on input line 276
@@ -2867,7 +2867,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [84]
-<Resultados/Figuras/smape_comparar_basic.pdf, id=3347, 707.287pt x 421.26694pt>
+<Resultados/Figuras/smape_comparar_basic.pdf, id=3338, 707.287pt x 421.26694pt>
 
 File: Resultados/Figuras/smape_comparar_basic.pdf Graphic file (type pdf)
 <use Resultados/Figuras/smape_comparar_basic.pdf>
@@ -2886,14 +2886,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [85
 
 ]
-<Resultados/Figuras/mae_comparar_basic.pdf, id=3353, 707.32904pt x 421.26694pt>
+<Resultados/Figuras/mae_comparar_basic.pdf, id=3344, 707.32904pt x 421.26694pt>
 
 File: Resultados/Figuras/mae_comparar_basic.pdf Graphic file (type pdf)
 <use Resultados/Figuras/mae_comparar_basic.pdf>
 Package pdftex.def Info: Resultados/Figuras/mae_comparar_basic.pdf  used on inp
 ut line 702.
 (pdftex.def)             Requested size: 318.66948pt x 189.79333pt.
-<Resultados/Figuras/rrmse_comparar_basic.pdf, id=3354, 707.32904pt x 421.26694p
+<Resultados/Figuras/rrmse_comparar_basic.pdf, id=3345, 707.32904pt x 421.26694p
 t>
 File: Resultados/Figuras/rrmse_comparar_basic.pdf Graphic file (type pdf)
 <use Resultados/Figuras/rrmse_comparar_basic.pdf>
@@ -2911,19 +2911,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [86 <./Resultados/Figuras/smape_comparar_basic.pdf> <./Resultados/Figuras/mae_c
 omparar_basic.pdf>]
-<Resultados/Figuras/smape_comparar.pdf, id=3444, 710.49124pt x 240.14719pt>
+<Resultados/Figuras/smape_comparar.pdf, id=3435, 710.49124pt x 240.14719pt>
 File: Resultados/Figuras/smape_comparar.pdf Graphic file (type pdf)
 <use Resultados/Figuras/smape_comparar.pdf>
 Package pdftex.def Info: Resultados/Figuras/smape_comparar.pdf  used on input l
 ine 718.
 (pdftex.def)             Requested size: 409.71692pt x 138.48662pt.
-<Resultados/Figuras/mae_comparar.pdf, id=3445, 710.50067pt x 240.11192pt>
+<Resultados/Figuras/mae_comparar.pdf, id=3436, 710.50067pt x 240.11192pt>
 File: Resultados/Figuras/mae_comparar.pdf Graphic file (type pdf)
 <use Resultados/Figuras/mae_comparar.pdf>
 Package pdftex.def Info: Resultados/Figuras/mae_comparar.pdf  used on input lin
 e 728.
 (pdftex.def)             Requested size: 409.71692pt x 138.4663pt.
-<Resultados/Figuras/rrmse_comparar.pdf, id=3446, 699.02782pt x 235.69798pt>
+<Resultados/Figuras/rrmse_comparar.pdf, id=3437, 699.02782pt x 235.69798pt>
 File: Resultados/Figuras/rrmse_comparar.pdf Graphic file (type pdf)
 <use Resultados/Figuras/rrmse_comparar.pdf>
 Package pdftex.def Info: Resultados/Figuras/rrmse_comparar.pdf  used on input l
@@ -2959,7 +2959,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [89]
-<Resultados/Figuras/grafico-barras-demanda.pdf, id=3627, 825.96268pt x 537.601p
+<Resultados/Figuras/grafico-barras-demanda.pdf, id=3618, 825.96268pt x 537.601p
 t>
 File: Resultados/Figuras/grafico-barras-demanda.pdf Graphic file (type pdf)
 <use Resultados/Figuras/grafico-barras-demanda.pdf>
@@ -3102,7 +3102,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.04742pt}.
 
-[102] (DocPrincipal.aux (Pretextuais/capa.aux) (Pretextuais/folha_rosto1.aux)
+[102] (DocPrincipal.aux (Pretextuais/capa.aux) (Pretextuais/folha_rosto2.aux)
 (Pretextuais/folha_aprovacao.aux) (Pretextuais/dedicatoria.aux)
 (Pretextuais/agradecimentos.aux) (Pretextuais/epigrafe.aux) (Resumos/resumo.aux
 ) (Resumos/abstract.aux) (Pretextuais/listas.aux)
@@ -3118,43 +3118,44 @@ Package rerunfilecheck Info: File `DocPrincipal.out' has not changed.
 (rerunfilecheck)             Checksum: CB7D41CEBEEB45800134EAA44FF60A41;3713.
  ) 
 Here is how much of TeX's memory you used:
- 35209 strings out of 474485
- 735206 string characters out of 5743734
+ 35211 strings out of 474485
+ 735229 string characters out of 5743734
  1993542 words of memory out of 5000000
- 56355 multiletter control sequences out of 15000+600000
- 577621 words of font info for 83 fonts, out of 8000000 for 9000
+ 56356 multiletter control sequences out of 15000+600000
+ 578320 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,15n,134p,2588b,1012s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
-0800.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx1440.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecsl1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecti1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\msndo\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\msndo\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\msndo\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\msndo\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk><C:/Users/m
-sndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
-:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
-10.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmmi12.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmmi6.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi8.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/msndo/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/msndo/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/msndo/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/msnd
-o/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Use
-rs/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/symbols/msbm10.pfb>
-Output written on DocPrincipal.pdf (102 pages, 2378590 bytes).
+ <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi
+1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecrm0800.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbx1440.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecsl1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\msndo\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\msndo\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\msndo\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\msndo\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\
+msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk><C:/U
+sers/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.
+pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmmi12.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/msndo/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/msndo/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/msndo/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/msndo
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/User
+s/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/symbols/msbm10.pfb>
+Output written on DocPrincipal.pdf (102 pages, 2382455 bytes).
 PDF statistics:
- 4528 PDF objects out of 5155 (max. 8388607)
+ 4535 PDF objects out of 5155 (max. 8388607)
  365 named destinations out of 1000 (max. 500000)
  583 words of extra memory for PDF output out of 10000 (max. 10000000)
 
