@@ -5,8 +5,6 @@ Reallocating 'name_of_file' (item size: 1) to 21 items.
 A level-1 auxiliary file: Pretextuais/capa.aux
 Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: Pretextuais/folha_rosto2.aux
-Reallocating 'name_of_file' (item size: 1) to 32 items.
-A level-1 auxiliary file: Pretextuais/folha_aprovacao.aux
 Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: Pretextuais/dedicatoria.aux
 Reallocating 'name_of_file' (item size: 1) to 31 items.
@@ -98,7 +96,7 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 +---------------------------------------------------------+
 You've used 112 entries,
             6714 wiz_defined-function locations,
-            1948 strings with 36617 characters,
+            1947 strings with 36586 characters,
 and the built_in function-call counts, 145681 in all, are:
 = -- 14749
 > -- 4015

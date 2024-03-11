@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.28)  10 MAR 2024 11:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.28)  11 MAR 2024 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1596,13 +1596,13 @@ LaTeX Warning: \include should only be used after \begin{document} on input lin
 e 5.
 
 (Packages/info.tex) (DocPrincipal.aux (Pretextuais/capa.aux)
-(Pretextuais/folha_rosto2.aux) (Pretextuais/folha_aprovacao.aux)
-(Pretextuais/dedicatoria.aux) (Pretextuais/agradecimentos.aux)
-(Pretextuais/epigrafe.aux) (Resumos/resumo.aux) (Resumos/abstract.aux)
-(Pretextuais/listas.aux) (Pretextuais/lista-simbolos.aux)
-(Introducao/sec-introducao.aux) (Revisao/sec-revisao.aux)
-(Modelos/sec-modelos.aux) (Resultados/sec-resultados.aux)
-(Conclusoes/sec-conclusoes.aux) (Bibliografia/sec-bibliografia.aux))
+(Pretextuais/folha_rosto2.aux) (Pretextuais/dedicatoria.aux)
+(Pretextuais/agradecimentos.aux) (Pretextuais/epigrafe.aux) (Resumos/resumo.aux
+) (Resumos/abstract.aux) (Pretextuais/listas.aux)
+(Pretextuais/lista-simbolos.aux) (Introducao/sec-introducao.aux)
+(Revisao/sec-revisao.aux) (Modelos/sec-modelos.aux)
+(Resultados/sec-resultados.aux) (Conclusoes/sec-conclusoes.aux)
+(Bibliografia/sec-bibliografia.aux))
 \openout1 = `DocPrincipal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -1771,43 +1771,125 @@ l.23 \include{Pretextuais/folha_rosto2}
 
 
 ]
-\openout2 = `Pretextuais/folha_aprovacao.aux'.
+
+pdfTeX warning: pdflatex.exe (file ./Pretextuais/ficha.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+<Pretextuais/ficha.pdf, id=219, 614.295pt x 794.97pt>
+File: Pretextuais/ficha.pdf Graphic file (type pdf)
+<use Pretextuais/ficha.pdf>
+Package pdftex.def Info: Pretextuais/ficha.pdf  used on input line 26.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
-(Pretextuais/folha_aprovacao.tex
-Underfull \hbox (badness 1264) in paragraph at lines 8--9
-\T1/cmr/m/n/12 DissertaÁ„o apre-sen-tada ao Pro-grama de
- []
+pdfTeX warning: pdflatex.exe (file ./Pretextuais/ficha.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+File: Pretextuais/ficha.pdf Graphic file (type pdf)
+<use Pretextuais/ficha.pdf>
+Package pdftex.def Info: Pretextuais/ficha.pdf  used on input line 26.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
+pdfTeX warning: pdflatex.exe (file ./Pretextuais/ficha.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
 
- []
 
-)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
+pdfTeX warning: pdflatex.exe (file ./Pretextuais/ficha.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+<Pretextuais/ficha.pdf, id=222, page=1, 614.295pt x 794.97pt>
+File: Pretextuais/ficha.pdf Graphic file (type pdf)
+<use Pretextuais/ficha.pdf, page 1>
+Package pdftex.def Info: Pretextuais/ficha.pdf , page1 used on input line 26.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Pretextuais/ficha.pdf Graphic file (type pdf)
+<use Pretextuais/ficha.pdf, page 1>
+Package pdftex.def Info: Pretextuais/ficha.pdf , page1 used on input line 26.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Pretextuais/ficha.pdf Graphic file (type pdf)
+<use Pretextuais/ficha.pdf, page 1>
+Package pdftex.def Info: Pretextuais/ficha.pdf , page1 used on input line 26.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Pretextuais/ficha.pdf Graphic file (type pdf)
+<use Pretextuais/ficha.pdf, page 1>
+Package pdftex.def Info: Pretextuais/ficha.pdf , page1 used on input line 26.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 \include{Pretextuais/folha_aprovacao}
-                                           %% N√ÉO ASSINADA [3
+l.26 \includepdf{Pretextuais/ficha.pdf}
+                                       
+File: Pretextuais/ficha.pdf Graphic file (type pdf)
+<use Pretextuais/ficha.pdf, page 1>
+Package pdftex.def Info: Pretextuais/ficha.pdf , page1 used on input line 26.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [3
 
 
+ <./Pretextuais/ficha.pdf>]
 
-]
+pdfTeX warning: pdflatex.exe (file ./Pretextuais/folha_aprovacao1.pdf): PDF inc
+lusion: found PDF version <1.6>, but at most version <1.5> allowed
+<Pretextuais/folha_aprovacao1.pdf, id=247, 597.432pt x 844.95674pt>
+File: Pretextuais/folha_aprovacao1.pdf Graphic file (type pdf)
+<use Pretextuais/folha_aprovacao1.pdf>
+Package pdftex.def Info: Pretextuais/folha_aprovacao1.pdf  used on input line 3
+1.
+(pdftex.def)             Requested size: 597.43054pt x 844.95468pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Pretextuais/folha_aprovacao1.pdf): PDF inc
+lusion: found PDF version <1.6>, but at most version <1.5> allowed
+File: Pretextuais/folha_aprovacao1.pdf Graphic file (type pdf)
+<use Pretextuais/folha_aprovacao1.pdf>
+Package pdftex.def Info: Pretextuais/folha_aprovacao1.pdf  used on input line 3
+1.
+(pdftex.def)             Requested size: 597.43054pt x 844.95468pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Pretextuais/folha_aprovacao1.pdf): PDF inc
+lusion: found PDF version <1.6>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./Pretextuais/folha_aprovacao1.pdf): PDF inc
+lusion: found PDF version <1.6>, but at most version <1.5> allowed
+<Pretextuais/folha_aprovacao1.pdf, id=250, page=1, 597.432pt x 844.95674pt>
+File: Pretextuais/folha_aprovacao1.pdf Graphic file (type pdf)
+<use Pretextuais/folha_aprovacao1.pdf, page 1>
+Package pdftex.def Info: Pretextuais/folha_aprovacao1.pdf , page1 used on input
+ line 31.
+(pdftex.def)             Requested size: 597.43054pt x 844.95468pt.
+File: Pretextuais/folha_aprovacao1.pdf Graphic file (type pdf)
+<use Pretextuais/folha_aprovacao1.pdf, page 1>
+Package pdftex.def Info: Pretextuais/folha_aprovacao1.pdf , page1 used on input
+ line 31.
+(pdftex.def)             Requested size: 597.93192pt x 845.66379pt.
+File: Pretextuais/folha_aprovacao1.pdf Graphic file (type pdf)
+<use Pretextuais/folha_aprovacao1.pdf, page 1>
+Package pdftex.def Info: Pretextuais/folha_aprovacao1.pdf , page1 used on input
+ line 31.
+(pdftex.def)             Requested size: 597.93192pt x 845.66379pt.
+File: Pretextuais/folha_aprovacao1.pdf Graphic file (type pdf)
+<use Pretextuais/folha_aprovacao1.pdf, page 1>
+Package pdftex.def Info: Pretextuais/folha_aprovacao1.pdf , page1 used on input
+ line 31.
+(pdftex.def)             Requested size: 597.93192pt x 845.66379pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.31 \includepdf{Pretextuais/folha_aprovacao1.pdf}
+                                                   %% ASSINADA
+File: Pretextuais/folha_aprovacao1.pdf Graphic file (type pdf)
+<use Pretextuais/folha_aprovacao1.pdf, page 1>
+Package pdftex.def Info: Pretextuais/folha_aprovacao1.pdf , page1 used on input
+ line 31.
+(pdftex.def)             Requested size: 597.93192pt x 845.66379pt.
+ [4 <./Pretextuais/folha_aprovacao1.pdf>]
 \openout2 = `Pretextuais/dedicatoria.aux'.
 
-
-(Pretextuais/dedicatoria.tex)
+ (Pretextuais/dedicatoria.tex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1822,9 +1904,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.37 \include{Pretextuais/dedicatoria}
-                                       [4
-
-
+                                       [5
 
 ]
 \openout2 = `Pretextuais/agradecimentos.aux'.
@@ -1844,7 +1924,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.41 \include{Pretextuais/agradecimentos}
-                                          [5
+                                          [6
 
 
 
@@ -1866,7 +1946,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.44 \include{Pretextuais/epigrafe}
-                                    [6
+                                    [7
 
 
 
@@ -1888,7 +1968,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.48 \include{Resumos/resumo}
-                              [7
+                              [8
 
 
 
@@ -1910,7 +1990,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.51 \include{Resumos/abstract}
-                                [8
+                                [9
 
 
 
@@ -1923,7 +2003,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.33 ...a m√©trica SMAPE.}}{87}{figure.caption.50}
-                                                  % [9
+                                                  % [10
 
 
 
@@ -1937,7 +2017,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.12 \newpage
-              [10] (DocPrincipal.lot)
+              [11] (DocPrincipal.lot)
 \tf@lot=\write7
 \openout7 = `DocPrincipal.lot'.
 
@@ -1947,7 +2027,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.56 \include{Pretextuais/listas}
-                                  [11]
+                                  [12]
 \openout2 = `Pretextuais/lista-simbolos.aux'.
 
  (Pretextuais/lista-simbolos.tex)
@@ -1956,7 +2036,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.60 \include{Pretextuais/lista-simbolos}
-                                          [12
+                                          [13
 
 
 
@@ -1966,13 +2046,13 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.60 \include{Pretextuais/lista-simbolos}
-                                          [13] (DocPrincipal.toc
+                                          [14] (DocPrincipal.toc
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.39 ...{\numberline {4}Resultados}{64}{section.4}
-                                                  % [14
+                                                  % [15
 
 
 ])
@@ -1985,7 +2065,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.74 \include{Introducao/sec-introducao}
-                                         [15]
+                                         [16]
 \openout2 = `Introducao/sec-introducao.aux'.
 
  (Introducao/sec-introducao.tex
@@ -2041,7 +2121,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Introducao/Figuras/Etapas.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<Introducao/Figuras/Etapas.pdf, id=542, 250.63637pt x 284.96461pt>
+<Introducao/Figuras/Etapas.pdf, id=613, 250.63637pt x 284.96461pt>
 File: Introducao/Figuras/Etapas.pdf Graphic file (type pdf)
 <use Introducao/Figuras/Etapas.pdf>
 Package pdftex.def Info: Introducao/Figuras/Etapas.pdf  used on input line 71.
@@ -2079,7 +2159,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Revisao/Figuras/Figura2.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Revisao/Figuras/Figura2.pdf, id=658, 472.86664pt x 273.22076pt>
+<Revisao/Figuras/Figura2.pdf, id=729, 472.86664pt x 273.22076pt>
 File: Revisao/Figuras/Figura2.pdf Graphic file (type pdf)
 <use Revisao/Figuras/Figura2.pdf>
 Package pdftex.def Info: Revisao/Figuras/Figura2.pdf  used on input line 14.
@@ -2097,7 +2177,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
  <./Revisao/Figuras/Figura2.pdf>]
-<Revisao/Figuras/base-wos-scopus.pdf, id=682, 1903.11pt x 1206.5075pt>
+<Revisao/Figuras/base-wos-scopus.pdf, id=754, 1903.11pt x 1206.5075pt>
 File: Revisao/Figuras/base-wos-scopus.pdf Graphic file (type pdf)
 <use Revisao/Figuras/base-wos-scopus.pdf>
 Package pdftex.def Info: Revisao/Figuras/base-wos-scopus.pdf  used on input lin
@@ -2249,7 +2329,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/sarimax_map.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/sarimax_map.pdf, id=1817, 623.73027pt x 256.5585pt>
+<Modelos/Figuras/sarimax_map.pdf, id=1888, 623.73027pt x 256.5585pt>
 File: Modelos/Figuras/sarimax_map.pdf Graphic file (type pdf)
 <use Modelos/Figuras/sarimax_map.pdf>
 Package pdftex.def Info: Modelos/Figuras/sarimax_map.pdf  used on input line 91
@@ -2285,7 +2365,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/decison.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/decison.pdf, id=1891, 607.46951pt x 569.52777pt>
+<Modelos/Figuras/decison.pdf, id=1962, 607.46951pt x 569.52777pt>
 File: Modelos/Figuras/decison.pdf Graphic file (type pdf)
 <use Modelos/Figuras/decison.pdf>
 Package pdftex.def Info: Modelos/Figuras/decison.pdf  used on input line 148.
@@ -2311,7 +2391,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/RF.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/RF.pdf, id=1944, 1474.50874pt x 508.09827pt>
+<Modelos/Figuras/RF.pdf, id=2016, 1474.50874pt x 508.09827pt>
 File: Modelos/Figuras/RF.pdf Graphic file (type pdf)
 <use Modelos/Figuras/RF.pdf>
 Package pdftex.def Info: Modelos/Figuras/RF.pdf  used on input line 183.
@@ -2328,7 +2408,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/xgboos.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/xgboos.pdf, id=2080, 820.26451pt x 346.89601pt>
+<Modelos/Figuras/xgboos.pdf, id=2151, 820.26451pt x 346.89601pt>
 File: Modelos/Figuras/xgboos.pdf Graphic file (type pdf)
 <use Modelos/Figuras/xgboos.pdf>
 Package pdftex.def Info: Modelos/Figuras/xgboos.pdf  used on input line 206.
@@ -2345,7 +2425,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/xgboost.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/xgboost.pdf, id=2130, 925.95938pt x 772.38562pt>
+<Modelos/Figuras/xgboost.pdf, id=2201, 925.95938pt x 772.38562pt>
 File: Modelos/Figuras/xgboost.pdf Graphic file (type pdf)
 <use Modelos/Figuras/xgboost.pdf>
 Package pdftex.def Info: Modelos/Figuras/xgboost.pdf  used on input line 244.
@@ -2371,7 +2451,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/ann.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/ann.pdf, id=2200, 749.80125pt x 479.69212pt>
+<Modelos/Figuras/ann.pdf, id=2271, 749.80125pt x 479.69212pt>
 File: Modelos/Figuras/ann.pdf Graphic file (type pdf)
 <use Modelos/Figuras/ann.pdf>
 Package pdftex.def Info: Modelos/Figuras/ann.pdf  used on input line 284.
@@ -2403,7 +2483,7 @@ l.315
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/rnn1.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/rnn1.pdf, id=2278, 1750.54pt x 596.2275pt>
+<Modelos/Figuras/rnn1.pdf, id=2350, 1750.54pt x 596.2275pt>
 File: Modelos/Figuras/rnn1.pdf Graphic file (type pdf)
 <use Modelos/Figuras/rnn1.pdf>
 Package pdftex.def Info: Modelos/Figuras/rnn1.pdf  used on input line 326.
@@ -2438,7 +2518,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/gru.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Modelos/Figuras/gru.pdf, id=2394, 780.9175pt x 684.75826pt>
+<Modelos/Figuras/gru.pdf, id=2465, 780.9175pt x 684.75826pt>
 File: Modelos/Figuras/gru.pdf Graphic file (type pdf)
 <use Modelos/Figuras/gru.pdf>
 Package pdftex.def Info: Modelos/Figuras/gru.pdf  used on input line 394.
@@ -2456,7 +2536,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x30
 8.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf, id=2451, 3044.37375pt x 746.1
+<Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf, id=2522, 3044.37375pt x 746.1
 8777pt>
 File: Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf Graphic file (type pdf)
 <use Modelos/Figuras/RNN-vs-LSTM-vs-GRU-1024x308.pdf>
@@ -2475,7 +2555,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./Modelos/Figuras/cnn.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<Modelos/Figuras/cnn.pdf, id=2575, 466.0338pt x 197.97664pt>
+<Modelos/Figuras/cnn.pdf, id=2646, 466.0338pt x 197.97664pt>
 File: Modelos/Figuras/cnn.pdf Graphic file (type pdf)
 <use Modelos/Figuras/cnn.pdf>
 Package pdftex.def Info: Modelos/Figuras/cnn.pdf  used on input line 427.
@@ -2586,7 +2666,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-<Resultados/Figuras/STL.pdf, id=2746, 710.53326pt x 564.89027pt>
+<Resultados/Figuras/STL.pdf, id=2817, 710.53326pt x 564.89027pt>
 File: Resultados/Figuras/STL.pdf Graphic file (type pdf)
 <use Resultados/Figuras/STL.pdf>
 Package pdftex.def Info: Resultados/Figuras/STL.pdf  used on input line 46.
@@ -2601,7 +2681,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [65]
-<Resultados/Figuras/person.pdf, id=2753, 671.61241pt x 565.86156pt>
+<Resultados/Figuras/person.pdf, id=2824, 671.61241pt x 565.86156pt>
 File: Resultados/Figuras/person.pdf Graphic file (type pdf)
 <use Resultados/Figuras/person.pdf>
 Package pdftex.def Info: Resultados/Figuras/person.pdf  used on input line 61.
@@ -2616,7 +2696,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [66 <./Resultados/Figuras/STL.pdf>]
-<Resultados/Figuras/LR.pdf, id=2804, 710.77042pt x 240.40753pt>
+<Resultados/Figuras/LR.pdf, id=2876, 710.77042pt x 240.40753pt>
 File: Resultados/Figuras/LR.pdf Graphic file (type pdf)
 <use Resultados/Figuras/LR.pdf>
 Package pdftex.def Info: Resultados/Figuras/LR.pdf  used on input line 75.
@@ -2631,17 +2711,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [67 <./Resultados/Figuras/person.pdf> <./Resultados/Figuras/LR.pdf>]
-<Resultados/Figuras/acf.pdf, id=2862, 723.10214pt x 581.07463pt>
+<Resultados/Figuras/acf.pdf, id=2933, 723.10214pt x 581.07463pt>
 File: Resultados/Figuras/acf.pdf Graphic file (type pdf)
 <use Resultados/Figuras/acf.pdf>
 Package pdftex.def Info: Resultados/Figuras/acf.pdf  used on input line 86.
 (pdftex.def)             Requested size: 273.14923pt x 219.49841pt.
-<Resultados/Figuras/pacf.pdf, id=2863, 723.10214pt x 581.07463pt>
+<Resultados/Figuras/pacf.pdf, id=2934, 723.10214pt x 581.07463pt>
 File: Resultados/Figuras/pacf.pdf Graphic file (type pdf)
 <use Resultados/Figuras/pacf.pdf>
 Package pdftex.def Info: Resultados/Figuras/pacf.pdf  used on input line 91.
 (pdftex.def)             Requested size: 273.14923pt x 219.49841pt.
-<Resultados/Figuras/ruido-branco.pdf, id=2866, 706.83525pt x 348.69751pt>
+<Resultados/Figuras/ruido-branco.pdf, id=2937, 706.83525pt x 348.69751pt>
 File: Resultados/Figuras/ruido-branco.pdf Graphic file (type pdf)
 <use Resultados/Figuras/ruido-branco.pdf>
 Package pdftex.def Info: Resultados/Figuras/ruido-branco.pdf  used on input lin
@@ -2693,13 +2773,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [72]
-<Resultados/Figuras/ARX-AR-MA-ARMA-24.pdf, id=2990, 710.79218pt x 421.1601pt>
+<Resultados/Figuras/ARX-AR-MA-ARMA-24.pdf, id=3062, 710.79218pt x 421.1601pt>
 File: Resultados/Figuras/ARX-AR-MA-ARMA-24.pdf Graphic file (type pdf)
 <use Resultados/Figuras/ARX-AR-MA-ARMA-24.pdf>
 Package pdftex.def Info: Resultados/Figuras/ARX-AR-MA-ARMA-24.pdf  used on inpu
 t line 232.
 (pdftex.def)             Requested size: 318.66948pt x 188.81981pt.
-<Resultados/Figuras/ARIMA-SARIMA-ARIMAX-SARIMAX-24.pdf, id=2991, 710.79218pt x 
+<Resultados/Figuras/ARIMA-SARIMA-ARIMAX-SARIMAX-24.pdf, id=3063, 710.79218pt x 
 421.54434pt>
 File: Resultados/Figuras/ARIMA-SARIMA-ARIMAX-SARIMAX-24.pdf Graphic file (type 
 pdf)
@@ -2707,28 +2787,28 @@ pdf)
 Package pdftex.def Info: Resultados/Figuras/ARIMA-SARIMA-ARIMAX-SARIMAX-24.pdf 
  used on input line 239.
 (pdftex.def)             Requested size: 318.66948pt x 188.99208pt.
-<Resultados/Figuras/LR-XGB-LGBM-RF.pdf, id=2992, 710.77042pt x 421.01477pt>
+<Resultados/Figuras/LR-XGB-LGBM-RF.pdf, id=3064, 710.77042pt x 421.01477pt>
 File: Resultados/Figuras/LR-XGB-LGBM-RF.pdf Graphic file (type pdf)
 <use Resultados/Figuras/LR-XGB-LGBM-RF.pdf>
 Package pdftex.def Info: Resultados/Figuras/LR-XGB-LGBM-RF.pdf  used on input l
 ine 247.
 (pdftex.def)             Requested size: 318.66948pt x 188.76108pt.
-<Resultados/Figuras/GRU.pdf, id=2993, 619.99745pt x 321.031pt>
+<Resultados/Figuras/GRU.pdf, id=3065, 619.99745pt x 321.031pt>
 File: Resultados/Figuras/GRU.pdf Graphic file (type pdf)
 <use Resultados/Figuras/GRU.pdf>
 Package pdftex.def Info: Resultados/Figuras/GRU.pdf  used on input line 255.
 (pdftex.def)             Requested size: 318.66948pt x 165.01195pt.
-<Resultados/Figuras/LSTM.pdf, id=2994, 619.99745pt x 321.031pt>
+<Resultados/Figuras/LSTM.pdf, id=3066, 619.99745pt x 321.031pt>
 File: Resultados/Figuras/LSTM.pdf Graphic file (type pdf)
 <use Resultados/Figuras/LSTM.pdf>
 Package pdftex.def Info: Resultados/Figuras/LSTM.pdf  used on input line 263.
 (pdftex.def)             Requested size: 318.66948pt x 165.01195pt.
-<Resultados/Figuras/RNN.pdf, id=2995, 619.99745pt x 321.031pt>
+<Resultados/Figuras/RNN.pdf, id=3067, 619.99745pt x 321.031pt>
 File: Resultados/Figuras/RNN.pdf Graphic file (type pdf)
 <use Resultados/Figuras/RNN.pdf>
 Package pdftex.def Info: Resultados/Figuras/RNN.pdf  used on input line 271.
 (pdftex.def)             Requested size: 318.66948pt x 165.01195pt.
-<Resultados/Figuras/prophet.pdf, id=2996, 707.33191pt x 348.69751pt>
+<Resultados/Figuras/prophet.pdf, id=3068, 707.33191pt x 348.69751pt>
 File: Resultados/Figuras/prophet.pdf Graphic file (type pdf)
 <use Resultados/Figuras/prophet.pdf>
 Package pdftex.def Info: Resultados/Figuras/prophet.pdf  used on input line 276
@@ -2867,7 +2947,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [84]
-<Resultados/Figuras/smape_comparar_basic.pdf, id=3338, 707.287pt x 421.26694pt>
+<Resultados/Figuras/smape_comparar_basic.pdf, id=3410, 707.287pt x 421.26694pt>
 
 File: Resultados/Figuras/smape_comparar_basic.pdf Graphic file (type pdf)
 <use Resultados/Figuras/smape_comparar_basic.pdf>
@@ -2886,14 +2966,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [85
 
 ]
-<Resultados/Figuras/mae_comparar_basic.pdf, id=3344, 707.32904pt x 421.26694pt>
+<Resultados/Figuras/mae_comparar_basic.pdf, id=3415, 707.32904pt x 421.26694pt>
 
 File: Resultados/Figuras/mae_comparar_basic.pdf Graphic file (type pdf)
 <use Resultados/Figuras/mae_comparar_basic.pdf>
 Package pdftex.def Info: Resultados/Figuras/mae_comparar_basic.pdf  used on inp
 ut line 702.
 (pdftex.def)             Requested size: 318.66948pt x 189.79333pt.
-<Resultados/Figuras/rrmse_comparar_basic.pdf, id=3345, 707.32904pt x 421.26694p
+<Resultados/Figuras/rrmse_comparar_basic.pdf, id=3416, 707.32904pt x 421.26694p
 t>
 File: Resultados/Figuras/rrmse_comparar_basic.pdf Graphic file (type pdf)
 <use Resultados/Figuras/rrmse_comparar_basic.pdf>
@@ -2911,19 +2991,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [86 <./Resultados/Figuras/smape_comparar_basic.pdf> <./Resultados/Figuras/mae_c
 omparar_basic.pdf>]
-<Resultados/Figuras/smape_comparar.pdf, id=3435, 710.49124pt x 240.14719pt>
+<Resultados/Figuras/smape_comparar.pdf, id=3506, 710.49124pt x 240.14719pt>
 File: Resultados/Figuras/smape_comparar.pdf Graphic file (type pdf)
 <use Resultados/Figuras/smape_comparar.pdf>
 Package pdftex.def Info: Resultados/Figuras/smape_comparar.pdf  used on input l
 ine 718.
 (pdftex.def)             Requested size: 409.71692pt x 138.48662pt.
-<Resultados/Figuras/mae_comparar.pdf, id=3436, 710.50067pt x 240.11192pt>
+<Resultados/Figuras/mae_comparar.pdf, id=3507, 710.50067pt x 240.11192pt>
 File: Resultados/Figuras/mae_comparar.pdf Graphic file (type pdf)
 <use Resultados/Figuras/mae_comparar.pdf>
 Package pdftex.def Info: Resultados/Figuras/mae_comparar.pdf  used on input lin
 e 728.
 (pdftex.def)             Requested size: 409.71692pt x 138.4663pt.
-<Resultados/Figuras/rrmse_comparar.pdf, id=3437, 699.02782pt x 235.69798pt>
+<Resultados/Figuras/rrmse_comparar.pdf, id=3508, 699.02782pt x 235.69798pt>
 File: Resultados/Figuras/rrmse_comparar.pdf Graphic file (type pdf)
 <use Resultados/Figuras/rrmse_comparar.pdf>
 Package pdftex.def Info: Resultados/Figuras/rrmse_comparar.pdf  used on input l
@@ -2959,7 +3039,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [89]
-<Resultados/Figuras/grafico-barras-demanda.pdf, id=3618, 825.96268pt x 537.601p
+<Resultados/Figuras/grafico-barras-demanda.pdf, id=3689, 825.96268pt x 537.601p
 t>
 File: Resultados/Figuras/grafico-barras-demanda.pdf Graphic file (type pdf)
 <use Resultados/Figuras/grafico-barras-demanda.pdf>
@@ -3103,13 +3183,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.04742pt}.
 
 [102] (DocPrincipal.aux (Pretextuais/capa.aux) (Pretextuais/folha_rosto2.aux)
-(Pretextuais/folha_aprovacao.aux) (Pretextuais/dedicatoria.aux)
-(Pretextuais/agradecimentos.aux) (Pretextuais/epigrafe.aux) (Resumos/resumo.aux
-) (Resumos/abstract.aux) (Pretextuais/listas.aux)
-(Pretextuais/lista-simbolos.aux) (Introducao/sec-introducao.aux)
-(Revisao/sec-revisao.aux) (Modelos/sec-modelos.aux)
-(Resultados/sec-resultados.aux) (Conclusoes/sec-conclusoes.aux)
-(Bibliografia/sec-bibliografia.aux))
+(Pretextuais/dedicatoria.aux) (Pretextuais/agradecimentos.aux)
+(Pretextuais/epigrafe.aux) (Resumos/resumo.aux) (Resumos/abstract.aux)
+(Pretextuais/listas.aux) (Pretextuais/lista-simbolos.aux)
+(Introducao/sec-introducao.aux) (Revisao/sec-revisao.aux)
+(Modelos/sec-modelos.aux) (Resultados/sec-resultados.aux)
+(Conclusoes/sec-conclusoes.aux) (Bibliografia/sec-bibliografia.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -3118,13 +3197,13 @@ Package rerunfilecheck Info: File `DocPrincipal.out' has not changed.
 (rerunfilecheck)             Checksum: CB7D41CEBEEB45800134EAA44FF60A41;3713.
  ) 
 Here is how much of TeX's memory you used:
- 35211 strings out of 474485
- 735229 string characters out of 5743734
+ 35210 strings out of 474485
+ 734944 string characters out of 5743734
  1993542 words of memory out of 5000000
- 56356 multiletter control sequences out of 15000+600000
+ 56362 multiletter control sequences out of 15000+600000
  578320 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,15n,134p,2588b,1012s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,17n,134p,2588b,1012s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi
 1200.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecrm0800.pk> <C:\Users\msndo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -3153,9 +3232,9 @@ C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 y10.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmsy8.pfb><C:/Users/msndo/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/symbols/msbm10.pfb>
-Output written on DocPrincipal.pdf (102 pages, 2382455 bytes).
+Output written on DocPrincipal.pdf (103 pages, 2850933 bytes).
 PDF statistics:
- 4535 PDF objects out of 5155 (max. 8388607)
+ 4606 PDF objects out of 5155 (max. 8388607)
  365 named destinations out of 1000 (max. 500000)
- 583 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 623 words of extra memory for PDF output out of 10000 (max. 10000000)
 
